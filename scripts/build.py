@@ -66,6 +66,11 @@ N_NO_LIKES = 0          # Beitraege ohne Like-Wert (fuer Auswertungen ausgeblend
 
 # ---------------- Daten ----------------
 profiles = {r['handle']: r for r in csv.DictReader(open(CSV))}
+# Laufender Scraping-Lauf liefert aktuelle Follower (data/followers.json)
+LIVE_FOLLOWER = json.load(open(os.path.join(DATA, 'followers.json')))     if os.path.exists(os.path.join(DATA, 'followers.json')) else {}
+for _h, _f in LIVE_FOLLOWER.items():
+    if _h in profiles and isinstance(_f, (int, float)) and _f:
+        profiles[_h]['followers'] = str(int(_f))
 accounts, posts = [], []
 seen_urls = set()
 for rec in json.load(open(RAW)):
@@ -139,7 +144,16 @@ for _p in posts:
         except Exception:
             pass
 STAND = dt.datetime.strptime(META['scrape_date'], '%Y-%m-%d').strftime('%d.%m.%Y')
-_ads_q = dt.datetime.strptime(META.get('ads_query_date', META['scrape_date']), '%Y-%m-%d').strftime('%d.%m.%Y')
+LAUF = dt.datetime.now(BERLIN).strftime('%d.%m.%Y %H:%M')
+# Abfragedatum der Werbeanzeigen: eigene Lauf-Metadaten, sonst Datensatz-Angabe
+_AM = os.path.join(DATA, 'ads_meta.json')
+if os.path.exists(_AM):
+    try:
+        _ads_q = dt.datetime.strptime(json.load(open(_AM))['abfrage'], '%Y-%m-%d').strftime('%d.%m.%Y')
+    except Exception:
+        _ads_q = dt.datetime.strptime(META.get('ads_query_date', META['scrape_date']), '%Y-%m-%d').strftime('%d.%m.%Y')
+else:
+    _ads_q = dt.datetime.strptime(META.get('ads_query_date', META['scrape_date']), '%Y-%m-%d').strftime('%d.%m.%Y')
 STAND_ADS = _ads_q
 now = dt.datetime.strptime(META['scrape_date'], '%Y-%m-%d').replace(tzinfo=dt.timezone.utc)
 TZ_LABEL = 'MESZ' if now.astimezone(BERLIN).utcoffset() == dt.timedelta(hours=2) else 'MEZ'
@@ -149,6 +163,7 @@ N_FREMDE_POSTS = N_FREMDE
 N_KONTEN = len(accounts)
 N_FOLLOWER = sum(a['followers'] for a in accounts)
 N_POSTS = sum(a['n'] for a in accounts)
+META_TEXT = f"Datenstand {LAUF} · {de(N_KONTEN)} Profile · {de(N_POSTS)} Beiträge"
 N_AKTIV30 = len([a for a in accounts if a['r30'] > 0])
 PCT_AKTIV = N_AKTIV30 / N_KONTEN * 100 if N_KONTEN else 0
 OER = statistics.mean([a['er'] for a in accounts if a['followers'] >= 500]) if accounts else 0
@@ -559,6 +574,137 @@ for i, b in enumerate(worst_posts[:15]):
 for i, b in enumerate(ueberflieger):
     IMGMAP[b.get('image')] = dl(b.get('image'), f"f{i:02d}_{b['handle']}.jpg")
 
+
+# ---------------- Historie (Snapshots) ----------------
+HIST_DIR = os.path.join(DATA, 'history')
+
+
+def history_dates():
+    if not os.path.isdir(HIST_DIR):
+        return []
+    return sorted(f[:-5] for f in os.listdir(HIST_DIR) if f.endswith('.json'))
+
+
+def _load_snap(datum):
+    return json.load(open(os.path.join(HIST_DIR, datum + '.json')))
+
+
+def write_snapshot(beitraege):
+    """Kompakter Tages-Snapshot: nur NEUE Beitraege + Follower, ohne Bilder."""
+    os.makedirs(HIST_DIR, exist_ok=True)
+    heute = dt.datetime.now(BERLIN).strftime('%Y-%m-%d')
+    bekannt = set()
+    for d in history_dates():
+        if d == heute:
+            continue
+        for row in _load_snap(d).get('neu', []):
+            bekannt.add(row[0])
+    alt = _load_snap(heute) if heute in history_dates() else {'neu': [], 'follower': {}}
+    alt_ids = {r[0] for r in alt.get('neu', [])}
+    neu = []
+    for q in beitraege:
+        u = q.get('url')
+        if not u or u in bekannt or u in alt_ids:
+            continue
+        neu.append([u, q['handle'], (q.get('likes') if q.get('likes_ok') else None),
+                    q.get('comments'), (q.get('taken_at') or '')[:10], q.get('thema') or ''])
+    snap = {'datum': heute,
+            'follower': {a['handle']: a['followers'] for a in accounts},
+            'neu': alt.get('neu', []) + neu}
+    json.dump(snap, open(os.path.join(HIST_DIR, heute + '.json'), 'w'),
+              ensure_ascii=False, separators=(',', ':'))
+
+
+def _p90(vals):
+    if not vals:
+        return 0
+    v = sorted(vals)
+    return v[min(len(v) - 1, int(round(0.9 * (len(v) - 1))))]
+
+
+def hist_views():
+    """Follower-Wachstum und Wochentrend. Erst ab zwei Snapshots."""
+    dates = history_dates()
+    if len(dates) < 2:
+        return None, None
+    snaps = [(d, _load_snap(d)) for d in dates]
+    letzter = snaps[-1]
+    alt_follower = snaps[-2][1].get('follower') or {}
+
+    # --- Follower-Wachstum
+    def delta(tage):
+        ziel = dt.date.fromisoformat(letzter[0]) - dt.timedelta(days=tage)
+        kand = [s for s in snaps if dt.date.fromisoformat(s[0]) <= ziel and s[1].get('follower')]
+        if not kand:
+            kand = [s for s in snaps[:-1] if s[1].get('follower')]
+        if not kand:
+            return None, None, None
+        basis = kand[-1]
+        b = basis[1]['follower']
+        n = letzter[1].get('follower') or {}
+        # nur Konten, die in BEIDEN Snapshots stehen (sonst Scheinbewegungen)
+        gemein = [h for h in b if h in n]
+        ges_b = sum(b[h] for h in gemein)
+        ges_n = sum(n[h] for h in gemein)
+        bewegt = sorted([(h, n[h] - b[h]) for h in gemein if n[h] != b[h]],
+                        key=lambda x: -abs(x[1]))
+        return (basis[0], ges_n - ges_b, bewegt[:6], ges_b)
+
+    zeilen = []
+    for tage, label in ((7, '7 Tage'), (30, '30 Tage')):
+        r = delta(tage)
+        if not r or r[0] is None:
+            continue
+        basis_datum, dsum, bewegt, base_ges = r
+        pct = (dsum / base_ges * 100) if base_ges else 0
+        sgn = '+' if dsum >= 0 else '\u2212'
+        zeilen.append(f"""<div class="catrow"><div class="c1">Follower gesamt, {label} (seit {basis_datum})</div>
+        <div class="c2">{sgn}{de(abs(dsum))}</div></div>
+        <div class="catbar"><div style="width:{min(100, abs(pct) * 4):.0f}%;{'' if dsum >= 0 else 'background:#F59E0B'}"></div></div>
+        <div class="hint" style="margin:-4px 0 10px">{pct:+.2f} % · {de(base_ges)} Follower vorher</div>""")
+    top = delta(7)
+    if top and top[2]:
+        zeilen.append('<div class="hint" style="margin-top:6px"><b>Größte Veränderungen (7 Tage):</b></div>')
+        for h, dval in top[2]:
+            if abs(dval) < 1:
+                continue
+            s2 = '+' if dval >= 0 else '\u2212'
+            zeilen.append(f'<div class="catrow"><div class="c1">@{esc(h)}</div><div class="c2">{s2}{de(abs(dval))}</div></div>')
+    growth = ''.join(zeilen) if zeilen else None
+
+    # --- Wochentrend: Beitraege ueber alle Snapshots dedupliziert (Key Post-ID)
+    alle = {}
+    for _, s in snaps:
+        for row in s.get('neu', []):
+            alle[row[0]] = row
+    wo = collections.defaultdict(lambda: [0, 0])
+    for row in alle.values():
+        if row[2] is None:
+            continue
+        try:
+            dtag = dt.date.fromisoformat(row[4])
+        except Exception:
+            continue
+        montag = dtag - dt.timedelta(days=dtag.weekday())
+        slot = wo[montag]
+        slot[0] += (row[2] or 0) + (row[3] or 0)
+        slot[1] += 1
+    if len(wo) < 2:
+        return growth, None
+    reihen = sorted(wo.items())[-8:]
+    mx = max(v[0] / v[1] for _, v in reihen) or 1
+    balken = []
+    for montag, (inter, n) in reihen:
+        val = inter / n if n else 0
+        w = max(4, val / mx * 100)
+        balken.append(f"""<div class="hrow"><span class="hlab">{montag.strftime('%d.%m.')}</span>
+        <div class="htrack"><div class="hfill" style="width:{w:.1f}%"></div></div>
+        <span class="hval">{de(val)} · {de(n)} Btr.</span></div>""")
+    trend = (''.join(balken) + f'<p class="hint" style="margin-top:10px">{de(len(alle))} '
+             f'eindeutige Beiträge aus {len(snaps)} Snapshots, ohne Fenster-Bias der letzten 12 Beiträge.</p>')
+    return growth, trend
+
+
 # ---------------- Chart-Bausteine ----------------
 def svg_line(vals, labs, w=760, h=210):
     mx = max(vals) or 1
@@ -578,15 +724,15 @@ def svg_line(vals, labs, w=760, h=210):
             lab += f'<text x="{x:.1f}" y="{h-12}" font-size="10" fill="#8A90A0" text-anchor="middle">{labs[i]}</text>'
     peak = max(range(len(vals)), key=lambda i: vals[i])
     px, py = pts[peak]
-    ann = f'<text x="{px:.1f}" y="{py-9:.1f}" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="middle">{de(vals[peak])}</text>'
-    return f"""<svg viewBox="0 0 {w} {h}" width="100%" height="{h}" preserveAspectRatio="none">
+    ann = f'<text x="{px:.1f}" y="{py-9:.1f}" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="end">{de(vals[peak])}</text>'
+    return f"""<div class="chartw"><svg viewBox="0 0 {w} {h}" width="100%" style="height:auto;display:block">
       <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#2A60FF" stop-opacity=".22"/><stop offset="100%" stop-color="#2A60FF" stop-opacity="0"/>
       </linearGradient></defs>
       <path d="{area}" fill="url(#g1)"/>
       <polyline points="{poly}" fill="none" stroke="#2A60FF" stroke-width="2.5" stroke-linejoin="round"/>
       {dots}{ann}{lab}
-    </svg>"""
+    </svg></div>"""
 
 def bars_v(items, valkey, labs, highlight=None, unit=''):
     mx = max([i[valkey] for i in items]) or 1
@@ -965,7 +1111,26 @@ for i, ad in enumerate(TOP_ADS):
     </div>""")
 ad_grid = '<div class="adgrid">' + ''.join(ad_cards) + '</div>'
 
-html_doc = f"""<!DOCTYPE html>
+# ---------------- Tabellen-Vollmarken (Marker nie innerhalb von tbody) ----------------
+TW_TOP = ('<div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th>'
+          '<th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th>'
+          '<th>Format</th><th>Link</th></tr></thead><tbody>' + t_best() + '</tbody></table></div>')
+TW_WORST = ('<div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th>'
+            '<th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th>'
+            '<th>Format</th><th>Link</th></tr></thead><tbody>' + t_worst() + '</tbody></table></div>')
+TW_AKTIV = ('<div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Beiträge 30 T.</th>'
+            '<th class="num">Beiträge ges.</th><th class="num">Interaktionen</th>'
+            '<th class="num">Follower</th></tr></thead><tbody>' + t_aktiv() + '</tbody></table></div>')
+TW_FLIEGER = ('<div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th>'
+              '<th>Format</th><th class="num">Lift</th><th class="num">Likes</th><th class="num">Komment.</th>'
+              '<th class="num">Datum</th><th>Link</th></tr></thead><tbody>' + t_flieger() +
+              '</tbody></table></div>')
+TW_ADS = ('<div class="tw"><table><thead><tr><th>Marke</th><th class="num">Anzeigen im Sample / Treffer</th>'
+          '<th>Werbeanzeigen-Seiten</th><th>Formate</th><th>CTA-Typen</th><th>Beispiel-Nachrichten</th>'
+          '<th class="num">Neuester Start</th></tr></thead><tbody>' + t_ads() + '</tbody></table></div>')
+TW_FRAME = '<div class="tw"><table class="compact"><tbody>' + FRAME_ROWS + '</tbody></table></div>'
+
+TEMPLATE = """<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA · Social Media &amp; Marketing Intelligence</title>
@@ -982,8 +1147,7 @@ html_doc = f"""<!DOCTYPE html>
         <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence</span>
         <span class="tab2" onclick="sec('s5',this)">05 Insights</span>
       </div>
-      <span class="meta">Datenstand {STAND} · {de(N_KONTEN)} Profile · {de(N_POSTS)} Beiträge</span>
-      <div class="avatar">GL</div>
+      <span class="meta">{META_TEXT}</span>
     </header>
 
     <!-- 01 OVERVIEW -->
@@ -1004,7 +1168,6 @@ html_doc = f"""<!DOCTYPE html>
               <div class="hstat"><div class="v">{de(mov_med[0]['er_med'], 1)} %</div><div class="t"><span class="dot"></span>Beste Median-ER</div><div class="s">@{esc(mov_med[0]['handle'])} · {mov_med[0]['n_valid']} Beiträge</div></div>
               <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div><div class="s">@edeka · @edekakarriere · @dein.edeka</div></div>
             </div>
-            <div class="ringbox">{ring(PCT_AKTIV)}</div>
           </div>
         </div>
 
@@ -1014,6 +1177,20 @@ html_doc = f"""<!DOCTYPE html>
           <p class="hint">{('Likes + Kommentare je Beitrag, normalisiert. Keine der 12 Wochen ist für alle {1} Konten vollständig abgedeckt (je Konto nur die letzten 12 Beiträge, vollständig erst ab {2}), deshalb keine absoluten Volumenwerte, die zwischen den Wochen vergleichbar wären.'.format(FULL_WEEKS, de(N_KONTEN), COVER_START.strftime('%d.%m.%Y')) if FULL_WEEKS == 0 else 'Likes + Kommentare je Beitrag, normalisiert. {0} der 12 Wochen sind für alle {1} Konten vollständig abgedeckt (vollständig ab {2}), deshalb ohne absolute Volumenwerte.'.format(FULL_WEEKS, de(N_KONTEN), COVER_START.strftime('%d.%m.%Y'))) if USE_NORM else 'Interaktionen (Likes + Kommentare) je Woche über alle Profile'}</p>
           {svg_line(wk_ipost if USE_NORM else wk_int, wk_lab)}
           <p class="hint" style="margin:10px 0 0">{'Peak {0} Interaktionen je Beitrag · aktuelle Woche {1} · {2} Beiträge'.format(f"{max(wk_ipost):,.0f}".replace(',', '.'), f"{wk_ipost[-1]:,.0f}".replace(',', '.'), de(wk_cnt[-1])) if USE_NORM else 'Peak {0} Interaktionen · aktuelle Woche {1} · {2} Beiträge'.format(de(max(wk_int)), de(wk_int[-1]), de(wk_cnt[-1]))}</p>
+        </div>
+
+        <div class="card span3">
+          <span class="arrow">↗</span>
+          <h3>Follower-Wachstum</h3>
+          <p class="hint">Vergleich der Snapshots</p>
+          <x data-v="hist_growth" data-optional="1"></x>
+        </div>
+
+        <div class="card span3">
+          <span class="arrow">↗</span>
+          <h3>Wochentrend</h3>
+          <p class="hint">Interaktionen je Beitrag aus allen Snapshots</p>
+          <x data-v="hist_trend" data-optional="1"></x>
         </div>
 
         <div class="card span6">
@@ -1071,17 +1248,14 @@ html_doc = f"""<!DOCTYPE html>
             {SEG_PANELS}
           </div>
           <div id="u2" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
-            <tbody>{t_best()}</tbody></table>
+            {TW_TOP}
           </div>
           <div id="u3" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
-            <tbody>{t_worst()}</tbody></table>
+            {TW_WORST}
             <p class="hint" style="margin-top:10px">Nur Beiträge mit Like-Wert aus Profilen ab 500 Followern. {de(N_NO_LIKES)} Beiträge ohne Like-Wert (0 oder 1 Like, vom Anbieter nicht geliefert) sind in ER, Rankings und Empfehlungen ausgeblendet.</p>
           </div>
           <div id="u4" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Profil</th><th class="num">Beiträge 30 T.</th><th class="num">Beiträge ges.</th><th class="num">Interaktionen</th><th class="num">Follower</th></tr></thead>
-            <tbody>{t_aktiv()}</tbody></table>
+            {TW_AKTIV}
           </div>
         </div>
 
@@ -1098,9 +1272,7 @@ html_doc = f"""<!DOCTYPE html>
           <span class="arrow">↗</span>
           <h3>Überflieger: Beiträge mit dem Dreifachen oder mehr des eigenen Normalwerts</h3>
           <p class="hint">Lift = Interaktionen des Beitrags (Likes + Kommentare) geteilt durch den Median der Interaktionen des eigenen Profils. Gezeigt: {len(ueberflieger)} Beiträge mit Lift ≥ 3 von Profilen mit mindestens {MOV_MIN} Beiträgen mit Like-Wert.</p>
-          <div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th>Format</th>
-            <th class="num">Lift</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Link</th></tr></thead>
-            <tbody>{t_flieger()}</tbody></table></div>
+          {TW_FLIEGER}
           <p class="hint" style="margin-top:10px"><b>Befund:</b> {FL_INSIGHT}</p>
         </div>
 
@@ -1189,9 +1361,7 @@ html_doc = f"""<!DOCTYPE html>
           <span class="arrow">↗</span>
           <h3>04 · Competitor Intelligence — Wettbewerbsanalyse</h3>
           <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am {STAND_ADS}</p>
-          <table><thead><tr><th>Marke</th><th class="num">Anzeigen im Sample / Treffer</th><th>Werbeanzeigen-Seiten</th>
-            <th>Formate</th><th>CTA-Typen</th><th>Beispiel-Nachrichten</th><th class="num">Neuester Start</th></tr></thead>
-            <tbody>{t_ads()}</tbody></table>
+          {TW_ADS}
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
         </div>
 
@@ -1211,9 +1381,7 @@ html_doc = f"""<!DOCTYPE html>
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Wettbewerbs-Framework</h3>
-          <table class="compact"><tbody>
-            {FRAME_ROWS}
-          </tbody></table>
+          {TW_FRAME}
           <p class="hint" style="margin-top:10px"><b>Einschränkung:</b> Die Meta Ads Library zeigt nur öffentliche Anzeigen (Seite, Laufzeit, Format, Text). Sie liefert <b>keine</b> Reichweiten-, Kosten- oder Performance-Werte der Konkurrenz.</p>
         </div>
       </div>
@@ -1293,6 +1461,7 @@ html_doc = f"""<!DOCTYPE html>
   </div>
 </div>
 <script>{JS}</script>
+<script src="static/render.js"></script>
 </body></html>"""
 
 
@@ -1349,21 +1518,115 @@ V3_CSS = """
   .tabs2{margin:0 -14px}
 }
 """
-html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + '</style>', 1)
-html_doc = re.sub(r'\s*<div class="avatar">GL</div>', '', html_doc)
-html_doc = re.sub(r'\n[ \t]*<div class="ringbox">.*?</svg></div>', '', html_doc, flags=re.S)
-html_doc = html_doc.replace(
-    '<svg viewBox="0 0 760 210" width="100%" height="210" preserveAspectRatio="none">',
-    '<div class="chartw"><svg viewBox="0 0 760 210" width="100%" style="height:auto;display:block">')
-html_doc = re.sub(r'(<text x="[\d.]+" y="17\.0" font-size="11" font-weight="700" fill="#2A60FF" text-anchor=")middle(">)',
-                  r'\g<1>end\2', html_doc)
-assert html_doc.count('</svg>') == 1, html_doc.count('</svg>')
-html_doc = html_doc.replace('</svg>', '</svg></div>', 1)
-assert html_doc.count('<table') == html_doc.count('</table>')
-html_doc = html_doc.replace('<table', '<div class="tw"><table')
-html_doc = html_doc.replace('</table>', '</table></div>')
+# ---------------- Shell + Views: Zahlen kommen per fetch aus data/dashboard.json ----------------
+def _split_template(tpl):
+    """Template in Teile zerlegen: Textstuecke und {ausdruck}-Positionen."""
+    parts, i, n = [], 0, len(tpl)
+    while i < n:
+        c = tpl[i]
+        if c == '{':
+            if i + 1 < n and tpl[i + 1] == '{':
+                parts.append('{'); i += 2; continue
+            j, depth, q = i + 1, 0, None
+            while j < n:
+                ch = tpl[j]
+                if q:
+                    if ch == '\\':
+                        j += 2; continue
+                    if ch == q:
+                        q = None
+                else:
+                    if ch in ('"', "'"):
+                        q = ch
+                    elif ch == '{':
+                        depth += 1
+                    elif ch == '}':
+                        if depth == 0:
+                            break
+                        depth -= 1
+                j += 1
+            parts.append(('EXPR', tpl[i + 1:j])); i = j + 1
+        elif c == '}' and i + 1 < n and tpl[i + 1] == '}':
+            parts.append('}'); i += 2
+        else:
+            parts.append(c); i += 1
+    return parts
 
-# Bereinigten Datensatz mit schreiben (Grundlage fuer Reproduktion/Pruefung)
+
+def _eval_expr(expr, scope):
+    """Ausdruck auswerten, inklusive Format-Spec ({x:.2f})."""
+    try:
+        return eval(expr, scope)
+    except SyntaxError:
+        pass
+    i, depth, q, split = 0, 0, None, -1
+    while i < len(expr):
+        ch = expr[i]
+        if q:
+            if ch == '\\':
+                i += 2; continue
+            if ch == q:
+                q = None
+        else:
+            if ch in ('"', "'"):
+                q = ch
+            elif ch in '([{':
+                depth += 1
+            elif ch in ')]}':
+                depth -= 1
+            elif ch == ':' and depth == 0:
+                split = i
+        i += 1
+    if split > 0:
+        val = eval(expr[:split], scope)
+        spec = expr[split + 1:].strip()
+        return format(val, spec) if spec else str(val)
+    raise
+
+
+def _tw(html_):
+    if html_.count('<table') != html_.count('</table>'):
+        return html_
+    return html_.replace('<table', '<div class="tw"><table').replace('</table>', '</table></div>')
+
+
+EXTRA_CSS = """
+x[data-v]{display:contents}
+.boot{display:none;max-width:640px;margin:60px auto;background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:26px;text-align:center;color:#6B7280;font-size:14px}
+body.loading .boot{display:block}
+body.loading .grid,body.loading .footer{display:none}
+"""
+
+_parts = _split_template(TEMPLATE)
+_shell, VIEWS, _k = [], {}, 0
+for _p in _parts:
+    if isinstance(_p, tuple):
+        _expr = _p[1]
+        _val = _eval_expr(_expr, globals())
+        if _expr in ('CSS', 'JS'):
+            _shell.append(_val)
+        else:
+            _key = 'v%d' % _k
+            _k += 1
+            VIEWS[_key] = _val
+            _shell.append('<x data-v="%s"></x>' % _key)
+    else:
+        _shell.append(_p)
+html_doc = ''.join(_shell)
+assert html_doc.count('<table') == html_doc.count('</table>'), 'Tabelle defekt'
+html_doc = _tw(html_doc)
+html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + '</style>', 1)
+html_doc = html_doc.replace('<body><div class="app">',
+                            '<body class="loading"><div class="boot">Daten werden aktualisiert '
+                            '&middot; bitte kurz warten.</div><div class="app">', 1)
+
+# Snapshot zuerst anlegen, dann daraus auswerten
+write_snapshot(posts)
+
+# Historie-Auswertungen (erst ab 2 Snapshots sichtbar)
+HIST_GROWTH, HIST_TREND = hist_views()
+
+# Datensaetze schreiben
 CLEAN = [{'id': q.get('url'), 'profil': q['handle'], 'likes': q.get('likes'),
           'kommentare': q.get('comments'), 'datum': q.get('taken_at'), 'format': q.get('kind'),
           'follower': q.get('followers'), 'likes_ok': bool(q.get('likes_ok')),
@@ -1372,8 +1635,30 @@ CLEAN = [{'id': q.get('url'), 'profil': q['handle'], 'likes': q.get('likes'),
          for q in posts]
 json.dump(CLEAN, open(os.path.join(DATA, 'posts_clean.json'), 'w'), ensure_ascii=False, indent=1)
 
+if HIST_GROWTH:
+    VIEWS['hist_growth'] = HIST_GROWTH
+if HIST_TREND:
+    VIEWS['hist_trend'] = HIST_TREND
+
+DASH = {
+    'generated_at': LAUF,
+    'generated_iso': dt.datetime.now(BERLIN).isoformat(timespec='seconds'),
+    'stand': STAND,
+    'ads_abfrage': STAND_ADS,
+    'kpi': {'profile': N_KONTEN, 'profile_ges': N_GES, 'follower': N_FOLLOWER,
+            'beitraege': N_POSTS, 'beitraege_gueltig': N_POSTS_GUELTIG,
+            'aktiv30': N_AKTIV30, 'median_er': round(OER_MED, 3), 'mean_er': round(OER, 3),
+            'ausgeschlossen_konten': N_AUSGESCHLOSSEN, 'fremd_owner': N_FREMDE_POSTS,
+            'ohne_like': N_NO_LIKES},
+    'snapshots': len(history_dates()),
+    'views': VIEWS,
+}
+json.dump(DASH, open(os.path.join(DATA, 'dashboard.json'), 'w'), ensure_ascii=False, indent=1)
+
 open(os.path.join(SITE, 'index.html'), 'w').write(html_doc + '\n')
-print("HTML:", os.path.join(SITE, 'index.html'), len(html_doc), "bytes")
+print("HTML:", os.path.join(SITE, 'index.html'), len(html_doc), "bytes | Views:", len(VIEWS))
 print(f"Profile={N_KONTEN} Follower={N_FOLLOWER} Beiträge={N_POSTS} aktiv30={N_AKTIV30} ØER={OER:.1f}%")
 print("Format-Reihenfolge:", [(r['label'], round(r['er'], 1), round(r['er_med'], 2)) for r in fmt_rows])
-print("Bilder:", len(os.listdir(IMG)))
+print("Snapshots:", len(history_dates()), "| Historie-Views:", bool(HIST_GROWTH), bool(HIST_TREND))
+
+print('Bilder:', len(os.listdir(IMG)))

@@ -1,0 +1,78 @@
+name: update-dashboard
+
+# Taeglicher Lauf (05:00 UTC = 06:00 MESZ / 05:00 MET) + manueller Start.
+# Wettbewerbs-Anzeigen nur montags bzw. auf Wunsch.
+on:
+  schedule:
+    - cron: '0 4 * * *'
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      ads:
+        description: 'Werbek-Abfrage mitlaufen lassen'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: treg installieren
+        run: pip install --quiet tools-registry
+
+      - name: treg anmelden
+        run: treg login --token "${{ secrets.TREG_TOKEN }}"
+
+      - name: Beitraege und Follower holen
+        run: python3 scripts/scrape.py
+
+      - name: Nur neue Beitraege klassifizieren (LLM-Cache)
+        env:
+          ORCAROUTER_API_KEY: ${{ secrets.ORCAROUTER_API_KEY }}
+        run: python3 scripts/classify_themes.py
+
+      - name: Wettbewerbs-Anzeigen (montags oder auf Wunsch)
+        if: github.event.schedule == '0 5 * * 1' || inputs.ads == true
+        env:
+          TREG_TOKEN: ${{ secrets.TREG_TOKEN }}
+        run: python3 scripts/scrape_ads.py
+
+      - name: Dashboard bauen
+        run: python3 scripts/build.py
+
+      - name: Plausibilitaetscheck (sonst kein Commit)
+        run: python3 scripts/validate.py
+
+      - name: Commit und Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen"
+          else
+            git commit -m "Automatischer Lauf $(date -u +%F) (GitHub Actions)"
+            git push
+          fi
+
+      - name: Fehlschlag melden
+        if: failure()
+        env:
+          WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          if [ -n "$WEBHOOK" ]; then
+            curl -sS -X POST -H 'Content-Type: application/json' \
+              -d "{\"text\":\"EDEKA-Dashboard: automatischer Lauf fehlgeschlagen (${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}) - der letzte gute Stand bleibt online.\"}" \
+              "$WEBHOOK" >/dev/null || true
+          fi
+          echo "::error::Lauf fehlgeschlagen, nichts gepusht."
