@@ -167,6 +167,32 @@ worst_posts = sorted(worst_pool, key=lambda p: (p.get('likes', 0) + (p.get('comm
 n_null_likes = N_NO_LIKES
 N_POSTS_GUELTIG = len([p for p in posts if p.get('likes_ok')])
 
+# Phase 3: Überflieger (Lift = Interaktionen des Beitrags / Median-Interaktionen des eigenen Kontos)
+_acc_idx = {a['handle']: a for a in accounts}
+_flieger = []
+for _p in posts:
+    if not _p.get('likes_ok'):
+        continue
+    _a = _acc_idx.get(_p['handle'])
+    if not _a or _a['n_valid'] < MOV_MIN or not _a['med_inter']:
+        continue
+    _inter = (_p.get('likes') or 0) + (_p.get('comments') or 0)
+    _lift = _inter / _a['med_inter']
+    if _lift >= 3:
+        _q = dict(_p); _q['lift'] = _lift
+        _flieger.append(_q)
+ueberflieger = sorted(_flieger, key=lambda x: -x['lift'])[:20]
+_FMT_MAP = {'reel': 'Reels', 'carousel': 'Karussell', 'photo': 'Foto', 'video': 'Video'}
+FL_FMT = collections.Counter(_FMT_MAP.get(x.get('kind'), 'Video') for x in ueberflieger)
+FL_TAGS = collections.Counter()
+for x in ueberflieger:
+    for t in re.findall(r'#(\w{3,30})', x.get('caption') or ''):
+        FL_TAGS[t.lower()] += 1
+FL_INSIGHT = ('Darin dominiert {0} ({1} von {2}), häufigste Themen: {3}.'
+              .format(FL_FMT.most_common(1)[0][0] if FL_FMT else 'kein Format',
+                      FL_FMT.most_common(1)[0][1] if FL_FMT else 0, len(ueberflieger),
+                      ', '.join('#' + t for t, c in FL_TAGS.most_common(3)) or 'keine Hashtags')) if ueberflieger else 'Keine Beiträge mit dem Dreifachen des Normalwerts.'
+
 # Vergleich 30 Tage
 def in_days(p, a, b):
     ts = p.get('taken_at')
@@ -306,6 +332,102 @@ _vol_18 = next((r['n'] for r in HR_ROWS if r['h'] == 18), 0)
 ZEIT_TEXT = ('stärkste Median-Werte um {0}, während um 18:00 Uhr mit {1} Beiträgen am häufigsten gepostet wird und der Median dort sinkt'
              .format(', '.join(f"{r['h']}:00 ({de(r['med'], 2)} %)" for r in best_hours), de(_vol_18)))
 
+
+# ---------------- Phase 4: Themen ----------------
+THEMES_PATH = os.path.join(DATA, 'themes.json')
+_thema_map = {}
+if os.path.exists(THEMES_PATH):
+    for _r in json.load(open(THEMES_PATH)):
+        _thema_map[_r['id']] = _r['thema']
+KATEGORIEN = ["Angebot/Preis", "Rezept/Food", "Humor/Team/Azubi", "Region/Lieferant",
+              "Recruiting/Karriere", "Gewinnspiel", "Event/Aktion", "Sonstiges"]
+
+for _p in posts:
+    _p['thema'] = _thema_map.get(_p.get('url'), 'nicht zugeordnet')
+
+_themen = collections.defaultdict(lambda: {'n': 0, 'er': [], 'inter': []})
+for _p in posts:
+    if not _p.get('likes_ok'):
+        continue
+    t = _p['thema']
+    _themen[t]['n'] += 1
+    if _p['followers']:
+        _themen[t]['er'].append(((_p.get('likes') or 0) + (_p.get('comments') or 0)) / _p['followers'] * 100)
+
+def p90_of(vals):
+    if not vals:
+        return 0
+    v = sorted(vals)
+    return v[min(len(v) - 1, int(round(0.9 * (len(v) - 1))))]
+
+THEMEN_ROWS = []
+for t in KATEGORIEN + [k for k in _themen if k not in KATEGORIEN]:
+    if t not in _themen or t == 'nicht zugeordnet':
+        continue
+    d = _themen[t]
+    THEMEN_ROWS.append({'thema': t, 'n': d['n'],
+                        'med': statistics.median(d['er']) if d['er'] else 0,
+                        'mean': statistics.mean(d['er']) if d['er'] else 0,
+                        'p90': p90_of(d['er'])})
+THEMEN_ROWS.sort(key=lambda r: -r['med'])
+N_KLASSIFIZIERT = len([p for p in posts if p.get('thema') != 'nicht zugeordnet'])
+
+# Thema x Format: Median-ER, Zellen ab 10 Beitraegen
+_MATRIX = collections.defaultdict(list)
+for _p in posts:
+    if not _p.get('likes_ok') or not _p['followers']:
+        continue
+    _MATRIX[(_p['thema'], _p.get('kind'))].append(
+        ((_p.get('likes') or 0) + (_p.get('comments') or 0)) / _p['followers'] * 100)
+
+def matrix_html():
+    kinds = ['reel', 'carousel', 'photo', 'video']
+    head = '<tr><th>Thema</th>' + ''.join(f'<th class="num">{FMT_DE.get(k, k)}</th>' for k in kinds) + '</tr>'
+    rows = []
+    for r in THEMEN_ROWS:
+        cells = []
+        for k in kinds:
+            vals = _MATRIX.get((r['thema'], k), [])
+            if len(vals) >= 10:
+                cells.append(f'<td class="num">{de(statistics.median(vals), 2)}</td>')
+            else:
+                cells.append('<td class="num muted">–</td>')
+        rows.append(f'<tr><td>{esc(r["thema"])}</td>' + ''.join(cells) + '</tr>')
+    return '<div class="tw"><table><thead>' + head + '</thead><tbody>' + ''.join(rows) + '</tbody></table></div>'
+
+def themen_bars():
+    out = []
+    mx = max([r['med'] for r in THEMEN_ROWS]) or 1
+    for r in THEMEN_ROWS:
+        w = max(4, r['med'] / mx * 100)
+        klein = r['n'] < 20
+        farbe = '#C9CEDB' if klein else '#2A60FF'
+        out.append(f"""<div class="hrow"><span class="hlab">{esc(r['thema'])}</span>
+        <div class="htrack"><div class="hfill" style="width:{w:.1f}%;background:{farbe}"></div></div>
+        <span class="hval">{de(r['med'], 2)} % · {de(r['n'])}{' · geringe Basis' if klein else ''}</span></div>""")
+    return ''.join(out)
+
+# 2-3 automatische Aussagen fuer 05
+_gueltig = [r for r in THEMEN_ROWS if r['n'] >= 20]
+_top_med = _gueltig[0] if _gueltig else None
+_top_p90 = max(_gueltig, key=lambda r: r['p90']) if _gueltig else None
+_schlecht = _gueltig[-1] if _gueltig else None
+THEMEN_AUSSAGEN = []
+if _top_med:
+    THEMEN_AUSSAGEN.append(f"Stärkster Median: <b>{esc(_top_med['thema'])}</b> mit {de(_top_med['med'], 2)} % Median-ER über {de(_top_med['n'])} Beiträge.")
+if _top_p90 and _top_p90 != _top_med:
+    THEMEN_AUSSAGEN.append(f"Größte Ausreißer nach oben: <b>{esc(_top_p90['thema'])}</b> mit {de(_top_p90['p90'], 1)} % als 90. Perzentil.")
+if _schlecht:
+    THEMEN_AUSSAGEN.append(f"Schwächster Median (ab 20 Beiträgen): <b>{esc(_schlecht['thema'])}</b> mit {de(_schlecht['med'], 2)} %.")
+THEMEN_TEXT = ''.join(f'<li>{a}</li>' for a in THEMEN_AUSSAGEN)
+THEMEN_STICHPROBE = os.path.join(DATA, 'theme_accuracy.json')
+if os.path.exists(THEMEN_STICHPROBE):
+    _acc = json.load(open(THEMEN_STICHPROBE))
+    ACC_TEXT = f"Klassenstichprobe: {_acc.get('richtig', 0)} von {_acc.get('n', 0)} geprüften Captions korrekt zugeordnet ({_acc.get('richtig', 0) / max(1, _acc.get('n', 1)) * 100:.0f} %)."
+else:
+    ACC_TEXT = ''
+
+
 # Hashtags
 tags = collections.Counter()
 for p in posts:
@@ -429,10 +551,12 @@ def dl(url, name):
         subprocess.run(f"curl -s -A '{ua}' -e 'https://www.instagram.com/' -o '{path}' '{url}'",
                        shell=True, capture_output=True, timeout=30)
     return 'img/' + name if os.path.exists(path) and os.path.getsize(path) > 1000 else ''
-for i, b in enumerate(best_posts[:12]):
+for i, b in enumerate(best_posts[:15]):
     IMGMAP[b.get('image')] = dl(b.get('image'), f"b{i:02d}_{b['handle']}.jpg")
-for i, b in enumerate(worst_posts[:8]):
+for i, b in enumerate(worst_posts[:15]):
     IMGMAP[b.get('image')] = dl(b.get('image'), f"w{i:02d}_{b['handle']}.jpg")
+for i, b in enumerate(ueberflieger):
+    IMGMAP[b.get('image')] = dl(b.get('image'), f"f{i:02d}_{b['handle']}.jpg")
 
 # ---------------- Chart-Bausteine ----------------
 def svg_line(vals, labs, w=760, h=210):
@@ -590,6 +714,25 @@ def t_worst():
         <td><a class="postlink" href="{pl}" target="_blank">Ansehen →</a></td></tr>""")
     return ''.join(out)
 
+def t_flieger():
+    out = []
+    for i, p in enumerate(ueberflieger):
+        img = IMGMAP.get(p.get('image'), '')
+        pl = esc(p.get('url') or '#')
+        if img:
+            cell = f'<a href="{pl}" target="_blank"><img class="th" src="{esc(img)}" alt="" onerror="this.style.display=&#39;none&#39;"></a>' 
+        else:
+            cell = f'<span class="ph">{FMT_DE.get(p.get("kind"), "Video")[:1]}</span>'
+        out.append(f"""<tr><td>{i+1}</td><td>{cell}</td>
+        <td><a href="https://www.instagram.com/{esc(p['handle'])}/" target="_blank">@{esc(p['handle'])}</a></td>
+        <td class="cap">{esc((p.get('caption') or '')[:110])}</td>
+        <td><span class="pill2">{FMT_DE.get(p.get('kind'), esc(p.get('kind')))}</span></td>
+        <td class="num strong">{de(p['lift'], 1)}×</td>
+        <td class="num">{de(p['likes'])}</td><td class="num">{p.get('comments') or 0}</td>
+        <td class="num">{esc((p.get('taken_at') or '')[:10])}</td>
+        <td><a class="postlink" href="{pl}" target="_blank">Ansehen →</a></td></tr>""")
+    return ''.join(out)
+
 def t_aktiv():
     out = []
     for i, a in enumerate(aktiv[:25]):
@@ -655,6 +798,7 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-s
 .arrow{position:absolute;top:20px;right:20px;color:#B9BFCC;font-size:15px}
 .card.blue .arrow{color:rgba(255,255,255,.8)}
 .muted{color:#9AA0AE}
+.ph{display:inline-flex;width:46px;height:46px;border-radius:8px;background:#EEF1F6;color:#9AA0AE;align-items:center;justify-content:center;font-size:11px;font-weight:600}
 .segtabs{margin-bottom:10px}
 .span6{grid-column:span 6}.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}
 .kpi .k{font-size:32px;font-weight:300;color:#2B2F36;letter-spacing:-.5px}
@@ -943,6 +1087,25 @@ html_doc = f"""<!DOCTYPE html>
 
         <div class="card span6">
           <span class="arrow">↗</span>
+          <h3>Themenanalyse nach Caption</h3>
+          <p class="hint">{de(N_KLASSIFIZIERT)} von {de(N_POSTS)} Beiträgen automatisch einer Kategorie zugeordnet (LLM, eine Kategorie je Caption). Median-ER je Thema, Werte unter 20 Beiträgen grau als geringe Basis.</p>
+          {themen_bars()}
+          <p class="hint" style="margin-top:14px">Median-ER je Thema und Format (Zellen ab 10 Beiträgen, sonst –)</p>
+          {matrix_html()}
+        </div>
+
+        <div class="card span6">
+          <span class="arrow">↗</span>
+          <h3>Überflieger: Beiträge mit dem Dreifachen oder mehr des eigenen Normalwerts</h3>
+          <p class="hint">Lift = Interaktionen des Beitrags (Likes + Kommentare) geteilt durch den Median der Interaktionen des eigenen Profils. Gezeigt: {len(ueberflieger)} Beiträge mit Lift ≥ 3 von Profilen mit mindestens {MOV_MIN} Beiträgen mit Like-Wert.</p>
+          <div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th>Format</th>
+            <th class="num">Lift</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Link</th></tr></thead>
+            <tbody>{t_flieger()}</tbody></table></div>
+          <p class="hint" style="margin-top:10px"><b>Befund:</b> {FL_INSIGHT}</p>
+        </div>
+
+        <div class="card span6">
+          <span class="arrow">↗</span>
           <h3>Leistung nach Format</h3>
           <p class="hint">Ø Engagement-Rate je Format — Median daneben, weil einzelne Viral-Beiträge den Mittelwert verzerren</p>
           <div class="grid" style="gap:14px">{fmt_cards}</div>
@@ -1073,7 +1236,8 @@ html_doc = f"""<!DOCTYPE html>
             <li><b>Beste Tage:</b> {TAGE_TEXT}.</li>
             <li><b>Beste Uhrzeiten:</b> {', '.join(f"{r['h']}:00 ({de(r['med'], 2)} %)" for r in best_hours)} — die Masse postet um 18:00, der Median sinkt dort jedoch (volle Timeline, mehr Konkurrenz).</li>
             <li><b>Stärkste Profile (Median):</b> {', '.join('@' + a['handle'] for a in mov_med[:3])} — {de(mov_med[0]['er_med'], 1)} %, {de(mov_med[1]['er_med'], 1)} %, {de(mov_med[2]['er_med'], 1)} % Median-ER.</li>
-            <li><b>Themen mit Zug:</b> {', '.join('#' + t for t, c in TOP_TAGS[:5])} — Angebote, Regionales und Humor (Azubi-/Kassen-Sketche) erzeugen die meisten Kommentare.</li>
+            {THEMEN_TEXT}
+            <li><b>Häufigste Hashtags:</b> {', '.join('#' + t for t, c in TOP_TAGS[:5])}.</li>
           </ul>
         </div>
 
@@ -1123,6 +1287,7 @@ html_doc = f"""<!DOCTYPE html>
       Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage {STAND_ADS}, max. 20 Treffer je Marke.
       Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: {de(N_KONTEN)} berücksichtigte Profile von {de(N_GES)} erfassten Konten.
       Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 03).
+      Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. {ACC_TEXT}
       Datenaufbereitung: {de(N_AUSGESCHLOSSEN)} Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), {de(N_FREMDE_POSTS)} Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), {de(N_NO_LIKES)} Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet ({de(N_POSTS_GUELTIG)} von {de(N_POSTS)} Beiträgen mit Like-Wert).
     </div>
   </div>

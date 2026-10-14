@@ -1,0 +1,7 @@
+{
+  "n": 50,
+  "richtig": 45,
+  "stichprobe": "50 zufällig gezogene Captions (seed 42) nach der Klassifikation von gpt-4o-mini manuell geprüft",
+  "fehlerbild": "5 Fehlklassifikationen (u. a. LEGO-Sammelaktionen als Gewinnspiel eingestuft, Produktneuheiten ohne Rezeptbezug als Rezept/Food), davon 4 strittige Grenzfälle",
+  "hinweis": "Eine Kategorie je Caption; Mehrdeutige Captions werden einer Kategorie zugeordnet."
+}
