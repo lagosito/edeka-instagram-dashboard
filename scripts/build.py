@@ -122,6 +122,8 @@ for rec in json.load(open(RAW)):
         'er': statistics.mean(ers) if ers else 0,
         'er_med': statistics.median(ers) if ers else 0,
         'r30': r30, 'inter': sum(likes) + sum(coms),
+        'med_inter': statistics.median([(x + y) for x, y in zip(likes, coms)]) if likes else 0,
+        'er_pool': list(ers),
         'url': f"https://www.instagram.com/{h}/",
     })
 
@@ -152,8 +154,8 @@ OER = statistics.mean([a['er'] for a in accounts if a['followers'] >= 500]) if a
 OER_MED = statistics.median([a['er'] for a in accounts if a['followers'] >= 500]) if accounts else 0
 O_INT_POST = statistics.mean([(a['inter'] / a['n']) for a in accounts if a['n']]) if accounts else 0
 
-# Ranking: nur Konten mit Like-Werten (Mindestzahl in Phase 2 = 6)
-MOV_MIN = 5
+# Ranking: nur Konten mit Like-Werten (mind. 6 Beitraege mit Like-Wert)
+MOV_MIN = 6
 mov = sorted([a for a in accounts if a['followers'] >= 500 and a['n_valid'] >= MOV_MIN],
              key=lambda a: -a['er'])
 mov_med = sorted([a for a in accounts if a['followers'] >= 500 and a['n_valid'] >= MOV_MIN],
@@ -518,6 +520,46 @@ def t_profiles():
         <td class="num">{de(a['inter'])}</td><td class="num">{a['n']}</td><td class="num">{a['r30']}</td></tr>""")
     return ''.join(out)
 
+# Phase 2: Ranking nach Median-ER, getrennt nach Groessensklassen
+RANK_MIN_FOLLOWER = 500
+SEGMENTS = [('< 2.000 Follower', lambda a: a['followers'] < 2000),
+            ('2.000 bis 10.000 Follower', lambda a: 2000 <= a['followers'] <= 10000),
+            ('> 10.000 Follower', lambda a: a['followers'] > 10000)]
+
+def rank_pool(pred):
+    return sorted([a for a in accounts
+                   if a['followers'] >= RANK_MIN_FOLLOWER and a['n_valid'] >= MOV_MIN and pred(a)],
+                  key=lambda a: -a['er_med'])
+
+def t_rank(idx):
+    rows = rank_pool(SEGMENTS[idx][1])
+    out = []
+    for i, a in enumerate(rows[:15]):
+        out.append(f"""<tr><td>{i+1}</td>
+        <td><a href="{esc(a['url'])}" target="_blank">@{esc(a['handle'])}</a><div class="sub2">{esc(a['nombre'])}</div></td>
+        <td class="num">{de(a['followers'])}</td>
+        <td class="num strong">{de(a['er_med'], 2)} %</td>
+        <td class="num muted">{de(a['er'], 1)} %</td>
+        <td class="num">{de(a['med_inter'])}</td>
+        <td class="num">{a['n_valid']}</td><td class="num">{a['r30']}</td></tr>""")
+    return ''.join(out)
+
+def seg_kpi(idx):
+    rows = rank_pool(SEGMENTS[idx][1])
+    if not rows:
+        return f'<div class="mini"><span>–</span>{esc(SEGMENTS[idx][0])}: kein Profil mit {MOV_MIN} Beiträgen</div>'
+    return (f'<div class="mini"><span>@{esc(rows[0]["handle"])}</span>'
+            f'{esc(SEGMENTS[idx][0])}: {de(rows[0]["er_med"], 2)} % Median-ER</div>')
+
+SEG_KPIS = ''.join(seg_kpi(i) for i in range(3))
+SEG_PANELS = ''.join(f"""<div class="segpanel" id="g{i}"{' style="display:none"' if i else ''}>
+            <div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th>
+              <th class="num">ER Median</th><th class="num muted">ER Ø</th>
+              <th class="num">Interaktionen/Beitrag (Med.)</th><th class="num">Beiträge m. Like</th><th class="num">30 T.</th></tr></thead>
+            <tbody>{t_rank(i)}</tbody></table></div>
+            <p class="hint" style="margin-top:8px">{esc(SEGMENTS[i][0])}: {len(rank_pool(SEGMENTS[i][1]))} Profile im Ranking (ab {RANK_MIN_FOLLOWER} Followern, mindestens {MOV_MIN} Beiträge mit Like-Wert), Sortierung nach Median-ER, Top 15 gezeigt.</p>
+          </div>""" for i in range(3))
+
 def t_best():
     out = []
     for i, p in enumerate(best_posts[:15]):
@@ -612,6 +654,8 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-s
 .card.blue .hint{color:rgba(255,255,255,.85)}
 .arrow{position:absolute;top:20px;right:20px;color:#B9BFCC;font-size:15px}
 .card.blue .arrow{color:rgba(255,255,255,.8)}
+.muted{color:#9AA0AE}
+.segtabs{margin-bottom:10px}
 .span6{grid-column:span 6}.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}
 .kpi .k{font-size:32px;font-weight:300;color:#2B2F36;letter-spacing:-.5px}
 .kpi .l{font-size:13.5px;color:#6B7280;margin-bottom:6px}
@@ -712,8 +756,22 @@ function sec(id, el){
 }
 function tab(id, el){
   document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+  var t = document.getElementById(id);
+  t.style.display='block';
+  document.querySelectorAll('.tabs .tab').forEach(x=>x.classList.remove('on'));
+  el.classList.add('on');
+  var st = t.querySelector('.segtabs');
+  if (st){
+    st.querySelectorAll('.tab').forEach((b,i)=>b.classList.toggle('on', i===0));
+    t.querySelectorAll('.segpanel').forEach((s,i)=>s.style.display = i===0 ? 'block' : 'none');
+  }
+}
+function seg(id, el){
+  var panel = el.closest('.panel');
+  var bar = el.closest('.segtabs');
+  panel.querySelectorAll('.segpanel').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
-  document.querySelectorAll('.tabs .tab').forEach(t=>t.classList.remove('on'));
+  bar.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
   el.classList.add('on');
 }
 """
@@ -842,12 +900,11 @@ html_doc = f"""<!DOCTYPE html>
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>02 · Profiles &amp; Content — Analyse je Profil</h3>
-          <p class="hint">{de(N_KONTEN)} Profile · {N_AKTIV30} davon in den letzten 30 Tagen aktiv · Ranking nach Engagement-Rate (Konten ab 500 Followern, min. 5 Beiträge)</p>
+          <p class="hint">{de(N_KONTEN)} Profile · {N_AKTIV30} davon in den letzten 30 Tagen aktiv · Ranking nach Median-ER, getrennt nach Größenklassen (ab {RANK_MIN_FOLLOWER} Followern, mindestens {MOV_MIN} Beiträge mit Like-Wert)</p>
           <div class="miniRow">
             <div class="mini"><span>{de(N_KONTEN)}</span>Profile gesamt</div>
             <div class="mini"><span>{N_AKTIV30} ({PCT_AKTIV:.0f} %)</span>aktiv in 30 Tagen</div>
-            <div class="mini"><span>{esc(mov_med[0]['handle'])}</span>bester Median: {de(mov_med[0]['er_med'], 2)} % ER</div>
-            <div class="mini"><span>{esc(aktiv[-1]['handle'])}</span>schwächstes aktives Profil</div>
+            {SEG_KPIS}
           </div>
         </div>
 
@@ -856,15 +913,18 @@ html_doc = f"""<!DOCTYPE html>
           <h3>Rankings</h3>
           <p class="hint">Wechsle zwischen Profilen, besten/schwächsten Beiträgen und Aktivität</p>
           <div class="tabs">
-            <button class="tab on" onclick="tab('u1',this)">Profile nach ER</button>
+            <button class="tab on" onclick="tab('u1',this)">Profile nach Median-ER</button>
             <button class="tab" onclick="tab('u2',this)">Top 15 Beiträge</button>
             <button class="tab" onclick="tab('u3',this)">Schwächste Beiträge</button>
             <button class="tab" onclick="tab('u4',this)">Aktivste Profile</button>
           </div>
           <div id="u1" class="panel">
-            <table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th><th class="num">ER Ø</th><th class="num">ER Median</th>
-              <th class="num">Likes/Beitr.</th><th class="num">Interaktionen</th><th class="num">Beiträge</th><th class="num">30 T.</th></tr></thead>
-            <tbody>{t_profiles()}</tbody></table>
+            <div class="tabs segtabs">
+              <button class="tab on" onclick="seg('g0',this)">{'< 2.000 Follower'}</button>
+              <button class="tab" onclick="seg('g1',this)">2.000 bis 10.000 Follower</button>
+              <button class="tab" onclick="seg('g2',this)">{'> 10.000 Follower'}</button>
+            </div>
+            {SEG_PANELS}
           </div>
           <div id="u2" class="panel" style="display:none">
             <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>

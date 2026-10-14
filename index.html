@@ -30,6 +30,8 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-s
 .card.blue .hint{color:rgba(255,255,255,.85)}
 .arrow{position:absolute;top:20px;right:20px;color:#B9BFCC;font-size:15px}
 .card.blue .arrow{color:rgba(255,255,255,.8)}
+.muted{color:#9AA0AE}
+.segtabs{margin-bottom:10px}
 .span6{grid-column:span 6}.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}
 .kpi .k{font-size:32px;font-weight:300;color:#2B2F36;letter-spacing:-.5px}
 .kpi .l{font-size:13.5px;color:#6B7280;margin-bottom:6px}
@@ -228,12 +230,11 @@ a:hover{text-decoration:underline}
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>02 · Profiles &amp; Content — Analyse je Profil</h3>
-          <p class="hint">205 Profile · 170 davon in den letzten 30 Tagen aktiv · Ranking nach Engagement-Rate (Konten ab 500 Followern, min. 5 Beiträge)</p>
+          <p class="hint">205 Profile · 170 davon in den letzten 30 Tagen aktiv · Ranking nach Median-ER, getrennt nach Größenklassen (ab 500 Followern, mindestens 6 Beiträge mit Like-Wert)</p>
           <div class="miniRow">
             <div class="mini"><span>205</span>Profile gesamt</div>
             <div class="mini"><span>170 (83 %)</span>aktiv in 30 Tagen</div>
-            <div class="mini"><span>edeka_heder</span>bester Median: 21,67 % ER</div>
-            <div class="mini"><span>edekacenter.amthor</span>schwächstes aktives Profil</div>
+            <div class="mini"><span>@edeka_heder</span>&lt; 2.000 Follower: 21,67 % Median-ER</div><div class="mini"><span>@edekafriedebold</span>2.000 bis 10.000 Follower: 6,23 % Median-ER</div><div class="mini"><span>@edekasuedbayern</span>&gt; 10.000 Follower: 1,84 % Median-ER</div>
           </div>
         </div>
 
@@ -242,115 +243,276 @@ a:hover{text-decoration:underline}
           <h3>Rankings</h3>
           <p class="hint">Wechsle zwischen Profilen, besten/schwächsten Beiträgen und Aktivität</p>
           <div class="tabs">
-            <button class="tab on" onclick="tab('u1',this)">Profile nach ER</button>
+            <button class="tab on" onclick="tab('u1',this)">Profile nach Median-ER</button>
             <button class="tab" onclick="tab('u2',this)">Top 15 Beiträge</button>
             <button class="tab" onclick="tab('u3',this)">Schwächste Beiträge</button>
             <button class="tab" onclick="tab('u4',this)">Aktivste Profile</button>
           </div>
           <div id="u1" class="panel">
-            <div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th><th class="num">ER Ø</th><th class="num">ER Median</th>
-              <th class="num">Likes/Beitr.</th><th class="num">Interaktionen</th><th class="num">Beiträge</th><th class="num">30 T.</th></tr></thead>
+            <div class="tabs segtabs">
+              <button class="tab on" onclick="seg('g0',this)">< 2.000 Follower</button>
+              <button class="tab" onclick="seg('g1',this)">2.000 bis 10.000 Follower</button>
+              <button class="tab" onclick="seg('g2',this)">> 10.000 Follower</button>
+            </div>
+            <div class="segpanel" id="g0">
+            <div class="tw"><div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th>
+              <th class="num">ER Median</th><th class="num muted">ER Ø</th>
+              <th class="num">Interaktionen/Beitrag (Med.)</th><th class="num">Beiträge m. Like</th><th class="num">30 T.</th></tr></thead>
             <tbody><tr><td>1</td>
-        <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a><div class="sub2">Edeka Fedele</div></td>
-        <td class="num">2.879</td><td class="num strong">60.6 %</td>
-        <td class="num">5.07 %</td><td class="num">1.732</td>
-        <td class="num">19.189</td><td class="num">12</td><td class="num">2</td></tr><tr><td>2</td>
-        <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a><div class="sub2">EDEKA Hengge</div></td>
-        <td class="num">1.217</td><td class="num strong">57.2 %</td>
-        <td class="num">11.75 %</td><td class="num">683</td>
-        <td class="num">8.356</td><td class="num">12</td><td class="num">6</td></tr><tr><td>3</td>
-        <td><a href="https://www.instagram.com/edekahabermann/" target="_blank">@edekahabermann</a><div class="sub2">𝐄𝐝𝐞𝐤𝐚 𝐂𝐞𝐧𝐭𝐞𝐫 𝐇𝐚𝐛𝐞𝐫𝐦𝐚𝐧𝐧</div></td>
-        <td class="num">708</td><td class="num strong">36.0 %</td>
-        <td class="num">19.21 %</td><td class="num">247</td>
-        <td class="num">2.295</td><td class="num">12</td><td class="num">2</td></tr><tr><td>4</td>
         <td><a href="https://www.instagram.com/edeka_heder/" target="_blank">@edeka_heder</a><div class="sub2">E-Center Heder</div></td>
-        <td class="num">1.583</td><td class="num strong">32.5 %</td>
-        <td class="num">21.67 %</td><td class="num">264</td>
-        <td class="num">6.172</td><td class="num">12</td><td class="num">0</td></tr><tr><td>5</td>
-        <td><a href="https://www.instagram.com/edeka.fromm/" target="_blank">@edeka.fromm</a><div class="sub2">EDEKA Fromm | Wir 💛 Lebensmittel</div></td>
-        <td class="num">1.629</td><td class="num strong">25.4 %</td>
-        <td class="num">5.34 %</td><td class="num">346</td>
-        <td class="num">4.134</td><td class="num">12</td><td class="num">0</td></tr><tr><td>6</td>
+        <td class="num">1.583</td>
+        <td class="num strong">21,67 %</td>
+        <td class="num muted">32,5 %</td>
+        <td class="num">343</td>
+        <td class="num">12</td><td class="num">0</td></tr><tr><td>2</td>
+        <td><a href="https://www.instagram.com/edekahabermann/" target="_blank">@edekahabermann</a><div class="sub2">𝐄𝐝𝐞𝐤𝐚 𝐂𝐞𝐧𝐭𝐞𝐫 𝐇𝐚𝐛𝐞𝐫𝐦𝐚𝐧𝐧</div></td>
+        <td class="num">708</td>
+        <td class="num strong">19,21 %</td>
+        <td class="num muted">36,0 %</td>
+        <td class="num">136</td>
+        <td class="num">9</td><td class="num">2</td></tr><tr><td>3</td>
         <td><a href="https://www.instagram.com/edeka.giessenwest/" target="_blank">@edeka.giessenwest</a><div class="sub2">Edeka Marius Schneider</div></td>
-        <td class="num">869</td><td class="num strong">20.8 %</td>
-        <td class="num">17.15 %</td><td class="num">175</td>
-        <td class="num">1.988</td><td class="num">12</td><td class="num">1</td></tr><tr><td>7</td>
-        <td><a href="https://www.instagram.com/edeka.hessenring/" target="_blank">@edeka.hessenring</a><div class="sub2">EDEKA Hessenring</div></td>
-        <td class="num">1.128</td><td class="num strong">17.4 %</td>
-        <td class="num">3.10 %</td><td class="num">194</td>
-        <td class="num">2.161</td><td class="num">12</td><td class="num">10</td></tr><tr><td>8</td>
-        <td><a href="https://www.instagram.com/edeka_gabriel/" target="_blank">@edeka_gabriel</a><div class="sub2">edeka_gabriel</div></td>
-        <td class="num">1.246</td><td class="num strong">16.1 %</td>
-        <td class="num">0.52 %</td><td class="num">196</td>
-        <td class="num">1.603</td><td class="num">12</td><td class="num">12</td></tr><tr><td>9</td>
-        <td><a href="https://www.instagram.com/edekakapfenberger/" target="_blank">@edekakapfenberger</a><div class="sub2">Edeka Kapfenberger</div></td>
-        <td class="num">703</td><td class="num strong">16.1 %</td>
-        <td class="num">12.45 %</td><td class="num">111</td>
-        <td class="num">1.356</td><td class="num">12</td><td class="num">5</td></tr><tr><td>10</td>
-        <td><a href="https://www.instagram.com/ecenter.zerbst/" target="_blank">@ecenter.zerbst</a><div class="sub2">EDEKA Center Zerbst</div></td>
-        <td class="num">1.424</td><td class="num strong">15.5 %</td>
-        <td class="num">12.18 %</td><td class="num">220</td>
-        <td class="num">2.647</td><td class="num">12</td><td class="num">4</td></tr><tr><td>11</td>
-        <td><a href="https://www.instagram.com/edekatiedemann/" target="_blank">@edekatiedemann</a><div class="sub2">Edeka Tiedemann</div></td>
-        <td class="num">797</td><td class="num strong">14.8 %</td>
-        <td class="num">12.36 %</td><td class="num">116</td>
-        <td class="num">1.416</td><td class="num">12</td><td class="num">0</td></tr><tr><td>12</td>
-        <td><a href="https://www.instagram.com/edeka_paak_erfurt/" target="_blank">@edeka_paak_erfurt</a><div class="sub2">EDEKA_Paak_Erfurt</div></td>
-        <td class="num">878</td><td class="num strong">14.7 %</td>
-        <td class="num">3.08 %</td><td class="num">123</td>
-        <td class="num">1.415</td><td class="num">12</td><td class="num">11</td></tr><tr><td>13</td>
+        <td class="num">869</td>
+        <td class="num strong">17,15 %</td>
+        <td class="num muted">20,8 %</td>
+        <td class="num">149</td>
+        <td class="num">11</td><td class="num">1</td></tr><tr><td>4</td>
         <td><a href="https://www.instagram.com/edeka.gunkel/" target="_blank">@edeka.gunkel</a><div class="sub2">EDEKA Gunkel | Qualität aus der Region</div></td>
-        <td class="num">1.147</td><td class="num strong">13.8 %</td>
-        <td class="num">14.47 %</td><td class="num">156</td>
-        <td class="num">1.898</td><td class="num">12</td><td class="num">5</td></tr><tr><td>14</td>
-        <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a><div class="sub2">EDEKA Berlin</div></td>
-        <td class="num">7.354</td><td class="num strong">13.4 %</td>
-        <td class="num">0.59 %</td><td class="num">953</td>
-        <td class="num">11.846</td><td class="num">12</td><td class="num">12</td></tr><tr><td>15</td>
-        <td><a href="https://www.instagram.com/edekavogt/" target="_blank">@edekavogt</a><div class="sub2">EDEKA Vogt</div></td>
-        <td class="num">878</td><td class="num strong">12.2 %</td>
-        <td class="num">7.29 %</td><td class="num">79</td>
-        <td class="num">1.282</td><td class="num">12</td><td class="num">6</td></tr><tr><td>16</td>
-        <td><a href="https://www.instagram.com/edeka.lorenz/" target="_blank">@edeka.lorenz</a><div class="sub2">EDEKA LORENZ</div></td>
-        <td class="num">1.640</td><td class="num strong">10.0 %</td>
-        <td class="num">3.81 %</td><td class="num">151</td>
-        <td class="num">1.976</td><td class="num">12</td><td class="num">0</td></tr><tr><td>17</td>
-        <td><a href="https://www.instagram.com/edeka_huber/" target="_blank">@edeka_huber</a><div class="sub2">EDEKA Huber</div></td>
-        <td class="num">770</td><td class="num strong">9.6 %</td>
-        <td class="num">0.78 %</td><td class="num">74</td>
-        <td class="num">519</td><td class="num">12</td><td class="num">12</td></tr><tr><td>18</td>
-        <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a><div class="sub2">EDEKA Gebauer’s</div></td>
-        <td class="num">7.521</td><td class="num strong">9.4 %</td>
-        <td class="num">2.81 %</td><td class="num">467</td>
-        <td class="num">7.083</td><td class="num">12</td><td class="num">10</td></tr><tr><td>19</td>
-        <td><a href="https://www.instagram.com/ecenter.haubrock.vlotho/" target="_blank">@ecenter.haubrock.vlotho</a><div class="sub2">ecenter.haubrock.vlotho</div></td>
-        <td class="num">647</td><td class="num strong">9.3 %</td>
-        <td class="num">5.80 %</td><td class="num">46</td>
-        <td class="num">720</td><td class="num">12</td><td class="num">4</td></tr><tr><td>20</td>
-        <td><a href="https://www.instagram.com/e_center_tbb/" target="_blank">@e_center_tbb</a><div class="sub2">E center Dürr</div></td>
-        <td class="num">1.321</td><td class="num strong">9.2 %</td>
-        <td class="num">6.89 %</td><td class="num">102</td>
-        <td class="num">1.331</td><td class="num">12</td><td class="num">11</td></tr><tr><td>21</td>
+        <td class="num">1.147</td>
+        <td class="num strong">14,47 %</td>
+        <td class="num muted">13,8 %</td>
+        <td class="num">166</td>
+        <td class="num">12</td><td class="num">5</td></tr><tr><td>5</td>
+        <td><a href="https://www.instagram.com/edekakapfenberger/" target="_blank">@edekakapfenberger</a><div class="sub2">Edeka Kapfenberger</div></td>
+        <td class="num">703</td>
+        <td class="num strong">12,45 %</td>
+        <td class="num muted">16,1 %</td>
+        <td class="num">88</td>
+        <td class="num">12</td><td class="num">5</td></tr><tr><td>6</td>
+        <td><a href="https://www.instagram.com/edekatiedemann/" target="_blank">@edekatiedemann</a><div class="sub2">Edeka Tiedemann</div></td>
+        <td class="num">797</td>
+        <td class="num strong">12,36 %</td>
+        <td class="num muted">14,8 %</td>
+        <td class="num">98</td>
+        <td class="num">12</td><td class="num">0</td></tr><tr><td>7</td>
+        <td><a href="https://www.instagram.com/ecenter.zerbst/" target="_blank">@ecenter.zerbst</a><div class="sub2">EDEKA Center Zerbst</div></td>
+        <td class="num">1.424</td>
+        <td class="num strong">12,18 %</td>
+        <td class="num muted">15,5 %</td>
+        <td class="num">174</td>
+        <td class="num">12</td><td class="num">4</td></tr><tr><td>8</td>
+        <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a><div class="sub2">EDEKA Hengge</div></td>
+        <td class="num">1.217</td>
+        <td class="num strong">11,75 %</td>
+        <td class="num muted">57,2 %</td>
+        <td class="num">143</td>
+        <td class="num">12</td><td class="num">6</td></tr><tr><td>9</td>
         <td><a href="https://www.instagram.com/edeka.center.walsrode/" target="_blank">@edeka.center.walsrode</a><div class="sub2">EDEKA center Walsrode</div></td>
-        <td class="num">501</td><td class="num strong">8.2 %</td>
-        <td class="num">10.78 %</td><td class="num">38</td>
-        <td class="num">330</td><td class="num">12</td><td class="num">7</td></tr><tr><td>22</td>
-        <td><a href="https://www.instagram.com/edeka.birol/" target="_blank">@edeka.birol</a><div class="sub2">Edeka Birol</div></td>
-        <td class="num">511</td><td class="num strong">8.1 %</td>
-        <td class="num">2.74 %</td><td class="num">41</td>
-        <td class="num">497</td><td class="num">12</td><td class="num">9</td></tr><tr><td>23</td>
-        <td><a href="https://www.instagram.com/e_center_bernburg/" target="_blank">@e_center_bernburg</a><div class="sub2">E center Bernburg</div></td>
-        <td class="num">690</td><td class="num strong">6.6 %</td>
-        <td class="num">3.91 %</td><td class="num">46</td>
-        <td class="num">550</td><td class="num">12</td><td class="num">3</td></tr><tr><td>24</td>
-        <td><a href="https://www.instagram.com/ecenterweserpark/" target="_blank">@ecenterweserpark</a><div class="sub2">EDEKA center Weserpark</div></td>
-        <td class="num">1.541</td><td class="num strong">6.3 %</td>
-        <td class="num">2.01 %</td><td class="num">94</td>
-        <td class="num">1.063</td><td class="num">12</td><td class="num">1</td></tr><tr><td>25</td>
-        <td><a href="https://www.instagram.com/edeka.mueser/" target="_blank">@edeka.mueser</a><div class="sub2">Edeka Müser</div></td>
-        <td class="num">666</td><td class="num strong">6.2 %</td>
-        <td class="num">2.03 %</td><td class="num">31</td>
-        <td class="num">498</td><td class="num">12</td><td class="num">4</td></tr></tbody></table></div>
+        <td class="num">501</td>
+        <td class="num strong">10,78 %</td>
+        <td class="num muted">8,2 %</td>
+        <td class="num">54</td>
+        <td class="num">8</td><td class="num">7</td></tr><tr><td>10</td>
+        <td><a href="https://www.instagram.com/edekavogt/" target="_blank">@edekavogt</a><div class="sub2">EDEKA Vogt</div></td>
+        <td class="num">878</td>
+        <td class="num strong">7,29 %</td>
+        <td class="num muted">12,2 %</td>
+        <td class="num">64</td>
+        <td class="num">12</td><td class="num">6</td></tr><tr><td>11</td>
+        <td><a href="https://www.instagram.com/e_center_tbb/" target="_blank">@e_center_tbb</a><div class="sub2">E center Dürr</div></td>
+        <td class="num">1.321</td>
+        <td class="num strong">6,89 %</td>
+        <td class="num muted">9,2 %</td>
+        <td class="num">91</td>
+        <td class="num">11</td><td class="num">11</td></tr><tr><td>12</td>
+        <td><a href="https://www.instagram.com/ecenter_wolmirstedt/" target="_blank">@ecenter_wolmirstedt</a><div class="sub2">E-Center Wolmirstedt</div></td>
+        <td class="num">660</td>
+        <td class="num strong">6,52 %</td>
+        <td class="num muted">6,1 %</td>
+        <td class="num">43</td>
+        <td class="num">12</td><td class="num">3</td></tr><tr><td>13</td>
+        <td><a href="https://www.instagram.com/edeka_kauffmann/" target="_blank">@edeka_kauffmann</a><div class="sub2">EDEKA Kauffmann</div></td>
+        <td class="num">718</td>
+        <td class="num strong">6,27 %</td>
+        <td class="num muted">5,6 %</td>
+        <td class="num">45</td>
+        <td class="num">10</td><td class="num">4</td></tr><tr><td>14</td>
+        <td><a href="https://www.instagram.com/ecenter.haubrock.vlotho/" target="_blank">@ecenter.haubrock.vlotho</a><div class="sub2">ecenter.haubrock.vlotho</div></td>
+        <td class="num">647</td>
+        <td class="num strong">5,80 %</td>
+        <td class="num muted">9,3 %</td>
+        <td class="num">38</td>
+        <td class="num">12</td><td class="num">4</td></tr><tr><td>15</td>
+        <td><a href="https://www.instagram.com/ecenter_salzgitter/" target="_blank">@ecenter_salzgitter</a><div class="sub2">E-Center Salzgitter</div></td>
+        <td class="num">1.366</td>
+        <td class="num strong">5,42 %</td>
+        <td class="num muted">5,9 %</td>
+        <td class="num">74</td>
+        <td class="num">11</td><td class="num">0</td></tr></tbody></table></div></div>
+            <p class="hint" style="margin-top:8px">&lt; 2.000 Follower: 93 Profile im Ranking (ab 500 Followern, mindestens 6 Beiträge mit Like-Wert), Sortierung nach Median-ER, Top 15 gezeigt.</p>
+          </div><div class="segpanel" id="g1" style="display:none">
+            <div class="tw"><div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th>
+              <th class="num">ER Median</th><th class="num muted">ER Ø</th>
+              <th class="num">Interaktionen/Beitrag (Med.)</th><th class="num">Beiträge m. Like</th><th class="num">30 T.</th></tr></thead>
+            <tbody><tr><td>1</td>
+        <td><a href="https://www.instagram.com/edekafriedebold/" target="_blank">@edekafriedebold</a><div class="sub2">Edeka Friedebold</div></td>
+        <td class="num">2.711</td>
+        <td class="num strong">6,23 %</td>
+        <td class="num muted">5,6 %</td>
+        <td class="num">169</td>
+        <td class="num">9</td><td class="num">9</td></tr><tr><td>2</td>
+        <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a><div class="sub2">Edeka Fedele</div></td>
+        <td class="num">2.879</td>
+        <td class="num strong">5,07 %</td>
+        <td class="num muted">60,6 %</td>
+        <td class="num">146</td>
+        <td class="num">11</td><td class="num">2</td></tr><tr><td>3</td>
+        <td><a href="https://www.instagram.com/ecenter.sulingen/" target="_blank">@ecenter.sulingen</a><div class="sub2">E-Center Sulingen</div></td>
+        <td class="num">2.133</td>
+        <td class="num strong">5,04 %</td>
+        <td class="num muted">5,5 %</td>
+        <td class="num">108</td>
+        <td class="num">12</td><td class="num">0</td></tr><tr><td>4</td>
+        <td><a href="https://www.instagram.com/edekakappe/" target="_blank">@edekakappe</a><div class="sub2">EDEKA Kappe</div></td>
+        <td class="num">2.080</td>
+        <td class="num strong">2,93 %</td>
+        <td class="num muted">5,6 %</td>
+        <td class="num">61</td>
+        <td class="num">11</td><td class="num">3</td></tr><tr><td>5</td>
+        <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a><div class="sub2">EDEKA Gebauer’s</div></td>
+        <td class="num">7.521</td>
+        <td class="num strong">2,81 %</td>
+        <td class="num muted">9,4 %</td>
+        <td class="num">211</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>6</td>
+        <td><a href="https://www.instagram.com/edeka.rentschler/" target="_blank">@edeka.rentschler</a><div class="sub2">EDEKA Rentschler</div></td>
+        <td class="num">2.286</td>
+        <td class="num strong">2,67 %</td>
+        <td class="num muted">3,0 %</td>
+        <td class="num">61</td>
+        <td class="num">9</td><td class="num">4</td></tr><tr><td>7</td>
+        <td><a href="https://www.instagram.com/edeka_hayunga/" target="_blank">@edeka_hayunga</a><div class="sub2">Edeka Hayunga &amp; E Center A23</div></td>
+        <td class="num">3.960</td>
+        <td class="num strong">2,30 %</td>
+        <td class="num muted">6,0 %</td>
+        <td class="num">91</td>
+        <td class="num">10</td><td class="num">6</td></tr><tr><td>8</td>
+        <td><a href="https://www.instagram.com/edeka_baur/" target="_blank">@edeka_baur</a><div class="sub2">Frischemärkte BAUR</div></td>
+        <td class="num">3.054</td>
+        <td class="num strong">1,80 %</td>
+        <td class="num muted">2,9 %</td>
+        <td class="num">55</td>
+        <td class="num">12</td><td class="num">3</td></tr><tr><td>9</td>
+        <td><a href="https://www.instagram.com/edeka_warnowpark/" target="_blank">@edeka_warnowpark</a><div class="sub2">EDEKA Warnow Park</div></td>
+        <td class="num">7.157</td>
+        <td class="num strong">1,76 %</td>
+        <td class="num muted">1,9 %</td>
+        <td class="num">126</td>
+        <td class="num">12</td><td class="num">12</td></tr><tr><td>10</td>
+        <td><a href="https://www.instagram.com/edeka_center_angerbogen/" target="_blank">@edeka_center_angerbogen</a><div class="sub2">E-Center Angerbogen</div></td>
+        <td class="num">3.697</td>
+        <td class="num strong">1,69 %</td>
+        <td class="num muted">2,3 %</td>
+        <td class="num">62</td>
+        <td class="num">12</td><td class="num">12</td></tr><tr><td>11</td>
+        <td><a href="https://www.instagram.com/edekajakobi/" target="_blank">@edekajakobi</a><div class="sub2">EDEKA Jakobi</div></td>
+        <td class="num">3.741</td>
+        <td class="num strong">1,66 %</td>
+        <td class="num muted">2,4 %</td>
+        <td class="num">62</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>12</td>
+        <td><a href="https://www.instagram.com/edeka_meyer/" target="_blank">@edeka_meyer</a><div class="sub2">EDEKA MEYER</div></td>
+        <td class="num">4.088</td>
+        <td class="num strong">1,61 %</td>
+        <td class="num muted">2,4 %</td>
+        <td class="num">66</td>
+        <td class="num">9</td><td class="num">5</td></tr><tr><td>13</td>
+        <td><a href="https://www.instagram.com/edeka.hildebrandt/" target="_blank">@edeka.hildebrandt</a><div class="sub2">EDEKA Hildebrandt</div></td>
+        <td class="num">2.421</td>
+        <td class="num strong">1,57 %</td>
+        <td class="num muted">6,0 %</td>
+        <td class="num">38</td>
+        <td class="num">11</td><td class="num">6</td></tr><tr><td>14</td>
+        <td><a href="https://www.instagram.com/edeka.minden.hannover/" target="_blank">@edeka.minden.hannover</a><div class="sub2">EDEKA Minden-Hannover</div></td>
+        <td class="num">7.218</td>
+        <td class="num strong">1,41 %</td>
+        <td class="num muted">3,3 %</td>
+        <td class="num">102</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>15</td>
+        <td><a href="https://www.instagram.com/edekalippstadt/" target="_blank">@edekalippstadt</a><div class="sub2">EDEKA Rumpsmüller Lippstadt</div></td>
+        <td class="num">3.808</td>
+        <td class="num strong">1,37 %</td>
+        <td class="num muted">2,7 %</td>
+        <td class="num">52</td>
+        <td class="num">12</td><td class="num">8</td></tr></tbody></table></div></div>
+            <p class="hint" style="margin-top:8px">2.000 bis 10.000 Follower: 45 Profile im Ranking (ab 500 Followern, mindestens 6 Beiträge mit Like-Wert), Sortierung nach Median-ER, Top 15 gezeigt.</p>
+          </div><div class="segpanel" id="g2" style="display:none">
+            <div class="tw"><div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th>
+              <th class="num">ER Median</th><th class="num muted">ER Ø</th>
+              <th class="num">Interaktionen/Beitrag (Med.)</th><th class="num">Beiträge m. Like</th><th class="num">30 T.</th></tr></thead>
+            <tbody><tr><td>1</td>
+        <td><a href="https://www.instagram.com/edekasuedbayern/" target="_blank">@edekasuedbayern</a><div class="sub2">EDEKA Südbayern</div></td>
+        <td class="num">27.719</td>
+        <td class="num strong">1,84 %</td>
+        <td class="num muted">2,0 %</td>
+        <td class="num">510</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>2</td>
+        <td><a href="https://www.instagram.com/edeka.ziegler/" target="_blank">@edeka.ziegler</a><div class="sub2">EDEKA Ziegler</div></td>
+        <td class="num">13.013</td>
+        <td class="num strong">1,73 %</td>
+        <td class="num muted">2,2 %</td>
+        <td class="num">226</td>
+        <td class="num">12</td><td class="num">12</td></tr><tr><td>3</td>
+        <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a><div class="sub2">EDEKA Karriere</div></td>
+        <td class="num">13.206</td>
+        <td class="num strong">1,31 %</td>
+        <td class="num muted">5,2 %</td>
+        <td class="num">173</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>4</td>
+        <td><a href="https://www.instagram.com/edeka_nolte/" target="_blank">@edeka_nolte</a><div class="sub2">Edeka Nolte</div></td>
+        <td class="num">15.251</td>
+        <td class="num strong">0,72 %</td>
+        <td class="num muted">4,7 %</td>
+        <td class="num">110</td>
+        <td class="num">12</td><td class="num">11</td></tr><tr><td>5</td>
+        <td><a href="https://www.instagram.com/edeka_struve/" target="_blank">@edeka_struve</a><div class="sub2">Edeka Struve - Wir 💛 Lebensmittel</div></td>
+        <td class="num">15.258</td>
+        <td class="num strong">0,61 %</td>
+        <td class="num muted">4,1 %</td>
+        <td class="num">94</td>
+        <td class="num">12</td><td class="num">1</td></tr><tr><td>6</td>
+        <td><a href="https://www.instagram.com/edeka_stiegler/" target="_blank">@edeka_stiegler</a><div class="sub2">Edeka Stiegler</div></td>
+        <td class="num">21.696</td>
+        <td class="num strong">0,40 %</td>
+        <td class="num muted">0,6 %</td>
+        <td class="num">87</td>
+        <td class="num">12</td><td class="num">12</td></tr><tr><td>7</td>
+        <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a><div class="sub2">Moin aus der EDEKA Kochschule! 👋</div></td>
+        <td class="num">31.122</td>
+        <td class="num strong">0,13 %</td>
+        <td class="num muted">1,9 %</td>
+        <td class="num">42</td>
+        <td class="num">10</td><td class="num">10</td></tr><tr><td>8</td>
+        <td><a href="https://www.instagram.com/edekasuedwest/" target="_blank">@edekasuedwest</a><div class="sub2">EDEKA Südwest</div></td>
+        <td class="num">65.859</td>
+        <td class="num strong">0,13 %</td>
+        <td class="num muted">0,3 %</td>
+        <td class="num">83</td>
+        <td class="num">9</td><td class="num">9</td></tr><tr><td>9</td>
+        <td><a href="https://www.instagram.com/edeka.fleck/" target="_blank">@edeka.fleck</a><div class="sub2">EDEKA Fleck</div></td>
+        <td class="num">18.467</td>
+        <td class="num strong">0,11 %</td>
+        <td class="num muted">0,2 %</td>
+        <td class="num">20</td>
+        <td class="num">12</td><td class="num">12</td></tr><tr><td>10</td>
+        <td><a href="https://www.instagram.com/edeka/" target="_blank">@edeka</a><div class="sub2">EDEKA</div></td>
+        <td class="num">296.503</td>
+        <td class="num strong">0,04 %</td>
+        <td class="num muted">0,5 %</td>
+        <td class="num">133</td>
+        <td class="num">10</td><td class="num">10</td></tr></tbody></table></div></div>
+            <p class="hint" style="margin-top:8px">&gt; 10.000 Follower: 10 Profile im Ranking (ab 500 Followern, mindestens 6 Beiträge mit Like-Wert), Sortierung nach Median-ER, Top 15 gezeigt.</p>
+          </div>
           </div>
           <div id="u2" class="panel" style="display:none">
             <div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
@@ -1070,8 +1232,22 @@ function sec(id, el){
 }
 function tab(id, el){
   document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+  var t = document.getElementById(id);
+  t.style.display='block';
+  document.querySelectorAll('.tabs .tab').forEach(x=>x.classList.remove('on'));
+  el.classList.add('on');
+  var st = t.querySelector('.segtabs');
+  if (st){
+    st.querySelectorAll('.tab').forEach((b,i)=>b.classList.toggle('on', i===0));
+    t.querySelectorAll('.segpanel').forEach((s,i)=>s.style.display = i===0 ? 'block' : 'none');
+  }
+}
+function seg(id, el){
+  var panel = el.closest('.panel');
+  var bar = el.closest('.segtabs');
+  panel.querySelectorAll('.segpanel').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
-  document.querySelectorAll('.tabs .tab').forEach(t=>t.classList.remove('on'));
+  bar.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
   el.classList.add('on');
 }
 </script>
