@@ -968,12 +968,12 @@ html_doc = f"""<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA · Social Media &amp; Marketing Intelligence</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
 <style>{CSS}</style></head>
 <body><div class="app">
   <div class="main">
     <header class="top">
-      <h1>Edeka <span>Social Media &amp; Marketing Intelligence</span></h1>
+      <h1>Edeka Social Media<br>&amp; Marketing Intelligence</h1>
       <div class="tabs2">
         <span class="tab2 on" onclick="sec('s1',this)">01 Overview</span>
         <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content</span>
@@ -981,7 +981,6 @@ html_doc = f"""<!DOCTYPE html>
         <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence</span>
         <span class="tab2" onclick="sec('s5',this)">05 Insights</span>
       </div>
-      <div class="spacer"></div>
       <span class="meta">Datenstand {STAND} · {de(N_KONTEN)} Profile · {de(N_POSTS)} Beiträge</span>
       <div class="avatar">GL</div>
     </header>
@@ -1334,7 +1333,22 @@ V2_CSS = """
   .footer{padding:16px}
 }
 """
-html_doc = html_doc.replace('</style>', V2_CSS + '</style>', 1)
+V3_CSS = """
+/* --- v3 header + centering --- */
+.main{margin:0 auto;padding:0 32px 46px}
+.top{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:20px;row-gap:34px;padding:44px 0 20px}
+.top h1{grid-column:1/-1;font-family:Outfit,Poppins,sans-serif;font-size:44px;line-height:1.18;font-weight:500;letter-spacing:-.8px;color:#111}
+.tabs2{margin-left:-2px}
+.top .meta{justify-self:end;white-space:nowrap}
+@media(max-width:1000px){.top{grid-template-columns:1fr}.top .meta{justify-self:start}}
+@media(max-width:760px){
+  .main{padding:0 14px 36px}
+  .top{display:grid;row-gap:14px;padding:22px 0 12px}
+  .top h1{font-size:28px;margin:0}
+  .tabs2{margin:0 -14px}
+}
+"""
+html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + '</style>', 1)
 html_doc = re.sub(r'\s*<div class="avatar">GL</div>', '', html_doc)
 html_doc = re.sub(r'\n[ \t]*<div class="ringbox">.*?</svg></div>', '', html_doc, flags=re.S)
 html_doc = html_doc.replace(
