@@ -2,11 +2,11 @@
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA · Social Media &amp; Marketing Intelligence</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-.app{display:flex;min-height:100vh}
+body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.app{min-height:100vh}
 .side{width:74px;background:#fff;box-shadow:1px 0 6px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:14px;position:sticky;top:0;height:100vh}
 .logo{width:38px;height:38px;border-radius:11px;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:10px}
 .sic{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#8A90A0;cursor:pointer;font-size:15px}
@@ -14,7 +14,8 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Inter,-apple-system,'S
 .sic:hover{background:#EEF2FF;color:#2A60FF}
 .main{flex:1;padding:0 26px 46px;max-width:1500px}
 .top{min-height:70px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0}
-.top h1{font-size:17px;font-weight:700;margin:0}
+.top h1{font-size:17px;font-weight:400;margin:0;letter-spacing:-.2px}
+.top h1 span{font-weight:700}
 .tabs2{display:flex;gap:6px;margin-left:14px;flex-wrap:wrap}
 .tab2{padding:7px 13px;border-radius:8px;font-size:12.5px;color:#6B7280;cursor:pointer;font-weight:500;white-space:nowrap}
 .tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
@@ -72,6 +73,20 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Inter,-apple-system,'S
 .steps li{margin:10px 0;line-height:1.55}
 .tagwrap{display:flex;flex-wrap:wrap;gap:8px}
 .tag{background:#E7EDFF;color:#2A60FF;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px}
+.adgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.adcard{border:1px solid #E9ECF2;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 6px rgba(16,24,40,.05)}
+.adimg{position:relative;display:block;line-height:0}
+.adimg img{width:100%;height:172px;object-fit:cover;background:#EEF0F4;display:block}
+.adfmt{position:absolute;left:10px;top:10px;background:rgba(42,96,255,.92);color:#fff;font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px}
+.adbody{padding:14px 16px 16px}
+.adbrand{font-weight:700;font-size:13.5px;color:#2B2F36;margin-bottom:6px}
+.adbrand span{color:#8A90A0;font-weight:500}
+.adlabel{font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#2A60FF;margin:11px 0 4px}
+.adhook{font-size:14px;font-weight:600;color:#2B2F36;line-height:1.4}
+.adwhy{font-size:12.5px;color:#4B5563;line-height:1.55}
+.admeta{font-size:11px;color:#8A90A0;margin-top:10px;line-height:1.5}
+.adlink{font-size:12px;font-weight:600;display:inline-block;margin-top:8px}
+.postlink{font-size:12px;font-weight:600;white-space:nowrap}
 .tabs{display:flex;gap:8px;margin:0 0 4px;flex-wrap:wrap}
 .tab{background:#F1F3F7;border:1px solid #E6E9EF;color:#6B7280;padding:8px 15px;border-radius:9px;cursor:pointer;font-size:13px;font-weight:600}
 .tab.on{background:#2A60FF;border-color:#2A60FF;color:#fff}
@@ -93,17 +108,9 @@ a:hover{text-decoration:underline}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.span6,.span4,.span3,.span2{grid-column:span 1}.hrow{grid-template-columns:120px 1fr 62px}}
 </style></head>
 <body><div class="app">
-  <aside class="side">
-    <div class="logo">EK</div>
-    <div class="sic" onclick="sec('s1',this)" title="01 Overview"><span style="font-size:12px;font-weight:700">1</span></div>
-    <div class="sic" onclick="sec('s2',this)" title="02 Profiles &amp; Content"><span style="font-size:12px;font-weight:700">2</span></div>
-    <div class="sic" onclick="sec('s3',this)" title="03 Campaign Impact"><span style="font-size:12px;font-weight:700">3</span></div>
-    <div class="sic" onclick="sec('s4',this)" title="04 Competitor Intelligence"><span style="font-size:12px;font-weight:700">4</span></div>
-    <div class="sic" onclick="sec('s5',this)" title="05 Insights"><span style="font-size:12px;font-weight:700">5</span></div>
-  </aside>
   <div class="main">
     <header class="top">
-      <h1>Social Media &amp; Marketing Intelligence</h1>
+      <h1>Edeka <span>Social Media &amp; Marketing Intelligence</span></h1>
       <div class="tabs2">
         <span class="tab2 on" onclick="sec('s1',this)">01 Overview</span>
         <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content</span>
@@ -333,33 +340,37 @@ a:hover{text-decoration:underline}
         <td class="num">749</td><td class="num">11</td><td class="num">7</td></tr></tbody></table>
           </div>
           <div id="u2" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th></tr></thead>
-            <tbody><tr><td>1</td><td><img class="th" src="img/b00_edeka_fedele.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
+            <tbody><tr><td>1</td><td><a href="https://www.instagram.com/p/Db3aSO7Ikj5/" target="_blank"><img class="th" src="img/b00_edeka_fedele.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a></td>
         <td class="cap">Rücken stärken oder so ähnlich 👌🏽😂
 
 #edekafedele #edekasüdwest #edekakarriere #satire #spaßbeiderarbeit</td>
         <td class="num strong">16.155</td><td class="num">60</td>
         <td class="num">2026-08-10</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>2</td><td><img class="th" src="img/b01_edeka_sell.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Db3aSO7Ikj5/" target="_blank">Ansehen →</a></td></tr><tr><td>2</td><td><a href="https://www.instagram.com/p/Dd6u3oIo5hY/" target="_blank"><img class="th" src="img/b01_edeka_sell.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_sell/" target="_blank">@edeka_sell</a></td>
         <td class="cap">Man muss ja vorbereitet sein!🎅🍪
 
 #einzelhandel#weihnachten#edekasell#christmas #dermbach</td>
         <td class="num strong">15.993</td><td class="num">38</td>
         <td class="num">2026-09-30</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>3</td><td><img class="th" src="img/b02_edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Dd6u3oIo5hY/" target="_blank">Ansehen →</a></td></tr><tr><td>3</td><td><a href="https://www.instagram.com/p/DeRdakSnJ5Q/" target="_blank"><img class="th" src="img/b02_edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka/" target="_blank">@edeka</a></td>
         <td class="cap">Was hat Menstruation mit Chancengleichheit zu tun? Mehr, als viele denken. 💛 Gemeinsam mit @planinternationaldeutschland​ setzen wir uns für</td>
         <td class="num strong">13.243</td><td class="num">107</td>
         <td class="num">2026-10-09</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>4</td><td><img class="th" src="img/b03_edeka_nolte.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeRdakSnJ5Q/" target="_blank">Ansehen →</a></td></tr><tr><td>4</td><td><a href="https://www.instagram.com/p/DdJwKaAorwA/" target="_blank"><img class="th" src="img/b03_edeka_nolte.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_nolte/" target="_blank">@edeka_nolte</a></td>
         <td class="cap">Alle Jahre wieder.... das Problem kennt jeder Kassierer 😅
 #kasse #federweißer #viral #fyp #edeka</td>
         <td class="num strong">6.618</td><td class="num">419</td>
         <td class="num">2026-09-11</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>5</td><td><img class="th" src="img/b04_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DdJwKaAorwA/" target="_blank">Ansehen →</a></td></tr><tr><td>5</td><td><a href="https://www.instagram.com/p/Dd8bj-Bj_b8/" target="_blank"><img class="th" src="img/b04_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a></td>
         <td class="cap">GEWINNE einen von 2x 50€ EDEKA-Gutscheinen! 🎁
 
@@ -371,19 +382,22 @@ Mitmachen ist easy:
 💬 </td>
         <td class="num strong">4.264</td><td class="num">381</td>
         <td class="num">2026-10-01</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>6</td><td><img class="th" src="img/b05_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Dd8bj-Bj_b8/" target="_blank">Ansehen →</a></td></tr><tr><td>6</td><td><a href="https://www.instagram.com/p/Ddi5iWZgs9p/" target="_blank"><img class="th" src="img/b05_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a></td>
         <td class="cap">Die LEGO Sammelaktion ist im vollem Gang! 🧱💛 Ab sofort in deinem EDEKA in Berlin, einkaufen, sammeln, losbauen. Noch bis zum 17.10.2026 erhä</td>
         <td class="num strong">4.062</td><td class="num">2</td>
         <td class="num">2026-09-21</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>7</td><td><img class="th" src="img/b06_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Ddi5iWZgs9p/" target="_blank">Ansehen →</a></td></tr><tr><td>7</td><td><a href="https://www.instagram.com/p/DeJMKUPskAU/" target="_blank"><img class="th" src="img/b06_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a></td>
         <td class="cap">Anzeige | Part 2 meiner Meal Prep Rezeptreihe: Cremige Kürbislasagne 🎃
 
 Wenn Kürbissuppe und Lasagne ein gemeinsames Rezept hätten, würde wa</td>
         <td class="num strong">3.540</td><td class="num">75</td>
         <td class="num">2026-10-06</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>8</td><td><img class="th" src="img/b07_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeJMKUPskAU/" target="_blank">Ansehen →</a></td></tr><tr><td>8</td><td><a href="https://www.instagram.com/p/Dbv0CI0KXZS/" target="_blank"><img class="th" src="img/b07_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a></td>
         <td class="cap">POV: Du willst deinem Azubi etwas erklären… aber sprichst noch die Sprache von 2010😂
 
@@ -392,7 +406,8 @@ Also gut… dann eben auf Jugendsprache. 😎
 🎥 Wie hätte </td>
         <td class="num strong">3.248</td><td class="num">59</td>
         <td class="num">2026-08-07</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>9</td><td><img class="th" src="img/b08_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Dbv0CI0KXZS/" target="_blank">Ansehen →</a></td></tr><tr><td>9</td><td><a href="https://www.instagram.com/p/DcTxSuVKZPb/" target="_blank"><img class="th" src="img/b08_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a></td>
         <td class="cap">Mission Testeinkauf: Herausforderung angenommen.🕵🏼‍♀️🛒😂
 
@@ -400,39 +415,45 @@ Auf dem Band sieht alles ganz harmlos aus...
 aber was versteckt sich denn da noch?</td>
         <td class="num strong">3.171</td><td class="num">26</td>
         <td class="num">2026-08-21</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>10</td><td><img class="th" src="img/b09_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DcTxSuVKZPb/" target="_blank">Ansehen →</a></td></tr><tr><td>10</td><td><a href="https://www.instagram.com/p/DeDxY9ZiuLr/" target="_blank"><img class="th" src="img/b09_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a></td>
         <td class="cap">So geht euer Meal Prep noch schneller 🧅🧄🌿
 
 Zwiebeln, Knoblauch und Kräuter bei jedem Kochen neu vorbereiten? Macht euch die würzige Basis ei</td>
         <td class="num strong">3.138</td><td class="num">541</td>
         <td class="num">2026-10-04</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>11</td><td><img class="th" src="img/b10_edekakarriere.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeDxY9ZiuLr/" target="_blank">Ansehen →</a></td></tr><tr><td>11</td><td><a href="https://www.instagram.com/p/DeJoI_bhTlA/" target="_blank"><img class="th" src="img/b10_edekakarriere.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a></td>
         <td class="cap">Eine Ausbildung bei EDEKA ist wie eine Schachtel Matcharuhns – schmeckt. Jetzt bewerben! 💛</td>
         <td class="num strong">2.974</td><td class="num">57</td>
         <td class="num">2026-10-06</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>12</td><td><img class="th" src="img/b11_edeka_rohling.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeJoI_bhTlA/" target="_blank">Ansehen →</a></td></tr><tr><td>12</td><td><a href="https://www.instagram.com/p/DcTt8qOht7w/" target="_blank"><img class="th" src="img/b11_edeka_rohling.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_rohling/" target="_blank">@edeka_rohling</a></td>
         <td class="cap">Was sagt ihr zum Countryman? - hört unbedingt bis zum Ende 😂🔊❤️
 
 #automobilb64 #fyp #viral #singenderautohaendler #mini</td>
         <td class="num strong">2.518</td><td class="num">131</td>
         <td class="num">2026-08-21</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>13</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DcTt8qOht7w/" target="_blank">Ansehen →</a></td></tr><tr><td>13</td><td></td>
         <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a></td>
         <td class="cap">Ausbildung bei EDEKA: zu 100 % Pferdtrade! 🐴 Jetzt bewerben.
 
 @fabianrashagai23</td>
         <td class="num strong">2.399</td><td class="num">27</td>
         <td class="num">2026-10-09</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>14</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeT7UG1hPXa/" target="_blank">Ansehen →</a></td></tr><tr><td>14</td><td></td>
         <td><a href="https://www.instagram.com/edeka.fromm/" target="_blank">@edeka.fromm</a></td>
         <td class="cap">🛒 „War doch nur ein Testeinkauf.&quot; 😇 Ja, ist klar ne 💛 In der EDEKA App findet ihr eh immer die besten Angebote. 📲
 #edekaBerlin</td>
         <td class="num strong">2.297</td><td class="num">4</td>
         <td class="num">2026-07-13</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>15</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Daua6RTjSH8/" target="_blank">Ansehen →</a></td></tr><tr><td>15</td><td></td>
         <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a></td>
         <td class="cap">Krankmelden für Fortgeschrittene 😂
 
@@ -441,11 +462,12 @@ Wenn du dir vor dem Anruf ganz genau überlegst, wie du heute besonders glaubwü
 Wie überze</td>
         <td class="num strong">2.179</td><td class="num">43</td>
         <td class="num">2026-09-27</td>
-        <td><span class="pill2">Reels</span></td></tr></tbody></table>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Ddyq2Axjd5f/" target="_blank">Ansehen →</a></td></tr></tbody></table>
           </div>
           <div id="u3" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th></tr></thead>
-            <tbody><tr><td>1</td><td><img class="th" src="img/w00_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
+            <tbody><tr><td>1</td><td><a href="https://www.instagram.com/p/DeXObsDiYMw/" target="_blank"><img class="th" src="img/w00_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🔥 Die besten Angebote der Woche sind da! 🛒💥
  
@@ -455,35 +477,40 @@ So kannst du dreifach sparen:
 </td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-11</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>2</td><td><img class="th" src="img/w01_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeXObsDiYMw/" target="_blank">Ansehen →</a></td></tr><tr><td>2</td><td><a href="https://www.instagram.com/p/DeTMpWHirD1/" target="_blank"><img class="th" src="img/w01_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">Ein Glück ist Super Spar Samstag! 🤩
  
 Spar dich glücklich mit diesen Hammerpreisen! 🛒💥Komm vorbei und sichere dir die besten Deals fürs Woch</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-10</td>
-        <td><span class="pill2">Karussell</span></td></tr><tr><td>3</td><td><img class="th" src="img/w02_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Karussell</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeTMpWHirD1/" target="_blank">Ansehen →</a></td></tr><tr><td>3</td><td><a href="https://www.instagram.com/p/DePLchQigUl/" target="_blank"><img class="th" src="img/w02_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🍽️ Volle Protein Power! 💪✨
 
 Das neue Kochbuch von EDEKA ist da! „Feel Good“ bringt dir 90 leckere Rezepte für jeden Tag – proteinhaltig, aus</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-08</td>
-        <td><span class="pill2">Foto</span></td></tr><tr><td>4</td><td><img class="th" src="img/w03_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DePLchQigUl/" target="_blank">Ansehen →</a></td></tr><tr><td>4</td><td><a href="https://www.instagram.com/p/DeJAoRejLXb/" target="_blank"><img class="th" src="img/w03_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🍎🥦 Aromatisch &amp; köstlich – nur bei uns! 🍓🥕
  
 Frisches Obst und knackiges Gemüse in bester Qualität und zu unschlagbaren Preisen 🍇🥬💥Überzeuge</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-06</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>5</td><td><img class="th" src="img/w04_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeJAoRejLXb/" target="_blank">Ansehen →</a></td></tr><tr><td>5</td><td><a href="https://www.instagram.com/p/DeGpldBgHV7/" target="_blank"><img class="th" src="img/w04_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">📲 Diese Woche nur mit der EDEKA App! 🔥Sichere dir unsere App-Kracher 🤩 
 
 Jetzt die EDEKA App herunterladen und noch viele weitere Angebote e</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-05</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>6</td><td><img class="th" src="img/w05_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeGpldBgHV7/" target="_blank">Ansehen →</a></td></tr><tr><td>6</td><td><a href="https://www.instagram.com/p/DeE_IaYkXzX/" target="_blank"><img class="th" src="img/w05_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🔥 Die besten Angebote der Woche sind da! 🛒💥
  
@@ -493,7 +520,8 @@ So kannst du dreifach sparen:
 </td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-04</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>7</td><td><img class="th" src="img/w06_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeE_IaYkXzX/" target="_blank">Ansehen →</a></td></tr><tr><td>7</td><td><a href="https://www.instagram.com/p/DeCaV4akkvG/" target="_blank"><img class="th" src="img/w06_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🎉 Der PAYBACK Joker ist wieder da! Sammle jetzt bis zu 33-fach Punkte 🃏
 
@@ -503,55 +531,64 @@ So geht’s:
 👉</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-03</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>8</td><td><img class="th" src="img/w07_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeCaV4akkvG/" target="_blank">Ansehen →</a></td></tr><tr><td>8</td><td><a href="https://www.instagram.com/p/Dd8ByVjjyBQ/" target="_blank"><img class="th" src="img/w07_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">Bei uns bekommst du alles GUT&amp;GÜNSTIG. Entdecke unsere Eigenmarke und Produktvielfalt zum kleinen Preis. 🤩
 
 #günstig #GUT&amp;GÜNSTIG #sparen #A</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-01</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>9</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/Dd8ByVjjyBQ/" target="_blank">Ansehen →</a></td></tr><tr><td>9</td><td></td>
         <td><a href="https://www.instagram.com/edekaschuler/" target="_blank">@edekaschuler</a></td>
         <td class="cap">❤ Von Herzen Regional: Gemeinsam für die Region. 
 Hinter Frankenland und Thüringer Land stehen viele regionale Milchviehbetriebe und Mensche</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-11</td>
-        <td><span class="pill2">Foto</span></td></tr><tr><td>10</td><td></td>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeWgMEVnya-/" target="_blank">Ansehen →</a></td></tr><tr><td>10</td><td></td>
         <td><a href="https://www.instagram.com/edekaschuler/" target="_blank">@edekaschuler</a></td>
         <td class="cap">❤ Von Herzen Regional: Heimatküche für jeden Tag. 
 Von Kloßteig bis Schupfnudeln – Henglein bringt beliebte Kartoffel- und Teigwarenspeziali</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-09</td>
-        <td><span class="pill2">Foto</span></td></tr><tr><td>11</td><td></td>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeRdX0UCrNP/" target="_blank">Ansehen →</a></td></tr><tr><td>11</td><td></td>
         <td><a href="https://www.instagram.com/edekaschuler/" target="_blank">@edekaschuler</a></td>
         <td class="cap">❤ Von Herzen Regional: Wo Mainfranken Früchte trägt. 
 Auf den Plantagen des Obsthofs Zörner reifen Äpfel, Birnen und viele weitere Früchte u</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-08</td>
-        <td><span class="pill2">Foto</span></td></tr><tr><td>12</td><td></td>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeO4ki2jci0/" target="_blank">Ansehen →</a></td></tr><tr><td>12</td><td></td>
         <td><a href="https://www.instagram.com/edeka.seidl/" target="_blank">@edeka.seidl</a></td>
         <td class="cap">Backlust an, Sparen inklusive! 🧁
 
 Bei uns im Markt bekommt ihr jetzt* 10 % Rabatt auf Backzutaten. Und das Beste: Ab 5 € Einkaufswert gibt’s</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-05</td>
-        <td><span class="pill2">Foto</span></td></tr><tr><td>13</td><td></td>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeGhSX6lhnI/" target="_blank">Ansehen →</a></td></tr><tr><td>13</td><td></td>
         <td><a href="https://www.instagram.com/edekaluening/" target="_blank">@edekaluening</a></td>
         <td class="cap">🧱✨ Exklusiv im EDEKA-Verbund warten 8 LEGO® Fun Packs auf alle Sammelfans.🎁
 Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-09-15</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>14</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DdTRQURE6p9/" target="_blank">Ansehen →</a></td></tr><tr><td>14</td><td></td>
         <td><a href="https://www.instagram.com/ecenterkilleen/" target="_blank">@ecenterkilleen</a></td>
         <td class="cap">Community Memo‼️ 5:00 Today is practice for the Community Flash mob Thriller ECenter Killeen With Katrina Suggs</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-05</td>
-        <td><span class="pill2">Reels</span></td></tr><tr><td>15</td><td></td>
+        <td><span class="pill2">Reels</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeIE-OeBSjz/" target="_blank">Ansehen →</a></td></tr><tr><td>15</td><td></td>
         <td><a href="https://www.instagram.com/edeka_hauschildt/" target="_blank">@edeka_hauschildt</a></td>
         <td class="cap"></td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-07</td>
-        <td><span class="pill2">Foto</span></td></tr></tbody></table>
+        <td><span class="pill2">Foto</span></td>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeMjIhDODN2/" target="_blank">Ansehen →</a></td></tr></tbody></table>
             <p class="hint" style="margin-top:10px">Nur Beiträge mit Likes &gt; 0 aus Profilen ab 500 Followern. 199 Beiträge im Datensatz zeigen 0 Likes (Like-Wert vom Anbieter nicht geliefert) und bleiben hier unberücksichtigt.</p>
           </div>
           <div id="u4" class="panel" style="display:none">
@@ -808,6 +845,109 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <td class="cap">Zoom farther and shoot in crystal-clear HD quality. · PENNY</td>
         <td class="num">2026-01-01</td></tr></tbody></table>
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
+        </div>
+
+        <div class="card span6">
+          <span class="arrow">↗</span>
+          <h3>Die stärksten Anzeigen der Wettbewerber · letzte 90 Tage</h3>
+          <p class="hint">Auswahl aus der Meta Ads Library: aktive Anzeigen mit den größten Marken-Seiten, stärkster Botschaft und aktuellem Startdatum. HOOK = reißerischer Einstieg, WARUM ES FUNKTIONIERT = Analyse nach Format, Botschaft und Mechanik.</p>
+          <div class="adgrid">
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1697996942325867" target="_blank"><img src="img/ad0.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">video</span></a>
+      <div class="adbody">
+        <div class="adbrand">Lidl <span>· Lidl in Deutschland</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">Gewinne 15.000 € für dein Zuhause-Upgrade</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Konkreter Geldwert direkt im ersten Frame, dazu die Gewinnmechanik als Lead-Magnet (Teilnahme nur mit Newsletter-Anmeldung). Der Preisnutzen ist in unter einer Sekunde verstanden — genau das braucht es im Feed.</div>
+        <div class="admeta">Lidl · Lidl in Deutschland · video · aktiv seit 2026-09-08 (32 Tage) · CTA: LEARN_MORE</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1697996942325867" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1676362480671598" target="_blank"><img src="img/ad1.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">dco</span></a>
+      <div class="adbody">
+        <div class="adbrand">EDEKA <span>· EDEKA</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">POV: „Näher geht&#x27;s eigentlich&quot;</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Humor statt Produktwerbung: extremer Nahschnitt und Selfie-Ästhetik wirken wie ein Freundes-Post, nicht wie eine Anzeige. Der Community-CTA (WhatsApp) kommt erst nach dem Gag — Aufbau von Direktkontakt statt Verkauf.</div>
+        <div class="admeta">EDEKA · EDEKA · dco · aktiv seit 2026-09-21 (19 Tage) · CTA: DOWNLOAD</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1676362480671598" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=4256667071291209" target="_blank"><img src="img/ad2.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">dco</span></a>
+      <div class="adbody">
+        <div class="adbrand">REWE <span>· REWE</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">Herbstlicher Gnocchi-Salat · Ausgewogene Ernährung</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Nutzen-Content statt Werbung: das Rezept hält die Watch-Time hoch und positioniert den Anbieter als Kompetenzquelle. Saisonbezug schafft Aktualität, die Produktbotschaft (Tiefpreis) kann weich eingebaut werden.</div>
+        <div class="admeta">REWE · REWE · dco · aktiv seit 2026-09-30 (10 Tage) · CTA: –</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=4256667071291209" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=2178967373041272" target="_blank"><img src="img/ad3.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">video</span></a>
+      <div class="adbody">
+        <div class="adbrand">ALDI <span>· ALDI SÜD</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">POV: Du willst den günstigsten Preis</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Meme-Format „POV“ mit KI-Gesicht spricht den zentralen Kundenwunsch wörtlich aus. Gleichzeitig Abgrenzungskampagne gegen Coupon-Apps — eine klare Haltung, die sich ohne Rabattverlust erzählen lässt.</div>
+        <div class="admeta">ALDI · ALDI SÜD · video · aktiv seit 2026-10-05 (5 Tage) · CTA: LEARN_MORE</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=2178967373041272" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1532578838897506" target="_blank"><img src="img/ad4.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">video</span></a>
+      <div class="adbody">
+        <div class="adbrand">Kaufland <span>· Kaufland</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">MASSIV REDUZIERT</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Absurd-humorvolle Szene (Schokoladenfontäne) stoppt den Scroll, der Claim ist als eigene Kampagnen-Wortmarke wiedererkennbar. Der konkrete Rabatt (20 % Oktober) liefert Dringlichkeit und Anlass zum Klick.</div>
+        <div class="admeta">Kaufland · Kaufland · video · aktiv seit 2026-10-02 (8 Tage) · CTA: –</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1532578838897506" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1380421497550183" target="_blank"><img src="img/ad5.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">dco</span></a>
+      <div class="adbody">
+        <div class="adbrand">Netto <span>· Netto Marken-Discount</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">Wenn ich was Neues anfange</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Echtes Gesicht und echter Satz statt Stellenanzeige: Testimonials machen die Ausbildung glaubwürdig und ansprechbar für eine junge Zielgruppe. Der CTA (bewerben) ist klar, aber erst nach der Identifikation.</div>
+        <div class="admeta">Netto · Netto Marken-Discount · dco · aktiv seit 2026-09-01 (39 Tage) · CTA: APPLY_NOW</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1380421497550183" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1633974881767625" target="_blank"><img src="img/ad6.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">dco</span></a>
+      <div class="adbody">
+        <div class="adbrand">REWE <span>· REWE To Go</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">Lauras Sidequest · powered by REWE GO</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Series-Branding („Sidequest“) bindet wie eine Sendung statt einer Einzelanzeige — Zuschauer kommen wegen der Figur wieder. Das Produkt (Snack-Aktion) wird in die Handlung eingebettet, nicht beworben.</div>
+        <div class="admeta">REWE · REWE To Go · dco · aktiv seit 2026-09-07 (33 Tage) · CTA: LEARN_MORE</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1633974881767625" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div>
+    <div class="adcard">
+      <a class="adimg" href="https://www.facebook.com/ads/library/?id=1086057857079855" target="_blank"><img src="img/ad7.jpg" alt="" onerror="this.style.display='none'"><span class="adfmt">dpa</span></a>
+      <div class="adbody">
+        <div class="adbrand">ALDI <span>· ALDI Nord Karriere</span></div>
+        <div class="adlabel">HOOK</div>
+        <div class="adhook">Bewirb dich für einen Job im Verkauf</div>
+        <div class="adlabel">WARUM ES FUNKTIONIERT</div>
+        <div class="adwhy">Zwei Zeilen, ein Gesicht, eine Botschaft: maximale Klarheit auf kleinstem Raum, Marken-Blau als Wiedererkennung. Menschen statt Textwand senken die Hürde zur Bewerbung.</div>
+        <div class="admeta">ALDI · ALDI Nord Karriere · dpa · aktiv seit 2026-08-03 (68 Tage) · CTA: APPLY_NOW</div>
+        <a class="adlink" href="https://www.facebook.com/ads/library/?id=1086057857079855" target="_blank">Anzeige in der Meta Ad Library ansehen →</a>
+      </div>
+    </div></div>
         </div>
 
         <div class="card span3">
