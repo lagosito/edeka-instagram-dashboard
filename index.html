@@ -112,6 +112,42 @@ a:hover{text-decoration:underline}
 .footer{margin-top:26px;font-size:12px;color:#8A90A0;line-height:1.7;background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:18px 22px}
 @media(max-width:1250px){.grid{grid-template-columns:repeat(2,1fr)}.span6,.span4,.span3,.span2{grid-column:span 2}.avail{grid-template-columns:1fr}.side{display:none}}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.span6,.span4,.span3,.span2{grid-column:span 1}.hrow{grid-template-columns:120px 1fr 62px}}
+
+/* --- v2 tweaks --- */
+.meta{font-size:11px;color:#9AA0AE;letter-spacing:.1px}
+.card{min-width:0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px}
+.tw table{min-width:640px}
+.chartw{overflow-x:auto}
+@media(max-width:760px){.chartw svg{min-width:560px}}
+/* hero stats: no boxes, separated by thin lines */
+.heroStats{gap:0!important;overflow:hidden;min-width:0}
+.heroStats .hstat{background:none;border:0;border-radius:0;border-left:1px solid rgba(255,255,255,.28);border-top:1px solid rgba(255,255,255,.28);margin:-1px 0 0 -1px;padding:16px 20px}
+.heroRow{display:block}
+@media(max-width:760px){
+  .main{padding:0 14px 36px}
+  .top{display:block;padding:14px 0 10px}
+  .top h1{font-size:15px;margin-bottom:8px}
+  .tabs2{margin:0 -14px;padding:0 14px 4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .tabs2::-webkit-scrollbar{display:none}
+  .meta{display:block;margin-top:6px}
+  .card{padding:18px}
+  .card h3{padding-right:26px}
+  .card h3[style]{font-size:17px!important}
+  .miniRow{grid-template-columns:1fr 1fr;gap:10px}
+  .mini span{font-size:14px;word-break:break-word}
+  .tw table{min-width:760px}
+  .heroStats,.heroStats.wide{grid-template-columns:repeat(2,1fr)!important}
+  .heroStats .hstat{padding:14px 12px}
+  .hstat .v{font-size:21px}
+  .hstat .t{font-size:12px;align-items:flex-start}
+  .hstat .t .dot{margin-top:5px;flex:0 0 auto}
+  .hstat .s{font-size:11px;word-break:break-word}
+  .tabs{flex-wrap:nowrap;overflow-x:auto}
+  .tab{white-space:nowrap}
+  .adgrid{grid-template-columns:1fr}
+  .footer{padding:16px}
+}
 </style></head>
 <body><div class="app">
   <div class="main">
@@ -126,7 +162,6 @@ a:hover{text-decoration:underline}
       </div>
       <div class="spacer"></div>
       <span class="meta">Datenstand 11.10.2026 · 215 Profile · 2.537 Beiträge</span>
-      <div class="avatar">GL</div>
     </header>
 
     <!-- 01 OVERVIEW -->
@@ -147,12 +182,6 @@ a:hover{text-decoration:underline}
               <div class="hstat"><div class="v">57 %</div><div class="t"><span class="dot"></span>Beste Engagement-Rate</div><div class="s">@edeka_hengge</div></div>
               <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div><div class="s">@edeka · @edekakarriere · @dein.edeka</div></div>
             </div>
-            <div class="ringbox"><svg width="168" height="168" viewBox="0 0 168 168">
-      <circle cx="84.0" cy="84.0" r="76.0" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="16"/>
-      <circle cx="84.0" cy="84.0" r="76.0" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"
-        stroke-dasharray="393.1 84.4" transform="rotate(-90 84.0 84.0)"/>
-      <text x="50%" y="46%" text-anchor="middle" font-size="30" font-weight="700" fill="#fff">82 %</text>
-      <text x="50%" y="63%" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.9)">aktiv (30 Tage)</text></svg></div>
           </div>
         </div>
 
@@ -160,14 +189,14 @@ a:hover{text-decoration:underline}
           <span class="arrow">↗</span>
           <h3>Leistungsverlauf · 12 Wochen</h3>
           <p class="hint">Interaktionen (Likes + Kommentare) je Woche über alle Profile</p>
-          <svg viewBox="0 0 760 210" width="100%" height="210" preserveAspectRatio="none">
+          <div class="chartw"><svg viewBox="0 0 760 210" width="100%" style="height:auto;display:block">
       <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#2A60FF" stop-opacity=".22"/><stop offset="100%" stop-color="#2A60FF" stop-opacity="0"/>
       </linearGradient></defs>
       <path d="M8.0,176.0 L8.0,171.3 L75.6,164.5 L143.3,156.2 L210.9,126.4 L278.5,150.1 L346.2,167.4 L413.8,162.4 L481.5,138.9 L549.1,144.9 L616.7,120.7 L684.4,37.8 L752.0,26.0 L752.0,176.0 Z" fill="url(#g1)"/>
       <polyline points="8.0,171.3 75.6,164.5 143.3,156.2 210.9,126.4 278.5,150.1 346.2,167.4 413.8,162.4 481.5,138.9 549.1,144.9 616.7,120.7 684.4,37.8 752.0,26.0" fill="none" stroke="#2A60FF" stroke-width="2.5" stroke-linejoin="round"/>
-      <circle cx="8.0" cy="171.3" r="3" fill="#2A60FF"/><circle cx="75.6" cy="164.5" r="3" fill="#2A60FF"/><circle cx="143.3" cy="156.2" r="3" fill="#2A60FF"/><circle cx="210.9" cy="126.4" r="3" fill="#2A60FF"/><circle cx="278.5" cy="150.1" r="3" fill="#2A60FF"/><circle cx="346.2" cy="167.4" r="3" fill="#2A60FF"/><circle cx="413.8" cy="162.4" r="3" fill="#2A60FF"/><circle cx="481.5" cy="138.9" r="3" fill="#2A60FF"/><circle cx="549.1" cy="144.9" r="3" fill="#2A60FF"/><circle cx="616.7" cy="120.7" r="3" fill="#2A60FF"/><circle cx="684.4" cy="37.8" r="3" fill="#2A60FF"/><circle cx="752.0" cy="26.0" r="3" fill="#2A60FF"/><text x="752.0" y="17.0" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="middle">58.932</text><text x="8.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">26.07</text><text x="143.3" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">09.08</text><text x="278.5" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">23.08</text><text x="413.8" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">06.09</text><text x="549.1" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">20.09</text><text x="684.4" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">04.10</text><text x="752.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">11.10</text>
-    </svg>
+      <circle cx="8.0" cy="171.3" r="3" fill="#2A60FF"/><circle cx="75.6" cy="164.5" r="3" fill="#2A60FF"/><circle cx="143.3" cy="156.2" r="3" fill="#2A60FF"/><circle cx="210.9" cy="126.4" r="3" fill="#2A60FF"/><circle cx="278.5" cy="150.1" r="3" fill="#2A60FF"/><circle cx="346.2" cy="167.4" r="3" fill="#2A60FF"/><circle cx="413.8" cy="162.4" r="3" fill="#2A60FF"/><circle cx="481.5" cy="138.9" r="3" fill="#2A60FF"/><circle cx="549.1" cy="144.9" r="3" fill="#2A60FF"/><circle cx="616.7" cy="120.7" r="3" fill="#2A60FF"/><circle cx="684.4" cy="37.8" r="3" fill="#2A60FF"/><circle cx="752.0" cy="26.0" r="3" fill="#2A60FF"/><text x="752.0" y="17.0" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="end">58.932</text><text x="8.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">26.07</text><text x="143.3" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">09.08</text><text x="278.5" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">23.08</text><text x="413.8" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">06.09</text><text x="549.1" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">20.09</text><text x="684.4" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">04.10</text><text x="752.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">11.10</text>
+    </svg></div>
           <p class="hint" style="margin:10px 0 0">Peak 58.932 Interaktionen · aktuelle Woche 58.932 · 467 Beiträge</p>
         </div>
 
@@ -234,7 +263,7 @@ a:hover{text-decoration:underline}
             <button class="tab" onclick="tab('u4',this)">Aktivste Profile</button>
           </div>
           <div id="u1" class="panel">
-            <table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th><th class="num">ER Ø</th><th class="num">ER Median</th>
+            <div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Follower</th><th class="num">ER Ø</th><th class="num">ER Median</th>
               <th class="num">Likes/Beitr.</th><th class="num">Interaktionen</th><th class="num">Beiträge</th><th class="num">30 T.</th></tr></thead>
             <tbody><tr><td>1</td>
         <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a><div class="sub2">EDEKA Hengge</div></td>
@@ -336,10 +365,10 @@ a:hover{text-decoration:underline}
         <td><a href="https://www.instagram.com/ecenter_borghorst/" target="_blank">@ecenter_borghorst</a><div class="sub2">E center Borghorst</div></td>
         <td class="num">971</td><td class="num strong">7.0 %</td>
         <td class="num">0.82 %</td><td class="num">66</td>
-        <td class="num">749</td><td class="num">11</td><td class="num">7</td></tr></tbody></table>
+        <td class="num">749</td><td class="num">11</td><td class="num">7</td></tr></tbody></table></div>
           </div>
           <div id="u2" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
+            <div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
             <tbody><tr><td>1</td><td><a href="https://www.instagram.com/p/Db3aSO7Ikj5/" target="_blank"><img class="th" src="img/b00_edeka_fedele.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a></td>
         <td class="cap">Rücken stärken oder so ähnlich 👌🏽😂
@@ -462,10 +491,10 @@ Wie überze</td>
         <td class="num strong">2.179</td><td class="num">43</td>
         <td class="num">2026-09-27</td>
         <td><span class="pill2">Reels</span></td>
-        <td><a class="postlink" href="https://www.instagram.com/p/Ddyq2Axjd5f/" target="_blank">Ansehen →</a></td></tr></tbody></table>
+        <td><a class="postlink" href="https://www.instagram.com/p/Ddyq2Axjd5f/" target="_blank">Ansehen →</a></td></tr></tbody></table></div>
           </div>
           <div id="u3" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
+            <div class="tw"><table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
             <tbody><tr><td>1</td><td><a href="https://www.instagram.com/p/DeXObsDiYMw/" target="_blank"><img class="th" src="img/w00_dein.edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></a></td>
         <td><a href="https://www.instagram.com/dein.edeka/" target="_blank">@dein.edeka</a></td>
         <td class="cap">🔥 Die besten Angebote der Woche sind da! 🛒💥
@@ -587,11 +616,11 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <td class="num strong">1</td><td class="num">0</td>
         <td class="num">2026-10-07</td>
         <td><span class="pill2">Foto</span></td>
-        <td><a class="postlink" href="https://www.instagram.com/p/DeMjIhDODN2/" target="_blank">Ansehen →</a></td></tr></tbody></table>
+        <td><a class="postlink" href="https://www.instagram.com/p/DeMjIhDODN2/" target="_blank">Ansehen →</a></td></tr></tbody></table></div>
             <p class="hint" style="margin-top:10px">Nur Beiträge mit Likes &gt; 0 aus Profilen ab 500 Followern. 199 Beiträge im Datensatz zeigen 0 Likes (Like-Wert vom Anbieter nicht geliefert) und bleiben hier unberücksichtigt.</p>
           </div>
           <div id="u4" class="panel" style="display:none">
-            <table><thead><tr><th>#</th><th>Profil</th><th class="num">Beiträge 30 T.</th><th class="num">Beiträge ges.</th><th class="num">Interaktionen</th><th class="num">Follower</th></tr></thead>
+            <div class="tw"><table><thead><tr><th>#</th><th>Profil</th><th class="num">Beiträge 30 T.</th><th class="num">Beiträge ges.</th><th class="num">Interaktionen</th><th class="num">Follower</th></tr></thead>
             <tbody><tr><td>1</td>
         <td><a href="https://www.instagram.com/edeka/" target="_blank">@edeka</a><div class="sub2">EDEKA</div></td>
         <td class="num">12</td><td class="num">12</td>
@@ -667,7 +696,7 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <td class="num">932</td><td class="num">4.679</td></tr><tr><td>25</td>
         <td><a href="https://www.instagram.com/edekaschnelle/" target="_blank">@edekaschnelle</a><div class="sub2">edekaschnelle</div></td>
         <td class="num">12</td><td class="num">12</td>
-        <td class="num">874</td><td class="num">335</td></tr></tbody></table>
+        <td class="num">874</td><td class="num">335</td></tr></tbody></table></div>
           </div>
         </div>
 
@@ -798,7 +827,7 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
           <span class="arrow">↗</span>
           <h3>04 · Competitor Intelligence — Wettbewerbsanalyse</h3>
           <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am 11.10.2026</p>
-          <table><thead><tr><th>Marke</th><th class="num">Anzeigen im Sample / Treffer</th><th>Werbeanzeigen-Seiten</th>
+          <div class="tw"><table><thead><tr><th>Marke</th><th class="num">Anzeigen im Sample / Treffer</th><th>Werbeanzeigen-Seiten</th>
             <th>Formate</th><th>CTA-Typen</th><th>Beispiel-Nachrichten</th><th class="num">Neuester Start</th></tr></thead>
             <tbody><tr><td><b>EDEKA</b></td>
         <td class="num">6 / 20</td>
@@ -842,7 +871,7 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <td class="sub2">carousel (2), video (1)</td>
         <td class="sub2">APPLY_NOW, INSTALL_MOBILE_APP</td>
         <td class="cap">Zoom farther and shoot in crystal-clear HD quality. · PENNY</td>
-        <td class="num">2026-01-01</td></tr></tbody></table>
+        <td class="num">2026-01-01</td></tr></tbody></table></div>
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
         </div>
 
@@ -965,14 +994,14 @@ Schau jetzt genau hin, was drin steckt! 🧐 Denn mit jedem Fun Pac</td>
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Wettbewerbs-Framework</h3>
-          <table class="compact"><tbody>
+          <div class="tw"><table class="compact"><tbody>
             <tr><td>Marken-Werbung</td><td class="num">EDEKA · REWE · Lidl</td></tr>
             <tr><td>Recruiting-Kampagnen</td><td class="num">REWE · ALDI · Netto</td></tr>
             <tr><td>Angebots-Feeds</td><td class="num">EDEKA · REWE · Netto · Lidl</td></tr>
             <tr><td>App-Push</td><td class="num">Kaufland · PENNY</td></tr>
             <tr><td>Community/Newsletter</td><td class="num">EDEKA</td></tr>
             <tr><td>Dominantes Format</td><td class="num">DCO &amp; Video</td></tr>
-          </tbody></table>
+          </tbody></table></div>
           <p class="hint" style="margin-top:10px"><b>Einschränkung:</b> Die Meta Ads Library zeigt nur öffentliche Anzeigen (Seite, Laufzeit, Format, Text). Sie liefert <b>keine</b> Reichweiten-, Kosten- oder Performance-Werte der Konkurrenz.</p>
         </div>
       </div>
