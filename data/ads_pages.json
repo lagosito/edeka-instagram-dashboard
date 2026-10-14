@@ -1,0 +1,10 @@
+{
+  "_hinweis": "Eigene Marken-Seiten je Marke fuer die Auswertung der Meta Ad Library. Nur Anzeigen dieser Seiten zaehlen als 'eigene' Anzeigen. Ausgeschlossen: fremde Treffer aus derselben Suche (z. B. ALDI USA, Kaufland Polska, Penny Watson, Rabatt-Apps, MeinProspekt).",
+  "edeka": ["EDEKA", "Edeka Irkens", "EDEKA Frauen"],
+  "rewe": ["REWE Karriere", "REWE To Go", "REWE"],
+  "lidl": ["Lidl in Deutschland"],
+  "aldi": ["ALDI SÜD Karriere", "ALDI SÜD", "ALDI Nord Karriere"],
+  "netto": ["Netto Marken-Discount"],
+  "kaufland": ["Kaufland"],
+  "penny": ["PENNY"]
+}

@@ -11,6 +11,12 @@ SITE = ROOT
 IMG = os.path.join(SITE, 'img')
 os.makedirs(IMG, exist_ok=True)
 
+try:
+    from zoneinfo import ZoneInfo
+    BERLIN = ZoneInfo('Europe/Berlin')
+except Exception:                      # Fallback: Sommerzeit (gilt fuer den Datensatz)
+    BERLIN = dt.timezone(dt.timedelta(hours=2))
+
 def ni(x):
     try:
         return int(x)
@@ -27,6 +33,37 @@ def de(v, dec=0):
 def esc(s):
     return html.escape(str(s or ''))
 
+# ---------------- Filterregeln (v3) ----------------
+# 1.1 Konten ausschliessen: nicht in Deutschland / kein EDEKA-Markt
+def _load_excluded():
+    path = os.path.join(DATA, 'excluded_accounts.csv')
+    out = {}
+    if os.path.exists(path):
+        for row in csv.DictReader(open(path)):
+            if row.get('handle'):
+                out[row['handle']] = row.get('grund', '')
+    return out
+
+EXCLUDED = _load_excluded()
+EXCL_LOG = []          # (handle, grund) tatsaechlich aus dem Datensatz entfernt
+
+# 1.1 Beitraege fremder Owner: owner weder das Profil selbst noch EDEKA-Verbund
+_OWNER_EDEKA = re.compile(r'edeka|marktkauf|e[._-]?center|ecenter|nordfrische', re.I)
+
+def owner_ok(handle, owner):
+    o = (owner or '').strip()
+    if not o or o.lower() == handle.lower():
+        return True
+    return bool(_OWNER_EDEKA.search(o))
+
+# 1.2 Like-Wert verfuegbar: 0 und 1 gelten als nicht geliefert
+def likes_ok(post):
+    lk = post.get('likes')
+    return isinstance(lk, int) and lk >= 2
+
+N_FREMDE = 0            # Beitraege fremder Owner (entfernt)
+N_NO_LIKES = 0          # Beitraege ohne Like-Wert (fuer Auswertungen ausgeblendet)
+
 # ---------------- Daten ----------------
 profiles = {r['handle']: r for r in csv.DictReader(open(CSV))}
 accounts, posts = [], []
@@ -36,22 +73,36 @@ for rec in json.load(open(RAW)):
     p = profiles.get(h)
     if not p:
         continue
+    if h in EXCLUDED:
+        if rec.get('posts'):
+            EXCL_LOG.append((h, EXCLUDED[h]))
+        continue
     plist = rec.get('posts') or []
     if not plist:
         continue
     followers = ni(p['followers'])
     ers, likes, coms, r30 = [], [], [], 0
+    n_valid = 0
     for post in plist:
         url = post.get('url')
         if url and url in seen_urls:
             continue
         if url:
             seen_urls.add(url)
-        lk = post.get('likes') if isinstance(post.get('likes'), int) else 0
+        if not owner_ok(h, post.get('owner')):
+            N_FREMDE += 1
+            continue
+        valid = likes_ok(post)
+        if valid:
+            n_valid += 1
+        else:
+            N_NO_LIKES += 1
+        lk = post.get('likes') if valid else 0
         cm = post.get('comments') if isinstance(post.get('comments'), int) else 0
-        likes.append(lk); coms.append(cm)
-        if followers:
-            ers.append((lk + cm) / followers * 100)
+        if valid:
+            likes.append(lk); coms.append(cm)
+            if followers:
+                ers.append((lk + cm) / followers * 100)
         ts = post.get('taken_at')
         if ts:
             try:
@@ -61,10 +112,12 @@ for rec in json.load(open(RAW)):
             except Exception:
                 pass
         q = dict(post); q['handle'] = h; q['followers'] = followers
-        q['name'] = p['nombre']; q['tipo'] = p['tipo']; posts.append(q)
+        q['name'] = p['nombre']; q['tipo'] = p['tipo']; q['likes_ok'] = valid
+        posts.append(q)
     accounts.append({
         'handle': h, 'nombre': p['nombre'] or h, 'followers': followers, 'tipo': p['tipo'],
-        'n': len(likes), 'avg_likes': statistics.mean(likes) if likes else 0,
+        'n': len(plist), 'n_valid': n_valid,
+        'avg_likes': statistics.mean(likes) if likes else 0,
         'med_likes': statistics.median(likes) if likes else 0,
         'er': statistics.mean(ers) if ers else 0,
         'er_med': statistics.median(ers) if ers else 0,
@@ -83,7 +136,13 @@ for _p in posts:
         except Exception:
             pass
 STAND = dt.datetime.strptime(META['scrape_date'], '%Y-%m-%d').strftime('%d.%m.%Y')
+_ads_q = dt.datetime.strptime(META.get('ads_query_date', META['scrape_date']), '%Y-%m-%d').strftime('%d.%m.%Y')
+STAND_ADS = _ads_q
 now = dt.datetime.strptime(META['scrape_date'], '%Y-%m-%d').replace(tzinfo=dt.timezone.utc)
+TZ_LABEL = 'MESZ' if now.astimezone(BERLIN).utcoffset() == dt.timedelta(hours=2) else 'MEZ'
+N_GES = len([r for r in json.load(open(RAW))])            # Konten im Urdatensatz
+N_AUSGESCHLOSSEN = len(EXCL_LOG)
+N_FREMDE_POSTS = N_FREMDE
 N_KONTEN = len(accounts)
 N_FOLLOWER = sum(a['followers'] for a in accounts)
 N_POSTS = sum(a['n'] for a in accounts)
@@ -93,12 +152,18 @@ OER = statistics.mean([a['er'] for a in accounts if a['followers'] >= 500]) if a
 OER_MED = statistics.median([a['er'] for a in accounts if a['followers'] >= 500]) if accounts else 0
 O_INT_POST = statistics.mean([(a['inter'] / a['n']) for a in accounts if a['n']]) if accounts else 0
 
-mov = sorted([a for a in accounts if a['followers'] >= 500 and a['n'] >= 5], key=lambda a: -a['er'])
+# Ranking: nur Konten mit Like-Werten (Mindestzahl in Phase 2 = 6)
+MOV_MIN = 5
+mov = sorted([a for a in accounts if a['followers'] >= 500 and a['n_valid'] >= MOV_MIN],
+             key=lambda a: -a['er'])
+mov_med = sorted([a for a in accounts if a['followers'] >= 500 and a['n_valid'] >= MOV_MIN],
+                 key=lambda a: -a['er_med'])
 aktiv = sorted(accounts, key=lambda a: (-a['r30'], -a['inter']))
-best_posts = sorted([p for p in posts if isinstance(p.get('likes'), int)], key=lambda p: -p['likes'])
-worst_pool = [p for p in posts if isinstance(p.get('likes'), int) and p.get('likes', 0) > 0 and p['followers'] >= 500]
+best_posts = sorted([p for p in posts if p.get('likes_ok')], key=lambda p: -p['likes'])
+worst_pool = [p for p in posts if p.get('likes_ok') and p['followers'] >= 500]
 worst_posts = sorted(worst_pool, key=lambda p: (p.get('likes', 0) + (p.get('comments') or 0)))[:20]
-n_null_likes = len([p for p in posts if p.get('likes') == 0])
+n_null_likes = N_NO_LIKES
+N_POSTS_GUELTIG = len([p for p in posts if p.get('likes_ok')])
 
 # Vergleich 30 Tage
 def in_days(p, a, b):
@@ -120,7 +185,9 @@ PREV_N, PREV_I = len(prev), inter(prev)
 D_POSTS = (CUR_N - PREV_N) / PREV_N * 100 if PREV_N else 0
 D_INT = (CUR_I - PREV_I) / PREV_I * 100 if PREV_I else 0
 
-# Wochenverlauf (12 Wochen, nur Datenfenster je Konto!)
+# Wochenverlauf (12 Wochen)
+# Abdeckung je Konto = Datum des 12. (aeltesten) Beitrags im Fenster.
+# Eine Woche gilt nur als voll abgedeckt, wenn ALLE Konten zurueckreichen.
 wk_int = [0] * 12
 wk_cnt = [0] * 12
 wk_lab = []
@@ -139,28 +206,58 @@ for p in posts:
     if diff < 0:
         continue
     idx = 11 - (diff // 7)
-    if 0 <= idx <= 11:
+    if 0 <= idx <= 11 and p.get('likes_ok'):
         wk_int[idx] += (p.get('likes') or 0) + (p.get('comments') or 0)
         wk_cnt[idx] += 1
+
+# Abdeckung aller Konten (Datum des 12. aeltesten Beitrags je Konto)
+_cover = []
+for _a in accounts:
+    _ds = sorted([dt.datetime.fromisoformat(q['taken_at'].replace('Z', '+00:00'))
+                  for q in posts if q['handle'] == _a['handle'] and q.get('taken_at')],
+                 reverse=True)
+    if _ds:
+        _cover.append(_ds[11] if len(_ds) >= 12 else _ds[-1])
+COVER_START = max(_cover) if _cover else now
+FULL_WEEKS = len([i for i in range(12)
+                  if (now - dt.timedelta(days=7 * (11 - i) + 6)) >=
+                  COVER_START.replace(hour=0, minute=0, second=0, microsecond=0)])
+# Bei weniger als 4 voll abgedeckten Wochen: normalisiert je Beitrag (kein Volumen-Bias)
+wk_ipost = [(wk_int[i] / wk_cnt[i]) if wk_cnt[i] else 0 for i in range(12)]
+USE_NORM = FULL_WEEKS < 4
 
 # Formate
 fmt = collections.defaultdict(lambda: {'n': 0, 'likes': [], 'er': []})
 for p in posts:
+    if not p.get('likes_ok'):
+        continue
     k = p.get('kind') or 'video'
-    if k == 'video':
-        k = 'video'
-    lk = p.get('likes') if isinstance(p.get('likes'), int) else 0
-    cm = p.get('comments') if isinstance(p.get('comments'), int) else 0
+    lk = p.get('likes') or 0
+    cm = p.get('comments') or 0
     fmt[k]['n'] += 1
     fmt[k]['likes'].append(lk)
     if p['followers']:
         fmt[k]['er'].append((lk + cm) / p['followers'] * 100)
 FMT_DE = {'reel': 'Reels', 'carousel': 'Karussell', 'photo': 'Foto', 'video': 'Video'}
+def p90(vals):
+    if not vals:
+        return 0
+    v = sorted(vals)
+    return v[min(len(v) - 1, int(round(0.9 * (len(v) - 1))))]
+
 fmt_rows = sorted([{'key': k, 'label': FMT_DE.get(k, k), 'n': v['n'],
                     'mean_likes': statistics.mean(v['likes']) if v['likes'] else 0,
                     'er': statistics.mean(v['er']) if v['er'] else 0,
                     'er_med': statistics.median(v['er']) if v['er'] else 0}
                    for k, v in fmt.items()], key=lambda x: -x['er'])
+fmt_p90 = {k: p90(v['er']) for k, v in fmt.items()}
+# Aussagekraeftig erst ab 30 Beitraegen je Format (Fallback: alles)
+_stark = [r for r in fmt_rows if r['n'] >= 30] or fmt_rows
+FMT_MED_BEST = max(_stark, key=lambda r: r['er_med']) if _stark else {'label': '-', 'er_med': 0, 'n': 0}
+_kandidaten = [k for k, v in fmt.items() if v['n'] >= 30] or list(fmt_p90)
+FMT_P90_BEST = (max(_kandidaten, key=lambda k: fmt_p90[k]) if _kandidaten and fmt_p90 else None)
+FMT_P90_LABEL = FMT_DE.get(FMT_P90_BEST, FMT_P90_BEST) if FMT_P90_BEST else '-'
+FMT_P90_VAL = fmt_p90.get(FMT_P90_BEST, 0) if FMT_P90_BEST else 0
 
 # Zeitfenster-Analyse
 WD_DE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']
@@ -168,11 +265,13 @@ WD_EN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 wd = collections.defaultdict(lambda: {'n': 0, 'er': []})
 hr = collections.defaultdict(lambda: {'n': 0, 'er': []})
 for p in posts:
+    if not p.get('likes_ok'):
+        continue
     ts = p.get('taken_at')
     if not ts:
         continue
     try:
-        d0 = dt.datetime.fromisoformat(ts.replace('Z', '+00:00')).astimezone(dt.timezone(dt.timedelta(hours=2)))
+        d0 = dt.datetime.fromisoformat(ts.replace('Z', '+00:00')).astimezone(BERLIN)
     except Exception:
         continue
     lk = p.get('likes') if isinstance(p.get('likes'), int) else 0
@@ -191,7 +290,19 @@ HR_ROWS = [{'h': h, 'n': hr[h]['n'],
             'med': statistics.median(hr[h]['er']) if hr[h]['er'] else 0}
            for h in sorted(hr) if hr[h]['n'] >= 40]
 best_day = max(WD_ROWS, key=lambda r: r['med'])
+WD_ORD = sorted([r for r in WD_ROWS if r['n'] >= 20], key=lambda r: -r['med'])
+if len(WD_ORD) >= 4:
+    TAGE_TEXT = ('{0} (Median {1} %), danach {2} und {3}; schwächster Tag ist {4} ({5} %)'
+                 .format(WD_ORD[0]['label'], de(WD_ORD[0]['med'], 2), WD_ORD[1]['label'], WD_ORD[2]['label'],
+                         WD_ORD[-1]['label'], de(WD_ORD[-1]['med'], 2)))
+elif WD_ORD:
+    TAGE_TEXT = '{0} (Median {1} %)'.format(WD_ORD[0]['label'], de(WD_ORD[0]['med'], 2))
+else:
+    TAGE_TEXT = best_day['label']
 best_hours = sorted(HR_ROWS, key=lambda r: -r['med'])[:3]
+_vol_18 = next((r['n'] for r in HR_ROWS if r['h'] == 18), 0)
+ZEIT_TEXT = ('stärkste Median-Werte um {0}, während um 18:00 Uhr mit {1} Beiträgen am häufigsten gepostet wird und der Median dort sinkt'
+             .format(', '.join(f"{r['h']}:00 ({de(r['med'], 2)} %)" for r in best_hours), de(_vol_18)))
 
 # Hashtags
 tags = collections.Counter()
@@ -201,9 +312,109 @@ for p in posts:
 TOP_TAGS = tags.most_common(12)
 
 # Wettbewerber
-ads = json.load(open(os.path.join(DATA, 'ads_summary.json'))) if os.path.exists(os.path.join(DATA, 'ads_summary.json')) else {}
 BRAND_DE = {'edeka': 'EDEKA', 'rewe': 'REWE', 'lidl': 'Lidl', 'aldi': 'ALDI', 'netto': 'Netto',
             'kaufland': 'Kaufland', 'penny': 'PENNY'}
+
+# Ad-Zusammenfassung aus data/ads/*.json neu berechnen (nur eigene Marken-Seiten)
+def _countdown(rows, key):
+    c = collections.Counter(r.get(key) or 'kein CTA' for r in rows)
+    return c.most_common()
+
+ADS_PAGES = json.load(open(os.path.join(DATA, 'ads_pages.json')))
+ads = {}
+for _k, _allowed in {k: v for k, v in ADS_PAGES.items() if not k.startswith('_')}.items():
+    _f = os.path.join(DATA, 'ads', f'{_k}.json')
+    if not os.path.exists(_f):
+        continue
+    _all = json.load(open(_f)).get('rows') or []
+    _own = [r for r in _all if (r.get('page_name') or '') in _allowed]
+    ads[_k] = {
+        'total': len(_all), 'own': len(_own),
+        'pages': _countdown(_own, 'page_name'),
+        'fmt': _countdown(_own, 'display_format'),
+        'cta': _countdown(_own, 'cta_type'),
+        'titles': [(r.get('title') or r.get('body') or '').strip()[:120] for r in _own],
+        'starts': sorted(r.get('start_date') or '' for r in _own if r.get('start_date')),
+        'newest': sorted((r.get('start_date') or '' for r in _own if r.get('start_date')), reverse=True),
+    }
+
+# ---- 04: Wettbewerb aus den Ad-Daten ableiten (keine Festwerte) ----
+_APP_CTA = {'USE_APP', 'INSTALL_MOBILE_APP', 'USE_MOBILE_APP'}
+_RECRU_RE = re.compile(r'karriere|job|ausbildung|bewerb|student|verkauf\s*\(?w/d|teilzeit|vollzeit', re.I)
+_GEW_RE = re.compile(r'gewinn|gewinne|verlosung', re.I)
+
+def _brand_rows(k):
+    _f = os.path.join(DATA, 'ads', f'{k}.json')
+    if not os.path.exists(_f):
+        return []
+    allowed = set(ADS_PAGES.get(k, []))
+    return [r for r in (json.load(open(_f)).get('rows') or [])
+            if (r.get('page_name') or '') in allowed]
+
+ADS_BRAND = {}
+for _k in BRAND_DE:
+    _rows = _brand_rows(_k)
+    _titles = [(r.get('title') or '') + ' ' + (r.get('body') or '') for r in _rows]
+    ADS_BRAND[_k] = {
+        'n': len(_rows),
+        'recruiting': sum(1 for t in _titles if _RECRU_RE.search(t)) or
+                      sum(1 for r in _rows if r.get('cta_type') == 'APPLY_NOW'),
+        'app': sum(1 for r in _rows if (r.get('cta_type') or '') in _APP_CTA),
+        'gewinn': sum(1 for t in _titles if _GEW_RE.search(t)),
+        'video': sum(1 for r in _rows if r.get('display_format') == 'video'),
+        'dco': sum(1 for r in _rows if r.get('display_format') in ('dco', 'dpa')),
+        'whatsapp': sum(1 for r in _rows if r.get('cta_type') == 'WHATSAPP_MESSAGE'),
+        'newsletter': sum(1 for t in _titles if 'newsletter' in t.lower()),
+    }
+
+def _brands(prop, minv=1):
+    return [BRAND_DE[k] for k, v in ADS_BRAND.items() if v[prop] >= minv and v['n']]
+
+_FRAME = []
+_r = _brands('recruiting')
+if _r:
+    _FRAME.append(('Recruiting-Kampagnen', ' · '.join(f"{b} ({ADS_BRAND[[k for k, v in BRAND_DE.items() if v == b][0]]['recruiting']})" for b in _r)))
+_a = _brands('app')
+if _a:
+    _FRAME.append(('App-Push', ' · '.join(f"{b} ({ADS_BRAND[[k for k, v in BRAND_DE.items() if v == b][0]]['app']})" for b in _a)))
+_c = [k for k, v in ADS_BRAND.items() if (v['whatsapp'] or v['newsletter']) and v['n']]
+if _c:
+    _FRAME.append(('Community/Newsletter', ' · '.join(BRAND_DE[k] for k in _c)))
+_d = _brands('dco')
+if _d:
+    _FRAME.append(('Angebots-/Produktfeeds (DCO/DPA)', ' · '.join(f"{b} ({ADS_BRAND[[k for k, v in BRAND_DE.items() if v == b][0]]['dco']})" for b in _d)))
+_g = _brands('gewinn')
+if _g:
+    _FRAME.append(('Gewinnspiele', ' · '.join(f"{b} ({ADS_BRAND[[k for k, v in BRAND_DE.items() if v == b][0]]['gewinn']})" for b in _g)))
+_fmt_all = collections.Counter()
+for _k in BRAND_DE:
+    for _r_ in _brand_rows(_k):
+        _fmt_all[_r_.get('display_format') or 'ohne'] += 1
+_AD_FMT = dict(FMT_DE, dco='DCO', dpa='DPA', image='Bild')
+_FRAME.append(('Dominantes Format', ' · '.join(f"{_AD_FMT.get(f, f)} ({n})" for f, n in _fmt_all.most_common(3))))
+FRAME_ROWS = ''.join(
+    f'<tr><td>{esc(a)}</td><td class="num">{esc(b)}</td></tr>' for a, b in _FRAME)
+
+def _fmt_brand(prop):
+    return [BRAND_DE[k] for k, v in ADS_BRAND.items() if v[prop] and v['n']]
+
+KONK_BULLETS = ''.join([
+    '<li><b>Recruiting dominiert:</b> ' +
+    (' · '.join(f"{BRAND_DE[k]} {ADS_BRAND[k]['recruiting']} von {ADS_BRAND[k]['n']}" for k in BRAND_DE if ADS_BRAND[k]['recruiting'])
+     or 'keine') + ' eigene Anzeigen mit Job-/Ausbildungsbezug.</li>',
+    '<li><b>Bewegtbild:</b> ' +
+    (' · '.join(f"{BRAND_DE[k]} {ADS_BRAND[k]['video']} Video" for k in sorted(BRAND_DE, key=lambda x: -ADS_BRAND[x]['video']) if ADS_BRAND[k]['video'])
+     or 'kaum') + ' (eigene Anzeigen im Sample).</li>',
+    '<li><b>Dynamische Angebots-Feeds:</b> ' +
+    (' · '.join(f"{BRAND_DE[k]} {ADS_BRAND[k]['dco']}" for k in sorted(BRAND_DE, key=lambda x: -ADS_BRAND[x]['dco']) if ADS_BRAND[k]['dco'])
+     or 'kaum') + ' Anzeigen mit DCO/DPA.</li>',
+    '<li><b>Community &amp; Newsletter:</b> ' +
+    (' · '.join(BRAND_DE[k] for k in BRAND_DE if ADS_BRAND[k]['whatsapp'] or ADS_BRAND[k]['newsletter']) or 'keine') + ' nutzt direkten Kontaktaufbau als CTA.</li>',
+    '<li><b>Gewinnspiele:</b> ' +
+    (' · '.join(f"{BRAND_DE[k]} {ADS_BRAND[k]['gewinn']}" for k in sorted(BRAND_DE, key=lambda x: -ADS_BRAND[x]['gewinn']) if ADS_BRAND[k]['gewinn'])
+     or 'keine') + ' mit Gewinnbezug im Sample.</li>',
+    '<li><b>Tonalität:</b> Du-Ansprache, Emojis und kurze Claims durchgängig.</li>',
+])
 
 # Bilder holen
 IMGMAP = {}
@@ -292,7 +503,7 @@ def kpi(label, value, sub, delta=''):
 fmt_kpis = ''.join([
     kpi('Instagram-Profile', de(N_KONTEN), 'von 222 erfassten Konten'),
     kpi('Follower gesamt', de(N_FOLLOWER), 'über alle Profile'),
-    kpi('Ø Engagement-Rate', f"{OER:.1f} %", f"Median {OER_MED:.2f} % · Konten ab 500 Followern"),
+    kpi('Median-ER', de(OER_MED, 2) + ' %', f"Mittelwert {de(OER, 1)} % · Konten ab 500 Followern"),
     kpi('Analysierte Beiträge', de(N_POSTS), 'je Konto die letzten 12 Beiträge'),
 ])
 
@@ -369,8 +580,8 @@ def t_ads():
 
 fmt_cards = ''.join(f"""<div class="card kpi span2"><span class="arrow">↗</span>
   <div class="l">{esc(r['label'])}</div>
-  <div class="k">{r['er']:.1f} %</div>
-  <div class="delta grey">Median {r['er_med']:.2f} % · {de(r['n'])} Beiträge · Ø {de(r['mean_likes'])} Likes</div></div>"""
+  <div class="k">{de(r['er_med'], 2)} %</div>
+  <div class="delta grey">Median · Ø {de(r['er'], 1)} % · {de(r['n'])} Beiträge · {de(r['mean_likes'])} Likes</div></div>"""
   for r in fmt_rows)
 
 
@@ -513,8 +724,8 @@ TOP_ADS = json.load(open(os.path.join(DATA, 'top_ads.json'))) if os.path.exists(
 HOOFS = [
  ("Gewinne 15.000 € für dein Zuhause-Upgrade",
   "Konkreter Geldwert direkt im ersten Frame, dazu die Gewinnmechanik als Lead-Magnet (Teilnahme nur mit Newsletter-Anmeldung). Der Preisnutzen ist in unter einer Sekunde verstanden — genau das braucht es im Feed."),
- ("POV: „Näher geht's eigentlich\"",
-  "Humor statt Produktwerbung: extremer Nahschnitt und Selfie-Ästhetik wirken wie ein Freundes-Post, nicht wie eine Anzeige. Der Community-CTA (WhatsApp) kommt erst nach dem Gag — Aufbau von Direktkontakt statt Verkauf."),
+ ("Deine Meinung zählt: Werde Teil der WhatsApp-Community",
+  "Humor statt Produktwerbung: extremer Nahschnitt und Selfie-Ästhetik wirken wie ein Freundes-Post, nicht wie eine Anzeige. Der Gag kommt zuerst, die Community-Werbung danach. Der in der Ad Library hinterlegte CTA lautet DOWNLOAD, die Anzeige selbst führt auf die WhatsApp-Community (Meta vergibt hier einen Standard-CTA)."),
  ("Herbstlicher Gnocchi-Salat · Ausgewogene Ernährung",
   "Nutzen-Content statt Werbung: das Rezept hält die Watch-Time hoch und positioniert den Anbieter als Kompetenzquelle. Saisonbezug schafft Aktualität, die Produktbotschaft (Tiefpreis) kann weich eingebaut werden."),
  ("POV: Du willst den günstigsten Preis",
@@ -584,38 +795,23 @@ html_doc = f"""<!DOCTYPE html>
             <div class="heroStats wide">
               <div class="hstat"><div class="v">{de(N_KONTEN)}</div><div class="t"><span class="dot"></span>Instagram-Profile</div><div class="s">von 222 erfassten Konten</div></div>
               <div class="hstat"><div class="v">{de(N_FOLLOWER)}</div><div class="t"><span class="dot"></span>Follower gesamt</div><div class="s">über alle Profile</div></div>
-              <div class="hstat"><div class="v">{OER:.1f} %</div><div class="t"><span class="dot"></span>Ø Engagement-Rate</div><div class="s">Median {OER_MED:.2f} % · ab 500 Followern</div></div>
+              <div class="hstat"><div class="v">{de(OER_MED, 2)} %</div><div class="t"><span class="dot"></span>Median-ER</div><div class="s">Mittelwert {de(OER, 1)} % · ab 500 Followern</div></div>
               <div class="hstat"><div class="v">{de(N_POSTS)}</div><div class="t"><span class="dot"></span>Analysierte Beiträge</div><div class="s">je Konto die letzten 12 Beiträge</div></div>
               <div class="hstat"><div class="v">{de(O_INT_POST)}</div><div class="t"><span class="dot"></span>Ø Interaktionen je Beitrag</div><div class="s">Likes + Kommentare</div></div>
               <div class="hstat"><div class="v">{N_AKTIV30}</div><div class="t"><span class="dot"></span>Aktive Profile (30 Tage)</div><div class="s">{PCT_AKTIV:.0f} % aller Profile</div></div>
-              <div class="hstat"><div class="v">{mov[0]['er']:.0f} %</div><div class="t"><span class="dot"></span>Beste Engagement-Rate</div><div class="s">@{esc(mov[0]['handle'])}</div></div>
+              <div class="hstat"><div class="v">{de(mov_med[0]['er_med'], 1)} %</div><div class="t"><span class="dot"></span>Beste Median-ER</div><div class="s">@{esc(mov_med[0]['handle'])} · {mov_med[0]['n_valid']} Beiträge</div></div>
               <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div><div class="s">@edeka · @edekakarriere · @dein.edeka</div></div>
             </div>
             <div class="ringbox">{ring(PCT_AKTIV)}</div>
           </div>
         </div>
 
-        <div class="card span4">
+        <div class="card span6">
           <span class="arrow">↗</span>
-          <h3>Leistungsverlauf · 12 Wochen</h3>
-          <p class="hint">Interaktionen (Likes + Kommentare) je Woche über alle Profile</p>
-          {svg_line(wk_int, wk_lab)}
-          <p class="hint" style="margin:10px 0 0">Peak {de(max(wk_int))} Interaktionen · aktuelle Woche {de(wk_int[-1])} · {de(wk_cnt[-1])} Beiträge</p>
-        </div>
-
-        <div class="card span2">
-          <span class="arrow">↗</span>
-          <h3>Vergleich Vorperiode</h3>
-          <p class="hint">Letzte 30 Tage vs. die 30 Tage davor</p>
-          <div class="catrow"><div class="c1">Beiträge (30 Tage)</div><div class="c2">{de(CUR_N)}</div></div>
-          <div class="catbar"><div style="width:100%"></div></div>
-          <div class="catrow"><div class="c1">Beiträge (vorherige 30)</div><div class="c2">{de(PREV_N)}</div></div>
-          <div class="catbar"><div style="width:{max(4, PREV_N / CUR_N * 100) if CUR_N else 0:.0f}%;background:#A0C0FF"></div></div>
-          <div class="catrow"><div class="c1">Interaktionen (30 Tage)</div><div class="c2">{de(CUR_I)}</div></div>
-          <div class="catbar"><div style="width:100%"></div></div>
-          <div class="catrow"><div class="c1">Interaktionen (vorherige 30)</div><div class="c2">{de(PREV_I)}</div></div>
-          <div class="catbar"><div style="width:{max(4, PREV_I / CUR_I * 100) if CUR_I else 0:.0f}%;background:#A0C0FF"></div></div>
-          <p class="delta">+{D_POSTS:.0f} % Beiträge · +{D_INT:.0f} % Interaktionen</p>
+          <h3>{'Interaktionen je Beitrag nach Woche' if USE_NORM else 'Leistungsverlauf · 12 Wochen'}</h3>
+          <p class="hint">{('Likes + Kommentare je Beitrag, normalisiert. Keine der 12 Wochen ist für alle {1} Konten vollständig abgedeckt (je Konto nur die letzten 12 Beiträge, vollständig erst ab {2}), deshalb keine absoluten Volumenwerte, die zwischen den Wochen vergleichbar wären.'.format(FULL_WEEKS, de(N_KONTEN), COVER_START.strftime('%d.%m.%Y')) if FULL_WEEKS == 0 else 'Likes + Kommentare je Beitrag, normalisiert. {0} der 12 Wochen sind für alle {1} Konten vollständig abgedeckt (vollständig ab {2}), deshalb ohne absolute Volumenwerte.'.format(FULL_WEEKS, de(N_KONTEN), COVER_START.strftime('%d.%m.%Y'))) if USE_NORM else 'Interaktionen (Likes + Kommentare) je Woche über alle Profile'}</p>
+          {svg_line(wk_ipost if USE_NORM else wk_int, wk_lab)}
+          <p class="hint" style="margin:10px 0 0">{'Peak {0} Interaktionen je Beitrag · aktuelle Woche {1} · {2} Beiträge'.format(f"{max(wk_ipost):,.0f}".replace(',', '.'), f"{wk_ipost[-1]:,.0f}".replace(',', '.'), de(wk_cnt[-1])) if USE_NORM else 'Peak {0} Interaktionen · aktuelle Woche {1} · {2} Beiträge'.format(de(max(wk_int)), de(wk_int[-1]), de(wk_cnt[-1]))}</p>
         </div>
 
         <div class="card span6">
@@ -633,7 +829,7 @@ html_doc = f"""<!DOCTYPE html>
               <li>Wiedergaben der Reels, Shares, Saves, Story-Daten</li>
               <li>Follower-Wachstum über die Zeit (kein Historiendaten-Zugriff auf Fremdkonten)</li>
               <li>Kampagnen-, App- und Conversion-Daten (Meta Ads Manager, App-Analytics)</li>
-              <li>Kosten, ROI und Injizierungen je Kampagne</li></ul></div>
+              <li>Kosten und ROI je Kampagne</li></ul></div>
           </div>
           <p class="hint" style="margin-top:12px">Grund: Instagram liefert Reichweite/Impressionen nur über die Insights-API für die eigenen, autorisierten Konten. Für Wettbewerbs- und Fremdkonten gibt es diese Werte weder über die API noch über die Ad Library.</p>
         </div>
@@ -650,7 +846,7 @@ html_doc = f"""<!DOCTYPE html>
           <div class="miniRow">
             <div class="mini"><span>{de(N_KONTEN)}</span>Profile gesamt</div>
             <div class="mini"><span>{N_AKTIV30} ({PCT_AKTIV:.0f} %)</span>aktiv in 30 Tagen</div>
-            <div class="mini"><span>{esc(mov[0]['handle'])}</span>bester Wert: {mov[0]['er']:.1f} % ER</div>
+            <div class="mini"><span>{esc(mov_med[0]['handle'])}</span>bester Median: {de(mov_med[0]['er_med'], 2)} % ER</div>
             <div class="mini"><span>{esc(aktiv[-1]['handle'])}</span>schwächstes aktives Profil</div>
           </div>
         </div>
@@ -677,7 +873,7 @@ html_doc = f"""<!DOCTYPE html>
           <div id="u3" class="panel" style="display:none">
             <table><thead><tr><th>#</th><th>Media</th><th>Profil</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Format</th><th>Link</th></tr></thead>
             <tbody>{t_worst()}</tbody></table>
-            <p class="hint" style="margin-top:10px">Nur Beiträge mit Likes &gt; 0 aus Profilen ab 500 Followern. {de(n_null_likes)} Beiträge im Datensatz zeigen 0 Likes (Like-Wert vom Anbieter nicht geliefert) und bleiben hier unberücksichtigt.</p>
+            <p class="hint" style="margin-top:10px">Nur Beiträge mit Like-Wert aus Profilen ab 500 Followern. {de(N_NO_LIKES)} Beiträge ohne Like-Wert (0 oder 1 Like, vom Anbieter nicht geliefert) sind in ER, Rankings und Empfehlungen ausgeblendet.</p>
           </div>
           <div id="u4" class="panel" style="display:none">
             <table><thead><tr><th>#</th><th>Profil</th><th class="num">Beiträge 30 T.</th><th class="num">Beiträge ges.</th><th class="num">Interaktionen</th><th class="num">Follower</th></tr></thead>
@@ -688,7 +884,7 @@ html_doc = f"""<!DOCTYPE html>
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>Leistung nach Format</h3>
-          <p class="hint">Ø Engagement-Rate je Format — Median daneben, weil einzelne Viral-Beiträge den Mittelwert verzehren</p>
+          <p class="hint">Ø Engagement-Rate je Format — Median daneben, weil einzelne Viral-Beiträge den Mittelwert verzerren</p>
           <div class="grid" style="gap:14px">{fmt_cards}</div>
         </div>
 
@@ -696,14 +892,14 @@ html_doc = f"""<!DOCTYPE html>
           <span class="arrow">↗</span>
           <h3>Beste Wochentage</h3>
           <p class="hint">Median-ER je Tag (Beiträge mit Follower-Daten)</p>
-          {bars_h(WD_ROWS, 'label', 'med', lambda v: f"{v:.2f} %", 7)}
+          {bars_h(WD_ROWS, 'label', 'med', lambda v: de(v, 2) + ' %', 7)}
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Beste Uhrzeiten</h3>
           <p class="hint">Median-ER je Stunde (min. 40 Beiträge)</p>
-          {bars_h(sorted(HR_ROWS, key=lambda r: -r['med'])[:8], 'h', 'med', lambda v: f"{v:.2f} %", 8)}
+          {bars_h(sorted(HR_ROWS, key=lambda r: -r['med'])[:8], 'h', 'med', lambda v: de(v, 2) + ' %', 8)}
           <p class="hint" style="margin-top:8px">Beitragsvolumen peaks: 18:00 ({de(next((r['n'] for r in HR_ROWS if r['h'] == 18), 0))} Beiträge), 10:00, 16:00</p>
         </div>
 
@@ -742,7 +938,7 @@ html_doc = f"""<!DOCTYPE html>
             <li><b>Instagram Insights-API</b> — Reichweite, Wiedergaben, Speicherungen je Beitrag. Nur für eigene, autorisierte Konten.</li>
             <li><b>App-Analytics</b> (Adjust/Firebase/App Store Connect) — Installationen, Öffnungen, In-App-Aktionen.</li>
             <li><b>Web-Tracking</b> — Klicks, UTM, Conversions im Shop. Aktuell keine UTM-Daten in den Social-Links vorhanden.</li>
-            <li><b>Meta Pixel / Conversions API</b> — Wirkung auf Anmeldungen, Newsletter, Newsletter-Registrierungen.</li>
+            <li><b>Meta Pixel / Conversions API</b> — Wirkung auf Anmeldungen und Newsletter-Registrierungen.</li>
           </ul>
         </div>
 
@@ -769,7 +965,7 @@ html_doc = f"""<!DOCTYPE html>
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>04 · Competitor Intelligence — Wettbewerbsanalyse</h3>
-          <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am {STAND}</p>
+          <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am {STAND_ADS}</p>
           <table><thead><tr><th>Marke</th><th class="num">Anzeigen im Sample / Treffer</th><th>Werbeanzeigen-Seiten</th>
             <th>Formate</th><th>CTA-Typen</th><th>Beispiel-Nachrichten</th><th class="num">Neuester Start</th></tr></thead>
             <tbody>{t_ads()}</tbody></table>
@@ -786,26 +982,14 @@ html_doc = f"""<!DOCTYPE html>
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Was die Konkurrenz macht</h3>
-          <ul class="bul">
-            <li><b>Recruiting dominiert:</b> REWE (10 von 17 eigenen Anzeigen „Karriere"), ALDI SÜD Karriere, Netto — Stellenausschreibungen sind ein eigenes Kampagnen-Setup.</li>
-            <li><b>Produktfeeds/DCO:</b> EDEKA (5/6), REWE (16/17) und Netto (7/16) setzen auf dynamische Anzeigen mit Angeboten.</li>
-            <li><b>Video-first:</b> ALDI (7 Video), Kaufland (4 Video), Netto (6 Video) — Bewegtbild ist das Standardformat.</li>
-            <li><b>Community/WhatsApp:</b> EDEKA bewirbt eine WhatsApp-Community und den Newsletter (einziger Marken-CTA unter den Wettbewerbern).</li>
-            <li><b>Gewinnspiele &amp; App:</b> Lidl (Gewinnspiel, SHOP_NOW), Kaufland (USE_APP), PENNY (App-Installation).</li>
-            <li><b>Sprachliche Tonalität:</b> Du-Ansprache durchgängig („Dein Netto Treatment", „Genau für dich 💛"), Emojis und kurze Claims.</li>
-          </ul>
+          <ul class="bul">{KONK_BULLETS}</ul>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Wettbewerbs-Framework</h3>
           <table class="compact"><tbody>
-            <tr><td>Marken-Werbung</td><td class="num">EDEKA · REWE · Lidl</td></tr>
-            <tr><td>Recruiting-Kampagnen</td><td class="num">REWE · ALDI · Netto</td></tr>
-            <tr><td>Angebots-Feeds</td><td class="num">EDEKA · REWE · Netto · Lidl</td></tr>
-            <tr><td>App-Push</td><td class="num">Kaufland · PENNY</td></tr>
-            <tr><td>Community/Newsletter</td><td class="num">EDEKA</td></tr>
-            <tr><td>Dominantes Format</td><td class="num">DCO &amp; Video</td></tr>
+            {FRAME_ROWS}
           </tbody></table>
           <p class="hint" style="margin-top:10px"><b>Einschränkung:</b> Die Meta Ads Library zeigt nur öffentliche Anzeigen (Seite, Laufzeit, Format, Text). Sie liefert <b>keine</b> Reichweiten-, Kosten- oder Performance-Werte der Konkurrenz.</p>
         </div>
@@ -825,10 +1009,10 @@ html_doc = f"""<!DOCTYPE html>
           <span class="arrow">↗</span>
           <h3>Was funktioniert</h3>
           <ul class="bul">
-            <li><b>Reels haben die größte Reichweite-Ampere:</b> Ø ER {fmt_rows[0]['er']:.1f} % (Median {fmt_rows[0]['er_med']:.2f} %) gegenüber Foto {dict((r['key'], r) for r in fmt_rows).get('photo', {}).get('er', 0):.1f} %. Carousels haben den besten Median ({dict((r['key'], r) for r in fmt_rows).get('carousel', {}).get('er_med', 0):.2f} %) — sie performen konstanter, Reels liefern die Ausreißer nach oben.</li>
-            <li><b>Beste Tage:</b> {best_day['label']} (Median {best_day['med']:.2f} %), danach Donnerstag und Dienstag — Montag und Sonntag sind am schwächsten.</li>
-            <li><b>Beste Uhrzeiten:</b> {', '.join(f"{r['h']}:00 ({r['med']:.2f} %)" for r in best_hours)} — die Masse postet um 18:00, der Median sinkt dort jedoch (Volle Timeline, mehr Konkurrenz).</li>
-            <li><b>Stärkste Profile:</b> {', '.join('@' + a['handle'] for a in mov[:3])} — {mov[0]['er']:.0f} %, {mov[1]['er']:.0f} %, {mov[2]['er']:.0f} % ER.</li>
+            <li><b>Reels liefern die größten Ausreißer nach oben:</b> Ø ER {de(fmt_rows[0]['er'], 1)} % (Median {de(fmt_rows[0]['er_med'], 2)} %) gegenüber Foto {de(dict((r['key'], r) for r in fmt_rows).get('photo', {}).get('er', 0), 1)} %. Carousels haben den besten Median ({de(dict((r['key'], r) for r in fmt_rows).get('carousel', {}).get('er_med', 0), 2)} %) — sie performen konstanter, Reels liefern die Ausreißer nach oben.</li>
+            <li><b>Beste Tage:</b> {TAGE_TEXT}.</li>
+            <li><b>Beste Uhrzeiten:</b> {', '.join(f"{r['h']}:00 ({de(r['med'], 2)} %)" for r in best_hours)} — die Masse postet um 18:00, der Median sinkt dort jedoch (volle Timeline, mehr Konkurrenz).</li>
+            <li><b>Stärkste Profile (Median):</b> {', '.join('@' + a['handle'] for a in mov_med[:3])} — {de(mov_med[0]['er_med'], 1)} %, {de(mov_med[1]['er_med'], 1)} %, {de(mov_med[2]['er_med'], 1)} % Median-ER.</li>
             <li><b>Themen mit Zug:</b> {', '.join('#' + t for t, c in TOP_TAGS[:5])} — Angebote, Regionales und Humor (Azubi-/Kassen-Sketche) erzeugen die meisten Kommentare.</li>
           </ul>
         </div>
@@ -837,9 +1021,9 @@ html_doc = f"""<!DOCTYPE html>
           <span class="arrow">↗</span>
           <h3>Empfehlungen</h3>
           <ul class="bul">
-            <li><b>Format-Mix:</b> Reels als Standard, Karussells für Angebote/Sortiment — Karussells haben den höchsten Median.</li>
-            <li><b>Zeitfenster:</b> 14–17 Uhr und 19–21 Uhr belegen (höhere Median-ER), statt wie bisher stark 18:00 zu bespielen.</li>
-            <li><b>Nachbauen der Gewinner-Formate:</b> POV-/Reel-Sketche wie @edeka_fedele (16.155 Likes) und @edeka_hengge — vorproduziert über die Regionalgesellschaften teilen.</li>
+            <li><b>Format-Mix:</b> {FMT_MED_BEST['label']} für Konstanz (bester Median {de(FMT_MED_BEST['er_med'], 2)} %, {de(FMT_MED_BEST['n'])} Beiträge), {FMT_P90_LABEL} für die Ausreißer nach oben (P90 {de(FMT_P90_VAL, 1)} %). Der Median entscheidet, welches Format der Standard ist.</li>
+            <li><b>Zeitfenster:</b> {ZEIT_TEXT}.</li>
+            <li><b>Nachbauen der Gewinner-Formate:</b> stärkster Beitrag stammt von @{esc(best_posts[0]['handle'])} mit {de(best_posts[0]['likes'])} Likes ({FMT_DE.get(best_posts[0].get('kind'), 'Reel')}), dahinter @{esc(best_posts[1]['handle'])} mit {de(best_posts[1]['likes'])}. Solche Kurz-Sketche vorproduziert über die Regionalgesellschaften teilen.</li>
             <li><b>Kampagnen-Lücke schließen:</b> Für 03 zuerst Meta-Ads-Zugriff (Ads Manager der EDEKA-Zentrale oder Test-Werbekonto) und UTM-Links in alle Bio-Verlinkungen.</li>
             <li><b>Datenlücken:</b> Reichweite/Impressionen nur über die Insights-API eigener Konten — für die eigene Wertmessung Instagram-Business-Accounts autorisieren.</li>
             <li><b>Wettbewerb:</b> Recruiting- und DCO-Anzeigen der Konkurrenz als Vorlage; die eigene WhatsApp-Community ist ein Differenzierungsmerkmal.</li>
@@ -874,11 +1058,12 @@ html_doc = f"""<!DOCTYPE html>
 
     <div class="footer">
       <b>Methodik:</b> Engagement-Rate = (Likes + Kommentare) ÷ Follower × 100, gemittelt über die letzten 12 Beiträge je Profil;
-      Profile ab 500 Followern und mindestens 5 Beiträgen im Ranking. Median zusätzlich zum Mittelwert, weil einzelne Viral-Beiträge verzehren.
-      Aktivität = Beiträge in den letzten 30 Tagen (Datenstand {STAND}). Uhrzeiten in MEZ.
-      Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage {STAND}, max. 20 Treffer je Marke.
-      Quellen: Instagram-Profil- und Beitrags-APIs (crawl4ai via treg), Census-Auswertung {de(N_KONTEN)} bestätigte Profile.
-      Ausgaben dieser Auswertung: ca. 0,60 USD. Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 03).
+      Profile ab 500 Followern und mindestens 5 Beiträgen im Ranking. Median zusätzlich zum Mittelwert, weil einzelne Viral-Beiträge verzerren.
+      Aktivität = Beiträge in den letzten 30 Tagen (Datenstand {STAND}). Uhrzeiten in {TZ_LABEL} (deutsche Ortszeit, aus UTC umgerechnet).
+      Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage {STAND_ADS}, max. 20 Treffer je Marke.
+      Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: {de(N_KONTEN)} berücksichtigte Profile von {de(N_GES)} erfassten Konten.
+      Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 03).
+      Datenaufbereitung: {de(N_AUSGESCHLOSSEN)} Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), {de(N_FREMDE_POSTS)} Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), {de(N_NO_LIKES)} Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet ({de(N_POSTS_GUELTIG)} von {de(N_POSTS)} Beiträgen mit Like-Wert).
     </div>
   </div>
 </div>
