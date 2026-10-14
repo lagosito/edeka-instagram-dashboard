@@ -83,6 +83,7 @@ for rec in json.load(open(RAW)):
     followers = ni(p['followers'])
     ers, likes, coms, r30 = [], [], [], 0
     n_valid = 0
+    kept = 0
     for post in plist:
         url = post.get('url')
         if url and url in seen_urls:
@@ -113,10 +114,10 @@ for rec in json.load(open(RAW)):
                 pass
         q = dict(post); q['handle'] = h; q['followers'] = followers
         q['name'] = p['nombre']; q['tipo'] = p['tipo']; q['likes_ok'] = valid
-        posts.append(q)
+        posts.append(q); kept += 1
     accounts.append({
         'handle': h, 'nombre': p['nombre'] or h, 'followers': followers, 'tipo': p['tipo'],
-        'n': len(plist), 'n_valid': n_valid,
+        'n': kept, 'n_valid': n_valid,
         'avg_likes': statistics.mean(likes) if likes else 0,
         'med_likes': statistics.median(likes) if likes else 0,
         'er': statistics.mean(ers) if ers else 0,
@@ -1361,6 +1362,15 @@ html_doc = html_doc.replace('</svg>', '</svg></div>', 1)
 assert html_doc.count('<table') == html_doc.count('</table>')
 html_doc = html_doc.replace('<table', '<div class="tw"><table')
 html_doc = html_doc.replace('</table>', '</table></div>')
+
+# Bereinigten Datensatz mit schreiben (Grundlage fuer Reproduktion/Pruefung)
+CLEAN = [{'id': q.get('url'), 'profil': q['handle'], 'likes': q.get('likes'),
+          'kommentare': q.get('comments'), 'datum': q.get('taken_at'), 'format': q.get('kind'),
+          'follower': q.get('followers'), 'likes_ok': bool(q.get('likes_ok')),
+          'thema': q.get('thema'),
+          'interaktionen': ((q.get('likes') or 0) + (q.get('comments') or 0)) if q.get('likes_ok') else None}
+         for q in posts]
+json.dump(CLEAN, open(os.path.join(DATA, 'posts_clean.json'), 'w'), ensure_ascii=False, indent=1)
 
 open(os.path.join(SITE, 'index.html'), 'w').write(html_doc + '\n')
 print("HTML:", os.path.join(SITE, 'index.html'), len(html_doc), "bytes")
