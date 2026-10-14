@@ -2,10 +2,10 @@
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA · Social Media &amp; Marketing Intelligence</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
 .app{min-height:100vh}
 .side{width:74px;background:#fff;box-shadow:1px 0 6px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:14px;position:sticky;top:0;height:100vh}
 .logo{width:38px;height:38px;border-radius:11px;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:10px}
@@ -14,8 +14,8 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-sy
 .sic:hover{background:#EEF2FF;color:#2A60FF}
 .main{flex:1;padding:0 26px 46px;max-width:1500px}
 .top{min-height:70px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0}
-.top h1{font-size:17px;font-weight:400;margin:0;letter-spacing:-.2px}
-.top h1 span{font-weight:700}
+.top h1{font-size:16.5px;font-weight:600;margin:0;letter-spacing:-.2px}
+.top h1 span{font-weight:600}
 .tabs2{display:flex;gap:6px;margin-left:14px;flex-wrap:wrap}
 .tab2{padding:7px 13px;border-radius:8px;font-size:12.5px;color:#6B7280;cursor:pointer;font-weight:500;white-space:nowrap}
 .tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
@@ -23,8 +23,8 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-sy
 .meta{font-size:12.5px;color:#8A90A0}
 .avatar{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
 .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
-.card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(16,24,40,.06);padding:22px;position:relative}
-.card.blue{background:#2A60FF;color:#fff;box-shadow:0 6px 18px rgba(42,96,255,.28)}
+.card{background:#fff;border:1px solid #E4E8F0;border-radius:14px;box-shadow:none;padding:22px;position:relative}
+.card.blue{background:linear-gradient(135deg,#1B49D6 0%,#2A60FF 55%,#5B8CFF 100%);color:#fff;border:none;box-shadow:0 8px 22px rgba(42,96,255,.25)}
 .card h3{margin:0 0 4px;font-size:15.5px;font-weight:700}
 .card .hint{margin:0 0 16px;font-size:12.5px;color:#8A90A0}
 .card.blue .hint{color:rgba(255,255,255,.85)}
@@ -35,6 +35,12 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-sy
 .kpi .l{font-size:13.5px;color:#6B7280;margin-bottom:6px}
 .delta{font-size:12.5px;color:#16A34A;font-weight:600}
 .delta.grey{color:#8A90A0;font-weight:500}
+.heroStats.wide{grid-template-columns:repeat(4,1fr);gap:16px}
+.hstat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:13px 15px}
+.hstat .v{font-size:26px;font-weight:700;letter-spacing:-.5px}
+.hstat .s{font-size:11.5px;color:rgba(255,255,255,.75);margin-top:3px}
+.ringbox{display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+@media(max-width:1150px){.heroStats.wide{grid-template-columns:repeat(2,1fr)}}
 .heroRow{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
 .heroStats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;flex:1;min-width:280px}
 .hstat .v{font-size:23px;font-weight:700}
@@ -57,7 +63,7 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Outfit,Inter,-apple-sy
 .catbar{grid-column:1/-1;height:7px;background:#EEF0F4;border-radius:4px;overflow:hidden;margin-bottom:14px}
 .catbar div{height:100%;background:#2A60FF;border-radius:4px}
 .miniRow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-.mini{background:#F7F8FA;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#6B7280}
+.mini{background:#fff;border:1px solid #E4E8F0;border-radius:12px;padding:13px 15px;font-size:12.5px;color:#6B7280}
 .mini span{display:block;font-size:16px;font-weight:700;color:#2B2F36;margin-bottom:3px}
 .avail{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .avail .ok,.avail .no{border-radius:10px;padding:16px 18px;font-size:13px}
@@ -103,7 +109,7 @@ tr:hover td{background:#FAFBFF}
 .th{width:46px;height:46px;object-fit:cover;border-radius:7px;background:#EEF0F4;display:block}
 a{color:#2A60FF;text-decoration:none}
 a:hover{text-decoration:underline}
-.footer{margin-top:26px;font-size:12px;color:#8A90A0;line-height:1.7;background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(16,24,40,.06);padding:18px 22px}
+.footer{margin-top:26px;font-size:12px;color:#8A90A0;line-height:1.7;background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:18px 22px}
 @media(max-width:1250px){.grid{grid-template-columns:repeat(2,1fr)}.span6,.span4,.span3,.span2{grid-column:span 2}.avail{grid-template-columns:1fr}.side{display:none}}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.span6,.span4,.span3,.span2{grid-column:span 1}.hrow{grid-template-columns:120px 1fr 62px}}
 </style></head>
@@ -126,20 +132,22 @@ a:hover{text-decoration:underline}
     <!-- 01 OVERVIEW -->
     <div id="s1" class="sec">
       <div class="grid">
-        <div class="card blue span3">
+        <div class="card blue span6">
           <span class="arrow">↗</span>
           <h3 style="font-size:20px">01 · Overview — Gesamtüberblick</h3>
-          <p class="hint">Hochlevel-Kennzahlen über alle erfassten Instagram-Profile</p>
+          <p class="hint">Hochlevel-Kennzahlen über alle erfassten Instagram-Profile · Datenstand 11.10.2026</p>
           <div class="heroRow">
-            <div class="heroStats">
-              <div class="hstat"><div class="v">215</div><div class="t"><span class="dot"></span>Profile</div></div>
-              <div class="hstat"><div class="v">846.335</div><div class="t"><span class="dot"></span>Follower gesamt</div></div>
-              <div class="hstat"><div class="v">4.8 %</div><div class="t"><span class="dot"></span>Ø Engagement-Rate</div></div>
-              <div class="hstat"><div class="v">2.537</div><div class="t"><span class="dot"></span>Beiträge</div></div>
-              <div class="hstat"><div class="v">98</div><div class="t"><span class="dot"></span>Ø Interaktionen je Beitrag</div></div>
-              <div class="hstat"><div class="v">177</div><div class="t"><span class="dot"></span>aktive Profile (30 Tage)</div></div>
+            <div class="heroStats wide">
+              <div class="hstat"><div class="v">215</div><div class="t"><span class="dot"></span>Instagram-Profile</div><div class="s">von 222 erfassten Konten</div></div>
+              <div class="hstat"><div class="v">846.335</div><div class="t"><span class="dot"></span>Follower gesamt</div><div class="s">über alle Profile</div></div>
+              <div class="hstat"><div class="v">4.8 %</div><div class="t"><span class="dot"></span>Ø Engagement-Rate</div><div class="s">Median 2.25 % · ab 500 Followern</div></div>
+              <div class="hstat"><div class="v">2.537</div><div class="t"><span class="dot"></span>Analysierte Beiträge</div><div class="s">je Konto die letzten 12 Beiträge</div></div>
+              <div class="hstat"><div class="v">98</div><div class="t"><span class="dot"></span>Ø Interaktionen je Beitrag</div><div class="s">Likes + Kommentare</div></div>
+              <div class="hstat"><div class="v">177</div><div class="t"><span class="dot"></span>Aktive Profile (30 Tage)</div><div class="s">82 % aller Profile</div></div>
+              <div class="hstat"><div class="v">57 %</div><div class="t"><span class="dot"></span>Beste Engagement-Rate</div><div class="s">@edeka_hengge</div></div>
+              <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div><div class="s">@edeka · @edekakarriere · @dein.edeka</div></div>
             </div>
-            <div><svg width="168" height="168" viewBox="0 0 168 168">
+            <div class="ringbox"><svg width="168" height="168" viewBox="0 0 168 168">
       <circle cx="84.0" cy="84.0" r="76.0" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="16"/>
       <circle cx="84.0" cy="84.0" r="76.0" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"
         stroke-dasharray="393.1 84.4" transform="rotate(-90 84.0 84.0)"/>
@@ -147,15 +155,6 @@ a:hover{text-decoration:underline}
       <text x="50%" y="63%" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.9)">aktiv (30 Tage)</text></svg></div>
           </div>
         </div>
-        <div class="card kpi span2"><span class="arrow">↗</span>
-      <div class="l">Instagram-Profile</div><div class="k">215</div>
-      <div class="delta grey">von 222 erfassten Konten</div></div><div class="card kpi span2"><span class="arrow">↗</span>
-      <div class="l">Follower gesamt</div><div class="k">846.335</div>
-      <div class="delta grey">über alle Profile</div></div><div class="card kpi span2"><span class="arrow">↗</span>
-      <div class="l">Ø Engagement-Rate</div><div class="k">4.8 %</div>
-      <div class="delta grey">Median 2.25 % · Konten ab 500 Followern</div></div><div class="card kpi span2"><span class="arrow">↗</span>
-      <div class="l">Analysierte Beiträge</div><div class="k">2.537</div>
-      <div class="delta grey">je Konto die letzten 12 Beiträge</div></div>
 
         <div class="card span4">
           <span class="arrow">↗</span>
