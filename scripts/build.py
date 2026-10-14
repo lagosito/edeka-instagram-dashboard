@@ -717,20 +717,21 @@ def svg_line(vals, labs, w=760, h=210):
         pts.append((x, y))
     poly = ' '.join(f"{x:.1f},{y:.1f}" for x, y in pts)
     area = f"M{pts[0][0]:.1f},{h-pad_b:.1f} L" + ' L'.join(f"{x:.1f},{y:.1f}" for x, y in pts) + f" L{pts[-1][0]:.1f},{h-pad_b:.1f} Z"
-    dots = ''.join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#2A60FF"/>' for x, y in pts)
+    dots = ''.join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.2" fill="#2A60FF"/>' for x, y in pts)
     lab = ''
     for i, (x, y) in enumerate(pts):
         if i % 2 == 0 or i == len(pts) - 1:
-            lab += f'<text x="{x:.1f}" y="{h-12}" font-size="10" fill="#8A90A0" text-anchor="middle">{labs[i]}</text>'
+            anc = 'start' if i == 0 else ('end' if i == len(pts) - 1 else 'middle')
+            lab += f'<text x="{x:.1f}" y="{h-12}" font-size="8" fill="#8A90A0" text-anchor="{anc}">{labs[i]}</text>'
     peak = max(range(len(vals)), key=lambda i: vals[i])
     px, py = pts[peak]
-    ann = f'<text x="{px:.1f}" y="{py-9:.1f}" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="end">{de(vals[peak])}</text>'
+    ann = f'<text x="{px:.1f}" y="{py-9:.1f}" font-size="10" font-weight="600" fill="#2A60FF" text-anchor="middle">{de(vals[peak])}</text>'
     return f"""<div class="chartw"><svg viewBox="0 0 {w} {h}" width="100%" style="height:auto;display:block">
       <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#2A60FF" stop-opacity=".22"/><stop offset="100%" stop-color="#2A60FF" stop-opacity="0"/>
       </linearGradient></defs>
       <path d="{area}" fill="url(#g1)"/>
-      <polyline points="{poly}" fill="none" stroke="#2A60FF" stroke-width="2.5" stroke-linejoin="round"/>
+      <polyline points="{poly}" fill="none" stroke="#2A60FF" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
       {dots}{ann}{lab}
     </svg></div>"""
 
@@ -933,6 +934,9 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-s
 .tabs2{display:flex;gap:6px;margin-left:14px;flex-wrap:wrap}
 .tab2{padding:7px 13px;border-radius:8px;font-size:12.5px;color:#6B7280;cursor:pointer;font-weight:500;white-space:nowrap}
 .tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
+.tab2{display:flex;flex-direction:column;line-height:1.35;padding:8px 14px}
+.tabd{font-size:11px;color:#9AA0AE;font-weight:400;margin-top:2px}
+.tab2.on .tabd{color:#6E8EF0}
 .spacer{flex:1}
 .meta{font-size:12.5px;color:#8A90A0}
 .avatar{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
@@ -1141,11 +1145,11 @@ TEMPLATE = """<!DOCTYPE html>
     <header class="top">
       <h1>Edeka Social Media<br>&amp; Marketing Intelligence</h1>
       <div class="tabs2">
-        <span class="tab2 on" onclick="sec('s1',this)">01 Overview</span>
-        <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content</span>
-        <span class="tab2" onclick="sec('s3',this)">03 Campaign Impact</span>
-        <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence</span>
-        <span class="tab2" onclick="sec('s5',this)">05 Insights</span>
+        <span class="tab2 on" onclick="sec('s1',this)">01 Overview<small class="tabd">Kennzahlen auf einen Blick</small></span>
+        <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content<small class="tabd">Rankings, Top-Beiträge, Themen</small></span>
+        <span class="tab2" onclick="sec('s3',this)">03 Campaign Impact<small class="tabd">Reichweite &amp; ROI, Zugang nötig</small></span>
+        <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
+        <span class="tab2" onclick="sec('s5',this)">05 Insights<small class="tabd">Empfehlungen &amp; nächste Schritte</small></span>
       </div>
       <span class="meta">{META_TEXT}</span>
     </header>
