@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EDEKA Instagram Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.app{display:flex;min-height:100vh}
+.side{width:74px;background:#fff;box-shadow:1px 0 6px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:14px;position:sticky;top:0;height:100vh}
+.logo{width:38px;height:38px;border-radius:11px;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:10px}
+.sic{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#8A90A0;cursor:pointer}
+.sic.on{background:#2A60FF;color:#fff}
+.sic:hover{background:#EEF2FF;color:#2A60FF}
+.main{flex:1;padding:0 26px 46px;max-width:1440px}
+.top{height:70px;display:flex;align-items:center;gap:10px}
+.top h1{font-size:17px;font-weight:700;margin:0}
+.tabs2{display:flex;gap:6px;margin-left:18px}
+.tab2{padding:7px 14px;border-radius:8px;font-size:13px;color:#6B7280;cursor:pointer;font-weight:500}
+.tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
+.spacer{flex:1}
+.meta{font-size:12.5px;color:#8A90A0}
+.avatar{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(16,24,40,.06);padding:22px;position:relative}
+.card.blue{background:#2A60FF;color:#fff;box-shadow:0 6px 18px rgba(42,96,255,.28)}
+.card h3{margin:0 0 4px;font-size:15.5px;font-weight:700}
+.card .hint{margin:0 0 16px;font-size:12.5px;color:#8A90A0}
+.card.blue .hint{color:rgba(255,255,255,.85)}
+.arrow{position:absolute;top:20px;right:20px;color:#B9BFCC;font-size:15px}
+.card.blue .arrow{color:rgba(255,255,255,.8)}
+.span3{grid-column:span 3}.span2{grid-column:span 2}.span1{grid-column:span 1}.span6{grid-column:span 6}
+.kpi .k{font-size:34px;font-weight:300;color:#2B2F36;letter-spacing:-.5px}
+.kpi .l{font-size:13.5px;color:#6B7280;margin-bottom:6px}
+.delta{font-size:12.5px;color:#16A34A;font-weight:600}
+.delta.grey{color:#8A90A0;font-weight:500}
+.heroRow{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.heroStats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;flex:1;min-width:260px}
+.hstat .v{font-size:24px;font-weight:700}
+.hstat .t{font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block}
+.dot2{width:8px;height:8px;border-radius:50%;display:inline-block}
+.barchart{display:flex;align-items:flex-end;gap:12px;height:180px;padding-top:22px;overflow-x:auto}
+.bcol{flex:1;min-width:58px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bbar{width:100%;border-radius:6px 6px 0 0;transition:.2s}
+.bval{font-size:11.5px;font-weight:700;color:#2A60FF;margin-bottom:5px}
+.blab{font-size:11px;color:#8A90A0;margin-top:7px;text-align:center;line-height:1.25;height:auto;max-height:46px;word-break:break-word;hyphens:auto}
+.hrow{display:grid;grid-template-columns:180px 1fr 74px;align-items:center;gap:10px;margin:9px 0}
+.hlab{font-size:12.5px;color:#4B5563;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.htrack{background:#EEF0F4;height:14px;border-radius:7px;overflow:hidden}
+.hfill{height:100%;background:#2A60FF;border-radius:7px}
+.hval{font-size:12.5px;color:#6B7280;text-align:right;font-variant-numeric:tabular-nums}
+.catrow{display:grid;grid-template-columns:1fr auto;gap:6px;margin-bottom:4px;font-size:13px}
+.catrow .c1{display:flex;align-items:center;gap:8px;color:#4B5563}
+.catrow .c2{font-weight:700;font-variant-numeric:tabular-nums}
+.catbar{grid-column:1/-1;height:7px;background:#EEF0F4;border-radius:4px;overflow:hidden;margin-bottom:14px}
+.catbar div{height:100%;background:#2A60FF;border-radius:4px}
+.feed{background:#2A60FF;color:#fff;border-radius:10px;padding:16px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 6px 16px rgba(42,96,255,.3)}
+.feed img{width:96px;height:96px;object-fit:cover;border-radius:8px;background:#1e4fd6}
+.feed .ft{font-size:12.5px;color:rgba(255,255,255,.85)}
+.feed h4{margin:6px 0 4px;font-size:16px;font-weight:700}
+.feed .fcap{font-size:12.5px;color:rgba(255,255,255,.9);margin:6px 0 10px;line-height:1.45}
+.pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:11.5px;padding:3px 10px;border-radius:999px;font-weight:600}
+.pill2{display:inline-block;background:#E7EDFF;color:#2A60FF;font-size:11px;padding:3px 9px;border-radius:999px;font-weight:600;white-space:nowrap}
+.btnW{display:inline-block;background:#fff;color:#2A60FF;font-weight:700;font-size:12.5px;padding:8px 14px;border-radius:8px;text-decoration:none}
+.donutWrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.legend{font-size:13px;color:#4B5563}
+.legend div{display:flex;align-items:center;gap:8px;margin:7px 0}
+.tabs{display:flex;gap:8px;margin:0 0 4px}
+.tab{background:#F1F3F7;border:1px solid #E6E9EF;color:#6B7280;padding:8px 15px;border-radius:9px;cursor:pointer;font-size:13px;font-weight:600}
+.tab.on{background:#2A60FF;border-color:#2A60FF;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px 9px;text-align:left;border-bottom:1px solid #EEF0F4;vertical-align:middle}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#8A90A0;font-weight:600;background:#FAFBFC}
+tr:hover td{background:#FAFBFF}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.strong{font-weight:700;color:#2B2F36}
+.sub2{font-size:11.5px;color:#8A90A0}
+.cap{color:#4B5563;font-size:12.5px;max-width:420px}
+.th{width:46px;height:46px;object-fit:cover;border-radius:7px;background:#EEF0F4;display:block}
+a{color:#2A60FF;text-decoration:none}
+a:hover{text-decoration:underline}
+.footer{margin-top:26px;font-size:12px;color:#8A90A0;line-height:1.7}
+@media(max-width:1150px){.grid{grid-template-columns:repeat(2,1fr)}.span3,.span2,.span1,.span6{grid-column:span 2}.side{display:none}}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.span3,.span2,.span1,.span6{grid-column:span 1}.hrow{grid-template-columns:120px 1fr 60px}}
+</style></head>
+<body><div class="app">
+  <aside class="side">
+    <div class="logo">EK</div>
+    <div class="sic on" title="Übersicht">▦</div>
+    <div class="sic" title="Konten">◉</div>
+    <div class="sic" title="Beiträge">▤</div>
+    <div class="sic" title="Rankings">↗</div>
+    <div class="sic" title="Export">⤓</div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <h1>Instagram Analytics</h1>
+      <div class="tabs2"><span class="tab2 on">Übersicht</span><span class="tab2">Konten</span><span class="tab2">Beiträge</span><span class="tab2">Rankings</span></div>
+      <div class="spacer"></div>
+      <span class="meta">Stand 11.10.2026 · 215 Konten · 2.549 Beiträge</span>
+      <div class="avatar">GL</div>
+    </header>
+    <div class="grid">
+      
+<div class="card blue span3">
+  <span class="arrow">↗</span>
+  <h3 style="font-size:20px">EDEKA Instagram Überblick</h3>
+  <p class="hint">Hochlevel-Ansicht von 215 aktiven Accounts · Stand 11.10.2026</p>
+  <div class="heroRow">
+    <div class="heroStats">
+      <div class="hstat"><div class="v">215</div><div class="t"><span class="dot"></span>Aktive Konten</div></div>
+      <div class="hstat"><div class="v">846.335</div><div class="t"><span class="dot"></span>Follower gesamt</div></div>
+      <div class="hstat"><div class="v">2.549</div><div class="t"><span class="dot"></span>Analysierte Beiträge</div></div>
+      <div class="hstat"><div class="v">4.8 %</div><div class="t"><span class="dot"></span>Ø Engagement-Rate</div></div>
+      <div class="hstat"><div class="v">89</div><div class="t"><span class="dot"></span>Ø Likes je Beitrag</div></div>
+      <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div></div>
+    </div>
+    <div><svg width="170" height="170" viewBox="0 0 170 170">
+  <circle cx="85.0" cy="85.0" r="77.0" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="16"/>
+  <circle cx="85.0" cy="85.0" r="77.0" fill="none" stroke="#ffffff" stroke-width="16"
+     stroke-linecap="round" stroke-dasharray="400.5 83.3" transform="rotate(-90 85.0 85.0)"/>
+  <text x="50%" y="44%" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">83 %</text>
+  <text x="50%" y="60%" text-anchor="middle" font-size="13" fill="#ffffff" opacity=".9">posten</text>
+  <text x="50%" y="74%" text-anchor="middle" font-size="12" fill="#ffffff" opacity=".75">in 30 Tagen</text>
+</svg></div>
+  </div>
+</div>
+
+      
+<div class="card kpi span1"><span class="arrow">↗</span><div class="l">Accounts mit Beiträgen</div><div class="k">215</div><div class="delta grey">von 222 erfassten Konten</div></div>
+<div class="card kpi span1"><span class="arrow">↗</span><div class="l">Follower gesamt</div><div class="k">846.335</div><div class="delta grey">über alle Konten</div></div>
+<div class="card kpi span1"><span class="arrow">↗</span><div class="l">Beiträge analysiert</div><div class="k">2.549</div><div class="delta grey">je Konto die letzten 12 Beiträge</div></div>
+
+      
+<div class="card kpi span1"><span class="arrow">↗</span><div class="l">Posten in den letzten 30 Tagen</div><div class="k">178</div><div class="delta">83 % der 215 Konten</div></div>
+<div class="card kpi span1"><span class="arrow">↗</span><div class="l">Beste Engagement-Rate</div><div class="k">57 %</div><div class="delta">@edeka_hengge</div></div>
+
+      
+<div class="card span3">
+  <span class="arrow">↗</span>
+  <h3>Posting-Aktivität · letzte 30 Tage</h3>
+  <p class="hint">Beiträge je Konto — blau: höchste Aktivität</p>
+  <div class="barchart"><div class="bcol">
+          <span class="bval">12</span>
+          <div class="bbar" style="height:130px;background:#2A60FF"></div>
+          <span class="blab">edeka</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Berlin</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">kochschule</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Karriere</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Gebauer’s</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Südbayern</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Ziegler</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Nordwest</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Minden-Hannover</span>
+        </div><div class="bcol">
+          
+          <div class="bbar" style="height:130px;background:#E3E6EB"></div>
+          <span class="blab">Südwest</span>
+        </div></div>
+</div>
+
+      
+<div class="card span2">
+  <span class="arrow">↗</span>
+  <h3>Account-Auslastung</h3>
+  <p class="hint">Anteil der Konten mit mind. 1 Beitrag in 30 Tagen</p>
+  <div class="donutWrap">
+    <svg width="150" height="150" viewBox="0 0 150 150">
+  <circle cx="75" cy="75" r="66" fill="none" stroke="#A0C0FF" stroke-width="18"/>
+  <circle cx="75" cy="75" r="66" fill="none" stroke="#2A60FF" stroke-width="18" stroke-linecap="round"
+     stroke-dasharray="343.3 71.4" transform="rotate(-90 75 75)"/>
+  <text x="50%" y="47%" text-anchor="middle" font-size="27" font-weight="700" fill="#333">83 %</text>
+  <text x="50%" y="63%" text-anchor="middle" font-size="12" fill="#777">aktiv</text>
+</svg>
+    <div class="legend">
+      <div><span class="dot2" style="background:#2A60FF"></span>aktiv (30 Tage): <b>178</b></div>
+      <div><span class="dot2" style="background:#A0C0FF"></span>inaktiv: <b>37</b></div>
+      <div><span class="dot2" style="background:#E3E6EB"></span>Ø Reichweite je Konto: <b>1.178</b></div>
+    </div>
+  </div>
+</div>
+
+      
+    <div class="card blue span3">
+      <span class="arrow">↗</span>
+      <h3>Top-Beitrag im EDEKA-Netzwerk</h3>
+      <p class="hint">Beitrag mit den meisten Likes aus allen erfassten Konten</p>
+      <div class="feed">
+        <a href="https://www.instagram.com/p/Db3aSO7Ikj5/" target="_blank"><img src="img/best_edeka_fedele.jpg" alt="Top-Beitrag"></a>
+        <div>
+          <span class="pill">reel</span>
+          <h4>16.155 Likes · 60 Kommentare</h4>
+          <div class="ft">@edeka_fedele · 2026-08-10</div>
+          <p class="fcap">Rücken stärken oder so ähnlich 👌🏽😂
+
+#edekafedele #edekasüdwest #edekakarriere #satire #spaßbeiderarbeit</p>
+          <a class="btnW" href="https://www.instagram.com/p/Db3aSO7Ikj5/" target="_blank">Beitrag auf Instagram ansehen</a>
+        </div>
+      </div>
+    </div>
+    
+      
+<div class="card span3">
+  <span class="arrow">↗</span>
+  <h3>Engagement nach Kontentyp</h3>
+  <p class="hint">Ø Engagement-Rate (Likes + Kommentare ÷ Follower), Konten ab 500 Followern</p>
+  <div class="catrow"><div class="c1"><span class="dot2" style="background:#2A60FF"></span>Nationale Marken · 3 Konten</div><div class="c2">2.1 %</div></div><div class="catbar"><div style="width:40%"></div></div><div class="catrow"><div class="c1"><span class="dot2" style="background:#2A60FF"></span>Regionen &amp; Marken · 8 Konten</div><div class="c2">3.6 %</div></div><div class="catbar"><div style="width:71%"></div></div><div class="catrow"><div class="c1"><span class="dot2" style="background:#2A60FF"></span>Märkte · 188 Konten</div><div class="c2">5.1 %</div></div><div class="catbar"><div style="width:100%"></div></div><div class="catrow"><div class="c1"><span class="dot2" style="background:#2A60FF"></span>Ohne Bestätigung · 16 Konten</div><div class="c2">2.6 %</div></div><div class="catbar"><div style="width:50%"></div></div>
+</div>
+
+      
+<div class="card span6">
+  <span class="arrow">↗</span>
+  <h3>Rankings</h3>
+  <p class="hint">Wechsle zwischen Engagement, besten Beiträgen und Aktivität</p>
+  <div class="tabs">
+    <button class="tab on" onclick="show('t1',this)">Engagement-Rate</button>
+    <button class="tab" onclick="show('t2',this)">Beste Beiträge</button>
+    <button class="tab" onclick="show('t3',this)">Aktivste Konten</button>
+  </div>
+  <div id="t1" class="panel">
+    <table><thead><tr><th>#</th><th>Konto</th><th class="num">Follower</th><th class="num">ER</th><th class="num">Likes/Beitrag</th><th class="num">Beiträge 30 T.</th></tr></thead>
+    <tbody><tr><td>1</td>
+        <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a><div class="sub2">EDEKA Hengge</div></td>
+        <td class="num">1.217</td><td class="num strong">57.2 %</td>
+        <td class="num">683</td><td class="num">6</td></tr><tr><td>2</td>
+        <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a><div class="sub2">Edeka Fedele</div></td>
+        <td class="num">2.879</td><td class="num strong">55.7 %</td>
+        <td class="num">1.591</td><td class="num">3</td></tr><tr><td>3</td>
+        <td><a href="https://www.instagram.com/edeka_rohling/" target="_blank">@edeka_rohling</a><div class="sub2">EDEKA Rohling</div></td>
+        <td class="num">639</td><td class="num strong">36.6 %</td>
+        <td class="num">222</td><td class="num">5</td></tr><tr><td>4</td>
+        <td><a href="https://www.instagram.com/edeka.giessenwest/" target="_blank">@edeka.giessenwest</a><div class="sub2">Edeka Marius Schneider</div></td>
+        <td class="num">869</td><td class="num strong">32.8 %</td>
+        <td class="num">277</td><td class="num">1</td></tr><tr><td>5</td>
+        <td><a href="https://www.instagram.com/edeka_heder/" target="_blank">@edeka_heder</a><div class="sub2">E-Center Heder</div></td>
+        <td class="num">1.583</td><td class="num strong">32.5 %</td>
+        <td class="num">264</td><td class="num">0</td></tr><tr><td>6</td>
+        <td><a href="https://www.instagram.com/edekahabermann/" target="_blank">@edekahabermann</a><div class="sub2">𝐄𝐝𝐞𝐤𝐚 𝐂𝐞𝐧𝐭𝐞𝐫 𝐇𝐚𝐛𝐞𝐫𝐦𝐚𝐧𝐧</div></td>
+        <td class="num">708</td><td class="num strong">29.8 %</td>
+        <td class="num">204</td><td class="num">2</td></tr><tr><td>7</td>
+        <td><a href="https://www.instagram.com/edeka.fromm/" target="_blank">@edeka.fromm</a><div class="sub2">EDEKA Fromm | Wir 💛 Lebensmittel</div></td>
+        <td class="num">1.629</td><td class="num strong">22.0 %</td>
+        <td class="num">302</td><td class="num">1</td></tr><tr><td>8</td>
+        <td><a href="https://www.instagram.com/edeka.hessenring/" target="_blank">@edeka.hessenring</a><div class="sub2">EDEKA Hessenring</div></td>
+        <td class="num">1.128</td><td class="num strong">16.7 %</td>
+        <td class="num">186</td><td class="num">11</td></tr><tr><td>9</td>
+        <td><a href="https://www.instagram.com/edekakapfenberger/" target="_blank">@edekakapfenberger</a><div class="sub2">Edeka Kapfenberger</div></td>
+        <td class="num">703</td><td class="num strong">16.1 %</td>
+        <td class="num">111</td><td class="num">5</td></tr><tr><td>10</td>
+        <td><a href="https://www.instagram.com/ecenter.zerbst/" target="_blank">@ecenter.zerbst</a><div class="sub2">EDEKA Center Zerbst</div></td>
+        <td class="num">1.424</td><td class="num strong">15.5 %</td>
+        <td class="num">220</td><td class="num">4</td></tr><tr><td>11</td>
+        <td><a href="https://www.instagram.com/edekatiedemann/" target="_blank">@edekatiedemann</a><div class="sub2">Edeka Tiedemann</div></td>
+        <td class="num">797</td><td class="num strong">14.8 %</td>
+        <td class="num">116</td><td class="num">0</td></tr><tr><td>12</td>
+        <td><a href="https://www.instagram.com/edeka_paak_erfurt/" target="_blank">@edeka_paak_erfurt</a><div class="sub2">EDEKA_Paak_Erfurt</div></td>
+        <td class="num">878</td><td class="num strong">13.9 %</td>
+        <td class="num">117</td><td class="num">12</td></tr><tr><td>13</td>
+        <td><a href="https://www.instagram.com/edeka.gunkel/" target="_blank">@edeka.gunkel</a><div class="sub2">EDEKA Gunkel | Qualität aus der Region</div></td>
+        <td class="num">1.147</td><td class="num strong">13.8 %</td>
+        <td class="num">156</td><td class="num">5</td></tr><tr><td>14</td>
+        <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a><div class="sub2">EDEKA Berlin</div></td>
+        <td class="num">7.354</td><td class="num strong">13.4 %</td>
+        <td class="num">953</td><td class="num">12</td></tr><tr><td>15</td>
+        <td><a href="https://www.instagram.com/edekavogt/" target="_blank">@edekavogt</a><div class="sub2">EDEKA Vogt</div></td>
+        <td class="num">878</td><td class="num strong">12.2 %</td>
+        <td class="num">79</td><td class="num">6</td></tr><tr><td>16</td>
+        <td><a href="https://www.instagram.com/edeka_gabriel/" target="_blank">@edeka_gabriel</a><div class="sub2">edeka_gabriel</div></td>
+        <td class="num">1.246</td><td class="num strong">10.7 %</td>
+        <td class="num">131</td><td class="num">12</td></tr><tr><td>17</td>
+        <td><a href="https://www.instagram.com/e_center_tbb/" target="_blank">@e_center_tbb</a><div class="sub2">E center Dürr</div></td>
+        <td class="num">1.321</td><td class="num strong">10.4 %</td>
+        <td class="num">121</td><td class="num">12</td></tr><tr><td>18</td>
+        <td><a href="https://www.instagram.com/edeka.lorenz/" target="_blank">@edeka.lorenz</a><div class="sub2">EDEKA LORENZ</div></td>
+        <td class="num">1.640</td><td class="num strong">10.0 %</td>
+        <td class="num">151</td><td class="num">0</td></tr><tr><td>19</td>
+        <td><a href="https://www.instagram.com/ecenter.haubrock.vlotho/" target="_blank">@ecenter.haubrock.vlotho</a><div class="sub2">ecenter.haubrock.vlotho</div></td>
+        <td class="num">647</td><td class="num strong">9.3 %</td>
+        <td class="num">46</td><td class="num">4</td></tr><tr><td>20</td>
+        <td><a href="https://www.instagram.com/edekaottundfuchs/" target="_blank">@edekaottundfuchs</a><div class="sub2">Edeka Ott &amp; Fuchs</div></td>
+        <td class="num">739</td><td class="num strong">9.2 %</td>
+        <td class="num">63</td><td class="num">1</td></tr></tbody></table>
+  </div>
+  <div id="t2" class="panel" style="display:none">
+    <table><thead><tr><th>#</th><th>Media</th><th>Konto</th><th>Text</th><th class="num">Likes</th><th class="num">Komment.</th><th class="num">Datum</th><th>Typ</th></tr></thead>
+    <tbody><tr><td>1</td>
+        <td><img class="th" src="img/best_edeka_fedele.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_fedele/" target="_blank">@edeka_fedele</a></td>
+        <td class="cap">Rücken stärken oder so ähnlich 👌🏽😂
+
+#edekafedele #edekasüdwest #edekakarriere #satire #spaßbeiderarbeit</td>
+        <td class="num strong">16.155</td><td class="num">60</td>
+        <td class="num">2026-08-10</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>2</td>
+        <td><img class="th" src="img/p01_edeka_sell.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_sell/" target="_blank">@edeka_sell</a></td>
+        <td class="cap">Man muss ja vorbereitet sein!🎅🍪
+
+#einzelhandel#weihnachten#edekasell#christmas #dermbach</td>
+        <td class="num strong">15.993</td><td class="num">38</td>
+        <td class="num">2026-09-30</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>3</td>
+        <td><img class="th" src="img/p02_edeka.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka/" target="_blank">@edeka</a></td>
+        <td class="cap">Was hat Menstruation mit Chancengleichheit zu tun? Mehr, als viele denken. 💛 Gemeinsam mit @planinternationaldeutschland​ setzen wir uns für bessere B</td>
+        <td class="num strong">13.243</td><td class="num">107</td>
+        <td class="num">2026-10-09</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>4</td>
+        <td><img class="th" src="img/p03_edeka_nolte.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_nolte/" target="_blank">@edeka_nolte</a></td>
+        <td class="cap">Alle Jahre wieder.... das Problem kennt jeder Kassierer 😅
+#kasse #federweißer #viral #fyp #edeka</td>
+        <td class="num strong">6.618</td><td class="num">419</td>
+        <td class="num">2026-09-11</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>5</td>
+        <td><img class="th" src="img/p04_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a></td>
+        <td class="cap">GEWINNE einen von 2x 50€ EDEKA-Gutscheinen! 🎁
+
+Mitmachen ist easy:
+
+✅ Diesem Kanal folgen
+❤️ Diesen Beitrag liken
+🚀 Diesen Beitrag teilen
+💬 Tagge die </td>
+        <td class="num strong">4.264</td><td class="num">381</td>
+        <td class="num">2026-10-01</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>6</td>
+        <td><img class="th" src="img/p05_edeka.berlin.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a></td>
+        <td class="cap">Die LEGO Sammelaktion ist im vollem Gang! 🧱💛 Ab sofort in deinem EDEKA in Berlin, einkaufen, sammeln, losbauen. Noch bis zum 17.10.2026 erhältst du pr</td>
+        <td class="num strong">4.062</td><td class="num">2</td>
+        <td class="num">2026-09-21</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>7</td>
+        <td><img class="th" src="img/p06_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a></td>
+        <td class="cap">Anzeige | Part 2 meiner Meal Prep Rezeptreihe: Cremige Kürbislasagne 🎃
+
+Wenn Kürbissuppe und Lasagne ein gemeinsames Rezept hätten, würde wahrscheinli</td>
+        <td class="num strong">3.540</td><td class="num">75</td>
+        <td class="num">2026-10-06</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>8</td>
+        <td><img class="th" src="img/p07_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a></td>
+        <td class="cap">POV: Du willst deinem Azubi etwas erklären… aber sprichst noch die Sprache von 2010😂
+
+Also gut… dann eben auf Jugendsprache. 😎
+
+🎥 Wie hätte die Chefin</td>
+        <td class="num strong">3.248</td><td class="num">59</td>
+        <td class="num">2026-08-07</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>9</td>
+        <td><img class="th" src="img/p08_edeka_hengge.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_hengge/" target="_blank">@edeka_hengge</a></td>
+        <td class="cap">Mission Testeinkauf: Herausforderung angenommen.🕵🏼‍♀️🛒😂
+
+Auf dem Band sieht alles ganz harmlos aus... 
+aber was versteckt sich denn da noch? ••
+
+Unser</td>
+        <td class="num strong">3.171</td><td class="num">26</td>
+        <td class="num">2026-08-21</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>10</td>
+        <td><img class="th" src="img/p09_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a></td>
+        <td class="cap">So geht euer Meal Prep noch schneller 🧅🧄🌿
+
+Zwiebeln, Knoblauch und Kräuter bei jedem Kochen neu vorbereiten? Macht euch die würzige Basis einfach auf </td>
+        <td class="num strong">3.138</td><td class="num">541</td>
+        <td class="num">2026-10-04</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>11</td>
+        <td><img class="th" src="img/p10_edekakarriere.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a></td>
+        <td class="cap">Eine Ausbildung bei EDEKA ist wie eine Schachtel Matcharuhns – schmeckt. Jetzt bewerben! 💛</td>
+        <td class="num strong">2.974</td><td class="num">57</td>
+        <td class="num">2026-10-06</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>12</td>
+        <td><img class="th" src="img/p11_edeka_rohling.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_rohling/" target="_blank">@edeka_rohling</a></td>
+        <td class="cap">Was sagt ihr zum Countryman? - hört unbedingt bis zum Ende 😂🔊❤️
+
+#automobilb64 #fyp #viral #singenderautohaendler #mini</td>
+        <td class="num strong">2.518</td><td class="num">131</td>
+        <td class="num">2026-08-21</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>13</td>
+        <td><img class="th" src="img/p12_edekakarriere.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a></td>
+        <td class="cap">Ausbildung bei EDEKA: zu 100 % Pferdtrade! 🐴 Jetzt bewerben.
+
+@fabianrashagai23</td>
+        <td class="num strong">2.399</td><td class="num">27</td>
+        <td class="num">2026-10-09</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>14</td>
+        <td><img class="th" src="img/p13_edeka.fromm.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka.fromm/" target="_blank">@edeka.fromm</a></td>
+        <td class="cap">🛒 „War doch nur ein Testeinkauf.&quot; 😇 Ja, ist klar ne 💛 In der EDEKA App findet ihr eh immer die besten Angebote. 📲
+#edekaBerlin</td>
+        <td class="num strong">2.297</td><td class="num">4</td>
+        <td class="num">2026-07-13</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>15</td>
+        <td><img class="th" src="img/p14_edeka_gebauer.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a></td>
+        <td class="cap">Krankmelden für Fortgeschrittene 😂
+
+Wenn du dir vor dem Anruf ganz genau überlegst, wie du heute besonders glaubwürdig klingst 📱
+
+Wie überzeugend war </td>
+        <td class="num strong">2.179</td><td class="num">43</td>
+        <td class="num">2026-09-27</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>16</td>
+        <td><img class="th" src="img/p15_edekakochschule.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a></td>
+        <td class="cap">Anzeige | Part 1 meiner neuen Meal Prep Rezeptreihe: One-Pot French Onion Pasta 🧅
+
+Ich sag’s euch: Das ist das perfekte Meal Prep für stressige Tage. </td>
+        <td class="num strong">1.785</td><td class="num">61</td>
+        <td class="num">2026-09-29</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>17</td>
+        <td><img class="th" src="img/p16_nordfrischecenter.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/nordfrischecenter/" target="_blank">@nordfrischecenter</a></td>
+        <td class="cap">Anzeige |
+Andy‘s Brotdose @edekakarriere</td>
+        <td class="num strong">1.679</td><td class="num">28</td>
+        <td class="num">2026-09-10</td>
+        <td><span class="pill2">reel</span></td></tr><tr><td>18</td>
+        <td><img class="th" src="img/p17_edeka_struve.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_struve/" target="_blank">@edeka_struve</a></td>
+        <td class="cap">Ankommen, durchatmen und einfach mal raus aus dem Alltag! 🇩🇰✨
+
+Gemeinsam mit velfrisk und dansk.de verlosen wir 1x einen 500,- € Ferienhausgutschein f</td>
+        <td class="num strong">1.563</td><td class="num">1536</td>
+        <td class="num">2026-09-21</td>
+        <td><span class="pill2">carousel</span></td></tr><tr><td>19</td>
+        <td><img class="th" src="img/p18_edeka_gebauer.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a></td>
+        <td class="cap">☕️ GEWINNSPIEL – MELITTA BARISTA TS SMART ☕️
+Kaffee geht immer – und mit der Melitta Barista TS Smart erst recht! 😍
+Wir verlosen 1× Melitta Barista TS</td>
+        <td class="num strong">1.556</td><td class="num">1858</td>
+        <td class="num">2026-09-29</td>
+        <td><span class="pill2">photo</span></td></tr><tr><td>20</td>
+        <td><img class="th" src="img/p19_edeka_gabriel.jpg" alt="" onerror="this.style.display=&#39;none&#39;"></td>
+        <td><a href="https://www.instagram.com/edeka_gabriel/" target="_blank">@edeka_gabriel</a></td>
+        <td class="cap">Zeiten sind hart manchmal. 😒</td>
+        <td class="num strong">1.495</td><td class="num">37</td>
+        <td class="num">2026-09-24</td>
+        <td><span class="pill2">reel</span></td></tr></tbody></table>
+  </div>
+  <div id="t3" class="panel" style="display:none">
+    <table><thead><tr><th>#</th><th>Konto</th><th class="num">Beiträge 30 T.</th><th class="num">Beiträge gesamt</th><th class="num">Reichweite</th><th class="num">Follower</th></tr></thead>
+    <tbody><tr><td>1</td>
+        <td><a href="https://www.instagram.com/edeka/" target="_blank">@edeka</a><div class="sub2">EDEKA</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">15.724</td><td class="num">296.503</td></tr><tr><td>2</td>
+        <td><a href="https://www.instagram.com/edeka.berlin/" target="_blank">@edeka.berlin</a><div class="sub2">EDEKA Berlin</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">11.846</td><td class="num">7.354</td></tr><tr><td>3</td>
+        <td><a href="https://www.instagram.com/edekakochschule/" target="_blank">@edekakochschule</a><div class="sub2">Moin aus der EDEKA Kochschule! 👋</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">11.286</td><td class="num">31.122</td></tr><tr><td>4</td>
+        <td><a href="https://www.instagram.com/edekakarriere/" target="_blank">@edekakarriere</a><div class="sub2">EDEKA Karriere</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">9.025</td><td class="num">13.206</td></tr><tr><td>5</td>
+        <td><a href="https://www.instagram.com/edeka_gebauer/" target="_blank">@edeka_gebauer</a><div class="sub2">EDEKA Gebauer’s</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">7.281</td><td class="num">7.521</td></tr><tr><td>6</td>
+        <td><a href="https://www.instagram.com/edekasuedbayern/" target="_blank">@edekasuedbayern</a><div class="sub2">EDEKA Südbayern</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">5.965</td><td class="num">27.719</td></tr><tr><td>7</td>
+        <td><a href="https://www.instagram.com/edeka.ziegler/" target="_blank">@edeka.ziegler</a><div class="sub2">EDEKA Ziegler</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">3.483</td><td class="num">13.013</td></tr><tr><td>8</td>
+        <td><a href="https://www.instagram.com/edeka.nordwest/" target="_blank">@edeka.nordwest</a><div class="sub2">EDEKA Nordwest</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">2.860</td><td class="num">7.397</td></tr><tr><td>9</td>
+        <td><a href="https://www.instagram.com/edeka.minden.hannover/" target="_blank">@edeka.minden.hannover</a><div class="sub2">EDEKA Minden-Hannover</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">2.559</td><td class="num">7.218</td></tr><tr><td>10</td>
+        <td><a href="https://www.instagram.com/edekasuedwest/" target="_blank">@edekasuedwest</a><div class="sub2">EDEKA Südwest</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">2.411</td><td class="num">65.859</td></tr><tr><td>11</td>
+        <td><a href="https://www.instagram.com/ecenter.iq/" target="_blank">@ecenter.iq</a><div class="sub2">E Center Duhok</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">2.333</td><td class="num">2.497</td></tr><tr><td>12</td>
+        <td><a href="https://www.instagram.com/edekafriedebold/" target="_blank">@edekafriedebold</a><div class="sub2">Edeka Friedebold</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.737</td><td class="num">2.711</td></tr><tr><td>13</td>
+        <td><a href="https://www.instagram.com/edekawiele/" target="_blank">@edekawiele</a><div class="sub2">Edeka Wiele in Bad Meinberg</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.670</td><td class="num">5.387</td></tr><tr><td>14</td>
+        <td><a href="https://www.instagram.com/e_center_tbb/" target="_blank">@e_center_tbb</a><div class="sub2">E center Dürr</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.654</td><td class="num">1.321</td></tr><tr><td>15</td>
+        <td><a href="https://www.instagram.com/edeka_warnowpark/" target="_blank">@edeka_warnowpark</a><div class="sub2">EDEKA Warnow Park</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.640</td><td class="num">7.157</td></tr><tr><td>16</td>
+        <td><a href="https://www.instagram.com/edeka_gabriel/" target="_blank">@edeka_gabriel</a><div class="sub2">edeka_gabriel</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.607</td><td class="num">1.246</td></tr><tr><td>17</td>
+        <td><a href="https://www.instagram.com/edeka_stiegler/" target="_blank">@edeka_stiegler</a><div class="sub2">Edeka Stiegler</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.547</td><td class="num">21.696</td></tr><tr><td>18</td>
+        <td><a href="https://www.instagram.com/edeka.kohler/" target="_blank">@edeka.kohler</a><div class="sub2">Edeka Kohler</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.484</td><td class="num">6.798</td></tr><tr><td>19</td>
+        <td><a href="https://www.instagram.com/edeka_paak_erfurt/" target="_blank">@edeka_paak_erfurt</a><div class="sub2">EDEKA_Paak_Erfurt</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.467</td><td class="num">878</td></tr><tr><td>20</td>
+        <td><a href="https://www.instagram.com/edeka.nst/" target="_blank">@edeka.nst</a><div class="sub2">EDEKA Nordbayern-Sachsen-Thüringen</div></td>
+        <td class="num">12</td><td class="num">12</td>
+        <td class="num">1.409</td><td class="num">7.874</td></tr></tbody></table>
+  </div>
+</div>
+
+    </div>
+    <div class="footer">
+  Datenerhebung am 11.10.2026 · je Konto die letzten 12 Beiträge (Instagram-API via treg) ·
+  Engagement-Rate = mittlere (Likes + Kommentare) ÷ Follower × 100 der letzten 12 Beiträge ·
+  Konten unter 500 Followern sind im Engagement-Ranking nicht enthalten.<br>
+  Bestätigter Bestand: 215 aktive Konten (von 222 erfassten) — der Gesamtbestand von EDEKA ist höher,
+  da einzelne Händler eigene Accounts führen, die ohne den Namen „EDEKA“ nicht auffindbar sind.
+</div>
+  </div>
+</div>
+<script>function show(id, el){
+  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+  document.getElementById(id).style.display='block';
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  el.classList.add('on');
+}</script>
+</body></html>
