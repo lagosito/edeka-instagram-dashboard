@@ -19,6 +19,9 @@ body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-s
 .tabs2{display:flex;gap:6px;margin-left:14px;flex-wrap:wrap}
 .tab2{padding:7px 13px;border-radius:8px;font-size:12.5px;color:#6B7280;cursor:pointer;font-weight:500;white-space:nowrap}
 .tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
+.tab2{display:flex;flex-direction:column;line-height:1.35;padding:8px 14px}
+.tabd{font-size:11px;color:#9AA0AE;font-weight:400;margin-top:2px}
+.tab2.on .tabd{color:#6E8EF0}
 .spacer{flex:1}
 .meta{font-size:12.5px;color:#8A90A0}
 .avatar{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
@@ -171,11 +174,11 @@ a:hover{text-decoration:underline}
     <header class="top">
       <h1>Edeka Social Media<br>&amp; Marketing Intelligence</h1>
       <div class="tabs2">
-        <span class="tab2 on" onclick="sec('s1',this)">01 Overview</span>
-        <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content</span>
-        <span class="tab2" onclick="sec('s3',this)">03 Campaign Impact</span>
-        <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence</span>
-        <span class="tab2" onclick="sec('s5',this)">05 Insights</span>
+        <span class="tab2 on" onclick="sec('s1',this)">01 Overview<small class="tabd">Kennzahlen auf einen Blick</small></span>
+        <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content<small class="tabd">Rankings, Top-Beiträge, Themen</small></span>
+        <span class="tab2" onclick="sec('s3',this)">03 Campaign Impact<small class="tabd">Reichweite &amp; ROI, Zugang nötig</small></span>
+        <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
+        <span class="tab2" onclick="sec('s5',this)">05 Insights<small class="tabd">Empfehlungen &amp; nächste Schritte</small></span>
       </div>
       <span class="meta">Datenstand 11.10.2026 · 205 Profile · 2.322 Beiträge</span>
     </header>
@@ -210,8 +213,8 @@ a:hover{text-decoration:underline}
         <stop offset="0%" stop-color="#2A60FF" stop-opacity=".22"/><stop offset="100%" stop-color="#2A60FF" stop-opacity="0"/>
       </linearGradient></defs>
       <path d="M8.0,176.0 L8.0,156.1 L75.6,145.2 L143.3,130.3 L210.9,26.0 L278.5,133.0 L346.2,164.0 L413.8,164.0 L481.5,143.0 L549.1,159.6 L616.7,149.2 L684.4,128.8 L752.0,133.7 L752.0,176.0 Z" fill="url(#g1)"/>
-      <polyline points="8.0,156.1 75.6,145.2 143.3,130.3 210.9,26.0 278.5,133.0 346.2,164.0 413.8,164.0 481.5,143.0 549.1,159.6 616.7,149.2 684.4,128.8 752.0,133.7" fill="none" stroke="#2A60FF" stroke-width="2.5" stroke-linejoin="round"/>
-      <circle cx="8.0" cy="156.1" r="3" fill="#2A60FF"/><circle cx="75.6" cy="145.2" r="3" fill="#2A60FF"/><circle cx="143.3" cy="130.3" r="3" fill="#2A60FF"/><circle cx="210.9" cy="26.0" r="3" fill="#2A60FF"/><circle cx="278.5" cy="133.0" r="3" fill="#2A60FF"/><circle cx="346.2" cy="164.0" r="3" fill="#2A60FF"/><circle cx="413.8" cy="164.0" r="3" fill="#2A60FF"/><circle cx="481.5" cy="143.0" r="3" fill="#2A60FF"/><circle cx="549.1" cy="159.6" r="3" fill="#2A60FF"/><circle cx="616.7" cy="149.2" r="3" fill="#2A60FF"/><circle cx="684.4" cy="128.8" r="3" fill="#2A60FF"/><circle cx="752.0" cy="133.7" r="3" fill="#2A60FF"/><text x="210.9" y="17.0" font-size="11" font-weight="700" fill="#2A60FF" text-anchor="end">521</text><text x="8.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">26.07</text><text x="143.3" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">09.08</text><text x="278.5" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">23.08</text><text x="413.8" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">06.09</text><text x="549.1" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">20.09</text><text x="684.4" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">04.10</text><text x="752.0" y="198" font-size="10" fill="#8A90A0" text-anchor="middle">11.10</text>
+      <polyline points="8.0,156.1 75.6,145.2 143.3,130.3 210.9,26.0 278.5,133.0 346.2,164.0 413.8,164.0 481.5,143.0 549.1,159.6 616.7,149.2 684.4,128.8 752.0,133.7" fill="none" stroke="#2A60FF" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <circle cx="8.0" cy="156.1" r="2.2" fill="#2A60FF"/><circle cx="75.6" cy="145.2" r="2.2" fill="#2A60FF"/><circle cx="143.3" cy="130.3" r="2.2" fill="#2A60FF"/><circle cx="210.9" cy="26.0" r="2.2" fill="#2A60FF"/><circle cx="278.5" cy="133.0" r="2.2" fill="#2A60FF"/><circle cx="346.2" cy="164.0" r="2.2" fill="#2A60FF"/><circle cx="413.8" cy="164.0" r="2.2" fill="#2A60FF"/><circle cx="481.5" cy="143.0" r="2.2" fill="#2A60FF"/><circle cx="549.1" cy="159.6" r="2.2" fill="#2A60FF"/><circle cx="616.7" cy="149.2" r="2.2" fill="#2A60FF"/><circle cx="684.4" cy="128.8" r="2.2" fill="#2A60FF"/><circle cx="752.0" cy="133.7" r="2.2" fill="#2A60FF"/><text x="210.9" y="17.0" font-size="10" font-weight="600" fill="#2A60FF" text-anchor="middle">521</text><text x="8.0" y="198" font-size="8" fill="#8A90A0" text-anchor="start">26.07</text><text x="143.3" y="198" font-size="8" fill="#8A90A0" text-anchor="middle">09.08</text><text x="278.5" y="198" font-size="8" fill="#8A90A0" text-anchor="middle">23.08</text><text x="413.8" y="198" font-size="8" fill="#8A90A0" text-anchor="middle">06.09</text><text x="549.1" y="198" font-size="8" fill="#8A90A0" text-anchor="middle">20.09</text><text x="684.4" y="198" font-size="8" fill="#8A90A0" text-anchor="middle">04.10</text><text x="752.0" y="198" font-size="8" fill="#8A90A0" text-anchor="end">11.10</text>
     </svg></div>
           <p class="hint" style="margin:10px 0 0">Peak 521 Interaktionen je Beitrag · aktuelle Woche 147 · 346 Beiträge</p>
         </div>
