@@ -1,0 +1,1497 @@
+{
+  "meta": {
+    "blocked": [
+      "www.facebook.com"
+    ],
+    "elapsed_ms": 3562,
+    "from_cache": false,
+    "llm_calls": 0,
+    "pages_fetched": 4,
+    "partial": false,
+    "warnings": [
+      "module: meta-ads-search: 'Lidl' \u00b7 DE \u00b7 active \u00b7 20 ad(s) \u00b7 one view \u00b7 direct"
+    ]
+  },
+  "recipe": "meta-ads-search",
+  "rows": [
+    {
+      "ad_archive_id": "450239114032197",
+      "ad_url": "https://www.facebook.com/ads/library/?id=450239114032197",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwGPqZiP&_nc_oc=Adr8_t1bRFjbWsLBZexiyLBtyDQ_IEwz32WQUjjazpc9V_LeJeR3TFQt6FJyd4ZeOoekv4YdUlLcAqxXiOWcuG32&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNWCAkN6ay2smMqAwQv5P7QcWARp3G75CAvotWX5BINLQ&oe=6AD510D1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwEJtl5W&_nc_oc=Adp-Bm3E-Z-t-w6TwjlkoAjhqMLXshPzVYrMAKeCGx8jhp5tL1rx-3Sh_FgYWESPLH4Iih1AngUQAGS-jD3uGqPY&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuzOwmFk0gdHtygul1wrYOonScIl7DP8jTqLGTuJIUtA&oe=6AD52B45",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwG3z9-y&_nc_oc=Adp_tJf6gNuouO8XFEdv-NiO7dXsQ4qs7QX-Ayl8HEw3MT5HbV-TNPeBMyxe8xBSR3BP2G80OSXy1Q-hTWcaPh1x&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMfVx5FRucpAhU8sh38RwpNGGYetWx0_4cO5ndxtc9gWw&oe=6AD52B65",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwHhMU8E&_nc_oc=AdoARhMJwT_Cn3_l-0gxo9ul7HrzdwMY9aMXvbmfPbqOI-85KMUyidQG1DLWuWygBURtEWOVF7sMdT9UC4KoQ7dc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNR6f6Hv_oZLkA-ygSGfeX_HknDNkMCIs2rnnH0fJYJcg&oe=6AD5305F",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFU3Wxf&_nc_oc=AdoIH-Sj0uUPVnleszxb1Lvt0De0jv58IipNTjHYF1SZL9tXewt046y5dnClPuUnQEZawXpUeGAJvtp_y9FKiRnW&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwvUe1jHmvT0mTm56wy24g8gZ-GXN38wZ77KAneATN4Q&oe=6AD505B8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwFyfM39&_nc_oc=AdoC9Jq7yHxuMw6BcBNElFA6ZGb0Fsmq2Ci40EMOxUpCWXKOO35FwXcb9b1B4DzwnlvfG3vZxpIkW9DUkfMamZrQ&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNGYwbzhtX_r-Wy3lK_rks5Q3fhUuTGXqfLdSQpgEh4Vw&oe=6AD51BB8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwFsr_e-&_nc_oc=Adofn3XmX8pFxeNwiRPN4W9mjVWexFneMcwtsX-05nXoCpSUKFKcpEv0NkLoPyHIX8foD13Xsj25Q4cbWyXKF0jX&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQM97zg23YyZsrmFd61h94J7TdZ-826EZcwgMsFBHZsyyw&oe=6AD511A6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Fressnapf Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwEqe4vb&_nc_oc=AdqOxxmz9vOEgeN5tWJiFzliyij4JHxZEf5Lg81U0L4zbEP7y_92PlJfTOQ0v0QpbBldxxo34leQNr90VKjAtArB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNFAPUML7M74iCW3SpehPHKP2b86_pq9RSpanLP2ldKMQ&oe=6AD50FE6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwGVYnYm&_nc_oc=AdonF0LbtPOaiEMe-n3BHS20_ANP7IC7mYQtU7MqRVdkrr4oaqoOjE9xtM6d-NLnxnbqUnzSKdOFU4uWrEVplTQu&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOZbf3y76kLN98ZGeenJrQ4FKTKGR5FFH8IttwhR5_5ng&oe=6AD503B3",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwEqPUUW&_nc_oc=AdodXKGLU-sJK3nbZcFQ99d2uFqOpcw8X6FU6fFvm66a3Vl9vo7jHZnEZucaBWGOHgiRnMZHzEQYQ9VfBsE3ETzv&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPEAz3Q2qitqpnPa5zHIuuOr3swSFba360Yj3IoTM4C8w&oe=6AD527A8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwGPqZiP&_nc_oc=Adr8_t1bRFjbWsLBZexiyLBtyDQ_IEwz32WQUjjazpc9V_LeJeR3TFQt6FJyd4ZeOoekv4YdUlLcAqxXiOWcuG32&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNWCAkN6ay2smMqAwQv5P7QcWARp3G75CAvotWX5BINLQ&oe=6AD510D1",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwEJtl5W&_nc_oc=Adp-Bm3E-Z-t-w6TwjlkoAjhqMLXshPzVYrMAKeCGx8jhp5tL1rx-3Sh_FgYWESPLH4Iih1AngUQAGS-jD3uGqPY&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuzOwmFk0gdHtygul1wrYOonScIl7DP8jTqLGTuJIUtA&oe=6AD52B45",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwG3z9-y&_nc_oc=Adp_tJf6gNuouO8XFEdv-NiO7dXsQ4qs7QX-Ayl8HEw3MT5HbV-TNPeBMyxe8xBSR3BP2G80OSXy1Q-hTWcaPh1x&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMfVx5FRucpAhU8sh38RwpNGGYetWx0_4cO5ndxtc9gWw&oe=6AD52B65",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwHhMU8E&_nc_oc=AdoARhMJwT_Cn3_l-0gxo9ul7HrzdwMY9aMXvbmfPbqOI-85KMUyidQG1DLWuWygBURtEWOVF7sMdT9UC4KoQ7dc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNR6f6Hv_oZLkA-ygSGfeX_HknDNkMCIs2rnnH0fJYJcg&oe=6AD5305F",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFU3Wxf&_nc_oc=AdoIH-Sj0uUPVnleszxb1Lvt0De0jv58IipNTjHYF1SZL9tXewt046y5dnClPuUnQEZawXpUeGAJvtp_y9FKiRnW&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwvUe1jHmvT0mTm56wy24g8gZ-GXN38wZ77KAneATN4Q&oe=6AD505B8",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwFyfM39&_nc_oc=AdoC9Jq7yHxuMw6BcBNElFA6ZGb0Fsmq2Ci40EMOxUpCWXKOO35FwXcb9b1B4DzwnlvfG3vZxpIkW9DUkfMamZrQ&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNGYwbzhtX_r-Wy3lK_rks5Q3fhUuTGXqfLdSQpgEh4Vw&oe=6AD51BB8",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwFsr_e-&_nc_oc=Adofn3XmX8pFxeNwiRPN4W9mjVWexFneMcwtsX-05nXoCpSUKFKcpEv0NkLoPyHIX8foD13Xsj25Q4cbWyXKF0jX&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQM97zg23YyZsrmFd61h94J7TdZ-826EZcwgMsFBHZsyyw&oe=6AD511A6",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwEqe4vb&_nc_oc=AdqOxxmz9vOEgeN5tWJiFzliyij4JHxZEf5Lg81U0L4zbEP7y_92PlJfTOQ0v0QpbBldxxo34leQNr90VKjAtArB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNFAPUML7M74iCW3SpehPHKP2b86_pq9RSpanLP2ldKMQ&oe=6AD50FE6",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwGVYnYm&_nc_oc=AdonF0LbtPOaiEMe-n3BHS20_ANP7IC7mYQtU7MqRVdkrr4oaqoOjE9xtM6d-NLnxnbqUnzSKdOFU4uWrEVplTQu&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOZbf3y76kLN98ZGeenJrQ4FKTKGR5FFH8IttwhR5_5ng&oe=6AD503B3",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwEqPUUW&_nc_oc=AdodXKGLU-sJK3nbZcFQ99d2uFqOpcw8X6FU6fFvm66a3Vl9vo7jHZnEZucaBWGOHgiRnMZHzEQYQ9VfBsE3ETzv&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPEAz3Q2qitqpnPa5zHIuuOr3swSFba360Yj3IoTM4C8w&oe=6AD527A8"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "445161231215701",
+      "ad_url": "https://www.facebook.com/ads/library/?id=445161231215701",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwFW2Dnd&_nc_oc=AdqxnK6GaLZSCeZ1ABoR0v9L8EKMmWFnDy9ACsNPHdF8kkt_hvS_MgDToqJVCN3dyc6sU0hn5PJDt7piXYaYTC5p&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOB6gtTn88sbLMPwIeh9RWjdCjEonne2RBPSeqPGFaEUw&oe=6AD5119E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwEuNmJw&_nc_oc=Adr8K9Jm_5nzSwpl0MMBDRhDONhWUzDmetTyJ1Mzjgw34TZE2fryhVdSCYbPuVwj-kMsn94Fayaz0w2TsOunSjTc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPT138eidBqtxd3DrhRd0H-Z8UFKxp8tCDq7-G3hNuCxQ&oe=6AD513CC",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwFH2w-_&_nc_oc=AdpbTKxosYF_pZCsIimq_y070hW00Miu0WE9490ynLWqEi6HTXNEvoKsoZXlvG4zWD3u67YHEBQdZRzstvE4bg-J&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQP-_YGKnbmniICWbn8DNcuLwssqsh6P4GwISKreE8QMCw&oe=6AD50125",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEtSEwp&_nc_oc=AdqAUpfUyOyC99FyMs7W0Lw7mUMS0Su7JCs0tkHKBq1jRe9WL9lBDNXRWwNrUKFaNB5U0mdZDWBRrQFcvWMtE7H3&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNJvYmhsyCdVHMn1DypsAyZExVTCFsWdlqQ5ciMYpfI6Q&oe=6AD50850",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwFfO_T7&_nc_oc=AdqaEh5VTvXr4HxLVRqDwqvMFP52sRXTeJ0md6-0vp9yOEH9MPRmaH9FrB5V__UwNGO4TITMwEmb1EjVPaJrr7Cl&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPj2jxgsqV0fIQt2o48IcHk1lh5mpjeniQu3NuWjtnB4g&oe=6AD501DA",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwGFv81G&_nc_oc=AdpT-IN7Wv-FAmbttt_DrDNQCTiIHgE6coL5o_QFIJDEjWRmsy4gpkrvyfjf5OeinO_vH6ADVR10BEQ5bwC0Nd_p&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuqVURKx4pgFkilTzcQhI-zYFsIDdq6p4l5DqSXMTXoA&oe=6AD52368",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwEp_L_Y&_nc_oc=AdosGkR0DEKkjl8Y4errR3ZCX55-Y70mzLxgp_T4MNzPxoU-hBZz2Htc38I2CMbP_aChcrfHVGn3AFI7N1RgEBEK&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMb0RJhueX8xeIr5hBXWSV0Xyay02c70RFHlMxZWDMXEA&oe=6AD537B6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Takko Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwFAGmmU&_nc_oc=Adqbowham_DkKlonE8GwcC5qGQ7kTwBffMfp4ydaJmwv6YmU_VMcb0Xn2uhQfDS7sQN-9rDNKYl_FVkSkeV_5dAN&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQP-PhF5sOgYYAFWKFfUPnRZwD5Wj-5Lcmc122Mj1fYfUw&oe=6AD51337",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwFwlERD&_nc_oc=Adrq_XXNS8-2PeXAWxUG7LW0XVr7OOYZJTHGd4bqD6Dt1s6e1mPgD8kePRnxwqDrsPkqSHYqTjHUC-TYeq0AN-5B&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMenYqCY0UUh1TazT13hVPFv07sk4CTLdaRreFbEPObDA&oe=6AD533F8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwEqjhQw&_nc_oc=Adocy_fF-d0y-zC4nRlJPw13IaLLFOL7w6su6Hc1gIDFH-ETBAhtYhcnB2V4PmJ208ojTVvSuNKj75wNOf_wvHK6&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOg06WU1TKq9Skn1glYKFuqnD4b69QosdGI3-8VEEADhw&oe=6AD502F5",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwFW2Dnd&_nc_oc=AdqxnK6GaLZSCeZ1ABoR0v9L8EKMmWFnDy9ACsNPHdF8kkt_hvS_MgDToqJVCN3dyc6sU0hn5PJDt7piXYaYTC5p&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOB6gtTn88sbLMPwIeh9RWjdCjEonne2RBPSeqPGFaEUw&oe=6AD5119E",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwEuNmJw&_nc_oc=Adr8K9Jm_5nzSwpl0MMBDRhDONhWUzDmetTyJ1Mzjgw34TZE2fryhVdSCYbPuVwj-kMsn94Fayaz0w2TsOunSjTc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPT138eidBqtxd3DrhRd0H-Z8UFKxp8tCDq7-G3hNuCxQ&oe=6AD513CC",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwFH2w-_&_nc_oc=AdpbTKxosYF_pZCsIimq_y070hW00Miu0WE9490ynLWqEi6HTXNEvoKsoZXlvG4zWD3u67YHEBQdZRzstvE4bg-J&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQP-_YGKnbmniICWbn8DNcuLwssqsh6P4GwISKreE8QMCw&oe=6AD50125",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEtSEwp&_nc_oc=AdqAUpfUyOyC99FyMs7W0Lw7mUMS0Su7JCs0tkHKBq1jRe9WL9lBDNXRWwNrUKFaNB5U0mdZDWBRrQFcvWMtE7H3&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNJvYmhsyCdVHMn1DypsAyZExVTCFsWdlqQ5ciMYpfI6Q&oe=6AD50850",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwFfO_T7&_nc_oc=AdqaEh5VTvXr4HxLVRqDwqvMFP52sRXTeJ0md6-0vp9yOEH9MPRmaH9FrB5V__UwNGO4TITMwEmb1EjVPaJrr7Cl&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPj2jxgsqV0fIQt2o48IcHk1lh5mpjeniQu3NuWjtnB4g&oe=6AD501DA",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwGFv81G&_nc_oc=AdpT-IN7Wv-FAmbttt_DrDNQCTiIHgE6coL5o_QFIJDEjWRmsy4gpkrvyfjf5OeinO_vH6ADVR10BEQ5bwC0Nd_p&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuqVURKx4pgFkilTzcQhI-zYFsIDdq6p4l5DqSXMTXoA&oe=6AD52368",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwEp_L_Y&_nc_oc=AdosGkR0DEKkjl8Y4errR3ZCX55-Y70mzLxgp_T4MNzPxoU-hBZz2Htc38I2CMbP_aChcrfHVGn3AFI7N1RgEBEK&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMb0RJhueX8xeIr5hBXWSV0Xyay02c70RFHlMxZWDMXEA&oe=6AD537B6",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwFAGmmU&_nc_oc=Adqbowham_DkKlonE8GwcC5qGQ7kTwBffMfp4ydaJmwv6YmU_VMcb0Xn2uhQfDS7sQN-9rDNKYl_FVkSkeV_5dAN&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQP-PhF5sOgYYAFWKFfUPnRZwD5Wj-5Lcmc122Mj1fYfUw&oe=6AD51337",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwFwlERD&_nc_oc=Adrq_XXNS8-2PeXAWxUG7LW0XVr7OOYZJTHGd4bqD6Dt1s6e1mPgD8kePRnxwqDrsPkqSHYqTjHUC-TYeq0AN-5B&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMenYqCY0UUh1TazT13hVPFv07sk4CTLdaRreFbEPObDA&oe=6AD533F8",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwEqjhQw&_nc_oc=Adocy_fF-d0y-zC4nRlJPw13IaLLFOL7w6su6Hc1gIDFH-ETBAhtYhcnB2V4PmJ208ojTVvSuNKj75wNOf_wvHK6&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOg06WU1TKq9Skn1glYKFuqnD4b69QosdGI3-8VEEADhw&oe=6AD502F5"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2362369787296790",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2362369787296790",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwH15lWR&_nc_oc=AdqKdQSz9yZfOVc-ryjHaW8d7HIzKSE4Ohg_vLBe-rg3FSpaL6S1NLhoUnSBSUAML7MgYlmslMAUfKdmn1zZIEwg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNCyvpm0dwNucLd-FUngtgke0a_S4YDTJ4JhYgDsMUrgA&oe=6AD5055A",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEN4zUw&_nc_oc=Adr90p8VxMoTiuQuuM83BV_CWjUZlL-IFBDpKWUpgl_IcRU7g9DPxLEuTLOdl689h1pcxU3I4Qogvlwh14p_n06X&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPC4QvcNDF_xfwlFc2oAiv4fBGc6c4j4tWzDwQECtPs3Q&oe=6AD51C91",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwHJKAdA&_nc_oc=AdqNuv8cZZ5yQJCux4grxyRcnHuEoq-IXvXtd5u4b76h-Mu3OajqwKewFleux9E0Qsi51Eis1JzTvgVKL9PrFVEO&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOhn35dbhnUW3S_nKPc01hyXGId9elG3OvgVMYRTKJl9w&oe=6AD51855",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwHHtnGa&_nc_oc=Adr4eXC8ka5Cryt4mEDpEWKSvYVlrMu-IxlaQ7gyQBGMWnqMMb80vwfqqixUBTWOwOSP2Mpr1UsRiZsVFpp72rg2&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPzR6FTmyc7fR9LrtiQ6SQrPx7SA1wlfxKhVRI5sqjvqw&oe=6AD50282",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwEg_gm5&_nc_oc=AdrQPIYP8eyf7F3XqtYYyY9F8m-jPaKn0QoGbACNIa6dxhnoYAODkt-EG70HG_zRbIssZmUDzcEyrgyhuTDDmYhE&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNfwl0F0LThYRuCaa71FbI_9WOZXPmeVP3xQQLFvozptA&oe=6AD50097",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwESSPbs&_nc_oc=AdrdMGLTQoSSpJSx7l5Ia2Ud4x1NwfzlXQQzrO7pcgfdXFBlavFo5Ix_AY3WLJEGmXh2hkmQXVePaRsoZxh_rb1F&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPRmHp9yGzltaw-flExK0ajepY5-qH9KCypndN4UdDsFQ&oe=6AD50B2E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwEOTcv4&_nc_oc=AdqFmuas9xXKUA6PNEodmlszaXxQBWI7tYSQv05VW59ejKEsWw4xOqy9yM86cdHf6VCQfTy5eQxJdO5RXBoPvRn9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMYebD6E-h4NmolHfPJvufVYJKRYGusvMLxaHVyQhhbAQ&oe=6AD53791",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwGgNRHW&_nc_oc=Ado6D9qJSIXu-FqqQFjC_aGWvtepvYE6gz_OjykeS8dy_8emKW0baqozn1TWMAPnWUF7fEAwQtnWVkWoUFCT5wbl&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMB2DreORuv1w0PLYWzSrR6TGPLNvYIo5-PN4nF3sQI1g&oe=6AD50296",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwF9D7uP&_nc_oc=Adofa-D1iqASoSqe09Wwv4r4SO3JX3RPuR1D1fFvmGZK3pHroOgH3BeBjWTLyRvDZqUF1KBPVku90PLHoZspM2Ta&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMybRiyqaEjwCKW3kwZaU8TblFCVXhz4JusO4D7ZRfNYQ&oe=6AD534B1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwH15lWR&_nc_oc=AdqKdQSz9yZfOVc-ryjHaW8d7HIzKSE4Ohg_vLBe-rg3FSpaL6S1NLhoUnSBSUAML7MgYlmslMAUfKdmn1zZIEwg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNCyvpm0dwNucLd-FUngtgke0a_S4YDTJ4JhYgDsMUrgA&oe=6AD5055A",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEN4zUw&_nc_oc=Adr90p8VxMoTiuQuuM83BV_CWjUZlL-IFBDpKWUpgl_IcRU7g9DPxLEuTLOdl689h1pcxU3I4Qogvlwh14p_n06X&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPC4QvcNDF_xfwlFc2oAiv4fBGc6c4j4tWzDwQECtPs3Q&oe=6AD51C91",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwHJKAdA&_nc_oc=AdqNuv8cZZ5yQJCux4grxyRcnHuEoq-IXvXtd5u4b76h-Mu3OajqwKewFleux9E0Qsi51Eis1JzTvgVKL9PrFVEO&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOhn35dbhnUW3S_nKPc01hyXGId9elG3OvgVMYRTKJl9w&oe=6AD51855",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwHHtnGa&_nc_oc=Adr4eXC8ka5Cryt4mEDpEWKSvYVlrMu-IxlaQ7gyQBGMWnqMMb80vwfqqixUBTWOwOSP2Mpr1UsRiZsVFpp72rg2&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPzR6FTmyc7fR9LrtiQ6SQrPx7SA1wlfxKhVRI5sqjvqw&oe=6AD50282",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwEg_gm5&_nc_oc=AdrQPIYP8eyf7F3XqtYYyY9F8m-jPaKn0QoGbACNIa6dxhnoYAODkt-EG70HG_zRbIssZmUDzcEyrgyhuTDDmYhE&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNfwl0F0LThYRuCaa71FbI_9WOZXPmeVP3xQQLFvozptA&oe=6AD50097",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwESSPbs&_nc_oc=AdrdMGLTQoSSpJSx7l5Ia2Ud4x1NwfzlXQQzrO7pcgfdXFBlavFo5Ix_AY3WLJEGmXh2hkmQXVePaRsoZxh_rb1F&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPRmHp9yGzltaw-flExK0ajepY5-qH9KCypndN4UdDsFQ&oe=6AD50B2E",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwEOTcv4&_nc_oc=AdqFmuas9xXKUA6PNEodmlszaXxQBWI7tYSQv05VW59ejKEsWw4xOqy9yM86cdHf6VCQfTy5eQxJdO5RXBoPvRn9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMYebD6E-h4NmolHfPJvufVYJKRYGusvMLxaHVyQhhbAQ&oe=6AD53791",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwGgNRHW&_nc_oc=Ado6D9qJSIXu-FqqQFjC_aGWvtepvYE6gz_OjykeS8dy_8emKW0baqozn1TWMAPnWUF7fEAwQtnWVkWoUFCT5wbl&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMB2DreORuv1w0PLYWzSrR6TGPLNvYIo5-PN4nF3sQI1g&oe=6AD50296",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwF9D7uP&_nc_oc=Adofa-D1iqASoSqe09Wwv4r4SO3JX3RPuR1D1fFvmGZK3pHroOgH3BeBjWTLyRvDZqUF1KBPVku90PLHoZspM2Ta&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMybRiyqaEjwCKW3kwZaU8TblFCVXhz4JusO4D7ZRfNYQ&oe=6AD534B1"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1072172972289561",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1072172972289561",
+      "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+      "cards": [
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810320999_1394388472200173_7344715744845476250_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dQU9uHzaFTgQ7kNvwGLmQlz&_nc_oc=AdoR-obp4o6Q4qAKNJhjWIaz6jHHRBB3xOatdnUY71-nuswVAc0406cA5BCMhWY1luE-wfqAeN8PAhtcbJOPGJd3&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOrTq3sCgdr50VhB6qozi0l4vtI6bs5SfxcFraAZLRz9Q&oe=6AD524AB",
+          "link_url": "https://www.lidl.de/p/pasqua-villa-borghetti-bardolino-classico-doc-trocken-rotwein-2023/p100313220?utm_source=meta&utm_medium=paid_social",
+          "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808299572_960582139647849_157848764675700910_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fWY4mszyph4Q7kNvwEIECC-&_nc_oc=Adqnq66OegxWb88DrTpDRp1nunaHoEhkeMv1YzrRyG8aBxB_LGkHiBUoj7Tkx2IfhZIChc456vz839V3uspsJ68i&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOhhzBQQkaR6pxgka7kD87GVUSFwsaG39_o9757z9uCTQ&oe=6AD516B3",
+          "link_url": "https://www.lidl.de/p/mojito-fertigmix-20-vol/p100330058?utm_source=meta&utm_medium=paid_social",
+          "title": "Mojito Fertigmix 20% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809703933_1047739428293948_2916111793786930293_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=drEMUViBuP0Q7kNvwHst3oI&_nc_oc=AdpCaJjHWWws2K9iqo91h7EZ4w93RWZnZdq4q1_5LfvZvVWo82qZr0ZtLbwq-PYIvoO_6zeybhZ0jfH1EuGS7MAq&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwm88-6TLLGRt2qKCsvo0y1OMWiwGq9XSpXJodFhllPA&oe=6AD51411",
+          "link_url": "https://www.lidl.de/p/dulong-cremant-de-bordeaux-aop-brut-schaumwein/p100261918?utm_source=meta&utm_medium=paid_social",
+          "title": "DULONG Cr\u00e9mant de Bordeaux AOP brut, Schaumwein",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808469733_1341910954681472_560900841407295984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=265Xx1Np8i4Q7kNvwHgwxWn&_nc_oc=AdpWFURY4ZHs2xbT2kpa1X4a7hissGen5C5ME3AU7gUbBI23mgzZ-__Lv6e4_iJwrgOhb2ZMWGcGcarVpL8rC8m2&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQM3GjbL2naYFwaI9B7WfhjCuSiJku_R4Br9_vIz083p9A&oe=6AD50646",
+          "link_url": "https://www.lidl.de/p/pfanner-alpine-single-malt-whisky-mit-geschenkbox-43-vol/p100259271?utm_source=meta&utm_medium=paid_social",
+          "title": "PFANNER Alpine Single Malt Whisky mit Geschenkbox 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808415093_1135389878817530_7848008245692827169_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w97_bQLhLgcQ7kNvwHlGi48&_nc_oc=Adr5kKfD5WM9_kD1jRr6-AxTjYYrF_vGASG9zaQMSiPfdOOc7gHKMYZ39EI-QkjAgfxlVHFcMAWdgbfTlcP4SPKg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMTIv7bBLX9csJuVdTxLXN2SxAbbz_GzWNvIQkzuC-XNQ&oe=6AD52CE3",
+          "link_url": "https://www.lidl.de/p/silvercrest-personal-care-multifunktionsthermometer-sft-81-mit-app/p100340283?utm_source=meta&utm_medium=paid_social",
+          "title": "SILVERCREST\u00ae PERSONAL CARE Multifunktionsthermometer SFT 81, mit App",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810557172_1840381650278514_5561807857978223323_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=92PwVSe1aMAQ7kNvwHxhHL_&_nc_oc=Adob6i8UGDZ5Sp6WNvafIZB9HDQbmOVVrBY9_NwKdJGSLhVwTK7MH70yXeBhRfsqJH3DMyVxQQT1uLG3R-YH5rjB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPz5g_iob_3C8vxcL9IopuxMOaVbbh6zuH0EgtZs7xfCQ&oe=6AD51868",
+          "link_url": "https://www.lidl.de/p/roku-gin-the-japanese-craft-gin-43-vol/p100244252?utm_source=meta&utm_medium=paid_social",
+          "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810320999_1394388472200173_7344715744845476250_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dQU9uHzaFTgQ7kNvwGLmQlz&_nc_oc=AdoR-obp4o6Q4qAKNJhjWIaz6jHHRBB3xOatdnUY71-nuswVAc0406cA5BCMhWY1luE-wfqAeN8PAhtcbJOPGJd3&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOrTq3sCgdr50VhB6qozi0l4vtI6bs5SfxcFraAZLRz9Q&oe=6AD524AB",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808299572_960582139647849_157848764675700910_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fWY4mszyph4Q7kNvwEIECC-&_nc_oc=Adqnq66OegxWb88DrTpDRp1nunaHoEhkeMv1YzrRyG8aBxB_LGkHiBUoj7Tkx2IfhZIChc456vz839V3uspsJ68i&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOhhzBQQkaR6pxgka7kD87GVUSFwsaG39_o9757z9uCTQ&oe=6AD516B3",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809703933_1047739428293948_2916111793786930293_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=drEMUViBuP0Q7kNvwHst3oI&_nc_oc=AdpCaJjHWWws2K9iqo91h7EZ4w93RWZnZdq4q1_5LfvZvVWo82qZr0ZtLbwq-PYIvoO_6zeybhZ0jfH1EuGS7MAq&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwm88-6TLLGRt2qKCsvo0y1OMWiwGq9XSpXJodFhllPA&oe=6AD51411",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808469733_1341910954681472_560900841407295984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=265Xx1Np8i4Q7kNvwHgwxWn&_nc_oc=AdpWFURY4ZHs2xbT2kpa1X4a7hissGen5C5ME3AU7gUbBI23mgzZ-__Lv6e4_iJwrgOhb2ZMWGcGcarVpL8rC8m2&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQM3GjbL2naYFwaI9B7WfhjCuSiJku_R4Br9_vIz083p9A&oe=6AD50646",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/808415093_1135389878817530_7848008245692827169_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w97_bQLhLgcQ7kNvwHlGi48&_nc_oc=Adr5kKfD5WM9_kD1jRr6-AxTjYYrF_vGASG9zaQMSiPfdOOc7gHKMYZ39EI-QkjAgfxlVHFcMAWdgbfTlcP4SPKg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMTIv7bBLX9csJuVdTxLXN2SxAbbz_GzWNvIQkzuC-XNQ&oe=6AD52CE3",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810557172_1840381650278514_5561807857978223323_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=92PwVSe1aMAQ7kNvwHxhHL_&_nc_oc=Adob6i8UGDZ5Sp6WNvafIZB9HDQbmOVVrBY9_NwKdJGSLhVwTK7MH70yXeBhRfsqJH3DMyVxQQT1uLG3R-YH5rjB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPz5g_iob_3C8vxcL9IopuxMOaVbbh6zuH0EgtZs7xfCQ&oe=6AD51868"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "http://www.lidl.de/",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "28440341358966045",
+      "ad_url": "https://www.facebook.com/ads/library/?id=28440341358966045",
+      "body": "Jetzt zu Lidl Connect wechseln und 100 % surfen! \ud83d\ude80 Neukunden bekommen im Aktionszeitraum doppeltes Startguthaben in den Tarifen Unlimited On Demand S, M, L / SMART 5G S, M, L / Jahrestarif XS, S, M. *\n\n*Vertragspartner: Vodafone GmbH (\u201eVodafone\u201c), Ferdinand-Braun-Platz 1, 40549 D\u00fcsseldorf, Sitz: D\u00fcsseldorf. Registrierung und Legitimation \u00fcber Ident-Verfahren erforderlich. qq) Neukundenaktion vom 21.09.2026 \u2013 18.10.2026: G\u00fcltig in den Tarifen Unlimited On Demand S, M, L / SMART 5G S, M, L / Jahrestarif XS, S, M bei erstmaliger Aktivierung einer dieser Tarife im Aktionszeitraum. Es wird dir binnen 24h ein zus\u00e4tzliches Startguthaben in H\u00f6he von 10\u20ac gutgeschrieben. Dein Startguthaben betr\u00e4gt dann in Summe 20\u20ac. Bonusguthaben ist nicht auszahlbar. rr) Unlimited On Demand: S 9,99 \u20ac/25 GB, M 14,99 \u20ac/50 GB, L 19,99 \u20ac/100 GB. Nach Verbrauch: 1 GB beliebig oft manuell \u00fcber App nachbuchbar. Max. Bandbreite im Download: S 50 Mbit/s, M 100 Mbit/s, L 150 Mbit/s; Upload jeweils 25 Mbit/s. SMART 5G: S 8,99 \u20ac/25 GB, M 13,99 \u20ac/50 GB, L 18,99 \u20ac/100 GB. Max. Bandbreite: 100 Mbit/s Download, 25 Mbit/s Upload. Nach Verbrauch des Datenvolumens: 64 kbit/s. Gilt f\u00fcr alle genannten Tarife: Laufzeit 4 Wochen. Jahrestarife (365 Tage) XS: 60GB/ 69.99\u20ac, S: 250GB / 99,99\u20ac, M 450GB / 149\u20ac. Nicht genutzte Inklusivleistungen verfallen nach 365 Tagen. Rufnummernmitnahme bis 30 Tagen nach Aktivierung m\u00f6glich. K\u00fcndbar zum Ende des Abrechnungszeitraums. Inkl. nationale Standardgespr\u00e4che und -SMS in alle deutschen Netze (ausgenommen Sondernummern und Ausland). Surfen im 5G-Netz mit 5G-f\u00e4higem Ger\u00e4t in 5G-Verf\u00fcgbarkeit, sonst LTE mit LTE-f\u00e4higem Ger\u00e4t. G\u00fcltig in Deutschland und im EU-Ausland. Bandbreite abh\u00e4ngig von Standort und Nutzeranzahl in der Funkzelle. Taktung: 10 kB. Internetnutzung nur mit gebuchter Internetoption. Au\u00dferhalb des EU-Auslands: siehe Preisliste.",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "image",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809076388_1111571741813312_1423910396545028271_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HOYLMTn6fVIQ7kNvwGH8ExK&_nc_oc=Adof4kAJaKKgP9Pu5qtc1drMhkHWFysLoLw92ORuWddzqKXXHixIb4U0mekR2jLtk9Wc57vXWj4tnO0hynrg6tFL&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMrihQhnHW5KFzQd97Rik_mnUbqP-ktIE1Lm7CFEHshvQ&oe=6AD52A34"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/lidl-connect/s10007717?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ad-{{ad.id}}",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-09-21T07:00:00Z",
+      "title": "Lidl Connect Herbstaktion",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2475698322912928",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2475698322912928",
+      "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+      "cards": [
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386664_1630448128589681_5786270743700149395_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ssbdt2loMYwQ7kNvwExXANy&_nc_oc=Ado-kt-WBn5Dvxqwl5lNg33ZY3qQQDW7_0lCpTsLZOpeqkoDRmG5GFjoYJKEBGW8lAwWxX6j-dxkMz8x9s-TaTma&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMLgMD-jn7fkgNU8OOaTZjviXMX9PcZNsI6vzAUYbCg0g&oe=6AD50A47",
+          "link_url": "https://www.lidl.de/p/mojito-fertigmix-20-vol/p100330058?utm_source=meta&utm_medium=paid_social",
+          "title": "Mojito Fertigmix 20% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386660_2320924862017441_4774811864287413186_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MtHnq05TjiYQ7kNvwFcU-6O&_nc_oc=AdqcXkqOjCmVdcnE74gERz1u7QTozG_0tONiSUvi72i3gVqBeihV3Uy-BylYyArdhLcOkhRrM1p0OsIa9d2uloHg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMmMX5Ifu7erwfNaVvnIJsAbU-F7eD1PAdkxWtfKR0zpQ&oe=6AD514ED",
+          "link_url": "https://www.lidl.de/p/silvercrest-personal-care-multifunktionsthermometer-sft-81-mit-app/p100340283?utm_source=meta&utm_medium=paid_social",
+          "title": "SILVERCREST\u00ae PERSONAL CARE Multifunktionsthermometer SFT 81, mit App",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810246544_2188823258345264_2094988071413566884_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dtS-Tb451tgQ7kNvwG6M0Se&_nc_oc=Adr29juNbsezOrcyZg8JvAzZYm5QRK7F3qc16j16oDlRc-SPScQy99LKiCzeDxDxdtx5lcPr0BXlqxzwWbdR0f_v&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPiKwgROCkUjwoZnJ8KdpUXnmfSfK_tyDR2x9jVOnuDkA&oe=6AD506A5",
+          "link_url": "https://www.lidl.de/p/roku-gin-the-japanese-craft-gin-43-vol/p100244252?utm_source=meta&utm_medium=paid_social",
+          "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809287714_1571711804496616_4206811265390811121_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WiKS7NNlwikQ7kNvwEQ1Tfu&_nc_oc=AdoWyMdYTgg5JdDGMaUVX9OCgUvRodMUSdJ3omy4ZVye7DZ7zhrzCN7J7u-ihm4KZZODLzZfQLqBTZBRjHnk_NJG&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNiylXmZcP1hLHxD-ID3Wjd1rtD_s9aHxaVu8Ztk_hP_A&oe=6AD52CBE",
+          "link_url": "https://www.lidl.de/p/dulong-cremant-de-bordeaux-aop-brut-schaumwein/p100261918?utm_source=meta&utm_medium=paid_social",
+          "title": "DULONG Cr\u00e9mant de Bordeaux AOP brut, Schaumwein",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810148776_1035715486167409_7473392138788810031_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7KZiwpvQEPUQ7kNvwErtQzZ&_nc_oc=Ado-6EDOVByD6-dS7MYu22XCau5wyyjcZ0RXoMtzAtj5hXhned-fbw9yUEjfVKBWHFlKAMKqOwFcakdw1qKk_puf&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPA4JEapt8AZkp_ESY-DJQquJV_JsTbGQD9XvC7HDYzMw&oe=6AD534D2",
+          "link_url": "https://www.lidl.de/p/pfanner-alpine-single-malt-whisky-mit-geschenkbox-43-vol/p100259271?utm_source=meta&utm_medium=paid_social",
+          "title": "PFANNER Alpine Single Malt Whisky mit Geschenkbox 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809361444_1411416691123891_4299696315940740438_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pjhW7WbwTqwQ7kNvwEhB5SX&_nc_oc=Adq4HVUZWBxpp7KwPkib8_2S55DeIB7epsAnwlHqKBJ4RfOcearU6xqJxyUOC89N3brB4eX8tmEA7mMwzrdYRsi9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMaTXzPKRcNiB7zhvnhXLDBJ2WIsgTxwojvfpaqHTHLbA&oe=6AD533F7",
+          "link_url": "https://www.lidl.de/p/pasqua-villa-borghetti-bardolino-classico-doc-trocken-rotwein-2023/p100313220?utm_source=meta&utm_medium=paid_social",
+          "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386664_1630448128589681_5786270743700149395_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ssbdt2loMYwQ7kNvwExXANy&_nc_oc=Ado-kt-WBn5Dvxqwl5lNg33ZY3qQQDW7_0lCpTsLZOpeqkoDRmG5GFjoYJKEBGW8lAwWxX6j-dxkMz8x9s-TaTma&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMLgMD-jn7fkgNU8OOaTZjviXMX9PcZNsI6vzAUYbCg0g&oe=6AD50A47",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386660_2320924862017441_4774811864287413186_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MtHnq05TjiYQ7kNvwFcU-6O&_nc_oc=AdqcXkqOjCmVdcnE74gERz1u7QTozG_0tONiSUvi72i3gVqBeihV3Uy-BylYyArdhLcOkhRrM1p0OsIa9d2uloHg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMmMX5Ifu7erwfNaVvnIJsAbU-F7eD1PAdkxWtfKR0zpQ&oe=6AD514ED",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810246544_2188823258345264_2094988071413566884_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dtS-Tb451tgQ7kNvwG6M0Se&_nc_oc=Adr29juNbsezOrcyZg8JvAzZYm5QRK7F3qc16j16oDlRc-SPScQy99LKiCzeDxDxdtx5lcPr0BXlqxzwWbdR0f_v&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPiKwgROCkUjwoZnJ8KdpUXnmfSfK_tyDR2x9jVOnuDkA&oe=6AD506A5",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809287714_1571711804496616_4206811265390811121_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WiKS7NNlwikQ7kNvwEQ1Tfu&_nc_oc=AdoWyMdYTgg5JdDGMaUVX9OCgUvRodMUSdJ3omy4ZVye7DZ7zhrzCN7J7u-ihm4KZZODLzZfQLqBTZBRjHnk_NJG&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNiylXmZcP1hLHxD-ID3Wjd1rtD_s9aHxaVu8Ztk_hP_A&oe=6AD52CBE",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810148776_1035715486167409_7473392138788810031_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7KZiwpvQEPUQ7kNvwErtQzZ&_nc_oc=Ado-6EDOVByD6-dS7MYu22XCau5wyyjcZ0RXoMtzAtj5hXhned-fbw9yUEjfVKBWHFlKAMKqOwFcakdw1qKk_puf&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPA4JEapt8AZkp_ESY-DJQquJV_JsTbGQD9XvC7HDYzMw&oe=6AD534D2",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809361444_1411416691123891_4299696315940740438_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pjhW7WbwTqwQ7kNvwEhB5SX&_nc_oc=Adq4HVUZWBxpp7KwPkib8_2S55DeIB7epsAnwlHqKBJ4RfOcearU6xqJxyUOC89N3brB4eX8tmEA7mMwzrdYRsi9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMaTXzPKRcNiB7zhvnhXLDBJ2WIsgTxwojvfpaqHTHLbA&oe=6AD533F7"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "http://www.lidl.de/",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "Mojito Fertigmix 20% Vol",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1697996942325867",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1697996942325867",
+      "body": "\u2728 Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade! \u2728\nVerpasse deinen vier W\u00e4nden den perfekten Look. Gewinne mit etwas Gl\u00fcck 1x 15.000 \u20ac im Lidl-Gutschein-Paket* f\u00fcr Boxspringbett, Couch, 4K-Smart-TV und vieles mehr!\n\n\u2705 15.000 \u20ac Budget f\u00fcr dein Zuhause\n\u2705 Freie Auswahl aus dem Lidl-Sortiment\n\u23f3 Bis zum 01.11. teilnehmen\n\n* Aktionszeitraum 07.09.\u201301.11.2026. Gewinne ein Lidl-Einkaufsgutschein-Paket im Gesamtwert von 15.000,00 \u20ac (Einl\u00f6sebetrag max. 10.000 \u20ac pro Bestellung im Lidl Onlineshop). Teilnahme ab 18, Wohnsitz in Deutschland. F\u00fcr Teilnahme im Aktionszeitraum auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause E-Mail-Adresse angeben und u.a. in den Erhalt personalisierter Werbung mittels Newsletter und anderer elektronischer Kan\u00e4le (z.B. SMS, WhatsApp, Push) sowie in die Erstellung von Nutzerprofilen einwilligen. Mehrfachteilnahmen ausgeschlossen. Losentscheid am Aktionsende, max. ein Gewinn pro Teilnehmer. Gewinnbenachrichtigung per Mail. R\u00fcck\u00admeldung Gewinner innerhalb von 10 Tagen erforderlich, sonst Gewinnverfall u. Auslosung Ersatzgewinner. Lidl-Mitarbeiter sind von der Teilnahme am Gewinnspiel ausgeschlossen. Barauszahlung u. Rechtsweg ausgeschlossen. Veranstalter: Lidl Dienstleistung GmbH & Co. KG, Bonfelder Str. 2, 74206 Bad Wimpfen. Teilnahmebedingungen u. Datenschutzhinweise auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause.",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.lidl.de",
+      "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=animiert",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-09-08T07:00:00Z",
+      "title": "Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade!*",
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPH_gdICHR7wOei98y4JrJ7Fiy_TzrFuUR6u_IPvNTJAScSVCT5EC6uJ7LW9mdRrpIGBjrxLevPLB1ixO2ybJrgq9Zga8HnC2a8tZAjQduglA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=sPwlL_9BuvIQ7kNvwFTTB_b&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI1OTA4ODEyMTgwMjE1NDYsImFzc2V0X2FnZV9kYXlzIjozNSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e6aea008ad0342bf&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC8xNjRGNEI1QjZFOThCRkMxQkU3M0QwQUMzNjVDQTA5MV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbUor6qkZmaCRUCKAJDMywXQBQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQMrj3fV4Zn-iEQ7x53lE0as1OHSe3LnVP0diO8je1-xPQ&oe=6AD51DE4"
+      ]
+    },
+    {
+      "ad_archive_id": "1792077505135971",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1792077505135971",
+      "body": "\u2728 Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade! \u2728\nVerpasse deinen vier W\u00e4nden den perfekten Look. Gewinne mit etwas Gl\u00fcck 1x 15.000 \u20ac im Lidl-Gutschein-Paket* f\u00fcr Boxspringbett, Couch, 4K-Smart-TV und vieles mehr!\n\n\u2705 15.000 \u20ac Budget f\u00fcr dein Zuhause\n\u2705 Freie Auswahl aus dem Lidl-Sortiment\n\u23f3 Bis zum 01.11. teilnehmen\n\n* Aktionszeitraum 07.09.\u201301.11.2026. Gewinne ein Lidl-Einkaufsgutschein-Paket im Gesamtwert von 15.000,00 \u20ac (Einl\u00f6sebetrag max. 10.000 \u20ac pro Bestellung im Lidl Onlineshop). Teilnahme ab 18, Wohnsitz in Deutschland. F\u00fcr Teilnahme im Aktionszeitraum auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause E-Mail-Adresse angeben und u.a. in den Erhalt personalisierter Werbung mittels Newsletter und anderer elektronischer Kan\u00e4le (z.B. SMS, WhatsApp, Push) sowie in die Erstellung von Nutzerprofilen einwilligen. Mehrfachteilnahmen ausgeschlossen. Losentscheid am Aktionsende, max. ein Gewinn pro Teilnehmer. Gewinnbenachrichtigung per Mail. R\u00fcck\u00admeldung Gewinner innerhalb von 10 Tagen erforderlich, sonst Gewinnverfall u. Auslosung Ersatzgewinner. Lidl-Mitarbeiter sind von der Teilnahme am Gewinnspiel ausgeschlossen. Barauszahlung u. Rechtsweg ausgeschlossen. Veranstalter: Lidl Dienstleistung GmbH & Co. KG, Bonfelder Str. 2, 74206 Bad Wimpfen. Teilnahmebedingungen u. Datenschutzhinweise auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause.",
+      "cards": [
+        {
+          "body": null,
+          "cta": "Learn More",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800469606_2030854984255776_4078921436830645885_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SStsOnQjcs4Q7kNvwGM0hTw&_nc_oc=AdpjdbfG_KCemaYgY8aYNHQQO5SNMR3KM8O6JTpLRm3wbu-FJG89nABuJVcE3GUN6ArhEWPN8VRDCfcJkWzYzbW8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPeN28V3doF4vo_0KLux7t3O_Ak-sXJd3-L-HJYBqEPxg&oe=6AD529FE",
+          "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=carousel",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Learn More",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/799958664_1396457819108702_3922366156269346722_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gbTNcporaBQQ7kNvwHLR7Bf&_nc_oc=AdoJYbFKUb241nS9dMLp6YgwgOLjR_ttOi0x5OQC-pVjROHj_J910gyGp1icoPfpJJ2lVrl5bZn6Re2HuOrAKnPd&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOfLsgTVn2eVYKn-HF6sIMO7ZIV3rdQIjhHpd9oQ1avfA&oe=6AD52DB8",
+          "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=carousel",
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800469606_2030854984255776_4078921436830645885_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SStsOnQjcs4Q7kNvwGM0hTw&_nc_oc=AdpjdbfG_KCemaYgY8aYNHQQO5SNMR3KM8O6JTpLRm3wbu-FJG89nABuJVcE3GUN6ArhEWPN8VRDCfcJkWzYzbW8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPeN28V3doF4vo_0KLux7t3O_Ak-sXJd3-L-HJYBqEPxg&oe=6AD529FE",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/799958664_1396457819108702_3922366156269346722_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gbTNcporaBQQ7kNvwHLR7Bf&_nc_oc=AdoJYbFKUb241nS9dMLp6YgwgOLjR_ttOi0x5OQC-pVjROHj_J910gyGp1icoPfpJJ2lVrl5bZn6Re2HuOrAKnPd&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOfLsgTVn2eVYKn-HF6sIMO7ZIV3rdQIjhHpd9oQ1avfA&oe=6AD52DB8"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=carousel",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-09-08T07:00:00Z",
+      "title": "Lidl in Deutschland",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "3591562424344408",
+      "ad_url": "https://www.facebook.com/ads/library/?id=3591562424344408",
+      "body": "Greif zu, wenn du dich traust. \ud83d\ude08\nDie limitierten yfood Halloween Edition treiben ab sofort bei @lidlde ihr Unwesen.\nNur f\u00fcr kurze Zeit. Und nur solange der Vorrat reicht. \ud83d\udc80\n#lidlde #yfood #halloween #limitededition",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "115854372369930",
+      "page_likes": 71337,
+      "page_name": "yfood",
+      "page_url": "https://www.facebook.com/yfood/",
+      "paid_for_by": null,
+      "platforms": [
+        "instagram"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": null,
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQPxvFSZbfR7BAd82ALxlUYTTJPkvtcwixn3jP3VzWCEH5udo9Ru0ddg5haLPQgnr2h3YAsLYiZB5OfHb_ahabWgYj1zsobR-LDiflTevg.mp4?_nc_cat=107&_nc_sid=ef5aa3&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=3kLiCEroRQYQ7kNvwHjdjzV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoyMDA3MDk3NDIzMzI5MTY2LCJhc3NldF9hZ2VfZGF5cyI6NSwidmlfdXNlY2FzZV9pZCI6MTIzNzQsImR1cmF0aW9uX3MiOjYwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&_nc_enc=Uccii3fjoyhKPVwj2fyE6-44YTOYCtbtXkUm8I81mIcfIOC5Oc56bysYDWqXUN1XFVnaTSLSURFESdhcO3Fgu8KQUS2ln3EnB7GeJCyaIiHvLQGuUZLLRC-tkds&oh=00_AQNGbZ2TxWFvVwwCvhCKlSAoobW1fdJy6PRh89oq6l7IOw&oe=6AD5275B"
+      ]
+    },
+    {
+      "ad_archive_id": "1636316144877895",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1636316144877895",
+      "body": "\u2728 Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade! \u2728\nVerpasse deinen vier W\u00e4nden den perfekten Look. Gewinne mit etwas Gl\u00fcck 1x 15.000 \u20ac im Lidl-Gutschein-Paket* f\u00fcr Boxspringbett, Couch, 4K-Smart-TV und vieles mehr!\n\n\u2705 15.000 \u20ac Budget f\u00fcr dein Zuhause\n\u2705 Freie Auswahl aus dem Lidl-Sortiment\n\u23f3 Bis zum 01.11. teilnehmen\n\n* Aktionszeitraum 07.09.\u201301.11.2026. Gewinne ein Lidl-Einkaufsgutschein-Paket im Gesamtwert von 15.000,00 \u20ac (Einl\u00f6sebetrag max. 10.000 \u20ac pro Bestellung im Lidl Onlineshop). Teilnahme ab 18, Wohnsitz in Deutschland. F\u00fcr Teilnahme im Aktionszeitraum auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause E-Mail-Adresse angeben und u.a. in den Erhalt personalisierter Werbung mittels Newsletter und anderer elektronischer Kan\u00e4le (z.B. SMS, WhatsApp, Push) sowie in die Erstellung von Nutzerprofilen einwilligen. Mehrfachteilnahmen ausgeschlossen. Losentscheid am Aktionsende, max. ein Gewinn pro Teilnehmer. Gewinnbenachrichtigung per Mail. R\u00fcck\u00admeldung Gewinner innerhalb von 10 Tagen erforderlich, sonst Gewinnverfall u. Auslosung Ersatzgewinner. Lidl-Mitarbeiter sind von der Teilnahme am Gewinnspiel ausgeschlossen. Barauszahlung u. Rechtsweg ausgeschlossen. Veranstalter: Lidl Dienstleistung GmbH & Co. KG, Bonfelder Str. 2, 74206 Bad Wimpfen. Teilnahmebedingungen u. Datenschutzhinweise auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause.",
+      "cards": [
+        {
+          "body": "\u2728 Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade! \u2728\nVerpasse deinen vier W\u00e4nden den perfekten Look. Gewinne mit etwas Gl\u00fcck 1x 15.000 \u20ac im Lidl-Gutschein-Paket* f\u00fcr Boxspringbett, Couch, 4K-Smart-TV und vieles mehr!\n\n\u2705 15.000 \u20ac Budget f\u00fcr dein Zuhause\n\u2705 Freie Auswahl aus dem Lidl-Sortiment\n\u23f3 Bis zum 01.11. teilnehmen\n\n* Aktionszeitraum 07.09.\u201301.11.2026. Gewinne ein Lidl-Einkaufsgutschein-Paket im Gesamtwert von 15.000,00 \u20ac (Einl\u00f6sebetrag max. 10.000 \u20ac pro Bestellung im Lidl Onlineshop). Teilnahme ab 18, Wohnsitz in Deutschland. F\u00fcr Teilnahme im Aktionszeitraum auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause E-Mail-Adresse angeben und u.a. in den Erhalt personalisierter Werbung mittels Newsletter und anderer elektronischer Kan\u00e4le (z.B. SMS, WhatsApp, Push) sowie in die Erstellung von Nutzerprofilen einwilligen. Mehrfachteilnahmen ausgeschlossen. Losentscheid am Aktionsende, max. ein Gewinn pro Teilnehmer. Gewinnbenachrichtigung per Mail. R\u00fcck\u00admeldung Gewinner innerhalb von 10 Tagen erforderlich, sonst Gewinnverfall u. Auslosung Ersatzgewinner. Lidl-Mitarbeiter sind von der Teilnahme am Gewinnspiel ausgeschlossen. Barauszahlung u. Rechtsweg ausgeschlossen. Veranstalter: Lidl Dienstleistung GmbH & Co. KG, Bonfelder Str. 2, 74206 Bad Wimpfen. Teilnahmebedingungen u. Datenschutzhinweise auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause.",
+          "cta": "Learn More",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/799934843_1378109097254502_4448273990527075162_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w1N5ZASC7HMQ7kNvwEY-sU9&_nc_oc=AdrtzthI7yXbrRm7Km5lHH-5e_sgrgy-9PgB1IAEqBoi4Gq-jlzlfJgfktzyEds9j_UbtGTT6amegCkR6mVwhZX1&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOZB8_LSNoK7uFs6oiKRUiRMB0ZNJnx6QmHg0O5rtkITQ&oe=6AD53277",
+          "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=static",
+          "title": "Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade!*",
+          "video": null
+        },
+        {
+          "body": "\u2728 Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade! \u2728\nVerpasse deinen vier W\u00e4nden den perfekten Look. Gewinne mit etwas Gl\u00fcck 1x 15.000 \u20ac im Lidl-Gutschein-Paket* f\u00fcr Boxspringbett, Couch, 4K-Smart-TV und vieles mehr!\n\n\u2705 15.000 \u20ac Budget f\u00fcr dein Zuhause\n\u2705 Freie Auswahl aus dem Lidl-Sortiment\n\u23f3 Bis zum 01.11. teilnehmen\n\n* Aktionszeitraum 07.09.\u201301.11.2026. Gewinne ein Lidl-Einkaufsgutschein-Paket im Gesamtwert von 15.000,00 \u20ac (Einl\u00f6sebetrag max. 10.000 \u20ac pro Bestellung im Lidl Onlineshop). Teilnahme ab 18, Wohnsitz in Deutschland. F\u00fcr Teilnahme im Aktionszeitraum auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause E-Mail-Adresse angeben und u.a. in den Erhalt personalisierter Werbung mittels Newsletter und anderer elektronischer Kan\u00e4le (z.B. SMS, WhatsApp, Push) sowie in die Erstellung von Nutzerprofilen einwilligen. Mehrfachteilnahmen ausgeschlossen. Losentscheid am Aktionsende, max. ein Gewinn pro Teilnehmer. Gewinnbenachrichtigung per Mail. R\u00fcck\u00admeldung Gewinner innerhalb von 10 Tagen erforderlich, sonst Gewinnverfall u. Auslosung Ersatzgewinner. Lidl-Mitarbeiter sind von der Teilnahme am Gewinnspiel ausgeschlossen. Barauszahlung u. Rechtsweg ausgeschlossen. Veranstalter: Lidl Dienstleistung GmbH & Co. KG, Bonfelder Str. 2, 74206 Bad Wimpfen. Teilnahmebedingungen u. Datenschutzhinweise auf www.lidl.de/gewinnspiele-upgrade-dein-zuhause.",
+          "cta": "Learn More",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800881800_1718655305919256_5310494698159112147_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=z7eksturSeMQ7kNvwGiYwcv&_nc_oc=Adqhpx1fXQvJyd6Ce2DPl8u9mebpOTIaK9LHZZFbpGVqpHiJaxeub2CAepTq5wdsOqYL60ofabrW1QpU2yHP1-gI&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNgsdUokHz4IzuUoNx66XSbo1zqrw-AquMm-we-5_1T3g&oe=6AD53160",
+          "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=static",
+          "title": "Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade!*",
+          "video": null
+        }
+      ],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/799934843_1378109097254502_4448273990527075162_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w1N5ZASC7HMQ7kNvwEY-sU9&_nc_oc=AdrtzthI7yXbrRm7Km5lHH-5e_sgrgy-9PgB1IAEqBoi4Gq-jlzlfJgfktzyEds9j_UbtGTT6amegCkR6mVwhZX1&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOZB8_LSNoK7uFs6oiKRUiRMB0ZNJnx6QmHg0O5rtkITQ&oe=6AD53277",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800881800_1718655305919256_5310494698159112147_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=z7eksturSeMQ7kNvwGiYwcv&_nc_oc=Adqhpx1fXQvJyd6Ce2DPl8u9mebpOTIaK9LHZZFbpGVqpHiJaxeub2CAepTq5wdsOqYL60ofabrW1QpU2yHP1-gI&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNgsdUokHz4IzuUoNx66XSbo1zqrw-AquMm-we-5_1T3g&oe=6AD53160"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702#13673302?utm_source=social&utm_medium=paid&utm_campaign=wohnungs-upgrade&utm_content=static",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-09-08T07:00:00Z",
+      "title": "Gewinne 15.000 \u20ac f\u00fcr dein Zuhause-Upgrade!*",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1024140690205402",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1024140690205402",
+      "body": "Join the leading international retail leasing hub! \n\nDiscover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.\n\n+4,000 participants\n+1,800 retailers\n+250 exhibitors\n+100 speakers\n\n3-4 November 2026\nPalais des Festivals, Cannes, France",
+      "cards": [
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749767391_1022242350728079_8707329793361918666_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uLrEfrZV-BkQ7kNvwEnFie3&_nc_oc=AdrvD8OCvmC04udUGZyszXbXN2tq2yy_PVHEoa34D9mXdN64JwYWCO6KxFooEZ5zZJojNnYNOg2CL9h2rco4t6hs&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMuHv7qiBR0QYrxRrk9Wz3D1L-rAO-3iXEZOop-vKOh6w&oe=6AD504BF",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "International Retail Leasing Hub",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/752107366_1721619269074514_6084899015996254668_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bg2Zkogg7SIQ7kNvwEjqnyX&_nc_oc=AdqjHxln0M5GV-p7NEzC5fX0stUQnN8RggHSV4T9Mbmc_fhIqtagj_TImKKPLATtxs53fEg0nf4XXvJkmLEb2fOu&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOPzJ6fJO9sW16GRJsSgvyAHZc-VKGAFKXW3HjH7ov9Yg&oe=6AD534A3",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "Attend MAPIC 2026",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/751389536_1713916193398073_729551765580100052_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IEGzZie6-T8Q7kNvwHmm7jR&_nc_oc=Adoxm7KuKc9xvdWztoL_xoZxfBzUB2OqCG5eXpUqUghnGfCNaGGuuajb1b0ADnbEw5Xe3vKxWT6LpDooLwsQzHL8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPis387zjWTFKBlZI0niw6zMrJMWi8v5qVTx_s5mNvS6A&oe=6AD50AA3",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "Retail Real Estate",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/750829064_1274949767886260_4902442880882002623_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E7KPGuYljAEQ7kNvwE4GRic&_nc_oc=AdoIwhq2J8urdn-UiRRagJAmX8M_QcWJhWM3bn751LpaSsf4Qr50ttSB2AXZjtbOaSXOkSebNxhZPS3eCTpS0lAj&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPm6U82V6_COhfHM26aOFIGfMPhhIc9Og1Q_g3eVGs2Dw&oe=6AD510AC",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "International Retail Leasing Hub",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749355538_1037409122588279_3597760253673745872_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LakYc11bVOEQ7kNvwFpMuik&_nc_oc=Ado7u7Fi8y5x-D6hMgcNdBlPtDw57TwkiSSG-xKmx0u4KxLEakWns9Uft5mFBPzGmFD5NrL4ZV42gYYjSneu5scb&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPWqNN078T5ktWIPMa7KhwSP6lP8_TEmaBi3eCPGInobw&oe=6AD50005",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "Attend MAPIC 2026",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749300677_2089992661588052_4228755020496322500_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EL9Sh0rg3u8Q7kNvwHwl9OI&_nc_oc=AdqX6BgrvqYu3YY83S9GEZVREwVtt4VV5jx7bUgeCKYdDDqiLg5jRPsDa05iowuHcPG1ANrxoxQot0bMyzjD6xJ9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNM4jj5GyWSQlHE6WB_W-aJRbUqStQ2CeesURkjiPxrvA&oe=6AD500F5",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "Retail Real Estate",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749821664_1356375970022531_6840557399891844370_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KJSLg5p8WuIQ7kNvwGLw6-R&_nc_oc=AdoNW3UkSPmK9KWyKGdm-JFR52W-UprVq908OKKTUbPUccJeGVEqXXOla0DMhM9KKXCeIO6eLhxs2fNmtZ2bXYEB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMKw4pROMPjc3SDkMTw2n5cnz91JWliF-c-6qy_ICi7ZQ&oe=6AD51230",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "International Retail Leasing Hub",
+          "video": null
+        },
+        {
+          "body": "Join the leading international retail leasing hub!   Discover commercial centres, retail parks, outlets and city center locations all over Europe and the Middle East.  +4,000 participants +1,800 retailers +250 exhibitors +100 speakers  3-4 November 2026 Palais des Festivals, Cannes, France",
+          "cta": "See Details",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/752325844_1348888683378304_5800201469909822697_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BmCY8m31CsgQ7kNvwGvidpM&_nc_oc=AdqDGV7sB_ZBdbY2q5aVv3gTaqgTVNWylbwi-0WaWHJKc9zZbBrIw0ba2qvQnxOQrQJslBZw-cR6TQ4-Ie1hscqm&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOzXEf1gy46yD8X3aM88bvRDLeUr9iJ61a3kDid7RFf9A&oe=6AD5077F",
+          "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+          "title": "Attend MAPIC 2026",
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749767391_1022242350728079_8707329793361918666_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uLrEfrZV-BkQ7kNvwEnFie3&_nc_oc=AdrvD8OCvmC04udUGZyszXbXN2tq2yy_PVHEoa34D9mXdN64JwYWCO6KxFooEZ5zZJojNnYNOg2CL9h2rco4t6hs&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMuHv7qiBR0QYrxRrk9Wz3D1L-rAO-3iXEZOop-vKOh6w&oe=6AD504BF",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/752107366_1721619269074514_6084899015996254668_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bg2Zkogg7SIQ7kNvwEjqnyX&_nc_oc=AdqjHxln0M5GV-p7NEzC5fX0stUQnN8RggHSV4T9Mbmc_fhIqtagj_TImKKPLATtxs53fEg0nf4XXvJkmLEb2fOu&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOPzJ6fJO9sW16GRJsSgvyAHZc-VKGAFKXW3HjH7ov9Yg&oe=6AD534A3",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/751389536_1713916193398073_729551765580100052_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IEGzZie6-T8Q7kNvwHmm7jR&_nc_oc=Adoxm7KuKc9xvdWztoL_xoZxfBzUB2OqCG5eXpUqUghnGfCNaGGuuajb1b0ADnbEw5Xe3vKxWT6LpDooLwsQzHL8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPis387zjWTFKBlZI0niw6zMrJMWi8v5qVTx_s5mNvS6A&oe=6AD50AA3",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/750829064_1274949767886260_4902442880882002623_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E7KPGuYljAEQ7kNvwE4GRic&_nc_oc=AdoIwhq2J8urdn-UiRRagJAmX8M_QcWJhWM3bn751LpaSsf4Qr50ttSB2AXZjtbOaSXOkSebNxhZPS3eCTpS0lAj&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPm6U82V6_COhfHM26aOFIGfMPhhIc9Og1Q_g3eVGs2Dw&oe=6AD510AC",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749355538_1037409122588279_3597760253673745872_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LakYc11bVOEQ7kNvwFpMuik&_nc_oc=Ado7u7Fi8y5x-D6hMgcNdBlPtDw57TwkiSSG-xKmx0u4KxLEakWns9Uft5mFBPzGmFD5NrL4ZV42gYYjSneu5scb&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPWqNN078T5ktWIPMa7KhwSP6lP8_TEmaBi3eCPGInobw&oe=6AD50005",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749300677_2089992661588052_4228755020496322500_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EL9Sh0rg3u8Q7kNvwHwl9OI&_nc_oc=AdqX6BgrvqYu3YY83S9GEZVREwVtt4VV5jx7bUgeCKYdDDqiLg5jRPsDa05iowuHcPG1ANrxoxQot0bMyzjD6xJ9&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNM4jj5GyWSQlHE6WB_W-aJRbUqStQ2CeesURkjiPxrvA&oe=6AD500F5",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/749821664_1356375970022531_6840557399891844370_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KJSLg5p8WuIQ7kNvwGLw6-R&_nc_oc=AdoNW3UkSPmK9KWyKGdm-JFR52W-UprVq908OKKTUbPUccJeGVEqXXOla0DMhM9KKXCeIO6eLhxs2fNmtZ2bXYEB&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMKw4pROMPjc3SDkMTw2n5cnz91JWliF-c-6qy_ICi7ZQ&oe=6AD51230",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/752325844_1348888683378304_5800201469909822697_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BmCY8m31CsgQ7kNvwGvidpM&_nc_oc=AdqDGV7sB_ZBdbY2q5aVv3gTaqgTVNWylbwi-0WaWHJKc9zZbBrIw0ba2qvQnxOQrQJslBZw-cR6TQ4-Ie1hscqm&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOzXEf1gy46yD8X3aM88bvRDLeUr9iJ61a3kDid7RFf9A&oe=6AD5077F"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "mapic.com",
+      "link_url": "https://www.mapic.com/en-gb/visit.html?utm_source=meta&utm_medium=cpc&utm_campaign=RXFR_MAPIC_2026_VISITOR_PPC_META_REGISTRATION_CONVERSION_EN",
+      "page_id": "251326068220319",
+      "page_likes": 23709,
+      "page_name": "MAPIC",
+      "page_url": "https://www.facebook.com/MAPIC.Official/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-07-21T07:00:00Z",
+      "title": "MAPIC",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2531948440570303",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2531948440570303",
+      "body": "\ud83c\udf6b Amandin\u0103 FIT PROTEIC\u0102 \u2013 variant\u0103 mai \u201esolid\u0103\u201d, mai s\u0103\u021bioas\u0103\n\n8 por\u021bii | high-protein | f\u0103r\u0103 zah\u0103r\n\nAm rescris re\u021beta exact cum ai cerut: f\u0103r\u0103 unt, cu iaurt grecesc pentru fluffy, mai mult\u0103 f\u0103in\u0103 integral\u0103 ca s\u0103 \u021bin\u0103 bine compozi\u021bia \u0219i un blat care s\u0103 semene mai mult cu amandina clasic\u0103, nu cu un sponge prea light.\n\n\ud83e\uddc1 INGREDIENTE\nBlat cacao proteic (1 blat mare, t\u0103iat \u00een 2)\n\n4 ou\u0103 \u00eentregi\n\n3 albu\u0219uri\n\n120 g f\u0103in\u0103 integral\u0103 (gr\u00e2u SAU ov\u0103z)\n\n25 g cacao\n\n100 g iaurt grecesc (2\u20135% gr\u0103sime, pentru textur\u0103 fluffy)\n\n70\u201380 g \u00eendulcitor stevia/eritritol (dup\u0103 gust)\n\n8 g praf de copt\n\n1 praf de sare\n\n\ud83d\udca7 Sirop cacao (simplu, f\u0103r\u0103 alcool)\n\n300 ml ap\u0103 cald\u0103\n\n1\u00bd linguri cacao\n\n2\u20133 linguri \u00eendulcitor f\u0103r\u0103 calorii\n\ud83d\udc49 Amandina trebuie s\u0103 fie bine \u00eensiropat\u0103, nu \u201edietetic-uscat\u0103\u201d.\n\n\ud83c\udf6b Crem\u0103 de amandin\u0103 (light & proteic\u0103)\n\n400 g crem\u0103 de br\u00e2nz\u0103 light\n\n25 g cacao\n\n50\u201360 g \u00eendulcitor (dup\u0103 gust)\n\n1 linguri\u021b\u0103 esen\u021b\u0103 de vanilie\n\nVariante u\u0219or de ales:\n\nPhiladelphia Light \u2013 cea mai fin\u0103, gust neutru\n\nPilos Light (Lidl) \u2013 foarte ok la pre\u021b\n\nK-Classic Fresh Cheese Light (Kaufland) \u2013 pu\u021bin mai aerat\u0103\n\u27a1\ufe0f toate func\u021bioneaz\u0103, diferen\u021ba e doar de textur\u0103, nu de rezultat.\n\n\u2728 Glazur\u0103\n\n60 g ciocolat\u0103 neagr\u0103 (min. 70% cacao)\n\n1 linguri\u021b\u0103 ulei de cocos (5 g)\n\n\ud83d\udc69\u200d\ud83c\udf73 MOD DE PREPARARE\n1\ufe0f\u20e3 Blatul\n\nSepar\u0103 ou\u0103le.\n\nBate cele 3 albu\u0219uri + albu\u0219urile din cele 4 ou\u0103 cu sarea p\u00e2n\u0103 devin spum\u0103 ferm\u0103.\n\nBate g\u0103lbenu\u0219urile cu \u00eendulcitorul, adaug\u0103 iaurtul grecesc.\n\n\u00cencorporeaz\u0103 f\u0103ina, cacaoa \u0219i praful de copt.\n\nLa final, \u00eencorporeaz\u0103 u\u0219or albu\u0219urile b\u0103tute, cu spatula.\n\nCoace la 170\u00b0C, 25\u201328 min. R\u0103ce\u0219te complet \u0219i taie blatul \u00een 2.\n\n2\ufe0f\u20e3 Sirop\n\nAmestec\u0103 apa cald\u0103 cu cacao \u0219i \u00eendulcitor p\u00e2n\u0103 se dizolv\u0103 complet.\n\n3\ufe0f\u20e3 Crema\n\nAmestec\u0103 toate ingredientele p\u00e2n\u0103 ob\u021bii o crem\u0103 dens\u0103, lucioas\u0103.\n\n4\ufe0f\u20e3 Asamblare\n\n\u00censiropeaz\u0103 bine prima foaie\n\nAdaug\u0103 toat\u0103 crema\n\nA doua foaie\n\n\u00censiropeaz\u0103 din nou\n\n5\ufe0f\u20e3 Glazura\n\nTope\u0219te ciocolata cu uleiul de cocos, toarn\u0103 deasupra.\nLas\u0103 la frigider 2\u20133 ore, apoi taie \u00een 8 por\u021bii.\n\n\ud83d\udcca VALORI NUTRI\u021aIONALE (per por\u021bie)\n\nCalorii: ~245 kcal\nProteine: ~12 g\nCarbohidra\u021bi: ~22 g\n(din care fibre: ~5 g)\nGr\u0103simi: ~11 g\n(din care saturate: ~5 g)\n\ud83d\udccc Salveaz\u0103 re\u021beta\n\ud83d\udce4 D\u0103 share cuiva care spune c\u0103 \u201enu mai m\u0103n\u00e2nc\u0103 dulce\u201d\n\n\ud83d\udc49 Pentru \u00eenc\u0103 361 de astfel de re\u021bete \u2013 delicioase, rapide, ieftine, u\u0219or de preparat de oricine \u0219i g\u00e2ndite special s\u0103 te ajute s\u0103 sl\u0103be\u0219ti \u2013 po\u021bi accesa c\u0103r\u021bile mele de re\u021bete.\n\n@bogdan.tirziu.nutritionist\n\nM-am s\u0103turat s\u0103 aud femei care \u00eenc\u0103 \u021bin diete restrictive, care se \u00eenfometeaz\u0103, care renun\u021b\u0103 la m\u00e2ncarea preferat\u0103\u2026 doar ca s\u0103 se \u00eentoarc\u0103 de fiecare dat\u0103 \u00een acela\u0219i punct.\n\nM-am s\u0103turat s\u0103 v\u0103d copii supraponderali, mame care nu \u0219tiu ce s\u0103 mai g\u0103teasc\u0103, familii \u00eentregi care se lupt\u0103 cu kilogramele, cu frustr\u0103rile \u0219i cu ru\u0219inea.\n\n\u0218i mai ales\u2026 m-am s\u0103turat s\u0103 v\u0103d c\u0103 \u00een Rom\u00e2nia nu exist\u0103 deloc educa\u021bie nutri\u021bional\u0103 \u00een familie. Nimeni nu \u00eenva\u021b\u0103 pe nimeni cum s\u0103 m\u0103n\u00e2nce corect, cum s\u0103-\u0219i respecte poftele, cum s\u0103 lucreze cu hormonii \u2013 nu \u00eempotriva lor.\n\nFix de asta am luat o decizie.\nLa un pre\u021b complet accesibil oricui, am pus la dispozi\u021bie cele trei c\u0103r\u021bi digitale pe care mii de femei le folosesc deja ca s\u0103-\u0219i schimbe via\u021ba.\nUn pachet cu 362 de re\u021bete din toate buc\u0103t\u0103riile lumii:\nitaliene\u0219ti, fran\u021buze\u0219ti, interna\u021bionale, dar \u0219i rom\u00e2ne\u0219ti tradi\u021bionale \u2013 reinterpretate inteligent, light, f\u0103r\u0103 compromis la gust.\n\nVei g\u0103si de toate:\n\ud83c\udf55 pizza reinterpretat\u0103\n\ud83c\udf5d paste\n\ud83c\udf2f shawarme\n\ud83c\udf54 burgeri\n\ud83c\udf70 peste 100 de deserturi s\u0103n\u0103toase\n\u2026 toate g\u00e2ndite s\u0103-\u021bi echilibreze hormonii, s\u0103 reduc\u0103 poftele \u0219i s\u0103 te ajute s\u0103 sl\u0103be\u0219ti f\u0103r\u0103 \u00eenfometare \u0219i f\u0103r\u0103 \u201einterdic\u021bii\u201d.\n\nAceste re\u021bete te ajut\u0103 s\u0103 sl\u0103be\u0219ti, dar mai important\u2026\nte \u00eenva\u021b\u0103 cum s\u0103 m\u0103n\u00e2nci pentru tot restul vie\u021bii.\nCum s\u0103 r\u0103m\u00e2i \u00een form\u0103 dup\u0103 ce ai sl\u0103bit.\nCum s\u0103-\u021bi schimbi stilul alimentar pentru totdeauna.\n\nDac\u0103 sim\u021bi c\u0103 rezonezi cu asta\u2026 dac\u0103 sim\u021bi c\u0103 meri\u021bi m\u0103car cea mai mic\u0103 investi\u021bie posibil\u0103 \u00een tine,\nap\u0103s\u0103 pe link, vezi exact ce prime\u0219ti \u0219i alege dac\u0103 este potrivit pentru tine.\n\nSi partea cea mai tare? Le primesti pe mail, fie in inbox fie in promotions in exaaaact 7 secunde.... ca sa te poti bucura si face schimbarea imediat!",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "https://bogdantirziu.ro/ebook/",
+      "link_url": "https://bogdantirziu.ro/ebook/",
+      "page_id": "354174487787217",
+      "page_likes": 347477,
+      "page_name": "Bogdan Tirziu / Sl\u0103be\u0219te U\u0219or",
+      "page_url": "https://www.facebook.com/61563953609457/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-05-30T07:00:00Z",
+      "title": "Acceseaz\u01ce chiar AICI",
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMOXsLIZZ5aEf6pv4NXnv1mpYgBaPhfDTXjb-LTHkJ8uELtRpoH5lq0PrYGi_rN-O2UxqNwx59geE9ETNMQTMyIVvsrEb9q53gV09R7qdI9AA.mp4?_nc_cat=110&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=1o12u8oMDOYQ7kNvwGXmO2h&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjg4NjQ1NDU5MDQ2MTE1OCwiYXNzZXRfYWdlX2RheXMiOjI2NywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjczLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=975a01c5eadc3b19&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8wNTRGREE1NkM1OThFMzZCMjg5NkI2RUJCNkUzMjQ4Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UxNENEQ0EwNEM1NEFDMzc5NDU0RjhEOUE1REI2RTk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbM08qvuY6TAxUCKAJDMywXQFJIgxJul40YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQPcE6jg2JP63Th-Be0vGAr9BeWg7wv6QbHNhUcXGCcWXw&oe=6AD52EAA"
+      ]
+    },
+    {
+      "ad_archive_id": "971182379347411",
+      "ad_url": "https://www.facebook.com/ads/library/?id=971182379347411",
+      "body": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+      "cards": [
+        {
+          "body": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://itunes.apple.com/app/id1673567402",
+          "title": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOIUaX7aLyEFBU3kwCLUKIY4B2_P4hG6-5Bek4b_kZFMNzSpdn3xbqnBbSOQnTsxWC43GaiX4lmFu7rX-rcaY7ayewQxY4izPUs02r7qaWeQA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=dD3myHw1ReMQ7kNvwF5BVrZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2Njg3MzU1MTQyMzI3MDQsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=a5d16137a6ec4d75&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81RjQzNDg1MTU3N0Y5RUUzMEQ0NzAzRkQwMzdBNTY5OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI0NDNFQkE2RTQyMTFCNjMzRkMyRkExQ0JBMzJDNjkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaAnua4mO32BRUCKAJDMywXQEOVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQOL8bOuUyX-tXGq27b81HGC_wyDq3l4A3yqN497emYOnA&oe=6AD50DEF"
+        },
+        {
+          "body": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://itunes.apple.com/app/id1673567402",
+          "title": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOIUaX7aLyEFBU3kwCLUKIY4B2_P4hG6-5Bek4b_kZFMNzSpdn3xbqnBbSOQnTsxWC43GaiX4lmFu7rX-rcaY7ayewQxY4izPUs02r7qaWeQA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=dD3myHw1ReMQ7kNvwF5BVrZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2Njg3MzU1MTQyMzI3MDQsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=a5d16137a6ec4d75&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81RjQzNDg1MTU3N0Y5RUUzMEQ0NzAzRkQwMzdBNTY5OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI0NDNFQkE2RTQyMTFCNjMzRkMyRkExQ0JBMzJDNjkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaAnua4mO32BRUCKAJDMywXQEOVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQOL8bOuUyX-tXGq27b81HGC_wyDq3l4A3yqN497emYOnA&oe=6AD50DEF"
+        },
+        {
+          "body": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://itunes.apple.com/app/id1673567402",
+          "title": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNSS-3J9kVDTIwQq1SYxerRbhTmh5ERBFsIq6pzgeCFsk-VIk9EpvsOTAjJifV_OchIfQ-LLk_HOpdw8LG0brI0GAM1cg7KEnUZT0IOtUayRw.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=owLUd6dtzjgQ7kNvwHXiQXc&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzY1MjEzMzU1NDI1NTMsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ef20a663d1f539ae&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81QjRENzVFOTE0RkJFOEI1RUVDQzFDNTQwMUNFN0Q5MF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFCNEJEMUU1RUNGMjIyRTVDMzc0RkI2QUMwMzMzMjkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACayzI7gva3XAxUCKAJDMywXQEOVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQMap6BilcYD4gfD6BcMQCyf0nGizcyyXLYSV1PAV_70CQ&oe=6AD510F4"
+        },
+        {
+          "body": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://itunes.apple.com/app/id1673567402",
+          "title": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO9NFFoay8w_8QsOpxLKTqKLISekZwTxCpBw3ohThhNNUviIe9J54Glbe1gKMJvkz1durwgm9bYy6RpW8_lz2ELKED6nbRVkdAs-SDR5cNq1Q.mp4?_nc_cat=110&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=veuTKEkAwsUQ7kNvwFDCYO9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE5OTMzMjE2NTQ3MTI3MTgsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjI5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=83078ab3f2615ce0&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xNDQ5RDcwRTFGOTkyQkZCOTBBNEQ0RTg3NTkxMkFCRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U0NDdDRDhENzcyRjcxMzQ5RjIwQTFEQTQxRUQzNjg3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACac5rfSy7qKBxUCKAJDMywXQD33S8an754YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQMruA6uNpCjaLmyYdTN1010rA_m308puVRA83z2tyxosg&oe=6AD51566"
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "itunes.apple.com",
+      "link_url": "http://itunes.apple.com/app/id1673567402",
+      "page_id": "1179441661911005",
+      "page_likes": 560,
+      "page_name": "Freecash.com",
+      "page_url": "https://www.facebook.com/100067190564681/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "Spielen, Einl\u00f6sen, Spa\u00df haben: Freecash!",
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOIUaX7aLyEFBU3kwCLUKIY4B2_P4hG6-5Bek4b_kZFMNzSpdn3xbqnBbSOQnTsxWC43GaiX4lmFu7rX-rcaY7ayewQxY4izPUs02r7qaWeQA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=dD3myHw1ReMQ7kNvwF5BVrZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2Njg3MzU1MTQyMzI3MDQsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=a5d16137a6ec4d75&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81RjQzNDg1MTU3N0Y5RUUzMEQ0NzAzRkQwMzdBNTY5OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI0NDNFQkE2RTQyMTFCNjMzRkMyRkExQ0JBMzJDNjkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaAnua4mO32BRUCKAJDMywXQEOVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQOL8bOuUyX-tXGq27b81HGC_wyDq3l4A3yqN497emYOnA&oe=6AD50DEF",
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNSS-3J9kVDTIwQq1SYxerRbhTmh5ERBFsIq6pzgeCFsk-VIk9EpvsOTAjJifV_OchIfQ-LLk_HOpdw8LG0brI0GAM1cg7KEnUZT0IOtUayRw.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=owLUd6dtzjgQ7kNvwHXiQXc&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzY1MjEzMzU1NDI1NTMsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ef20a663d1f539ae&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81QjRENzVFOTE0RkJFOEI1RUVDQzFDNTQwMUNFN0Q5MF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFCNEJEMUU1RUNGMjIyRTVDMzc0RkI2QUMwMzMzMjkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACayzI7gva3XAxUCKAJDMywXQEOVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQMap6BilcYD4gfD6BcMQCyf0nGizcyyXLYSV1PAV_70CQ&oe=6AD510F4",
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO9NFFoay8w_8QsOpxLKTqKLISekZwTxCpBw3ohThhNNUviIe9J54Glbe1gKMJvkz1durwgm9bYy6RpW8_lz2ELKED6nbRVkdAs-SDR5cNq1Q.mp4?_nc_cat=110&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=veuTKEkAwsUQ7kNvwFDCYO9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE5OTMzMjE2NTQ3MTI3MTgsImFzc2V0X2FnZV9kYXlzIjo5NSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjI5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=83078ab3f2615ce0&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xNDQ5RDcwRTFGOTkyQkZCOTBBNEQ0RTg3NTkxMkFCRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U0NDdDRDhENzcyRjcxMzQ5RjIwQTFEQTQxRUQzNjg3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACac5rfSy7qKBxUCKAJDMywXQD33S8an754YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQMruA6uNpCjaLmyYdTN1010rA_m308puVRA83z2tyxosg&oe=6AD51566"
+      ]
+    },
+    {
+      "ad_archive_id": "1433133478744829",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1433133478744829",
+      "body": "WOW, wie das gl\u00e4nzt! \ud83e\udd29 Sieht dein Auto im Herbst auch schnell dreckig aus? \ud83d\ude97 Dann wird es h\u00f6chste Zeit f\u00fcr eine Autow\u00e4sche. \ud83e\uddfc Sichere dir 50% Rabatt auf die Premium-Autow\u00e4sche Ultra HDbb) in einer von 279 IMO-Waschstra\u00dfen! Wie das geht? Na mit der Lidl Plus App. \ud83d\udcf2\n\nbb) Um den Rabatt zu nutzen, musst du dir nur einen QR-Code in der Lidl Plus App generieren lassen und dem Waschstra\u00dfenbetreiber vorzeigen. Eine Barauszahlung ist nicht m\u00f6glich. Der Coupon kann bis zum 01.11.2026 an allen IMO Waschstra\u00dfen eingel\u00f6st werden. Bitte beachte, dass der QR-Code des Coupons beim Partner vor Ort vorgezeigt werden muss. Hinweis: An ausgew\u00e4hlten Standorten bieten wir statt Ultra HD die Premium-W\u00e4sche an. Kontakt: Bei Fragen zum Angebot von IMO Car Wash wende dich bitte direkt an den Kundendienst unter info@imowash.de.",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "image",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/837888505_1814089896455723_2877231926730856669_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3ZG7jYmz8_oQ7kNvwGjA1s3&_nc_oc=Ado7BZAsQLXgm6wf-ChxyQxDSM3I1RN8l9-1KcwKMBWOTSGEkbDEjtSrAISNYLdFpYK0QzmQAhNXtOm1F0pEtW_V&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOLhJ9TEUWYqOa4DXY3z5wf3_ifT2726w5DdKV1sbUbmg&oe=6AD509DF"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/lidl-plus/s10007388?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ad-{{ad.id}}",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": "Lidl Plus Autow\u00e4sche",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1628550195553817",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1628550195553817",
+      "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+      "cards": [
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809235356_1099489639205567_7192127459369211472_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b46PkvnPiOAQ7kNvwEjF5sC&_nc_oc=Adq8JgEq1G1xTMED3xUw6W4_afBo1TYgP_xG4HKbvzPSLzHF420GT8DgconaFtGX3bfWMBI2lOuICdyyibeInrla&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMjnTaoDzaOiLni8T2hgl4VIrhYS8QDBSF6KmTpzew0Kw&oe=6AD53792",
+          "link_url": "https://www.lidl.de/p/roku-gin-the-japanese-craft-gin-43-vol/p100244252?utm_source=meta&utm_medium=paid_social",
+          "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810182902_1076921555118955_4786675120136770279_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tD82thsUWJIQ7kNvwEOp988&_nc_oc=AdoxcAXykTHeanVabow5lfwvrI_9nz_KDvMFQfsszN01RLOwxHCFMgujQXgiMUqUQG4uiefjZb0KQXFACab702zi&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOvm_FyfajF3kpztf6rRhnFHoIRn7aAzkurhOMAU2SKSw&oe=6AD50D3A",
+          "link_url": "https://www.lidl.de/p/mojito-fertigmix-20-vol/p100330058?utm_source=meta&utm_medium=paid_social",
+          "title": "Mojito Fertigmix 20% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800497902_1070842149162477_3624801291186427545_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eQwqlNSIGsoQ7kNvwGOCosh&_nc_oc=AdoB8CutpObETGqDk1tM6Oq4HZ9AkJzIc-bxw6ogfAxH8rf_R5r7857Plg03tHEhkPdtjFmdJaKRi8YDmXrrmcMT&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNjtKoGKwlqNPzdVs-DpAHu6vq2zphhkHvp4ux21be-Vw&oe=6AD5132A",
+          "link_url": "https://www.lidl.de/p/dulong-cremant-de-bordeaux-aop-brut-schaumwein/p100261918?utm_source=meta&utm_medium=paid_social",
+          "title": "DULONG Cr\u00e9mant de Bordeaux AOP brut, Schaumwein",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/807908886_928671089850763_2608712967087449665_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dMtnChL-rPgQ7kNvwHHYD-Y&_nc_oc=Adr5Lv-LDcvIB0unTiREjIpNO6hPfgJG8qGguMRqwwKRG7F9ab25RVmUsOQshaTd4E2PHbDjRdy0drxEr6f6uU7T&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuGXf1a0i2t73JU947KwdTwxS_HkjrOYIr5xftGZfHcQ&oe=6AD51244",
+          "link_url": "https://www.lidl.de/p/pfanner-alpine-single-malt-whisky-mit-geschenkbox-43-vol/p100259271?utm_source=meta&utm_medium=paid_social",
+          "title": "PFANNER Alpine Single Malt Whisky mit Geschenkbox 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800483009_1558993018681087_341954939099901499_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Anc6gSrFZ4Q7kNvwHUqNlc&_nc_oc=Adqhg2OhVnyaTdp0gJwmBFYmTdpyZIIn5fDwoz3-SwW-SAexNnTCvqeKDBUFiGQszF2EVlH6oPj5X0lRW1y9d5Eq&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNY7Se0H64HeqobzFn9IPd_3yX2Txsdgihu6Ul3M0zlqw&oe=6AD51D8C",
+          "link_url": "https://www.lidl.de/p/pasqua-villa-borghetti-bardolino-classico-doc-trocken-rotwein-2023/p100313220?utm_source=meta&utm_medium=paid_social",
+          "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800993890_1948726123198742_2903148643399953536_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uBS3iidGVfEQ7kNvwFrx4Fl&_nc_oc=AdpKSHgZruDy4fITmyjpayKwoQHXZfZTJmDN73gxEhwJK1XPu7Oov5EhG3J4o0RAb27ax_YRUmjdwPMhGvxaKD9K&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNRw2MZC2hkpSHgne03Ms2wuUGBZhGlvKsxnuVJ8PnAfw&oe=6AD52860",
+          "link_url": "https://www.lidl.de/p/silvercrest-personal-care-multifunktionsthermometer-sft-81-mit-app/p100340283?utm_source=meta&utm_medium=paid_social",
+          "title": "SILVERCREST\u00ae PERSONAL CARE Multifunktionsthermometer SFT 81, mit App",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809235356_1099489639205567_7192127459369211472_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b46PkvnPiOAQ7kNvwEjF5sC&_nc_oc=Adq8JgEq1G1xTMED3xUw6W4_afBo1TYgP_xG4HKbvzPSLzHF420GT8DgconaFtGX3bfWMBI2lOuICdyyibeInrla&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMjnTaoDzaOiLni8T2hgl4VIrhYS8QDBSF6KmTpzew0Kw&oe=6AD53792",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810182902_1076921555118955_4786675120136770279_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tD82thsUWJIQ7kNvwEOp988&_nc_oc=AdoxcAXykTHeanVabow5lfwvrI_9nz_KDvMFQfsszN01RLOwxHCFMgujQXgiMUqUQG4uiefjZb0KQXFACab702zi&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOvm_FyfajF3kpztf6rRhnFHoIRn7aAzkurhOMAU2SKSw&oe=6AD50D3A",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800497902_1070842149162477_3624801291186427545_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eQwqlNSIGsoQ7kNvwGOCosh&_nc_oc=AdoB8CutpObETGqDk1tM6Oq4HZ9AkJzIc-bxw6ogfAxH8rf_R5r7857Plg03tHEhkPdtjFmdJaKRi8YDmXrrmcMT&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNjtKoGKwlqNPzdVs-DpAHu6vq2zphhkHvp4ux21be-Vw&oe=6AD5132A",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/807908886_928671089850763_2608712967087449665_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dMtnChL-rPgQ7kNvwHHYD-Y&_nc_oc=Adr5Lv-LDcvIB0unTiREjIpNO6hPfgJG8qGguMRqwwKRG7F9ab25RVmUsOQshaTd4E2PHbDjRdy0drxEr6f6uU7T&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNuGXf1a0i2t73JU947KwdTwxS_HkjrOYIr5xftGZfHcQ&oe=6AD51244",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800483009_1558993018681087_341954939099901499_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Anc6gSrFZ4Q7kNvwHUqNlc&_nc_oc=Adqhg2OhVnyaTdp0gJwmBFYmTdpyZIIn5fDwoz3-SwW-SAexNnTCvqeKDBUFiGQszF2EVlH6oPj5X0lRW1y9d5Eq&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNY7Se0H64HeqobzFn9IPd_3yX2Txsdgihu6Ul3M0zlqw&oe=6AD51D8C",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/800993890_1948726123198742_2903148643399953536_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uBS3iidGVfEQ7kNvwFrx4Fl&_nc_oc=AdpKSHgZruDy4fITmyjpayKwoQHXZfZTJmDN73gxEhwJK1XPu7Oov5EhG3J4o0RAb27ax_YRUmjdwPMhGvxaKD9K&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNRw2MZC2hkpSHgne03Ms2wuUGBZhGlvKsxnuVJ8PnAfw&oe=6AD52860"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "http://www.lidl.de/",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1575585047928976",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1575585047928976",
+      "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+      "cards": [
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809458812_1747012176418541_561081288173011500_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RBNQJ18Q9qkQ7kNvwHiZNnl&_nc_oc=AdpvrFZ8-N-WKp23FkdpPLdF_3K7fvWY_XhLrWMKGjM6A0HHaFf6R4g0ymea2F4pBUzmIBIVbvLGm53bVc-UcWB8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPakyYzfmJThC2nvihilk35A7jf6HEWnWhhr_bR4Jn8_w&oe=6AD505B2",
+          "link_url": "https://www.lidl.de/p/pasqua-villa-borghetti-bardolino-classico-doc-trocken-rotwein-2023/p100313220?utm_source=meta&utm_medium=paid_social",
+          "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809910023_1300442102062281_7535969192822102080_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6spXX26Cq_gQ7kNvwGDH8AP&_nc_oc=AdoIbZHfZ8zjAwy5XQwFQAY8X79jbCc4AP89Szped1RZ1SV91LuLNtFFKqwJ6VwfbENsEaIAhKKPL5vD682p6zRX&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOR_mw9OR2__UGCZ2rI17aW6vVTQmbEvn30u5MM6Xq1EA&oe=6AD511C8",
+          "link_url": "https://www.lidl.de/p/dulong-cremant-de-bordeaux-aop-brut-schaumwein/p100261918?utm_source=meta&utm_medium=paid_social",
+          "title": "DULONG Cr\u00e9mant de Bordeaux AOP brut, Schaumwein",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810215424_1126462683050155_721398163157200194_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L1EiVfb-7OcQ7kNvwGLZ6vA&_nc_oc=AdrGQxrMFVU74mgHat99MBA1zfVUI4QlkvaIP5sDr7o3_bMYadpkoMf64-mD0mmMYyTHevs7ORu9dF0oAshEhhfk&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNOtEoLW4eSi6_0WmunMgJ3ouysJcirkNWSV4FRfhH1cA&oe=6AD53783",
+          "link_url": "https://www.lidl.de/p/pfanner-alpine-single-malt-whisky-mit-geschenkbox-43-vol/p100259271?utm_source=meta&utm_medium=paid_social",
+          "title": "PFANNER Alpine Single Malt Whisky mit Geschenkbox 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809979334_3248723521994680_6692469920179386351_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=K3nsCwy1uSwQ7kNvwGErsV-&_nc_oc=AdqcmBhDEegBthGXx4gnkqgo4Z9Bt4eJ_1sOlmQIcR57FVy1VQe0-hiMorRrOClOTf6cUhafvW9J0qN4PX0mc-Y-&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMgG8pJqTOVAYcyQmqOCHUAXCXSJSQA-dhh2JuMWWWl9w&oe=6AD535DA",
+          "link_url": "https://www.lidl.de/p/roku-gin-the-japanese-craft-gin-43-vol/p100244252?utm_source=meta&utm_medium=paid_social",
+          "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809314872_1060278803450908_2689906131703737397_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=deSZl6Yk-VIQ7kNvwGtLQ6V&_nc_oc=Adp3e-xNEe9ryzZ63eOwTFwyY9huBwxfH4Iyx1Tsi_TZaPEkFMwZSPF66g8yVSzaNzYPJmn1aus2iv0MvEVL51_6&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMBO6JsoHvbYMi0t9XiR-NnrufkSPlItl7hmWUhC67t5w&oe=6AD5099D",
+          "link_url": "https://www.lidl.de/p/mojito-fertigmix-20-vol/p100330058?utm_source=meta&utm_medium=paid_social",
+          "title": "Mojito Fertigmix 20% Vol",
+          "video": null
+        },
+        {
+          "body": "Jetzt gro\u00dfe Produktauswahl entdecken und bequem nach Hause liefern lassen! \ud83d\ude0d",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810118424_912631018273238_2068878236386856991_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-V_uUyI6zygQ7kNvwExnvpC&_nc_oc=Adoe7j16UQkuSv2QYLrsVM1-B89ls4nZRnQKZr-6-uhdqZ2-EQaZPP2KOMCK7ebbWuf96KiTTVyVMdicQzKwfwue&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNyghvHVZ3ZMkm2X_sJLzYzL9leWFKoA2Pzh6eM6KRd4w&oe=6AD50F07",
+          "link_url": "https://www.lidl.de/p/silvercrest-personal-care-multifunktionsthermometer-sft-81-mit-app/p100340283?utm_source=meta&utm_medium=paid_social",
+          "title": "SILVERCREST\u00ae PERSONAL CARE Multifunktionsthermometer SFT 81, mit App",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809458812_1747012176418541_561081288173011500_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RBNQJ18Q9qkQ7kNvwHiZNnl&_nc_oc=AdpvrFZ8-N-WKp23FkdpPLdF_3K7fvWY_XhLrWMKGjM6A0HHaFf6R4g0ymea2F4pBUzmIBIVbvLGm53bVc-UcWB8&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPakyYzfmJThC2nvihilk35A7jf6HEWnWhhr_bR4Jn8_w&oe=6AD505B2",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809910023_1300442102062281_7535969192822102080_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6spXX26Cq_gQ7kNvwGDH8AP&_nc_oc=AdoIbZHfZ8zjAwy5XQwFQAY8X79jbCc4AP89Szped1RZ1SV91LuLNtFFKqwJ6VwfbENsEaIAhKKPL5vD682p6zRX&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOR_mw9OR2__UGCZ2rI17aW6vVTQmbEvn30u5MM6Xq1EA&oe=6AD511C8",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810215424_1126462683050155_721398163157200194_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L1EiVfb-7OcQ7kNvwGLZ6vA&_nc_oc=AdrGQxrMFVU74mgHat99MBA1zfVUI4QlkvaIP5sDr7o3_bMYadpkoMf64-mD0mmMYyTHevs7ORu9dF0oAshEhhfk&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNOtEoLW4eSi6_0WmunMgJ3ouysJcirkNWSV4FRfhH1cA&oe=6AD53783",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809979334_3248723521994680_6692469920179386351_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=K3nsCwy1uSwQ7kNvwGErsV-&_nc_oc=AdqcmBhDEegBthGXx4gnkqgo4Z9Bt4eJ_1sOlmQIcR57FVy1VQe0-hiMorRrOClOTf6cUhafvW9J0qN4PX0mc-Y-&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMgG8pJqTOVAYcyQmqOCHUAXCXSJSQA-dhh2JuMWWWl9w&oe=6AD535DA",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809314872_1060278803450908_2689906131703737397_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=deSZl6Yk-VIQ7kNvwGtLQ6V&_nc_oc=Adp3e-xNEe9ryzZ63eOwTFwyY9huBwxfH4Iyx1Tsi_TZaPEkFMwZSPF66g8yVSzaNzYPJmn1aus2iv0MvEVL51_6&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQMBO6JsoHvbYMi0t9XiR-NnrufkSPlItl7hmWUhC67t5w&oe=6AD5099D",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/810118424_912631018273238_2068878236386856991_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-V_uUyI6zygQ7kNvwExnvpC&_nc_oc=Adoe7j16UQkuSv2QYLrsVM1-B89ls4nZRnQKZr-6-uhdqZ2-EQaZPP2KOMCK7ebbWuf96KiTTVyVMdicQzKwfwue&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNyghvHVZ3ZMkm2X_sJLzYzL9leWFKoA2Pzh6eM6KRd4w&oe=6AD50F07"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "http://www.lidl.de/",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1641228567609184",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1641228567609184",
+      "body": "Prep like a pro. Mit dem Messerset aus der SILVERCREST Signature Collection by Andre Agassi.",
+      "cards": [
+        {
+          "body": "Prep like a pro. Mit dem Messerset aus der SILVERCREST Signature Collection by Andre Agassi.",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-30687248_ad-{{ad.id}}",
+          "title": "Neu f\u00fcr deine K\u00fcche",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkCjHkqvYl33DO-OHhRkKP3pxN-FrCGeMEnb7tCSJIw8VxzhmnIgFxCEgQihA-VnrXhsUaR8qGgYsBuMDoSPu2i1s--Hb8QnX9qb3beZzCRA.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=ifEnExG0eywQ7kNvwEPzPIx&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMDA3NTk3NjI5MDMzMzYsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7f177599c19a73e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84RTQyQkU2M0JCMDM5MzhEREJEOTM4OUI2Mjk3NjFCMF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzUxNEQ4RkIyMzUwQkIzNThEMjM5MzRDRkE3ODQ1NDhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbQhLWq08j0AxUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQNOtbuPXQlE_19136vb37bu2Do4OCtYeeX_Kwr-cz6E1w&oe=6AD5095D"
+        },
+        {
+          "body": "Prep like a pro. Mit dem Messerset aus der SILVERCREST Signature Collection by Andre Agassi.",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-30687248_ad-{{ad.id}}",
+          "title": "Neu f\u00fcr deine K\u00fcche",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOobHZkn4Q3ataWyQzfNUldw81Vyugty8hPj9NYRzYNIjpMkXyS-z_k-HtGbtJvY7OdiDXDUc5t3l3VxMVuMv9K2Zl_zjvT0M9dy4aSXSvaeg.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=JTSHu3e5tjwQ7kNvwFLL5iA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwOTM5NTM3OTYzMzAyNzUsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=60379354070ee71d&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DODRFOTMyNjI0QjFBMENGODIzRUE4NTRERjUyNUI5Rl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzlGNDg1Rjc2NjRCNUFDNjQ1REMzNzg2MDdBMjhDRTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbGzPL2vrzxAxUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQOGrZHDfSBWA8un5uHVoI63uTDu0UUEBJ_L4uHOp3WnTA&oe=6AD50D0D"
+        },
+        {
+          "body": "Prep like a pro. Mit dem Messerset aus der SILVERCREST Signature Collection by Andre Agassi.",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-30687248_ad-{{ad.id}}",
+          "title": "Neu f\u00fcr deine K\u00fcche",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkCjHkqvYl33DO-OHhRkKP3pxN-FrCGeMEnb7tCSJIw8VxzhmnIgFxCEgQihA-VnrXhsUaR8qGgYsBuMDoSPu2i1s--Hb8QnX9qb3beZzCRA.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=ifEnExG0eywQ7kNvwEPzPIx&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMDA3NTk3NjI5MDMzMzYsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7f177599c19a73e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84RTQyQkU2M0JCMDM5MzhEREJEOTM4OUI2Mjk3NjFCMF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzUxNEQ4RkIyMzUwQkIzNThEMjM5MzRDRkE3ODQ1NDhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbQhLWq08j0AxUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQNOtbuPXQlE_19136vb37bu2Do4OCtYeeX_Kwr-cz6E1w&oe=6AD5095D"
+        }
+      ],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-30687248_ad-{{ad.id}}",
+      "page_id": "838895165975642",
+      "page_likes": 2558,
+      "page_name": "Silvercrest",
+      "page_url": "https://www.facebook.com/SilvercrestDE/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-10-09T07:00:00Z",
+      "title": "Neu f\u00fcr deine K\u00fcche",
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkCjHkqvYl33DO-OHhRkKP3pxN-FrCGeMEnb7tCSJIw8VxzhmnIgFxCEgQihA-VnrXhsUaR8qGgYsBuMDoSPu2i1s--Hb8QnX9qb3beZzCRA.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=ifEnExG0eywQ7kNvwEPzPIx&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMDA3NTk3NjI5MDMzMzYsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7f177599c19a73e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84RTQyQkU2M0JCMDM5MzhEREJEOTM4OUI2Mjk3NjFCMF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzUxNEQ4RkIyMzUwQkIzNThEMjM5MzRDRkE3ODQ1NDhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbQhLWq08j0AxUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQNOtbuPXQlE_19136vb37bu2Do4OCtYeeX_Kwr-cz6E1w&oe=6AD5095D",
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOobHZkn4Q3ataWyQzfNUldw81Vyugty8hPj9NYRzYNIjpMkXyS-z_k-HtGbtJvY7OdiDXDUc5t3l3VxMVuMv9K2Zl_zjvT0M9dy4aSXSvaeg.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=JTSHu3e5tjwQ7kNvwFLL5iA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwOTM5NTM3OTYzMzAyNzUsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=60379354070ee71d&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DODRFOTMyNjI0QjFBMENGODIzRUE4NTRERjUyNUI5Rl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzlGNDg1Rjc2NjRCNUFDNjQ1REMzNzg2MDdBMjhDRTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbGzPL2vrzxAxUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQOGrZHDfSBWA8un5uHVoI63uTDu0UUEBJ_L4uHOp3WnTA&oe=6AD50D0D"
+      ]
+    },
+    {
+      "ad_archive_id": "3489309541250884",
+      "ad_url": "https://www.facebook.com/ads/library/?id=3489309541250884",
+      "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+      "cards": [
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809812561_1079592628392147_7792674735849337081_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZTRbWasAFa0Q7kNvwHukuX3&_nc_oc=Adof3vawEVXE_HNQOTuWm5fFVn16y0M3VITChy9PeFCZuk_N1IIDQnZXxRthQf0VC_DwteuK_JCf599GZRH_pwJM&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNon9oF9fLolLFA93oIf-0cZ_fTPaiflEJg5aHVbrErRg&oe=6AD51E87",
+          "link_url": "https://www.lidl.de/p/mojito-fertigmix-20-vol/p100330058?utm_source=meta&utm_medium=paid_social",
+          "title": "Mojito Fertigmix 20% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809730074_993217123780127_2414499184036796444_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=P1Y7j80Z-xkQ7kNvwEKCZ-O&_nc_oc=AdrhXsMBIRcWE1GyLBYu74KKKkON_9XoBLl9XPoQCPVIrbybzLNi9uiFKxKVaiHG45SMamileworY0R7XZ87ZWEW&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQN7w8GgwVJL-bJgRzJnzcECAS9loaU2C6nXBtkx_vlA3g&oe=6AD503BB",
+          "link_url": "https://www.lidl.de/p/silvercrest-personal-care-multifunktionsthermometer-sft-81-mit-app/p100340283?utm_source=meta&utm_medium=paid_social",
+          "title": "SILVERCREST\u00ae PERSONAL CARE Multifunktionsthermometer SFT 81, mit App",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386655_1105086615346181_8182822396255814215_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VNlJ-ab2HoUQ7kNvwEfPdVl&_nc_oc=AdrL1PbgRl5w7l-j-RMEt9vyTOK3o3k0d2Umy0bI8PeNug2JvnhPkKPfEJHhwtFEHGdSCx4oCSvn0v00r07oKg5P&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPvJcL7QBJrp84kxTOfLYIWIKsttElXzIsjaPHjBlgd1g&oe=6AD527AD",
+          "link_url": "https://www.lidl.de/p/pfanner-alpine-single-malt-whisky-mit-geschenkbox-43-vol/p100259271?utm_source=meta&utm_medium=paid_social",
+          "title": "PFANNER Alpine Single Malt Whisky mit Geschenkbox 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809209851_1038381482361168_6328668667285973647_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gQDBH7go9-MQ7kNvwHTsMsb&_nc_oc=Adpc-aGlRbrBvAtx91C_Iszs-dELUL6nVZWA0JXHqp3IeQapldeES7IzPV4el-a-UKp6iVGSFQYZ4HYv9oaQIKXE&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwZpRnNTDGo3TETPBfM4JIeUhoQvsvOTouWkGtnN6Oxw&oe=6AD519D0",
+          "link_url": "https://www.lidl.de/p/pasqua-villa-borghetti-bardolino-classico-doc-trocken-rotwein-2023/p100313220?utm_source=meta&utm_medium=paid_social",
+          "title": "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809465303_1769284614289375_8302606768786882067_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CPFS_haKD8IQ7kNvwFNU55Y&_nc_oc=AdoSScrRonxZVNKP2orRynTbITRWUIu9lqBKExhvE2N_700ZRJZa5Dk7_upaX8JiImlvHjwvUduIJJsuGG_6QsPP&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOXfpVS9NRZuxedMjbkYKsjWjjwLoLNtAlHRa-7NCVI5w&oe=6AD51597",
+          "link_url": "https://www.lidl.de/p/roku-gin-the-japanese-craft-gin-43-vol/p100244252?utm_source=meta&utm_medium=paid_social",
+          "title": "ROKU GIN The Japanese Craft Gin 43% Vol",
+          "video": null
+        },
+        {
+          "body": "Entdecke jetzt die gro\u00dfe Lidl Produktauswahl \ud83d\udc99\u2764\ufe0f\ud83d\udc9b und lasse sie dir bequem nach Hause liefern!",
+          "cta": "Shop Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809458799_2570782436667674_9197507824066608167_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=r21CKrm1V2cQ7kNvwEHc7sd&_nc_oc=AdoQrR9yVGhJycYBUpPEr_KBlVwunpLxJhwgf6i-1E65JT0-2cuzhWjCWGO0WVRvZAC0uxtGHzlPoAB-cFAwc6ku&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPceYdeq8v9HQjU-42963r5qgbFsRZvX08Y4JF-_S5_UQ&oe=6AD5206E",
+          "link_url": "https://www.lidl.de/p/dulong-cremant-de-bordeaux-aop-brut-schaumwein/p100261918?utm_source=meta&utm_medium=paid_social",
+          "title": "DULONG Cr\u00e9mant de Bordeaux AOP brut, Schaumwein",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809812561_1079592628392147_7792674735849337081_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZTRbWasAFa0Q7kNvwHukuX3&_nc_oc=Adof3vawEVXE_HNQOTuWm5fFVn16y0M3VITChy9PeFCZuk_N1IIDQnZXxRthQf0VC_DwteuK_JCf599GZRH_pwJM&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNon9oF9fLolLFA93oIf-0cZ_fTPaiflEJg5aHVbrErRg&oe=6AD51E87",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809730074_993217123780127_2414499184036796444_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=P1Y7j80Z-xkQ7kNvwEKCZ-O&_nc_oc=AdrhXsMBIRcWE1GyLBYu74KKKkON_9XoBLl9XPoQCPVIrbybzLNi9uiFKxKVaiHG45SMamileworY0R7XZ87ZWEW&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQN7w8GgwVJL-bJgRzJnzcECAS9loaU2C6nXBtkx_vlA3g&oe=6AD503BB",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809386655_1105086615346181_8182822396255814215_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VNlJ-ab2HoUQ7kNvwEfPdVl&_nc_oc=AdrL1PbgRl5w7l-j-RMEt9vyTOK3o3k0d2Umy0bI8PeNug2JvnhPkKPfEJHhwtFEHGdSCx4oCSvn0v00r07oKg5P&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPvJcL7QBJrp84kxTOfLYIWIKsttElXzIsjaPHjBlgd1g&oe=6AD527AD",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809209851_1038381482361168_6328668667285973647_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gQDBH7go9-MQ7kNvwHTsMsb&_nc_oc=Adpc-aGlRbrBvAtx91C_Iszs-dELUL6nVZWA0JXHqp3IeQapldeES7IzPV4el-a-UKp6iVGSFQYZ4HYv9oaQIKXE&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPwZpRnNTDGo3TETPBfM4JIeUhoQvsvOTouWkGtnN6Oxw&oe=6AD519D0",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809465303_1769284614289375_8302606768786882067_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CPFS_haKD8IQ7kNvwFNU55Y&_nc_oc=AdoSScrRonxZVNKP2orRynTbITRWUIu9lqBKExhvE2N_700ZRJZa5Dk7_upaX8JiImlvHjwvUduIJJsuGG_6QsPP&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOXfpVS9NRZuxedMjbkYKsjWjjwLoLNtAlHRa-7NCVI5w&oe=6AD51597",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/809458799_2570782436667674_9197507824066608167_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=r21CKrm1V2cQ7kNvwEHc7sd&_nc_oc=AdoQrR9yVGhJycYBUpPEr_KBlVwunpLxJhwgf6i-1E65JT0-2cuzhWjCWGO0WVRvZAC0uxtGHzlPoAB-cFAwc6ku&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPceYdeq8v9HQjU-42963r5qgbFsRZvX08Y4JF-_S5_UQ&oe=6AD5206E"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "http://www.lidl.de/",
+      "page_id": "278565202257",
+      "page_likes": 2711926,
+      "page_name": "Lidl in Deutschland",
+      "page_url": "https://www.facebook.com/lidlde/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-15T07:00:00Z",
+      "title": "Mojito Fertigmix 20% Vol",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2287478228696457",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2287478228696457",
+      "body": "Entwickelt f\u00fcr hohe Hitze und starke Performance. Die Kupferpfannen der SILVERCREST Signature Collection by Andre Agassi.",
+      "cards": [
+        {
+          "body": "Entwickelt f\u00fcr hohe Hitze und starke Performance. Die Kupferpfannen der SILVERCREST Signature Collection by Andre Agassi.",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-34395800_ad-{{ad.id}}",
+          "title": "Neu f\u00fcr deine K\u00fcche",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOUxhmjgj3VFG9SLRV4ObT6xsERRNPDy27GZV760tPX6glT612D7XusYSeJLrKzAxHn7ReGXN2GaPjbbjmkn_OGkxY4pwyy84EHrW3n0Pi_uQ.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=LVKgJ7uh_NgQ7kNvwG6hM-x&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIzMjk2NTQxNzExNTU3MzEsImFzc2V0X2FnZV9kYXlzIjoxNiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=427c5cdd65f1a878&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FNjRBRDFCRjFDMTcwMzc3MkU2MjJBOTBGMkE2Nzc4N19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0VBNDE0MzI4Nzc3NERFQUYyRTQ3NDY0MUQxMTdEOUIzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACam9JGV3LOjCBUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQNMWptNVgp0KWhMW40pTPWG0KJCDIXepD0GW_tMy_HagA&oe=6AD51709"
+        },
+        {
+          "body": "Entwickelt f\u00fcr hohe Hitze und starke Performance. Die Kupferpfannen der SILVERCREST Signature Collection by Andre Agassi.",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-34395800_ad-{{ad.id}}",
+          "title": "Neu f\u00fcr deine K\u00fcche",
+          "video": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMMmxPaO2HOgBuzHVyk_Y8VMV68X-o5p9L5qtmLqxYKg4eVSIuoeu3L4ArYIXiJPX1yL5S5RVbM-0MgBHYINR3udJLrIoBZIT_JQg7m5RhPxA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=ulO4a7XOsGYQ7kNvwHo-hSx&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzMDAzMDc4MTk4MzQ5MTksImFzc2V0X2FnZV9kYXlzIjoyMiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2fd9d31cf7862812&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BRjQ2MTQ3NkM5OUUzMjU5NDdBMzZCODUwQzRBNTZBN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzlBNEM2OTNENDg2OUNEQjVFQTYxRjQ3REI4QzE1QjgwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbOuJmb8KfPBBUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQPxm5NQLxXHkvm3Hggk3-_qrxj6Nr6u6KgEcBZ_SzWJkw&oe=6AD51F10"
+        }
+      ],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "lidl.de",
+      "link_url": "https://www.lidl.de/c/silvercrest/s10072577?utm_source=meta&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{adset.name}}.{{ad.name}}&utm_term=ac-34395800_ad-{{ad.id}}",
+      "page_id": "838895165975642",
+      "page_likes": 2558,
+      "page_name": "Silvercrest",
+      "page_url": "https://www.facebook.com/SilvercrestDE/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-10-09T07:00:00Z",
+      "title": "Neu f\u00fcr deine K\u00fcche",
+      "videos": [
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOUxhmjgj3VFG9SLRV4ObT6xsERRNPDy27GZV760tPX6glT612D7XusYSeJLrKzAxHn7ReGXN2GaPjbbjmkn_OGkxY4pwyy84EHrW3n0Pi_uQ.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=LVKgJ7uh_NgQ7kNvwG6hM-x&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIzMjk2NTQxNzExNTU3MzEsImFzc2V0X2FnZV9kYXlzIjoxNiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=427c5cdd65f1a878&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FNjRBRDFCRjFDMTcwMzc3MkU2MjJBOTBGMkE2Nzc4N19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0VBNDE0MzI4Nzc3NERFQUYyRTQ3NDY0MUQxMTdEOUIzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACam9JGV3LOjCBUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQNMWptNVgp0KWhMW40pTPWG0KJCDIXepD0GW_tMy_HagA&oe=6AD51709",
+        "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMMmxPaO2HOgBuzHVyk_Y8VMV68X-o5p9L5qtmLqxYKg4eVSIuoeu3L4ArYIXiJPX1yL5S5RVbM-0MgBHYINR3udJLrIoBZIT_JQg7m5RhPxA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=ulO4a7XOsGYQ7kNvwHo-hSx&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzMDAzMDc4MTk4MzQ5MTksImFzc2V0X2FnZV9kYXlzIjoyMiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2fd9d31cf7862812&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BRjQ2MTQ3NkM5OUUzMjU5NDdBMzZCODUwQzRBNTZBN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzlBNEM2OTNENDg2OUNEQjVFQTYxRjQ3REI4QzE1QjgwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbOuJmb8KfPBBUCKAJDMywXQCQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&_nc_zt=28&oh=00_AQPxm5NQLxXHkvm3Hggk3-_qrxj6Nr6u6KgEcBZ_SzWJkw&oe=6AD51F10"
+      ]
+    },
+    {
+      "ad_archive_id": "1050308821220358",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1050308821220358",
+      "body": "Deine Supermarkt-Angebote bequem in einer App \u2013 mit marktguru clever sparen! \ud83d\udcb6",
+      "cards": [
+        {
+          "body": "Deine Supermarkt-Angebote bequem in einer App \u2013 mit marktguru clever sparen! \ud83d\udcb6",
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/766072123_1864245824547068_2956000764149029427_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u5P-w9n2vCwQ7kNvwHBFqmO&_nc_oc=Adqv4g0crrKr6A-TAC0MT1hSVX1TRn0jQsuoWqXCGBFnNgmg8-v0qTAVWbrk2ZiG8n2LcCiJEvi5SAHs2-bZBlfc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOz5exgEbdRMzK_EqoWUdzbRBpEHLMV2ubu9wsFQ6HMnQ&oe=6AD531EB",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "Eine App. Deine Prospekte. \ud83e\udd1d",
+          "video": null
+        },
+        {
+          "body": "Deine Supermarkt-Angebote bequem in einer App \u2013 mit marktguru clever sparen! \ud83d\udcb6",
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/762566665_2496059737579146_1163184046212508527_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yLhGV967u3QQ7kNvwE7DvFd&_nc_oc=Adqxn74zWxQzpTJBp1SduuRAkhJQiR4tqrqFmm-p98YzBq6sNvo3JlkS85m6ZjAruNL8wosT54PXLJm8qcIdXrOg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPJik3JW3Xnb4f9jLvpjkCVD-Zt94oYkDpWjAhhtDeysA&oe=6AD50457",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "Eine App. Deine Prospekte. \ud83e\udd1d",
+          "video": null
+        },
+        {
+          "body": "Deine Supermarkt-Angebote bequem in einer App \u2013 mit marktguru clever sparen! \ud83d\udcb6",
+          "cta": "Install Now",
+          "image": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/763861526_27481938764811949_5723343899042862073_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PbC_jKt_y7EQ7kNvwEMHwnQ&_nc_oc=Adrf9hUlFPSPH6BfU0jnrvk4gNH9M8yNSJdfK2IYXfDXio0f2tgf7kkHsCzGfI1we2jHkPvWJqY1LwM1Dzz1yyCT&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNGRVGga3HbVSpghGt9L2nOStHFMELXQEV8RjncZU5POQ&oe=6AD5187E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "Eine App. Deine Prospekte. \ud83e\udd1d",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/766072123_1864245824547068_2956000764149029427_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u5P-w9n2vCwQ7kNvwHBFqmO&_nc_oc=Adqv4g0crrKr6A-TAC0MT1hSVX1TRn0jQsuoWqXCGBFnNgmg8-v0qTAVWbrk2ZiG8n2LcCiJEvi5SAHs2-bZBlfc&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQOz5exgEbdRMzK_EqoWUdzbRBpEHLMV2ubu9wsFQ6HMnQ&oe=6AD531EB",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/762566665_2496059737579146_1163184046212508527_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yLhGV967u3QQ7kNvwE7DvFd&_nc_oc=Adqxn74zWxQzpTJBp1SduuRAkhJQiR4tqrqFmm-p98YzBq6sNvo3JlkS85m6ZjAruNL8wosT54PXLJm8qcIdXrOg&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQPJik3JW3Xnb4f9jLvpjkCVD-Zt94oYkDpWjAhhtDeysA&oe=6AD50457",
+        "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.35426-6/763861526_27481938764811949_5723343899042862073_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PbC_jKt_y7EQ7kNvwEMHwnQ&_nc_oc=Adrf9hUlFPSPH6BfU0jnrvk4gNH9M8yNSJdfK2IYXfDXio0f2tgf7kkHsCzGfI1we2jHkPvWJqY1LwM1Dzz1yyCT&_nc_zt=14&_nc_ht=scontent-xxc1-1.xx&_nc_gid=3ViB7B8hKpVx0HeaVWdUEg&_nc_ss=70289&oh=00_AQNGRVGga3HbVSpghGt9L2nOStHFMELXQEV8RjncZU5POQ&oe=6AD5187E"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+      "page_id": "1707558166185829",
+      "page_likes": 50769,
+      "page_name": "marktguru",
+      "page_url": "https://www.facebook.com/marktguruDE/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-08-03T07:00:00Z",
+      "title": "Eine App. Deine Prospekte. \ud83e\udd1d",
+      "videos": []
+    }
+  ],
+  "usage": {
+    "boxes": [
+      "gate",
+      "recipe"
+    ],
+    "cache": "miss",
+    "engine": "recipe",
+    "lines": [
+      {
+        "about": "the call",
+        "boxes": [
+          "gate"
+        ],
+        "cache": "miss",
+        "call": "recipes",
+        "engine": "gate",
+        "units": 1
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      }
+    ],
+    "remaining_before": {
+      "concurrent": 362,
+      "requests": 460,
+      "search": 2999
+    },
+    "units": 5
+  },
+  "version": 2
+}

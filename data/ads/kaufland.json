@@ -1,0 +1,1484 @@
+{
+  "meta": {
+    "blocked": [
+      "www.facebook.com"
+    ],
+    "elapsed_ms": 3591,
+    "from_cache": false,
+    "llm_calls": 0,
+    "pages_fetched": 7,
+    "partial": false,
+    "warnings": [
+      "module: meta-ads: the Ad Library refused the box's address; asked again through a residential exit",
+      "module: meta-ads-search: 'Kaufland' \u00b7 DE \u00b7 active \u00b7 20 ad(s) \u00b7 one view \u00b7 1 page(s) through a residential exit"
+    ]
+  },
+  "recipe": "meta-ads-search",
+  "rows": [
+    {
+      "ad_archive_id": "450239114032197",
+      "ad_url": "https://www.facebook.com/ads/library/?id=450239114032197",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwFuKic8&_nc_oc=AdqfYXm6t-ay5zLU_vC5AUVY8WqdtbVJAJ6dzATVSj2tJ7bb6Oh78pdUoPWZq2s3rFI&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMxywZIVBpxI9kq-JjSVQwCJ5eLPnNQn0LZYZYm0grOOw&oe=6AD510D1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwHhMJak&_nc_oc=AdoH3fjeQa1z2oc8KHkl1f6LzRB6Ak_a3aeyX9BbWOx6EgzRMFnwtBX93KIvW_gt8JE&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMXkhwbDCkuzhOQZf6K8e-7Gw6WpIHimzqeTYEkFXX7Cw&oe=6AD52B45",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwEerPT8&_nc_oc=Adrf6HNUIgwdhBj-xwPXRdgYvAUP3tPPqCJIVsrFH8yF8j8UnTweRA7uKknT1YacYMA&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNvsO9t2_aRUiiFdp6xksyVccn3Ehfs5Ftg2yk-6AqHXw&oe=6AD52B65",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwESEMAG&_nc_oc=AdrjPFgQjmzp8n9MhdfLIu8Tv10zVwWfIVFd5rpcDZddCZme9FKjTjpdpHnYgMHrsg4&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOh0U477RfsuKDjbe8LWiVrqTpxr4QY_LDU_0YbjX_QRw&oe=6AD5305F",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFo0wLy&_nc_oc=AdqjkkTWN3mR5lHMRUj6zG3PaCB2h7fLwu04we5wx7olRnPKuNfuIfbuGW1Nv2lZLf4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOhJ6K4HlcAH16270EYygHIGJGhEkSMmhuBlpm2xK7doA&oe=6AD505B8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwE6BoOc&_nc_oc=AdpmezxmU6WqW1WFGlxkzmmSD9xoSVT7qeybbX7FycqH8g44mGC6wJNhSsbQ4RflKZ8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOgTZVslS6ewi5enqhia5BoIkkO9Bz-NF6lcsR7tHnzeQ&oe=6AD51BB8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwHlxIH6&_nc_oc=AdoJPjPlXg5iObI_Qq_HIl5iRFLmn93OmIQtnP5lMsSguwPgvN05GRpU8tq1cZIHYC8&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN2DWv5fAGbJVFEcHdcHWEJQgkWJQARtJioAtFR_oHAmg&oe=6AD511A6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Fressnapf Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwEzep6P&_nc_oc=AdpzDHOCShlVvFncqv0bh1JtZYHUL7xKop1xm8s_ZZEafzB11pEsQ3v2tjXjy4b7L-w&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN8wnGn3xzu2npeby9i57fgbHJd1bvha2Au3ysrlPQzNQ&oe=6AD50FE6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwGv21bs&_nc_oc=AdqE9gGayO2Z6AOzIa7GO13TVSVeB4m2lp7gr8qunM0-D8-ooJlin7TMfzI_8-RHtp4&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO1i13RIuKuQjokuuqjW-QhZDsfV24BXpGPzSMiHwjWmA&oe=6AD503B3",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwHNlXqX&_nc_oc=AdpXlVLYTzNvBqH90EL6XDu59JGkDSo9y5nJTUmeYlAr5dF_G4xY1pMqjOL4S65YC-8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN4GvOyMnEIrM1HyMJ164S28e5ZdyH3LbwZWVdpHKcPjw&oe=6AD527A8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwFuKic8&_nc_oc=AdqfYXm6t-ay5zLU_vC5AUVY8WqdtbVJAJ6dzATVSj2tJ7bb6Oh78pdUoPWZq2s3rFI&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMxywZIVBpxI9kq-JjSVQwCJ5eLPnNQn0LZYZYm0grOOw&oe=6AD510D1",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwHhMJak&_nc_oc=AdoH3fjeQa1z2oc8KHkl1f6LzRB6Ak_a3aeyX9BbWOx6EgzRMFnwtBX93KIvW_gt8JE&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMXkhwbDCkuzhOQZf6K8e-7Gw6WpIHimzqeTYEkFXX7Cw&oe=6AD52B45",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwEerPT8&_nc_oc=Adrf6HNUIgwdhBj-xwPXRdgYvAUP3tPPqCJIVsrFH8yF8j8UnTweRA7uKknT1YacYMA&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNvsO9t2_aRUiiFdp6xksyVccn3Ehfs5Ftg2yk-6AqHXw&oe=6AD52B65",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwESEMAG&_nc_oc=AdrjPFgQjmzp8n9MhdfLIu8Tv10zVwWfIVFd5rpcDZddCZme9FKjTjpdpHnYgMHrsg4&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOh0U477RfsuKDjbe8LWiVrqTpxr4QY_LDU_0YbjX_QRw&oe=6AD5305F",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFo0wLy&_nc_oc=AdqjkkTWN3mR5lHMRUj6zG3PaCB2h7fLwu04we5wx7olRnPKuNfuIfbuGW1Nv2lZLf4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOhJ6K4HlcAH16270EYygHIGJGhEkSMmhuBlpm2xK7doA&oe=6AD505B8",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwE6BoOc&_nc_oc=AdpmezxmU6WqW1WFGlxkzmmSD9xoSVT7qeybbX7FycqH8g44mGC6wJNhSsbQ4RflKZ8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOgTZVslS6ewi5enqhia5BoIkkO9Bz-NF6lcsR7tHnzeQ&oe=6AD51BB8",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwHlxIH6&_nc_oc=AdoJPjPlXg5iObI_Qq_HIl5iRFLmn93OmIQtnP5lMsSguwPgvN05GRpU8tq1cZIHYC8&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN2DWv5fAGbJVFEcHdcHWEJQgkWJQARtJioAtFR_oHAmg&oe=6AD511A6",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwEzep6P&_nc_oc=AdpzDHOCShlVvFncqv0bh1JtZYHUL7xKop1xm8s_ZZEafzB11pEsQ3v2tjXjy4b7L-w&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN8wnGn3xzu2npeby9i57fgbHJd1bvha2Au3ysrlPQzNQ&oe=6AD50FE6",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwGv21bs&_nc_oc=AdqE9gGayO2Z6AOzIa7GO13TVSVeB4m2lp7gr8qunM0-D8-ooJlin7TMfzI_8-RHtp4&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO1i13RIuKuQjokuuqjW-QhZDsfV24BXpGPzSMiHwjWmA&oe=6AD503B3",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwHNlXqX&_nc_oc=AdpXlVLYTzNvBqH90EL6XDu59JGkDSo9y5nJTUmeYlAr5dF_G4xY1pMqjOL4S65YC-8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN4GvOyMnEIrM1HyMJ164S28e5ZdyH3LbwZWVdpHKcPjw&oe=6AD527A8"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "445161231215701",
+      "ad_url": "https://www.facebook.com/ads/library/?id=445161231215701",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwG79uj-&_nc_oc=AdqFZEzkMC0DKufSs3UbDrF_P_sPx6sauwpz8L-d7EKoDFmyHAzuouYFKRkkOT5lDA0&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMmI-GWXi8--uL3xDtGBdYCWBhTDCSaKMNVoOQFlmr7Mw&oe=6AD5119E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwHebfLy&_nc_oc=AdqGPLtcw6k9h3NIT1BtOLkKH_UIfsW5aW8bo9ke788TuZdZ3PHfGS5Iu2z1eW_3qE0&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNYBdlyqFsT9DwcAc7tRwY__MUQRtT3L1tNFVSGFEkKzQ&oe=6AD513CC",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwHh6h8I&_nc_oc=AdpY3WJJzGQKZq4-rZknh7apW_lYQHUj_hTAzZFNRgeqXVZlT8Seis3-QasyNhB13oA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO-8SWWPATF6VgFljqXDtBS7zAg0Ou2pyRmoVEL_G0X0A&oe=6AD50125",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEcYDCV&_nc_oc=AdrSo3g8wWbimgkjOO9xLyYFwjkFG3CoHgew97_zFV9SojJ3Qv678CoMIfqg0OAzE-I&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPbaEU0j9APeJQ4ObOio9RmGbwvoa0wSR3TbMrzTF1ChQ&oe=6AD50850",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwGowwB4&_nc_oc=AdpyTcNYLeEjChrtB40oocnQlcLYDjSJJXPZkiOEJRKgGzSwBa0pVtPOQA4LopmmbUQ&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNWGZvBPh-RXGjjwUSz5SQoKVUHg_9kEciJZuQ8v4S2Jg&oe=6AD501DA",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwF_5YQi&_nc_oc=Adrbvl33p0p8Nl3Iyc5DaN4nDhjeBPjrcAGoQ-2QXUq6F_KsczSjAMULUSPNstgVTdg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMnoHHk8amjW_zt7eq9MU86mPNEeIA1mUCPo2mL2RE4mg&oe=6AD52368",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwGeiLw0&_nc_oc=AdpDVbXTHf7VG4WVYTYUyxbvV01FZC-ciEvVy6I_GmFJis4EyYkkhGqQk9BDnUEfz1w&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOwhywEPvbpifS8bXCokoS4Z4ERinT52HjVUapGN3bDgA&oe=6AD537B6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Takko Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwFmSIA0&_nc_oc=Adpv2VleOoEf-lO-azY_01eMdwzWhURePi8mreD81oIVhVqnnmvExw9XLRZZ-a3HdTA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMF7f_WZ3cdq4xcfhH7PS4t9_3Xg3Gs0DkzTQ-bBOQdhg&oe=6AD51337",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwEGHX8H&_nc_oc=AdrYnJvxKNNFrpTAzudFRnyaPGv7q6421ynP_7MMbVoeH54_GF5VMKQWOP0kTHrcANs&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPM4F7DJ__SMJDaE4JOmnsrN12sdOG1VoEhfNYZKzmb1w&oe=6AD533F8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwHnTnS7&_nc_oc=Adp8JgPZrQDvC0Idc3_KdXJVuOC89ECLj1SYaDv9SYXCmRkQ1Nl6wJcxorHVVKqWoP8&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM6ekIHHv2UHIjuLWZ-CDa3E4gTfhe-2ut-FvpBm35CrA&oe=6AD502F5",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwG79uj-&_nc_oc=AdqFZEzkMC0DKufSs3UbDrF_P_sPx6sauwpz8L-d7EKoDFmyHAzuouYFKRkkOT5lDA0&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMmI-GWXi8--uL3xDtGBdYCWBhTDCSaKMNVoOQFlmr7Mw&oe=6AD5119E",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwHebfLy&_nc_oc=AdqGPLtcw6k9h3NIT1BtOLkKH_UIfsW5aW8bo9ke788TuZdZ3PHfGS5Iu2z1eW_3qE0&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNYBdlyqFsT9DwcAc7tRwY__MUQRtT3L1tNFVSGFEkKzQ&oe=6AD513CC",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwHh6h8I&_nc_oc=AdpY3WJJzGQKZq4-rZknh7apW_lYQHUj_hTAzZFNRgeqXVZlT8Seis3-QasyNhB13oA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO-8SWWPATF6VgFljqXDtBS7zAg0Ou2pyRmoVEL_G0X0A&oe=6AD50125",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEcYDCV&_nc_oc=AdrSo3g8wWbimgkjOO9xLyYFwjkFG3CoHgew97_zFV9SojJ3Qv678CoMIfqg0OAzE-I&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPbaEU0j9APeJQ4ObOio9RmGbwvoa0wSR3TbMrzTF1ChQ&oe=6AD50850",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwGowwB4&_nc_oc=AdpyTcNYLeEjChrtB40oocnQlcLYDjSJJXPZkiOEJRKgGzSwBa0pVtPOQA4LopmmbUQ&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNWGZvBPh-RXGjjwUSz5SQoKVUHg_9kEciJZuQ8v4S2Jg&oe=6AD501DA",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwF_5YQi&_nc_oc=Adrbvl33p0p8Nl3Iyc5DaN4nDhjeBPjrcAGoQ-2QXUq6F_KsczSjAMULUSPNstgVTdg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMnoHHk8amjW_zt7eq9MU86mPNEeIA1mUCPo2mL2RE4mg&oe=6AD52368",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwGeiLw0&_nc_oc=AdpDVbXTHf7VG4WVYTYUyxbvV01FZC-ciEvVy6I_GmFJis4EyYkkhGqQk9BDnUEfz1w&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOwhywEPvbpifS8bXCokoS4Z4ERinT52HjVUapGN3bDgA&oe=6AD537B6",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwFmSIA0&_nc_oc=Adpv2VleOoEf-lO-azY_01eMdwzWhURePi8mreD81oIVhVqnnmvExw9XLRZZ-a3HdTA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMF7f_WZ3cdq4xcfhH7PS4t9_3Xg3Gs0DkzTQ-bBOQdhg&oe=6AD51337",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwEGHX8H&_nc_oc=AdrYnJvxKNNFrpTAzudFRnyaPGv7q6421ynP_7MMbVoeH54_GF5VMKQWOP0kTHrcANs&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPM4F7DJ__SMJDaE4JOmnsrN12sdOG1VoEhfNYZKzmb1w&oe=6AD533F8",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwHnTnS7&_nc_oc=Adp8JgPZrQDvC0Idc3_KdXJVuOC89ECLj1SYaDv9SYXCmRkQ1Nl6wJcxorHVVKqWoP8&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM6ekIHHv2UHIjuLWZ-CDa3E4gTfhe-2ut-FvpBm35CrA&oe=6AD502F5"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2362369787296790",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2362369787296790",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwGxxJ49&_nc_oc=AdoQspRtdUSQbRneZHVcedjViFawdFucqkMkDINBTpNpYJCu_fqNtXM0RA-E01ux6ok&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOeZQE1LSU7Pv2lCbP3bqw3B4-kCAJ2TknXIdmkEvW2Kg&oe=6AD5055A",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEqQQL5&_nc_oc=AdrZ5oaR71Wc0OWIpXu1GJtDJJR1rj2EUVo1S5cZfopR53kFOjuQnaxIl6rUWLDQpMo&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNNuXBNGZrhEH2wIYq7qFukcIC7W-SBmPICX9hBhxTFXQ&oe=6AD51C91",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwEDaRgt&_nc_oc=Adq9Zyq4cl_wjuIoiiyF5HUSFcsc-TCxpD_cf2XAgS3J7cCxPXppWOm3j7S1OmM6Lwg&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO4H3SLGHO7k71kt3zCPxSVnEZKbg8tsTwkqwL_GQMIhA&oe=6AD51855",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwGR--Vp&_nc_oc=AdorJxGbzB7voYBan3w0A43gEQ4rVLMjDe-Wh0t2pf7Xqop9_EMlFxXHzSeIK6qvElI&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNB5xe4HmK0KTuEMX_WCkK5w7WQkVZCq6RHYTYZFC-Zyw&oe=6AD50282",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwF6qHga&_nc_oc=AdpAz-Mwr5BEIiDiev_YABssil_T4Z_7kICGl0RCpxMJTXmjavz9VllVk_7Yg2Vul_w&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPeGzhWCF2eN2lWZ2pn_Ej3aq7Qq3oeHK7TE3KFEJPGgQ&oe=6AD50097",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwHshnQ8&_nc_oc=Adrj_-4xnd1U0d8vDKLYOWBBCDkOpPENh9R0DtTxhuvOk141_RltrrLLWkOmrHue6cY&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNekcM7ygCAqx-6VMBHeZM6Ckl8Bla6NFdej2mJR3QRSQ&oe=6AD50B2E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwFywcig&_nc_oc=Adpp02ILICWOmUkJigHvuR-lNWSrJ5ok3n5oHU-UCq-SaaCaRSlQdTX0yaE78Ut4GIc&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM_zcDgk4_tHRXp5tiolubtDftKNm49W_u13IrqQo1VQg&oe=6AD53791",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwEu2H-X&_nc_oc=AdpcKNs0zE0Ka0ifGhHqfL4usNrvtjpfLOy6wQr4lp92V3BtULrZknCH5Z2W5-ZOCck&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPRK6NYun6XDe5rAvrCz83z7GNu1yt3uE9MC7o_N7h29w&oe=6AD50296",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwE9XdaW&_nc_oc=Adr9l5QYC3Z_qm94-GAtZ5KON4q6KEK7UCccKTEw1wqVeDBZk3YyxjfiwJvP9ZD5Vhk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPrs4h5ZfFNfE7HVH0-tvRaTkWRBdFNcWogD11N1hQWzQ&oe=6AD534B1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwGxxJ49&_nc_oc=AdoQspRtdUSQbRneZHVcedjViFawdFucqkMkDINBTpNpYJCu_fqNtXM0RA-E01ux6ok&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOeZQE1LSU7Pv2lCbP3bqw3B4-kCAJ2TknXIdmkEvW2Kg&oe=6AD5055A",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEqQQL5&_nc_oc=AdrZ5oaR71Wc0OWIpXu1GJtDJJR1rj2EUVo1S5cZfopR53kFOjuQnaxIl6rUWLDQpMo&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNNuXBNGZrhEH2wIYq7qFukcIC7W-SBmPICX9hBhxTFXQ&oe=6AD51C91",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwEDaRgt&_nc_oc=Adq9Zyq4cl_wjuIoiiyF5HUSFcsc-TCxpD_cf2XAgS3J7cCxPXppWOm3j7S1OmM6Lwg&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO4H3SLGHO7k71kt3zCPxSVnEZKbg8tsTwkqwL_GQMIhA&oe=6AD51855",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwGR--Vp&_nc_oc=AdorJxGbzB7voYBan3w0A43gEQ4rVLMjDe-Wh0t2pf7Xqop9_EMlFxXHzSeIK6qvElI&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNB5xe4HmK0KTuEMX_WCkK5w7WQkVZCq6RHYTYZFC-Zyw&oe=6AD50282",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwF6qHga&_nc_oc=AdpAz-Mwr5BEIiDiev_YABssil_T4Z_7kICGl0RCpxMJTXmjavz9VllVk_7Yg2Vul_w&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPeGzhWCF2eN2lWZ2pn_Ej3aq7Qq3oeHK7TE3KFEJPGgQ&oe=6AD50097",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwHshnQ8&_nc_oc=Adrj_-4xnd1U0d8vDKLYOWBBCDkOpPENh9R0DtTxhuvOk141_RltrrLLWkOmrHue6cY&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNekcM7ygCAqx-6VMBHeZM6Ckl8Bla6NFdej2mJR3QRSQ&oe=6AD50B2E",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwFywcig&_nc_oc=Adpp02ILICWOmUkJigHvuR-lNWSrJ5ok3n5oHU-UCq-SaaCaRSlQdTX0yaE78Ut4GIc&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM_zcDgk4_tHRXp5tiolubtDftKNm49W_u13IrqQo1VQg&oe=6AD53791",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwEu2H-X&_nc_oc=AdpcKNs0zE0Ka0ifGhHqfL4usNrvtjpfLOy6wQr4lp92V3BtULrZknCH5Z2W5-ZOCck&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPRK6NYun6XDe5rAvrCz83z7GNu1yt3uE9MC7o_N7h29w&oe=6AD50296",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwE9XdaW&_nc_oc=Adr9l5QYC3Z_qm94-GAtZ5KON4q6KEK7UCccKTEw1wqVeDBZk3YyxjfiwJvP9ZD5Vhk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPrs4h5ZfFNfE7HVH0-tvRaTkWRBdFNcWogD11N1hQWzQ&oe=6AD534B1"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1122025473583381",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1122025473583381",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841804293_1101765915933245_8315343654755139775_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NIw7TfQLCpcQ7kNvwHOgjb7&_nc_oc=AdpWHYHoF5P7QY0RftP20rnCbXZVpeg-MEQxkdwNIhoRovpHhcJmTTgBhfcIVyWFrAo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOtIXWb7f5VrWfGl-kW0gnTLSTmtDilBHdkzt67TW45Hg&oe=6AD509B8",
+          "link_url": "https://filiale.kaufland.de/prospekte.html?catalog=leaflet5?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841687350_1618105473374325_6266671576046462494_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=I9RR6J13jkoQ7kNvwFpRNvf&_nc_oc=AdqhV0stIdh-nK9RDD5O9Ui3ifO5nikt-poTV5BkmflE1WdUEFN7BbBU_M0h72JDWHk&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMA3VWKSGJsljhk0PPoIu4itShJu65vjoiqUU6tLHa97A&oe=6AD51D04",
+          "link_url": "https://leaflets.kaufland.com/de-DE/DE_de_leaflet1_0_hfjjt/view/flyer/page/1?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/843474509_1576497757491997_3100858565289902459_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wTkuK6s2pfQQ7kNvwFBEtyx&_nc_oc=Adrwwo7ly6Vv_ofY-t_bx86E5q89kEdr6nammic2NCtVwWoEPV29J0WHdOb_XegjvQc&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNz98QQQ_G3oRKI-DPKXsFZUY1dH2RTr8Hv9cS3liHTNA&oe=6AD52507",
+          "link_url": "https://leaflets.kaufland.com/de-DE/DE_de_leaflet1_0_hfjjt/view/flyer/page/1?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/842255408_1436226715320364_5873500948505128853_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rjW9wmnUOYcQ7kNvwFHV2qQ&_nc_oc=AdqF9kY4hweUw7rTpzfUjz2exPAbujAdEci25BzMC6fa-qsmUND3EMSsqz54nxsWtGo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNzmfL6rGiM1eGkvd1TS6G1BwoHX8Se17iLhv95KkH8Yg&oe=6AD534B6",
+          "link_url": "https://leaflets.kaufland.com/de-DE/DE_de_leaflet1_0_hfjjt/view/flyer/page/1?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/840021447_1798766418101518_5627930897967416058_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bxiYJKn6q5oQ7kNvwHl2lqj&_nc_oc=AdoAaMoNC7RWNZTVx0jH8keoQETqiae7bEKeXNFZQmTf9BGpAaHfRscvR71TpFA2Zho&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPaN2iwKE-uN8x1CFmjyhIjjHsZx3iYRutD8YsAPX87og&oe=6AD51340",
+          "link_url": "https://leaflets.kaufland.com/de-DE/DE_de_leaflet1_0_hfjjt/view/flyer/page/1?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/841296424_1413579823727501_3424077574934570684_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wCgzyINl6Q0Q7kNvwEg1Wq0&_nc_oc=Adq1TtrcO5eQIkOIrIpOFMi1TzjSr5nqEPDibaDSVFl4frruV9-lN8Iot4em-OupFCE&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMPHs9sfdwqPynLlnJF1q2YHp507_yaMN23RNxl7lci5A&oe=6AD5141C",
+          "link_url": "https://leaflets.kaufland.com/de-DE/DE_de_leaflet1_0_hfjjt/view/flyer/page/1?cid=de:social:meta_2000000028879",
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841804293_1101765915933245_8315343654755139775_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NIw7TfQLCpcQ7kNvwHOgjb7&_nc_oc=AdpWHYHoF5P7QY0RftP20rnCbXZVpeg-MEQxkdwNIhoRovpHhcJmTTgBhfcIVyWFrAo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOtIXWb7f5VrWfGl-kW0gnTLSTmtDilBHdkzt67TW45Hg&oe=6AD509B8",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841687350_1618105473374325_6266671576046462494_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=I9RR6J13jkoQ7kNvwFpRNvf&_nc_oc=AdqhV0stIdh-nK9RDD5O9Ui3ifO5nikt-poTV5BkmflE1WdUEFN7BbBU_M0h72JDWHk&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMA3VWKSGJsljhk0PPoIu4itShJu65vjoiqUU6tLHa97A&oe=6AD51D04",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/843474509_1576497757491997_3100858565289902459_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wTkuK6s2pfQQ7kNvwFBEtyx&_nc_oc=Adrwwo7ly6Vv_ofY-t_bx86E5q89kEdr6nammic2NCtVwWoEPV29J0WHdOb_XegjvQc&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNz98QQQ_G3oRKI-DPKXsFZUY1dH2RTr8Hv9cS3liHTNA&oe=6AD52507",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/842255408_1436226715320364_5873500948505128853_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rjW9wmnUOYcQ7kNvwFHV2qQ&_nc_oc=AdqF9kY4hweUw7rTpzfUjz2exPAbujAdEci25BzMC6fa-qsmUND3EMSsqz54nxsWtGo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNzmfL6rGiM1eGkvd1TS6G1BwoHX8Se17iLhv95KkH8Yg&oe=6AD534B6",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/840021447_1798766418101518_5627930897967416058_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bxiYJKn6q5oQ7kNvwHl2lqj&_nc_oc=AdoAaMoNC7RWNZTVx0jH8keoQETqiae7bEKeXNFZQmTf9BGpAaHfRscvR71TpFA2Zho&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPaN2iwKE-uN8x1CFmjyhIjjHsZx3iYRutD8YsAPX87og&oe=6AD51340",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/841296424_1413579823727501_3424077574934570684_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wCgzyINl6Q0Q7kNvwEg1Wq0&_nc_oc=Adq1TtrcO5eQIkOIrIpOFMi1TzjSr5nqEPDibaDSVFl4frruV9-lN8Iot4em-OupFCE&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMPHs9sfdwqPynLlnJF1q2YHp507_yaMN23RNxl7lci5A&oe=6AD5141C"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "filiale.kaufland.de",
+      "link_url": "https://filiale.kaufland.de/prospekte.html?catalog=leaflet5?cid=de:social:meta_2000000028879",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-08T07:00:00Z",
+      "title": "Kaufland",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1450169673699160",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1450169673699160",
+      "body": "Entdecke jetzt die richtige Auswahl zum kleinen Preis. Du willst keine Angebote mehr verpassen und direkt online durchbl\u00e4ttern? Hier bist du richtig! G\u00fcltig vom 12.10.2026 bis 17.10.2026\u2757\n\ud83d\udc49 Durchst\u00f6bere jederzeit alle aktuellen Angebote: http://kauf.land/prospekt-einblick \ud83d\udc48\n#kaufland #HierBinIchRichtig #angebote #entdecken #prospekt #sparwoche #lecker #sparen #leaflet",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": null,
+      "videos": [
+        "https://video-dfw5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPoQ99zuvYFXIAuKxc0vSb6QVZnzqJQ_SKVxFF_iWlKSr9os31hJj2QmKhrd7-qxXeQimi1yxbEh4UxBZ0wUwfcrxn9aaRTCe0EKJKx4ckQWA.mp4?_nc_cat=100&_nc_sid=b66105&_nc_ht=video-dfw5-2.xx.fbcdn.net&_nc_ohc=K3iWzRBD0rgQ7kNvwF4GBnp&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI1NzEwMzIzOTMzNjM5MjgsImFzc2V0X2FnZV9kYXlzIjo1LCJ2aV91c2VjYXNlX2lkIjoxMjM3MywiZHVyYXRpb25fcyI6MjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=62e3c216eb1a9c3e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BQzU4NURFNTA1RjA0QkVBODkxOTI1NDEyQjRDOEM1Nl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FCQUQ3RjRCRDlFNjQ1ODZBQ0Y2OEM2ODZBRjI4QUNBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACawx5mI5JWRCRUCKAJDMywXQDkAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZarBAQA&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQM7bIAsgYce7P5qO5ZxJL0sdFZmUaZjwY3YK7rIB42iDQ&oe=6AD527B0"
+      ]
+    },
+    {
+      "ad_archive_id": "923129353926401",
+      "ad_url": "https://www.facebook.com/ads/library/?id=923129353926401",
+      "body": "Spe\u0142nij swoje mieszkaniowe marzenie! Kup produkty P&G za min. 70 z\u0142 w Kauflandzie i graj o 100 000 z\u0142 oraz karty podarunkowe.",
+      "cards": [
+        {
+          "body": "Spe\u0142nij swoje mieszkaniowe marzenie! Kup produkty P&G za min. 70 z\u0142 w Kauflandzie i graj o 100 000 z\u0142 oraz karty podarunkowe.",
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/833753478_957144580166634_5802071191032925467_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jbPKPsJ7XncQ7kNvwE-_4Bp&_nc_oc=AdqLXVg1oD66cF2ZvaqvFfkspOMqs_wx3b05am0dJAIpQxXExQ_K53K6FdJkNqJdw74&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMZDEIAHCmCoYQZ8AQ42pZOtM9D6xmDk0Y3APyBSNv2aQ&oe=6AD51C55",
+          "link_url": "https://www.everydayme.pl/konkursy/mieszkaniowemarzenie?utm_source=Meta&utm_medium=CPM&utm_campaign=pl_ccm-mb_mbci-autumn26-kaufland_oth_011026_a1854_awar_rea_meta_ca_meta_574930&utm_term=multibrand",
+          "title": "Wygraj  100 000 z\u0142",
+          "video": null
+        },
+        {
+          "body": "Spe\u0142nij swoje mieszkaniowe marzenie! Kup produkty P&G za min. 70 z\u0142 w Kauflandzie i graj o 100 000 z\u0142 oraz karty podarunkowe.",
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/831510103_2522949158174579_5471701751328813575_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kZik6ufztfcQ7kNvwFbsXd5&_nc_oc=AdpBo2R6pY5_JzgGnhm5J-u9NxRf308P-bpRfXBdCd5XxqCE6WPU3SE1OlOguVGlMZo&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM9nu_QFMO_KXGz5-GvspqNAO-Q8msvFx2pwIRStENFUg&oe=6AD53129",
+          "link_url": "https://www.everydayme.pl/konkursy/mieszkaniowemarzenie?utm_source=Meta&utm_medium=CPM&utm_campaign=pl_ccm-mb_mbci-autumn26-kaufland_oth_011026_a1854_awar_rea_meta_ca_meta_574930&utm_term=multibrand",
+          "title": "Wygraj  100 000 z\u0142",
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/833753478_957144580166634_5802071191032925467_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jbPKPsJ7XncQ7kNvwE-_4Bp&_nc_oc=AdqLXVg1oD66cF2ZvaqvFfkspOMqs_wx3b05am0dJAIpQxXExQ_K53K6FdJkNqJdw74&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMZDEIAHCmCoYQZ8AQ42pZOtM9D6xmDk0Y3APyBSNv2aQ&oe=6AD51C55",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/831510103_2522949158174579_5471701751328813575_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kZik6ufztfcQ7kNvwFbsXd5&_nc_oc=AdpBo2R6pY5_JzgGnhm5J-u9NxRf308P-bpRfXBdCd5XxqCE6WPU3SE1OlOguVGlMZo&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM9nu_QFMO_KXGz5-GvspqNAO-Q8msvFx2pwIRStENFUg&oe=6AD53129"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "everydayme.pl",
+      "link_url": "https://www.everydayme.pl/konkursy/mieszkaniowemarzenie?utm_source=Meta&utm_medium=CPM&utm_campaign=pl_ccm-mb_mbci-autumn26-kaufland_oth_011026_a1854_awar_rea_meta_ca_meta_574930&utm_term=multibrand",
+      "page_id": "101448875861085",
+      "page_likes": 8122,
+      "page_name": "EverydayMe Polska",
+      "page_url": "https://www.facebook.com/EverydayMePolska/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-02T07:00:00Z",
+      "title": "Wygraj  100 000 z\u0142",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1757905092166186",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1757905092166186",
+      "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+      "cards": [
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/658948171_1301087041943051_7415375398872185596_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZB56Ke4dK44Q7kNvwFvZSWA&_nc_oc=AdoNK7b41vBgr3aRoIW5SHq1uQzdLA2rUewDSATd9_IAt9jt3x-ZgfU8cu4gkjjdgn4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNOSshy76slS66DApBW6nH_m2kjJ78LG2Y2vqzGF_1bqg&oe=6AD50949",
+          "link_url": "https://www.kaufland.de/product/100203031/",
+          "title": "HAKU M\u00f6bel Wandgarderobe alu - Massivholz, Metall, B/H/T: 48x34x6,5 cm",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/657243001_2972731779596847_4357586948475549413_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OIpsnfaIhVcQ7kNvwGm0-Jb&_nc_oc=AdovwU4m0ebbsxZ11ko1GpqMZLKgJeE4x6P7s2TD3kOppuvrP-1UwYg7efFToEULVus&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNPgshc3gNISOHRwg78gdw-S4tkBfDPLkzLjMxO3Dn4-w&oe=6AD50864",
+          "link_url": "https://www.kaufland.de/product/100145731/",
+          "title": "Stelton EM77 Pressfilterkanne 1 Liter. black",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/658128878_1233336809006714_3586149782361433712_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gGGJJ2GZ-S8Q7kNvwGNLgfP&_nc_oc=Adr4XlI6pAe6wSPR7-bnJL2KhwlNU8O7gK7tPFjT1a_LTSn1kUPz-DUjBJLbRjNrncc&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPm2j29SBkKr_oxRIYgTxBgIBg6QOPOzvr-QgwBiF0Txg&oe=6AD51A0B",
+          "link_url": "https://www.kaufland.de/product/100177041/",
+          "title": "Atlanta Wanduhr, Funk, \u00d8 30 cm, 4371-0",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/657429266_26656800533944989_5297216278264024898_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Pbn2SJHpov8Q7kNvwEsGwLj&_nc_oc=AdqwtEg0hXW8GCNtJHg6EYe0-W3pwRIx60tK8_WiU62nZlBonxWF8ZQszTVdBwJe1z0&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMVaXmooYBEtFKsV7K0ByLLrtDigZJGccm9wQug8v66dw&oe=6AD502FB",
+          "link_url": "https://www.kaufland.de/product/100146521/",
+          "title": "Iittala Origo Becher - 25 cl - Orange",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/659154650_2129753057781300_223505467721010681_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YGh8eVTY4KIQ7kNvwGrqvoT&_nc_oc=Ados2CWckcz9CFgxSXXFNxAKK59HXzPqRdMHwmRIrYad1ILDxwg02cPkCai92WQg17c&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOOCFCmSaL5jx9kLJ7j7gpXZIiJbZply4AN3ufWt3rZjA&oe=6AD50A6B",
+          "link_url": "https://www.kaufland.de/product/100198121/",
+          "title": "Haku Garderobenleiste, wei\u00df-chrom - Ma\u00dfe: 57 cm x 5 cm x 8 cm; 42357",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/660485608_881746241560833_7602031278755227527_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8gmR8CyTVggQ7kNvwGwjx3j&_nc_oc=Adol0WJjcC5Tg4Ki7YvLnXLS9VdITCGFtk3kP07QxrhY61df3rO4Hx7JSieUz8QBCz4&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOoC-A4EiZMiIDoumPOZaeow8Mzphb0ao2v53DzKVPzRg&oe=6AD5176D",
+          "link_url": "https://www.kaufland.de/product/100199201/",
+          "title": "HAKU M\u00f6bel Garderobenst\u00e4nder schwarz - Metall, B/H/T: 37x180x37 cm",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/658948171_1301087041943051_7415375398872185596_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZB56Ke4dK44Q7kNvwFvZSWA&_nc_oc=AdoNK7b41vBgr3aRoIW5SHq1uQzdLA2rUewDSATd9_IAt9jt3x-ZgfU8cu4gkjjdgn4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNOSshy76slS66DApBW6nH_m2kjJ78LG2Y2vqzGF_1bqg&oe=6AD50949",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/657243001_2972731779596847_4357586948475549413_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OIpsnfaIhVcQ7kNvwGm0-Jb&_nc_oc=AdovwU4m0ebbsxZ11ko1GpqMZLKgJeE4x6P7s2TD3kOppuvrP-1UwYg7efFToEULVus&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNPgshc3gNISOHRwg78gdw-S4tkBfDPLkzLjMxO3Dn4-w&oe=6AD50864",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/658128878_1233336809006714_3586149782361433712_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gGGJJ2GZ-S8Q7kNvwGNLgfP&_nc_oc=Adr4XlI6pAe6wSPR7-bnJL2KhwlNU8O7gK7tPFjT1a_LTSn1kUPz-DUjBJLbRjNrncc&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPm2j29SBkKr_oxRIYgTxBgIBg6QOPOzvr-QgwBiF0Txg&oe=6AD51A0B",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/657429266_26656800533944989_5297216278264024898_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Pbn2SJHpov8Q7kNvwEsGwLj&_nc_oc=AdqwtEg0hXW8GCNtJHg6EYe0-W3pwRIx60tK8_WiU62nZlBonxWF8ZQszTVdBwJe1z0&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMVaXmooYBEtFKsV7K0ByLLrtDigZJGccm9wQug8v66dw&oe=6AD502FB",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/659154650_2129753057781300_223505467721010681_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YGh8eVTY4KIQ7kNvwGrqvoT&_nc_oc=Ados2CWckcz9CFgxSXXFNxAKK59HXzPqRdMHwmRIrYad1ILDxwg02cPkCai92WQg17c&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOOCFCmSaL5jx9kLJ7j7gpXZIiJbZply4AN3ufWt3rZjA&oe=6AD50A6B",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/660485608_881746241560833_7602031278755227527_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8gmR8CyTVggQ7kNvwGwjx3j&_nc_oc=Adol0WJjcC5Tg4Ki7YvLnXLS9VdITCGFtk3kP07QxrhY61df3rO4Hx7JSieUz8QBCz4&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOoC-A4EiZMiIDoumPOZaeow8Mzphb0ao2v53DzKVPzRg&oe=6AD5176D"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "kaufland.de",
+      "link_url": "https://www.kaufland.de/",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": "HAKU M\u00f6bel Wandgarderobe alu - Massivholz, Metall, B/H/T: 48x34x6,5 cm",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2531948440570303",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2531948440570303",
+      "body": "\ud83c\udf6b Amandin\u0103 FIT PROTEIC\u0102 \u2013 variant\u0103 mai \u201esolid\u0103\u201d, mai s\u0103\u021bioas\u0103\n\n8 por\u021bii | high-protein | f\u0103r\u0103 zah\u0103r\n\nAm rescris re\u021beta exact cum ai cerut: f\u0103r\u0103 unt, cu iaurt grecesc pentru fluffy, mai mult\u0103 f\u0103in\u0103 integral\u0103 ca s\u0103 \u021bin\u0103 bine compozi\u021bia \u0219i un blat care s\u0103 semene mai mult cu amandina clasic\u0103, nu cu un sponge prea light.\n\n\ud83e\uddc1 INGREDIENTE\nBlat cacao proteic (1 blat mare, t\u0103iat \u00een 2)\n\n4 ou\u0103 \u00eentregi\n\n3 albu\u0219uri\n\n120 g f\u0103in\u0103 integral\u0103 (gr\u00e2u SAU ov\u0103z)\n\n25 g cacao\n\n100 g iaurt grecesc (2\u20135% gr\u0103sime, pentru textur\u0103 fluffy)\n\n70\u201380 g \u00eendulcitor stevia/eritritol (dup\u0103 gust)\n\n8 g praf de copt\n\n1 praf de sare\n\n\ud83d\udca7 Sirop cacao (simplu, f\u0103r\u0103 alcool)\n\n300 ml ap\u0103 cald\u0103\n\n1\u00bd linguri cacao\n\n2\u20133 linguri \u00eendulcitor f\u0103r\u0103 calorii\n\ud83d\udc49 Amandina trebuie s\u0103 fie bine \u00eensiropat\u0103, nu \u201edietetic-uscat\u0103\u201d.\n\n\ud83c\udf6b Crem\u0103 de amandin\u0103 (light & proteic\u0103)\n\n400 g crem\u0103 de br\u00e2nz\u0103 light\n\n25 g cacao\n\n50\u201360 g \u00eendulcitor (dup\u0103 gust)\n\n1 linguri\u021b\u0103 esen\u021b\u0103 de vanilie\n\nVariante u\u0219or de ales:\n\nPhiladelphia Light \u2013 cea mai fin\u0103, gust neutru\n\nPilos Light (Lidl) \u2013 foarte ok la pre\u021b\n\nK-Classic Fresh Cheese Light (Kaufland) \u2013 pu\u021bin mai aerat\u0103\n\u27a1\ufe0f toate func\u021bioneaz\u0103, diferen\u021ba e doar de textur\u0103, nu de rezultat.\n\n\u2728 Glazur\u0103\n\n60 g ciocolat\u0103 neagr\u0103 (min. 70% cacao)\n\n1 linguri\u021b\u0103 ulei de cocos (5 g)\n\n\ud83d\udc69\u200d\ud83c\udf73 MOD DE PREPARARE\n1\ufe0f\u20e3 Blatul\n\nSepar\u0103 ou\u0103le.\n\nBate cele 3 albu\u0219uri + albu\u0219urile din cele 4 ou\u0103 cu sarea p\u00e2n\u0103 devin spum\u0103 ferm\u0103.\n\nBate g\u0103lbenu\u0219urile cu \u00eendulcitorul, adaug\u0103 iaurtul grecesc.\n\n\u00cencorporeaz\u0103 f\u0103ina, cacaoa \u0219i praful de copt.\n\nLa final, \u00eencorporeaz\u0103 u\u0219or albu\u0219urile b\u0103tute, cu spatula.\n\nCoace la 170\u00b0C, 25\u201328 min. R\u0103ce\u0219te complet \u0219i taie blatul \u00een 2.\n\n2\ufe0f\u20e3 Sirop\n\nAmestec\u0103 apa cald\u0103 cu cacao \u0219i \u00eendulcitor p\u00e2n\u0103 se dizolv\u0103 complet.\n\n3\ufe0f\u20e3 Crema\n\nAmestec\u0103 toate ingredientele p\u00e2n\u0103 ob\u021bii o crem\u0103 dens\u0103, lucioas\u0103.\n\n4\ufe0f\u20e3 Asamblare\n\n\u00censiropeaz\u0103 bine prima foaie\n\nAdaug\u0103 toat\u0103 crema\n\nA doua foaie\n\n\u00censiropeaz\u0103 din nou\n\n5\ufe0f\u20e3 Glazura\n\nTope\u0219te ciocolata cu uleiul de cocos, toarn\u0103 deasupra.\nLas\u0103 la frigider 2\u20133 ore, apoi taie \u00een 8 por\u021bii.\n\n\ud83d\udcca VALORI NUTRI\u021aIONALE (per por\u021bie)\n\nCalorii: ~245 kcal\nProteine: ~12 g\nCarbohidra\u021bi: ~22 g\n(din care fibre: ~5 g)\nGr\u0103simi: ~11 g\n(din care saturate: ~5 g)\n\ud83d\udccc Salveaz\u0103 re\u021beta\n\ud83d\udce4 D\u0103 share cuiva care spune c\u0103 \u201enu mai m\u0103n\u00e2nc\u0103 dulce\u201d\n\n\ud83d\udc49 Pentru \u00eenc\u0103 361 de astfel de re\u021bete \u2013 delicioase, rapide, ieftine, u\u0219or de preparat de oricine \u0219i g\u00e2ndite special s\u0103 te ajute s\u0103 sl\u0103be\u0219ti \u2013 po\u021bi accesa c\u0103r\u021bile mele de re\u021bete.\n\n@bogdan.tirziu.nutritionist\n\nM-am s\u0103turat s\u0103 aud femei care \u00eenc\u0103 \u021bin diete restrictive, care se \u00eenfometeaz\u0103, care renun\u021b\u0103 la m\u00e2ncarea preferat\u0103\u2026 doar ca s\u0103 se \u00eentoarc\u0103 de fiecare dat\u0103 \u00een acela\u0219i punct.\n\nM-am s\u0103turat s\u0103 v\u0103d copii supraponderali, mame care nu \u0219tiu ce s\u0103 mai g\u0103teasc\u0103, familii \u00eentregi care se lupt\u0103 cu kilogramele, cu frustr\u0103rile \u0219i cu ru\u0219inea.\n\n\u0218i mai ales\u2026 m-am s\u0103turat s\u0103 v\u0103d c\u0103 \u00een Rom\u00e2nia nu exist\u0103 deloc educa\u021bie nutri\u021bional\u0103 \u00een familie. Nimeni nu \u00eenva\u021b\u0103 pe nimeni cum s\u0103 m\u0103n\u00e2nce corect, cum s\u0103-\u0219i respecte poftele, cum s\u0103 lucreze cu hormonii \u2013 nu \u00eempotriva lor.\n\nFix de asta am luat o decizie.\nLa un pre\u021b complet accesibil oricui, am pus la dispozi\u021bie cele trei c\u0103r\u021bi digitale pe care mii de femei le folosesc deja ca s\u0103-\u0219i schimbe via\u021ba.\nUn pachet cu 362 de re\u021bete din toate buc\u0103t\u0103riile lumii:\nitaliene\u0219ti, fran\u021buze\u0219ti, interna\u021bionale, dar \u0219i rom\u00e2ne\u0219ti tradi\u021bionale \u2013 reinterpretate inteligent, light, f\u0103r\u0103 compromis la gust.\n\nVei g\u0103si de toate:\n\ud83c\udf55 pizza reinterpretat\u0103\n\ud83c\udf5d paste\n\ud83c\udf2f shawarme\n\ud83c\udf54 burgeri\n\ud83c\udf70 peste 100 de deserturi s\u0103n\u0103toase\n\u2026 toate g\u00e2ndite s\u0103-\u021bi echilibreze hormonii, s\u0103 reduc\u0103 poftele \u0219i s\u0103 te ajute s\u0103 sl\u0103be\u0219ti f\u0103r\u0103 \u00eenfometare \u0219i f\u0103r\u0103 \u201einterdic\u021bii\u201d.\n\nAceste re\u021bete te ajut\u0103 s\u0103 sl\u0103be\u0219ti, dar mai important\u2026\nte \u00eenva\u021b\u0103 cum s\u0103 m\u0103n\u00e2nci pentru tot restul vie\u021bii.\nCum s\u0103 r\u0103m\u00e2i \u00een form\u0103 dup\u0103 ce ai sl\u0103bit.\nCum s\u0103-\u021bi schimbi stilul alimentar pentru totdeauna.\n\nDac\u0103 sim\u021bi c\u0103 rezonezi cu asta\u2026 dac\u0103 sim\u021bi c\u0103 meri\u021bi m\u0103car cea mai mic\u0103 investi\u021bie posibil\u0103 \u00een tine,\nap\u0103s\u0103 pe link, vezi exact ce prime\u0219ti \u0219i alege dac\u0103 este potrivit pentru tine.\n\nSi partea cea mai tare? Le primesti pe mail, fie in inbox fie in promotions in exaaaact 7 secunde.... ca sa te poti bucura si face schimbarea imediat!",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "https://bogdantirziu.ro/ebook/",
+      "link_url": "https://bogdantirziu.ro/ebook/",
+      "page_id": "354174487787217",
+      "page_likes": 347478,
+      "page_name": "Bogdan Tirziu / Sl\u0103be\u0219te U\u0219or",
+      "page_url": "https://www.facebook.com/61563953609457/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-05-30T07:00:00Z",
+      "title": "Acceseaz\u01ce chiar AICI",
+      "videos": [
+        "https://video-dfw6-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMOXsLIZZ5aEf6pv4NXnv1mpYgBaPhfDTXjb-LTHkJ8uELtRpoH5lq0PrYGi_rN-O2UxqNwx59geE9ETNMQTMyIVvsrEb9q53gV09R7qdI9AA.mp4?_nc_cat=110&_nc_sid=b66105&_nc_ht=video-dfw6-2.xx.fbcdn.net&_nc_ohc=1o12u8oMDOYQ7kNvwHsP7NK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjg4NjQ1NDU5MDQ2MTE1OCwiYXNzZXRfYWdlX2RheXMiOjI2NywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjczLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=975a01c5eadc3b19&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8wNTRGREE1NkM1OThFMzZCMjg5NkI2RUJCNkUzMjQ4Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UxNENEQ0EwNEM1NEFDMzc5NDU0RjhEOUE1REI2RTk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbM08qvuY6TAxUCKAJDMywXQFJIgxJul40YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQOEovfqd5jEKNR3P-6q1Q_zDpqcW-zXMb5lZ4wHYERbeQ&oe=6AD52EAA"
+      ]
+    },
+    {
+      "ad_archive_id": "3033326393680068",
+      "ad_url": "https://www.facebook.com/ads/library/?id=3033326393680068",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Use App",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/835013588_1414031157467209_952620118837556738_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VZhF8BpX8E8Q7kNvwHiavCM&_nc_oc=AdoBj6cXFfkwbzPcBYW3UQ8-PCTzOVNcO1ICtm8HZ-EjK_V8FMLAPhUdfmUi85aYxBU&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNK2JlQXIJpROoGtlgMcg8lXD78kabxhdhWmakfqBZzRQ&oe=6AD52067",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+          "title": "Kaufland - Shopping & Offers",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Use App",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/836858554_28908052925473396_4368508306621376412_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RQUiFtZ5s24Q7kNvwF67KlO&_nc_oc=Adoc2KyuVgiSVITPM0eMV-QGpAXlNYPXz1rb2YQNs1fSKC6nAc3ivgQVZBKUnKyinWM&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOo55_mRPtgrjFpXAM_4yn2GCKCsX3M3mUcvbVqrbgdjA&oe=6AD51E50",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+          "title": "Kaufland - Shopping & Offers",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Use App",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/836000035_934337302780050_2124280696786022189_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=oK18GFhDqU4Q7kNvwGXT7K7&_nc_oc=Adp2ws-wKKZcISVHIj_Kh78ersp7RQTorX3JNW9ukuDeIODrJvlu6ofuGPE8PHzp_yg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOs2ThkLKt1x1kc92VmbTAE1G6-YOql9pazjh4RUMnVYQ&oe=6AD53094",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+          "title": "Kaufland - Shopping & Offers",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Use App",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/833964537_2149123975961442_1575707140223133308_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nRhUnFuoQM8Q7kNvwHLGlY5&_nc_oc=Adr70Dt45nsblJt73GZblCmXhZ0wb6Hd5MIw3tVqkFsmRWWZpYVbOyBYJS5Hz_uJDeA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNOV1c6Gk1iRfGDD2jFtoCHmQjQundelDtDrYg-28iRGw&oe=6AD51247",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+          "title": "Kaufland - Shopping & Offers",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Use App",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/836807509_1778072686563029_7795096466876094777_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vhDkyBLZXrwQ7kNvwHWCk2F&_nc_oc=Ado2h84UkF_C9c--kkG5ySRGG6tOKxczSue0zzqPeDSUTKu4qddg-mGZPbz3rnP-FM4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO-6TKjB49qnOtUgg338hddQse2B0xLL1gpaqtCdw3zWg&oe=6AD51730",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+          "title": "Kaufland - Shopping & Offers",
+          "video": null
+        }
+      ],
+      "cta": "Use app",
+      "cta_type": "USE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/835013588_1414031157467209_952620118837556738_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VZhF8BpX8E8Q7kNvwHiavCM&_nc_oc=AdoBj6cXFfkwbzPcBYW3UQ8-PCTzOVNcO1ICtm8HZ-EjK_V8FMLAPhUdfmUi85aYxBU&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNK2JlQXIJpROoGtlgMcg8lXD78kabxhdhWmakfqBZzRQ&oe=6AD52067",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/836858554_28908052925473396_4368508306621376412_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RQUiFtZ5s24Q7kNvwF67KlO&_nc_oc=Adoc2KyuVgiSVITPM0eMV-QGpAXlNYPXz1rb2YQNs1fSKC6nAc3ivgQVZBKUnKyinWM&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOo55_mRPtgrjFpXAM_4yn2GCKCsX3M3mUcvbVqrbgdjA&oe=6AD51E50",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/836000035_934337302780050_2124280696786022189_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=oK18GFhDqU4Q7kNvwGXT7K7&_nc_oc=Adp2ws-wKKZcISVHIj_Kh78ersp7RQTorX3JNW9ukuDeIODrJvlu6ofuGPE8PHzp_yg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOs2ThkLKt1x1kc92VmbTAE1G6-YOql9pazjh4RUMnVYQ&oe=6AD53094",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/833964537_2149123975961442_1575707140223133308_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nRhUnFuoQM8Q7kNvwHLGlY5&_nc_oc=Adr70Dt45nsblJt73GZblCmXhZ0wb6Hd5MIw3tVqkFsmRWWZpYVbOyBYJS5Hz_uJDeA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNOV1c6Gk1iRfGDD2jFtoCHmQjQundelDtDrYg-28iRGw&oe=6AD51247",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/836807509_1778072686563029_7795096466876094777_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vhDkyBLZXrwQ7kNvwHWCk2F&_nc_oc=Ado2h84UkF_C9c--kkG5ySRGG6tOKxczSue0zzqPeDSUTKu4qddg-mGZPbz3rnP-FM4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO-6TKjB49qnOtUgg338hddQse2B0xLL1gpaqtCdw3zWg&oe=6AD51730"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.kaufland.Kaufland",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "Kaufland - Shopping & Offers",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1129436319421085",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1129436319421085",
+      "body": "Deine Prospekte auf einen Blick.",
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/839934727_1545612314272942_6898507415689115012_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nPXIbL5tfLsQ7kNvwFZ-B1c&_nc_oc=Adr2SzIL-6BA0LE8sD6L2TVsmeaopcMy1S_3FCFI0UvJx5W7oytuZ4Eznv985wJ9ZZc&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNX2gXStIeUb7-P5hI49c4cf0PuuJTl0JDEIGpWTCWcTg&oe=6AD52D77",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "KAUFLAND",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/836261550_1416271233947303_1948762837124399660_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=otB8D5jDm54Q7kNvwHoY5-T&_nc_oc=AdqddBsrMDwvHa1DgV0Lpl_kAAb1dHm-dKyxEaJvtXG1p2CkcooeoErvqlFr25Knzms&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOESqLmkhA-1ft_SM1CtClY8rTO3kVXKc7j63Hly_N_qQ&oe=6AD53414",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "N",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/839429887_1619015943001949_3433073590538277973_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bHOgBHS0vzEQ7kNvwEXJ5rW&_nc_oc=Adoal5H4-xrL1cyy61EDzXmgWdmSi__Imyroa4hectamRhHfOeZgLEzb2gKWASYJdOM&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOpHsrCKcwpQS9Z66HcbpDAIGiO31v8dtPEGEuxx4Q_iA&oe=6AD527DD",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "THOMAS PHILIPPS",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/838041786_2328819737969462_5322578652705747921_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vZt-vMl34TkQ7kNvwEAVtbr&_nc_oc=AdpFYNOMW3FVoIqsrQ155dzpp3Fux3gbhqQbyUSAA4WpQ5-oesmb2RLhm16lhEAi_vw&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN9Rltz6ABD9QmqAHYl9WzlF35ZBkPzXVuvBmfSLdXG_w&oe=6AD523AC",
+          "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+          "title": "PENNY",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/839934727_1545612314272942_6898507415689115012_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nPXIbL5tfLsQ7kNvwFZ-B1c&_nc_oc=Adr2SzIL-6BA0LE8sD6L2TVsmeaopcMy1S_3FCFI0UvJx5W7oytuZ4Eznv985wJ9ZZc&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNX2gXStIeUb7-P5hI49c4cf0PuuJTl0JDEIGpWTCWcTg&oe=6AD52D77",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/836261550_1416271233947303_1948762837124399660_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=otB8D5jDm54Q7kNvwHoY5-T&_nc_oc=AdqddBsrMDwvHa1DgV0Lpl_kAAb1dHm-dKyxEaJvtXG1p2CkcooeoErvqlFr25Knzms&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOESqLmkhA-1ft_SM1CtClY8rTO3kVXKc7j63Hly_N_qQ&oe=6AD53414",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/839429887_1619015943001949_3433073590538277973_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bHOgBHS0vzEQ7kNvwEXJ5rW&_nc_oc=Adoal5H4-xrL1cyy61EDzXmgWdmSi__Imyroa4hectamRhHfOeZgLEzb2gKWASYJdOM&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOpHsrCKcwpQS9Z66HcbpDAIGiO31v8dtPEGEuxx4Q_iA&oe=6AD527DD",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/838041786_2328819737969462_5322578652705747921_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vZt-vMl34TkQ7kNvwEAVtbr&_nc_oc=AdpFYNOMW3FVoIqsrQ155dzpp3Fux3gbhqQbyUSAA4WpQ5-oesmb2RLhm16lhEAi_vw&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN9Rltz6ABD9QmqAHYl9WzlF35ZBkPzXVuvBmfSLdXG_w&oe=6AD523AC"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.marktguru.mg2.de",
+      "page_id": "1707558166185829",
+      "page_likes": 50769,
+      "page_name": "marktguru",
+      "page_url": "https://www.facebook.com/marktguruDE/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 2,
+      "spend": null,
+      "start_date": "2026-10-07T07:00:00Z",
+      "title": "marktguru - leaflets & offers",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1614485586787025",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1614485586787025",
+      "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+      "cards": [
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/740929858_27093338240365272_2414480099616771693_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QDeVhtRhh9AQ7kNvwHYzWP8&_nc_oc=AdpXGd6qBg7A0b_QfRDUJvys50lYvNB1cjT_bhCt-r7eu8ZXJ3nCOpDlzoC_LpK-in4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNmezM26I4vltzf4mXgAX40pZEWNbdjnZQesDdmoVTt_A&oe=6AD52ADE",
+          "link_url": "https://www.kaufland.de/product/100199201/",
+          "title": "Kaufland",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/739230860_1728560418269943_924804496347065113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VC4fnk-jZiwQ7kNvwHyf7x7&_nc_oc=AdqLJwNFwCN489CAXOis8ws8tzPETU3sjr-jtyEgCzy4yM1enjoedRJ1xwJRHpAsd98&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO01JriRgOKufIxELS2MHYgGiH8FBwaY1r5DuOViSmz0A&oe=6AD503AA",
+          "link_url": "https://www.kaufland.de/product/100198121/",
+          "title": "Kaufland",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741427657_2415058132319253_78515749864771547_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0L3ccWCu4RcQ7kNvwHiHCFs&_nc_oc=AdpG659pbIqHM9kl_cSVXGsOM3rMVBpZwojvP-hgG9ST7BxtukUTzVnyf1VB0ptOWBE&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPzYreQQr81bJsaG42KtPxm8LiuAelO9ahtvapyisrZQA&oe=6AD51046",
+          "link_url": "https://www.kaufland.de/product/100203031/",
+          "title": "Kaufland",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741013499_1667366844492185_6380456488784313677_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yvm1Wy69_L0Q7kNvwHvNAM9&_nc_oc=AdokJU4qsXw9UO0kB7ESqjxHBGxYNNULQAvGOkKATRoviAUM6WVBu-WeJnOadvChka8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPkZJ4vmJvsGP0NSzVm4S_NJ9_tZ9ZgSTDMPd__T5bgDA&oe=6AD504A2",
+          "link_url": "https://www.kaufland.de/product/100146521/",
+          "title": "Kaufland",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/741475102_1186058974596474_303198312461977577_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YGi1Z0pL41UQ7kNvwEKESdw&_nc_oc=Adq95zov8oyRatEk5uwETGRqhASNJB0JPW0vm3W1kv-lpjaCJ707ok3--AS8GhPtZdo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPEKTMbfgvfRBVNd_BEXj8ZpluByyUVyPS4ivOnEfoYjA&oe=6AD522C5",
+          "link_url": "https://www.kaufland.de/product/100145731/",
+          "title": "Kaufland",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/739931155_1542347373942717_4954819299895514732_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o_Sk42WtNFwQ7kNvwGnureg&_nc_oc=AdpUKrL6qdycQzma-LsoMb7aWnnWdF_XxpC8aVu11aX4mLSUTNm9OYpNswChGvvp_R0&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOYvpF1tlk-JnMv7tmhYBbR7GsrMZIocwGgYgfQqbzvCw&oe=6AD50464",
+          "link_url": "https://www.kaufland.de/product/100177041/",
+          "title": "Kaufland",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/740929858_27093338240365272_2414480099616771693_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QDeVhtRhh9AQ7kNvwHYzWP8&_nc_oc=AdpXGd6qBg7A0b_QfRDUJvys50lYvNB1cjT_bhCt-r7eu8ZXJ3nCOpDlzoC_LpK-in4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNmezM26I4vltzf4mXgAX40pZEWNbdjnZQesDdmoVTt_A&oe=6AD52ADE",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/739230860_1728560418269943_924804496347065113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VC4fnk-jZiwQ7kNvwHyf7x7&_nc_oc=AdqLJwNFwCN489CAXOis8ws8tzPETU3sjr-jtyEgCzy4yM1enjoedRJ1xwJRHpAsd98&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO01JriRgOKufIxELS2MHYgGiH8FBwaY1r5DuOViSmz0A&oe=6AD503AA",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741427657_2415058132319253_78515749864771547_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0L3ccWCu4RcQ7kNvwHiHCFs&_nc_oc=AdpG659pbIqHM9kl_cSVXGsOM3rMVBpZwojvP-hgG9ST7BxtukUTzVnyf1VB0ptOWBE&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPzYreQQr81bJsaG42KtPxm8LiuAelO9ahtvapyisrZQA&oe=6AD51046",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741013499_1667366844492185_6380456488784313677_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yvm1Wy69_L0Q7kNvwHvNAM9&_nc_oc=AdokJU4qsXw9UO0kB7ESqjxHBGxYNNULQAvGOkKATRoviAUM6WVBu-WeJnOadvChka8&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPkZJ4vmJvsGP0NSzVm4S_NJ9_tZ9ZgSTDMPd__T5bgDA&oe=6AD504A2",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/741475102_1186058974596474_303198312461977577_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YGi1Z0pL41UQ7kNvwEKESdw&_nc_oc=Adq95zov8oyRatEk5uwETGRqhASNJB0JPW0vm3W1kv-lpjaCJ707ok3--AS8GhPtZdo&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPEKTMbfgvfRBVNd_BEXj8ZpluByyUVyPS4ivOnEfoYjA&oe=6AD522C5",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/739931155_1542347373942717_4954819299895514732_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o_Sk42WtNFwQ7kNvwGnureg&_nc_oc=AdpUKrL6qdycQzma-LsoMb7aWnnWdF_XxpC8aVu11aX4mLSUTNm9OYpNswChGvvp_R0&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOYvpF1tlk-JnMv7tmhYBbR7GsrMZIocwGgYgfQqbzvCw&oe=6AD50464"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "kaufland.de",
+      "link_url": "https://www.kaufland.de/",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": "Kaufland",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1431061509143196",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1431061509143196",
+      "body": "Wir stellen unseren Prospekt um! \ud83c\udf89 Ab dem 12.10. gelten unsere Angebote von Montag bis Samstag. So hast du direkt zum Wochenstart mehr als 300 Highlights auf einen Blick. Und damit nicht genug: Ab Donnerstag gibt\u2019s noch weitere Angebote und Deutschlands beste Preise obendrauf! \ud83d\uded2\n#kaufland #HierBinIchRichtig #prospekt #supermarkt #sparen",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": null,
+      "videos": [
+        "https://video-dfw5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPM_qItDEh5YSTZgiofmmDaHphhZmZJmskXvNhhKqEWsuFJRmI6qQp7uIzk4WM5_0O4eZUI6W5QvMVBYwCAksM6sdd0W5zFsHC1dj1RyGaRgQ.mp4?_nc_cat=106&_nc_sid=b66105&_nc_ht=video-dfw5-1.xx.fbcdn.net&_nc_ohc=RmX9BZZ_aDcQ7kNvwEdHWsP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMDkwMzY0NDg4NjQ3MDEsImFzc2V0X2FnZV9kYXlzIjo1LCJ2aV91c2VjYXNlX2lkIjoxMjM3MywiZHVyYXRpb25fcyI6MTYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=5d41fe94c369475e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GN0I1NjlFQzZBNTk0QTU3OTc0NzQyQ0RCMjIyMjA4NF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0NFQThDRTY3NzgyMzREOTQ4M0UwNTVEQTU4MDI4OTJDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb65syx0-3KAxUCKAJDMywXQDDVP3ztkWgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZarBAQA&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQNt0I4TtGhNo_Ia5uRr_FH7S6Bw7IjErIHpWz1tDsXzCg&oe=6AD51F26"
+      ]
+    },
+    {
+      "ad_archive_id": "2278029109627641",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2278029109627641",
+      "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+      "cards": [
+        {
+          "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+          "cta": "Download",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/825286609_933990346035013_3363856010360860981_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m0Az7zkoqVgQ7kNvwHAiH1f&_nc_oc=Adrwq8xaIjh7x2MO9-S6T9PPH3vYdqWf9qsqB4nPknW0Ty9e8bWblsiU0pO8C8Otacg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOF3S6-z8nmTsrvjze0OfFmhDXAsJ4ZjuEsKE8gLgCvpQ&oe=6AD531CE",
+          "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+          "title": "Angebote von Kaufland",
+          "video": null
+        },
+        {
+          "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+          "cta": "Download",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825328366_1725938598483770_2881893600770231753_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jPB5HuG9PwEQ7kNvwHoKaiD&_nc_oc=AdrxxF06P9hLqE5CPPQYrwSbuPQC4dlCkBQkEEMQFHCLc5dY5uyPQCDZU1uwtrGsILA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM6VkJvPzsx3jpcV5eGY79dqaA-LZ0v1-7bY7u21dBW4w&oe=6AD510BF",
+          "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+          "title": "Angebote von Rossmann",
+          "video": null
+        },
+        {
+          "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+          "cta": "Download",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825286630_2728963844185759_4192455097040641268_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_EpXHONssGsQ7kNvwH1e1SZ&_nc_oc=Adq8Z7Kr8gLHHvd9tM0koko65LzkYU6NVf_QJmULcIQ4Zvx1fXBL3QSWu0i0XQVYf0c&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO_50MpTqpmE1X03cPXyUj3pJfLtRR4D7X6yFnLFm6cBg&oe=6AD508D5",
+          "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+          "title": "Angebote von ALDI S\u00dcD",
+          "video": null
+        },
+        {
+          "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+          "cta": "Download",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825286590_1035204012867415_8321077512828439943_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxUv7aPAiwUQ7kNvwGRM-0N&_nc_oc=AdprpJt1YMh6T4btWsZMx_a3BaSHHg0oAgodpM8jh6-WLQjIcSCov5INhRY0qw3K7xw&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOEJLx830IfV8MyJ128retUVbA8sMgQOpSqSzQMSdatwA&oe=6AD523DA",
+          "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+          "title": "Angebote von SB M\u00f6bel Boss",
+          "video": null
+        },
+        {
+          "body": "So macht Sparen richtig Spa\u00df!\ud83e\udd29\nDie G\u00fcltigkeit der dargestellten Produkte kann abweichen",
+          "cta": "Download",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/825328333_2594697884300932_150509740681071726_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WfkNTfAeiBgQ7kNvwFGumu_&_nc_oc=AdpZBqEgcBNY6Ivg3DerE1KGsuSsLpvpJJmR9RQfRYV7c9J6EyXvlSCafssp_oagpHk&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOyMvSZE-sVASNEyDcu53jlXdmS6rQMOL_ijVtuPx_OjQ&oe=6AD512A9",
+          "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+          "title": "Angebote von Ernstings family",
+          "video": null
+        }
+      ],
+      "cta": "Download",
+      "cta_type": "DOWNLOAD",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/825286609_933990346035013_3363856010360860981_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m0Az7zkoqVgQ7kNvwHAiH1f&_nc_oc=Adrwq8xaIjh7x2MO9-S6T9PPH3vYdqWf9qsqB4nPknW0Ty9e8bWblsiU0pO8C8Otacg&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOF3S6-z8nmTsrvjze0OfFmhDXAsJ4ZjuEsKE8gLgCvpQ&oe=6AD531CE",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825328366_1725938598483770_2881893600770231753_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jPB5HuG9PwEQ7kNvwHoKaiD&_nc_oc=AdrxxF06P9hLqE5CPPQYrwSbuPQC4dlCkBQkEEMQFHCLc5dY5uyPQCDZU1uwtrGsILA&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQM6VkJvPzsx3jpcV5eGY79dqaA-LZ0v1-7bY7u21dBW4w&oe=6AD510BF",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825286630_2728963844185759_4192455097040641268_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_EpXHONssGsQ7kNvwH1e1SZ&_nc_oc=Adq8Z7Kr8gLHHvd9tM0koko65LzkYU6NVf_QJmULcIQ4Zvx1fXBL3QSWu0i0XQVYf0c&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQO_50MpTqpmE1X03cPXyUj3pJfLtRR4D7X6yFnLFm6cBg&oe=6AD508D5",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/825286590_1035204012867415_8321077512828439943_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxUv7aPAiwUQ7kNvwGRM-0N&_nc_oc=AdprpJt1YMh6T4btWsZMx_a3BaSHHg0oAgodpM8jh6-WLQjIcSCov5INhRY0qw3K7xw&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOEJLx830IfV8MyJ128retUVbA8sMgQOpSqSzQMSdatwA&oe=6AD523DA",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/825328333_2594697884300932_150509740681071726_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WfkNTfAeiBgQ7kNvwFGumu_&_nc_oc=AdpZBqEgcBNY6Ivg3DerE1KGsuSsLpvpJJmR9RQfRYV7c9J6EyXvlSCafssp_oagpHk&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOyMvSZE-sVASNEyDcu53jlXdmS6rQMOL_ijVtuPx_OjQ&oe=6AD512A9"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=de.meinprospekt.android",
+      "page_id": "345054871717",
+      "page_likes": 67325,
+      "page_name": "meinprospekt.de",
+      "page_url": "https://www.facebook.com/meinprospekt/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "messenger"
+      ],
+      "same_creative_ads": 6,
+      "spend": null,
+      "start_date": "2026-09-30T07:00:00Z",
+      "title": "MeinProspekt \u2013 Leaflets",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2416578768830491",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2416578768830491",
+      "body": "Kaufland mobil bietet flexible und preisg\u00fcnstige Mobilfunktarife ohne Vertragsbindung, die auf deine individuellen Bed\u00fcrfnisse zugeschnitten sind.\n\nMit dem Starterpaket kannst du zwischen verschiedenen Smart-Tarifen w\u00e4hlen, die dir bis zu 60 GB 5G-Datenvolumen im besten D-Netz sowie eine Allnet-Flat f\u00fcr Telefonie und SMS in alle deutschen Netze bieten. Zudem profitierst du von einer kostenlosen Rufnummernmitnahme und einem Willkommensbonus von mindestens 10 \u20ac.",
+      "cards": [
+        {
+          "body": "Kaufland mobil bietet flexible und preisg\u00fcnstige Mobilfunktarife ohne Vertragsbindung, die auf deine individuellen Bed\u00fcrfnisse zugeschnitten sind.\n\nMit dem Starterpaket kannst du zwischen verschiedenen Smart-Tarifen w\u00e4hlen, die dir bis zu 60 GB 5G-Datenvolumen im besten D-Netz sowie eine Allnet-Flat f\u00fcr Telefonie und SMS in alle deutschen Netze bieten. Zudem profitierst du von einer kostenlosen Rufnummernmitnahme und einem Willkommensbonus von mindestens 10 \u20ac.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/747877141_2035094323757389_3010300914165904451_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ci0tl_HJ9Y4Q7kNvwF8F-ot&_nc_oc=AdpQRaSAZsaK6SpzJ3_s4seu6IpB3T1o9ys06mNkqmRCWsU5R1-8p_Y5CVwuydFs-8s&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNmynXugyz9nyMeBT5Xjzpsb5ss5vMW9Pg-ndUCABd1pA&oe=6AD51747",
+          "link_url": "https://www.kaufland.de/product/475008971/",
+          "title": "Kaufland",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/747877141_2035094323757389_3010300914165904451_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ci0tl_HJ9Y4Q7kNvwF8F-ot&_nc_oc=AdpQRaSAZsaK6SpzJ3_s4seu6IpB3T1o9ys06mNkqmRCWsU5R1-8p_Y5CVwuydFs-8s&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNmynXugyz9nyMeBT5Xjzpsb5ss5vMW9Pg-ndUCABd1pA&oe=6AD51747"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "https://www.kaufland.de/telekom",
+      "link_url": "https://www.kaufland.de/b/telekom/~4ELOFk9OYTn9qKXhdrDwlb/",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-07-14T07:00:00Z",
+      "title": "Kaufland",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1081580234762693",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1081580234762693",
+      "body": "Wir stellen unseren Prospekt um! \ud83c\udf89 Ab dem 12.10. gelten unsere Angebote von Montag bis Samstag. So hast du direkt zum Wochenstart mehr als 300 Highlights auf einen Blick. Und damit nicht genug: Ab Donnerstag gibt\u2019s noch weitere Angebote und Deutschlands beste Preise obendrauf! \ud83d\uded2\u2063\n#kaufland #HierBinIchRichtig #prospekt #supermarkt #sparen\u2063",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": null,
+      "videos": [
+        "https://video-dfw6-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQMP9xBVgIExgbamSSYfYKqmDvNG7JQgyxEqcuAsy52b-CMrQc1czixdRZVN-Ksz8jF9XZrxIwb8Um4-m3HYGHLOVFpZ_UtASraDCG793g.mp4?_nc_cat=110&_nc_sid=ef5aa3&_nc_ht=video-dfw6-2.xx.fbcdn.net&_nc_ohc=X76Php15HfkQ7kNvwGb87DE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxODQ4OTI2MTExMjEyOTkyMywiYXNzZXRfYWdlX2RheXMiOjUsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQPWiv8nvf6nB9TCS4h_lEX9tUfXFcETKguMY6H5xFL1vg&oe=6AD512E4"
+      ]
+    },
+    {
+      "ad_archive_id": "987047194419573",
+      "ad_url": "https://www.facebook.com/ads/library/?id=987047194419573",
+      "body": "Szlifierka k\u0105towa, narz\u0119dzie wielofunkcyjne, termometr na podczerwie\u0144, zestaw kolb lutowniczych i\u2026 \ud83d\udd27\ud83c\udf21\ufe0f Sprawd\u017a ni\u017cej \ud83d\ude42\ud83d\udc47 Ale to nie wszystkie okazje! Wejd\u017a na Kauf.land/gazeta-fb lub otw\u00f3rz nasz\u0105 aplikacj\u0119 i odkryj now\u0105 gazetk\u0119. \n\nOferta wa\u017cna od czwartku 8.10 do \u015brody 21.10 lub do wyczerpania zapas\u00f3w. Wszystkie podane ceny s\u0105 wyra\u017cone w z\u0142otych polskich.\n\n#kaufland #kauflandpolska #nowagazetka #oferta #okazje #zakupy #oszcz\u0119dzanie #korzy\u015bci #tanio #gazetkaonline",
+      "cards": [
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/837798873_1093939909893954_3926997512543823302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D_AKtXn9WD8Q7kNvwH1XT3E&_nc_oc=AdrHr5J2tbpFbS8-GygywI3N22WflJ--wH-z4Hseea9Xfo3qwTmlGANGiqsDVdXB1d4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMyBCCEPoeH0wUvOMZgEp0DQHMwZo8tvDsIAMzPwayDiA&oe=6AD51559",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/839822728_1596715102135021_295482274152050874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wCqWImUVvY8Q7kNvwGSLfpS&_nc_oc=Adp9y3L6PXDjkLaLgrSZajADi12P-HVGZMG5byHukU55qeHcXdT-xoWpH7_Gahy40rE&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQObqx9HRC5c8R_Q1ldCzm3dqHHvbrtBqEzbEm6OmLa3hg&oe=6AD511C7",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/841411582_2241335349773661_5504187616536875748_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CCI77g-XslgQ7kNvwHnrfur&_nc_oc=Adpr0RhV0cVEkjIeO5jxUPUCwUQVAT63ZBKVnt1bil-Kl-_NtRDIKtSG2crWyWz3Y_Q&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPD_Cw137QC2b3WBeEPuVc4rx3dXT0NwePr_wHLVF6TUw&oe=6AD5261F",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/840849472_1753650909238254_3283654751164679551_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bKJOGIGnp6kQ7kNvwHFco5q&_nc_oc=AdrAVurvlxB5pNyFCoUjSSrSfFYMSb9QDl-hvU3fQpia-SVz-Zgnh_RTWJNHxVUUIiM&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNWt1kSqFxPFyaf4oPV0Lnx6TOWQ_0ck-FXscYH4sfvfQ&oe=6AD5274E",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/839860221_3986498321487288_7181394185226745512_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tp2KNWRpJcIQ7kNvwHcwUKZ&_nc_oc=AdqJY1V5v_nL9_5VMAJDfWlso4o2XMaD30TmJEEuWPoueMlcY5aL8ODMDwYIVJcoMSU&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMyMczK1VvyysFJj3FXK2P2cIKJLLHHfqLZwHPl32KVmw&oe=6AD513AA",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841773999_1831910317944593_2404083289891614689_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=noUpc8R6CA8Q7kNvwGwKIMg&_nc_oc=Adq_eWKzXVS4srXNkrssq7eEltOlVnBeNTs4me2zfr7NJeaVeY_fdx0JmXM-4gtO6pE&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPN-TxGaPeS4B9_yGiliqb7xBi_JkdL2EgAeLHuvf2YIA&oe=6AD50570",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/838561216_1069757212547051_4207473522964456690_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7HyXTdSDjrgQ7kNvwHQVoha&_nc_oc=AdrOsV2mD0BOuZgB_I6DxeWzwXnP4zANXImETN3fW8FKYXG3zoyudeln0TDjftvdapE&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPKQPM1ohXZG9BQ66zBhagF2uo6s8DE81Zm1gceleu52w&oe=6AD5020C",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/839883760_1885891209063143_3135618998069024977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hJtVY_srAxQQ7kNvwHZzFxT&_nc_oc=AdpJDKuBH08cCu0FYsZD9NK1NLH04MUJZZpyLcZyV3koYYjcs7TGSTmxRn2o07m7M5A&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNepEqk0hqMD_EQTQZiBLACvprJR3Nlt90yUPE5qRqpeA&oe=6AD50B9F",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/839010430_1981041723301123_2292193488739928501_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gbOVBJKnmSwQ7kNvwG71bkB&_nc_oc=AdpBXimrdK6xcSH2_HEsE6jisndOYnltBUsV_rExnxcqxsSmcmxGnUeuKei-SHjgcuk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQP3YVr4VtmUKg1294nCcUtf-fIIrC-uM75_zuDmTcGrhA&oe=6AD50673",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/840900505_1584118386795520_6133521326978124939_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b5qQnnNiRykQ7kNvwEotJRw&_nc_oc=Adqo4CranLdQP27PSIxaCIHZg6kC26ZevlG652YcnwtQr-fH6YMz9UXZuqoV-CYvA34&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPO8IO0s4DYI05ZLpnuWuoDjzpe4ipZUvg099gbC8aaug&oe=6AD50508",
+          "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "title": "Sprawd\u017a ofert\u0119!",
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/837798873_1093939909893954_3926997512543823302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D_AKtXn9WD8Q7kNvwH1XT3E&_nc_oc=AdrHr5J2tbpFbS8-GygywI3N22WflJ--wH-z4Hseea9Xfo3qwTmlGANGiqsDVdXB1d4&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMyBCCEPoeH0wUvOMZgEp0DQHMwZo8tvDsIAMzPwayDiA&oe=6AD51559",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/839822728_1596715102135021_295482274152050874_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wCqWImUVvY8Q7kNvwGSLfpS&_nc_oc=Adp9y3L6PXDjkLaLgrSZajADi12P-HVGZMG5byHukU55qeHcXdT-xoWpH7_Gahy40rE&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQObqx9HRC5c8R_Q1ldCzm3dqHHvbrtBqEzbEm6OmLa3hg&oe=6AD511C7",
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/841411582_2241335349773661_5504187616536875748_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CCI77g-XslgQ7kNvwHnrfur&_nc_oc=Adpr0RhV0cVEkjIeO5jxUPUCwUQVAT63ZBKVnt1bil-Kl-_NtRDIKtSG2crWyWz3Y_Q&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPD_Cw137QC2b3WBeEPuVc4rx3dXT0NwePr_wHLVF6TUw&oe=6AD5261F",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/840849472_1753650909238254_3283654751164679551_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bKJOGIGnp6kQ7kNvwHFco5q&_nc_oc=AdrAVurvlxB5pNyFCoUjSSrSfFYMSb9QDl-hvU3fQpia-SVz-Zgnh_RTWJNHxVUUIiM&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNWt1kSqFxPFyaf4oPV0Lnx6TOWQ_0ck-FXscYH4sfvfQ&oe=6AD5274E",
+        "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.35426-6/839860221_3986498321487288_7181394185226745512_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tp2KNWRpJcIQ7kNvwHcwUKZ&_nc_oc=AdqJY1V5v_nL9_5VMAJDfWlso4o2XMaD30TmJEEuWPoueMlcY5aL8ODMDwYIVJcoMSU&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMyMczK1VvyysFJj3FXK2P2cIKJLLHHfqLZwHPl32KVmw&oe=6AD513AA",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/841773999_1831910317944593_2404083289891614689_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=noUpc8R6CA8Q7kNvwGwKIMg&_nc_oc=Adq_eWKzXVS4srXNkrssq7eEltOlVnBeNTs4me2zfr7NJeaVeY_fdx0JmXM-4gtO6pE&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPN-TxGaPeS4B9_yGiliqb7xBi_JkdL2EgAeLHuvf2YIA&oe=6AD50570",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/838561216_1069757212547051_4207473522964456690_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7HyXTdSDjrgQ7kNvwHQVoha&_nc_oc=AdrOsV2mD0BOuZgB_I6DxeWzwXnP4zANXImETN3fW8FKYXG3zoyudeln0TDjftvdapE&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPKQPM1ohXZG9BQ66zBhagF2uo6s8DE81Zm1gceleu52w&oe=6AD5020C",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/839883760_1885891209063143_3135618998069024977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hJtVY_srAxQQ7kNvwHZzFxT&_nc_oc=AdpJDKuBH08cCu0FYsZD9NK1NLH04MUJZZpyLcZyV3koYYjcs7TGSTmxRn2o07m7M5A&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQNepEqk0hqMD_EQTQZiBLACvprJR3Nlt90yUPE5qRqpeA&oe=6AD50B9F",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/839010430_1981041723301123_2292193488739928501_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gbOVBJKnmSwQ7kNvwG71bkB&_nc_oc=AdpBXimrdK6xcSH2_HEsE6jisndOYnltBUsV_rExnxcqxsSmcmxGnUeuKei-SHjgcuk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQP3YVr4VtmUKg1294nCcUtf-fIIrC-uM75_zuDmTcGrhA&oe=6AD50673",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/840900505_1584118386795520_6133521326978124939_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b5qQnnNiRykQ7kNvwEotJRw&_nc_oc=Adqo4CranLdQP27PSIxaCIHZg6kC26ZevlG652YcnwtQr-fH6YMz9UXZuqoV-CYvA34&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQPO8IO0s4DYI05ZLpnuWuoDjzpe4ipZUvg099gbC8aaug&oe=6AD50508"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "kaufland.pl",
+      "link_url": "https://ad.doubleclick.net/ddm/trackclk/N1106503.158605FACEBOOK/B36903589.458809725;dc_trk_aid=652745096;dc_trk_cid=265640218;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+      "page_id": "481934168506809",
+      "page_likes": 577648,
+      "page_name": "Kaufland Polska",
+      "page_url": "https://www.facebook.com/kaufland.polska/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-07T07:00:00Z",
+      "title": "Kaufland Polska",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1336339638626504",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1336339638626504",
+      "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+      "cards": [
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741121153_1019314167121262_1215037457704720478_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MLRA9O6lnBgQ7kNvwGiqU2_&_nc_oc=Adq2qUZcfSLugynqckBQVmLlhdJPOzw2iCC_sjXez0TQ2EgNYDWLlHUAJVUC4aMo4ns&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQP9tmf10-1WF77UHtIR9ZAJLUN7WcsF9xHOO14N-i88aw&oe=6AD51586",
+          "link_url": "https://www.kaufland.de/product/106009571/",
+          "title": "Bestway\u00ae Planschbecken \"Coral Kids\" 122 cm x 25 cm, 51009",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/742102068_890315883552955_274142358777882666_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HzPQiU9NYBgQ7kNvwEmT_1m&_nc_oc=AdqK6_0B1UigB-fbVyn_dKhEV_a4lv_5-ns8RuSrScEKDHzGLumkfVao2pVvyHL8GSk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOy5420Dlx4RPKFsTSlYxk7JF4zFtXbqOf_Fxr_wSSYEA&oe=6AD51CB8",
+          "link_url": "https://www.kaufland.de/product/112101921/",
+          "title": "Seagate ST9600205SS 600GB SAS 2,5\"",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/741447184_27105774352452346_6583619851190289925_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tZsAyaSScG4Q7kNvwEaU4Zo&_nc_oc=Ado3HaNTmAp2EZ8zj-CqA3euOLTulC_ZK8gQv9ldMhe76DnV4UbV0k-Uv5J5_d_P0Uk&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOXA-FqoPCzjRHhoBSTanEoH4TjiLDXc_ACZKejOtM4UQ&oe=6AD52D4E",
+          "link_url": "https://www.kaufland.de/product/106009621/",
+          "title": "Planschbecken 200cm uni Farben 51043 uni Farben",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/740740944_2046842429372922_792710373045011350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=e5NoLTWpF3UQ7kNvwGwF6Mn&_nc_oc=Adq13cRKXIViTjsd1uBU1bV1bgwGSUpMWxY9X4nJkLnETT-xmjMbzpxT07W1koqCnow&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOh8w-IVIyktxZ1aqMJf-e-tJT-dDht21ZRvSbLPYJj4A&oe=6AD50DF6",
+          "link_url": "https://www.kaufland.de/product/110373241/",
+          "title": "Konica Minolta Tonerpatrone - TNP-27C - A0X5453 - cyan - 4.500Seiten",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/741984636_1550126523462991_5241903479648089217_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8Q5deMKrisQ7kNvwHSstyC&_nc_oc=Adrs-PdCMfypFvAOoAfdHu2pJm6csr5IygdlMImElTQYP41b_l1WNA6lIGChPCy3QeU&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMBl4bcB_yucn3A9X5D-v0rFOrhdItzQXgBrz0gghAlog&oe=6AD52900",
+          "link_url": "https://www.kaufland.de/product/105658961/",
+          "title": "Veloflex 4377010, Polypropylen (PP), Transparent, 1 Karten",
+          "video": null
+        },
+        {
+          "body": "Finde coole Produkte auf Kaufland.de, deinem liebsten Online-Marktplatz. Aus Europa - F\u00fcr Europa. Entdecke jetzt unser riesiges Sortiment und lass dir deine Schn\u00e4ppchen ganz einfach nach Hause liefern.",
+          "cta": "Shop Now",
+          "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/740903124_1003520015616693_1126717001755313347_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qMH953AA6tEQ7kNvwHh2QId&_nc_oc=AdoTayYBGtSPJ24brWgWdwEOsFQNhNy0gMx-dj28AjUOyZJ9rxDdJ-ViGPx6U0Qpofs&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN31dguowr9k0PpLRuShgKfAOvvUg-x2T6QgMIlu4VHjA&oe=6AD53798",
+          "link_url": "https://www.kaufland.de/product/105534781/",
+          "title": "Patrone zum Nachf\u00fcllen - STABILO EASYoriginal Refill - fine - 3er Pack - blau (l\u00f6schbar)",
+          "video": null
+        }
+      ],
+      "cta": "Shop now",
+      "cta_type": "SHOP_NOW",
+      "currency": null,
+      "display_format": "dpa",
+      "end_date": null,
+      "images": [
+        "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.35426-6/741121153_1019314167121262_1215037457704720478_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MLRA9O6lnBgQ7kNvwGiqU2_&_nc_oc=Adq2qUZcfSLugynqckBQVmLlhdJPOzw2iCC_sjXez0TQ2EgNYDWLlHUAJVUC4aMo4ns&_nc_zt=14&_nc_ht=scontent-dfw6-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQP9tmf10-1WF77UHtIR9ZAJLUN7WcsF9xHOO14N-i88aw&oe=6AD51586",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/742102068_890315883552955_274142358777882666_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HzPQiU9NYBgQ7kNvwEmT_1m&_nc_oc=AdqK6_0B1UigB-fbVyn_dKhEV_a4lv_5-ns8RuSrScEKDHzGLumkfVao2pVvyHL8GSk&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOy5420Dlx4RPKFsTSlYxk7JF4zFtXbqOf_Fxr_wSSYEA&oe=6AD51CB8",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/741447184_27105774352452346_6583619851190289925_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tZsAyaSScG4Q7kNvwEaU4Zo&_nc_oc=Ado3HaNTmAp2EZ8zj-CqA3euOLTulC_ZK8gQv9ldMhe76DnV4UbV0k-Uv5J5_d_P0Uk&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOXA-FqoPCzjRHhoBSTanEoH4TjiLDXc_ACZKejOtM4UQ&oe=6AD52D4E",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/740740944_2046842429372922_792710373045011350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=e5NoLTWpF3UQ7kNvwGwF6Mn&_nc_oc=Adq13cRKXIViTjsd1uBU1bV1bgwGSUpMWxY9X4nJkLnETT-xmjMbzpxT07W1koqCnow&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQOh8w-IVIyktxZ1aqMJf-e-tJT-dDht21ZRvSbLPYJj4A&oe=6AD50DF6",
+        "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.35426-6/741984636_1550126523462991_5241903479648089217_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8Q5deMKrisQ7kNvwHSstyC&_nc_oc=Adrs-PdCMfypFvAOoAfdHu2pJm6csr5IygdlMImElTQYP41b_l1WNA6lIGChPCy3QeU&_nc_zt=14&_nc_ht=scontent-dfw6-2.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQMBl4bcB_yucn3A9X5D-v0rFOrhdItzQXgBrz0gghAlog&oe=6AD52900",
+        "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.35426-6/740903124_1003520015616693_1126717001755313347_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qMH953AA6tEQ7kNvwHh2QId&_nc_oc=AdoTayYBGtSPJ24brWgWdwEOsFQNhNy0gMx-dj28AjUOyZJ9rxDdJ-ViGPx6U0Qpofs&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&oh=00_AQN31dguowr9k0PpLRuShgKfAOvvUg-x2T6QgMIlu4VHjA&oe=6AD53798"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "kaufland.de",
+      "link_url": "http://www.kaufland.de/",
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-07-07T07:00:00Z",
+      "title": "Bestway\u00ae Planschbecken \"Coral Kids\" 122 cm x 25 cm, 51009",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1337895905196743",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1337895905196743",
+      "body": "\ud83c\udf1f Sei heute der Grund, warum jemand bleibt \ud83e\udd70\n\ud83d\udc96 Ein schlichter Hoodie. Ein gro\u00dfer Unterschied.\n\ud83d\udc96 F\u00fcr Momente, in denen jemand eine Erinnerung braucht: einfach zu bleiben.\n\ud83d\udc96 Kuschel dich in den weichsten Hoodie. Verbreite Hoffnung. Rette Leben.",
+      "cards": [],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "rapoly.com",
+      "link_url": "https://rapoly.com/pages/5-grunde-warum-dieser-hoodie-leben-rettet-rapoly",
+      "page_id": "107678501282106",
+      "page_likes": 4119,
+      "page_name": "Rapoly",
+      "page_url": "https://www.facebook.com/100083376308872/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": 4,
+      "spend": null,
+      "start_date": "2026-07-09T07:00:00Z",
+      "title": "Rette Millionen Leben \u2764\ufe0f",
+      "videos": [
+        "https://video-dfw6-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQP5_u2TJaJB-MDtqNC7tA_97Zme2uf2HIkOnTMChECZCXMtYqV9i64hHouxSTT7ZdLfyMfmqqv4ogfWprIYy1In8Zet66B7CSfkasCIzipGwg.mp4?_nc_cat=102&_nc_sid=b66105&_nc_ht=video-dfw6-1.xx.fbcdn.net&_nc_ohc=upLvv4PfXNIQ7kNvwFxrjKD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyNjk1MTAzMDMyNTA2MDYsImFzc2V0X2FnZV9kYXlzIjo5NywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjExMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8329902144ce8498&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GRDQzQzhGM0YzMzE3RkNERThENTVBM0U4QkM1NUM5OV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0RENDY3RTFBRTE2RkZCMzdGNzQ2RDRENTBFNUVBNTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbc4reDxubOCxUCKAJDMywXQFwgtDlYEGIYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQODucHwa-nwy4XqvEgiE8SwRjGHpqh4Qs6m6i2S38aTsg&oe=6AD527EE"
+      ]
+    },
+    {
+      "ad_archive_id": "1994886681157590",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1994886681157590",
+      "body": "\ud83c\udf1f Sei heute der Grund, warum jemand bleibt \ud83e\udd70\n\ud83d\udc96 Ein schlichter Hoodie. Ein gro\u00dfer Unterschied.\n\ud83d\udc96 F\u00fcr Momente, in denen jemand eine Erinnerung braucht: einfach zu bleiben.\n\ud83d\udc96 Kuschel dich in den weichsten Hoodie. Verbreite Hoffnung. Rette Leben.",
+      "cards": [],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "rapoly.com",
+      "link_url": "https://rapoly.com/pages/5-grunde-warum-dieser-hoodie-leben-rettet",
+      "page_id": "107678501282106",
+      "page_likes": 4119,
+      "page_name": "Rapoly",
+      "page_url": "https://www.facebook.com/100083376308872/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger",
+        "threads"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-07-09T07:00:00Z",
+      "title": "Rette Millionen Leben \u2764\ufe0f",
+      "videos": [
+        "https://video-dfw6-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQP5_u2TJaJB-MDtqNC7tA_97Zme2uf2HIkOnTMChECZCXMtYqV9i64hHouxSTT7ZdLfyMfmqqv4ogfWprIYy1In8Zet66B7CSfkasCIzipGwg.mp4?_nc_cat=102&_nc_sid=b66105&_nc_ht=video-dfw6-1.xx.fbcdn.net&_nc_ohc=upLvv4PfXNIQ7kNvwFxrjKD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyNjk1MTAzMDMyNTA2MDYsImFzc2V0X2FnZV9kYXlzIjo5NywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjExMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8329902144ce8498&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GRDQzQzhGM0YzMzE3RkNERThENTVBM0U4QkM1NUM5OV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0RENDY3RTFBRTE2RkZCMzdGNzQ2RDRENTBFNUVBNTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbc4reDxubOCxUCKAJDMywXQFwgtDlYEGIYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&oh=00_AQODucHwa-nwy4XqvEgiE8SwRjGHpqh4Qs6m6i2S38aTsg&oe=6AD527EE"
+      ]
+    },
+    {
+      "ad_archive_id": "1532578838897506",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1532578838897506",
+      "body": "@massiv ist noch lange nicht fertig! \ud83d\udcaa Schnapp dir im gesamten Oktober 20 % Rabatt auf Schokolade*. \ud83c\udf6b\n#kaufland #HierBinIchRichtig #massivreduziert #massiv #rabatt\n*Ausgenommen Geb\u00e4ck, Backzutaten, Blockschokolade sowie K-BIO, K-BIO ORGANIC, K-CLASSIC, K-FAVOURITES, K-GOLD\nEDITION, K-PLANT BASED, K-WINTER EDITION",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "132476996783723",
+      "page_likes": 1503529,
+      "page_name": "Kaufland",
+      "page_url": "https://www.facebook.com/kaufland/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-02T07:00:00Z",
+      "title": null,
+      "videos": [
+        "https://video-dfw5-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQMQCCFqXQyC_pqpPN4F5Rw6g3GjRJ0GOWxbZAUoNHYaUnBOsUgRrxz7QcaOTBmzJivlTKyT4ikvnm7_ye6Q5CtkG94FMEI1mXAAp7Nheg.mp4?_nc_cat=100&_nc_sid=ef5aa3&_nc_ht=video-dfw5-2.xx.fbcdn.net&_nc_ohc=6RG28RXA0woQ7kNvwGXK3Ml&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjozOTk2MjE0Mjg5MzM4NDI5MSwiYXNzZXRfYWdlX2RheXMiOjE1LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MzUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=wdYdFbnPOYyaAY_X6ezgYg&_nc_ss=70289&_nc_zt=28&_nc_enc=URViYoBVI0E_W2oB3Q05vAbFhokdtTcJpEZQrtklanwXEN7l3u-ckj7uUGSo2TuAp7h5CoZd6N9mHEr4ApOtKd_pqa9-3r2aXdnLfIwqNCh6NyYS2SfaXoRAZ9o&oh=00_AQPGLt-_isKdpwGoQTMoYVwFI2g1f0SZnmRCoSgH-B4mmw&oe=6AD521BA"
+      ]
+    }
+  ],
+  "usage": {
+    "boxes": [
+      "gate",
+      "recipe"
+    ],
+    "cache": "miss",
+    "engine": "recipe",
+    "lines": [
+      {
+        "about": "the call",
+        "boxes": [
+          "gate"
+        ],
+        "cache": "miss",
+        "call": "recipes",
+        "engine": "gate",
+        "units": 1
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      }
+    ],
+    "remaining_before": {
+      "concurrent": 363,
+      "requests": 378,
+      "search": 2993
+    },
+    "units": 8
+  },
+  "version": 2
+}

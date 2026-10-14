@@ -1,0 +1,443 @@
+{
+ "edeka": {
+  "total": 20,
+  "own": 6,
+  "pages": [
+   [
+    "EDEKA",
+    4
+   ],
+   [
+    "Edeka Irkens",
+    1
+   ],
+   [
+    "EDEKA Frauen",
+    1
+   ]
+  ],
+  "fmt": [
+   [
+    "dco",
+    5
+   ],
+   [
+    "video",
+    1
+   ]
+  ],
+  "cta": [
+   [
+    "LEARN_MORE",
+    3
+   ],
+   [
+    "DOWNLOAD",
+    1
+   ],
+   [
+    "WHATSAPP_MESSAGE",
+    1
+   ],
+   [
+    "kein CTA",
+    1
+   ]
+  ],
+  "titles": [
+   "Kennst Du schon unseren neuen EDEKA-Markt in Oppum?",
+   "GENAU für dich 💛",
+   "Deine Meinung zählt! Werde Teil unserer WhatsApp-Community und tausche dich direkt mit uns",
+   "Jetzt für den Newsletter anmelden!",
+   "",
+   "Was hat Menstruation mit Chancengleichheit zu tun? Mehr, als viele denken. 💛 Gemeinsam mit"
+  ],
+  "starts": [
+   "2023-09-13T07:00:00Z",
+   "2026-02-13T08:00:00Z",
+   "2026-09-21T07:00:00Z"
+  ],
+  "newest": [
+   "2026-10-09T07:00:00Z",
+   "2026-10-09T07:00:00Z",
+   "2026-10-11T07:00:00Z"
+  ]
+ },
+ "rewe": {
+  "total": 20,
+  "own": 17,
+  "pages": [
+   [
+    "REWE Karriere",
+    10
+   ],
+   [
+    "REWE To Go",
+    6
+   ],
+   [
+    "REWE",
+    1
+   ]
+  ],
+  "fmt": [
+   [
+    "dco",
+    16
+   ],
+   [
+    "video",
+    1
+   ]
+  ],
+  "cta": [
+   [
+    "APPLY_NOW",
+    10
+   ],
+   [
+    "LEARN_MORE",
+    6
+   ],
+   [
+    "kein CTA",
+    1
+   ]
+  ],
+  "titles": [
+   "Dein Job bei REWE",
+   "Unsere Aktionen - Finde deinen Lieblings-Deal | REWE To Go",
+   "Unsere Aktionen - Finde deinen Lieblings-Deal | REWE To Go",
+   "REWE.de - Deine Startseite für Lebensmittel im Internet!",
+   "Zukunft? Läuft. 💪 Starte deine Ausbildung in der REWE Logistik und bewirb dich auf rewe.de",
+   "Dein Job bei REWE"
+  ],
+  "starts": [
+   "2026-05-27T07:00:00Z",
+   "2026-05-27T07:00:00Z",
+   "2026-05-27T07:00:00Z"
+  ],
+  "newest": [
+   "2026-09-07T07:00:00Z",
+   "2026-09-14T07:00:00Z",
+   "2026-09-30T07:00:00Z"
+  ]
+ },
+ "lidl": {
+  "total": 20,
+  "own": 10,
+  "pages": [
+   [
+    "Lidl in Deutschland",
+    10
+   ]
+  ],
+  "fmt": [
+   [
+    "dpa",
+    5
+   ],
+   [
+    "image",
+    2
+   ],
+   [
+    "video",
+    1
+   ],
+   [
+    "carousel",
+    1
+   ],
+   [
+    "dco",
+    1
+   ]
+  ],
+  "cta": [
+   [
+    "SHOP_NOW",
+    5
+   ],
+   [
+    "LEARN_MORE",
+    5
+   ]
+  ],
+  "titles": [
+   "PASQUA Villa Borghetti Bardolino Classico DOC trocken, Rotwein 2023",
+   "Lidl Connect Herbstaktion",
+   "Mojito Fertigmix 20% Vol",
+   "Gewinne 15.000 € für dein Zuhause-Upgrade!*",
+   "Lidl in Deutschland",
+   "Gewinne 15.000 € für dein Zuhause-Upgrade!*"
+  ],
+  "starts": [
+   "2026-09-08T07:00:00Z",
+   "2026-09-08T07:00:00Z",
+   "2026-09-08T07:00:00Z"
+  ],
+  "newest": [
+   "2026-09-15T07:00:00Z",
+   "2026-09-21T07:00:00Z",
+   "2026-10-05T07:00:00Z"
+  ]
+ },
+ "aldi": {
+  "total": 20,
+  "own": 13,
+  "pages": [
+   [
+    "ALDI SÜD Karriere",
+    6
+   ],
+   [
+    "ALDI SÜD",
+    4
+   ],
+   [
+    "ALDI USA",
+    2
+   ],
+   [
+    "ALDI Nord Karriere",
+    1
+   ]
+  ],
+  "fmt": [
+   [
+    "video",
+    7
+   ],
+   [
+    "dco",
+    3
+   ],
+   [
+    "image",
+    1
+   ],
+   [
+    "dpa",
+    1
+   ],
+   [
+    "carousel",
+    1
+   ]
+  ],
+  "cta": [
+   [
+    "LEARN_MORE",
+    7
+   ],
+   [
+    "SHOP_NOW",
+    2
+   ],
+   [
+    "kein CTA",
+    2
+   ],
+   [
+    "SEE_DETAILS",
+    1
+   ],
+   [
+    "APPLY_NOW",
+    1
+   ]
+  ],
+  "titles": [
+   "Trying new products at ALDI never disappoints.",
+   "Trying new products at ALDI never disappoints.",
+   "Diesen Fit kann man nicht kaufen, den muss man sich erarbeiten…😎\n#aldisüdkarriere #hypebea",
+   "Nachwuchsführungskraft Verkauf (m/w/d) | Karriere bei ALDI SÜD",
+   "This or That? Hauptsache ALDI SÜD. 🤝",
+   "Zum ALDI Preis."
+  ],
+  "starts": [
+   "2026-01-05T08:00:00Z",
+   "2026-01-06T08:00:00Z",
+   "2026-03-09T07:00:00Z"
+  ],
+  "newest": [
+   "2026-10-06T07:00:00Z",
+   "2026-10-08T07:00:00Z",
+   "2026-10-08T07:00:00Z"
+  ]
+ },
+ "netto": {
+  "total": 20,
+  "own": 16,
+  "pages": [
+   [
+    "Netto Marken-Discount",
+    16
+   ]
+  ],
+  "fmt": [
+   [
+    "dco",
+    7
+   ],
+   [
+    "video",
+    6
+   ],
+   [
+    "image",
+    3
+   ]
+  ],
+  "cta": [
+   [
+    "kein CTA",
+    6
+   ],
+   [
+    "LEARN_MORE",
+    6
+   ],
+   [
+    "APPLY_NOW",
+    3
+   ],
+   [
+    "SEE_DETAILS",
+    1
+   ]
+  ],
+  "titles": [
+   "Dein Netto Treatment 🔥",
+   "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree",
+   "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree",
+   "Gemütlicher geht’s kaum: Von deiner Wohnung direkt zu Netto und Alnatura-Bio-Produkte eint",
+   "Schnell noch Abendessen nebenan besorgen? Geht jetzt in Bio-Qualität bei deinem Netto. 🤩\nA",
+   "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree"
+  ],
+  "starts": [
+   "2026-09-01T07:00:00Z",
+   "2026-09-01T07:00:00Z",
+   "2026-09-01T07:00:00Z"
+  ],
+  "newest": [
+   "2026-10-12T07:00:00Z",
+   "2026-10-12T07:00:00Z",
+   "2026-10-13T07:00:00Z"
+  ]
+ },
+ "kaufland": {
+  "total": 20,
+  "own": 11,
+  "pages": [
+   [
+    "Kaufland",
+    10
+   ],
+   [
+    "Kaufland Polska",
+    1
+   ]
+  ],
+  "fmt": [
+   [
+    "video",
+    4
+   ],
+   [
+    "dpa",
+    4
+   ],
+   [
+    "carousel",
+    3
+   ]
+  ],
+  "cta": [
+   [
+    "kein CTA",
+    4
+   ],
+   [
+    "SHOP_NOW",
+    4
+   ],
+   [
+    "SEE_DETAILS",
+    2
+   ],
+   [
+    "USE_APP",
+    1
+   ]
+  ],
+  "titles": [
+   "Kaufland",
+   "Entdecke jetzt die richtige Auswahl zum kleinen Preis. Du willst keine Angebote mehr verpa",
+   "HAKU Möbel Wandgarderobe alu - Massivholz, Metall, B/H/T: 48x34x6,5 cm",
+   "Kaufland - Shopping & Offers",
+   "Kaufland",
+   "Wir stellen unseren Prospekt um! 🎉 Ab dem 12.10. gelten unsere Angebote von Montag bis Sam"
+  ],
+  "starts": [
+   "2026-07-07T07:00:00Z",
+   "2026-07-14T07:00:00Z",
+   "2026-10-02T07:00:00Z"
+  ],
+  "newest": [
+   "2026-10-12T07:00:00Z",
+   "2026-10-12T07:00:00Z",
+   "2026-10-12T07:00:00Z"
+  ]
+ },
+ "penny": {
+  "total": 20,
+  "own": 3,
+  "pages": [
+   [
+    "PENNY",
+    2
+   ],
+   [
+    "Penny Watson",
+    1
+   ]
+  ],
+  "fmt": [
+   [
+    "carousel",
+    2
+   ],
+   [
+    "video",
+    1
+   ]
+  ],
+  "cta": [
+   [
+    "APPLY_NOW",
+    2
+   ],
+   [
+    "INSTALL_MOBILE_APP",
+    1
+   ]
+  ],
+  "titles": [
+   "Zoom farther and shoot in crystal-clear HD quality.",
+   "PENNY",
+   "PENNY"
+  ],
+  "starts": [
+   "2026-01-01T08:00:00Z",
+   "2026-01-01T08:00:00Z",
+   "2026-07-15T07:00:00Z"
+  ],
+  "newest": [
+   "2026-01-01T08:00:00Z",
+   "2026-01-01T08:00:00Z",
+   "2026-07-15T07:00:00Z"
+  ]
+ }
+}

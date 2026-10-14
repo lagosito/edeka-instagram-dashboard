@@ -1,0 +1,1274 @@
+{
+  "meta": {
+    "blocked": [
+      "www.facebook.com"
+    ],
+    "elapsed_ms": 3915,
+    "from_cache": false,
+    "llm_calls": 0,
+    "pages_fetched": 7,
+    "partial": false,
+    "warnings": [
+      "module: meta-ads: the Ad Library refused the box's address; asked again through a residential exit",
+      "module: meta-ads-search: 'Netto Marken-Discount' \u00b7 DE \u00b7 active \u00b7 20 ad(s) \u00b7 one view \u00b7 1 page(s) through a residential exit"
+    ]
+  },
+  "recipe": "meta-ads-search",
+  "rows": [
+    {
+      "ad_archive_id": "450239114032197",
+      "ad_url": "https://www.facebook.com/ads/library/?id=450239114032197",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwHt4IEU&_nc_oc=AdqwWJxy0eMG8y3kVtc4zXAd5BQ1pgvL_3uu98CR5U77d8C08mGdkl0wVFv4okdAfvs&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOuvM6I-QPaSpo4BZVUF6HhccImDQXAJ2EtIDrx2qc0mg&oe=6AD510D1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwGXREgq&_nc_oc=AdoDQoAAnBxcS4OktIpMC4XVcila4pinkHIQJ3wlBfuyWjyy2xA0wIBuWyRlIPMZjmM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPTXKx6vS0BeQu4Pf4bmBnqY6ybedsvEkkznZfShdImRg&oe=6AD52B45",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwFwZz5h&_nc_oc=AdpIjOfdTnoiOZTTJz8QqTVAAONGnDfK_NjcnCfcFJTpZhJtNdr4IARCT3FTNFMB3k0&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNk8UJz0TrQpjkApY7-3u3DemCZ8ZPwXD6k18xVkbK1_Q&oe=6AD52B65",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwFRY8FM&_nc_oc=Ado2S3qd0YD4TscW5NkCoJP1zgHC-5bGpHbeFcCiFs6-jT37o80lHLt8WGGX3slpShE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMDAgTo4b6ruszKKAqxaDYTCvojFBtkKoIccqg141RrqQ&oe=6AD5305F",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFW9kB7&_nc_oc=AdrLODG0xwoQwDztG-qrQAssYkmyZVUZHfw67ZimNYsh9lsdNIrYhItKRSujm5WPpdo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO4lEerw0bfC8MAPbwtx7oeJnPDPZLEM9OgbGJW5C705g&oe=6AD505B8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwGacL9N&_nc_oc=AdowRDeYO6D62bqaj4Z8-9KnvnxPwquUPxr-FenLhloSP8P59UHaEh_VfVLQZI2eqAo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPHJJ-vcBCtH2NfXjFT8uLyNSVJ4k3xVujIwUu6m3qeHQ&oe=6AD51BB8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwHEN2r6&_nc_oc=AdrWs6NiKwkO3T_PdwA2iExg0rasCS1-PnFVV9yjvVlPq4EHc9wKuMsLdJVfoORbyDI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM4ZU7gWHori65in_S1Liiun3iNDz5RhRZZfFMVTRLJbA&oe=6AD511A6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Fressnapf Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwGTJtny&_nc_oc=AdqG0MgzsU1QfdNb6RnjfiUFefoE5RXmTElaBExhQNPK2R42IfC1rp0IQ2Y8-XS5iRw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMTh3Bu1ydhRbLhiAICtBq5epELUl0xQkx3bx_wEZHYzA&oe=6AD50FE6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwH-ZrOF&_nc_oc=AdqaSK4TERO2pgXmtUf67bV6NpIE9_cAa85hVDhakcznt4EgF0hhmP4mEwIvdT6ILhQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNOE5byzuFLDlhKhfobk4XxIZIlus_lKGWm0uS0p6h13A&oe=6AD503B3",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwGEZ5jl&_nc_oc=AdphRvJaEphrDWvB-W6TTuXfbyCAlUHYWtJrVxHDdZXF68aKM4jCGuORNelG3iNsy0Y&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN9wVuGc1HKUDLLBG-A68277oY6Cy7JSqfcSxf52rn1kQ&oe=6AD527A8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429669206_776326373939579_1844685432139358117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cU9vcsqkb_8Q7kNvwHt4IEU&_nc_oc=AdqwWJxy0eMG8y3kVtc4zXAd5BQ1pgvL_3uu98CR5U77d8C08mGdkl0wVFv4okdAfvs&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOuvM6I-QPaSpo4BZVUF6HhccImDQXAJ2EtIDrx2qc0mg&oe=6AD510D1",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429783042_944395937099214_2429613959462721272_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jwpvPNPmDusQ7kNvwGXREgq&_nc_oc=AdoDQoAAnBxcS4OktIpMC4XVcila4pinkHIQJ3wlBfuyWjyy2xA0wIBuWyRlIPMZjmM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPTXKx6vS0BeQu4Pf4bmBnqY6ybedsvEkkznZfShdImRg&oe=6AD52B45",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429687474_373152298939514_64265731993587397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w8Owe8i4aYMQ7kNvwFwZz5h&_nc_oc=AdpIjOfdTnoiOZTTJz8QqTVAAONGnDfK_NjcnCfcFJTpZhJtNdr4IARCT3FTNFMB3k0&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNk8UJz0TrQpjkApY7-3u3DemCZ8ZPwXD6k18xVkbK1_Q&oe=6AD52B65",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429821432_7160092257373300_3962256622938717692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vTpDdVDtsLcQ7kNvwFRY8FM&_nc_oc=Ado2S3qd0YD4TscW5NkCoJP1zgHC-5bGpHbeFcCiFs6-jT37o80lHLt8WGGX3slpShE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMDAgTo4b6ruszKKAqxaDYTCvojFBtkKoIccqg141RrqQ&oe=6AD5305F",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429654126_1137957293867372_5832510685550814402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=18VlMNWl27oQ7kNvwFW9kB7&_nc_oc=AdrLODG0xwoQwDztG-qrQAssYkmyZVUZHfw67ZimNYsh9lsdNIrYhItKRSujm5WPpdo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO4lEerw0bfC8MAPbwtx7oeJnPDPZLEM9OgbGJW5C705g&oe=6AD505B8",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429739212_411676014746397_698042117681921691_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZfy-MFstXsQ7kNvwGacL9N&_nc_oc=AdowRDeYO6D62bqaj4Z8-9KnvnxPwquUPxr-FenLhloSP8P59UHaEh_VfVLQZI2eqAo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPHJJ-vcBCtH2NfXjFT8uLyNSVJ4k3xVujIwUu6m3qeHQ&oe=6AD51BB8",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429782656_1228706464783902_6303229197354727647_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WcqVB2WLVdkQ7kNvwHEN2r6&_nc_oc=AdrWs6NiKwkO3T_PdwA2iExg0rasCS1-PnFVV9yjvVlPq4EHc9wKuMsLdJVfoORbyDI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM4ZU7gWHori65in_S1Liiun3iNDz5RhRZZfFMVTRLJbA&oe=6AD511A6",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429773092_769140451797106_1380394728057990111_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sboC1V8dFq8Q7kNvwGTJtny&_nc_oc=AdqG0MgzsU1QfdNb6RnjfiUFefoE5RXmTElaBExhQNPK2R42IfC1rp0IQ2Y8-XS5iRw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMTh3Bu1ydhRbLhiAICtBq5epELUl0xQkx3bx_wEZHYzA&oe=6AD50FE6",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429808410_1660004961459779_6347498561008752589_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=h4ODGT8hy7EQ7kNvwH-ZrOF&_nc_oc=AdqaSK4TERO2pgXmtUf67bV6NpIE9_cAa85hVDhakcznt4EgF0hhmP4mEwIvdT6ILhQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNOE5byzuFLDlhKhfobk4XxIZIlus_lKGWm0uS0p6h13A&oe=6AD503B3",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/429761477_394491869943130_376830675877819436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3KM3zyOU_FsQ7kNvwGEZ5jl&_nc_oc=AdphRvJaEphrDWvB-W6TTuXfbyCAlUHYWtJrVxHDdZXF68aKM4jCGuORNelG3iNsy0Y&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN9wVuGc1HKUDLLBG-A68277oY6Cy7JSqfcSxf52rn1kQ&oe=6AD527A8"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "445161231215701",
+      "ad_url": "https://www.facebook.com/ads/library/?id=445161231215701",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwHdZ-YK&_nc_oc=AdrOdpQxmiFV1lZEOT9qthXO-3ui4Uzf2fTANMl8MALeZxyUzTTQi9v5wOjfFaMMY_U&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPwaixBOHdzfdQyTZ7CR-4MlJ3Pmqb4_H_gp5TO4ChrUA&oe=6AD5119E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwEfUSoB&_nc_oc=AdpdqPqDQfUo8w7QnvW39ybDcS-aSWZErzr1JI-hXY8--bCl3tHJzBZsD_xrfD-4ouc&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO0R-AjJrW9VXhrgIFfApQ2wjl7xMf7TZF7W-hIa9WOKw&oe=6AD513CC",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwHj__rW&_nc_oc=AdrwYsIreRZJcMov0Aaawr9ymEBQYyyL7I0DmFcI94KVz8m1aLoozzPPHfE3feS9LOA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOfOLRpOEHPTjvbHbMz3naAKnotKJpOh_CNdWOReWb7mA&oe=6AD50125",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEOYTi9&_nc_oc=AdoQaELzsDzwJvixGUmcrsSMPHngCDq5z-_BshirU_CEeJBuQr54MzduTnBhkLnUsJg&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMyWna2M05nZuNN7w1ZyvER_EhwnSNwam5Ev7oeFr7KDA&oe=6AD50850",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwEFj0rQ&_nc_oc=AdpahS12F7VsKLxGwpXe1RvDbvYKyv4sOTk4tn47iErtvIIvv8VQ9OuhHk7UqT85jEo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN3jx1MpKOMXDd468LpRQyXP0XbYV2etqPZye9IXWu09Q&oe=6AD501DA",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwFSObRR&_nc_oc=AdqEiIVGUp4VYgvx7UF_LYDW92wqRPhvdQIh15lbYiYHVuXR51vAhezstfzgdiPNsJM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM3kutLYu6L8HMFSKZaR5VFsUt_u3ccb4qnC6K389FuzQ&oe=6AD52368",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwGt1GQ4&_nc_oc=AdrE-bWhrRwJ3X4R6_oLHsUpglTLLok29Y5JFnCOgbCY34YtoXJbXejw2w2VQHIxFFE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNfUrtsbjtxJNB-njWPlEetNRXi5aWJjJuMjdOIw92Pjg&oe=6AD537B6",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Takko Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwF55oxO&_nc_oc=AdpQ4-nK8Sl5jx-wRJF6OaUW1s2kMVg7MTezHC-EiMfmKvTPyGC7TPKLwgYL_Alm7qI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMktkHBCPbrl-ZrTYsZoCiaHTmfC5d21Y7O5YJmlrsoKA&oe=6AD51337",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwGxv_cl&_nc_oc=AdpM4VRy81YbuKjBwdHpelbILgB8WWaSU_v5I14ilfNpcXAy7yavlFQSDOn9uZgwvHY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOgLmEpAz8BDh4Bhd_nXN3AB2Hk5WaLUSDKoc-86jAXbg&oe=6AD533F8",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwEK8yWO&_nc_oc=Adq42ewAiDRJcwb_mb_JOYqlkv1qjgC6EL2CaeoiebUkH_s-3eerdIv5j28ep1dtmFQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNlouYuKfojn6Z_KSEfnQ3mS5RSGUm_EMbol66q66RTnQ&oe=6AD502F5",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437366843_914620460460592_9033843011894290370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u4QJUuKgxoIQ7kNvwHdZ-YK&_nc_oc=AdrOdpQxmiFV1lZEOT9qthXO-3ui4Uzf2fTANMl8MALeZxyUzTTQi9v5wOjfFaMMY_U&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPwaixBOHdzfdQyTZ7CR-4MlJ3Pmqb4_H_gp5TO4ChrUA&oe=6AD5119E",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437374903_7014917201946505_8595239779084370598_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wD0vFiYxPU0Q7kNvwEfUSoB&_nc_oc=AdpdqPqDQfUo8w7QnvW39ybDcS-aSWZErzr1JI-hXY8--bCl3tHJzBZsD_xrfD-4ouc&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO0R-AjJrW9VXhrgIFfApQ2wjl7xMf7TZF7W-hIa9WOKw&oe=6AD513CC",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437540190_1768442163649578_7694546078192487488_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y2e3d5ZuDIUQ7kNvwHj__rW&_nc_oc=AdrwYsIreRZJcMov0Aaawr9ymEBQYyyL7I0DmFcI94KVz8m1aLoozzPPHfE3feS9LOA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOfOLRpOEHPTjvbHbMz3naAKnotKJpOh_CNdWOReWb7mA&oe=6AD50125",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436593061_1694400871095153_8826448378774616331_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mLd1We2cH58Q7kNvwEOYTi9&_nc_oc=AdoQaELzsDzwJvixGUmcrsSMPHngCDq5z-_BshirU_CEeJBuQr54MzduTnBhkLnUsJg&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMyWna2M05nZuNN7w1ZyvER_EhwnSNwam5Ev7oeFr7KDA&oe=6AD50850",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/439728272_1150510396129317_8731168021340186338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qqobDeh2KMcQ7kNvwEFj0rQ&_nc_oc=AdpahS12F7VsKLxGwpXe1RvDbvYKyv4sOTk4tn47iErtvIIvv8VQ9OuhHk7UqT85jEo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN3jx1MpKOMXDd468LpRQyXP0XbYV2etqPZye9IXWu09Q&oe=6AD501DA",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437589504_7423192647767558_2210009637018249460_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5JzS5p94EG4Q7kNvwFSObRR&_nc_oc=AdqEiIVGUp4VYgvx7UF_LYDW92wqRPhvdQIh15lbYiYHVuXR51vAhezstfzgdiPNsJM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM3kutLYu6L8HMFSKZaR5VFsUt_u3ccb4qnC6K389FuzQ&oe=6AD52368",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437365196_317157248062066_2084258078987906074_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F4XpaYp6A6YQ7kNvwGt1GQ4&_nc_oc=AdrE-bWhrRwJ3X4R6_oLHsUpglTLLok29Y5JFnCOgbCY34YtoXJbXejw2w2VQHIxFFE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNfUrtsbjtxJNB-njWPlEetNRXi5aWJjJuMjdOIw92Pjg&oe=6AD537B6",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437366820_806349890830514_206929923213679256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6guiENYxYzwQ7kNvwF55oxO&_nc_oc=AdpQ4-nK8Sl5jx-wRJF6OaUW1s2kMVg7MTezHC-EiMfmKvTPyGC7TPKLwgYL_Alm7qI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMktkHBCPbrl-ZrTYsZoCiaHTmfC5d21Y7O5YJmlrsoKA&oe=6AD51337",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/439664991_1590634958200793_764619337251592843_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bdhUq5ORYXgQ7kNvwGxv_cl&_nc_oc=AdpM4VRy81YbuKjBwdHpelbILgB8WWaSU_v5I14ilfNpcXAy7yavlFQSDOn9uZgwvHY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOgLmEpAz8BDh4Bhd_nXN3AB2Hk5WaLUSDKoc-86jAXbg&oe=6AD533F8",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437365263_715350357197310_3581509240352107842_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=d3kT9Lc4si8Q7kNvwEK8yWO&_nc_oc=Adq42ewAiDRJcwb_mb_JOYqlkv1qjgC6EL2CaeoiebUkH_s-3eerdIv5j28ep1dtmFQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNlouYuKfojn6Z_KSEfnQ3mS5RSGUm_EMbol66q66RTnQ&oe=6AD502F5"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "2362369787296790",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2362369787296790",
+      "body": null,
+      "cards": [
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwG0KYcT&_nc_oc=Adq_ud0LBPFMwfeB574HBKw4OdTpme711ksdSM4KTXZXGTRKqQN6YEq94t8gu7yxAyA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMMlr0RtseVcysHs9xqAaOVmrivOV_Oy4Ez4qkOI4Q4AA&oe=6AD5055A",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kik Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEpYh56&_nc_oc=Adr8xUIRY8QW-nfuli4Hvjh88a_mSl2frLezAepGU--r3cZ2wIB48dfOxPF37buDbDA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO7gcZYczpR8vy_SstvTXw-AQFfT93JMPt3w8sz7ifQIw&oe=6AD51C91",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Netto Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwGNyglJ&_nc_oc=AdqDDf71rMcbnxWNdpQWwrgkudlb9UEzn05nvbjQydJV-NItSFSlPSOdQxxZzFVQeog&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOpDYIee2isgwnPFYNfxotUAn7qeKsAcOt2mQqHLJSesg&oe=6AD51855",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Aldi Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwHNb5KU&_nc_oc=AdpNFTbKIVsFm2cHoYhvNySHE2QW6-E5-zhWIR5KlnBpNepCfkOwDLiBFCGAuH3MNCQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPtt1NFtYyj4D6Hrq0CVK-cySMnoBquaWNr0pwL0Un-Bg&oe=6AD50282",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Lidl Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwHKbJkc&_nc_oc=Adr7g7FlHLr5tonK5doBGneCzR-e2mrnxTr6aVcecD5vSCL32LqWrp_KnpESCSvyV_w&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMtMW3A_kryLQwHgKwrzSmxVjmhEPMmDE1ENqDhkNSygw&oe=6AD50097",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Poco Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwF6JcDL&_nc_oc=Adp8GpDlkkQvFac6kbbxf3ME0UXgzgJg2ctdfPAf3MtNI347lmVJFwI7RYi8Ie5fyVo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQP9qsmB4ZZHb3NgA71ECBbTpeE0Jrcl3BZGsVtJr24Bew&oe=6AD50B2E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Rossmann Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwFEo9vs&_nc_oc=Ado805jkat0A7wVgGt7j9pFfC2uE2Ii7-15msx2tw1_SDTXYzr-7J7V7OO_JJiAG1Xw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNBZq7DvgaSIUAwXlBlKbq0LEb139XYC-eMA4xP0Ylsyg&oe=6AD53791",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "EDEKA Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwGowBqa&_nc_oc=AdoPDduYRJQrB74dtwAj2RQAaSlA4jQip-kdsUtq_A0fN5TqAI5y8piGugrqdLgfPO0&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNFApMEMWdRZXjcMcnGuhmfwQG8iK0Z6YAa4xlRukvHlQ&oe=6AD50296",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Kaufland Angebote",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "Install Now",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwFRCFOD&_nc_oc=AdrVTHqPWszC3f7xLwQbSDFZkOpAhLWsFAEKCZv_bzCYBUNRzVfSUXbKRtFXyfFTvF4&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQObSQ8rXER4cCvuCGVLp6BELO2Mh3sqZT_li84QHcHscw&oe=6AD534B1",
+          "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+          "title": "Pepco Angebote",
+          "video": null
+        }
+      ],
+      "cta": "Install now",
+      "cta_type": "INSTALL_MOBILE_APP",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436416548_1356586964882237_7234086914965759700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MwcUF9N6KekQ7kNvwG0KYcT&_nc_oc=Adq_ud0LBPFMwfeB574HBKw4OdTpme711ksdSM4KTXZXGTRKqQN6YEq94t8gu7yxAyA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMMlr0RtseVcysHs9xqAaOVmrivOV_Oy4Ez4qkOI4Q4AA&oe=6AD5055A",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437375440_1108943330344355_4729428703221154789_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zcA4DjPqyYkQ7kNvwEpYh56&_nc_oc=Adr8xUIRY8QW-nfuli4Hvjh88a_mSl2frLezAepGU--r3cZ2wIB48dfOxPF37buDbDA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO7gcZYczpR8vy_SstvTXw-AQFfT93JMPt3w8sz7ifQIw&oe=6AD51C91",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/435987541_1584581695715788_6286744532272998891_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lu1hv3tZFsQ7kNvwGNyglJ&_nc_oc=AdqDDf71rMcbnxWNdpQWwrgkudlb9UEzn05nvbjQydJV-NItSFSlPSOdQxxZzFVQeog&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOpDYIee2isgwnPFYNfxotUAn7qeKsAcOt2mQqHLJSesg&oe=6AD51855",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436361052_432464622763776_6908345798385503782_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9uGrR1dX6pkQ7kNvwHNb5KU&_nc_oc=AdpNFTbKIVsFm2cHoYhvNySHE2QW6-E5-zhWIR5KlnBpNepCfkOwDLiBFCGAuH3MNCQ&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPtt1NFtYyj4D6Hrq0CVK-cySMnoBquaWNr0pwL0Un-Bg&oe=6AD50282",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/437583825_363231536098590_8033407222477497674_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HE-d6V633CUQ7kNvwHKbJkc&_nc_oc=Adr7g7FlHLr5tonK5doBGneCzR-e2mrnxTr6aVcecD5vSCL32LqWrp_KnpESCSvyV_w&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMtMW3A_kryLQwHgKwrzSmxVjmhEPMmDE1ENqDhkNSygw&oe=6AD50097",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436236517_1125360558663107_5556361723455470090_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QQUSJB30tsAQ7kNvwF6JcDL&_nc_oc=Adp8GpDlkkQvFac6kbbxf3ME0UXgzgJg2ctdfPAf3MtNI347lmVJFwI7RYi8Ie5fyVo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQP9qsmB4ZZHb3NgA71ECBbTpeE0Jrcl3BZGsVtJr24Bew&oe=6AD50B2E",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436301994_1336600440369076_1784630617080369744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8aY6F5zuAHEQ7kNvwFEo9vs&_nc_oc=Ado805jkat0A7wVgGt7j9pFfC2uE2Ii7-15msx2tw1_SDTXYzr-7J7V7OO_JJiAG1Xw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNBZq7DvgaSIUAwXlBlKbq0LEb139XYC-eMA4xP0Ylsyg&oe=6AD53791",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436117663_404771252415095_2020530049652206282_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GDCemhhcMFQQ7kNvwGowBqa&_nc_oc=AdoPDduYRJQrB74dtwAj2RQAaSlA4jQip-kdsUtq_A0fN5TqAI5y8piGugrqdLgfPO0&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNFApMEMWdRZXjcMcnGuhmfwQG8iK0Z6YAa4xlRukvHlQ&oe=6AD50296",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/436301678_809497294367639_6466551418839152768_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cnOxRNjv7WEQ7kNvwFRCFOD&_nc_oc=AdrVTHqPWszC3f7xLwQbSDFZkOpAhLWsFAEKCZv_bzCYBUNRzVfSUXbKRtFXyfFTvF4&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQObSQ8rXER4cCvuCGVLp6BELO2Mh3sqZT_li84QHcHscw&oe=6AD534B1"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "play.google.com",
+      "link_url": "http://play.google.com/store/apps/details?id=com.wunderkauf.android",
+      "page_id": "119558112043985",
+      "page_likes": 2583,
+      "page_name": "Marktjagd",
+      "page_url": "https://www.facebook.com/marktjagd/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2024-04-27T07:00:00Z",
+      "title": "Wunderkauf Prospekte, Angebote",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1380421497550183",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1380421497550183",
+      "body": "Schluss mit Bare Minimum! Starte deine Ausbildung mit echtem Support, Top-Benefits und besten \u00dcbernahmechancen. Jetzt bewerben!",
+      "cards": [
+        {
+          "body": "Schluss mit Bare Minimum! Starte deine Ausbildung mit echtem Support, Top-Benefits und besten \u00dcbernahmechancen. Jetzt bewerben!",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "Dein Netto Treatment \ud83d\udd25",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQM4Mwe8ivMviB36B4e2dKvRSdCOk95H4Zmn-eXAJz8nggEecZUpzfQWT1lkrOdefrWoif3bmpbFCjpXt2Gvw00uS0KXnMklVCawvxDEp6h1pw.mp4?_nc_cat=111&_nc_oc=AdqhGvsXHaNHEmup38RibeuP1HYtJYWkU1Ut2pCLip_a6WefLKK9WYsM7i2rjt9aHCQ&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=R-trFZSjPCMQ7kNvwHnto9C&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0NDcxMTEyMjA4MDk0NDAsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5ed85b031e5ffcb2&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xMjRFQkE1NTRBQzRGNkY0QjkyNTZDM0I2QkNBOEE4Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzc4NDZENjQ2NjY0OTA0QjI4NjYzNzZDNTA0MzdBQTlCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbAu6Lk-oiSBRUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQP9p38MCLird5lhExnglLrJgEnjpa45uxlWLE78YDz9Rg&oe=6AD508F9"
+        },
+        {
+          "body": "Schluss mit Bare Minimum! Starte deine Ausbildung mit echtem Support, Top-Benefits und besten \u00dcbernahmechancen. Jetzt bewerben!",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "Dein Netto Treatment \ud83d\udd25",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQP1EYGUBqGAw2pUVPjrY-9wnPhFURPIwSXugBdCLiE2FWLJuo03jpmyFqYAPW63juIt_7wQT8YjYyuwpkESoxHxpaXeyRUQHC3YDQ1msZZ9IQ.mp4?_nc_cat=108&_nc_oc=Adr_Ixv2aPzjLtCU7iJIKHwtoSqBlpGDaQK_4PPGJ3Kprd8hajr0klke-dRoGITRi3c&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=W5qzLv9xatQQ7kNvwFh4L4O&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4NDgyNDE0MTk2MzkyNDMsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=f35943008b27386d&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83ODRBNjgyRDJFMzY3NEJDNDNFOTc5OUEzQkNDMjk4Ml9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzAxNDNGODQyMUY1QjU2MzlENUJCRUJERTREQzRBQ0FCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaW57bU573IBhUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQPowFFE-ZnpHZvFz74javBd1Hd57czoVCXeLSdzql1whA&oe=6AD52114"
+        }
+      ],
+      "cta": "Apply now",
+      "cta_type": "APPLY_NOW",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "netto-online.de",
+      "link_url": "http://www.netto-online.de/ausbildung",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-01T07:00:00Z",
+      "title": "Dein Netto Treatment \ud83d\udd25",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQM4Mwe8ivMviB36B4e2dKvRSdCOk95H4Zmn-eXAJz8nggEecZUpzfQWT1lkrOdefrWoif3bmpbFCjpXt2Gvw00uS0KXnMklVCawvxDEp6h1pw.mp4?_nc_cat=111&_nc_oc=AdqhGvsXHaNHEmup38RibeuP1HYtJYWkU1Ut2pCLip_a6WefLKK9WYsM7i2rjt9aHCQ&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=R-trFZSjPCMQ7kNvwHnto9C&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0NDcxMTEyMjA4MDk0NDAsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5ed85b031e5ffcb2&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xMjRFQkE1NTRBQzRGNkY0QjkyNTZDM0I2QkNBOEE4Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzc4NDZENjQ2NjY0OTA0QjI4NjYzNzZDNTA0MzdBQTlCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbAu6Lk-oiSBRUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQP9p38MCLird5lhExnglLrJgEnjpa45uxlWLE78YDz9Rg&oe=6AD508F9",
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQP1EYGUBqGAw2pUVPjrY-9wnPhFURPIwSXugBdCLiE2FWLJuo03jpmyFqYAPW63juIt_7wQT8YjYyuwpkESoxHxpaXeyRUQHC3YDQ1msZZ9IQ.mp4?_nc_cat=108&_nc_oc=Adr_Ixv2aPzjLtCU7iJIKHwtoSqBlpGDaQK_4PPGJ3Kprd8hajr0klke-dRoGITRi3c&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=W5qzLv9xatQQ7kNvwFh4L4O&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4NDgyNDE0MTk2MzkyNDMsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=f35943008b27386d&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83ODRBNjgyRDJFMzY3NEJDNDNFOTc5OUEzQkNDMjk4Ml9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzAxNDNGODQyMUY1QjU2MzlENUJCRUJERTREQzRBQ0FCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaW57bU573IBhUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQPowFFE-ZnpHZvFz74javBd1Hd57czoVCXeLSdzql1whA&oe=6AD52114"
+      ]
+    },
+    {
+      "ad_archive_id": "2210146706511368",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2210146706511368",
+      "body": "Du m\u00f6chtest kostenlos alle Highlight-Clips der Bundesliga auf RTL+ streamen? \u26bd\ud83d\udcfa\n\nDann kauf jetzt f\u00fcr 99\u20ac monatlich mit der Netto plus App ein, sichere dir dein RTL+ Abo gratis & streame alle Highlight-Clips der Bundesliga und der 2. Bundesliga kostenlos auf RTL+.\n\n#nettomarkendiscount #danngehdochzunetto\n\n*Mit KI und Herz erstellt",
+      "cards": [
+        {
+          "body": "Du m\u00f6chtest kostenlos alle Highlight-Clips der Bundesliga auf RTL+ streamen? \u26bd\ud83d\udcfa\n\nDann kauf jetzt f\u00fcr 99\u20ac monatlich mit der Netto plus App ein, sichere dir dein RTL+ Abo gratis & streame alle Highlight-Clips der Bundesliga und der 2. Bundesliga kostenlos auf RTL+.\n\n#nettomarkendiscount #danngehdochzunetto\n\n*Mit KI und Herz erstellt",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/833702291_1662692038595302_3173893697421664903_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bbN5wry2HuUQ7kNvwEKlm9r&_nc_oc=AdoT7nKbBPD12itSvZg0JOP64QrxkoTJjYnWqJNFauNHsEGvc3MIa-x9eJd1glni1XY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPFODXJFKAf5U0FYyqD2i6Df23zwlQjOlSXmNV8TusRdQ&oe=6AD5322A",
+          "link_url": null,
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Du m\u00f6chtest kostenlos alle Highlight-Clips der Bundesliga auf RTL+ streamen? \u26bd\ud83d\udcfa\n\nDann kauf jetzt f\u00fcr 99\u20ac monatlich mit der Netto plus App ein, sichere dir dein RTL+ Abo gratis & streame alle Highlight-Clips der Bundesliga und der 2. Bundesliga kostenlos auf RTL+.\n\n#nettomarkendiscount #danngehdochzunetto\n\n*Mit KI und Herz erstellt",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831479467_1628345185471569_3128956178400368138_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KlcgAN6AdcMQ7kNvwGSXK5W&_nc_oc=AdrcVAWoy8Xdxm4ab6WrwaPCqye9sC9hANjPRjNAQCNnPxsRqOQtla244ibBPmt3q18&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMj9QTXQuD_IFqejyv0LqwNQ7zLfp7pEPWHjoqkmdLefA&oe=6AD52CDA",
+          "link_url": null,
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/833702291_1662692038595302_3173893697421664903_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bbN5wry2HuUQ7kNvwEKlm9r&_nc_oc=AdoT7nKbBPD12itSvZg0JOP64QrxkoTJjYnWqJNFauNHsEGvc3MIa-x9eJd1glni1XY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPFODXJFKAf5U0FYyqD2i6Df23zwlQjOlSXmNV8TusRdQ&oe=6AD5322A",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831479467_1628345185471569_3128956178400368138_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KlcgAN6AdcMQ7kNvwGSXK5W&_nc_oc=AdrcVAWoy8Xdxm4ab6WrwaPCqye9sC9hANjPRjNAQCNnPxsRqOQtla244ibBPmt3q18&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMj9QTXQuD_IFqejyv0LqwNQ7zLfp7pEPWHjoqkmdLefA&oe=6AD52CDA"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "linktr.ee",
+      "link_url": "http://linktr.ee/netto_markendiscount",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-10-07T07:00:00Z",
+      "title": "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1100533722833414",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1100533722833414",
+      "body": "Alnatura jetzt bei Netto in ganz Berlin.",
+      "cards": [
+        {
+          "body": "Alnatura jetzt bei Netto in ganz Berlin.",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/834131185_1835071171250739_7452690671666817085_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lr5OmADER0Q7kNvwGPKMqY&_nc_oc=Ado6XF5XFtTclZ8ouLUt4YCMgxX-h2PIYd_Zn1slHzNJ5yQkfcPQdhu84s2hFBEeNkA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO65xcLyFHsECd5blvcwzNMxUN5M4O42iuxzifCFljw2g&oe=6AD50143",
+          "link_url": null,
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Alnatura jetzt bei Netto in ganz Berlin.",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831702882_1658534175859114_6891594239064905310_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DiUwLZquaHMQ7kNvwG0eWKa&_nc_oc=Ado2GCnf5lRbv4ZH9xQ-MN6Q1vyZ0g1ETGbrHY8S3C9jA_CieLZi1TneKbpU3p7nTTo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPvMKPX1-96JXeVRpO0pxpO2tD6z0xmmCrSuMn3tjzzbA&oe=6AD500AD",
+          "link_url": null,
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/834131185_1835071171250739_7452690671666817085_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3lr5OmADER0Q7kNvwGPKMqY&_nc_oc=Ado6XF5XFtTclZ8ouLUt4YCMgxX-h2PIYd_Zn1slHzNJ5yQkfcPQdhu84s2hFBEeNkA&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO65xcLyFHsECd5blvcwzNMxUN5M4O42iuxzifCFljw2g&oe=6AD50143",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831702882_1658534175859114_6891594239064905310_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DiUwLZquaHMQ7kNvwG0eWKa&_nc_oc=Ado2GCnf5lRbv4ZH9xQ-MN6Q1vyZ0g1ETGbrHY8S3C9jA_CieLZi1TneKbpU3p7nTTo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPvMKPX1-96JXeVRpO0pxpO2tD6z0xmmCrSuMn3tjzzbA&oe=6AD500AD"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "linktr.ee",
+      "link_url": "http://linktr.ee/netto_markendiscount",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "945888374772589",
+      "ad_url": "https://www.facebook.com/ads/library/?id=945888374772589",
+      "body": "Gem\u00fctlicher geht\u2019s kaum: Von deiner Wohnung direkt zu Netto und Alnatura-Bio-Produkte eint\u00fcten. Ab sofort in deinem Netto um die Ecke!\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "image",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/832778630_1769614084365223_1161776881827701125_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=im6KvttninMQ7kNvwH-n6s6&_nc_oc=Ado6uiC6_cRQs9UwGaRlgd5v0fEVkMj87HUxAN5yUTF0EGtRBdVq7-_JMGqyUuRPgd4&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQO_PrpxxaFxcEvGSEZK9oX15bz0IlqiklBagzcAMkhKJA&oe=6AD51156"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": null,
+      "videos": []
+    },
+    {
+      "ad_archive_id": "4656270941360179",
+      "ad_url": "https://www.facebook.com/ads/library/?id=4656270941360179",
+      "body": "Schnell noch Abendessen nebenan besorgen? Geht jetzt in Bio-Qualit\u00e4t bei deinem Netto. \ud83e\udd29\nAlnatura-Produkte einpacken und los geht\u2019s.\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "image",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/833242918_1126941160279103_3140354845856342334_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=APn57kdIyhMQ7kNvwEsje_D&_nc_oc=AdqfWJ4a06xDyg-r0eL0TMLLbriPTMXomp1oEFfUEiFQEL4LHOYyuwaOWMLGFZhXk7I&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNJLFQqz-BfWaOoOLVuasjy_k_G_tdeJR-DGag9bQszKQ&oe=6AD50E00"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": null,
+      "videos": []
+    },
+    {
+      "ad_archive_id": "28456688833998323",
+      "ad_url": "https://www.facebook.com/ads/library/?id=28456688833998323",
+      "body": "Manche Nachbarn bohren sonntags, diese neuen \u00d6kos versorgen dich mit feinstem Bio-Genuss. Ab sofort findest du Alnatura-Produkte in deinem Netto nebenan. Schau unbedingt mal rein!\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+      "cards": [
+        {
+          "body": "Manche Nachbarn bohren sonntags, diese neuen \u00d6kos versorgen dich mit feinstem Bio-Genuss. Ab sofort findest du Alnatura-Produkte in deinem Netto nebenan. Schau unbedingt mal rein!\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831642343_1040562408964016_4132417159593510964_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=V4rQDKefd68Q7kNvwF6wtte&_nc_oc=AdqLq5EE4ZJpmwoaPmLsUeywg5QnTJRgiTBHGyAoVUCt-bLEaQ6y1axC_wxAVe34mHo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMH8g-UFu5viC9pdcDXolwdW4Y2EfKeK5VmQnEk7JOSYg&oe=6AD5364C",
+          "link_url": null,
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Manche Nachbarn bohren sonntags, diese neuen \u00d6kos versorgen dich mit feinstem Bio-Genuss. Ab sofort findest du Alnatura-Produkte in deinem Netto nebenan. Schau unbedingt mal rein!\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/830454992_2164201160826128_9183363715210505877_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VtPWBXx0CuUQ7kNvwGRdobc&_nc_oc=AdqRkzCZHzn1nPuw9B-Fl7PCeYhX4m9R4KQ87GESckZNZY6uaUEtfcnBzsWL52yr2lU&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQP-_7ggldNWa2B7b8xCsAtXVOKOe3Lv32zeCu0Up6OhpA&oe=6AD537D2",
+          "link_url": null,
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Manche Nachbarn bohren sonntags, diese neuen \u00d6kos versorgen dich mit feinstem Bio-Genuss. Ab sofort findest du Alnatura-Produkte in deinem Netto nebenan. Schau unbedingt mal rein!\n\n#nettomarkendiscount #danngehdochzunetto\n*Mit KI und Herz erstellt.",
+          "cta": null,
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/830455028_28503079859341261_5286761469198756442_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6rLbUGhY-fcQ7kNvwFqO0tR&_nc_oc=Adqk8RaZ8jK0vRtlmPINpEro0nOkmw6S9teyfbXGyGGIITyRbS2geDPNOk3woDBTFUo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOgZd_nw71yy3aKKXT8EVknV-W_o9_8Fk0uPd4JGPFwdg&oe=6AD50C09",
+          "link_url": null,
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/831642343_1040562408964016_4132417159593510964_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=V4rQDKefd68Q7kNvwF6wtte&_nc_oc=AdqLq5EE4ZJpmwoaPmLsUeywg5QnTJRgiTBHGyAoVUCt-bLEaQ6y1axC_wxAVe34mHo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMH8g-UFu5viC9pdcDXolwdW4Y2EfKeK5VmQnEk7JOSYg&oe=6AD5364C",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/830454992_2164201160826128_9183363715210505877_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VtPWBXx0CuUQ7kNvwGRdobc&_nc_oc=AdqRkzCZHzn1nPuw9B-Fl7PCeYhX4m9R4KQ87GESckZNZY6uaUEtfcnBzsWL52yr2lU&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQP-_7ggldNWa2B7b8xCsAtXVOKOe3Lv32zeCu0Up6OhpA&oe=6AD537D2",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/830455028_28503079859341261_5286761469198756442_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6rLbUGhY-fcQ7kNvwFqO0tR&_nc_oc=Adqk8RaZ8jK0vRtlmPINpEro0nOkmw6S9teyfbXGyGGIITyRbS2geDPNOk3woDBTFUo&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOgZd_nw71yy3aKKXT8EVknV-W_o9_8Fk0uPd4JGPFwdg&oe=6AD50C09"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "linktr.ee",
+      "link_url": "http://linktr.ee/netto_markendiscount",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-05T07:00:00Z",
+      "title": "netto_marken_discount Official: TikTok, Instagram, Facebook | Linktree",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1603767694790666",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1603767694790666",
+      "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+      "cards": [
+        {
+          "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "G\u00f6nn dir Netto Treatment \ud83d\udc9b",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQM57k9Mefmuh-h2IT9rKdRgaHaTASaGkFOsjUz791Z_J-n9wY8fgwmHXTxjz3Zz1NlhFPXLfLffVVphoqv5mKNz9G_SUrNVuU4y-cpW0natsg.mp4?_nc_cat=106&_nc_oc=Adrrsb609Q9o6jeiNo9n3eP2JAh6yCcWr6YE9A7Z7_lxT51jR9eWbT253Cd2AuQwN6w&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=FBKbvqHBJp4Q7kNvwHn2rnS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI2MDEyMjk1NTcwNjE5NzgsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=16cae69e7bda3e6b&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DNjRBMzNGQUYwMTQ0MjJBM0RGMzY4N0NDOEIxMjFBOV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzVCNDRBQkYwQzZFQ0M2MTg4NUU2NzBDQzlFMzc0QUJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa05dK7vvOeCRUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&_nc_enc=UVnJjzGsMbDnXi1bIq6MIIcG97MW1rShIVIyKcvprzoQjGdDCdx-Rv7P8h2U4zaRFKM3o7wevVyW1HoG29ka8Srh1m8GBq0NJrtvP5gqly2lC8oDwFIjWirXDME&oh=00_AQN2lWf3wJR9rVmekgQ1TOB9RUtXFXPWW9C4acAKByTfSg&oe=6AD52482"
+        },
+        {
+          "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "G\u00f6nn dir Netto Treatment \ud83d\udc9b",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQN_oX5XSUoaQrjBguVQQ1nONwxW0-mbKMz3s1xnDarkUGk5MKsS1ldxyzr8C4wUE_b428YD2--7MQmlXu5gFxJALMGPLGMR2fB65K_1DcTSrQ.mp4?_nc_cat=101&_nc_oc=AdqkI6HU9KymvfKjDF1KMhAkNPlHRPhDmS51emzqq_cuUGALbk4j27-9Pu_RZSD9rcs&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=0DLKidv07HAQ7kNvwGZdfdr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE5NTg0NDQ3MzEzOTE1NzAsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=e81f73818255cbc5&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BODQ0OTI1QzZBNjc3NDdBOEIzQjNDMjgxNDQzNDFCQ19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzU4NDdFM0UyOENDRkMzRTM0RkZENDM0NEIwNEIwNjk3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACak-baovsz6BhUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMfLGhRweRxDzot-6__zK7PCiK-l9N5CKBrSwQO2298hQ&oe=6AD52CEF"
+        }
+      ],
+      "cta": "Apply now",
+      "cta_type": "APPLY_NOW",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "netto-online.de",
+      "link_url": "http://www.netto-online.de/ausbildung",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-01T07:00:00Z",
+      "title": "G\u00f6nn dir Netto Treatment \ud83d\udc9b",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQM57k9Mefmuh-h2IT9rKdRgaHaTASaGkFOsjUz791Z_J-n9wY8fgwmHXTxjz3Zz1NlhFPXLfLffVVphoqv5mKNz9G_SUrNVuU4y-cpW0natsg.mp4?_nc_cat=106&_nc_oc=Adrrsb609Q9o6jeiNo9n3eP2JAh6yCcWr6YE9A7Z7_lxT51jR9eWbT253Cd2AuQwN6w&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=FBKbvqHBJp4Q7kNvwHn2rnS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI2MDEyMjk1NTcwNjE5NzgsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=16cae69e7bda3e6b&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DNjRBMzNGQUYwMTQ0MjJBM0RGMzY4N0NDOEIxMjFBOV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzVCNDRBQkYwQzZFQ0M2MTg4NUU2NzBDQzlFMzc0QUJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa05dK7vvOeCRUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&_nc_enc=UVnJjzGsMbDnXi1bIq6MIIcG97MW1rShIVIyKcvprzoQjGdDCdx-Rv7P8h2U4zaRFKM3o7wevVyW1HoG29ka8Srh1m8GBq0NJrtvP5gqly2lC8oDwFIjWirXDME&oh=00_AQN2lWf3wJR9rVmekgQ1TOB9RUtXFXPWW9C4acAKByTfSg&oe=6AD52482",
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQN_oX5XSUoaQrjBguVQQ1nONwxW0-mbKMz3s1xnDarkUGk5MKsS1ldxyzr8C4wUE_b428YD2--7MQmlXu5gFxJALMGPLGMR2fB65K_1DcTSrQ.mp4?_nc_cat=101&_nc_oc=AdqkI6HU9KymvfKjDF1KMhAkNPlHRPhDmS51emzqq_cuUGALbk4j27-9Pu_RZSD9rcs&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=0DLKidv07HAQ7kNvwGZdfdr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE5NTg0NDQ3MzEzOTE1NzAsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=e81f73818255cbc5&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BODQ0OTI1QzZBNjc3NDdBOEIzQjNDMjgxNDQzNDFCQ19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzU4NDdFM0UyOENDRkMzRTM0RkZENDM0NEIwNEIwNjk3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACak-baovsz6BhUCKAJDMywXQDQAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMfLGhRweRxDzot-6__zK7PCiK-l9N5CKBrSwQO2298hQ&oe=6AD52CEF"
+      ]
+    },
+    {
+      "ad_archive_id": "1005561395852159",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1005561395852159",
+      "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+      "cards": [
+        {
+          "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "Green Flag Ausbildung \ud83d\udfe2",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQNKjlI4HkTaXb9nzOx8nP19zClL4nqMa96b5PkVS1wglqWbrceE1J8j6czTXkLeAp0EBwVwkCad49TpeLlFZik9BPLZvgXwEtQIKYx4-h3eTQ.mp4?_nc_cat=110&_nc_oc=AdoSjbLBuAYQe3GjTzVX1GeJbodNXyxzxf5Pv6DO4BTSpUDUXSd_2iyO-P-Mbhr_V4s&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=1W1i-XHsrk0Q7kNvwGlbscb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI3NjY1NjM5Mzk5Nzk4MTcyLCJhc3NldF9hZ2VfZGF5cyI6NDgsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjo2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=3f3d2605e3ecb727&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FODQ2QkZDNjEyQzI3Mjc2MkM3RkRENjlDNUMxQkI5Rl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzJGNEU4OUEwQjdGNzUyQkY4OTIzMDg1NzZGQjdEOTlEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa41sWOlPCkYhUCKAJDMywXQBgAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQPa93e84AYD8DItASfmyaRKilqorHLn4G5tzt8VhtAISQ&oe=6AD525A2"
+        },
+        {
+          "body": "Genau deine Expectations! Mit 36 Tagen Urlaub, Mitarbeiterrabatten und echtem R\u00fcckhalt im Team. Jetzt Ausbildungsplatz in der Filiale sichern.",
+          "cta": "Apply Now",
+          "image": null,
+          "link_url": "http://www.netto-online.de/ausbildung",
+          "title": "G\u00f6nn dir Netto Treatment \ud83d\udc9b",
+          "video": "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQNnh2jg2WknVvypQ8IOWa7QRvrP7w8gqUbvziLq7iP_7scVW80tcuzKCH7AH49uuNR7nUwE2BBY0gMbyYod7BbTLLR01e2GFVA0BupIVH39vg.mp4?_nc_cat=105&_nc_oc=AdqG03gUcceTzhFWXFfwbqupB3OMGCgRu5KcWnltK0P9euKPRydvB1KpZGA07O9kzAU&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=b7pYP0k9IAQQ7kNvwEx7VBe&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MjA4NjIzNjk1MzUyNDYsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=13becd748425b539&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DMDRBNTBGRjVDQkE2MzEzMDYyNUJGNzcxQkVBRjg5Ml9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzQ2NDFGQTdCNjJDRkZGMzkyQzczOTVEN0Y5QjdENUIzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACac1KDczYrhBRUCKAJDMywXQBgAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMAAFp3bKv2OlOUulPqGZrh2O9ZXtbSUymXq3OU5U1vrQ&oe=6AD510C3"
+        }
+      ],
+      "cta": "Apply now",
+      "cta_type": "APPLY_NOW",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "netto-online.de",
+      "link_url": "http://www.netto-online.de/ausbildung",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": null,
+      "spend": null,
+      "start_date": "2026-09-01T07:00:00Z",
+      "title": "Green Flag Ausbildung \ud83d\udfe2",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQNKjlI4HkTaXb9nzOx8nP19zClL4nqMa96b5PkVS1wglqWbrceE1J8j6czTXkLeAp0EBwVwkCad49TpeLlFZik9BPLZvgXwEtQIKYx4-h3eTQ.mp4?_nc_cat=110&_nc_oc=AdoSjbLBuAYQe3GjTzVX1GeJbodNXyxzxf5Pv6DO4BTSpUDUXSd_2iyO-P-Mbhr_V4s&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=1W1i-XHsrk0Q7kNvwGlbscb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI3NjY1NjM5Mzk5Nzk4MTcyLCJhc3NldF9hZ2VfZGF5cyI6NDgsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjo2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=3f3d2605e3ecb727&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FODQ2QkZDNjEyQzI3Mjc2MkM3RkRENjlDNUMxQkI5Rl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzJGNEU4OUEwQjdGNzUyQkY4OTIzMDg1NzZGQjdEOTlEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa41sWOlPCkYhUCKAJDMywXQBgAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQPa93e84AYD8DItASfmyaRKilqorHLn4G5tzt8VhtAISQ&oe=6AD525A2",
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQNnh2jg2WknVvypQ8IOWa7QRvrP7w8gqUbvziLq7iP_7scVW80tcuzKCH7AH49uuNR7nUwE2BBY0gMbyYod7BbTLLR01e2GFVA0BupIVH39vg.mp4?_nc_cat=105&_nc_oc=AdqG03gUcceTzhFWXFfwbqupB3OMGCgRu5KcWnltK0P9euKPRydvB1KpZGA07O9kzAU&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=b7pYP0k9IAQQ7kNvwEx7VBe&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MjA4NjIzNjk1MzUyNDYsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=13becd748425b539&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DMDRBNTBGRjVDQkE2MzEzMDYyNUJGNzcxQkVBRjg5Ml9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzQ2NDFGQTdCNjJDRkZGMzkyQzczOTVEN0Y5QjdENUIzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACac1KDczYrhBRUCKAJDMywXQBgAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMAAFp3bKv2OlOUulPqGZrh2O9ZXtbSUymXq3OU5U1vrQ&oe=6AD510C3"
+      ]
+    },
+    {
+      "ad_archive_id": "1451811640160446",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1451811640160446",
+      "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+      "cards": [
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/845554588_1143500644774642_5735171672225051023_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GWnN5_-OLo4Q7kNvwFcJO02&_nc_oc=AdpDq8Z8N93MO0u6sM_uBv9s4XrJdmM1CK5WR7n7ciXaBqwm5WtE0N2izQ9x9SNuimM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQONiTZW6FBdWYz1gAQHtIrQjTQ2K1P2WyCCc2C2ukkvrg&oe=6AD50DA2",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843161835_1403896078568224_7730953569687508128_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x_tBAqLjFPAQ7kNvwH7jf_e&_nc_oc=Ado49NgZavCGjFrCXE3sv0louMXxDkdyLmkZZInPd2bDRB5ozwxJlUawihzG0IruC0Y&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPwAC-tCqjfLC5ZMV_jLb_fXzpgIpNsksRiPKtdNyd4kg&oe=6AD52A11",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/847287522_1583290367148536_4959177107686200350_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pHGihktfvOoQ7kNvwE9Q_qO&_nc_oc=Adrw5-HtvMD-HCaQDSGRkOV2QOJmHIOt0DoRQbgD93KD9YtfGaYd-cpWiClMKdh-AkI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN9POBCMynUWphTWRSoazY9SEbHhZZ40K3UegoIcspvnw&oe=6AD5093C",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843533902_1112665574676892_2554137953917624772_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vOWaCzmp8TYQ7kNvwHpOdEl&_nc_oc=Adpjr09HvLH3GrYQoIdZaJjlw9e46GqbIUkvebQPsWIyJn42Tek4s9eBY3Ft7HqgIR8&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOk8Z8ckWIh4piyOdNnwku8J8QOilh037b86VdKgStW2A&oe=6AD513FD",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/845554588_1143500644774642_5735171672225051023_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GWnN5_-OLo4Q7kNvwFcJO02&_nc_oc=AdpDq8Z8N93MO0u6sM_uBv9s4XrJdmM1CK5WR7n7ciXaBqwm5WtE0N2izQ9x9SNuimM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQONiTZW6FBdWYz1gAQHtIrQjTQ2K1P2WyCCc2C2ukkvrg&oe=6AD50DA2",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843161835_1403896078568224_7730953569687508128_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x_tBAqLjFPAQ7kNvwH7jf_e&_nc_oc=Ado49NgZavCGjFrCXE3sv0louMXxDkdyLmkZZInPd2bDRB5ozwxJlUawihzG0IruC0Y&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPwAC-tCqjfLC5ZMV_jLb_fXzpgIpNsksRiPKtdNyd4kg&oe=6AD52A11",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/847287522_1583290367148536_4959177107686200350_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pHGihktfvOoQ7kNvwE9Q_qO&_nc_oc=Adrw5-HtvMD-HCaQDSGRkOV2QOJmHIOt0DoRQbgD93KD9YtfGaYd-cpWiClMKdh-AkI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN9POBCMynUWphTWRSoazY9SEbHhZZ40K3UegoIcspvnw&oe=6AD5093C",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843533902_1112665574676892_2554137953917624772_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vOWaCzmp8TYQ7kNvwHpOdEl&_nc_oc=Adpjr09HvLH3GrYQoIdZaJjlw9e46GqbIUkvebQPsWIyJn42Tek4s9eBY3Ft7HqgIR8&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOk8Z8ckWIh4piyOdNnwku8J8QOilh037b86VdKgStW2A&oe=6AD513FD",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/844461403_1090450580544377_7599468871379595606_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4adTZC9BS20Q7kNvwEYgdHK&_nc_oc=Adollx-norNn6CVmbZSoZw2TTBg2D22n5R8Nls3CAEaOHuk_mgj8xJuCWO_qayMnonE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOpl8yKNTKRzFNWtbRBnNdAPg6nJw30K_e_fKCkRPjYSw&oe=6AD5357D",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/846431217_1087627180729831_7664656052069025481_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FsDlT_yuQDMQ7kNvwF90tWf&_nc_oc=AdqqrlZXE8-g6E2obZRBMKHY73cFCiyVgn3sq17cnP8yps4M3FOGpPonMSEIRkqo7QE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOVRLXEgbb6-d6D0QxW4_QM6_1V2gGaeHroILzWrmu3-g&oe=6AD508EE",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/845554592_1845533783148914_8081282420608638316_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0JMESzc7xLIQ7kNvwGnC0a2&_nc_oc=AdqURxI7cZPVTuNzV3jLTLjSCf2Xigvw2Z-pCV4za5Hq6Z15E9QnrdTffpmwM_h5Xuw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM2-DQymBSjB3mbY9u6-ZTPlmolmtLQXFfaS9HTkNwJBw&oe=6AD51BEA",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        },
+        {
+          "body": "Das ist Vielfalt \u00e0 la Netto: Nicht verpassen, bei uns gibt\u2019s die Snack-Klassiker von Stastnik \u2013 in vier Geschmacksrichtungen: Von der feurig-scharfen Cabanossi \u00fcber die saftige K\u00e4se- und die feine Puten-Cabanossi bis zu den w\u00fcrzigen Winzerstangerln. Grund f\u00fcr 'ne Pause!\n\n#nettomarkendiscount #danngehdochzunetto",
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843839879_28913084281652865_5136009754220322376_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Bri2fC4EOpYQ7kNvwH0ueai&_nc_oc=AdrpJwqaD3m2eeyI6TcSieDAU3CmzH2Qm6M8pEWLv00ziwIgAnl7oHsgI4mdZ6TmjPk&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMc8FhY_pbmICJ441hckwu-ThLfEMnI-zuo-pcRWyQ8Kg&oe=6AD50A61",
+          "link_url": "https://www.netto-online.de/filialfinder",
+          "title": null,
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "dco",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/845554588_1143500644774642_5735171672225051023_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GWnN5_-OLo4Q7kNvwFcJO02&_nc_oc=AdpDq8Z8N93MO0u6sM_uBv9s4XrJdmM1CK5WR7n7ciXaBqwm5WtE0N2izQ9x9SNuimM&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQONiTZW6FBdWYz1gAQHtIrQjTQ2K1P2WyCCc2C2ukkvrg&oe=6AD50DA2",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843161835_1403896078568224_7730953569687508128_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x_tBAqLjFPAQ7kNvwH7jf_e&_nc_oc=Ado49NgZavCGjFrCXE3sv0louMXxDkdyLmkZZInPd2bDRB5ozwxJlUawihzG0IruC0Y&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPwAC-tCqjfLC5ZMV_jLb_fXzpgIpNsksRiPKtdNyd4kg&oe=6AD52A11",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/847287522_1583290367148536_4959177107686200350_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pHGihktfvOoQ7kNvwE9Q_qO&_nc_oc=Adrw5-HtvMD-HCaQDSGRkOV2QOJmHIOt0DoRQbgD93KD9YtfGaYd-cpWiClMKdh-AkI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN9POBCMynUWphTWRSoazY9SEbHhZZ40K3UegoIcspvnw&oe=6AD5093C",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843533902_1112665574676892_2554137953917624772_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vOWaCzmp8TYQ7kNvwHpOdEl&_nc_oc=Adpjr09HvLH3GrYQoIdZaJjlw9e46GqbIUkvebQPsWIyJn42Tek4s9eBY3Ft7HqgIR8&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOk8Z8ckWIh4piyOdNnwku8J8QOilh037b86VdKgStW2A&oe=6AD513FD",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/844461403_1090450580544377_7599468871379595606_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4adTZC9BS20Q7kNvwEYgdHK&_nc_oc=Adollx-norNn6CVmbZSoZw2TTBg2D22n5R8Nls3CAEaOHuk_mgj8xJuCWO_qayMnonE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOpl8yKNTKRzFNWtbRBnNdAPg6nJw30K_e_fKCkRPjYSw&oe=6AD5357D",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/846431217_1087627180729831_7664656052069025481_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FsDlT_yuQDMQ7kNvwF90tWf&_nc_oc=AdqqrlZXE8-g6E2obZRBMKHY73cFCiyVgn3sq17cnP8yps4M3FOGpPonMSEIRkqo7QE&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOVRLXEgbb6-d6D0QxW4_QM6_1V2gGaeHroILzWrmu3-g&oe=6AD508EE",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/845554592_1845533783148914_8081282420608638316_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0JMESzc7xLIQ7kNvwGnC0a2&_nc_oc=AdqURxI7cZPVTuNzV3jLTLjSCf2Xigvw2Z-pCV4za5Hq6Z15E9QnrdTffpmwM_h5Xuw&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQM2-DQymBSjB3mbY9u6-ZTPlmolmtLQXFfaS9HTkNwJBw&oe=6AD51BEA",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/843839879_28913084281652865_5136009754220322376_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Bri2fC4EOpYQ7kNvwH0ueai&_nc_oc=AdrpJwqaD3m2eeyI6TcSieDAU3CmzH2Qm6M8pEWLv00ziwIgAnl7oHsgI4mdZ6TmjPk&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQMc8FhY_pbmICJ441hckwu-ThLfEMnI-zuo-pcRWyQ8Kg&oe=6AD50A61"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "netto-online.de",
+      "link_url": "https://www.netto-online.de/filialfinder",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "NettoDE",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1145472361496983",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1145472361496983",
+      "body": "Wir sind jetzt auch bei Netto! \ud83c\udf89\n\nAb sofort in mehr als 600 Filialen im Niederrhein, Rheinland und ausgew\u00e4hlten Regionen Bayerns erh\u00e4ltlich! \u2764\ufe0f\ud83d\udd25",
+      "cards": [
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841651530_2058343768140391_2053276077791690791_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2KbPsMggpo0Q7kNvwFUffzt&_nc_oc=Adp69yUA23rUSzzUE0FZuQLj--SgBnbdXcov3iJj1T2gkZCPxJLSHFfsCRpNfoIZJPI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNpXeKKqo8lGsOc1hVxvUWjw9WzPv8Wn_n3GXCYoSClFg&oe=6AD532C1",
+          "link_url": "https://mangal-lp10.de/",
+          "title": "MANGAL x LP10 \u2013 Kebab of Champions",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841426386_3385056798369545_8016045920353624993_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=La5EalIWaHAQ7kNvwEqvCtZ&_nc_oc=AdrMwJIhCGMvre4yLE7ecvwvsKuRla2M0WgcpIWJ0noxpu6NjRFXh1ngBtTXoyhN9sY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOQLJVT3zn1TK-aSQtSHqKQFgln_K54fq1t5UC60Bpfdg&oe=6AD5166A",
+          "link_url": "https://mangal-lp10.de/",
+          "title": "MANGAL x LP10 \u2013 Kebab of Champions",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/840002200_1465962608929479_8626280296701351806_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WGOvEr-RgXYQ7kNvwGS-w8S&_nc_oc=AdqZwNVZxNbIpsG0AVoI2x9vBj0NpOI1m9PA0VTOLk0Pvert7JAvE8OT29kPJ7JU8zU&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPa8TkOxcvEOesDiPpnOYlqZ5D0o9SoYn8k5W_w3nn7yA&oe=6AD5285E",
+          "link_url": "https://mangal-lp10.de/",
+          "title": "MANGAL x LP10 \u2013 Kebab of Champions",
+          "video": null
+        },
+        {
+          "body": null,
+          "cta": "See Details",
+          "image": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841066262_1114794770892998_140174266972032740_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VcgzhGeufIYQ7kNvwEcQJY8&_nc_oc=AdoxP84cbz58POdcrXJ5oksy72F3SO0xRgE4abso-Qn2BSi_QEHGonJsO9ZTfcRwduI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPi6vh5ZRLPDji92xjoSi4J3AKa6F-sdugoAlj4uq2VHw&oe=6AD50E09",
+          "link_url": "https://mangal-lp10.de/",
+          "title": "MANGAL x LP10 \u2013 Kebab of Champions",
+          "video": null
+        }
+      ],
+      "cta": "See details",
+      "cta_type": "SEE_DETAILS",
+      "currency": null,
+      "display_format": "carousel",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841651530_2058343768140391_2053276077791690791_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2KbPsMggpo0Q7kNvwFUffzt&_nc_oc=Adp69yUA23rUSzzUE0FZuQLj--SgBnbdXcov3iJj1T2gkZCPxJLSHFfsCRpNfoIZJPI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQNpXeKKqo8lGsOc1hVxvUWjw9WzPv8Wn_n3GXCYoSClFg&oe=6AD532C1",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841426386_3385056798369545_8016045920353624993_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=La5EalIWaHAQ7kNvwEqvCtZ&_nc_oc=AdrMwJIhCGMvre4yLE7ecvwvsKuRla2M0WgcpIWJ0noxpu6NjRFXh1ngBtTXoyhN9sY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQOQLJVT3zn1TK-aSQtSHqKQFgln_K54fq1t5UC60Bpfdg&oe=6AD5166A",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/840002200_1465962608929479_8626280296701351806_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WGOvEr-RgXYQ7kNvwGS-w8S&_nc_oc=AdqZwNVZxNbIpsG0AVoI2x9vBj0NpOI1m9PA0VTOLk0Pvert7JAvE8OT29kPJ7JU8zU&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPa8TkOxcvEOesDiPpnOYlqZ5D0o9SoYn8k5W_w3nn7yA&oe=6AD5285E",
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/841066262_1114794770892998_140174266972032740_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VcgzhGeufIYQ7kNvwEcQJY8&_nc_oc=AdoxP84cbz58POdcrXJ5oksy72F3SO0xRgE4abso-Qn2BSi_QEHGonJsO9ZTfcRwduI&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQPi6vh5ZRLPDji92xjoSi4J3AKa6F-sdugoAlj4uq2VHw&oe=6AD50E09"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "mangal-lp10.de",
+      "link_url": "https://mangal-lp10.de/",
+      "page_id": "107978710002878",
+      "page_likes": 15744,
+      "page_name": "Mangal D\u00f6ner",
+      "page_url": "https://www.facebook.com/mangaldoener/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "threads"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-10T07:00:00Z",
+      "title": "Mangal D\u00f6ner",
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1835465670800466",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1835465670800466",
+      "body": "Mhhm \u2026 Zeit f\u00fcr eine kleine Schoko-Auszeit. \ud83c\udf6b\ud83c\udde8\ud83c\udded\n\nOb cremig, fruchtig, klassisch oder mit einem bunten Extra: Unsere Schweizer Schokolade bringt Abwechslung ins Naschregal. Von zarter Alpenmilch \u00fcber feinen Joghurt bis hin zu Caramel, Joghurt Erdbeer oder Confetti ist f\u00fcr jede Genusslaune etwas dabei. Und das f\u00fcr nur 1,49 \u20ac pro Tafel!\n\nWelche Sorte w\u00fcrdest du zuerst probieren?\n\n#nettomarkendiscount #danngehdochzunetto\n\n*Mit KI und Herz erstellt.",
+      "cards": [],
+      "cta": null,
+      "cta_type": null,
+      "currency": null,
+      "display_format": "image",
+      "end_date": null,
+      "images": [
+        "https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.35426-6/840882710_2617817095317235_2930064138772056057_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=g3TTiKb73acQ7kNvwHMtVpg&_nc_oc=AdqyIS7VL15TfMaB-StZ9xpgx-26hD_VRVq_gijhdBrBlNYq0hnGUtrimNTz2g6duBY&_nc_zt=14&_nc_ht=scontent.fmkc1-1.fna&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&oh=00_AQN0CA7Lslg61zb61jaHcATjhCx7wEuRhqGGLwI_nr4atw&oe=6AD52D9A"
+      ],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": null,
+      "link_url": null,
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-13T07:00:00Z",
+      "title": null,
+      "videos": []
+    },
+    {
+      "ad_archive_id": "1106373948521679",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1106373948521679",
+      "body": "Wie viel bekomme ich diese Woche f\u00fcr 15\u20ac bei Netto Marken-Discount? #danngehdochzunetto",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "Die Angebote vom 12.10. - 17.10.",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOD6wLhUlVKkVTAh6_VByUlmRrrV37-0q7nFh2rQaln4dWpBKphRnB1blanKe0eSsVNAcuNsPGlEtEHru_lYvMsslCsUHc5MmREQ9TE2Rl5aw.mp4?_nc_cat=110&_nc_oc=Adp_g_X-GXIakQpd6BPOHIEj7TzOyCtVzANt2pUfiWHiTVx__X0AmyiH1937rvOdpq0&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=iA0vx-PAD9IQ7kNvwGJwGR5&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4NTU4NDgwMTc3MTU0MDIwLCJhc3NldF9hZ2VfZGF5cyI6NCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=98eb1f499986c540&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MDQ4MjdBMDE2MkM0NjI1QTc1NUI0ODk2MzNFMjEzNl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzVDOEEyREI5RkI3MjQxNDc4NDY2OEM2NzBCN0FBQTJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbIn8akqvK6ZRUCKAJDMywXQEIiDEm6XjUYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQN7Vs_1XIrMSn3SLCAs41vmzcZ-sop9DxrYOyoP9kbAVg&oe=6AD50EAE"
+      ]
+    },
+    {
+      "ad_archive_id": "1122524430149733",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1122524430149733",
+      "body": "Von Nutella bis Skyr, vom 12.-17.10. richtig sparen. #nettomarkendiscount #danngehdochzunetto",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "So viele Angebote in 30 Sekunden",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQNc5dOu22Ggr2NP-60UF2_ipda70p8lG0LdFyS3E06heXU4Sfrr2c7XGG_HHWaeJz7zcju_budlke5IWdyDsWindmJm1lzI79nO_QtepBx0Pg.mp4?_nc_cat=101&_nc_oc=AdqvVMD8qlsHT96Ru1aBOEa5nO_-DiLWC9BiS1303s58IXOYqI5Rgzh9Bqx7hBN57ZY&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=h5zP8RxdNTwQ7kNvwFxTM8v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIxODAxNjc0Mzk1ODgyMjksImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NDEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=6aaec77e77ea3f9b&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84RTRDOUU1ODQ1Qjg0Q0UxQkI1RTM4NDYzMDg2NjYxMF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0RFN0U1NzQ0MjhCQzRGNDlBMzk3N0NCN0Y4QTkwOTQ3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaK7sycubbfBxUCKAJDMywXQESMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQP5cQdGOeS_doEuW50Ajd89NbwMcPkEmRS1T00XjR54CQ&oe=6AD51337"
+      ]
+    },
+    {
+      "ad_archive_id": "1094553136285920",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1094553136285920",
+      "body": "Unsere Lieblingsartikel diese Woche im Angebot #nettomarkendiscount #danngehdochzunetto",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "So g\u00fcnstig sind die Netto Angebote!",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQPv8RDb_55q4S5sKO9LwD9n_fcW-9HxpTzmjGrRuPirxmUIMhGM61nDXipsEdKiSxbNt8dbWU8zRM-PNx988Ee_7__NrQbG37hqMlzK7bEWPg.mp4?_nc_cat=101&_nc_oc=Adoz4lWG13Uz7A_qEvwzDoIwKXSKymJXaSdQH1kxHskND3cAF6RT0QMION1Sd0a48is&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=hHinVZR6anMQ7kNvwFPn6Yb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI2MzYzMzM1OTAxMzkyODQsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MzksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=3fc8ce6c11259a47&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9ENTJCMDBDQkE5ODY0NTg4Qjk0ODk5MTExNDc2OUU5M19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhBNUQwMEY1QjUxRTQ4NENCOTE4NkMyNjMyRjYwRTkwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaoxrLy5-6uCRUCKAJDMywXQEO3rhR64UgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQOuMP1X4BfLp2fl9A2kv3ghjEXzk6bSlbGXEpuQmcmNlg&oe=6AD504E7"
+      ]
+    },
+    {
+      "ad_archive_id": "1461865765368827",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1461865765368827",
+      "body": "Lieblingsartikel im Angebot? Schmeckt gleich noch viel besser! #nettomarkendiscount",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "So schmecken die Netto Angebote!",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOnEVZdv36MOWmjoDVcbRO6WWBNa4CjngmCZvOhAbuh2srNp2N9X4HrNX0MoAd6bfkN3JODHeNj0SIpLC9XNaNnBI1i78znBs-5enc6s8wSIg.mp4?_nc_cat=101&_nc_oc=AdqpEnl0T1SzMQUtVWk6iZaOWQrjqUr-cGU78O8og66MBM_aChbnUSq0BWsonQPIwzI&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=obn-cFQhquQQ7kNvwEswITr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNTc2LmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwOTE4Mzc0MDM1NTc3MDUsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=5efee94e354f66f1&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8zNjg1RjZFQTlDNEI0ODg3QUE1MjM3QjRCRjI0MDk0N19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FFNzM3NjdGQzY0RjRBRUQ4OTcwN0JGNkVCQkIzMTg5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaSvbvJpsHwAxUCKAJDMywXQEk7peNT988YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMnEw_unqHCOQEGblSa6y1rclRhQycBWYbRAy3Xy7xRAw&oe=6AD5322B"
+      ]
+    },
+    {
+      "ad_archive_id": "959454576709874",
+      "ad_url": "https://www.facebook.com/ads/library/?id=959454576709874",
+      "body": "Butterkekse, Macarons, Doppelkekse & Ingwer Shots sind diese Woche so g\u00fcnstig! #nettomarkendiscount",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "Nur diese Woche bei Netto",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOrnDdbQ_bcnrSCxyY3nxLVH9fnsbhbzRr1YCR8471fYzXpLEFdJCW4epuUCUpR1PD1Um_lTPe0YMzHIdY4ACzTvEt3sePGSv2PXRxSA1_w6Q.mp4?_nc_cat=101&_nc_oc=AdrfG61fP_oc5A73Wf_29LBmE63H9iSigS7xeFK6RcRAOt601TJtRdBmCypGKuRnX4c&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=g9FAJ68Sl6sQ7kNvwHNcXqY&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0Mjk3MDM4OTUxOTg2MzIsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=4dfaf008c683e3cc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83RkU3NzI2NjdBRUM0NEZBQTJEMkI2Nzk1QkY4OTI3MF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzc0MzkzQzU4OUZFQTQ2RDQ4Q0Q0ODk4Qjg2RkU0QkYwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbQrvWM3JOKBRUCKAJDMywXQDtdsi0OVgQYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMFh0xrqzU1t-eBy4P2TIdO-QBz8dd6mHJFZlX9h7xkQQ&oe=6AD5077F"
+      ]
+    },
+    {
+      "ad_archive_id": "2656067468161159",
+      "ad_url": "https://www.facebook.com/ads/library/?id=2656067468161159",
+      "body": "Melitta Bella Crema, Skyr, Baguette, hitschies & Windeln diese Woche so g\u00fcnstig #nettomarkendiscount",
+      "cards": [],
+      "cta": "Learn more",
+      "cta_type": "LEARN_MORE",
+      "currency": null,
+      "display_format": "video",
+      "end_date": null,
+      "images": [],
+      "impressions": null,
+      "is_active": true,
+      "link_caption": "www.netto-online.de",
+      "link_url": "https://www.netto-online.de/",
+      "page_id": "1707331526145514",
+      "page_likes": 566274,
+      "page_name": "Netto Marken-Discount",
+      "page_url": "https://www.facebook.com/nettomarkendiscount/",
+      "paid_for_by": null,
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "same_creative_ads": 1,
+      "spend": null,
+      "start_date": "2026-10-12T07:00:00Z",
+      "title": "Wieder so coole Angebote bei Netto",
+      "videos": [
+        "https://video.fmkc1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQPCGVK-dqbqtqON13_QeA67kEN5407nLMvyJ7GZLF6bbsfQmlu_sd74koORjd44JCNQvDe5ATY0GkUGuNjkpbRRS0T7FCeui51q4dVzzB22iQ.mp4?_nc_cat=102&_nc_oc=AdrL_UVx9At5_2Ucujxq9G0-Rv3PL99vQhqefynmH39DMxqLcGOS1iLF9TI6smue__E&_nc_sid=b66105&_nc_ht=video.fmkc1-1.fna.fbcdn.net&_nc_ohc=LnAea9d5_2cQ7kNvwG268w7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0NjQyNTA4Mzg5Mzk0NzIsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NDksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9906ccc8239f8950&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC82OUQ2NDBEM0E0ODU0NEY2ODU1MzY3OURFMkQxMTU3Rl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzk0OTAyMTYwQ0FFRTRCNDhCMzg0NUI3Q0NDNkQxMzQxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACag3e_xzu6ZBRUCKAJDMywXQEj3bItDlYEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=bm-YnIG-ly5YWzYW1H5dLg&_nc_ss=70289&_nc_zt=28&oh=00_AQMlQBFxNstg0rWWNJ2sfVGNDjrhpOss4_bS9_qcTxt3OA&oe=6AD50A02"
+      ]
+    }
+  ],
+  "usage": {
+    "boxes": [
+      "gate",
+      "recipe"
+    ],
+    "cache": "miss",
+    "engine": "recipe",
+    "lines": [
+      {
+        "about": "the call",
+        "boxes": [
+          "gate"
+        ],
+        "cache": "miss",
+        "call": "recipes",
+        "engine": "gate",
+        "units": 1
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "none",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      },
+      {
+        "attempts": 1,
+        "cache": "api",
+        "call": "scrape",
+        "engine": "api",
+        "proxy": "residential",
+        "units": 1,
+        "url": "https://www.facebook.com/\u2026"
+      }
+    ],
+    "remaining_before": {
+      "concurrent": 365,
+      "requests": 463,
+      "search": 2995
+    },
+    "units": 8
+  },
+  "version": 2
+}
