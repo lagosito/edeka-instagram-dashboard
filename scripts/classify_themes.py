@@ -30,11 +30,15 @@ Antworte AUSSCHLIESSLICH mit einem JSON-Array, ohne Markdown:
 
 
 def api_key():
+    env = os.environ.get('ORCAROUTER_API_KEY')
+    if env:
+        return env
     path = os.path.expanduser('~/.hermes/CREDENTIALS_MASTER.env')
-    for line in open(path):
-        if line.startswith('ORCAROUTER_API_KEY='):
-            return line.split('=', 1)[1].strip().strip('"').strip("'")
-    raise SystemExit('ORCAROUTER_API_KEY fehlt')
+    if os.path.exists(path):
+        for line in open(path):
+            if line.startswith('ORCAROUTER_API_KEY='):
+                return line.split('=', 1)[1].strip().strip('"').strip("'")
+    raise SystemExit('ORCAROUTER_API_KEY fehlt (Env oder Credentials-Datei)')
 
 
 KEY = api_key()
