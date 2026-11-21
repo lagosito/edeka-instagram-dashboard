@@ -61,8 +61,16 @@ C3=$(curl -s -o /dev/null -w '%{http_code}' "https://$PROD_ALIAS/data/dashboard.
 [ "$C1" = "401" ] || fail "Deployment-URL gibt $C1 statt 401"
 [ "$C2" = "401" ] || fail "Alias $PROD_ALIAS gibt $C2 statt 401"
 [ "$C3" = "401" ] || fail "Alias dashboard.json gibt $C3 statt 401"
-vercel curl '/data/dashboard.json' --deployment "$URL" 2>/dev/null | grep -q "Jahresstart 2027" \
-  || fail "interner Content nicht erreichbar (Auth-Check)"
+# Auth-Check mit Retries: kurz nach dem Deploy kann der Alias noch umziehen
+_ok=0
+for _t in 1 2 3; do
+  if vercel curl "/data/dashboard.json" --deployment "$URL" 2>/dev/null | grep -q "Jahresstart 2027" \
+     && vercel curl "/data/dashboard.json" --deployment "$PROD_ALIAS" 2>/dev/null | grep -q "Jahresstart 2027"; then
+    _ok=1; break
+  fi
+  sleep 8
+done
+[ "$_ok" = "1" ] || fail "interner Content nicht erreichbar (Auth-Check)"
 
 # 7) Repo prüfen + Worktree entfernen (Repo nie mit internem Stand)
 cd "$REPO"
