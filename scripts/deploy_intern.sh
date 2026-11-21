@@ -49,9 +49,9 @@ if [ ! -s index.html ]; then fail "index.html leer"; fi
 grep -q "Jahresstart 2027" data/dashboard.json || fail "interner Content fehlt (Jahresstart)"
 
 # 5) Deploy von dort aus nach Vercel
-OUT=$(vercel deploy --prod --yes --json) || fail "vercel deploy"
-URL=$(printf '%s' "$OUT" | python3 -c 'import sys,json;print(json.load(sys.stdin).get("url",""))')
-if [ -z "$URL" ]; then fail "keine Deployment-URL im Deploy-Output"; fi
+DEPLOY_OUT=$(vercel deploy --prod --yes 2>&1) || { printf '%s\n' "$DEPLOY_OUT" | tail -5; fail "vercel deploy"; }
+URL=$(printf '%s\n' "$DEPLOY_OUT" | grep -m1 '^Production:' | grep -oE 'https://[^ ]+' | head -1 | sed 's|https://||')
+if [ -z "$URL" ]; then printf '%s\n' "$DEPLOY_OUT" | tail -8; fail "keine Deployment-URL im Deploy-Output"; fi
 
 # 6) Schutz-Check: anonym überall 401, mit Auth voller interner Content
 sleep 3
