@@ -355,7 +355,7 @@ _thema_map = {}
 if os.path.exists(THEMES_PATH):
     for _r in json.load(open(THEMES_PATH)):
         _thema_map[_r['id']] = _r['thema']
-KATEGORIEN = ["Angebot/Preis", "Rezept/Food", "Humor/Team/Azubi", "Region/Lieferant",
+KATEGORIEN = ["Angebot/Preis", "Rezept/Food", "Gesund/Bio/Protein", "Humor/Team/Azubi", "Region/Lieferant",
               "Recruiting/Karriere", "Gewinnspiel", "Event/Aktion", "Sonstiges"]
 
 for _p in posts:
@@ -1101,13 +1101,7 @@ JS = """
 function sec(id, el){
   document.querySelectorAll('.sec').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
-  document.querySelectorAll('.tab2,.sic').forEach(t=>t.classList.remove('on'));
-  if(el) el.classList.add('on');
-  const idx = ['s1','s2','s3','s4','s5'].indexOf(id);
-  const items = document.querySelectorAll('.tab2');
-  if(idx>=0 && items[idx]) items[idx].classList.add('on');
-  const sic = document.querySelectorAll('.sic');
-  if(idx>=0 && sic[idx]) sic[idx].classList.add('on');
+  document.querySelectorAll('.tab2').forEach(t=>t.classList.toggle('on', t.getAttribute('data-s')===id));
   window.scrollTo(0,0);
 }
 function tab(id, el){
@@ -1195,6 +1189,499 @@ TW_ADS = ('<div class="tw"><table><thead><tr><th>Marke</th><th class="num">Anzei
           '<th class="num">Neuester Start</th></tr></thead><tbody>' + t_ads() + '</tbody></table></div>')
 TW_FRAME = '<div class="tw"><table class="compact"><tbody>' + FRAME_ROWS + '</tbody></table></div>'
 
+
+# ---------------- 00 · Was jetzt tun (Klartext-Empfehlungen, automatisch aus den Daten) ----------------
+def _z(v, dec=1):
+    return de(v, dec)
+
+def _mal(a, b):
+    if not b:
+        return '–'
+    f = a / b
+    return (f'{f:.0f}×' if f >= 3 else f'{f:.1f}×'.replace('.', ','))
+
+# Basis = normaler Beitrag (Median-ER aller Beitraege mit Like-Wert) - gleiche Masseinheit wie Themen/Formate/Uhrzeiten
+_ALL_ER = [((q.get('likes') or 0) + (q.get('comments') or 0)) / q['followers'] * 100 for q in posts if q.get('likes_ok') and q['followers']]
+POST_MED = statistics.median(_ALL_ER) if _ALL_ER else OER_MED
+
+_TH_OK = [r for r in THEMEN_ROWS if r['n'] >= 20 and r['thema'] != 'Sonstiges']
+_TH_BEST = _TH_OK[:2] if len(_TH_OK) >= 2 else _TH_OK
+_TH_WORST = _TH_OK[-1] if _TH_OK else None
+_TH_SUM = sum(r['n'] for r in _TH_OK) or 1
+
+def _empf(r):
+    if r['thema'] == 'Sonstiges':
+        return ('grey', 'Thema schärfen')
+    if r['med'] >= POST_MED:
+        return ('green', 'Mehr davon')
+    if r['med'] >= POST_MED * 0.7:
+        return ('amber', 'Aufpeppen')
+    return ('red', 'Umbauen')
+
+_SCHWACH = [r for r in _TH_OK if _empf(r)[0] != 'green']
+_SCHWACH_PCT = sum(r['n'] for r in _SCHWACH) / max(1, sum(r['n'] for r in THEMEN_ROWS)) * 100
+
+# Format
+_FMT_BY = {r['label']: r for r in fmt_rows}
+_FMT_BASE = FMT_MED_BEST
+_FMT_BONUS_LAB = FL_FMT.most_common(1)[0][0] if FL_FMT else None
+_FMT_BONUS = _FMT_BY.get(_FMT_BONUS_LAB) if _FMT_BONUS_LAB else None
+_FMT_BONUS_N = FL_FMT.most_common(1)[0][1] if FL_FMT else 0
+
+# Thema x Format: beste Kombinationen
+_COMBOS = []
+for (_t, _k), _vals in _MATRIX.items():
+    if len(_vals) >= 10 and _t not in ('Sonstiges', 'nicht zugeordnet'):
+        _COMBOS.append({'thema': _t, 'fmt': FMT_DE.get(_k, _k), 'med': statistics.median(_vals), 'n': len(_vals)})
+_COMBOS.sort(key=lambda c: -c['med'])
+_COMBOS = _COMBOS[:3]
+
+# Zeit
+_HR_BEST = sorted(HR_ROWS, key=lambda r: -r['med'])[:2]
+_HR_VOLL = max(HR_ROWS, key=lambda r: r['n']) if HR_ROWS else None
+_WD_BEST = WD_ORD[0] if WD_ORD else None
+_WD_WORST = WD_ORD[-1] if WD_ORD else None
+
+# Wettbewerb
+_ED = ADS_BRAND.get('edeka', {'dco': 0, 'recruiting': 0, 'n': 0})
+_KONK = {k: v for k, v in ADS_BRAND.items() if k != 'edeka' and v.get('n')}
+_DCO_TOP = max(_KONK, key=lambda k: _KONK[k]['dco']) if _KONK else None
+_REC_TOP = max(_KONK, key=lambda k: _KONK[k]['recruiting']) if _KONK else None
+
+# --- Verständlichkeit: jede Zahl mit Urteil und Vergleich ---
+BENCH_ER = 0.36   # Rival IQ, 2025 Social Media Industry Benchmark Report: Median-Engagement-Rate Instagram, alle Branchen
+BENCH_QUELLE = 'Rival IQ, Benchmark-Report 2025'
+
+def _rel(v, base=None):
+    """Vergleich mit einem normalen Beitrag, in Worten."""
+    base = base or POST_MED
+    if not base:
+        return ('info', '–')
+    f = v / base
+    if f >= 1.15:
+        return ('gut', (f'{f:.0f}× so gut' if f >= 2.95 else f'{f:.1f}× so gut'.replace('.', ',')))
+    if f <= 0.87:
+        return ('schwach', f'{(1 - f) * 100:.0f} % schwächer')
+    return ('info', 'wie normal')
+
+def _bruch(anteil):
+    if anteil <= 0:
+        return '0'
+    n = round(1 / anteil)
+    return f'1 von {n}' if n >= 2 else f'{anteil * 100:.0f} %'
+
+ZIEL_DE = {'Umsatz': 'Umsatz', 'Frequenz': 'Frequenz', 'Preiswahrnehmung': 'Preiswahrnehmung'}
+def _ziele(lst):
+    return '<div class="ziele"><span class="zlbl">Zahlt ein auf</span>' + ''.join(f'<span class="ziel">{esc(z)}</span>' for z in lst) + '</div>'
+
+def _hebel(nr, titel, warum, tun, wer, ziele, span=3):
+    return f"""<div class="card span{span} hebel">
+          <div class="hnr">{nr}</div>
+          <h3>{titel}</h3>
+          <div class="hwarum"><span class="hlbl">Warum</span>{warum}</div>
+          <div class="htun"><span class="hlbl">So geht's</span>{tun}</div>
+          {_ziele(ziele)}
+          <div class="hwer">{wer}</div>
+        </div>"""
+
+_HEBEL = []
+if _TH_BEST and _TH_WORST:
+    _b = _TH_BEST[0]; _w = _TH_WORST
+    _preis = 'Angebot' in _w['thema']
+    _HEBEL.append(_hebel(1,
+        ('Preis beweisen – mit Menschen statt Preisschildern' if _preis
+         else f"{esc(_w['thema'])} umbauen – mehr {' &amp; '.join(esc(r['thema']) for r in _TH_BEST)}"),
+        f"Reine <b>{esc(_w['thema'])}</b>-Posts laufen <b>{_rel(_w['med'])[1]}</b> als ein normaler Beitrag. "
+        f"<b>{esc(_b['thema'])}</b> läuft <b>{_rel(_b['med'])[1]}</b> – {_mal(_b['med'], _w['med'])} so gut wie reine Preis-Posts.",
+        ("Den Preis nicht weglassen, sondern beweisen: jemand aus dem Markt zeigt den Kassenbon, erklärt den Preishelden oder erzählt die Geschichte hinter dem Produkt. „Rechne nach“ wird zum Post."
+         if _preis else f"{esc(_w['thema'])} mit Gesichtern, Humor oder Herkunft erzählen."),
+        'Für alle Märkte &amp; die Zentrale', ['Preiswahrnehmung', 'Frequenz']))
+if _FMT_BASE and _FMT_BONUS:
+    _HEBEL.append(_hebel(2,
+        f"{esc(_FMT_BASE['label'])} als Standard, {esc(_FMT_BONUS['label'])} als Bonus",
+        f"Ein <b>{esc(_FMT_BASE['label'])}</b> läuft <b>{_rel(_FMT_BASE['er_med'])[1]}</b> – das verlässlichste Format. "
+        f"<b>{esc(_FMT_BONUS['label'])}</b> laufen meist <b>{_rel(_FMT_BONUS['er_med'])[1]}</b>, aber <b>{_FMT_BONUS_N} der {len(ueberflieger)} viralen Posts</b> waren {esc(_FMT_BONUS['label'])}.",
+        f"Den Großteil als {esc(_FMT_BASE['label'])} planen. {esc(_FMT_BONUS['label'])} gezielt für Humor &amp; Team – der Glückstreffer mit dem größten Potenzial.",
+        'Für alle Märkte', ['Frequenz']))
+if _COMBOS:
+    _chips = ''.join(f'<span class="combo"><span><b>{esc(c["thema"])}</b> als {esc(c["fmt"])}</span><i>{_rel(c["med"])[1]}</i></span>' for c in _COMBOS)
+    _HEBEL.append(_hebel(3,
+        'Die Gewinner-Kombinationen als Vorlagen bauen',
+        f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag:<div class=\"combos\">{_chips}</div>",
+        'Für jede Kombination eine fertige Vorlage an die Märkte geben – dann muss nicht jeder Markt das Rad neu erfinden.',
+        'Zentrale → Märkte', ['Frequenz', 'Umsatz']))
+if _HR_BEST and _HR_VOLL:
+    _HEBEL.append(_hebel(4,
+        f"Später posten: {' oder '.join(str(r['h']) + ' Uhr' for r in _HR_BEST)} statt {_HR_VOLL['h']} Uhr",
+        f"Um <b>{_HR_VOLL['h']} Uhr</b> posten die meisten ({de(_HR_VOLL['n'])} Beiträge) – der Feed ist voll, Posts laufen <b>{_rel(_HR_VOLL['med'])[1]}</b>. "
+        f"Um <b>{_HR_BEST[0]['h']} Uhr</b> laufen sie <b>{_rel(_HR_BEST[0]['med'])[1]}</b>."
+        + (f" Stärkster Tag: <b>{esc(_WD_BEST['label'])}</b>, schwächster: {esc(_WD_WORST['label'])}." if _WD_BEST and _WD_WORST else ''),
+        'Beiträge vorplanen und abends veröffentlichen. Den Montag eher meiden.',
+        'Für alle Märkte', ['Frequenz']))
+if _DCO_TOP:
+    _k = _KONK[_DCO_TOP]
+    _rec = _KONK[_REC_TOP] if _REC_TOP else None
+    _HEBEL.append(_hebel(5,
+        'Angebote in Anzeigen, Team-Content ins Recruiting',
+        f"{BRAND_DE[_DCO_TOP]} schaltet <b>{_k['dco']} Anzeigen, die Angebote automatisch aus dem Sortiment zeigen</b> – EDEKA {_ED['dco']}. "
+        + (f"{BRAND_DE[_REC_TOP]} wirbt in {_rec['recruiting']} von {_rec['n']} Anzeigen um Personal – EDEKA in {_ED['recruiting']}." if _rec and _rec['recruiting'] else ''),
+        'Preise gehören in dynamische Anzeigen, nicht in den organischen Feed. Team &amp; Azubis laufen organisch schon am besten – auch als Recruiting-Anzeige nutzen.',
+        'Für die Zentrale / Media', ['Umsatz', 'Preiswahrnehmung'], 6))
+
+_PRIOS = ''.join(_HEBEL)
+
+def _thema_tab():
+    mx = max([r['med'] for r in THEMEN_ROWS if r['n'] >= 20] or [1])
+    ges = max(1, sum(x['n'] for x in THEMEN_ROWS if x['n'] >= 20))
+    pos = min(100, POST_MED / mx * 100)
+    rows = []
+    for r in THEMEN_ROWS:
+        if r['n'] < 20:
+            continue
+        cls, lab = _empf(r)
+        w = max(3, r['med'] / mx * 100)
+        rows.append(f"""<tr><td class="strong">{esc(r['thema'])}</td>
+          <td class="num">{_bruch(r['n'] / ges)}</td>
+          <td><div class="tbar"><div class="tfill {cls}" style="width:{w:.0f}%"></div><div class="tnorm" style="left:{pos:.0f}%"></div></div></td>
+          <td class="strong">{_rel(r['med'])[1]}</td>
+          <td><span class="badge {cls}">{lab}</span></td></tr>""")
+    return ('<div class="tw"><table class="themtab"><thead><tr><th>Thema</th><th class="num">So oft gepostet</th>'
+            '<th>Wie gut kommt es an?</th><th>Im Vergleich zu normal</th><th>Empfehlung</th></tr></thead><tbody>'
+            + ''.join(rows) + '</tbody></table></div>')
+
+# Beispiel-Woche (ohne interne Daten)
+_WOCHE = ''
+if _COMBOS and WD_ORD and _HR_BEST:
+    _tage = sorted(WD_ORD[:3], key=lambda r: WD_DE.index(r['label']))
+    _slots = []
+    for i, t in enumerate(_tage):
+        c = _COMBOS[i % len(_COMBOS)]
+        h = _HR_BEST[i % len(_HR_BEST)]['h']
+        _slots.append(f'<div class="slot"><div class="sday">{esc(t["label"])}</div><div class="stime">{h}:00 Uhr</div>'
+                      f'<div class="swhat">{esc(c["thema"])}<br><span>als {esc(c["fmt"])}</span></div></div>')
+    if _FMT_BONUS:
+        _slots.append(f'<div class="slot bonus"><div class="sday">Bonus</div><div class="stime">1× pro Woche</div>'
+                      f'<div class="swhat">Humor/Team<br><span>als {esc(_FMT_BONUS["label"])}</span></div></div>')
+    _WOCHE = '<div class="woche">' + ''.join(_slots) + '</div>'
+
+# ---- Kennzahlen mit Urteil: lokale Märkte vs. Hauptkonto ----
+import csv as _csv
+_TIPO = {r['handle']: r['tipo'] for r in _csv.DictReader(open(os.path.join(DATA, 'accounts.csv')))}
+def _er_list(pred):
+    return [((q.get('likes') or 0) + (q.get('comments') or 0)) / q['followers'] * 100
+            for q in posts if q.get('likes_ok') and q['followers'] and pred(q)]
+_LOK = _er_list(lambda q: _TIPO.get(q['handle']) in ('mercado', 'sin confirmar'))
+LOK_MED = statistics.median(_LOK) if _LOK else 0
+_HAUPT = [q for q in posts if q['handle'] == 'edeka' and q.get('likes_ok') and q['followers']]
+HAUPT_MED = statistics.median([((q.get('likes') or 0) + (q.get('comments') or 0)) / q['followers'] * 100 for q in _HAUPT]) if _HAUPT else None
+HAUPT_INT = statistics.median([(q.get('likes') or 0) + (q.get('comments') or 0) for q in _HAUPT]) if _HAUPT else None
+HAUPT_F = _HAUPT[0]['followers'] if _HAUPT else 0
+_SCHWACH_ANT = sum(r['n'] for r in _SCHWACH) / max(1, sum(r['n'] for r in THEMEN_ROWS))
+
+def _urteil_bench(v):
+    if v >= BENCH_ER * 1.5:
+        return ('gut', 'Gut')
+    if v >= BENCH_ER * 0.8:
+        return ('mittel', 'Im Schnitt')
+    return ('schwach', 'Schwach')
+
+def _kpi(titel, cls, urteil, zahl, einheit, satz, vergleich):
+    return f"""<div class="vk"><div class="vkh"><span>{titel}</span><span class="pill {cls}">{urteil}</span></div>
+      <div class="vkz"><b class="z-{cls}">{zahl}</b><span>{einheit}</span></div>
+      <div class="vks">{satz}</div><div class="vkv">{vergleich}</div></div>"""
+
+_KPIS = []
+_c, _u = _urteil_bench(LOK_MED)
+_KPIS.append(_kpi('Lokale Märkte', _c, _u, _z(LOK_MED), 'von 100 Followern',
+    'reagieren auf einen normalen Beitrag mit Like oder Kommentar.',
+    f'Branchenschnitt Instagram: {_z(BENCH_ER, 2)} von 100 ({BENCH_QUELLE}).'))
+if HAUPT_MED is not None:
+    _c, _u = _urteil_bench(HAUPT_MED)
+    _fak = BENCH_ER / HAUPT_MED if HAUPT_MED else 0
+    _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), 'von 100 Followern',
+        f'{de(HAUPT_F)} Follower, aber nur rund {de(HAUPT_INT)} Reaktionen pro Beitrag.',
+        (f'Rund {_fak:.0f}× unter dem Branchenschnitt von {_z(BENCH_ER, 2)}.' if _fak >= 1.5 else f'Branchenschnitt: {_z(BENCH_ER, 2)} von 100.')))
+_KPIS.append(_kpi('Themen-Mix', 'schwach' if _SCHWACH_ANT >= 0.4 else 'mittel', 'Ausbaufähig' if _SCHWACH_ANT < 0.4 else 'Schwach',
+    _bruch(_SCHWACH_ANT), 'Posts',
+    'behandeln Themen, die schlechter laufen als ein normaler Beitrag' + (': ' + ' und '.join(esc(r['thema']) for r in _SCHWACH[-2:]) if _SCHWACH else '') + '.',
+    'Hier liegt das größte Potenzial.'))
+_akt = N_AKTIV30 / max(1, N_KONTEN)
+_KPIS.append(_kpi('Aktivität', 'gut' if _akt >= 0.8 else 'mittel', 'Gut' if _akt >= 0.8 else 'Ausbaufähig',
+    f'{N_AKTIV30} von {de(N_KONTEN)}', 'Profilen',
+    'haben in den letzten 30 Tagen mindestens einmal gepostet.',
+    f'{de(N_KONTEN - N_AKTIV30)} Profile waren 30 Tage still.'))
+KPI_HTML = '<div class="vkgrid">' + ''.join(_KPIS) + '</div>'
+
+# ---- Berlin im Blick ----
+try:
+    _REG = json.load(open(os.path.join(DATA, 'regionen.json')))
+except Exception:
+    _REG = {}
+BERLIN_SET = set(_REG.get('berlin') or [])
+BERLIN_HTML = ''
+if BERLIN_SET:
+    def _reg_stats(pred):
+        prof = [a for a in accounts if pred(a['handle'])]
+        er = _er_list(lambda q: pred(q['handle']))
+        akt = [a for a in prof if any(q['handle'] == a['handle'] and in_days(q, 0, 30) for q in posts)]
+        n30 = len([q for q in posts if pred(q['handle']) and in_days(q, 0, 30)])
+        return {'n': len(prof), 'aktiv': len(akt), 'med': statistics.median(er) if er else 0,
+                'pw': (n30 / max(1, len(akt))) / 30 * 7}
+    _B = _reg_stats(lambda h: h in BERLIN_SET)
+    _R = _reg_stats(lambda h: h not in BERLIN_SET and _TIPO.get(h) in ('mercado', 'sin confirmar'))
+    _bc, _bt = _rel(_B['med'], _R['med'] or None)
+    BERLIN_HTML = f"""
+        <div class="card span6">
+          <h3>Berlin im Blick</h3>
+          <p class="hint">Berliner Profile im Vergleich zu allen anderen Märkten. {esc(_REG.get('_hinweis', ''))}</p>
+          <div class="berl">
+            <div class="bz"><span class="bl">Erfasste Berliner Profile</span><b>{_B['n']}</b><span class="bs">{_B['aktiv']} davon aktiv in 30 Tagen</span></div>
+            <div class="bz"><span class="bl">Reaktionen pro 100 Follower</span><b>{_z(_B['med'])}</b><span class="bs">andere Märkte: {_z(_R['med'])} → Berlin <span class="pill {_bc if _bc != 'info' else 'mittel'}">{_bt}</span></span></div>
+            <div class="bz"><span class="bl">Posts pro Woche je aktivem Profil</span><b>{_z(_B['pw'])}</b><span class="bs">andere Märkte: {_z(_R['pw'])}</span></div>
+          </div>
+        </div>"""
+
+# ---- Interne Ebene: nur wenn data/intern/ vorhanden (nie im öffentlichen Repo) ----
+def _intern(name):
+    pfad = os.path.join(DATA, 'intern', name)
+    try:
+        return json.load(open(pfad))
+    except Exception:
+        return None
+JAHRESSTART = _intern('jahresstart.json')
+KAMPAGNEN = _intern('kampagnen.json')
+
+PLAN_JS_HTML = ''
+if JAHRESSTART:
+    _jr = JAHRESSTART.get('jahr', 2027)
+    _rows = []
+    for w in JAHRESSTART.get('wochen', []):
+        try:
+            _von = dt.date.fromisocalendar(_jr, w['kw'], 1).strftime('%d.%m.')
+            _bis = dt.date.fromisocalendar(_jr, w['kw'], 7).strftime('%d.%m.')
+        except Exception:
+            _von = _bis = ''
+        _th = next((r for r in THEMEN_ROWS if r['thema'] == w.get('thema')), None)
+        _cmb = next((c for c in _COMBOS if c['thema'] == w.get('thema') and c['fmt'] == w.get('format')), None)
+        _wert = _rel(_cmb['med'])[1] if _cmb else (_rel(_th['med'])[1] if _th else '')
+        _zeit = f"{_HR_BEST[0]['h']}:00 Uhr" if _HR_BEST else ''
+        _rows.append(f"""<div class="kw">
+          <div class="kwh"><b>KW {w['kw']}</b><span>{_von}–{_bis}</span></div>
+          <div class="kwa">{esc(w.get('aktion', ''))}</div>
+          <div class="kwf">{esc(w.get('fokus', ''))}{(' · ' + esc(w['anlass'])) if w.get('anlass') else ''}</div>
+          <div class="kwi"><span class="hlbl">Social-Idee</span>{esc(w.get('idee', ''))}
+            <div class="kwm"><span class="pill info">{esc(w.get('format', ''))} · {_zeit}</span>{(f'<span class="pill gut">{esc(w.get("thema"))}: {_wert}</span>') if _wert else ''}</div></div>
+        </div>""")
+    PLAN_JS_HTML = f"""
+        <div class="card span6 intern">
+          <span class="intag">Intern · vertraulich</span>
+          <h3>Jahresstart {_jr}: der Social-Plan für KW 1 bis 8</h3>
+          <p class="hint">Oben die geplanten Aktionen, unten unser Vorschlag für Social – jeweils mit dem Format und der Uhrzeit, die laut Daten am besten laufen. Botschaft: „{esc(JAHRESSTART.get('botschaft', ''))}“</p>
+          <div class="kwgrid">{''.join(_rows)}</div>
+        </div>"""
+
+KAMP_HTML = ''
+if KAMPAGNEN:
+    _cards = []
+    for k in KAMPAGNEN.get('kampagnen', []):
+        _w = ''.join(f'<div class="kz"><b>{esc(x["zahl"])}</b><span>{esc(x["text"])}</span></div>' for x in k.get('werte', []))
+        _cards.append(f"""<div class="card span3 kamp">
+          <div class="kmeta">{esc(k.get('zeit', ''))} · {esc(k.get('wo', ''))}</div>
+          <h3>{esc(k['name'])}</h3>
+          <div class="kwerte">{_w}</div>
+          {('<div class="kbez">' + esc(k['bezug']) + '</div>') if k.get('bezug') else ''}
+          {_ziele(k.get('ziel', []))}
+          <div class="hwer">{esc(k.get('stand', ''))}</div>
+        </div>""")
+    KAMP_HTML = f"""
+        <div class="card blue span6">
+          <span class="intag light">Intern · vertraulich</span>
+          <h3 style="font-size:22px">05 · Kampagnen – was Social schon bewirkt hat</h3>
+          <p class="kurz">{esc(KAMPAGNEN.get('muster', ''))}</p>
+        </div>
+        {''.join(_cards)}
+        <div class="card span6"><p class="hint" style="margin:0">Quelle: interne Unterlagen EDEKA Minden-Hannover. Für Reichweite und Kosten je Kampagne braucht es weiterhin den Zugang zum Meta Ads Manager.</p></div>"""
+
+_KURZ = ''
+if _TH_BEST and _TH_WORST and _FMT_BASE and _HR_BEST:
+    _KURZ = (f"<b>{esc(_TH_BEST[0]['thema'])}</b> läuft {_mal(_TH_BEST[0]['med'], _TH_WORST['med'])} so gut wie <b>{esc(_TH_WORST['thema'])}</b> – "
+             f"trotzdem ist {_bruch(_SCHWACH_ANT)} Posts ein Thema, das schlechter läuft als normal. "
+             f"Größter Hebel: Preise mit Menschen erzählen, als <b>{esc(_FMT_BASE['label'])}</b> posten, abends um <b>{_HR_BEST[0]['h']} Uhr</b>.")
+HEADLINE = ('Preis beweisen – mit Menschen, nicht mit Preisschildern.'
+            if _TH_WORST and 'Angebot' in _TH_WORST['thema'] else 'Was jetzt tun – die Kurzfassung')
+
+PLAN_HTML = f"""
+        <div class="card blue span6">
+          <span class="eyebrow">Was jetzt tun · Stand {STAND}</span>
+          <h3 class="headline">{HEADLINE}</h3>
+          <p class="kurz">{_KURZ}</p>
+          <div class="zielzeile">Jede Empfehlung zahlt auf eines der drei Ziele ein: <span class="ziel light">Umsatz</span><span class="ziel light">Frequenz</span><span class="ziel light">Preiswahrnehmung</span></div>
+        </div>
+
+        <div class="card span6 sechead"><h3>Wie stehen wir da?</h3><p class="hint" style="margin:0"><span class="pill gut">Gut</span> <span class="pill mittel">Im Schnitt / ausbaufähig</span> <span class="pill schwach">Schwach</span></p></div>
+        <div class="span6">{KPI_HTML}</div>
+
+        <div class="card span6 sechead"><h3>Die 5 wichtigsten Hebel</h3><p class="hint" style="margin:0">Alle Vergleiche beziehen sich auf einen normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren). Aktualisiert sich automatisch.</p></div>
+        {_PRIOS}
+
+        <div class="card span6">
+          <h3>Welche Themen funktionieren – und welche nicht</h3>
+          <p class="hint">Die gestrichelte Linie ist ein normaler Beitrag. Balken rechts davon = besser, links davon = schlechter. Ab 20 Beiträgen je Thema.</p>
+          {_thema_tab()}
+        </div>
+        {PLAN_JS_HTML}
+        {BERLIN_HTML}
+
+        <div class="card span4">
+          <h3>So könnte eine gute Woche aussehen</h3>
+          <p class="hint">Beispielplan aus den stärksten Tagen, Uhrzeiten und Thema-Format-Kombinationen</p>
+          {_WOCHE}
+        </div>
+
+        <div class="card span2">
+          <h3>So liest du die Zahlen</h3>
+          <ul class="bul glossar">
+            <li><b>„von 100 Followern“</b> – so viele liken oder kommentieren einen Beitrag. Fachbegriff: Engagement-Rate.</li>
+            <li><b>Normaler Beitrag</b> – der mittlere Wert aller {de(N_POSTS_GUELTIG)} Posts: {_z(POST_MED)} von 100.</li>
+            <li><b>„2× so gut“ / „35 % schwächer“</b> – immer im Vergleich zu einem normalen Beitrag.</li>
+            <li><b>Viraler Post</b> – mindestens dreimal so viele Reaktionen wie sonst bei diesem Profil.</li>
+          </ul>
+        </div>
+"""
+
+S3_LEER = f"""
+        <div class="card blue span6">
+          <span class="arrow">↗</span>
+          <h3 style="font-size:20px">05 · Kampagnen — Wirkung der Kampagnen</h3>
+          <p class="hint">Status: keine Datenquellen angebunden — dieser Abschnitt bleibt leer, bis Zugänge bestehen</p>
+          <div class="heroRow"><div class="heroStats">
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Aktive Kampagnen</div></div>
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Reichweite je Kampagne</div></div>
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>App-Installationen</div></div>
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Konversionen</div></div>
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Kosten je Ergebnis</div></div>
+            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>ROI</div></div>
+          </div></div>
+        </div>
+
+        <div class="card span3">
+          <span class="arrow">↗</span>
+          <h3>Warum keine Zahlen?</h3>
+          <p class="hint">Die geforderten Kampagnen-Kennzahlen liegen hinter diesen Zugängen:</p>
+          <ul class="bul">
+            <li><b>Meta Ads Manager / Marketing API</b> — Reichweite, Impressions, CPM, Conversions, Spend je Kampagne. Benötigt Werbekonto-ID und Zugriffsrecht (EDEKA vermarktet selbst, wir haben keinen Account).</li>
+            <li><b>Instagram Insights-API</b> — Reichweite, Wiedergaben, Speicherungen je Beitrag. Nur für eigene, autorisierte Konten.</li>
+            <li><b>App-Analytics</b> (Adjust/Firebase/App Store Connect) — Installationen, Öffnungen, In-App-Aktionen.</li>
+            <li><b>Web-Tracking</b> — Klicks, UTM, Conversions im Shop. Aktuell keine UTM-Daten in den Social-Links vorhanden.</li>
+            <li><b>Meta Pixel / Conversions API</b> — Wirkung auf Anmeldungen und Newsletter-Registrierungen.</li>
+          </ul>
+        </div>
+
+        <div class="card span3">
+          <span class="arrow">↗</span>
+          <h3>Vorhandene Näherungs-Indikatoren</h3>
+          <p class="hint">Was ohne Zugänge bereits als Impact-Signal dient</p>
+          <div class="catrow"><div class="c1">Organische Interaktionen, 30 Tage</div><div class="c2">{de(CUR_I)}</div></div>
+          <div class="catbar"><div style="width:100%"></div></div>
+          <div class="catrow"><div class="c1">Beiträge, 30 Tage</div><div class="c2">{de(CUR_N)}</div></div>
+          <div class="catbar"><div style="width:100%"></div></div>
+          <div class="catrow"><div class="c1">Profile mit Aktivität</div><div class="c2">{N_AKTIV30} / {de(N_KONTEN)}</div></div>
+          <div class="catbar"><div style="width:{PCT_AKTIV:.0f}%"></div></div>
+          <div class="catrow"><div class="c1">Laufende Werbeanzeigen (EDEKA, Ad Library)</div><div class="c2">{ads.get('edeka', {}).get('own', '–')}</div></div>
+          <div class="catbar"><div style="width:40%"></div></div>
+          <p class="hint" style="margin-top:10px">Das ersetzt keine Kampagnenmessung, zeigt aber Aktivität und Sichtbarkeit.</p>
+        </div>
+      """
+S3_HTML = KAMP_HTML or S3_LEER
+S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">Was Social schon bewirkt hat · intern</small></span>''' if KAMP_HTML
+          else '''<span class="tab2 dim" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">noch ohne Daten · Zugang nötig</small></span>''')
+
+PLAN_CSS_EXTRA = """
+.eyebrow{display:block;font-size:12.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:6px}
+.headline{font-size:30px!important;line-height:1.2;font-weight:700;margin:0 0 8px!important;color:#fff}
+.zielzeile{font-size:13px;color:rgba(255,255,255,.9);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ziele{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.zlbl{font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#8A90A0;text-transform:uppercase;margin-right:2px}
+.ziel{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:#F1F4FA;color:#1B3FB0;border:1px solid #DCE4F5}
+.ziel.light{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.35)}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.pill.gut{background:#DCFCE7;color:#14532D}.pill.mittel{background:#FEF3C7;color:#713F12}.pill.schwach{background:#FFE4D1;color:#9A3412}.pill.info{background:#E7EDFF;color:#1B3FB0}
+.vkgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.vk{background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.vkh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#4B5563}
+.vkz{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.vkz b{font-size:34px;letter-spacing:-.5px}.vkz span{font-size:13.5px;font-weight:600;color:#4B5563}
+.z-gut{color:#15803D}.z-mittel{color:#92400E}.z-schwach{color:#C2410C}
+.vks{font-size:13.5px;line-height:1.5;color:#2B2F36}
+.vkv{font-size:12.5px;color:#4B5563;border-top:1px solid #EEF0F4;padding-top:8px;margin-top:auto}
+.tbar{position:relative}
+.tnorm{position:absolute;top:-4px;bottom:-4px;border-left:2px dashed #1F2430}
+.berl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.bz{background:#F5F8FF;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.bz .bl{font-size:12.5px;color:#4B5563;font-weight:600}.bz b{font-size:26px}.bz .bs{font-size:12.5px;color:#4B5563}
+.intern{border:1.5px dashed #F59E0B}
+.intag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;background:#FEF3C7;color:#713F12;padding:3px 9px;border-radius:6px;margin-bottom:8px}
+.intag.light{background:rgba(255,255,255,.2);color:#fff}
+.kwgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kw{border:1px solid #E4E8F0;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.kwh{display:flex;justify-content:space-between;align-items:baseline}.kwh b{font-size:15px}.kwh span{font-size:12px;color:#4B5563}
+.kwa{font-size:13px;font-weight:600;color:#2B2F36;line-height:1.45}
+.kwf{font-size:12px;color:#4B5563}
+.kwi{margin-top:auto;background:#F5F8FF;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.5;color:#1F2430}
+.kwm{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.kamp{display:flex;flex-direction:column;gap:10px}
+.kmeta{font-size:12px;color:#4B5563;font-weight:600}
+.kamp h3{font-size:17px;margin:0!important}
+.kwerte{display:flex;flex-direction:column;gap:10px}
+.kz{display:flex;flex-direction:column}.kz b{font-size:24px;color:#2A60FF;letter-spacing:-.3px}.kz span{font-size:13px;color:#2B2F36;line-height:1.45}
+.kbez{font-size:12.5px;background:#F0FDF4;color:#14532D;border-radius:8px;padding:8px 10px}
+@media(max-width:1250px){.vkgrid,.kwgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.berl{grid-template-columns:1fr}}
+@media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.headline{font-size:22px!important}}
+"""
+
+PLAN_CSS = """
+/* --- 00 Was jetzt tun --- */
+.kurz{font-size:16px;line-height:1.6;margin:6px 0 18px;max-width:980px;color:#fff}
+.sechead{background:none;border:0;padding:14px 4px 0}
+.sechead h3{font-size:19px}
+.hebel{display:flex;flex-direction:column;gap:12px}
+.hebel h3{font-size:17px;line-height:1.35;margin:0;padding-right:0}
+.hnr{width:34px;height:34px;border-radius:50%;background:#2A60FF;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hlbl{display:block;font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#2A60FF;text-transform:uppercase;margin-bottom:3px}
+.hwarum,.htun{font-size:13.5px;color:#4B5563;line-height:1.6}
+.htun{background:#F5F8FF;border-radius:10px;padding:12px 14px;color:#2B2F36}
+.hwer{margin-top:auto;font-size:12px;color:#8A90A0;font-weight:600}
+.combos{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.combo{background:#F0FDF4;border:1px solid #DCFCE7;border-radius:8px;padding:6px 10px;font-size:13px;display:flex;justify-content:space-between;gap:8px}
+.combo i{font-style:normal;font-weight:700;color:#16A34A}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.badge.green{background:#DCFCE7;color:#15803D}.badge.amber{background:#FEF3C7;color:#B45309}
+.badge.red{background:#FEE2E2;color:#B91C1C}.badge.grey{background:#EEF0F4;color:#6B7280}
+.tbar{background:#EEF0F4;height:12px;border-radius:6px;overflow:hidden;min-width:120px}
+.tfill{height:100%;border-radius:6px}.tfill.green{background:#22C55E}.tfill.amber{background:#F59E0B}.tfill.red{background:#EF4444}.tfill.grey{background:#C9CEDB}
+.themtab td{padding:12px 9px}
+.woche{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.slot{background:#F5F8FF;border:1px solid #E0E8FF;border-radius:12px;padding:14px}
+.slot.bonus{background:#FFF7ED;border-color:#FFEDD5}
+.sday{font-weight:700;font-size:14px;color:#2B2F36}
+.stime{font-size:12.5px;color:#2A60FF;font-weight:600;margin:2px 0 10px}
+.slot.bonus .stime{color:#C2410C}
+.swhat{font-size:13.5px;font-weight:600;color:#2B2F36;line-height:1.4}
+.swhat span{font-weight:400;color:#6B7280;font-size:12.5px}
+.glossar li{margin:8px 0}
+.tab2.dim{opacity:.6}
+@media(max-width:1250px){.span4{grid-column:span 2}.woche{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.span4{grid-column:span 1}.kurz{font-size:14.5px}.woche{grid-template-columns:1fr 1fr}
+  .tw table.themtab{min-width:0}.themtab th:nth-child(2),.themtab td:nth-child(2),.themtab th:nth-child(3),.themtab td:nth-child(3){display:none}.themtab td,.themtab th{padding:10px 5px}.badge{font-size:11px;padding:3px 7px}}
+"""
+
+# Klartext-Überschriften für Tab 02
+THEMEN_HEAD = (f"{esc(_TH_BEST[0]['thema'])} kommt {_mal(_TH_BEST[0]['med'], _TH_WORST['med'])} besser an als {esc(_TH_WORST['thema'])}"
+               if _TH_BEST and _TH_WORST else 'Themenanalyse nach Caption')
+FORMAT_HEAD = (f"{esc(_FMT_BASE['label'])} ist am verlässlichsten, {esc(_FMT_BONUS['label'])} {'bringen' if _FMT_BONUS['label'].endswith('s') else 'bringt'} die Glückstreffer"
+               if _FMT_BASE and _FMT_BONUS and _FMT_BASE is not _FMT_BONUS else 'Leistung nach Format')
+TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
+ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
+
 TEMPLATE = """<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1206,31 +1693,38 @@ TEMPLATE = """<!DOCTYPE html>
     <header class="top">
       <h1>Edeka Social Media<br>&amp; Marketing Intelligence</h1>
       <div class="tabs2">
-        <span class="tab2 on" onclick="sec('s1',this)">01 Overview<small class="tabd">Kennzahlen auf einen Blick</small></span>
-        <span class="tab2" onclick="sec('s2',this)">02 Profiles &amp; Content<small class="tabd">Rankings, Top-Beiträge, Themen</small></span>
-        <span class="tab2" onclick="sec('s3',this)">03 Campaign Impact<small class="tabd">Reichweite &amp; ROI, Zugang nötig</small></span>
-        <span class="tab2" onclick="sec('s4',this)">04 Competitor Intelligence<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
-        <span class="tab2" onclick="sec('s5',this)">05 Insights<small class="tabd">Empfehlungen &amp; nächste Schritte</small></span>
+        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">00 Was jetzt tun<small class="tabd">Die 5 wichtigsten Hebel</small></span>
+        <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
+        <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
+        <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
+        <span class="tab2" data-s="s5" onclick="sec('s5',this)">04 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
+        {S3_TAB}
       </div>
       <span class="meta">{META_TEXT}</span>
     </header>
 
+    <!-- 00 WAS JETZT TUN -->
+    <div id="s0" class="sec">
+      <div class="grid">{PLAN_HTML}
+      </div>
+    </div>
+
     <!-- 01 OVERVIEW -->
-    <div id="s1" class="sec">
+    <div id="s1" class="sec" style="display:none">
       <div class="grid">
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3 style="font-size:20px">01 · Overview — Gesamtüberblick</h3>
+          <h3 style="font-size:20px">01 · Überblick</h3>
           <p class="hint">Hochlevel-Kennzahlen über alle erfassten Instagram-Profile · Datenstand {STAND}</p>
           <div class="heroRow">
             <div class="heroStats wide">
               <div class="hstat"><div class="v">{de(N_KONTEN)}</div><div class="t"><span class="dot"></span>Instagram-Profile</div><div class="s">von 222 erfassten Konten</div></div>
               <div class="hstat"><div class="v">{de(N_FOLLOWER)}</div><div class="t"><span class="dot"></span>Follower gesamt</div><div class="s">über alle Profile</div></div>
-              <div class="hstat"><div class="v">{de(OER_MED, 2)} %</div><div class="t"><span class="dot"></span>Median-ER</div><div class="s">Mittelwert {de(OER, 1)} % · ab 500 Followern</div></div>
+              <div class="hstat"><div class="v">{de(OER_MED, 1)}</div><div class="t"><span class="dot"></span>Reaktionen pro 100 Follower</div><div class="s">typischer Beitrag (Median-ER {de(OER_MED, 2)} %)</div></div>
               <div class="hstat"><div class="v">{de(N_POSTS)}</div><div class="t"><span class="dot"></span>Analysierte Beiträge</div><div class="s">je Konto die letzten 12 Beiträge</div></div>
               <div class="hstat"><div class="v">{de(O_INT_POST)}</div><div class="t"><span class="dot"></span>Ø Interaktionen je Beitrag</div><div class="s">Likes + Kommentare</div></div>
               <div class="hstat"><div class="v">{N_AKTIV30}</div><div class="t"><span class="dot"></span>Aktive Profile (30 Tage)</div><div class="s">{PCT_AKTIV:.0f} % aller Profile</div></div>
-              <div class="hstat"><div class="v">{de(mov_med[0]['er_med'], 1)} %</div><div class="t"><span class="dot"></span>Beste Median-ER</div><div class="s">@{esc(mov_med[0]['handle'])} · {mov_med[0]['n_valid']} Beiträge</div></div>
+              <div class="hstat"><div class="v">{de(mov_med[0]['er_med'], 1)}</div><div class="t"><span class="dot"></span>Bestes Profil (Reaktionen / 100 F.)</div><div class="s">@{esc(mov_med[0]['handle'])} · {mov_med[0]['n_valid']} Beiträge</div></div>
               <div class="hstat"><div class="v">3</div><div class="t"><span class="dot"></span>Nationale Marken-Accounts</div><div class="s">@edeka · @edekakarriere · @dein.edeka</div></div>
             </div>
           </div>
@@ -1285,7 +1779,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="grid">
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3>02 · Profiles &amp; Content — Analyse je Profil</h3>
+          <h3>02 · Inhalte — Analyse je Profil</h3>
           <p class="hint">{de(N_KONTEN)} Profile · {N_AKTIV30} davon in den letzten 30 Tagen aktiv · Ranking nach Median-ER, getrennt nach Größenklassen (ab {RANK_MIN_FOLLOWER} Followern, mindestens {MOV_MIN} Beiträge mit Like-Wert)</p>
           <div class="miniRow">
             <div class="mini"><span>{de(N_KONTEN)}</span>Profile gesamt</div>
@@ -1326,7 +1820,7 @@ TEMPLATE = """<!DOCTYPE html>
 
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3>Themenanalyse nach Caption</h3>
+          <h3>{THEMEN_HEAD}</h3>
           <p class="hint">{de(N_KLASSIFIZIERT)} von {de(N_POSTS)} Beiträgen automatisch einer Kategorie zugeordnet (LLM, eine Kategorie je Caption). Median-ER je Thema, Werte unter 20 Beiträgen grau als geringe Basis.</p>
           {themen_bars()}
           <p class="hint" style="margin-top:14px">Median-ER je Thema und Format (Zellen ab 10 Beiträgen, sonst –)</p>
@@ -1343,22 +1837,22 @@ TEMPLATE = """<!DOCTYPE html>
 
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3>Leistung nach Format</h3>
+          <h3>{FORMAT_HEAD}</h3>
           <p class="hint">Ø Engagement-Rate je Format — Median daneben, weil einzelne Viral-Beiträge den Mittelwert verzerren</p>
           <div class="grid" style="gap:14px">{fmt_cards}</div>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
-          <h3>Beste Wochentage</h3>
-          <p class="hint">Median-ER je Tag (Beiträge mit Follower-Daten)</p>
+          <h3>{TAG_HEAD}</h3>
+          <p class="hint">Reaktionen pro 100 Follower je Wochentag, typischer Beitrag (Beiträge mit Follower-Daten)</p>
           {bars_h(WD_ROWS, 'label', 'med', lambda v: de(v, 2) + ' %', 7)}
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
-          <h3>Beste Uhrzeiten</h3>
-          <p class="hint">Median-ER je Stunde (min. 40 Beiträge)</p>
+          <h3>{ZEIT_HEAD}</h3>
+          <p class="hint">Reaktionen pro 100 Follower je Uhrzeit, typischer Beitrag (min. 40 Beiträge)</p>
           {bars_h(sorted(HR_ROWS, key=lambda r: -r['med'])[:8], 'h', 'med', lambda v: de(v, 2) + ' %', 8)}
           <p class="hint" style="margin-top:8px">Beitragsvolumen peaks: 18:00 ({de(next((r['n'] for r in HR_ROWS if r['h'] == 18), 0))} Beiträge), 10:00, 16:00</p>
         </div>
@@ -1374,49 +1868,7 @@ TEMPLATE = """<!DOCTYPE html>
 
     <!-- 03 CAMPAIGN IMPACT -->
     <div id="s3" class="sec" style="display:none">
-      <div class="grid">
-        <div class="card blue span6">
-          <span class="arrow">↗</span>
-          <h3 style="font-size:20px">03 · Campaign Impact — Wirkung der Kampagnen</h3>
-          <p class="hint">Status: keine Datenquellen angebunden — dieser Abschnitt bleibt leer, bis Zugänge bestehen</p>
-          <div class="heroRow"><div class="heroStats">
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Aktive Kampagnen</div></div>
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Reichweite je Kampagne</div></div>
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>App-Installationen</div></div>
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Konversionen</div></div>
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Kosten je Ergebnis</div></div>
-            <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>ROI</div></div>
-          </div></div>
-        </div>
-
-        <div class="card span3">
-          <span class="arrow">↗</span>
-          <h3>Warum keine Zahlen?</h3>
-          <p class="hint">Die geforderten Kampagnen-Kennzahlen liegen hinter diesen Zugängen:</p>
-          <ul class="bul">
-            <li><b>Meta Ads Manager / Marketing API</b> — Reichweite, Impressions, CPM, Conversions, Spend je Kampagne. Benötigt Werbekonto-ID und Zugriffsrecht (EDEKA vermarktet selbst, wir haben keinen Account).</li>
-            <li><b>Instagram Insights-API</b> — Reichweite, Wiedergaben, Speicherungen je Beitrag. Nur für eigene, autorisierte Konten.</li>
-            <li><b>App-Analytics</b> (Adjust/Firebase/App Store Connect) — Installationen, Öffnungen, In-App-Aktionen.</li>
-            <li><b>Web-Tracking</b> — Klicks, UTM, Conversions im Shop. Aktuell keine UTM-Daten in den Social-Links vorhanden.</li>
-            <li><b>Meta Pixel / Conversions API</b> — Wirkung auf Anmeldungen und Newsletter-Registrierungen.</li>
-          </ul>
-        </div>
-
-        <div class="card span3">
-          <span class="arrow">↗</span>
-          <h3>Vorhandene Näherungs-Indikatoren</h3>
-          <p class="hint">Was ohne Zugänge bereits als Impact-Signal dient</p>
-          <div class="catrow"><div class="c1">Organische Interaktionen, 30 Tage</div><div class="c2">{de(CUR_I)}</div></div>
-          <div class="catbar"><div style="width:100%"></div></div>
-          <div class="catrow"><div class="c1">Beiträge, 30 Tage</div><div class="c2">{de(CUR_N)}</div></div>
-          <div class="catbar"><div style="width:100%"></div></div>
-          <div class="catrow"><div class="c1">Profile mit Aktivität</div><div class="c2">{N_AKTIV30} / {de(N_KONTEN)}</div></div>
-          <div class="catbar"><div style="width:{PCT_AKTIV:.0f}%"></div></div>
-          <div class="catrow"><div class="c1">Laufende Werbeanzeigen (EDEKA, Ad Library)</div><div class="c2">{ads.get('edeka', {}).get('own', '–')}</div></div>
-          <div class="catbar"><div style="width:40%"></div></div>
-          <p class="hint" style="margin-top:10px">Das ersetzt keine Kampagnenmessung, zeigt aber Aktivität und Sichtbarkeit.</p>
-        </div>
-      </div>
+      <div class="grid">{S3_HTML}</div>
     </div>
 
     <!-- 04 COMPETITOR -->
@@ -1424,7 +1876,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="grid">
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3>04 · Competitor Intelligence — Wettbewerbsanalyse</h3>
+          <h3>03 · Wettbewerb — Anzeigen der Konkurrenz</h3>
           <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am {STAND_ADS}</p>
           {TW_ADS}
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
@@ -1459,7 +1911,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="grid">
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3 style="font-size:20px">05 · Insights &amp; Recommendations — Erkenntnisse &amp; Empfehlungen</h3>
+          <h3 style="font-size:20px">04 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
           <p class="hint">Automatisch abgeleitet aus {de(N_POSTS)} Beiträgen von {de(N_KONTEN)} Profilen</p>
         </div>
 
@@ -1521,8 +1973,8 @@ TEMPLATE = """<!DOCTYPE html>
       Aktivität = Beiträge in den letzten 30 Tagen (Datenstand {STAND}). Uhrzeiten in {TZ_LABEL} (deutsche Ortszeit, aus UTC umgerechnet).
       Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage {STAND_ADS}, max. 20 Treffer je Marke.
       Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: {de(N_KONTEN)} berücksichtigte Profile von {de(N_GES)} erfassten Konten.
-      Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 03).
-      Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. {ACC_TEXT}
+      Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 05).
+      Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. {ACC_TEXT}
       Datenaufbereitung: {de(N_AUSGESCHLOSSEN)} Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), {de(N_FREMDE_POSTS)} Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), {de(N_NO_LIKES)} Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet ({de(N_POSTS_GUELTIG)} von {de(N_POSTS)} Beiträgen mit Like-Wert).
     </div>
   </div>
@@ -1682,7 +2134,7 @@ for _p in _parts:
 html_doc = ''.join(_shell)
 assert html_doc.count('<table') == html_doc.count('</table>'), 'Tabelle defekt'
 html_doc = _tw(html_doc)
-html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + '</style>', 1)
+html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + PLAN_CSS + PLAN_CSS_EXTRA + '</style>', 1)
 html_doc = html_doc.replace('<body><div class="app">',
                             '<body class="loading"><div class="boot">Daten werden aktualisiert '
                             '&middot; bitte kurz warten.</div><div class="app">', 1)

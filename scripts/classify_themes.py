@@ -16,12 +16,17 @@ OUT = os.path.join(DATA, 'themes.json')
 MODEL = 'openai/gpt-4o-mini'
 BATCH = 30
 
-KATEGORIEN = ["Angebot/Preis", "Rezept/Food", "Humor/Team/Azubi", "Region/Lieferant",
+KATEGORIEN = ["Angebot/Preis", "Rezept/Food", "Gesund/Bio/Protein", "Humor/Team/Azubi", "Region/Lieferant",
               "Recruiting/Karriere", "Gewinnspiel", "Event/Aktion", "Sonstiges"]
+# Version 2: neue Kategorie Gesund/Bio/Protein (Schwerpunkte Jahresstart 2027).
+# Eintraege mit kleinerer Version werden einmalig neu klassifiziert.
+VERSION = 2
 
 PROMPT = """Du ordnest Instagram-Captions deutscher EDEKA-Supermarkt-Konten EINER Kategorie zu.
 Kategorien: Angebot/Preis (Prospekte, Rabatte, Preise, Aktionen), Rezept/Food (Rezepte, Gerichte,
-Produktvorstellungen zum Essen), Humor/Team/Azubi (Sketche, Witze, Mitarbeitende, Auszubildende),
+Produktvorstellungen zum Essen), Gesund/Bio/Protein (Bio, Protein, vegan, zuckerfrei, Frei-von, halal,
+Fitness, gesunde Ernaehrung, Longevity - auch Rezepte, wenn Gesundheit oder Bio im Vordergrund steht),
+Humor/Team/Azubi (Sketche, Witze, Mitarbeitende, Auszubildende),
 Region/Lieferant (Regionen, lokale Erzeuger, Zusammenarbeit vor Ort), Recruiting/Karriere
 (Stellenanzeigen, Bewerbung, Ausbildung), Gewinnspiel (Gewinn, verlosen, Mitmachen),
 Event/Aktion (Filialeröffnung, Messen, Kampagnen wie LEGO, Gedenktage), Sonstiges (alles andere).
@@ -72,7 +77,7 @@ def call(batch):
                 if th not in KATEGORIEN:
                     th = 'Sonstiges'
                 out.append({'id': r.get('id'), 'thema': th,
-                            'confidence': float(r.get('confidence', 0.5))})
+                            'confidence': float(r.get('confidence', 0.5)), 'v': VERSION})
             if out:
                 return out
         except Exception:
@@ -90,7 +95,7 @@ def main():
     exist = {}
     if os.path.exists(OUT):
         exist = {r['id']: r for r in json.load(open(OUT))}
-    todo = [(u, c) for u, c in beitraege if u not in exist]
+    todo = [(u, c) for u, c in beitraege if u not in exist or exist[u].get('v', 1) < VERSION]
     print(f"Beitraege: {len(beitraege)} · bereits vorhanden: {len(exist)} · zu klassifizieren: {len(todo)}")
     batches = [todo[i:i + BATCH] for i in range(0, len(todo), BATCH)]
     neu, leer = [], 0
@@ -102,12 +107,12 @@ def main():
                 leer += 1
             if i % 10 == 0:
                 print(f"  {i}/{len(batches)} Batches, {len(neu)} Klassifizierungen", flush=True)
-    alle = list(exist.values()) + neu
-    seen, final = set(), []
-    for r in alle:
-        if r['id'] and r['id'] not in seen:
-            seen.add(r['id'])
-            final.append(r)
+    # neue Ergebnisse ersetzen alte; schlaegt ein Batch fehl, bleibt die alte Zuordnung erhalten
+    merged = dict(exist)
+    for r in neu:
+        if r.get('id'):
+            merged[r['id']] = r
+    final = list(merged.values())
     json.dump(final, open(OUT, 'w'), ensure_ascii=False, indent=1)
     print(f"geschrieben: {len(final)} Klassifizierungen -> {OUT} · leere Batches: {leer}")
 
