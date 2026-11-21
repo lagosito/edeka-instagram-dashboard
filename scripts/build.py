@@ -1304,7 +1304,46 @@ def _fx(v):
     f = v / POST_MED if POST_MED else 0
     return (f'{f:.0f}×' if f >= 2.95 else f'{f:.1f}×'.replace('.', ','))
 
-def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', bars=(), kurz='', big='', bigsub='', akt=''):
+def _evid(n, note=''):
+    if n is None:
+        return ('begrenzt', 'Begrenzt', note or 'kleine Stichprobe')
+    if n >= 100:
+        return ('stark', 'Stark', f'{de(n)} Beiträge je Gruppe')
+    if n >= 30:
+        return ('mittel', 'Mittel', f'{de(n)} Beiträge je Gruppe')
+    return ('begrenzt', 'Begrenzt', f'nur {de(n)} Beiträge')
+
+def _hour(q):
+    ts = q.get('taken_at')
+    if not ts:
+        return None
+    try:
+        return dt.datetime.fromisoformat(ts.replace('Z', '+00:00')).astimezone(BERLIN).hour
+    except Exception:
+        return None
+
+def _er(q):
+    return ((q.get('likes') or 0) + (q.get('comments') or 0)) / q['followers'] * 100 if q.get('followers') else 0
+
+def _beispiel(pred, txt=''):
+    pool = [q for q in posts if q.get('likes_ok') and (q.get('followers') or 0) >= 1000 and pred(q) and _er(q) <= POST_MED * 8]
+    if not pool:
+        return ''
+    q = max(pool, key=_er)
+    _acc = _acc_idx.get(q['handle']) or {}
+    _inter = (q.get('likes') or 0) + (q.get('comments') or 0)
+    _sonst = f" statt sonst rund {de(_acc.get('med_inter'))}" if _acc.get('med_inter') else ''
+    return (f'<a class="hbsp" href="{esc(q.get("url") or "#")}" target="_blank" rel="noopener">'
+            f'<b>@{esc(q["handle"])}</b> · {esc((q.get("taken_at") or "")[:10])} · {FMT_DE.get(q.get("kind"), esc(q.get("kind") or ""))}'
+            f'{(" · " + txt) if txt else ""}<br>{de(_inter)} Reaktionen{_sonst} <span>Post ansehen →</span></a>')
+
+_AUFW = {'gering': ('gering', 'Gering'), 'mittel': ('mittel', 'Mittel'), 'hoch': ('hoch', 'Hoch')}
+
+def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', bars=(), kurz='', big='', bigsub='', akt='',
+           bedeutung='', beispiel='', messung='', evid=None, aufwand='mittel', wirk=1.0):
+    ev = evid or ('begrenzt', 'Begrenzt', '')
+    au = _AUFW.get(aufwand, _AUFW['mittel'])
+    score = {'stark': 3, 'mittel': 2, 'begrenzt': 1}[ev[0]] + (3 if wirk >= 3 else 2 if wirk >= 1.8 else 1) - {'gering': 0, 'mittel': 1, 'hoch': 2}[au[0]]
     rows = []
     if bars:
         mx = max(b[2] for b in bars[:2]) or 1
@@ -1312,15 +1351,25 @@ def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', b
             _wp = max(3, min(100, _val / mx * 100))
             rows.append(f'<div class="hb"><div class="hbh"><span>{_lab}</span><b>{_wert}</b></div>'
                         f'<div class="hbt"><div class="hbf{"" if _good else " s"}" style="width:{_wp:.0f}%"></div></div></div>')
-    return f"""<div class="ht">
-          <div class="hth"><span class="hnr">{nr}</span><span class="htz">{' · '.join(ziele)}</span></div>
+    def html(rang):
+        return f"""<div class="ht">
+          <div class="hth"><span class="hnr">{rang}</span><span class="htz">Ziel: {' · '.join(ziele)}</span></div>
           <div class="htt">{kurz or titel}</div>
           <div class="htn"><b>{big or wirkung}</b><span>{bigsub}</span></div>
           <div class="hbs">{''.join(rows)}</div>
           <div class="hta">{akt}</div>
+          <div class="hev"><span class="ev ev-{ev[0]}" title="{esc(ev[2])}">Evidenz: {ev[1]}</span><span class="ev au">Aufwand: {au[1]}</span></div>
           <details class="htd"><summary>Warum &amp; wie?</summary>
-            <p><b>Warum:</b> {warum}</p><p><b>So geht's:</b> {tun}</p><p class="htw">{wer}</p></details>
+            <dl>
+              <dt>Beobachtung</dt><dd>{warum}</dd>
+              <dt>Bedeutung</dt><dd>{bedeutung}</dd>
+              <dt>Empfehlung</dt><dd>{tun}</dd>
+              {f'<dt>Beispiel</dt><dd>{beispiel}</dd>' if beispiel else ''}
+              <dt>Erfolgsmessung</dt><dd>{messung}</dd>
+              <dt>Belastbarkeit</dt><dd>Evidenz {ev[1].lower()} ({esc(ev[2])}). Aufwand: {au[1].lower()} (Einschätzung). Zusammenhang, kein Beweis für Ursache.</dd>
+            </dl></details>
         </div>"""
+    return (score, html)
 
 _HEBEL = []
 if _TH_BEST and _TH_WORST:
@@ -1334,6 +1383,7 @@ if _TH_BEST and _TH_WORST:
         ("Den Preis nicht weglassen, sondern beweisen: jemand aus dem Markt zeigt den Kassenbon, erklärt den Preishelden oder erzählt die Geschichte hinter dem Produkt. „Rechne nach“ wird zum Post."
          if _preis else f"{esc(_w['thema'])} mit Gesichtern, Humor oder Herkunft erzählen."),
         'Für alle Märkte &amp; die Zentrale', ['Preiswahrnehmung', 'Frequenz'],
+        bedeutung='Menschen schaffen Nähe und Glaubwürdigkeit – genau das braucht eine Preisbotschaft. Ob Preis und Menschen <b>zusammen</b> besser laufen, ist noch nicht gemessen: Die Themen-Erkennung ordnet jedem Post nur ein Thema zu.', beispiel=_beispiel(lambda q: q.get('thema') == _b['thema'], esc(_b['thema'])), messung='Neue Preis-Posts mit Gesicht als eigene Gruppe markieren und nach 4 Wochen mit reinen Preis-Posts vergleichen (Reaktionen pro 100 Follower).', evid=_evid(min(_b['n'], _w['n'])), aufwand='mittel', wirk=_b['med'] / _w['med'] if _w['med'] else 1,
         kurz=('Preis beweisen – mit Menschen' if _preis else f"{esc(_w['thema'])} umbauen"), big=_mal(_b['med'], _w['med']), bigsub=f"{esc(_b['thema'])} vs. {esc(_w['thema'])}", akt=('Preise mit Gesichtern aus dem Markt zeigen.' if _preis else 'Mit Gesichtern, Humor oder Herkunft erzählen.'),
         wirkung=f'{_mal(_b["med"], _w["med"])} Unterschied', wcls=_rel(_b["med"])[0],
         bars=[(esc(_b["thema"]), _rel(_b["med"])[1], _b["med"], _rel(_b["med"])[0] == 'gut'),
@@ -1345,6 +1395,7 @@ if _FMT_BASE and _FMT_BONUS:
         f"<b>{esc(_FMT_BONUS['label'])}</b> laufen meist <b>{_rel(_FMT_BONUS['er_med'])[1]}</b>, aber <b>{_FMT_BONUS_N} der {len(ueberflieger)} viralen Posts</b> waren {esc(_FMT_BONUS['label'])}.",
         f"Den Großteil als {esc(_FMT_BASE['label'])} planen. {esc(_FMT_BONUS['label'])} gezielt für Humor &amp; Team – der Glückstreffer mit dem größten Potenzial.",
         'Für alle Märkte', ['Frequenz'],
+        bedeutung='Karussells liefern am verlässlichsten überdurchschnittliche Reaktionen. Reels streuen stark: meist schwächer, aber mit den größten Ausreißern nach oben.', beispiel=_beispiel(lambda q: q.get('kind') == _FMT_BASE['key']), messung=f"Anteil {esc(_FMT_BASE['label'])} an allen Posts und deren Reaktionen pro 100 Follower, monatlich im Dashboard (Tab 02).", evid=_evid(min(_FMT_BASE['n'], _FMT_BONUS['n'])), aufwand='gering', wirk=_FMT_BASE['er_med'] / POST_MED if POST_MED else 1,
         kurz=f"{esc(_FMT_BASE['label'])} als Standard", big=_fx(_FMT_BASE['er_med']), bigsub=f"{esc(_FMT_BASE['label'])} vs. normaler Post", akt=f"Großteil als {esc(_FMT_BASE['label'])}, {esc(_FMT_BONUS['label'])} für Team &amp; Humor.",
         wirkung=_rel(_FMT_BASE['er_med'])[1], wcls=_rel(_FMT_BASE['er_med'])[0],
         bars=[(esc(_FMT_BASE['label']), _rel(_FMT_BASE['er_med'])[1], _FMT_BASE['er_med'], _rel(_FMT_BASE['er_med'])[0] == 'gut'),
@@ -1356,6 +1407,7 @@ if _COMBOS:
         f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag.",
         'Für jede Kombination eine fertige Vorlage an die Märkte geben – dann muss nicht jeder Markt das Rad neu erfinden.',
         'Zentrale → Märkte', ['Frequenz', 'Umsatz'],
+        bedeutung='Diese Mischungen funktionieren bereits in einzelnen Märkten. Vorlagen machen den Erfolg für alle wiederholbar.', beispiel=_beispiel(lambda q: q.get('thema') == _COMBOS[0]['thema'] and FMT_DE.get(q.get('kind')) == _COMBOS[0]['fmt'], f"{esc(_COMBOS[0]['thema'])} als {esc(_COMBOS[0]['fmt'])}"), messung='Reaktionen der Vorlagen-Posts im Vergleich zum normalen Beitrag und Zahl der Märkte, die sie nutzen.', evid=_evid(_COMBOS[0]['n']), aufwand='mittel', wirk=_COMBOS[0]['med'] / POST_MED if POST_MED else 1,
         kurz='Gewinner-Kombis als Vorlagen', big=_fx(_COMBOS[0]['med']), bigsub=f"{esc(_COMBOS[0]['thema'])} als {esc(_COMBOS[0]['fmt'])}", akt='Fertige Vorlagen an alle Märkte geben.',
         wirkung=_rel(_COMBOS[0]['med'])[1], wcls=_rel(_COMBOS[0]['med'])[0],
         bars=[(f'{esc(c["thema"])} als {esc(c["fmt"])}', _rel(c['med'])[1], c['med'], _rel(c['med'])[0] == 'gut') for c in _COMBOS]))
@@ -1367,6 +1419,7 @@ if _HR_BEST and _HR_VOLL:
         + (f" Stärkster Tag: <b>{esc(_WD_BEST['label'])}</b>, schwächster: {esc(_WD_WORST['label'])}." if _WD_BEST and _WD_WORST else ''),
         'Beiträge vorplanen und abends veröffentlichen. Den Montag eher meiden.',
         'Für alle Märkte', ['Frequenz'],
+        bedeutung='Abends ist weniger Konkurrenz im Feed: gleicher Aufwand, mehr Reaktion. Die Uhrzeit allein erklärt den Unterschied aber nicht vollständig.', beispiel=_beispiel(lambda q: _hour(q) == _HR_BEST[0]['h'], f"gepostet um {_HR_BEST[0]['h']} Uhr"), messung=f"Anteil der Posts nach 19 Uhr und deren Reaktionen pro 100 Follower im Vergleich zu {_HR_VOLL['h']} Uhr.", evid=_evid(min(_HR_BEST[0]['n'], _HR_VOLL['n'])), aufwand='gering', wirk=_HR_BEST[0]['med'] / POST_MED if POST_MED else 1,
         kurz=f"Um {_HR_BEST[0]['h']} Uhr posten, nicht um {_HR_VOLL['h']}", big=_fx(_HR_BEST[0]['med']), bigsub=f"{_HR_BEST[0]['h']} Uhr vs. normaler Post", akt='Vorplanen und abends veröffentlichen.',
         wirkung=f'{_mal(_HR_BEST[0]["med"], _HR_VOLL["med"])} Unterschied', wcls=_rel(_HR_BEST[0]['med'])[0],
         bars=[(f'{_HR_BEST[0]["h"]} Uhr', _rel(_HR_BEST[0]['med'])[1], _HR_BEST[0]['med'], _rel(_HR_BEST[0]['med'])[0] == 'gut'),
@@ -1380,12 +1433,14 @@ if _DCO_TOP:
         + (f"{BRAND_DE[_REC_TOP]} wirbt in {_rec['recruiting']} von {_rec['n']} Anzeigen um Personal – EDEKA in {_ED['recruiting']}." if _rec and _rec['recruiting'] else ''),
         'Preise gehören in dynamische Anzeigen, nicht in den organischen Feed. Team &amp; Azubis laufen organisch schon am besten – auch als Recruiting-Anzeige nutzen.',
         'Für die Zentrale / Media', ['Umsatz', 'Preiswahrnehmung'], 6,
+        bedeutung='Der Wettbewerb nutzt Anzeigen für Preise und Personal, EDEKA lässt diese Fläche weitgehend frei. Wie gut die Anzeigen wirken, lässt sich ohne Zugang zum Meta-Werbekonto nicht messen.', beispiel='', messung='Zahl der dynamischen Angebots-Anzeigen in der Meta-Werbebibliothek. Kosten und Umsatz nur mit Zugang zum Ads Manager.', evid=_evid(None, 'einmalige Abfrage der Meta-Werbebibliothek, max. 20 Anzeigen je Marke'), aufwand='hoch', wirk=(_k['dco'] / _ED['dco']) if _ED['dco'] else 3,
         kurz='Angebote in Anzeigen', big=f"{_ED['dco']} : {_k['dco']}", bigsub=f"Angebots-Anzeigen EDEKA : {BRAND_DE[_DCO_TOP]}", akt='Preise in dynamische Anzeigen statt in den Feed.',
         wirkung=f'DCO-Anzeigen {_k["dco"]} vs {_ED["dco"]}', wcls='info',
         bars=[(f'{BRAND_DE[_DCO_TOP]}', str(_k['dco']), _k['dco'], False),
               ('EDEKA', str(_ED['dco']), _ED['dco'], True)]) )
 
-_PRIOS = '<div class="span6 hgrid">' + ''.join(_HEBEL) + '</div>'
+_HEBEL.sort(key=lambda t: -t[0])
+_PRIOS = '<div class="span6 hgrid">' + ''.join(h(i + 1) for i, (_, h) in enumerate(_HEBEL)) + '</div>'
 
 def _thema_tab():
     mx = max([r['med'] for r in THEMEN_ROWS if r['n'] >= 20] or [1])
@@ -1573,41 +1628,85 @@ if _TH_BEST and _TH_WORST and _FMT_BASE and _HR_BEST:
 HEADLINE = ('Preis beweisen – mit Menschen, nicht mit Preisschildern.'
             if _TH_WORST and 'Angebot' in _TH_WORST['thema'] else 'Was jetzt tun – die Kurzfassung')
 
-PLAN_HTML = f"""
-        <div class="card blue span6">
-          <span class="eyebrow">Die Kurzfassung</span>
-          <p class="kurz">{_KURZ}</p>
-          <div class="zielzeile">Jede Empfehlung zahlt auf eines der drei Ziele ein: <span class="ziel light">Umsatz</span><span class="ziel light">Frequenz</span><span class="ziel light">Preiswahrnehmung</span></div>
-        </div>
+# ---- Hypothese prüfen ----
+_HYP = ''
+if _TH_BEST and _TH_WORST:
+    _hb, _hw = _TH_BEST[0], _TH_WORST
+    _HYP = f"""
+        <div class="card span6 hyp">
+          <div class="hyph"><span class="eyebrow2">Strategische Hypothese</span><span class="ev ev-mittel">Teilweise gestützt</span></div>
+          <div class="hypg">
+            <div class="hypc ok"><b>Das zeigen die Daten</b><span>Posts mit Menschen und Humor laufen {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]} als ein normaler Beitrag ({de(_hb['n'])} und {de(_hw['n'])} Beiträge).</span></div>
+            <div class="hypc open"><b>Noch offen</b><span>Ob Preis und Menschen <i>zusammen</i> besser laufen, ist nicht gemessen. Jeder Post hat nur ein Thema.</span></div>
+            <div class="hypc next"><b>Nächster Schritt</b><span>4 Wochen testen: Preis-Posts mit Gesicht gegen reine Preis-Posts. Das Dashboard vergleicht beide Gruppen.</span></div>
+          </div>
+        </div>"""
 
-        <div class="card span6 sechead"><h3>Wie stehen wir da?</h3></div>
-        <div class="span6">{KPI_HTML}</div>
+# ---- Was die viralen Posts gemeinsam haben ----
+_MUSTER = ''
+_TH_URL = {q.get('url'): q.get('thema') for q in posts}
+for _q in ueberflieger:
+    _q['thema'] = _TH_URL.get(_q.get('url'), _q.get('thema'))
+if ueberflieger:
+    _vp = [q for q in posts if q.get('likes_ok')]
+    _nv = len(ueberflieger); _na = max(1, len(_vp))
+    _fmt_top, _fmt_n = FL_FMT.most_common(1)[0]
+    _fmt_key = {v: k for k, v in _FMT_MAP.items()}.get(_fmt_top)
+    _fmt_all = sum(1 for q in _vp if q.get('kind') == _fmt_key) / _na
+    _th_v = collections.Counter(q.get('thema') for q in ueberflieger if q.get('thema') not in (None, 'nicht zugeordnet', 'Sonstiges'))
+    _abend_v = sum(1 for q in ueberflieger if (_hour(q) or 0) >= 19) / _nv
+    _abend_a = sum(1 for q in _vp if (_hour(q) or 0) >= 19) / _na
+    _rows = [(f'{_fmt_top}', f'{_fmt_n} von {_nv}', f'{_fmt_all * 100:.0f} % aller Posts')]
+    if _th_v:
+        _t, _c = _th_v.most_common(1)[0]
+        _ta = sum(1 for q in _vp if q.get('thema') == _t) / _na
+        _rows.append((esc(_t), f'{_c} von {_nv}', f'{_ta * 100:.0f} % aller Posts'))
+    _rows.append(('Gepostet ab 19 Uhr', f'{round(_abend_v * _nv)} von {_nv}', f'{_abend_a * 100:.0f} % aller Posts'))
+    _bsp = ''.join(f'<a class="hbsp" href="{esc(q.get("url") or "#")}" target="_blank" rel="noopener"><b>@{esc(q["handle"])}</b> · {FMT_DE.get(q.get("kind"), "")} <br>{de((q.get("likes") or 0) + (q.get("comments") or 0))} Reaktionen statt sonst rund {de((_acc_idx.get(q["handle"]) or {}).get("med_inter"))} <span>ansehen →</span></a>' for q in ueberflieger[:3])
+    _MUSTER = f"""
+        <div class="card span6">
+          <h3>Was die {_nv} viralen Posts gemeinsam haben</h3>
+          <p class="hint">Viral = mindestens dreimal so viele Reaktionen wie sonst beim selben Profil. Vergleich mit allen Posts.</p>
+          <div class="mgrid">{''.join(f'<div class="mz"><span class="ml">{l}</span><b>{v}</b><span class="mv">vs. {a}</span></div>' for l, v, a in _rows)}</div>
+          <p class="hint" style="margin-top:14px">Zum Nachmachen: die drei stärksten Beispiele</p>
+          <div class="mbsp">{_bsp}</div>
+          <p class="hint" style="margin-top:10px">Bei {_nv} Posts sind das Muster, keine Gesetze. Begrenzte Evidenz.</p>
+        </div>"""
 
-        <div class="card span6 sechead"><h3>Die 5 wichtigsten Hebel</h3><p class="hint" style="margin:0">Verglichen mit einem normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren).</p></div>
-        {_PRIOS}
-
+EXPLORER_EXTRA = f"""
         <div class="card span6">
           <h3>Welche Themen funktionieren – und welche nicht</h3>
           <p class="hint">Die gestrichelte Linie ist ein normaler Beitrag. Balken rechts davon = besser, links davon = schlechter. Ab 20 Beiträgen je Thema.</p>
           {_thema_tab()}
         </div>
-        {PLAN_JS_HTML}
         {BERLIN_HTML}
-
-        <div class="card span4">
-          <h3>So könnte eine gute Woche aussehen</h3>
-          <p class="hint">Beispielplan aus den stärksten Tagen, Uhrzeiten und Thema-Format-Kombinationen</p>
-          {_WOCHE}
-        </div>
-
-        <div class="card span2">
+        <div class="card span6">
           <h3>So liest du die Zahlen</h3>
           <ul class="bul glossar">
             <li><b>„von 100 Followern“</b> – so viele liken oder kommentieren einen Beitrag. Fachbegriff: Engagement-Rate.</li>
             <li><b>Normaler Beitrag</b> – der mittlere Wert aller {de(N_POSTS_GUELTIG)} Posts: {_z(POST_MED)} von 100.</li>
-            <li><b>„2× so gut“ / „35 % schwächer“</b> – immer im Vergleich zu einem normalen Beitrag.</li>
-            <li><b>Viraler Post</b> – mindestens dreimal so viele Reaktionen wie sonst bei diesem Profil.</li>
+            <li><b>Evidenz</b> – stark: mindestens 100 Beiträge je verglichener Gruppe, mittel: mindestens 30, sonst begrenzt.</li>
+            <li><b>Zusammenhang ≠ Ursache</b> – die Daten zeigen, was zusammen auftritt, nicht was es verursacht.</li>
           </ul>
+        </div>"""
+
+def _frage(nr, titel, sub=''):
+    return f'<div class="card span6 sechead frage"><span class="fnr">{nr}</span><div><h3>{titel}</h3>{f"<p class=hint style=margin:0>{sub}</p>" if sub else ""}</div></div>'
+
+PLAN_HTML = f"""
+        {_HYP}
+        {_frage(1, 'Wo stehen wir?')}
+        <div class="span6">{KPI_HTML}</div>
+        {_frage(2, 'Was sollten wir ändern?', f'Sortiert nach Evidenz, Wirkung und Aufwand. Verglichen mit einem normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren). „Warum &amp; wie?“ öffnet Beobachtung, Bedeutung, Beispiel und Erfolgsmessung.')}
+        {_PRIOS}
+        {_frage(3, 'Warum funktioniert es?', 'Muster aus den erfolgreichsten Posts, mit echten Beispielen.')}
+        {_MUSTER}
+        {_frage(4, 'Was machen wir als Nächstes?')}
+        {PLAN_JS_HTML}
+        <div class="card span6">
+          <h3>So könnte eine gute Woche aussehen</h3>
+          <p class="hint">Beispielplan aus den stärksten Tagen, Uhrzeiten und Thema-Format-Kombinationen</p>
+          {_WOCHE}
         </div>
 """
 
@@ -1783,12 +1882,40 @@ TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
 NAVCSS = """
+/* Executive Overview */
+.tabsep{align-self:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8A867C;padding:0 4px 0 10px;flex:0 0 auto}
+.frage{display:flex;align-items:flex-start;gap:14px;padding-top:26px!important}
+.fnr{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:#16150F;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:4px}
+.hyp{background:#fff!important;border:1.5px solid #16150F!important}
+.hyph{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow2{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6E6A60}
+.hypg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hypc{border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.45;color:#3E3B33}
+.hypc b{font-size:13px;color:#16150F}
+.hypc.ok{background:#E7EDFF}.hypc.open{background:#F2F0EB}.hypc.next{background:#F2F0EB}
+.ev{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.ev-stark{background:#2A60FF;color:#fff}.ev-mittel{background:#C9D6FF;color:#16150F}.ev-begrenzt{background:#fff;color:#3E3B33;border:1px dashed #8A867C}
+.ev.au{background:#fff;color:#3E3B33}
+.hev{display:flex;flex-wrap:wrap;gap:6px}
+.htd dl{margin:0;display:flex;flex-direction:column;gap:2px}
+.htd dt{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6E6A60;margin-top:8px}
+.htd dd{margin:0;font-size:13.5px;line-height:1.5;color:#3E3B33}
+.hbsp{display:block;background:#fff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.4;color:#16150F;text-decoration:none;margin-top:4px}
+.hbsp span{color:#2A60FF;font-weight:600;white-space:nowrap}
+.hbsp:hover{text-decoration:none;outline:2px solid #2A60FF}
+.mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mz{background:#fff;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:4px}
+.mz .ml{font-size:13px;font-weight:600;color:#3E3B33}.mz b{font-size:34px;letter-spacing:-1px;line-height:1.1}.mz .mv{font-size:13px;color:#6E6A60}
+.mbsp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media(max-width:1100px){.hypg,.mgrid,.mbsp{grid-template-columns:1fr}}
+@media(max-width:760px){.fnr{width:32px;height:32px;font-size:15px}.tabsep{display:none}}
+
 /* Hebel als kompakte Kacheln */
 .hgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:start}
 .ht{background:#F2F0EB;border-radius:15px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.hth{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.hth{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .ht .hnr{width:28px;height:28px;border-radius:50%;background:#2A60FF;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;line-height:1.3;min-width:0;min-height:30px}
 .htt{font-size:18px;font-weight:700;line-height:1.2;letter-spacing:-.3px;min-height:44px}
 .htn{display:flex;flex-direction:column;gap:2px}
 .htn b{font-size:52px;font-weight:700;letter-spacing:-2px;line-height:1;white-space:nowrap}
@@ -1866,7 +1993,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="navleft">
         <span class="logo">E</span>
         <div class="tabs2">
-        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">00 Was jetzt tun<small class="tabd">Die 5 wichtigsten Hebel</small></span>
+        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">Übersicht</span><span class="tabsep">Analyse</span>
         <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
         <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
         <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
@@ -1954,7 +2081,7 @@ TEMPLATE = """<!DOCTYPE html>
 
     <!-- 02 PROFILES & CONTENT -->
     <div id="s2" class="sec" style="display:none">
-      <div class="grid">
+      <div class="grid">{EXPLORER_EXTRA}
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>02 · Inhalte — Analyse je Profil</h3>

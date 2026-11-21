@@ -298,12 +298,40 @@ body.loading .grid,body.loading .footer{display:none}
 @media(max-width:1250px){.vkgrid,.kwgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.berl{grid-template-columns:1fr}}
 @media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.card.blue h3.headline{font-size:22px}.vkz b{font-size:56px;letter-spacing:-2px}.card.kamp h3{font-size:18px}}
 
+/* Executive Overview */
+.tabsep{align-self:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8A867C;padding:0 4px 0 10px;flex:0 0 auto}
+.frage{display:flex;align-items:flex-start;gap:14px;padding-top:26px!important}
+.fnr{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:#16150F;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:4px}
+.hyp{background:#fff!important;border:1.5px solid #16150F!important}
+.hyph{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow2{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6E6A60}
+.hypg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hypc{border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.45;color:#3E3B33}
+.hypc b{font-size:13px;color:#16150F}
+.hypc.ok{background:#E7EDFF}.hypc.open{background:#F2F0EB}.hypc.next{background:#F2F0EB}
+.ev{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.ev-stark{background:#2A60FF;color:#fff}.ev-mittel{background:#C9D6FF;color:#16150F}.ev-begrenzt{background:#fff;color:#3E3B33;border:1px dashed #8A867C}
+.ev.au{background:#fff;color:#3E3B33}
+.hev{display:flex;flex-wrap:wrap;gap:6px}
+.htd dl{margin:0;display:flex;flex-direction:column;gap:2px}
+.htd dt{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6E6A60;margin-top:8px}
+.htd dd{margin:0;font-size:13.5px;line-height:1.5;color:#3E3B33}
+.hbsp{display:block;background:#fff;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.4;color:#16150F;text-decoration:none;margin-top:4px}
+.hbsp span{color:#2A60FF;font-weight:600;white-space:nowrap}
+.hbsp:hover{text-decoration:none;outline:2px solid #2A60FF}
+.mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mz{background:#fff;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:4px}
+.mz .ml{font-size:13px;font-weight:600;color:#3E3B33}.mz b{font-size:34px;letter-spacing:-1px;line-height:1.1}.mz .mv{font-size:13px;color:#6E6A60}
+.mbsp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media(max-width:1100px){.hypg,.mgrid,.mbsp{grid-template-columns:1fr}}
+@media(max-width:760px){.fnr{width:32px;height:32px;font-size:15px}.tabsep{display:none}}
+
 /* Hebel als kompakte Kacheln */
 .hgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:start}
 .ht{background:#F2F0EB;border-radius:15px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.hth{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.hth{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .ht .hnr{width:28px;height:28px;border-radius:50%;background:#2A60FF;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;line-height:1.3;min-width:0;min-height:30px}
 .htt{font-size:18px;font-weight:700;line-height:1.2;letter-spacing:-.3px;min-height:44px}
 .htn{display:flex;flex-direction:column;gap:2px}
 .htn b{font-size:52px;font-weight:700;letter-spacing:-2px;line-height:1;white-space:nowrap}
@@ -375,7 +403,7 @@ body{padding:0!important;background:#fff!important}
       <div class="navleft">
         <span class="logo">E</span>
         <div class="tabs2">
-        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">00 Was jetzt tun<small class="tabd">Die 5 wichtigsten Hebel</small></span>
+        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">Übersicht</span><span class="tabsep">Analyse</span>
         <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
         <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
         <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
@@ -463,15 +491,15 @@ body{padding:0!important;background:#fff!important}
 
     <!-- 02 PROFILES & CONTENT -->
     <div id="s2" class="sec" style="display:none">
-      <div class="grid">
+      <div class="grid"><x data-v="v21"></x>
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>02 · Inhalte — Analyse je Profil</h3>
-          <p class="hint"><x data-v="v21"></x> Profile · <x data-v="v22"></x> davon in den letzten 30 Tagen aktiv · Ranking nach Median-ER, getrennt nach Größenklassen (ab <x data-v="v23"></x> Followern, mindestens <x data-v="v24"></x> Beiträge mit Like-Wert)</p>
+          <p class="hint"><x data-v="v22"></x> Profile · <x data-v="v23"></x> davon in den letzten 30 Tagen aktiv · Ranking nach Median-ER, getrennt nach Größenklassen (ab <x data-v="v24"></x> Followern, mindestens <x data-v="v25"></x> Beiträge mit Like-Wert)</p>
           <div class="miniRow">
-            <div class="mini"><span><x data-v="v25"></x></span>Profile gesamt</div>
-            <div class="mini"><span><x data-v="v26"></x> (<x data-v="v27"></x> %)</span>aktiv in 30 Tagen</div>
-            <x data-v="v28"></x>
+            <div class="mini"><span><x data-v="v26"></x></span>Profile gesamt</div>
+            <div class="mini"><span><x data-v="v27"></x> (<x data-v="v28"></x> %)</span>aktiv in 30 Tagen</div>
+            <x data-v="v29"></x>
           </div>
         </div>
 
@@ -487,75 +515,75 @@ body{padding:0!important;background:#fff!important}
           </div>
           <div id="u1" class="panel">
             <div class="tabs segtabs">
-              <button class="tab on" onclick="seg('g0',this)"><x data-v="v29"></x></button>
+              <button class="tab on" onclick="seg('g0',this)"><x data-v="v30"></x></button>
               <button class="tab" onclick="seg('g1',this)">2.000 bis 10.000 Follower</button>
-              <button class="tab" onclick="seg('g2',this)"><x data-v="v30"></x></button>
+              <button class="tab" onclick="seg('g2',this)"><x data-v="v31"></x></button>
             </div>
-            <x data-v="v31"></x>
-          </div>
-          <div id="u2" class="panel" style="display:none">
             <x data-v="v32"></x>
           </div>
-          <div id="u3" class="panel" style="display:none">
+          <div id="u2" class="panel" style="display:none">
             <x data-v="v33"></x>
-            <p class="hint" style="margin-top:10px">Nur Beiträge mit Like-Wert aus Profilen ab 500 Followern. <x data-v="v34"></x> Beiträge ohne Like-Wert (0 oder 1 Like, vom Anbieter nicht geliefert) sind in ER, Rankings und Empfehlungen ausgeblendet.</p>
+          </div>
+          <div id="u3" class="panel" style="display:none">
+            <x data-v="v34"></x>
+            <p class="hint" style="margin-top:10px">Nur Beiträge mit Like-Wert aus Profilen ab 500 Followern. <x data-v="v35"></x> Beiträge ohne Like-Wert (0 oder 1 Like, vom Anbieter nicht geliefert) sind in ER, Rankings und Empfehlungen ausgeblendet.</p>
           </div>
           <div id="u4" class="panel" style="display:none">
-            <x data-v="v35"></x>
+            <x data-v="v36"></x>
           </div>
         </div>
 
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3><x data-v="v36"></x></h3>
-          <p class="hint"><x data-v="v37"></x> von <x data-v="v38"></x> Beiträgen automatisch einer Kategorie zugeordnet (LLM, eine Kategorie je Caption). Median-ER je Thema, Werte unter 20 Beiträgen grau als geringe Basis.</p>
-          <x data-v="v39"></x>
-          <p class="hint" style="margin-top:14px">Median-ER je Thema und Format (Zellen ab 10 Beiträgen, sonst –)</p>
+          <h3><x data-v="v37"></x></h3>
+          <p class="hint"><x data-v="v38"></x> von <x data-v="v39"></x> Beiträgen automatisch einer Kategorie zugeordnet (LLM, eine Kategorie je Caption). Median-ER je Thema, Werte unter 20 Beiträgen grau als geringe Basis.</p>
           <x data-v="v40"></x>
+          <p class="hint" style="margin-top:14px">Median-ER je Thema und Format (Zellen ab 10 Beiträgen, sonst –)</p>
+          <x data-v="v41"></x>
         </div>
 
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>Überflieger: Beiträge mit dem Dreifachen oder mehr des eigenen Normalwerts</h3>
-          <p class="hint">Lift = Interaktionen des Beitrags (Likes + Kommentare) geteilt durch den Median der Interaktionen des eigenen Profils. Gezeigt: <x data-v="v41"></x> Beiträge mit Lift ≥ 3 von Profilen mit mindestens <x data-v="v42"></x> Beiträgen mit Like-Wert.</p>
-          <x data-v="v43"></x>
-          <p class="hint" style="margin-top:10px"><b>Befund:</b> <x data-v="v44"></x></p>
+          <p class="hint">Lift = Interaktionen des Beitrags (Likes + Kommentare) geteilt durch den Median der Interaktionen des eigenen Profils. Gezeigt: <x data-v="v42"></x> Beiträge mit Lift ≥ 3 von Profilen mit mindestens <x data-v="v43"></x> Beiträgen mit Like-Wert.</p>
+          <x data-v="v44"></x>
+          <p class="hint" style="margin-top:10px"><b>Befund:</b> <x data-v="v45"></x></p>
         </div>
 
         <div class="card span6">
           <span class="arrow">↗</span>
-          <h3><x data-v="v45"></x></h3>
+          <h3><x data-v="v46"></x></h3>
           <p class="hint">Ø Engagement-Rate je Format — Median daneben, weil einzelne Viral-Beiträge den Mittelwert verzerren</p>
-          <div class="grid" style="gap:14px"><x data-v="v46"></x></div>
+          <div class="grid" style="gap:14px"><x data-v="v47"></x></div>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
-          <h3><x data-v="v47"></x></h3>
+          <h3><x data-v="v48"></x></h3>
           <p class="hint">Reaktionen pro 100 Follower je Wochentag, typischer Beitrag (Beiträge mit Follower-Daten)</p>
-          <x data-v="v48"></x>
+          <x data-v="v49"></x>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
-          <h3><x data-v="v49"></x></h3>
+          <h3><x data-v="v50"></x></h3>
           <p class="hint">Reaktionen pro 100 Follower je Uhrzeit, typischer Beitrag (min. 40 Beiträge)</p>
-          <x data-v="v50"></x>
-          <p class="hint" style="margin-top:8px">Beitragsvolumen peaks: 18:00 (<x data-v="v51"></x> Beiträge), 10:00, 16:00</p>
+          <x data-v="v51"></x>
+          <p class="hint" style="margin-top:8px">Beitragsvolumen peaks: 18:00 (<x data-v="v52"></x> Beiträge), 10:00, 16:00</p>
         </div>
 
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>Themen &amp; Hashtags</h3>
-          <p class="hint">Häufigste Hashtags in den <x data-v="v52"></x> analysierten Beiträgen</p>
-          <div class="tagwrap"><x data-v="v53"></x></div>
+          <p class="hint">Häufigste Hashtags in den <x data-v="v53"></x> analysierten Beiträgen</p>
+          <div class="tagwrap"><x data-v="v54"></x></div>
         </div>
       </div>
     </div>
 
     <!-- 03 CAMPAIGN IMPACT -->
     <div id="s3" class="sec" style="display:none">
-      <div class="grid"><x data-v="v54"></x></div>
+      <div class="grid"><x data-v="v55"></x></div>
     </div>
 
     <!-- 04 COMPETITOR -->
@@ -564,30 +592,30 @@ body{padding:0!important;background:#fff!important}
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>03 · Wettbewerb — Anzeigen der Konkurrenz</h3>
-          <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am <x data-v="v55"></x></p>
-          <x data-v="v56"></x>
+          <p class="hint">Laufende Werbeanzeigen aus der Meta Ads Library (Deutschland, aktiv), abgefragt am <x data-v="v56"></x></p>
+          <x data-v="v57"></x>
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
         </div>
 
-        <x data-v="v57"></x>
+        <x data-v="v58"></x>
 
         <div class="card span6">
           <span class="arrow">↗</span>
           <h3>Die stärksten Anzeigen der Wettbewerber · letzte 90 Tage</h3>
           <p class="hint">Auswahl aus der Meta Ads Library: aktive Anzeigen mit den größten Marken-Seiten, stärkster Botschaft und aktuellem Startdatum. HOOK = reißerischer Einstieg, WARUM ES FUNKTIONIERT = Analyse nach Format, Botschaft und Mechanik.</p>
-          <x data-v="v58"></x>
+          <x data-v="v59"></x>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Was die Konkurrenz macht</h3>
-          <ul class="bul"><x data-v="v59"></x></ul>
+          <ul class="bul"><x data-v="v60"></x></ul>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Wettbewerbs-Framework</h3>
-          <x data-v="v60"></x>
+          <x data-v="v61"></x>
           <p class="hint" style="margin-top:10px"><b>Einschränkung:</b> Die Meta Ads Library zeigt nur öffentliche Anzeigen (Seite, Laufzeit, Format, Text). Sie liefert <b>keine</b> Reichweiten-, Kosten- oder Performance-Werte der Konkurrenz.</p>
         </div>
       </div>
@@ -599,19 +627,19 @@ body{padding:0!important;background:#fff!important}
         <div class="card blue span6">
           <span class="arrow">↗</span>
           <h3>04 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
-          <p class="hint">Automatisch abgeleitet aus <x data-v="v61"></x> Beiträgen von <x data-v="v62"></x> Profilen</p>
+          <p class="hint">Automatisch abgeleitet aus <x data-v="v62"></x> Beiträgen von <x data-v="v63"></x> Profilen</p>
         </div>
 
         <div class="card span3">
           <span class="arrow">↗</span>
           <h3>Was funktioniert</h3>
           <ul class="bul">
-            <li><b>Reels liefern die größten Ausreißer nach oben:</b> Ø ER <x data-v="v63"></x> % (Median <x data-v="v64"></x> %) gegenüber Foto <x data-v="v65"></x> %. Carousels haben den besten Median (<x data-v="v66"></x> %) — sie performen konstanter, Reels liefern die Ausreißer nach oben.</li>
-            <li><b>Beste Tage:</b> <x data-v="v67"></x>.</li>
-            <li><b>Beste Uhrzeiten:</b> <x data-v="v68"></x> — die Masse postet um 18:00, der Median sinkt dort jedoch (volle Timeline, mehr Konkurrenz).</li>
-            <li><b>Stärkste Profile (Median):</b> <x data-v="v69"></x> — <x data-v="v70"></x> %, <x data-v="v71"></x> %, <x data-v="v72"></x> % Median-ER.</li>
-            <x data-v="v73"></x>
-            <li><b>Häufigste Hashtags:</b> <x data-v="v74"></x>.</li>
+            <li><b>Reels liefern die größten Ausreißer nach oben:</b> Ø ER <x data-v="v64"></x> % (Median <x data-v="v65"></x> %) gegenüber Foto <x data-v="v66"></x> %. Carousels haben den besten Median (<x data-v="v67"></x> %) — sie performen konstanter, Reels liefern die Ausreißer nach oben.</li>
+            <li><b>Beste Tage:</b> <x data-v="v68"></x>.</li>
+            <li><b>Beste Uhrzeiten:</b> <x data-v="v69"></x> — die Masse postet um 18:00, der Median sinkt dort jedoch (volle Timeline, mehr Konkurrenz).</li>
+            <li><b>Stärkste Profile (Median):</b> <x data-v="v70"></x> — <x data-v="v71"></x> %, <x data-v="v72"></x> %, <x data-v="v73"></x> % Median-ER.</li>
+            <x data-v="v74"></x>
+            <li><b>Häufigste Hashtags:</b> <x data-v="v75"></x>.</li>
           </ul>
         </div>
 
@@ -619,9 +647,9 @@ body{padding:0!important;background:#fff!important}
           <span class="arrow">↗</span>
           <h3>Empfehlungen</h3>
           <ul class="bul">
-            <li><b>Format-Mix:</b> <x data-v="v75"></x> für Konstanz (bester Median <x data-v="v76"></x> %, <x data-v="v77"></x> Beiträge), <x data-v="v78"></x> für die Ausreißer nach oben (P90 <x data-v="v79"></x> %). Der Median entscheidet, welches Format der Standard ist.</li>
-            <li><b>Zeitfenster:</b> <x data-v="v80"></x>.</li>
-            <li><b>Nachbauen der Gewinner-Formate:</b> stärkster Beitrag stammt von @<x data-v="v81"></x> mit <x data-v="v82"></x> Likes (<x data-v="v83"></x>), dahinter @<x data-v="v84"></x> mit <x data-v="v85"></x>. Solche Kurz-Sketche vorproduziert über die Regionalgesellschaften teilen.</li>
+            <li><b>Format-Mix:</b> <x data-v="v76"></x> für Konstanz (bester Median <x data-v="v77"></x> %, <x data-v="v78"></x> Beiträge), <x data-v="v79"></x> für die Ausreißer nach oben (P90 <x data-v="v80"></x> %). Der Median entscheidet, welches Format der Standard ist.</li>
+            <li><b>Zeitfenster:</b> <x data-v="v81"></x>.</li>
+            <li><b>Nachbauen der Gewinner-Formate:</b> stärkster Beitrag stammt von @<x data-v="v82"></x> mit <x data-v="v83"></x> Likes (<x data-v="v84"></x>), dahinter @<x data-v="v85"></x> mit <x data-v="v86"></x>. Solche Kurz-Sketche vorproduziert über die Regionalgesellschaften teilen.</li>
             <li><b>Kampagnen-Lücke schließen:</b> Für 03 zuerst Meta-Ads-Zugriff (Ads Manager der EDEKA-Zentrale oder Test-Werbekonto) und UTM-Links in alle Bio-Verlinkungen.</li>
             <li><b>Datenlücken:</b> Reichweite/Impressionen nur über die Insights-API eigener Konten — für die eigene Wertmessung Instagram-Business-Accounts autorisieren.</li>
             <li><b>Wettbewerb:</b> Recruiting- und DCO-Anzeigen der Konkurrenz als Vorlage; die eigene WhatsApp-Community ist ein Differenzierungsmerkmal.</li>
@@ -632,9 +660,9 @@ body{padding:0!important;background:#fff!important}
           <span class="arrow">↗</span>
           <h3>Schwächen &amp; Risiken</h3>
           <ul class="bul">
-            <li><b>Unter den Top-15:</b> <x data-v="v86"></x> — Beiträge mit <x data-v="v87"></x> Likes bei <x data-v="v88"></x> Followern.</li>
-            <li><b><x data-v="v89"></x> Beiträge ohne Like-Wert</b> — Like-Anzahl vom Datensatz-Anbieter nicht geliefert; betroffen sind v. a. kleine Märkte.</li>
-            <li><b>Sparse Profiles:</b> <x data-v="v90"></x> Profile hatten in 30 Tagen keinen Beitrag.</li>
+            <li><b>Unter den Top-15:</b> <x data-v="v87"></x> — Beiträge mit <x data-v="v88"></x> Likes bei <x data-v="v89"></x> Followern.</li>
+            <li><b><x data-v="v90"></x> Beiträge ohne Like-Wert</b> — Like-Anzahl vom Datensatz-Anbieter nicht geliefert; betroffen sind v. a. kleine Märkte.</li>
+            <li><b>Sparse Profiles:</b> <x data-v="v91"></x> Profile hatten in 30 Tagen keinen Beitrag.</li>
             <li><b>Datensatz-Fenster:</b> je Konto nur die letzten 12 Beiträge — der 12-Wochen-Verlauf unterschätzt die Älteren automatisch.</li>
             <li><b>Wettbewerbsdaten:</b> Ad Library ohne Performance-Werte; kein Vergleich von Reichweite oder Kosten möglich.</li>
           </ul>
@@ -657,12 +685,12 @@ body{padding:0!important;background:#fff!important}
     <div class="footer">
       <b>Methodik:</b> Engagement-Rate = (Likes + Kommentare) ÷ Follower × 100, gemittelt über die letzten 12 Beiträge je Profil;
       Profile ab 500 Followern und mindestens 5 Beiträgen im Ranking. Median zusätzlich zum Mittelwert, weil einzelne Viral-Beiträge verzerren.
-      Aktivität = Beiträge in den letzten 30 Tagen (Datenstand <x data-v="v91"></x>). Uhrzeiten in <x data-v="v92"></x> (deutsche Ortszeit, aus UTC umgerechnet).
-      Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage <x data-v="v93"></x>, max. 20 Treffer je Marke.
-      Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: <x data-v="v94"></x> berücksichtigte Profile von <x data-v="v95"></x> erfassten Konten.
+      Aktivität = Beiträge in den letzten 30 Tagen (Datenstand <x data-v="v92"></x>). Uhrzeiten in <x data-v="v93"></x> (deutsche Ortszeit, aus UTC umgerechnet).
+      Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage <x data-v="v94"></x>, max. 20 Treffer je Marke.
+      Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: <x data-v="v95"></x> berücksichtigte Profile von <x data-v="v96"></x> erfassten Konten.
       Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 05).
-      Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. <x data-v="v96"></x>
-      Datenaufbereitung: <x data-v="v97"></x> Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), <x data-v="v98"></x> Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), <x data-v="v99"></x> Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet (<x data-v="v100"></x> von <x data-v="v101"></x> Beiträgen mit Like-Wert).
+      Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. <x data-v="v97"></x>
+      Datenaufbereitung: <x data-v="v98"></x> Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), <x data-v="v99"></x> Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), <x data-v="v100"></x> Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet (<x data-v="v101"></x> von <x data-v="v102"></x> Beiträgen mit Like-Wert).
     </div>
   </div>
 </div>
