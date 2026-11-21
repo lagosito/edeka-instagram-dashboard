@@ -478,6 +478,12 @@ for _k, _allowed in {k: v for k, v in ADS_PAGES.items() if not k.startswith('_')
         'newest': sorted((r.get('start_date') or '' for r in _own if r.get('start_date')), reverse=True),
     }
 
+# ---- Weihnachts-Push / Advent-Check (REA-Scan, s. data/rea_advent.json) ----
+try:
+    REA = json.load(open(os.path.join(DATA, 'rea_advent.json')))
+except Exception:
+    REA = None
+
 # ---- 04: Wettbewerb aus den Ad-Daten ableiten (keine Festwerte) ----
 _APP_CTA = {'USE_APP', 'INSTALL_MOBILE_APP', 'USE_MOBILE_APP'}
 _RECRU_RE = re.compile(r'karriere|job|ausbildung|bewerb|student|verkauf\s*\(?w/d|teilzeit|vollzeit', re.I)
@@ -910,6 +916,61 @@ def t_ads():
         <td class="cap">{' · '.join(esc(t) for t in titles)}</td>
         <td class="num">{esc(neueste)}</td></tr>""")
     return ''.join(out)
+
+def t_weihnacht():
+    s = [r for r in REA['series'] if -84 <= r['offset'] <= 21]
+    def cols(getter, unit=''):
+        mx = max(max(getter(r)) for r in s) or 1
+        out = []
+        for r in s:
+            v25, v26 = getter(r)
+            h25 = max(3, v25 / mx * 118) if v25 else 3
+            h26 = max(3, v26 / mx * 118) if v26 else 3
+            lab = ('D+' if r['offset'] >= 0 else 'D') + str(r['offset'])
+            v26s = (f"{v26:.1f}{unit}" if isinstance(v26, float) else str(v26)) if v26 else ''
+            out.append(f"""<div class="bcol" style="min-width:30px">
+          {'<span class="bval">' + v26s + '</span>' if v26s else ''}
+          <div style="display:flex;align-items:flex-end;gap:3px;height:122px;width:100%;justify-content:center">
+            <div style="width:44%;height:{h25:.0f}px;background:#C9CEDB;border-radius:4px 4px 0 0" title="2025: {v25}{unit}"></div>
+            <div style="width:44%;height:{h26:.0f}px;background:#2A60FF;border-radius:4px 4px 0 0" title="2026: {v26}{unit}"></div>
+          </div>
+          <span class="blab">{lab}</span></div>""")
+        return '<div class="barchart">' + ''.join(out) + '</div>'
+
+    ads_chart = cols(lambda r: (r['ads_2025'], r['ads_2026']))
+    trend_rows = [r for r in s if r.get('trend_2025') or r.get('trend_2026')]
+    trend_chart = (cols(lambda r: (r.get('trend_2025') or 0, r.get('trend_2026') or 0), '×')
+                   if trend_rows else '')
+    A, B = REA['ads_total'], REA['ads_started_by_nov21']
+    X = REA['copy_xmas_by_nov21']
+    kpis = f"""<div class="miniRow" style="margin-bottom:16px">
+      <div class="mini"><span>{de(A['2026'])} / {de(A['2025'])}</span>Anzeigen Meta Ad Library DE · Fenster 2026 (seit 20.10.) vs. Vorjahr (15.11.–31.12.)</div>
+      <div class="mini"><span>{de(B['2026'])} / {de(B['2025'])}</span>gestartet bis 21.11. · {de(REA['ads_active_now_2026'])} davon jetzt aktiv</div>
+      <div class="mini"><span>{de(X['2026'])} / {de(X['2025'])}</span>Anzeigen mit Weihnachts-Copy bis 21.11. (Weihnacht/Advent/Geschenk)</div>
+    </div>"""
+    bull = f"""<ul class="bul">
+      <li><b>Weihnachts-Push startet später:</b> {esc(REA['site_seen'])} — erst 5 Anzeigen mit Weihnachts-Copy (Vorjahr zur gleichen Zeit: 10).</li>
+      <li><b>Volumen aber höher:</b> {de(B['2026'])} gestartete Anzeigen bis 21.11. gegenüber {de(B['2025'])} im Vorjahr — EDEKA pumpt früh Reichweite, die Weihnachts-Botschaft kommt mit dem Adventskalender (23.11.).</li>
+      <li><b>Vorjahres-Peaks:</b> {esc(' · '.join(REA['peaks']['2025']))} — dort wird dieses Jahr der Höhepunkt erwartet.</li>
+      <li><b>Search-Ramp läuft noch nicht:</b> Google Trends „edeka" (DE) bei 0,3–1,1× zum Normalwert; der Großspike kam zuletzt erst nach Weihnachten (KW 29.12.2025: 10,3×).</li>
+    </ul>"""
+    return (kpis
+            + '<p class="hint" style="margin-bottom:6px"><b>Anzeigen-Starts je Woche relativ zum 1. Dezember</b> — grau 2025, blau 2026 (D−14 = Woche bis 24.11.)</p>'
+            + ads_chart
+            + '<p class="hint" style="margin:14px 0 6px"><b>Google Trends „edeka" (DE) als Vielfaches des Normalwerts je Woche</b> — grau 2025 (Sep–Jan), blau 2026 (seit 22.09.)</p>'
+            + trend_chart
+            + bull)
+
+WEI_CARD = ''
+if REA:
+    _stand_wei = dt.datetime.strptime(REA['stand'], '%Y-%m-%d').strftime('%d.%m.%Y')
+    WEI_CARD = f"""<div class="card span6">
+          <span class="arrow">↗</span>
+          <h3>Weihnachts-Push · Advent-Check — Vorjahresvergleich</h3>
+          <p class="hint">Reverse-Engineering des Weihnachtspushs (Meta Ad Library DE + Google Trends DE), Abfrage {_stand_wei}</p>
+          {t_weihnacht()}
+          <p class="hint" style="margin-top:12px"><b>Methodik:</b> {esc(REA['method'])}. Fenster {esc(REA['windows']['2025'])} (Vorjahr) vs. {esc(REA['windows']['2026'])} (laufendes Jahr); Status „alle" statt „aktiv", damit auch beendete Kampagnen mitgezählt werden. Die Vorjahres-Balken enthalten nur Anzeigen mit Impressionen im Fenster — Vergleiche gelten als Richtwert. Ad Library liefert keine Reichweiten- oder Kostenwerte.</p>
+        </div>"""
 
 fmt_cards = ''.join(f"""<div class="card kpi span2"><span class="arrow">↗</span>
   <div class="l">{esc(r['label'])}</div>
@@ -1368,6 +1429,8 @@ TEMPLATE = """<!DOCTYPE html>
           {TW_ADS}
           <p class="hint" style="margin-top:10px">Die Ad Library zeigt max. 20 Treffer je Abfrage — die Zahlen sind eine Untergrenze, kein Gesamtbestand. Ausgewertet wurden nur Anzeigen der eigenen Marken-Seiten (fremde Treffer wie Rabatt-Apps verwässern die Suche).</p>
         </div>
+
+        {WEI_CARD}
 
         <div class="card span6">
           <span class="arrow">↗</span>

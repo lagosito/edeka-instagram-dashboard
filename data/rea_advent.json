@@ -1,0 +1,154 @@
+{
+ "stand": "2026-11-21",
+ "day0_label": "1. Dezember (Heiligabend-KW)",
+ "windows": {
+  "2025": "2025-11-15 → 2025-12-31",
+  "2026": "2026-10-20 → 2026-11-21"
+ },
+ "ads_total": {
+  "2025": 200,
+  "2026": 161
+ },
+ "ads_started_by_nov21": {
+  "2025": 67,
+  "2026": 161
+ },
+ "copy_xmas_by_nov21": {
+  "2025": 10,
+  "2026": 5
+ },
+ "ads_active_now_2026": 62,
+ "peaks": {
+  "2025": [
+   "KW 17.11.2025: 58 Ads",
+   "KW 01.12.2025: 46 Ads"
+  ],
+  "2026": [
+   "KW 02.11.2026: 20 Ads",
+   "KW 09.11.2026: 23 Ads"
+  ]
+ },
+ "site_seen": "EDEKA-App: „Dein EDEKA Wahnsinns-Advent mit 32 Türchen\" startet 23.11.2026",
+ "series": [
+  {
+   "offset": -280,
+   "ads_2025": 0,
+   "ads_2026": 26,
+   "trend_2025": null,
+   "trend_2026": null
+  },
+  {
+   "offset": -84,
+   "ads_2025": 0,
+   "ads_2026": 9,
+   "trend_2025": null,
+   "trend_2026": null
+  },
+  {
+   "offset": -77,
+   "ads_2025": 0,
+   "ads_2026": 9,
+   "trend_2025": null,
+   "trend_2026": 1.9
+  },
+  {
+   "offset": -70,
+   "ads_2025": 0,
+   "ads_2026": 6,
+   "trend_2025": 0.9,
+   "trend_2026": 0.8
+  },
+  {
+   "offset": -63,
+   "ads_2025": 9,
+   "ads_2026": 3,
+   "trend_2025": 1.6,
+   "trend_2026": 0.8
+  },
+  {
+   "offset": -56,
+   "ads_2025": 0,
+   "ads_2026": 3,
+   "trend_2025": 0.4,
+   "trend_2026": 0.7
+  },
+  {
+   "offset": -49,
+   "ads_2025": 0,
+   "ads_2026": 9,
+   "trend_2025": 1.0,
+   "trend_2026": 0.8
+  },
+  {
+   "offset": -42,
+   "ads_2025": 0,
+   "ads_2026": 18,
+   "trend_2025": 0.9,
+   "trend_2026": 0.5
+  },
+  {
+   "offset": -35,
+   "ads_2025": 1,
+   "ads_2026": 22,
+   "trend_2025": 0.5,
+   "trend_2026": 1.1
+  },
+  {
+   "offset": -28,
+   "ads_2025": 0,
+   "ads_2026": 15,
+   "trend_2025": 0.6,
+   "trend_2026": 0.5
+  },
+  {
+   "offset": -21,
+   "ads_2025": 13,
+   "ads_2026": 26,
+   "trend_2025": 0.4,
+   "trend_2026": 0.3
+  },
+  {
+   "offset": -14,
+   "ads_2025": 58,
+   "ads_2026": 15,
+   "trend_2025": 0.4,
+   "trend_2026": null
+  },
+  {
+   "offset": -7,
+   "ads_2025": 17,
+   "ads_2026": 0,
+   "trend_2025": 0.6,
+   "trend_2026": null
+  },
+  {
+   "offset": 0,
+   "ads_2025": 46,
+   "ads_2026": 0,
+   "trend_2025": 0.7,
+   "trend_2026": null
+  },
+  {
+   "offset": 7,
+   "ads_2025": 28,
+   "ads_2026": 0,
+   "trend_2025": 0.5,
+   "trend_2026": null
+  },
+  {
+   "offset": 14,
+   "ads_2025": 22,
+   "ads_2026": 0,
+   "trend_2025": 0.7,
+   "trend_2026": null
+  },
+  {
+   "offset": 21,
+   "ads_2025": 6,
+   "ads_2026": 0,
+   "trend_2025": 0.6,
+   "trend_2026": null
+  }
+ ],
+ "method": "Meta Ad Library (pageId 105559876186522, DE, status ALL) + Google Trends DE (DataForSEO), Abfrage 21.11.2026"
+}
