@@ -163,7 +163,7 @@ N_FREMDE_POSTS = N_FREMDE
 N_KONTEN = len(accounts)
 N_FOLLOWER = sum(a['followers'] for a in accounts)
 N_POSTS = sum(a['n'] for a in accounts)
-META_TEXT = f"Datenstand {LAUF} · {de(N_KONTEN)} Profile · {de(N_POSTS)} Beiträge"
+META_TEXT = f"Stand {LAUF.split()[0]} · {de(N_KONTEN)} Profile"
 N_AKTIV30 = len([a for a in accounts if a['r30'] > 0])
 PCT_AKTIV = N_AKTIV30 / N_KONTEN * 100 if N_KONTEN else 0
 OER = statistics.mean([a['er'] for a in accounts if a['followers'] >= 500]) if accounts else 0
@@ -414,13 +414,15 @@ def matrix_html():
 def themen_bars():
     out = []
     mx = max([r['med'] for r in THEMEN_ROWS]) or 1
+    nrm = min(100.0, (POST_MED / mx) * 100)
     for r in THEMEN_ROWS:
         w = max(4, r['med'] / mx * 100)
         klein = r['n'] < 20
-        farbe = '#C9CEDB' if klein else '#2A60FF'
+        klasse = 'klein' if klein else _rel(r['med'])[0]
+        farbe = '#E7E4DC' if klein else ('#2A60FF' if klasse == 'gut' else '#C9D6FF')
         out.append(f"""<div class="hrow"><span class="hlab">{esc(r['thema'])}</span>
-        <div class="htrack"><div class="hfill" style="width:{w:.1f}%;background:{farbe}"></div></div>
-        <span class="hval">{de(r['med'], 2)} % · {de(r['n'])}{' · geringe Basis' if klein else ''}</span></div>""")
+        <div class="htrack"><div class="hfill" style="width:{w:.1f}%;background:{farbe}"></div><i class="tnorm" style="left:{nrm:.1f}%"></i></div>
+        <span class="hval {klasse}">{de(r['med'], 2)} % · {de(r['n'])}{' · geringe Basis' if klein else ''}</span></div>""")
     return ''.join(out)
 
 # 2-3 automatische Aussagen fuer 05
@@ -666,7 +668,7 @@ def hist_views():
         sgn = '+' if dsum >= 0 else '\u2212'
         zeilen.append(f"""<div class="catrow"><div class="c1">Follower gesamt, {label} (seit {basis_datum})</div>
         <div class="c2">{sgn}{de(abs(dsum))}</div></div>
-        <div class="catbar"><div style="width:{min(100, abs(pct) * 4):.0f}%;{'' if dsum >= 0 else 'background:#F59E0B'}"></div></div>
+        <div class="catbar"><div style="width:{min(100, abs(pct) * 4):.0f}%;{'' if dsum >= 0 else 'background:#C9D6FF'}"></div></div>
         <div class="hint" style="margin:-4px 0 10px">{pct:+.2f} % · {de(base_ges)} Follower vorher</div>""")
     top = delta(7)
     if top and top[2]:
@@ -749,7 +751,7 @@ def bars_v(items, valkey, labs, highlight=None, unit=''):
         hh = max(6, v / mx * 132)
         blue = (highlight is not None and i == highlight)
         out.append(f"""<div class="bcol">{'<span class="bval">' + de(v, 1 if isinstance(v, float) else 0) + '</span>' if blue else ''}
-          <div class="bbar" style="height:{hh:.0f}px;background:{'#2A60FF' if blue else '#E3E6EB'}"></div>
+          <div class="bbar" style="height:{hh:.0f}px;background:{'#2A60FF' if blue else '#C9D6FF'}"></div>
           <span class="blab">{esc(labs[i])}</span></div>""")
     return '<div class="barchart">' + ''.join(out) + '</div>'
 
@@ -931,7 +933,7 @@ def t_weihnacht():
             out.append(f"""<div class="bcol" style="min-width:30px">
           {'<span class="bval">' + v26s + '</span>' if v26s else ''}
           <div style="display:flex;align-items:flex-end;gap:3px;height:122px;width:100%;justify-content:center">
-            <div style="width:44%;height:{h25:.0f}px;background:#C9CEDB;border-radius:4px 4px 0 0" title="2025: {v25}{unit}"></div>
+            <div style="width:44%;height:{h25:.0f}px;background:#C9D6FF;border-radius:4px 4px 0 0" title="2025: {v25}{unit}"></div>
             <div style="width:44%;height:{h26:.0f}px;background:#2A60FF;border-radius:4px 4px 0 0" title="2026: {v26}{unit}"></div>
           </div>
           <span class="blab">{lab}</span></div>""")
@@ -981,119 +983,135 @@ fmt_cards = ''.join(f"""<div class="card kpi span2"><span class="arrow">↗</spa
 
 CSS = """
 *{box-sizing:border-box}
-body{margin:0;background:#F2F3F5;color:#333;font:14px/1.5 Poppins,Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:#E7E4DC;color:#16150F;font:500 15px/1.45 'Inter Tight',Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;padding:16px}
 .app{min-height:100vh}
-.side{width:74px;background:#fff;box-shadow:1px 0 6px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:14px;position:sticky;top:0;height:100vh}
-.logo{width:38px;height:38px;border-radius:11px;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:10px}
-.sic{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#8A90A0;cursor:pointer;font-size:15px}
-.sic.on{background:#2A60FF;color:#fff}
-.sic:hover{background:#EEF2FF;color:#2A60FF}
-.main{flex:1;padding:0 26px 46px;max-width:1500px}
-.top{min-height:70px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0}
-.top h1{font-size:16.5px;font-weight:600;margin:0;letter-spacing:-.2px}
-.top h1 span{font-weight:600}
-.tabs2{display:flex;gap:6px;margin-left:14px;flex-wrap:wrap}
-.tab2{padding:7px 13px;border-radius:8px;font-size:12.5px;color:#6B7280;cursor:pointer;font-weight:500;white-space:nowrap}
-.tab2.on{background:#E7EDFF;color:#2A60FF;font-weight:600}
-.tab2{display:flex;flex-direction:column;line-height:1.35;padding:8px 14px}
-.tabd{font-size:11px;color:#9AA0AE;font-weight:400;margin-top:2px}
-.tab2.on .tabd{color:#6E8EF0}
-.spacer{flex:1}
-.meta{font-size:12.5px;color:#8A90A0}
-.avatar{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
-.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
-.card{background:#fff;border:1px solid #E4E8F0;border-radius:14px;box-shadow:none;padding:22px;position:relative}
-.card.blue{background:linear-gradient(135deg,#1B49D6 0%,#2A60FF 55%,#5B8CFF 100%);color:#fff;border:none;box-shadow:0 8px 22px rgba(42,96,255,.25)}
-.card h3{margin:0 0 4px;font-size:15.5px;font-weight:700}
-.card .hint{margin:0 0 16px;font-size:12.5px;color:#8A90A0}
-.card.blue .hint{color:rgba(255,255,255,.85)}
-.arrow{position:absolute;top:20px;right:20px;color:#B9BFCC;font-size:15px}
-.card.blue .arrow{color:rgba(255,255,255,.8)}
-.muted{color:#9AA0AE}
-.ph{display:inline-flex;width:46px;height:46px;border-radius:8px;background:#EEF1F6;color:#9AA0AE;align-items:center;justify-content:center;font-size:11px;font-weight:600}
+.main{background:#fff;border-radius:28px;padding:36px 40px 56px;max-width:1360px;margin:0 auto;min-width:0}
+/* Navigation: Pill-Leiste */
+.top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:0 0 6px}
+.navleft{display:flex;align-items:center;gap:14px;flex-wrap:wrap;min-width:0}
+.logo{flex:0 0 auto;width:52px;height:52px;border-radius:50%;background:#2A60FF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:24px;letter-spacing:-.5px}
+.tabs2{display:flex;gap:6px;flex-wrap:wrap;background:#F2F0EB;border-radius:999px;padding:6px;min-width:0}
+.tab2{display:flex;flex-direction:column;justify-content:center;line-height:1.3;padding:8px 16px;border-radius:999px;font-size:14px;color:#3E3B33;cursor:pointer;font-weight:500;white-space:nowrap}
+.tab2.on{background:#fff;color:#16150F;font-weight:600}
+.tabd{font-size:11px;color:#6E6A60;font-weight:500;margin-top:2px}
+.tab2.on .tabd{color:#6E6A60}
+.tab2.dim{opacity:.6}
+.meta{background:#F2F0EB;border-radius:999px;padding:11px 20px;font-size:14px;font-weight:600;color:#8C9AB3;white-space:nowrap}
+/* Hero */
+.hero{padding:40px 0 14px}
+.eyb{display:block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6E6A60;margin-bottom:16px}
+.h1{margin:0;font-size:84px;line-height:.98;font-weight:700;letter-spacing:-3.5px;color:#16150F;max-width:1160px}
+/* Raster & Karten */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.card{background:#F2F0EB;border:0;box-shadow:none;border-radius:15px;padding:26px;position:relative;min-width:0}
+.card .card{background:#fff}
+.card.blue{background:#2A60FF;color:#fff;border-radius:15px;box-shadow:none}
+.card h3{margin:0 0 8px;font-size:32px;line-height:1.12;font-weight:700;letter-spacing:-1px;padding-right:26px}
+.card.span2 h3,.card.span3 h3{font-size:22px;letter-spacing:-.5px;padding-right:22px}
+.card.blue h3{color:#fff;font-size:44px;line-height:1.05;letter-spacing:-1.5px}
+.card .hint{margin:0 0 16px;font-size:14.5px;line-height:1.5;color:#6E6A60}
+.card.blue .hint{color:rgba(255,255,255,.9)}
+.arrow{display:none}
+.muted{color:#6E6A60}
+.ph{display:inline-flex;width:46px;height:46px;border-radius:8px;background:#E7E4DC;color:#6E6A60;align-items:center;justify-content:center;font-size:11px;font-weight:600}
 .segtabs{margin-bottom:10px}
 .span6{grid-column:span 6}.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}
-.kpi .k{font-size:32px;font-weight:300;color:#2B2F36;letter-spacing:-.5px}
-.kpi .l{font-size:13.5px;color:#6B7280;margin-bottom:6px}
-.delta{font-size:12.5px;color:#16A34A;font-weight:600}
-.delta.grey{color:#8A90A0;font-weight:500}
-.heroStats.wide{grid-template-columns:repeat(4,1fr);gap:16px}
-.hstat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:13px 15px}
-.hstat .v{font-size:26px;font-weight:700;letter-spacing:-.5px}
-.hstat .s{font-size:11.5px;color:rgba(255,255,255,.75);margin-top:3px}
-.ringbox{display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-@media(max-width:1150px){.heroStats.wide{grid-template-columns:repeat(2,1fr)}}
+/* KPI-Zahlen (Format-Kacheln) */
+.kpi .l{display:block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6E6A60;margin-bottom:8px}
+.kpi .k{display:block;font-size:76px;line-height:1;font-weight:700;letter-spacing:-2.5px;color:#16150F;margin:4px 0 8px}
+.delta{font-size:13.5px;color:#2A60FF;font-weight:600}
+.delta.grey{color:#6E6A60;font-weight:500}
+/* Kennzahlen-Leiste auf blauen Karten */
 .heroRow{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
 .heroStats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;flex:1;min-width:280px}
-.hstat .v{font-size:23px;font-weight:700}
-.hstat .t{font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:6px}
-.dot{width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block}
-.dot2{width:8px;height:8px;border-radius:50%;display:inline-block}
+.heroStats.wide{grid-template-columns:repeat(4,1fr);gap:16px}
+.hstat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:14px 16px}
+.hstat .v{font-size:26px;font-weight:700;letter-spacing:-.8px;line-height:1.1}
+.hstat .t{font-size:13px;color:rgba(255,255,255,.88);display:flex;align-items:center;gap:6px;font-weight:500}
+.hstat .s{font-size:12px;color:rgba(255,255,255,.75);margin-top:4px}
+.dot{width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block;flex:0 0 auto}
+.dot2{width:8px;height:8px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.ringbox{display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+@media(max-width:1150px){.heroStats.wide{grid-template-columns:repeat(2,1fr)}}
+/* Saeulendiagramm */
 .barchart{display:flex;align-items:flex-end;gap:12px;height:200px;padding-top:24px;overflow-x:auto}
 .bcol{flex:1;min-width:56px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
-.bbar{width:100%;border-radius:6px 6px 0 0}
-.bval{font-size:11.5px;font-weight:700;color:#2A60FF;margin-bottom:5px}
-.blab{font-size:11px;color:#8A90A0;margin-top:7px;text-align:center;line-height:1.25;height:auto;max-height:46px;word-break:break-word;hyphens:auto}
-.hrow{display:grid;grid-template-columns:170px 1fr 74px;align-items:center;gap:10px;margin:8px 0}
-.hlab{font-size:12.5px;color:#4B5563}
-.htrack{background:#EEF0F4;height:14px;border-radius:7px;overflow:hidden}
-.hfill{height:100%;background:#2A60FF;border-radius:7px}
-.hval{font-size:12.5px;color:#6B7280;text-align:right;font-variant-numeric:tabular-nums}
-.catrow{display:grid;grid-template-columns:1fr auto;gap:6px;margin-bottom:4px;font-size:13px}
-.catrow .c1{display:flex;align-items:center;gap:8px;color:#4B5563}
-.catrow .c2{font-weight:700;font-variant-numeric:tabular-nums}
-.catbar{grid-column:1/-1;height:7px;background:#EEF0F4;border-radius:4px;overflow:hidden;margin-bottom:14px}
+.bbar{width:100%;border-radius:7px 7px 0 0;background:#E7E4DC}
+.bval{font-size:12px;font-weight:700;color:#2A60FF;margin-bottom:6px}
+.blab{font-size:12px;color:#6E6A60;margin-top:7px;text-align:center;line-height:1.25;height:auto;max-height:46px;word-break:break-word;hyphens:auto}
+/* Horizontale Balken mit Wert-Pill */
+.hrow{display:grid;grid-template-columns:170px minmax(0,1fr) minmax(96px,auto);align-items:center;gap:12px;margin:9px 0}
+.hlab{font-size:14.5px;font-weight:500;color:#3E3B33}
+.htrack{position:relative;background:#fff;height:14px;border-radius:7px;overflow:hidden}
+.hfill{height:100%;background:#2A60FF;border-radius:7px;min-width:6px}
+.tnorm{position:absolute;top:0;bottom:0;width:2px;background:#16150F}
+.hval{justify-self:end;text-align:center;background:#fff;box-shadow:inset 0 0 0 1.5px #E7E4DC;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:700;color:#16150F;white-space:nowrap;font-variant-numeric:tabular-nums}
+.hval.gut{background:#2A60FF;color:#fff;box-shadow:none}
+.hval.schwach{background:#C9D6FF;color:#16150F;box-shadow:none}
+.hval.klein{color:#6E6A60;font-weight:600}
+/* Kategorie-Balken */
+.catrow{display:grid;grid-template-columns:1fr auto;gap:6px;margin-bottom:5px;font-size:14.5px}
+.catrow .c1{display:flex;align-items:center;gap:8px;color:#3E3B33}
+.catrow .c2{font-weight:700;font-variant-numeric:tabular-nums;color:#16150F}
+.catbar{grid-column:1/-1;height:8px;background:#fff;border-radius:4px;overflow:hidden;margin-bottom:14px}
 .catbar div{height:100%;background:#2A60FF;border-radius:4px}
+/* Mini-Kacheln */
 .miniRow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-.mini{background:#fff;border:1px solid #E4E8F0;border-radius:12px;padding:13px 15px;font-size:12.5px;color:#6B7280}
-.mini span{display:block;font-size:16px;font-weight:700;color:#2B2F36;margin-bottom:3px}
-.avail{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.avail .ok,.avail .no{border-radius:10px;padding:16px 18px;font-size:13px}
-.avail .ok{background:#F0FDF4;border:1px solid #DCFCE7}
-.avail .no{background:#FFF7ED;border:1px solid #FFEDD5}
-.avail b{display:block;margin-bottom:8px;font-size:13.5px}
-.avail .ok b{color:#16A34A}.avail .no b{color:#C2410C}
-.avail ul{margin:0;padding-left:18px;color:#4B5563}
-.avail li{margin:5px 0}
-.bul{margin:0;padding-left:18px;font-size:13.2px;color:#4B5563}
-.bul li{margin:9px 0;line-height:1.55}
-.steps{margin:0;padding-left:20px;font-size:13.2px;color:#4B5563}
-.steps li{margin:10px 0;line-height:1.55}
+.mini{background:#fff;border:0;border-radius:15px;padding:16px 18px;font-size:14px;color:#6E6A60;line-height:1.4}
+.mini span{display:block;font-size:24px;font-weight:700;letter-spacing:-.7px;color:#16150F;margin-bottom:4px}
+/* Verfuegbarkeit */
+.avail{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.avail .ok,.avail .no{border-radius:15px;padding:20px 22px;font-size:14.5px;line-height:1.5}
+.avail .ok{background:#fff}
+.avail .no{background:#E7E4DC}
+.avail b{display:block;margin-bottom:10px;font-size:15px;font-weight:700}
+.avail .ok b{color:#2A60FF}
+.avail .no b{color:#16150F}
+.avail ul{margin:0;padding-left:18px;color:#3E3B33}
+.avail li{margin:6px 0}
+/* Listen */
+.bul{margin:0;padding-left:20px;font-size:15px;line-height:1.45;color:#3E3B33}
+.bul li{margin:10px 0}
+.steps{margin:0;padding-left:22px;font-size:15px;line-height:1.45;color:#3E3B33}
+.steps li{margin:11px 0}
+/* Hashtags */
 .tagwrap{display:flex;flex-wrap:wrap;gap:8px}
-.tag{background:#E7EDFF;color:#2A60FF;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px}
-.adgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
-.adcard{border:1px solid #E9ECF2;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 6px rgba(16,24,40,.05)}
+.tag{background:#fff;color:#16150F;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;box-shadow:inset 0 0 0 1.5px #E7E4DC}
+/* Anzeigen */
+.adgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.adcard{border:0;border-radius:15px;overflow:hidden;background:#fff;box-shadow:none}
 .adimg{position:relative;display:block;line-height:0}
-.adimg img{width:100%;height:172px;object-fit:cover;background:#EEF0F4;display:block}
-.adfmt{position:absolute;left:10px;top:10px;background:rgba(42,96,255,.92);color:#fff;font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px}
-.adbody{padding:14px 16px 16px}
-.adbrand{font-weight:700;font-size:13.5px;color:#2B2F36;margin-bottom:6px}
-.adbrand span{color:#8A90A0;font-weight:500}
-.adlabel{font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#2A60FF;margin:11px 0 4px}
-.adhook{font-size:14px;font-weight:600;color:#2B2F36;line-height:1.4}
-.adwhy{font-size:12.5px;color:#4B5563;line-height:1.55}
-.admeta{font-size:11px;color:#8A90A0;margin-top:10px;line-height:1.5}
-.adlink{font-size:12px;font-weight:600;display:inline-block;margin-top:8px}
-.postlink{font-size:12px;font-weight:600;white-space:nowrap}
-.tabs{display:flex;gap:8px;margin:0 0 4px;flex-wrap:wrap}
-.tab{background:#F1F3F7;border:1px solid #E6E9EF;color:#6B7280;padding:8px 15px;border-radius:9px;cursor:pointer;font-size:13px;font-weight:600}
-.tab.on{background:#2A60FF;border-color:#2A60FF;color:#fff}
-table{width:100%;border-collapse:collapse;font-size:13px}
-table.compact td{padding:8px 6px}
-th,td{padding:10px 9px;text-align:left;border-bottom:1px solid #EEF0F4;vertical-align:middle}
-th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#8A90A0;font-weight:600;background:#FAFBFC}
-tr:hover td{background:#FAFBFF}
+.adimg img{width:100%;height:172px;object-fit:cover;background:#E7E4DC;display:block}
+.adfmt{position:absolute;left:12px;top:12px;background:#2A60FF;color:#fff;font-size:11px;font-weight:700;padding:5px 11px;border-radius:999px;text-transform:uppercase;letter-spacing:.5px}
+.adbody{padding:16px 18px 18px}
+.adbrand{font-weight:700;font-size:15px;color:#16150F;margin-bottom:6px}
+.adbrand span{color:#6E6A60;font-weight:500}
+.adlabel{font-size:13px;letter-spacing:1px;font-weight:600;text-transform:uppercase;color:#6E6A60;margin:12px 0 5px}
+.adhook{font-size:15px;font-weight:600;color:#16150F;line-height:1.4}
+.adwhy{font-size:14.5px;color:#3E3B33;line-height:1.5}
+.admeta{font-size:13px;color:#6E6A60;margin-top:10px;line-height:1.5}
+.adlink{font-size:13px;font-weight:600;display:inline-block;margin-top:8px}
+.postlink{font-size:13px;font-weight:600;white-space:nowrap}
+/* Tabs & Tabellen */
+.tabs{display:flex;gap:8px;margin:0 0 6px;flex-wrap:wrap}
+.tab{background:#fff;border:0;color:#3E3B33;padding:9px 16px;border-radius:999px;cursor:pointer;font-size:13.5px;font-weight:600}
+.tab.on{background:#2A60FF;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+table.compact td{padding:9px 7px}
+th,td{padding:11px 9px;text-align:left;border-bottom:1px solid #E7E4DC;vertical-align:middle}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:#6E6A60;font-weight:600;background:transparent;border-bottom:1px solid #E1DED6}
+tr:hover td{background:rgba(255,255,255,.65)}
 .num{text-align:right;font-variant-numeric:tabular-nums}
-.strong{font-weight:700;color:#2B2F36}
-.sub2{font-size:11.5px;color:#8A90A0}
-.cap{color:#4B5563;font-size:12.5px;max-width:380px}
-.pill2{display:inline-block;background:#E7EDFF;color:#2A60FF;font-size:11px;padding:3px 9px;border-radius:999px;font-weight:600;white-space:nowrap}
-.th{width:46px;height:46px;object-fit:cover;border-radius:7px;background:#EEF0F4;display:block}
+.strong{font-weight:700;color:#16150F}
+.sub2{font-size:13px;color:#6E6A60}
+.cap{color:#3E3B33;font-size:14px;max-width:380px}
+.pill2{display:inline-block;background:#fff;color:#16150F;font-size:13px;padding:5px 11px;border-radius:999px;font-weight:600;white-space:nowrap;box-shadow:inset 0 0 0 1.5px #E7E4DC}
+.th{width:46px;height:46px;object-fit:cover;border-radius:7px;background:#E7E4DC;display:block}
 a{color:#2A60FF;text-decoration:none}
 a:hover{text-decoration:underline}
-.footer{margin-top:26px;font-size:12px;color:#8A90A0;line-height:1.7;background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:18px 22px}
-@media(max-width:1250px){.grid{grid-template-columns:repeat(2,1fr)}.span6,.span4,.span3,.span2{grid-column:span 2}.avail{grid-template-columns:1fr}.side{display:none}}
-@media(max-width:760px){.grid{grid-template-columns:1fr}.span6,.span4,.span3,.span2{grid-column:span 1}.hrow{grid-template-columns:120px 1fr 62px}}
+.footer{margin-top:26px;background:#F2F0EB;border:0;border-radius:15px;padding:26px 28px;font-size:14px;line-height:1.65;color:#6E6A60}
+@media(max-width:1250px){.grid{grid-template-columns:repeat(2,1fr)}.span6,.span4,.span3,.span2{grid-column:span 2}.avail{grid-template-columns:1fr}}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.span6,.span4,.span3,.span2{grid-column:span 1}.hrow{grid-template-columns:110px minmax(0,1fr) auto;gap:8px}}
 """
 
 
@@ -1274,13 +1292,22 @@ ZIEL_DE = {'Umsatz': 'Umsatz', 'Frequenz': 'Frequenz', 'Preiswahrnehmung': 'Prei
 def _ziele(lst):
     return '<div class="ziele"><span class="zlbl">Zahlt ein auf</span>' + ''.join(f'<span class="ziel">{esc(z)}</span>' for z in lst) + '</div>'
 
-def _hebel(nr, titel, warum, tun, wer, ziele, span=3):
+def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', bars=()):
+    bhtml = ''
+    if bars:
+        mx = max(b[2] for b in bars) or 1
+        _rows = []
+        for _lab, _wert, _val, _good in bars:
+            _wp = max(6, min(100, _val / mx * 100))
+            _rows.append(f'<div class="brow"><div class="bhead"><span>{_lab}</span><b>{_wert}</b></div>'
+                         f'<div class="btrack"><div class="bfill{"" if _good else " bad"}" style="width:{_wp:.0f}%"></div></div></div>')
+        bhtml = '<div class="hblock">' + ''.join(_rows) + '</div>'
     return f"""<div class="card span{span} hebel">
-          <div class="hnr">{nr}</div>
+          <div class="hpills"><span class="hnr">{nr}</span><span class="pill {wcls}">{wirkung}</span>{_ziele(ziele)}</div>
           <h3>{titel}</h3>
           <div class="hwarum"><span class="hlbl">Warum</span>{warum}</div>
           <div class="htun"><span class="hlbl">So geht's</span>{tun}</div>
-          {_ziele(ziele)}
+          {bhtml}
           <div class="hwer">{wer}</div>
         </div>"""
 
@@ -1295,21 +1322,29 @@ if _TH_BEST and _TH_WORST:
         f"<b>{esc(_b['thema'])}</b> läuft <b>{_rel(_b['med'])[1]}</b> – {_mal(_b['med'], _w['med'])} so gut wie reine Preis-Posts.",
         ("Den Preis nicht weglassen, sondern beweisen: jemand aus dem Markt zeigt den Kassenbon, erklärt den Preishelden oder erzählt die Geschichte hinter dem Produkt. „Rechne nach“ wird zum Post."
          if _preis else f"{esc(_w['thema'])} mit Gesichtern, Humor oder Herkunft erzählen."),
-        'Für alle Märkte &amp; die Zentrale', ['Preiswahrnehmung', 'Frequenz']))
+        'Für alle Märkte &amp; die Zentrale', ['Preiswahrnehmung', 'Frequenz'],
+        wirkung=f'{_mal(_b["med"], _w["med"])} Unterschied', wcls=_rel(_b["med"])[0],
+        bars=[(esc(_b["thema"]), _rel(_b["med"])[1], _b["med"], _rel(_b["med"])[0] == 'gut'),
+              (esc(_w["thema"]), _rel(_w["med"])[1], _w["med"], _rel(_w["med"])[0] == 'gut')]))
 if _FMT_BASE and _FMT_BONUS:
     _HEBEL.append(_hebel(2,
         f"{esc(_FMT_BASE['label'])} als Standard, {esc(_FMT_BONUS['label'])} als Bonus",
         f"Ein <b>{esc(_FMT_BASE['label'])}</b> läuft <b>{_rel(_FMT_BASE['er_med'])[1]}</b> – das verlässlichste Format. "
         f"<b>{esc(_FMT_BONUS['label'])}</b> laufen meist <b>{_rel(_FMT_BONUS['er_med'])[1]}</b>, aber <b>{_FMT_BONUS_N} der {len(ueberflieger)} viralen Posts</b> waren {esc(_FMT_BONUS['label'])}.",
         f"Den Großteil als {esc(_FMT_BASE['label'])} planen. {esc(_FMT_BONUS['label'])} gezielt für Humor &amp; Team – der Glückstreffer mit dem größten Potenzial.",
-        'Für alle Märkte', ['Frequenz']))
+        'Für alle Märkte', ['Frequenz'],
+        wirkung=_rel(_FMT_BASE['er_med'])[1], wcls=_rel(_FMT_BASE['er_med'])[0],
+        bars=[(esc(_FMT_BASE['label']), _rel(_FMT_BASE['er_med'])[1], _FMT_BASE['er_med'], _rel(_FMT_BASE['er_med'])[0] == 'gut'),
+              (esc(_FMT_BONUS['label']), _rel(_FMT_BONUS['er_med'])[1], _FMT_BONUS['er_med'], _rel(_FMT_BONUS['er_med'])[0] == 'gut')]))
 if _COMBOS:
-    _chips = ''.join(f'<span class="combo"><span><b>{esc(c["thema"])}</b> als {esc(c["fmt"])}</span><i>{_rel(c["med"])[1]}</i></span>' for c in _COMBOS)
+    _chips = ''.join(f'<span class="combo"><span><b>{esc(c["thema"])}</b> als {esc(c["fmt"])}</span><i class="{_rel(c["med"])[0]}">{_rel(c["med"])[1]}</i></span>' for c in _COMBOS)
     _HEBEL.append(_hebel(3,
         'Die Gewinner-Kombinationen als Vorlagen bauen',
         f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag:<div class=\"combos\">{_chips}</div>",
         'Für jede Kombination eine fertige Vorlage an die Märkte geben – dann muss nicht jeder Markt das Rad neu erfinden.',
-        'Zentrale → Märkte', ['Frequenz', 'Umsatz']))
+        'Zentrale → Märkte', ['Frequenz', 'Umsatz'],
+        wirkung=_rel(_COMBOS[0]['med'])[1], wcls=_rel(_COMBOS[0]['med'])[0],
+        bars=[(f'{esc(c["thema"])} als {esc(c["fmt"])}', _rel(c['med'])[1], c['med'], _rel(c['med'])[0] == 'gut') for c in _COMBOS]))
 if _HR_BEST and _HR_VOLL:
     _HEBEL.append(_hebel(4,
         f"Später posten: {' oder '.join(str(r['h']) + ' Uhr' for r in _HR_BEST)} statt {_HR_VOLL['h']} Uhr",
@@ -1317,7 +1352,10 @@ if _HR_BEST and _HR_VOLL:
         f"Um <b>{_HR_BEST[0]['h']} Uhr</b> laufen sie <b>{_rel(_HR_BEST[0]['med'])[1]}</b>."
         + (f" Stärkster Tag: <b>{esc(_WD_BEST['label'])}</b>, schwächster: {esc(_WD_WORST['label'])}." if _WD_BEST and _WD_WORST else ''),
         'Beiträge vorplanen und abends veröffentlichen. Den Montag eher meiden.',
-        'Für alle Märkte', ['Frequenz']))
+        'Für alle Märkte', ['Frequenz'],
+        wirkung=f'{_mal(_HR_BEST[0]["med"], _HR_VOLL["med"])} Unterschied', wcls=_rel(_HR_BEST[0]['med'])[0],
+        bars=[(f'{_HR_BEST[0]["h"]} Uhr', _rel(_HR_BEST[0]['med'])[1], _HR_BEST[0]['med'], _rel(_HR_BEST[0]['med'])[0] == 'gut'),
+              (f'{_HR_VOLL["h"]} Uhr', _rel(_HR_VOLL['med'])[1], _HR_VOLL['med'], _rel(_HR_VOLL['med'])[0] == 'gut')]))
 if _DCO_TOP:
     _k = _KONK[_DCO_TOP]
     _rec = _KONK[_REC_TOP] if _REC_TOP else None
@@ -1326,7 +1364,10 @@ if _DCO_TOP:
         f"{BRAND_DE[_DCO_TOP]} schaltet <b>{_k['dco']} Anzeigen, die Angebote automatisch aus dem Sortiment zeigen</b> – EDEKA {_ED['dco']}. "
         + (f"{BRAND_DE[_REC_TOP]} wirbt in {_rec['recruiting']} von {_rec['n']} Anzeigen um Personal – EDEKA in {_ED['recruiting']}." if _rec and _rec['recruiting'] else ''),
         'Preise gehören in dynamische Anzeigen, nicht in den organischen Feed. Team &amp; Azubis laufen organisch schon am besten – auch als Recruiting-Anzeige nutzen.',
-        'Für die Zentrale / Media', ['Umsatz', 'Preiswahrnehmung'], 6))
+        'Für die Zentrale / Media', ['Umsatz', 'Preiswahrnehmung'], 6,
+        wirkung=f'DCO-Anzeigen {_k["dco"]} vs {_ED["dco"]}', wcls='info',
+        bars=[(f'{BRAND_DE[_DCO_TOP]} – automatisch aus dem Sortiment', str(_k['dco']), _k['dco'], True),
+              ('EDEKA', str(_ED['dco']), _ED['dco'], False)]) )
 
 _PRIOS = ''.join(_HEBEL)
 
@@ -1357,11 +1398,11 @@ if _COMBOS and WD_ORD and _HR_BEST:
     for i, t in enumerate(_tage):
         c = _COMBOS[i % len(_COMBOS)]
         h = _HR_BEST[i % len(_HR_BEST)]['h']
-        _slots.append(f'<div class="slot"><div class="sday">{esc(t["label"])}</div><div class="stime">{h}:00 Uhr</div>'
-                      f'<div class="swhat">{esc(c["thema"])}<br><span>als {esc(c["fmt"])}</span></div></div>')
+        _slots.append(f'<div class="wrow"><span class="wtag">{esc(t["label"])}</span><span class="wzeit">{h}:00 Uhr</span>'
+                      f'<span class="wwas">{esc(c["thema"])}<em>als {esc(c["fmt"])}</em></span></div>')
     if _FMT_BONUS:
-        _slots.append(f'<div class="slot bonus"><div class="sday">Bonus</div><div class="stime">1× pro Woche</div>'
-                      f'<div class="swhat">Humor/Team<br><span>als {esc(_FMT_BONUS["label"])}</span></div></div>')
+        _slots.append(f'<div class="wrow"><span class="wtag">Bonus</span><span class="wzeit">1× pro Woche</span>'
+                      f'<span class="wwas">Humor/Team<em>als {esc(_FMT_BONUS["label"])}</em></span></div>')
     _WOCHE = '<div class="woche">' + ''.join(_slots) + '</div>'
 
 # ---- Kennzahlen mit Urteil: lokale Märkte vs. Hauptkonto ----
@@ -1386,9 +1427,10 @@ def _urteil_bench(v):
     return ('schwach', 'Schwach')
 
 def _kpi(titel, cls, urteil, zahl, einheit, satz, vergleich):
-    return f"""<div class="vk"><div class="vkh"><span>{titel}</span><span class="pill {cls}">{urteil}</span></div>
+    return f"""<div class="vk"><div class="vkt">{titel}</div>
+      <div class="vkp"><span class="pill {cls}">{urteil}</span><span class="pill vgl">{vergleich}</span></div>
       <div class="vkz"><b class="z-{cls}">{zahl}</b><span>{einheit}</span></div>
-      <div class="vks">{satz}</div><div class="vkv">{vergleich}</div></div>"""
+      <div class="vks">{satz}</div></div>"""
 
 _KPIS = []
 _c, _u = _urteil_bench(LOK_MED)
@@ -1496,7 +1538,7 @@ if KAMPAGNEN:
     KAMP_HTML = f"""
         <div class="card blue span6">
           <span class="intag light">Intern · vertraulich</span>
-          <h3 style="font-size:22px">05 · Kampagnen – was Social schon bewirkt hat</h3>
+          <h3>05 · Kampagnen – was Social schon bewirkt hat</h3>
           <p class="kurz">{esc(KAMPAGNEN.get('muster', ''))}</p>
         </div>
         {''.join(_cards)}
@@ -1552,7 +1594,7 @@ PLAN_HTML = f"""
 S3_LEER = f"""
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3 style="font-size:20px">05 · Kampagnen — Wirkung der Kampagnen</h3>
+          <h3>05 · Kampagnen — Wirkung der Kampagnen</h3>
           <p class="hint">Status: keine Datenquellen angebunden — dieser Abschnitt bleibt leer, bis Zugänge bestehen</p>
           <div class="heroRow"><div class="heroStats">
             <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Aktive Kampagnen</div></div>
@@ -1597,81 +1639,119 @@ S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">05 Kampagne
           else '''<span class="tab2 dim" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">noch ohne Daten · Zugang nötig</small></span>''')
 
 PLAN_CSS_EXTRA = """
-.eyebrow{display:block;font-size:12.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:6px}
-.headline{font-size:30px!important;line-height:1.2;font-weight:700;margin:0 0 8px!important;color:#fff}
-.zielzeile{font-size:13px;color:rgba(255,255,255,.9);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.eyebrow{display:block;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:10px}
+.card.blue h3.headline{font-size:36px;line-height:1.06;font-weight:700;letter-spacing:-1.2px;margin:0 0 10px;padding-right:0;color:#fff}
+.zielzeile{font-size:14px;color:rgba(255,255,255,.95);display:flex;flex-wrap:wrap;gap:8px;align-items:center;line-height:1.4}
 .ziele{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.zlbl{font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#8A90A0;text-transform:uppercase;margin-right:2px}
-.ziel{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:#F1F4FA;color:#1B3FB0;border:1px solid #DCE4F5}
-.ziel.light{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.35)}
-.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
-.pill.gut{background:#DCFCE7;color:#14532D}.pill.mittel{background:#FEF3C7;color:#713F12}.pill.schwach{background:#FFE4D1;color:#9A3412}.pill.info{background:#E7EDFF;color:#1B3FB0}
-.vkgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.vk{background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px}
-.vkh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#4B5563}
-.vkz{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.vkz b{font-size:34px;letter-spacing:-.5px}.vkz span{font-size:13.5px;font-weight:600;color:#4B5563}
-.z-gut{color:#15803D}.z-mittel{color:#92400E}.z-schwach{color:#C2410C}
-.vks{font-size:13.5px;line-height:1.5;color:#2B2F36}
-.vkv{font-size:12.5px;color:#4B5563;border-top:1px solid #EEF0F4;padding-top:8px;margin-top:auto}
-.tbar{position:relative}
-.tnorm{position:absolute;top:-4px;bottom:-4px;border-left:2px dashed #1F2430}
+.zlbl{font-size:13px;letter-spacing:1px;font-weight:600;color:#6E6A60;text-transform:uppercase;margin-right:2px}
+.ziel{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:#fff;color:#16150F;white-space:nowrap}
+.ziel.light{background:#fff;color:#16150F}
+.pill{display:inline-block;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap;background:#fff;color:#16150F;box-shadow:inset 0 0 0 1.5px #E7E4DC;line-height:1.3}
+.pill.gut{background:#2A60FF;color:#fff;box-shadow:none}
+.pill.mittel{background:#fff;color:#16150F;box-shadow:inset 0 0 0 1.5px #C9C5BA}
+.pill.schwach{background:#C9D6FF;color:#16150F;box-shadow:none}
+.pill.info{background:#fff;color:#3E3B33}
+.pill.vgl{white-space:normal;color:#3E3B33;text-align:left}
+.vkgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.vk{background:#F2F0EB;border-radius:15px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.vkt{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6E6A60}
+.vkp{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start}
+.vkz{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:2px}
+.vkz b{font-size:76px;line-height:1;font-weight:700;letter-spacing:-2.5px;color:#16150F}
+.vkz span{font-size:15px;font-weight:600;color:#3E3B33}
+.z-gut,.z-mittel,.z-schwach{color:#16150F}
+.vks{font-size:15px;line-height:1.45;color:#3E3B33;margin-top:auto}
+.tbar{position:relative;background:#fff;height:14px;border-radius:7px;overflow:hidden;min-width:140px}
+.tnorm{position:absolute;top:0;bottom:0;width:2px;background:#16150F}
 .berl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.bz{background:#F5F8FF;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
-.bz .bl{font-size:12.5px;color:#4B5563;font-weight:600}.bz b{font-size:26px}.bz .bs{font-size:12.5px;color:#4B5563}
-.intern{border:1.5px dashed #F59E0B}
-.intag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;background:#FEF3C7;color:#713F12;padding:3px 9px;border-radius:6px;margin-bottom:8px}
-.intag.light{background:rgba(255,255,255,.2);color:#fff}
-.kwgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.kw{border:1px solid #E4E8F0;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
-.kwh{display:flex;justify-content:space-between;align-items:baseline}.kwh b{font-size:15px}.kwh span{font-size:12px;color:#4B5563}
-.kwa{font-size:13px;font-weight:600;color:#2B2F36;line-height:1.45}
-.kwf{font-size:12px;color:#4B5563}
-.kwi{margin-top:auto;background:#F5F8FF;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.5;color:#1F2430}
+.bz{background:#fff;border-radius:15px;padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+.bz .bl{font-size:13px;color:#6E6A60;font-weight:600;text-transform:uppercase;letter-spacing:.7px}
+.bz b{font-size:32px;font-weight:700;letter-spacing:-1.4px;color:#16150F}
+.bz .bs{font-size:13.5px;color:#6E6A60;line-height:1.5}
+.intern{border:0}
+.intag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;background:#fff;color:#16150F;padding:5px 12px;border-radius:999px;margin-bottom:10px}
+.intag.light{background:#fff;color:#16150F}
+.kwgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.kw{background:#fff;border-radius:15px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.kwh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.kwh b{font-size:16px;font-weight:700;color:#16150F}
+.kwh span{font-size:13px;color:#6E6A60}
+.kwa{font-size:15px;font-weight:600;color:#16150F;line-height:1.4}
+.kwf{font-size:13.5px;color:#6E6A60}
+.kwi{margin-top:auto;background:#F2F0EB;border-radius:12px;padding:12px 14px;font-size:14.5px;line-height:1.5;color:#3E3B33}
 .kwm{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .kamp{display:flex;flex-direction:column;gap:10px}
-.kmeta{font-size:12px;color:#4B5563;font-weight:600}
-.kamp h3{font-size:17px;margin:0!important}
+.kmeta{font-size:13px;color:#6E6A60;font-weight:600}
+.card.kamp h3{font-size:20px;letter-spacing:-.5px}
 .kwerte{display:flex;flex-direction:column;gap:10px}
-.kz{display:flex;flex-direction:column}.kz b{font-size:24px;color:#2A60FF;letter-spacing:-.3px}.kz span{font-size:13px;color:#2B2F36;line-height:1.45}
-.kbez{font-size:12.5px;background:#F0FDF4;color:#14532D;border-radius:8px;padding:8px 10px}
+.kz{display:flex;flex-direction:column;gap:2px}
+.kz b{font-size:32px;color:#2A60FF;letter-spacing:-1.4px;font-weight:700}
+.kz span{font-size:14px;color:#3E3B33;line-height:1.4}
+.kbez{font-size:13.5px;background:#fff;color:#16150F;border-radius:999px;padding:6px 12px;font-weight:600;align-self:flex-start}
 @media(max-width:1250px){.vkgrid,.kwgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.berl{grid-template-columns:1fr}}
-@media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.headline{font-size:22px!important}}
+@media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.card.blue h3.headline{font-size:22px}.vkz b{font-size:56px;letter-spacing:-2px}.card.kamp h3{font-size:18px}}
 """
 
 PLAN_CSS = """
 /* --- 00 Was jetzt tun --- */
-.kurz{font-size:16px;line-height:1.6;margin:6px 0 18px;max-width:980px;color:#fff}
-.sechead{background:none;border:0;padding:14px 4px 0}
-.sechead h3{font-size:19px}
-.hebel{display:flex;flex-direction:column;gap:12px}
-.hebel h3{font-size:17px;line-height:1.35;margin:0;padding-right:0}
-.hnr{width:34px;height:34px;border-radius:50%;background:#2A60FF;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
-.hlbl{display:block;font-size:10.5px;letter-spacing:.7px;font-weight:700;color:#2A60FF;text-transform:uppercase;margin-bottom:3px}
-.hwarum,.htun{font-size:13.5px;color:#4B5563;line-height:1.6}
-.htun{background:#F5F8FF;border-radius:10px;padding:12px 14px;color:#2B2F36}
-.hwer{margin-top:auto;font-size:12px;color:#8A90A0;font-weight:600}
+.kurz{font-size:16px;line-height:1.55;margin:6px 0 18px;max-width:980px;color:#fff}
+.sechead{background:transparent;border:0;box-shadow:none;padding:30px 0 2px}
+.sechead h3{font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-1.5px;margin:0 0 8px}
+.sechead .hint{max-width:900px}
+.hebel{display:flex;flex-direction:column;gap:14px}
+.hebel h3{font-size:36px;line-height:1.05;font-weight:700;letter-spacing:-1.2px;margin:0;padding-right:0}
+.hpills{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.hnr{width:32px;height:32px;border-radius:50%;background:#2A60FF;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+.hlbl{display:block;font-size:13px;letter-spacing:1px;font-weight:600;color:#6E6A60;text-transform:uppercase;margin-bottom:5px}
+.hwarum{font-size:15px;line-height:1.5;color:#3E3B33}
+.htun{background:#fff;border-radius:15px;padding:14px 16px;font-size:15px;line-height:1.5;color:#3E3B33}
+.hwer{margin-top:auto;font-size:13px;color:#6E6A60;font-weight:600;padding-top:4px}
+.hblock{background:#2A60FF;border-radius:22px;margin:2px 10px 0;padding:22px 24px;display:flex;flex-direction:column;gap:15px}
+.brow{display:flex;flex-direction:column;gap:7px}
+.bhead{display:flex;justify-content:space-between;gap:14px;font-size:14.5px;font-weight:600;color:#fff;line-height:1.3}
+.bhead b{font-weight:700;white-space:nowrap}
+.btrack{height:22px;border-radius:11px;background:rgba(255,255,255,.45);overflow:hidden}
+.bfill{height:100%;min-width:6px;border-radius:11px;background:#FFF8E6}
+.bfill.bad{background:rgba(255,255,255,.55)}
 .combos{display:flex;flex-direction:column;gap:6px;margin-top:8px}
-.combo{background:#F0FDF4;border:1px solid #DCFCE7;border-radius:8px;padding:6px 10px;font-size:13px;display:flex;justify-content:space-between;gap:8px}
-.combo i{font-style:normal;font-weight:700;color:#16A34A}
-.badge{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
-.badge.green{background:#DCFCE7;color:#15803D}.badge.amber{background:#FEF3C7;color:#B45309}
-.badge.red{background:#FEE2E2;color:#B91C1C}.badge.grey{background:#EEF0F4;color:#6B7280}
-.tbar{background:#EEF0F4;height:12px;border-radius:6px;overflow:hidden;min-width:120px}
-.tfill{height:100%;border-radius:6px}.tfill.green{background:#22C55E}.tfill.amber{background:#F59E0B}.tfill.red{background:#EF4444}.tfill.grey{background:#C9CEDB}
-.themtab td{padding:12px 9px}
-.woche{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.slot{background:#F5F8FF;border:1px solid #E0E8FF;border-radius:12px;padding:14px}
-.slot.bonus{background:#FFF7ED;border-color:#FFEDD5}
-.sday{font-weight:700;font-size:14px;color:#2B2F36}
-.stime{font-size:12.5px;color:#2A60FF;font-weight:600;margin:2px 0 10px}
-.slot.bonus .stime{color:#C2410C}
-.swhat{font-size:13.5px;font-weight:600;color:#2B2F36;line-height:1.4}
-.swhat span{font-weight:400;color:#6B7280;font-size:12.5px}
-.glossar li{margin:8px 0}
-.tab2.dim{opacity:.6}
-@media(max-width:1250px){.span4{grid-column:span 2}.woche{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.span4{grid-column:span 1}.kurz{font-size:14.5px}.woche{grid-template-columns:1fr 1fr}
-  .tw table.themtab{min-width:0}.themtab th:nth-child(2),.themtab td:nth-child(2),.themtab th:nth-child(3),.themtab td:nth-child(3){display:none}.themtab td,.themtab th{padding:10px 5px}.badge{font-size:11px;padding:3px 7px}}
+.combo{background:#fff;border:0;border-radius:12px;padding:8px 12px;font-size:14px;display:flex;justify-content:space-between;gap:10px;align-items:center;color:#16150F}
+.combo i{font-style:normal;font-weight:700;color:#16150F;white-space:nowrap}
+.combo i.gut{color:#2A60FF}
+.combo i.schwach{color:#3E3B33}
+.badge{display:inline-block;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap}
+.badge.green{background:#2A60FF;color:#fff}
+.badge.amber{background:#fff;color:#3E3B33;box-shadow:inset 0 0 0 1.5px #C9C5BA}
+.badge.red{background:#C9D6FF;color:#16150F}
+.badge.grey{background:#E7E4DC;color:#6E6A60}
+.tfill{height:100%;border-radius:7px}
+.tfill.green{background:#2A60FF}
+.tfill.amber{background:rgba(42,96,255,.5)}
+.tfill.red{background:#C9D6FF}
+.tfill.grey{background:#E7E4DC}
+.themtab td{padding:13px 9px}
+.woche{display:flex;flex-direction:column}
+.wrow{display:grid;grid-template-columns:76px 120px minmax(0,1fr);gap:10px;align-items:baseline;padding:13px 0;border-bottom:1px solid #2E2C25}
+.woche .wrow:last-child{border-bottom:0}
+.wtag{font-size:15px;font-weight:700;color:#16150F}
+.wzeit{font-size:15px;font-weight:600;color:#2A60FF}
+.wwas{font-size:15px;color:#3E3B33;line-height:1.4}
+.wwas em{display:block;font-style:normal;font-size:13px;color:#6E6A60;margin-top:2px}
+.glossar li{margin:9px 0;line-height:1.45}
+@media(max-width:1250px){.span4{grid-column:span 2}}
+@media(max-width:760px){
+  .span4{grid-column:span 1}
+  .kurz{font-size:15px}
+  .sechead h3{font-size:30px;letter-spacing:-1px}
+  .hebel h3{font-size:26px}
+  .hblock{margin:2px 4px 0;padding:16px}
+  .bhead{font-size:14px;flex-wrap:wrap;gap:4px 10px}
+  .wrow{grid-template-columns:76px minmax(0,1fr);gap:4px 10px}
+  .wwas{grid-column:1/-1}
+  .tw table.themtab{min-width:0}
+  .themtab th:nth-child(2),.themtab td:nth-child(2),.themtab th:nth-child(3),.themtab td:nth-child(3){display:none}
+  .themtab td,.themtab th{padding:10px 5px}
+  .badge{font-size:11px;padding:3px 7px}
+}
 """
 
 # Klartext-Überschriften für Tab 02
@@ -1686,22 +1766,28 @@ TEMPLATE = """<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA · Social Media &amp; Marketing Intelligence</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head>
 <body><div class="app">
   <div class="main">
-    <header class="top">
-      <h1>Edeka Social Media<br>&amp; Marketing Intelligence</h1>
-      <div class="tabs2">
+    <nav class="top">
+      <div class="navleft">
+        <span class="logo">E</span>
+        <div class="tabs2">
         <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">00 Was jetzt tun<small class="tabd">Die 5 wichtigsten Hebel</small></span>
         <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
         <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
         <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
         <span class="tab2" data-s="s5" onclick="sec('s5',this)">04 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
         {S3_TAB}
+        </div>
       </div>
       <span class="meta">{META_TEXT}</span>
-    </header>
+    </nav>
+    <div class="hero">
+      <span class="eyb">Social Check · EDEKA</span>
+      <h1 class="h1">Edeka Social Media<br>&amp; Marketing Intelligence</h1>
+    </div>
 
     <!-- 00 WAS JETZT TUN -->
     <div id="s0" class="sec">
@@ -1714,7 +1800,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="grid">
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3 style="font-size:20px">01 · Überblick</h3>
+          <h3>01 · Überblick</h3>
           <p class="hint">Hochlevel-Kennzahlen über alle erfassten Instagram-Profile · Datenstand {STAND}</p>
           <div class="heroRow">
             <div class="heroStats wide">
@@ -1911,7 +1997,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="grid">
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3 style="font-size:20px">04 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
+          <h3>04 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
           <p class="hint">Automatisch abgeleitet aus {de(N_POSTS)} Beiträgen von {de(N_KONTEN)} Profilen</p>
         </div>
 
@@ -1987,28 +2073,32 @@ TEMPLATE = """<!DOCTYPE html>
 # ---------------- v2-Layout (unveraendert vom Stand auf main) ----------------
 V2_CSS = """
 /* --- v2 tweaks --- */
-.meta{font-size:11px;color:#9AA0AE;letter-spacing:.1px}
 .card{min-width:0}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px}
 .tw table{min-width:640px}
 .chartw{overflow-x:auto}
 @media(max-width:760px){.chartw svg{min-width:560px}}
-/* hero stats: no boxes, separated by thin lines */
 .heroStats{gap:0!important;overflow:hidden;min-width:0}
-.heroStats .hstat{background:none;border:0;border-radius:0;border-left:1px solid rgba(255,255,255,.28);border-top:1px solid rgba(255,255,255,.28);margin:-1px 0 0 -1px;padding:16px 20px}
+.heroStats .hstat{background:none;border:0;border-radius:0;border-left:1px solid rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.3);margin:-1px 0 0 -1px;padding:16px 20px}
 .heroRow{display:block}
 @media(max-width:760px){
-  .main{padding:0 14px 36px}
-  .top{display:block;padding:14px 0 10px}
-  .top h1{font-size:15px;margin-bottom:8px}
-  .tabs2{margin:0 -14px;padding:0 14px 4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
-  .tabs2::-webkit-scrollbar{display:none}
-  .meta{display:block;margin-top:6px}
+  .main{padding:20px 16px 36px}
+  .top{gap:10px;padding-bottom:4px}
+  .logo{width:44px;height:44px;font-size:20px}
+  .tabs2{width:100%;padding:5px;gap:5px}
+  .tab2{padding:7px 13px;font-size:13px}
+  .tabd{display:none}
+  .meta{padding:9px 15px;font-size:13px}
+  .hero{padding:24px 0 6px}
+  .eyb{font-size:12px;margin-bottom:10px}
   .card{padding:18px}
-  .card h3{padding-right:26px}
-  .card h3[style]{font-size:17px!important}
+  .card h3{font-size:24px;letter-spacing:-.6px;padding-right:22px}
+  .card.span2 h3,.card.span3 h3{font-size:19px}
+  .card.blue h3{font-size:26px;letter-spacing:-.8px}
+  .card .hint{font-size:14px}
+  .kpi .k{font-size:56px;letter-spacing:-2px}
   .miniRow{grid-template-columns:1fr 1fr;gap:10px}
-  .mini span{font-size:14px;word-break:break-word}
+  .mini span{font-size:20px}
   .tw table{min-width:760px}
   .heroStats,.heroStats.wide{grid-template-columns:repeat(2,1fr)!important}
   .heroStats .hstat{padding:14px 12px}
@@ -2016,26 +2106,18 @@ V2_CSS = """
   .hstat .t{font-size:12px;align-items:flex-start}
   .hstat .t .dot{margin-top:5px;flex:0 0 auto}
   .hstat .s{font-size:11px;word-break:break-word}
-  .tabs{flex-wrap:nowrap;overflow-x:auto}
   .tab{white-space:nowrap}
   .adgrid{grid-template-columns:1fr}
-  .footer{padding:16px}
+  .footer{padding:20px}
+  .avail .ok,.avail .no{padding:16px}
+  .bul,.steps{font-size:14.5px}
 }
 """
 V3_CSS = """
 /* --- v3 header + centering --- */
-.main{margin:0 auto;padding:0 32px 46px}
-.top{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:20px;row-gap:34px;padding:44px 0 20px}
-.top h1{grid-column:1/-1;font-family:Outfit,Poppins,sans-serif;font-size:44px;line-height:1.18;font-weight:500;letter-spacing:-.8px;color:#111}
-.tabs2{margin-left:-2px}
-.top .meta{justify-self:end;white-space:nowrap}
-@media(max-width:1000px){.top{grid-template-columns:1fr}.top .meta{justify-self:start}}
-@media(max-width:760px){
-  .main{padding:0 14px 36px}
-  .top{display:grid;row-gap:14px;padding:22px 0 12px}
-  .top h1{font-size:28px;margin:0}
-  .tabs2{margin:0 -14px}
-}
+.main{margin:0 auto}
+@media(max-width:1000px){.h1{font-size:60px;letter-spacing:-2.6px}}
+@media(max-width:760px){.h1{font-size:44px;letter-spacing:-1.5px}}
 """
 # ---------------- Shell + Views: Zahlen kommen per fetch aus data/dashboard.json ----------------
 def _split_template(tpl):
@@ -2111,7 +2193,7 @@ def _tw(html_):
 
 EXTRA_CSS = """
 x[data-v]{display:contents}
-.boot{display:none;max-width:640px;margin:60px auto;background:#fff;border:1px solid #E4E8F0;border-radius:14px;padding:26px;text-align:center;color:#6B7280;font-size:14px}
+.boot{display:none;max-width:640px;margin:60px auto;background:#F2F0EB;border:0;border-radius:15px;padding:26px;text-align:center;color:#6E6A60;font-size:15px}
 body.loading .boot{display:block}
 body.loading .grid,body.loading .footer{display:none}
 """
