@@ -1791,11 +1791,12 @@ NAVCSS = """
   .tab2{padding:9px 14px;font-size:14px;min-height:40px}
   .tabs2.end{mask-image:none;-webkit-mask-image:none}
   .h1{font-size:40px!important;letter-spacing:-1.4px!important}
-  /* Mobil: kein Rahmen, volle Breite */
-  body{padding:0!important;background:#fff!important}
-  .main{border-radius:0!important;padding:20px 16px 36px!important}
-  .top{border-radius:0!important}
+  .main{padding:20px 16px 36px!important}
 }
+/* Kein Rahmen: volle Breite auf allen Geräten */
+body{padding:0!important;background:#fff!important}
+.main{border-radius:0!important}
+.top,.top.scrolled{border-radius:0!important}
 """
 
 TEMPLATE = """<!DOCTYPE html>
