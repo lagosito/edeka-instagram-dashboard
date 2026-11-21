@@ -1791,6 +1791,10 @@ NAVCSS = """
   .tab2{padding:9px 14px;font-size:14px;min-height:40px}
   .tabs2.end{mask-image:none;-webkit-mask-image:none}
   .h1{font-size:40px!important;letter-spacing:-1.4px!important}
+  /* Mobil: kein Rahmen, volle Breite */
+  body{padding:0!important;background:#fff!important}
+  .main{border-radius:0!important;padding:20px 16px 36px!important}
+  .top{border-radius:0!important}
 }
 """
 
@@ -1816,7 +1820,7 @@ TEMPLATE = """<!DOCTYPE html>
       <span class="meta">{META_TEXT}</span>
     </nav>
     <div class="hero">
-      <span class="eyb">Social Check · EDEKA<span class="eybst"> · {META_TEXT}</span></span>
+      <span class="eyb">Social Check · EDEKA<span class="eybst"> · {STAND}</span></span>
       <h1 class="h1">{HEADLINE}</h1>
     </div>
 
