@@ -1358,7 +1358,7 @@ def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', b
           <div class="htn"><b>{big or wirkung}</b><span>{bigsub}</span></div>
           <div class="hbs">{''.join(rows)}</div>
           <div class="hta">{akt}</div>
-          <div class="hev"><span class="ev ev-{ev[0]}" title="{esc(ev[2])}">Evidenz: {ev[1]}</span><span class="ev au">Aufwand: {au[1]}</span></div>
+          <div class="hev"><span class="dot d-{ev[0]}"></span>Evidenz {ev[1].lower()} · Aufwand {au[1].lower()}</div>
           <details class="htd"><summary>Warum &amp; wie?</summary>
             <dl>
               <dt>Beobachtung</dt><dd>{warum}</dd>
@@ -1505,7 +1505,7 @@ def _kpi(titel, cls, urteil, zahl, einheit, bars, satz):
     return f"""<div class="vk"><div class="vkh"><span class="vkt">{titel}</span><span class="vku u-{cls}">{urteil}</span></div>
       <div class="vkz"><b>{zahl}</b><span>{einheit}</span></div>
       <div class="kbs">{''.join(bars)}</div>
-      <div class="vks">{satz}</div></div>"""
+      </div>"""
 
 _KPIS = []
 _c, _u = _urteil_bench(LOK_MED)
@@ -1516,7 +1516,7 @@ _KPIS.append(_kpi('Lokale Märkte', _c, _u, _z(LOK_MED), 'von 100 Followern reag
 if HAUPT_MED is not None:
     _c, _u = _urteil_bench(HAUPT_MED)
     _mx = max(HAUPT_MED, BENCH_ER) or 1
-    _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), 'von 100 Followern reagieren',
+    _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), f'von 100 Followern reagieren · {de(HAUPT_F)} Follower',
         [_kbar('@edeka', _z(HAUPT_MED, 2), HAUPT_MED / _mx, HAUPT_MED >= BENCH_ER), _kbar('Branche', _z(BENCH_ER, 2), BENCH_ER / _mx, False)],
         f'{de(HAUPT_F)} Follower, aber nur rund {de(HAUPT_INT)} Reaktionen pro Beitrag.'))
 _KPIS.append(_kpi('Themen-Mix', 'schwach' if _SCHWACH_ANT >= 0.4 else 'mittel', 'Ausbaufähig' if _SCHWACH_ANT < 0.4 else 'Schwach',
@@ -1633,17 +1633,19 @@ _HYP = ''
 if _TH_BEST and _TH_WORST:
     _hb, _hw = _TH_BEST[0], _TH_WORST
     _HYP = f"""
-        <div class="card span6 hyp">
-          <div class="hyph"><span class="eyebrow2">Strategische Hypothese</span><span class="ev ev-mittel">Teilweise gestützt</span></div>
+        <details class="card span6 hyp">
+          <summary><span class="eyebrow2">Strategische Hypothese</span><span class="ev ev-mittel">Teilweise gestützt</span>
+            <span class="hyps">Menschen-Posts {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]}. Die Kombination ist noch nicht getestet.</span><span class="chev"></span></summary>
           <div class="hypg">
             <div class="hypc ok"><b>Das zeigen die Daten</b><span>Posts mit Menschen und Humor laufen {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]} als ein normaler Beitrag ({de(_hb['n'])} und {de(_hw['n'])} Beiträge).</span></div>
             <div class="hypc open"><b>Noch offen</b><span>Ob Preis und Menschen <i>zusammen</i> besser laufen, ist nicht gemessen. Jeder Post hat nur ein Thema.</span></div>
-            <div class="hypc next"><b>Nächster Schritt</b><span>4 Wochen testen: Preis-Posts mit Gesicht gegen reine Preis-Posts. Das Dashboard vergleicht beide Gruppen.</span></div>
+            <div class="hypc next"><b>Nächster Schritt</b><span>4 Wochen testen: Preis-Posts mit Gesicht gegen reine Preis-Posts.</span></div>
           </div>
-        </div>"""
+        </details>"""
 
 # ---- Was die viralen Posts gemeinsam haben ----
 _MUSTER = ''
+_MUSTER_SUM = ''
 _TH_URL = {q.get('url'): q.get('thema') for q in posts}
 for _q in ueberflieger:
     _q['thema'] = _TH_URL.get(_q.get('url'), _q.get('thema'))
@@ -1663,14 +1665,14 @@ if ueberflieger:
         _rows.append((esc(_t), f'{_c} von {_nv}', f'{_ta * 100:.0f} % aller Posts'))
     _rows.append(('Gepostet ab 19 Uhr', f'{round(_abend_v * _nv)} von {_nv}', f'{_abend_a * 100:.0f} % aller Posts'))
     _bsp = ''.join(f'<a class="hbsp" href="{esc(q.get("url") or "#")}" target="_blank" rel="noopener"><b>@{esc(q["handle"])}</b> · {FMT_DE.get(q.get("kind"), "")} <br>{de((q.get("likes") or 0) + (q.get("comments") or 0))} Reaktionen statt sonst rund {de((_acc_idx.get(q["handle"]) or {}).get("med_inter"))} <span>ansehen →</span></a>' for q in ueberflieger[:3])
+    _MUSTER_SUM = ' · '.join(f'{v} {l}' for l, v, a in _rows[:2])
     _MUSTER = f"""
         <div class="card span6">
           <h3>Was die {_nv} viralen Posts gemeinsam haben</h3>
-          <p class="hint">Viral = mindestens dreimal so viele Reaktionen wie sonst beim selben Profil. Vergleich mit allen Posts.</p>
           <div class="mgrid">{''.join(f'<div class="mz"><span class="ml">{l}</span><b>{v}</b><span class="mv">vs. {a}</span></div>' for l, v, a in _rows)}</div>
           <p class="hint" style="margin-top:14px">Zum Nachmachen: die drei stärksten Beispiele</p>
           <div class="mbsp">{_bsp}</div>
-          <p class="hint" style="margin-top:10px">Bei {_nv} Posts sind das Muster, keine Gesetze. Begrenzte Evidenz.</p>
+          <p class="hint" style="margin-top:10px">Viral = mindestens 3× so viele Reaktionen wie sonst beim selben Profil. Bei {_nv} Posts: Muster, keine Gesetze.</p>
         </div>"""
 
 EXPLORER_EXTRA = f"""
@@ -1690,24 +1692,18 @@ EXPLORER_EXTRA = f"""
           </ul>
         </div>"""
 
-def _frage(nr, titel, sub=''):
-    return f'<div class="card span6 sechead frage"><span class="fnr">{nr}</span><div><h3>{titel}</h3>{f"<p class=hint style=margin:0>{sub}</p>" if sub else ""}</div></div>'
+def _sektion(nr, titel, inhalt, zusammenfassung='', offen=True):
+    return f"""<details class="acc span6"{' open' if offen else ''}>
+          <summary class="frage"><span class="fnr">{nr}</span><span class="ftx"><span class="fti">{titel}</span>{f'<span class="fsu">{zusammenfassung}</span>' if zusammenfassung else ''}</span><span class="chev"></span></summary>
+          <div class="grid accg">{inhalt}</div>
+        </details>"""
 
 PLAN_HTML = f"""
         {_HYP}
-        {_frage(1, 'Wo stehen wir?')}
-        <div class="span6">{KPI_HTML}</div>
-        {_frage(2, 'Was sollten wir ändern?', f'Sortiert nach Evidenz, Wirkung und Aufwand. Verglichen mit einem normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren). „Warum &amp; wie?“ öffnet Beobachtung, Bedeutung, Beispiel und Erfolgsmessung.')}
-        {_PRIOS}
-        {_frage(3, 'Warum funktioniert es?', 'Muster aus den erfolgreichsten Posts, mit echten Beispielen.')}
-        {_MUSTER}
-        {_frage(4, 'Was machen wir als Nächstes?')}
-        {PLAN_JS_HTML}
-        <div class="card span6">
-          <h3>So könnte eine gute Woche aussehen</h3>
-          <p class="hint">Beispielplan aus den stärksten Tagen, Uhrzeiten und Thema-Format-Kombinationen</p>
-          {_WOCHE}
-        </div>
+        {_sektion(1, 'Wo stehen wir?', f'<div class="span6">{KPI_HTML}</div>')}
+        {_sektion(2, 'Was sollten wir ändern?', _PRIOS, 'Sortiert nach Evidenz, Wirkung und Aufwand')}
+        {_sektion(3, 'Warum funktioniert es?', _MUSTER, _MUSTER_SUM, offen=False)}
+        {_sektion(4, 'Was machen wir als Nächstes?', PLAN_JS_HTML + f"""<div class="card span6"><h3>So könnte eine gute Woche aussehen</h3>{_WOCHE}</div>""", 'Social-Plan KW 1–8 und Beispielwoche', offen=False)}
 """
 
 S3_LEER = f"""
@@ -1882,6 +1878,28 @@ TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
 NAVCSS = """
+/* Akkordeons */
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.acc{grid-column:1/-1;border-top:1px solid #E7E4DC}
+.acc>summary.frage{display:flex;align-items:center;gap:14px;padding:26px 0 18px}
+.ftx{display:flex;flex-direction:column;gap:2px;flex:1 1 auto;min-width:0}
+.fti{font-size:44px;font-weight:700;letter-spacing:-1.5px;line-height:1.05}
+.fsu{font-size:15px;color:#6E6A60;font-weight:500}
+.chev{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:#F2F0EB;position:relative}
+.chev::after{content:"";position:absolute;left:50%;top:45%;width:9px;height:9px;border-right:2px solid #16150F;border-bottom:2px solid #16150F;transform:translate(-50%,-50%) rotate(45deg);transition:transform .2s}
+details[open]>summary .chev::after{transform:translate(-50%,-20%) rotate(225deg)}
+.accg{padding-bottom:24px}
+.hyp>summary{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.hyps{flex:1 1 100%;font-size:16px;font-weight:600;line-height:1.4;color:#16150F;order:3}
+.hyp>summary .chev{margin-left:auto}
+.hyp[open] .hypg{margin-top:16px}
+.hev{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#6E6A60}
+.dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}.d-stark{background:#2A60FF}.d-mittel{background:#9DB4FF}.d-begrenzt{background:#fff;border:1.5px solid #8A867C}
+.footer>summary{font-weight:700;color:#16150F;font-size:15px}
+.footer[open]>summary{margin-bottom:10px}
+@media(max-width:760px){.fti{font-size:28px;letter-spacing:-.8px}.fsu{font-size:13px}.acc>summary.frage{padding:20px 0 12px;gap:10px}.hyps{font-size:15px}}
+
 /* Executive Overview */
 .tabsep{align-self:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8A867C;padding:0 4px 0 10px;flex:0 0 auto}
 .frage{display:flex;align-items:flex-start;gap:14px;padding-top:26px!important}
@@ -1934,7 +1952,7 @@ NAVCSS = """
 .htd p b{color:#16150F}
 .htd .htw{font-size:12px;color:#6E6A60}
 @media(max-width:1250px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.hgrid{grid-template-columns:1fr}.htt,.htn span,.hta{min-height:0}}
+@media(max-width:760px){.hgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:16px;gap:10px;margin:0 -16px;padding:0 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.hgrid::-webkit-scrollbar{display:none}.ht{flex:0 0 84%;scroll-snap-align:start}.htt,.htn span,.hta{min-height:0}.hgrid .ht:last-child{margin-right:16px}}
 
 /* KPI-Karten Variante B */
 .vkgrid{align-items:stretch}
@@ -2272,7 +2290,7 @@ TEMPLATE = """<!DOCTYPE html>
       </div>
     </div>
 
-    <div class="footer">
+    <details class="footer"><summary>Methodik &amp; Datenquellen</summary>
       <b>Methodik:</b> Engagement-Rate = (Likes + Kommentare) ÷ Follower × 100, gemittelt über die letzten 12 Beiträge je Profil;
       Profile ab 500 Followern und mindestens 5 Beiträgen im Ranking. Median zusätzlich zum Mittelwert, weil einzelne Viral-Beiträge verzerren.
       Aktivität = Beiträge in den letzten 30 Tagen (Datenstand {STAND}). Uhrzeiten in {TZ_LABEL} (deutsche Ortszeit, aus UTC umgerechnet).
@@ -2281,7 +2299,7 @@ TEMPLATE = """<!DOCTYPE html>
       Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 05).
       Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. {ACC_TEXT}
       Datenaufbereitung: {de(N_AUSGESCHLOSSEN)} Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), {de(N_FREMDE_POSTS)} Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), {de(N_NO_LIKES)} Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet ({de(N_POSTS_GUELTIG)} von {de(N_POSTS)} Beiträgen mit Like-Wert).
-    </div>
+    </details>
   </div>
 </div>
 <script>{JS}</script>

@@ -298,6 +298,28 @@ body.loading .grid,body.loading .footer{display:none}
 @media(max-width:1250px){.vkgrid,.kwgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.berl{grid-template-columns:1fr}}
 @media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.card.blue h3.headline{font-size:22px}.vkz b{font-size:56px;letter-spacing:-2px}.card.kamp h3{font-size:18px}}
 
+/* Akkordeons */
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.acc{grid-column:1/-1;border-top:1px solid #E7E4DC}
+.acc>summary.frage{display:flex;align-items:center;gap:14px;padding:26px 0 18px}
+.ftx{display:flex;flex-direction:column;gap:2px;flex:1 1 auto;min-width:0}
+.fti{font-size:44px;font-weight:700;letter-spacing:-1.5px;line-height:1.05}
+.fsu{font-size:15px;color:#6E6A60;font-weight:500}
+.chev{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:#F2F0EB;position:relative}
+.chev::after{content:"";position:absolute;left:50%;top:45%;width:9px;height:9px;border-right:2px solid #16150F;border-bottom:2px solid #16150F;transform:translate(-50%,-50%) rotate(45deg);transition:transform .2s}
+details[open]>summary .chev::after{transform:translate(-50%,-20%) rotate(225deg)}
+.accg{padding-bottom:24px}
+.hyp>summary{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.hyps{flex:1 1 100%;font-size:16px;font-weight:600;line-height:1.4;color:#16150F;order:3}
+.hyp>summary .chev{margin-left:auto}
+.hyp[open] .hypg{margin-top:16px}
+.hev{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#6E6A60}
+.dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}.d-stark{background:#2A60FF}.d-mittel{background:#9DB4FF}.d-begrenzt{background:#fff;border:1.5px solid #8A867C}
+.footer>summary{font-weight:700;color:#16150F;font-size:15px}
+.footer[open]>summary{margin-bottom:10px}
+@media(max-width:760px){.fti{font-size:28px;letter-spacing:-.8px}.fsu{font-size:13px}.acc>summary.frage{padding:20px 0 12px;gap:10px}.hyps{font-size:15px}}
+
 /* Executive Overview */
 .tabsep{align-self:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8A867C;padding:0 4px 0 10px;flex:0 0 auto}
 .frage{display:flex;align-items:flex-start;gap:14px;padding-top:26px!important}
@@ -350,7 +372,7 @@ body.loading .grid,body.loading .footer{display:none}
 .htd p b{color:#16150F}
 .htd .htw{font-size:12px;color:#6E6A60}
 @media(max-width:1250px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.hgrid{grid-template-columns:1fr}.htt,.htn span,.hta{min-height:0}}
+@media(max-width:760px){.hgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:16px;gap:10px;margin:0 -16px;padding:0 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.hgrid::-webkit-scrollbar{display:none}.ht{flex:0 0 84%;scroll-snap-align:start}.htt,.htn span,.hta{min-height:0}.hgrid .ht:last-child{margin-right:16px}}
 
 /* KPI-Karten Variante B */
 .vkgrid{align-items:stretch}
@@ -682,7 +704,7 @@ body{padding:0!important;background:#fff!important}
       </div>
     </div>
 
-    <div class="footer">
+    <details class="footer"><summary>Methodik &amp; Datenquellen</summary>
       <b>Methodik:</b> Engagement-Rate = (Likes + Kommentare) ÷ Follower × 100, gemittelt über die letzten 12 Beiträge je Profil;
       Profile ab 500 Followern und mindestens 5 Beiträgen im Ranking. Median zusätzlich zum Mittelwert, weil einzelne Viral-Beiträge verzerren.
       Aktivität = Beiträge in den letzten 30 Tagen (Datenstand <x data-v="v92"></x>). Uhrzeiten in <x data-v="v93"></x> (deutsche Ortszeit, aus UTC umgerechnet).
@@ -691,7 +713,7 @@ body{padding:0!important;background:#fff!important}
       Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 05).
       Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. <x data-v="v97"></x>
       Datenaufbereitung: <x data-v="v98"></x> Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), <x data-v="v99"></x> Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), <x data-v="v100"></x> Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet (<x data-v="v101"></x> von <x data-v="v102"></x> Beiträgen mit Like-Wert).
-    </div>
+    </details>
   </div>
 </div>
 <script>
