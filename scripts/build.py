@@ -1300,23 +1300,26 @@ ZIEL_DE = {'Umsatz': 'Umsatz', 'Frequenz': 'Frequenz', 'Preiswahrnehmung': 'Prei
 def _ziele(lst):
     return '<div class="ziele"><span class="zlbl">Zahlt ein auf</span>' + ''.join(f'<span class="ziel">{esc(z)}</span>' for z in lst) + '</div>'
 
-def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', bars=()):
-    bhtml = ''
+def _fx(v):
+    f = v / POST_MED if POST_MED else 0
+    return (f'{f:.0f}×' if f >= 2.95 else f'{f:.1f}×'.replace('.', ','))
+
+def _hebel(nr, titel, warum, tun, wer, ziele, span=3, wirkung='', wcls='info', bars=(), kurz='', big='', bigsub='', akt=''):
+    rows = []
     if bars:
-        mx = max(b[2] for b in bars) or 1
-        _rows = []
-        for _lab, _wert, _val, _good in bars:
-            _wp = max(6, min(100, _val / mx * 100))
-            _rows.append(f'<div class="brow"><div class="bhead"><span>{_lab}</span><b>{_wert}</b></div>'
-                         f'<div class="btrack"><div class="bfill{"" if _good else " bad"}" style="width:{_wp:.0f}%"></div></div></div>')
-        bhtml = '<div class="hblock">' + ''.join(_rows) + '</div>'
-    return f"""<div class="card span{span} hebel">
-          <div class="hpills"><span class="hnr">{nr}</span><span class="pill {wcls}">{wirkung}</span>{_ziele(ziele)}</div>
-          <h3>{titel}</h3>
-          <div class="hwarum"><span class="hlbl">Warum</span>{warum}</div>
-          <div class="htun"><span class="hlbl">So geht's</span>{tun}</div>
-          {bhtml}
-          <div class="hwer">{wer}</div>
+        mx = max(b[2] for b in bars[:2]) or 1
+        for _lab, _wert, _val, _good in bars[:2]:
+            _wp = max(3, min(100, _val / mx * 100))
+            rows.append(f'<div class="hb"><div class="hbh"><span>{_lab}</span><b>{_wert}</b></div>'
+                        f'<div class="hbt"><div class="hbf{"" if _good else " s"}" style="width:{_wp:.0f}%"></div></div></div>')
+    return f"""<div class="ht">
+          <div class="hth"><span class="hnr">{nr}</span><span class="htz">{' · '.join(ziele)}</span></div>
+          <div class="htt">{kurz or titel}</div>
+          <div class="htn"><b>{big or wirkung}</b><span>{bigsub}</span></div>
+          <div class="hbs">{''.join(rows)}</div>
+          <div class="hta">{akt}</div>
+          <details class="htd"><summary>Warum &amp; wie?</summary>
+            <p><b>Warum:</b> {warum}</p><p><b>So geht's:</b> {tun}</p><p class="htw">{wer}</p></details>
         </div>"""
 
 _HEBEL = []
@@ -1331,6 +1334,7 @@ if _TH_BEST and _TH_WORST:
         ("Den Preis nicht weglassen, sondern beweisen: jemand aus dem Markt zeigt den Kassenbon, erklärt den Preishelden oder erzählt die Geschichte hinter dem Produkt. „Rechne nach“ wird zum Post."
          if _preis else f"{esc(_w['thema'])} mit Gesichtern, Humor oder Herkunft erzählen."),
         'Für alle Märkte &amp; die Zentrale', ['Preiswahrnehmung', 'Frequenz'],
+        kurz=('Preis beweisen – mit Menschen' if _preis else f"{esc(_w['thema'])} umbauen"), big=_mal(_b['med'], _w['med']), bigsub=f"{esc(_b['thema'])} vs. {esc(_w['thema'])}", akt=('Preise mit Gesichtern aus dem Markt zeigen.' if _preis else 'Mit Gesichtern, Humor oder Herkunft erzählen.'),
         wirkung=f'{_mal(_b["med"], _w["med"])} Unterschied', wcls=_rel(_b["med"])[0],
         bars=[(esc(_b["thema"]), _rel(_b["med"])[1], _b["med"], _rel(_b["med"])[0] == 'gut'),
               (esc(_w["thema"]), _rel(_w["med"])[1], _w["med"], _rel(_w["med"])[0] == 'gut')]))
@@ -1341,6 +1345,7 @@ if _FMT_BASE and _FMT_BONUS:
         f"<b>{esc(_FMT_BONUS['label'])}</b> laufen meist <b>{_rel(_FMT_BONUS['er_med'])[1]}</b>, aber <b>{_FMT_BONUS_N} der {len(ueberflieger)} viralen Posts</b> waren {esc(_FMT_BONUS['label'])}.",
         f"Den Großteil als {esc(_FMT_BASE['label'])} planen. {esc(_FMT_BONUS['label'])} gezielt für Humor &amp; Team – der Glückstreffer mit dem größten Potenzial.",
         'Für alle Märkte', ['Frequenz'],
+        kurz=f"{esc(_FMT_BASE['label'])} als Standard", big=_fx(_FMT_BASE['er_med']), bigsub=f"{esc(_FMT_BASE['label'])} vs. normaler Post", akt=f"Großteil als {esc(_FMT_BASE['label'])}, {esc(_FMT_BONUS['label'])} für Team &amp; Humor.",
         wirkung=_rel(_FMT_BASE['er_med'])[1], wcls=_rel(_FMT_BASE['er_med'])[0],
         bars=[(esc(_FMT_BASE['label']), _rel(_FMT_BASE['er_med'])[1], _FMT_BASE['er_med'], _rel(_FMT_BASE['er_med'])[0] == 'gut'),
               (esc(_FMT_BONUS['label']), _rel(_FMT_BONUS['er_med'])[1], _FMT_BONUS['er_med'], _rel(_FMT_BONUS['er_med'])[0] == 'gut')]))
@@ -1351,6 +1356,7 @@ if _COMBOS:
         f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag.",
         'Für jede Kombination eine fertige Vorlage an die Märkte geben – dann muss nicht jeder Markt das Rad neu erfinden.',
         'Zentrale → Märkte', ['Frequenz', 'Umsatz'],
+        kurz='Gewinner-Kombis als Vorlagen', big=_fx(_COMBOS[0]['med']), bigsub=f"{esc(_COMBOS[0]['thema'])} als {esc(_COMBOS[0]['fmt'])}", akt='Fertige Vorlagen an alle Märkte geben.',
         wirkung=_rel(_COMBOS[0]['med'])[1], wcls=_rel(_COMBOS[0]['med'])[0],
         bars=[(f'{esc(c["thema"])} als {esc(c["fmt"])}', _rel(c['med'])[1], c['med'], _rel(c['med'])[0] == 'gut') for c in _COMBOS]))
 if _HR_BEST and _HR_VOLL:
@@ -1361,6 +1367,7 @@ if _HR_BEST and _HR_VOLL:
         + (f" Stärkster Tag: <b>{esc(_WD_BEST['label'])}</b>, schwächster: {esc(_WD_WORST['label'])}." if _WD_BEST and _WD_WORST else ''),
         'Beiträge vorplanen und abends veröffentlichen. Den Montag eher meiden.',
         'Für alle Märkte', ['Frequenz'],
+        kurz=f"Um {_HR_BEST[0]['h']} Uhr posten, nicht um {_HR_VOLL['h']}", big=_fx(_HR_BEST[0]['med']), bigsub=f"{_HR_BEST[0]['h']} Uhr vs. normaler Post", akt='Vorplanen und abends veröffentlichen.',
         wirkung=f'{_mal(_HR_BEST[0]["med"], _HR_VOLL["med"])} Unterschied', wcls=_rel(_HR_BEST[0]['med'])[0],
         bars=[(f'{_HR_BEST[0]["h"]} Uhr', _rel(_HR_BEST[0]['med'])[1], _HR_BEST[0]['med'], _rel(_HR_BEST[0]['med'])[0] == 'gut'),
               (f'{_HR_VOLL["h"]} Uhr', _rel(_HR_VOLL['med'])[1], _HR_VOLL['med'], _rel(_HR_VOLL['med'])[0] == 'gut')]))
@@ -1373,11 +1380,12 @@ if _DCO_TOP:
         + (f"{BRAND_DE[_REC_TOP]} wirbt in {_rec['recruiting']} von {_rec['n']} Anzeigen um Personal – EDEKA in {_ED['recruiting']}." if _rec and _rec['recruiting'] else ''),
         'Preise gehören in dynamische Anzeigen, nicht in den organischen Feed. Team &amp; Azubis laufen organisch schon am besten – auch als Recruiting-Anzeige nutzen.',
         'Für die Zentrale / Media', ['Umsatz', 'Preiswahrnehmung'], 6,
+        kurz='Angebote in Anzeigen', big=f"{_ED['dco']} : {_k['dco']}", bigsub=f"Angebots-Anzeigen EDEKA : {BRAND_DE[_DCO_TOP]}", akt='Preise in dynamische Anzeigen statt in den Feed.',
         wirkung=f'DCO-Anzeigen {_k["dco"]} vs {_ED["dco"]}', wcls='info',
-        bars=[(f'{BRAND_DE[_DCO_TOP]} – automatisch aus dem Sortiment', str(_k['dco']), _k['dco'], True),
-              ('EDEKA', str(_ED['dco']), _ED['dco'], False)]) )
+        bars=[(f'{BRAND_DE[_DCO_TOP]}', str(_k['dco']), _k['dco'], False),
+              ('EDEKA', str(_ED['dco']), _ED['dco'], True)]) )
 
-_PRIOS = ''.join(_HEBEL)
+_PRIOS = '<div class="span6 hgrid">' + ''.join(_HEBEL) + '</div>'
 
 def _thema_tab():
     mx = max([r['med'] for r in THEMEN_ROWS if r['n'] >= 20] or [1])
@@ -1575,7 +1583,7 @@ PLAN_HTML = f"""
         <div class="card span6 sechead"><h3>Wie stehen wir da?</h3></div>
         <div class="span6">{KPI_HTML}</div>
 
-        <div class="card span6 sechead"><h3>Die 5 wichtigsten Hebel</h3><p class="hint" style="margin:0">Alle Vergleiche beziehen sich auf einen normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren). Aktualisiert sich automatisch.</p></div>
+        <div class="card span6 sechead"><h3>Die 5 wichtigsten Hebel</h3><p class="hint" style="margin:0">Verglichen mit einem normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren).</p></div>
         {_PRIOS}
 
         <div class="card span6">
@@ -1775,6 +1783,32 @@ TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
 NAVCSS = """
+/* Hebel als kompakte Kacheln */
+.hgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:start}
+.ht{background:#F2F0EB;border-radius:15px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.hth{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ht .hnr{width:28px;height:28px;border-radius:50%;background:#2A60FF;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.htt{font-size:18px;font-weight:700;line-height:1.2;letter-spacing:-.3px;min-height:44px}
+.htn{display:flex;flex-direction:column;gap:2px}
+.htn b{font-size:52px;font-weight:700;letter-spacing:-2px;line-height:1;white-space:nowrap}
+.htn span{font-size:13px;font-weight:600;color:#3E3B33;min-height:34px;line-height:1.3}
+.hbs{display:flex;flex-direction:column;gap:8px}
+.hbh{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:600;color:#3E3B33;margin-bottom:4px}
+.hbh span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.hbh b{color:#16150F;white-space:nowrap}
+.hbt{height:8px;border-radius:4px;background:#fff;overflow:hidden}
+.hbf{height:8px;border-radius:4px;background:#2A60FF}.hbf.s{background:#B8B3A7}
+.hta{font-size:14px;font-weight:600;line-height:1.35;min-height:38px}
+.htd summary{display:inline-block;list-style:none;cursor:pointer;background:#fff;border-radius:999px;padding:9px 14px;font-size:13px;font-weight:600}
+.htd summary::-webkit-details-marker{display:none}
+.htd[open] summary{margin-bottom:10px}
+.htd p{margin:0 0 8px;font-size:13.5px;line-height:1.5;color:#3E3B33}
+.htd p b{color:#16150F}
+.htd .htw{font-size:12px;color:#6E6A60}
+@media(max-width:1250px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hgrid{grid-template-columns:1fr}.htt,.htn span,.hta{min-height:0}}
+
 /* KPI-Karten Variante B */
 .vkgrid{align-items:stretch}
 .vk{gap:16px!important}

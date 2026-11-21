@@ -298,6 +298,32 @@ body.loading .grid,body.loading .footer{display:none}
 @media(max-width:1250px){.vkgrid,.kwgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.berl{grid-template-columns:1fr}}
 @media(max-width:760px){.vkgrid,.kwgrid{grid-template-columns:1fr}.card.blue h3.headline{font-size:22px}.vkz b{font-size:56px;letter-spacing:-2px}.card.kamp h3{font-size:18px}}
 
+/* Hebel als kompakte Kacheln */
+.hgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:start}
+.ht{background:#F2F0EB;border-radius:15px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.hth{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ht .hnr{width:28px;height:28px;border-radius:50%;background:#2A60FF;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.htz{font-size:11.5px;font-weight:600;color:#6E6A60;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.htt{font-size:18px;font-weight:700;line-height:1.2;letter-spacing:-.3px;min-height:44px}
+.htn{display:flex;flex-direction:column;gap:2px}
+.htn b{font-size:52px;font-weight:700;letter-spacing:-2px;line-height:1;white-space:nowrap}
+.htn span{font-size:13px;font-weight:600;color:#3E3B33;min-height:34px;line-height:1.3}
+.hbs{display:flex;flex-direction:column;gap:8px}
+.hbh{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:600;color:#3E3B33;margin-bottom:4px}
+.hbh span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.hbh b{color:#16150F;white-space:nowrap}
+.hbt{height:8px;border-radius:4px;background:#fff;overflow:hidden}
+.hbf{height:8px;border-radius:4px;background:#2A60FF}.hbf.s{background:#B8B3A7}
+.hta{font-size:14px;font-weight:600;line-height:1.35;min-height:38px}
+.htd summary{display:inline-block;list-style:none;cursor:pointer;background:#fff;border-radius:999px;padding:9px 14px;font-size:13px;font-weight:600}
+.htd summary::-webkit-details-marker{display:none}
+.htd[open] summary{margin-bottom:10px}
+.htd p{margin:0 0 8px;font-size:13.5px;line-height:1.5;color:#3E3B33}
+.htd p b{color:#16150F}
+.htd .htw{font-size:12px;color:#6E6A60}
+@media(max-width:1250px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hgrid{grid-template-columns:1fr}.htt,.htn span,.hta{min-height:0}}
+
 /* KPI-Karten Variante B */
 .vkgrid{align-items:stretch}
 .vk{gap:16px!important}
