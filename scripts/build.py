@@ -1434,32 +1434,37 @@ def _urteil_bench(v):
         return ('mittel', 'Im Schnitt')
     return ('schwach', 'Schwach')
 
-def _kpi(titel, cls, urteil, zahl, einheit, satz, vergleich):
-    return f"""<div class="vk"><div class="vkt">{titel}</div>
-      <div class="vkp"><span class="pill {cls}">{urteil}</span><span class="pill vgl">{vergleich}</span></div>
-      <div class="vkz"><b class="z-{cls}">{zahl}</b><span>{einheit}</span></div>
+def _kbar(label, wert, anteil, gut=True):
+    return (f'<div class="kb"><span class="kbl">{label}</span><div class="kbt"><div class="kbf {"g" if gut else "s"}" '
+            f'style="width:{max(2, min(100, anteil * 100)):.0f}%"></div></div><span class="kbw">{wert}</span></div>')
+
+def _kpi(titel, cls, urteil, zahl, einheit, bars, satz):
+    return f"""<div class="vk"><div class="vkh"><span class="vkt">{titel}</span><span class="vku u-{cls}">{urteil}</span></div>
+      <div class="vkz"><b>{zahl}</b><span>{einheit}</span></div>
+      <div class="kbs">{''.join(bars)}</div>
       <div class="vks">{satz}</div></div>"""
 
 _KPIS = []
 _c, _u = _urteil_bench(LOK_MED)
-_KPIS.append(_kpi('Lokale Märkte', _c, _u, _z(LOK_MED), 'von 100 Followern',
-    'reagieren auf einen normalen Beitrag mit Like oder Kommentar.',
-    f'Branche {_z(BENCH_ER, 2)}'))
+_mx = max(LOK_MED, BENCH_ER) or 1
+_KPIS.append(_kpi('Lokale Märkte', _c, _u, _z(LOK_MED), 'von 100 Followern reagieren',
+    [_kbar('Märkte', _z(LOK_MED), LOK_MED / _mx, LOK_MED >= BENCH_ER), _kbar('Branche', _z(BENCH_ER, 2), BENCH_ER / _mx, False)],
+    'auf einen normalen Beitrag mit Like oder Kommentar.'))
 if HAUPT_MED is not None:
     _c, _u = _urteil_bench(HAUPT_MED)
-    _fak = BENCH_ER / HAUPT_MED if HAUPT_MED else 0
-    _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), 'von 100 Followern',
-        f'{de(HAUPT_F)} Follower, aber nur rund {de(HAUPT_INT)} Reaktionen pro Beitrag.',
-        (f'{_fak:.0f}× unter Branche' if _fak >= 1.5 else f'Branche {_z(BENCH_ER, 2)}')))
+    _mx = max(HAUPT_MED, BENCH_ER) or 1
+    _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), 'von 100 Followern reagieren',
+        [_kbar('@edeka', _z(HAUPT_MED, 2), HAUPT_MED / _mx, HAUPT_MED >= BENCH_ER), _kbar('Branche', _z(BENCH_ER, 2), BENCH_ER / _mx, False)],
+        f'{de(HAUPT_F)} Follower, aber nur rund {de(HAUPT_INT)} Reaktionen pro Beitrag.'))
 _KPIS.append(_kpi('Themen-Mix', 'schwach' if _SCHWACH_ANT >= 0.4 else 'mittel', 'Ausbaufähig' if _SCHWACH_ANT < 0.4 else 'Schwach',
-    _bruch(_SCHWACH_ANT), 'Posts',
-    'behandeln Themen, die schlechter laufen als ein normaler Beitrag' + (': ' + ' und '.join(esc(r['thema']) for r in _SCHWACH[-2:]) if _SCHWACH else '') + '.',
-    'Größtes Potenzial'))
+    _bruch(_SCHWACH_ANT), 'Posts laufen unter normal',
+    [_kbar('Gut', f'{(1 - _SCHWACH_ANT) * 100:.0f} %', 1 - _SCHWACH_ANT, True), _kbar('Schwach', f'{_SCHWACH_ANT * 100:.0f} %', _SCHWACH_ANT, False)],
+    ('Vor allem ' + ' und '.join(esc(r['thema']) for r in _SCHWACH[-2:]) + '.') if _SCHWACH else ''))
 _akt = N_AKTIV30 / max(1, N_KONTEN)
 _KPIS.append(_kpi('Aktivität', 'gut' if _akt >= 0.8 else 'mittel', 'Gut' if _akt >= 0.8 else 'Ausbaufähig',
-    f'{N_AKTIV30} von {de(N_KONTEN)}', 'Profilen',
-    'haben in den letzten 30 Tagen mindestens einmal gepostet.',
-    f'{de(N_KONTEN - N_AKTIV30)} still'))
+    f'{N_AKTIV30}/{de(N_KONTEN)}', 'Profile aktiv',
+    [_kbar('Aktiv', f'{_akt * 100:.0f} %', _akt, True), _kbar('Still', de(N_KONTEN - N_AKTIV30), 1 - _akt, False)],
+    'mindestens ein Beitrag in den letzten 30 Tagen.'))
 KPI_HTML = '<div class="vkgrid">' + ''.join(_KPIS) + '</div>'
 
 # ---- Berlin im Blick ----
@@ -1567,7 +1572,7 @@ PLAN_HTML = f"""
           <div class="zielzeile">Jede Empfehlung zahlt auf eines der drei Ziele ein: <span class="ziel light">Umsatz</span><span class="ziel light">Frequenz</span><span class="ziel light">Preiswahrnehmung</span></div>
         </div>
 
-        <div class="card span6 sechead"><h3>Wie stehen wir da?</h3><p class="hint" style="margin:0"><span class="pill gut">Gut</span> <span class="pill mittel">Im Schnitt / ausbaufähig</span> <span class="pill schwach">Schwach</span></p></div>
+        <div class="card span6 sechead"><h3>Wie stehen wir da?</h3></div>
         <div class="span6">{KPI_HTML}</div>
 
         <div class="card span6 sechead"><h3>Die 5 wichtigsten Hebel</h3><p class="hint" style="margin:0">Alle Vergleiche beziehen sich auf einen normalen Beitrag ({_z(POST_MED)} von 100 Followern reagieren). Aktualisiert sich automatisch.</p></div>
@@ -1770,6 +1775,23 @@ TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
 NAVCSS = """
+/* KPI-Karten Variante B */
+.vkgrid{align-items:stretch}
+.vk{gap:16px!important}
+.vkh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.vkt{font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6E6A60}
+.vku{font-size:13px;font-weight:700;white-space:nowrap}
+.u-gut{color:#2A60FF}.u-mittel,.u-schwach{color:#3E3B33}
+.vkz{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin:0!important}
+.vkz b{font-size:56px!important;letter-spacing:-2px!important;line-height:1;white-space:nowrap;color:#16150F!important}
+.vkz span{font-size:14px;font-weight:600;color:#3E3B33}
+.kbs{display:flex;flex-direction:column;gap:8px}
+.kb{display:grid;grid-template-columns:74px minmax(0,1fr) 48px;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
+.kbl{color:#3E3B33}.kbw{text-align:right;color:#16150F}
+.kbt{height:10px;border-radius:5px;background:#fff;overflow:hidden}
+.kbf{height:10px;border-radius:5px}.kbf.g{background:#2A60FF}.kbf.s{background:#B8B3A7}
+.vks{font-size:14px!important;line-height:1.4;color:#3E3B33;margin-top:0!important}
+
 /* --- Navigation: sticky + mobil als wischbare Leiste --- */
 .tabd{display:none!important}
 .top{position:sticky;top:0;z-index:50;margin:-36px -40px 0;padding:22px 40px 14px;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-radius:28px 28px 0 0;flex-wrap:nowrap;transition:padding .2s}
