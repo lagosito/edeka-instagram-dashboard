@@ -1,5 +1,25 @@
 {
-  "_hinweis": "Vorläufige Zuordnung aus Profilnamen und Captions (Berlin-Bezüge). Bitte prüfen und ergänzen - es gibt in Berlin deutlich mehr Märkte als hier erfasst.",
+  "_hinweis": "Vorläufige Zuordnung aus Profilnamen und Captions (Berlin-Bezüge). Bitte prüfen und ergänzen – es gibt in Berlin deutlich mehr Märkte als erfasste Profile. Standortdaten: 167 Märkte mit Adresse aus OpenStreetMap (Stand 11/2026), Feld maerkte_berlin.",
+  "_standortdaten": {
+    "quelle": "OpenStreetMap (Overpass API)",
+    "stand": "2026-11-21",
+    "n_maerkte": 167,
+    "n_profiles": 7
+  },
+  "profil_zuordnung": {
+    "edeka.center.niemann": [
+      "EDEKA Center Niemann"
+    ],
+    "edeka.fromm": [
+      "EDEKA Fromm"
+    ],
+    "edekaschnelle": [
+      "EDEKA Schnelle"
+    ],
+    "edeka.colombino": [
+      "EDEKA Colombino"
+    ]
+  },
   "berlin": [
     "edeka.berlin",
     "edeka.center.koeniginelisabeth",
@@ -8,5 +28,1343 @@
     "edeka.fromm",
     "edekaschnelle",
     "edeka.colombino"
+  ],
+  "maerkte_berlin": [
+    {
+      "name": "EDEKA",
+      "strasse": "Frankfurter Allee",
+      "plz": "10247",
+      "ort": "Berlin",
+      "lat": 52.515615,
+      "lon": 13.4623106
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Fischerhüttenstraße",
+      "plz": "14163",
+      "ort": "Berlin",
+      "lat": 52.4422611,
+      "lon": 13.2404658
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Potsdamer Chaussee",
+      "plz": "14129",
+      "ort": "Berlin",
+      "lat": 52.4268546,
+      "lon": 13.2159158
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Markt",
+      "plz": "13597",
+      "ort": "Berlin",
+      "lat": 52.5374036,
+      "lon": 13.2047062
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Britzer Damm",
+      "plz": "12347",
+      "ort": "Berlin",
+      "lat": 52.4574201,
+      "lon": 13.4373312
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Franz-Jacob-Straße",
+      "plz": "10369",
+      "ort": "Berlin",
+      "lat": 52.5254295,
+      "lon": 13.4657308
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Herrfurthplatz",
+      "plz": "12049",
+      "ort": "Berlin",
+      "lat": 52.4770848,
+      "lon": 13.4230134
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Ferdinandstraße",
+      "plz": "12209",
+      "ort": "Berlin",
+      "lat": 52.4278951,
+      "lon": 13.3284544
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Wiclefstraße",
+      "plz": "10551",
+      "ort": "Berlin",
+      "lat": 52.5301247,
+      "lon": 13.3373959
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Pistoriusstraße",
+      "plz": "13086",
+      "ort": "Berlin",
+      "lat": 52.5533011,
+      "lon": 13.4459428
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Barnimstraße",
+      "plz": "10249",
+      "ort": "Berlin",
+      "lat": 52.5260753,
+      "lon": 13.422959
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Albrechtstraße",
+      "plz": "12165",
+      "ort": "Berlin",
+      "lat": 52.4564251,
+      "lon": 13.3217052
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Buntzelstraße",
+      "plz": "12526",
+      "ort": "Berlin",
+      "lat": 52.4088869,
+      "lon": 13.5719986
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Yorckstraße",
+      "plz": "",
+      "ort": "Berlin",
+      "lat": 52.4939285,
+      "lon": 13.3839687
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Bernauer Straße",
+      "plz": "13507",
+      "ort": "Berlin",
+      "lat": 52.5752904,
+      "lon": 13.2837641
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Heckerdamm",
+      "plz": "13627",
+      "ort": "Berlin",
+      "lat": 52.5392837,
+      "lon": 13.3001834
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Jenaer Straße",
+      "plz": "10717",
+      "ort": "Berlin",
+      "lat": 52.4908116,
+      "lon": 13.3356896
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Ritterstraße",
+      "plz": "10969",
+      "ort": "Berlin",
+      "lat": 52.5035654,
+      "lon": 13.4036492
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Salzbrunner Straße",
+      "plz": "14193",
+      "ort": "Berlin",
+      "lat": 52.4891517,
+      "lon": 13.2941908
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Rheinsteinstraße",
+      "plz": "10318",
+      "ort": "Berlin",
+      "lat": 52.4827099,
+      "lon": 13.5274287
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Hasenheide",
+      "plz": "10967",
+      "ort": "Berlin",
+      "lat": 52.4864287,
+      "lon": 13.4214953
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Stephanstraße",
+      "plz": "10559",
+      "ort": "Berlin",
+      "lat": 52.5319994,
+      "lon": 13.3446067
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Gartenfelder Straße",
+      "plz": "13599",
+      "ort": "Berlin",
+      "lat": 52.5434199,
+      "lon": 13.2406593
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Hauptstraße",
+      "plz": "13158",
+      "ort": "Berlin",
+      "lat": 52.5865177,
+      "lon": 13.368014
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Joachim-Gottschalk-Weg",
+      "plz": "12353",
+      "ort": "Berlin",
+      "lat": 52.4229979,
+      "lon": 13.4762316
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Clayallee",
+      "plz": "14169",
+      "ort": "Berlin",
+      "lat": 52.4378334,
+      "lon": 13.2626638
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Rigaer Straße",
+      "plz": "10247",
+      "ort": "Berlin",
+      "lat": 52.515536,
+      "lon": 13.468728
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Blissestraße",
+      "plz": "10713",
+      "ort": "Berlin",
+      "lat": 52.4820455,
+      "lon": 13.3198796
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Danckelmannstraße",
+      "plz": "14059",
+      "ort": "Berlin",
+      "lat": 52.5176758,
+      "lon": 13.290531
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Tauernallee",
+      "plz": "12107",
+      "ort": "Berlin",
+      "lat": 52.4257885,
+      "lon": 13.4014959
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Oraniendamm",
+      "plz": "13469",
+      "ort": "Berlin",
+      "lat": 52.6072867,
+      "lon": 13.3264979
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Wendenschloßstraße",
+      "plz": "12557",
+      "ort": "Berlin",
+      "lat": 52.4283689,
+      "lon": 13.5844098
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Riesaer Straße",
+      "plz": "12627",
+      "ort": "Berlin",
+      "lat": 52.5299667,
+      "lon": 13.6208656
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Kladower Damm",
+      "plz": "14089",
+      "ort": "Berlin",
+      "lat": 52.4550765,
+      "lon": 13.1439156
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Knesebeckstraße",
+      "plz": "10719",
+      "ort": "Berlin",
+      "lat": 52.5005138,
+      "lon": 13.3222176
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Eckertstraße",
+      "plz": "10249",
+      "ort": "Berlin",
+      "lat": 52.5197889,
+      "lon": 13.4503543
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Obstallee",
+      "plz": "13593",
+      "ort": "Berlin",
+      "lat": 52.5221765,
+      "lon": 13.1638589
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Schloßstraße",
+      "plz": "12163",
+      "ort": "Berlin",
+      "lat": 52.4627571,
+      "lon": 13.3240444
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Jungfernheideweg",
+      "plz": "13629",
+      "ort": "Berlin",
+      "lat": 52.5370546,
+      "lon": 13.2721745
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Viktoria-Luise-Platz",
+      "plz": "10777",
+      "ort": "Berlin",
+      "lat": 52.4952288,
+      "lon": 13.3416349
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Massower Straße",
+      "plz": "10315",
+      "ort": "Berlin",
+      "lat": 52.5077376,
+      "lon": 13.5131475
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Templiner Straße",
+      "plz": "10119",
+      "ort": "Berlin",
+      "lat": 52.5320129,
+      "lon": 13.4078491
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Invalidenstraße",
+      "plz": "10557",
+      "ort": "Berlin",
+      "lat": 52.5273276,
+      "lon": 13.3729712
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Stresemannstraße",
+      "plz": "10963",
+      "ort": "Berlin",
+      "lat": 52.5023465,
+      "lon": 13.3855468
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Rosenthaler Straße",
+      "plz": "10178",
+      "ort": "Berlin",
+      "lat": 52.5243627,
+      "lon": 13.403102
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Hedwig-Dohm-Straße",
+      "plz": "10829",
+      "ort": "Berlin",
+      "lat": 52.4759482,
+      "lon": 13.3625622
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Fürstenberger Straße",
+      "plz": "10435",
+      "ort": "Berlin",
+      "lat": 52.5375317,
+      "lon": 13.405478
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Karl-Marx-Straße",
+      "plz": "",
+      "ort": "Berlin",
+      "lat": 52.4795197,
+      "lon": 13.4375275
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Falkenberger Chaussee",
+      "plz": "13059",
+      "ort": "Berlin",
+      "lat": 52.5687098,
+      "lon": 13.5169909
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Lehrter Straße",
+      "plz": "10557",
+      "ort": "Berlin",
+      "lat": 52.5312011,
+      "lon": 13.3619039
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Ollenhauerstraße",
+      "plz": "13403",
+      "ort": "Berlin",
+      "lat": 52.5701529,
+      "lon": 13.3279346
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Platz der Vereinten Nationen",
+      "plz": "10249",
+      "ort": "Berlin",
+      "lat": 52.5226614,
+      "lon": 13.428403
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Heerstraße",
+      "plz": "13595",
+      "ort": "Berlin",
+      "lat": 52.5155874,
+      "lon": 13.1861869
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Falkenseer Chaussee",
+      "plz": "13583",
+      "ort": "Berlin",
+      "lat": 52.5481406,
+      "lon": 13.1769762
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Wiesbadener Straße",
+      "plz": "14197",
+      "ort": "Berlin",
+      "lat": 52.4734847,
+      "lon": 13.3022462
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Rhinstraße",
+      "plz": "10315",
+      "ort": "Berlin",
+      "lat": 52.5136372,
+      "lon": 13.5177049
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Sprengelstraße",
+      "plz": "13353",
+      "ort": "Berlin",
+      "lat": 52.5416108,
+      "lon": 13.3555713
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Siemensstraße",
+      "plz": "12247",
+      "ort": "Berlin",
+      "lat": 52.4441367,
+      "lon": 13.3358005
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Bizetstraße",
+      "plz": "13088",
+      "ort": "Berlin",
+      "lat": 52.5476299,
+      "lon": 13.4515925
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Kaiser-Wilhelm-Straße",
+      "plz": "12247",
+      "ort": "Berlin",
+      "lat": 52.4351513,
+      "lon": 13.3432662
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Greifswalder Straße",
+      "plz": "10409",
+      "ort": "Berlin",
+      "lat": 52.5412784,
+      "lon": 13.4398331
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Annenstraße",
+      "plz": "10179",
+      "ort": "Berlin",
+      "lat": 52.5077692,
+      "lon": 13.4154881
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Neumannstraße",
+      "plz": "13189",
+      "ort": "Berlin",
+      "lat": 52.5642462,
+      "lon": 13.4204003
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Alt-Rudow",
+      "plz": "12355",
+      "ort": "Berlin",
+      "lat": 52.4162634,
+      "lon": 13.4965888
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Königstraße",
+      "plz": "14109",
+      "ort": "Berlin",
+      "lat": 52.4183326,
+      "lon": 13.1530856
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Raoul-Wallenberg-Straße",
+      "plz": "12679",
+      "ort": "Berlin",
+      "lat": 52.5488783,
+      "lon": 13.5525136
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Hindenburgdamm",
+      "plz": "12203",
+      "ort": "Berlin",
+      "lat": 52.4488196,
+      "lon": 13.3157863
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Rudower Straße",
+      "plz": "12351",
+      "ort": "Berlin",
+      "lat": 52.4417081,
+      "lon": 13.4589206
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Marksburgstraße",
+      "plz": "10318",
+      "ort": "Berlin",
+      "lat": 52.4872779,
+      "lon": 13.5183825
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Königin-Elisabeth-Straße",
+      "plz": "14059",
+      "ort": "Berlin",
+      "lat": 52.511521,
+      "lon": 13.2784289
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Müggelschlößchenweg",
+      "plz": "12559",
+      "ort": "Berlin",
+      "lat": 52.4400333,
+      "lon": 13.6006168
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Hultschiner Damm",
+      "plz": "12623",
+      "ort": "Berlin",
+      "lat": 52.4820995,
+      "lon": 13.6005867
+    },
+    {
+      "name": "Edeka",
+      "strasse": "Miraustraße",
+      "plz": "13509",
+      "ort": "Berlin",
+      "lat": 52.5859011,
+      "lon": 13.3076634
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Friedrichstraße",
+      "plz": "10117",
+      "ort": "Berlin",
+      "lat": 52.5201382,
+      "lon": 13.3870085
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Streitstraße",
+      "plz": "13587",
+      "ort": "Berlin",
+      "lat": 52.5590562,
+      "lon": 13.2110821
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Hildegard-Knef-Platz",
+      "plz": "10829",
+      "ort": "Berlin",
+      "lat": 52.4764042,
+      "lon": 13.3646462
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Weitlingstraße",
+      "plz": "10317",
+      "ort": "Berlin",
+      "lat": 52.5093269,
+      "lon": 13.4969373
+    },
+    {
+      "name": "EDEKA",
+      "strasse": "Dörpfeldstraße",
+      "plz": "12489",
+      "ort": "Berlin",
+      "lat": 52.4383241,
+      "lon": 13.5483269
+    },
+    {
+      "name": "Edeka Am Brunsi",
+      "strasse": "Brunsbütteler Damm",
+      "plz": "13581",
+      "ort": "Berlin",
+      "lat": 52.5338138,
+      "lon": 13.1676748
+    },
+    {
+      "name": "Edeka Am Flugplatz",
+      "strasse": "Am Flugplatz Gatow",
+      "plz": "14089",
+      "ort": "Berlin",
+      "lat": 52.4717253,
+      "lon": 13.1251442
+    },
+    {
+      "name": "Edeka Backshop",
+      "strasse": "Gartenfelder Straße",
+      "plz": "13599",
+      "ort": "Berlin",
+      "lat": 52.5433191,
+      "lon": 13.2408126
+    },
+    {
+      "name": "Edeka Backstube",
+      "strasse": "Baumschulenstraße",
+      "plz": "12437",
+      "ort": "Berlin",
+      "lat": 52.4641095,
+      "lon": 13.4858147
+    },
+    {
+      "name": "Edeka Backstube",
+      "strasse": "Kurfürstendamm",
+      "plz": "10711",
+      "ort": "Berlin",
+      "lat": 52.4967816,
+      "lon": 13.2900882
+    },
+    {
+      "name": "Edeka Bergmannstraße",
+      "strasse": "Bergmannstraße",
+      "plz": "10961",
+      "ort": "Berlin",
+      "lat": 52.4896784,
+      "lon": 13.3884205
+    },
+    {
+      "name": "Edeka Berliner Straße",
+      "strasse": "Berliner Straße",
+      "plz": "10715",
+      "ort": "Berlin",
+      "lat": 52.486936,
+      "lon": 13.3255453
+    },
+    {
+      "name": "EDEKA Brabanski",
+      "strasse": "Fregestraße",
+      "plz": "12159",
+      "ort": "Berlin",
+      "lat": 52.4713349,
+      "lon": 13.3371272
+    },
+    {
+      "name": "EDEKA Brehm",
+      "strasse": "Mahlsdorfer Straße",
+      "plz": "12555",
+      "ort": "Berlin",
+      "lat": 52.4658179,
+      "lon": 13.5849063
+    },
+    {
+      "name": "EDEKA Burau",
+      "strasse": "Mainzer Straße",
+      "plz": "10715",
+      "ort": "Berlin",
+      "lat": 52.4797483,
+      "lon": 13.3267804
+    },
+    {
+      "name": "Edeka-Center Brehm",
+      "strasse": "An der Schule",
+      "plz": "12623",
+      "ort": "Berlin",
+      "lat": 52.505626,
+      "lon": 13.6144575
+    },
+    {
+      "name": "EDEKA Center Niemann",
+      "strasse": "Blankenburger Straße",
+      "plz": "13156",
+      "ort": "Berlin",
+      "lat": 52.5847715,
+      "lon": 13.4167328
+    },
+    {
+      "name": "Edeka Center Tempelhof",
+      "strasse": "Tempelhofer Damm",
+      "plz": "12099",
+      "ort": "Berlin",
+      "lat": 52.4559449,
+      "lon": 13.3871535
+    },
+    {
+      "name": "EDEKA Christ",
+      "strasse": "Hildburghauser Straße",
+      "plz": "12279",
+      "ort": "Berlin",
+      "lat": 52.4154095,
+      "lon": 13.347827
+    },
+    {
+      "name": "EDEKA Colombino",
+      "strasse": "Zeltinger Platz",
+      "plz": "13465",
+      "ort": "Berlin",
+      "lat": 52.6329513,
+      "lon": 13.2907953
+    },
+    {
+      "name": "EDEKA Colombino",
+      "strasse": "Hildburghauser Straße",
+      "plz": "12207",
+      "ort": "Berlin",
+      "lat": 52.4208767,
+      "lon": 13.3138943
+    },
+    {
+      "name": "EDEKA Colombino",
+      "strasse": "Sundgauer Straße",
+      "plz": "14167",
+      "ort": "Berlin",
+      "lat": 52.4358093,
+      "lon": 13.274282
+    },
+    {
+      "name": "Edeka Elstaler Straße",
+      "strasse": "Elstaler Straße",
+      "plz": "13583",
+      "ort": "Berlin",
+      "lat": 52.5373248,
+      "lon": 13.1854419
+    },
+    {
+      "name": "EDEKA Erler",
+      "strasse": "Berlepschstraße",
+      "plz": "14165",
+      "ort": "Berlin",
+      "lat": 52.4263605,
+      "lon": 13.2441419
+    },
+    {
+      "name": "Edeka Focke",
+      "strasse": "Barbarossastraße",
+      "plz": "10781",
+      "ort": "Berlin",
+      "lat": 52.4917705,
+      "lon": 13.3547337
+    },
+    {
+      "name": "EDEKA Friedrich",
+      "strasse": "Hellersdorfer Straße",
+      "plz": "12619",
+      "ort": "Berlin",
+      "lat": 52.5232644,
+      "lon": 13.5867296
+    },
+    {
+      "name": "Edeka Fromm",
+      "strasse": "Müllerstraße",
+      "plz": "13349",
+      "ort": "Berlin",
+      "lat": 52.5526675,
+      "lon": 13.3476614
+    },
+    {
+      "name": "EDEKA Fromm",
+      "strasse": "Gerlinger Straße",
+      "plz": "12353",
+      "ort": "Berlin",
+      "lat": 52.4176314,
+      "lon": 13.436224
+    },
+    {
+      "name": "Edeka Gäth",
+      "strasse": "Steglitzer Damm",
+      "plz": "12169",
+      "ort": "Berlin",
+      "lat": 52.4506573,
+      "lon": 13.3399913
+    },
+    {
+      "name": "EDEKA Gayermann",
+      "strasse": "Marienfelder Chaussee",
+      "plz": "12349",
+      "ort": "Berlin",
+      "lat": 52.4154025,
+      "lon": 13.4062078
+    },
+    {
+      "name": "EDEKA Gayermann",
+      "strasse": "Barnetstraße",
+      "plz": "12305",
+      "ort": "Berlin",
+      "lat": 52.3982545,
+      "lon": 13.3911351
+    },
+    {
+      "name": "EDEKA Getränkemarkt",
+      "strasse": "Pistoriusstraße",
+      "plz": "13086",
+      "ort": "Berlin",
+      "lat": 52.5526432,
+      "lon": 13.4459821
+    },
+    {
+      "name": "EDEKA Görse & Meichsner",
+      "strasse": "Handjerystraße",
+      "plz": "12159",
+      "ort": "Berlin",
+      "lat": 52.4770954,
+      "lon": 13.3329979
+    },
+    {
+      "name": "EDEKA Görse & Meichsner",
+      "strasse": "Eichborndamm",
+      "plz": "",
+      "ort": "Berlin",
+      "lat": 52.5758713,
+      "lon": 13.3142219
+    },
+    {
+      "name": "EDEKA Groß",
+      "strasse": "Körnerstraße",
+      "plz": "12157",
+      "ort": "Berlin",
+      "lat": 52.4621989,
+      "lon": 13.3330192
+    },
+    {
+      "name": "Edeka Heiligensee",
+      "strasse": "Ruppiner Chaussee",
+      "plz": "13503",
+      "ort": "Berlin",
+      "lat": 52.6183685,
+      "lon": 13.2390611
+    },
+    {
+      "name": "EDEKA Heppner",
+      "strasse": "Schloßstraße",
+      "plz": "12163",
+      "ort": "Berlin",
+      "lat": 52.459073,
+      "lon": 13.3232009
+    },
+    {
+      "name": "EDEKA Iden",
+      "strasse": "Wilhelmsruher Damm",
+      "plz": "13435",
+      "ort": "Berlin",
+      "lat": 52.5947516,
+      "lon": 13.3352782
+    },
+    {
+      "name": "EDEKA Jost",
+      "strasse": "Kantstraße",
+      "plz": "10623",
+      "ort": "Berlin",
+      "lat": 52.5061041,
+      "lon": 13.3203142
+    },
+    {
+      "name": "EDEKA Kaulsdorfer Straße",
+      "strasse": "Kaulsdorfer Straße",
+      "plz": "12621",
+      "ort": "Berlin",
+      "lat": 52.4751363,
+      "lon": 13.5685128
+    },
+    {
+      "name": "EDEKA Kelz",
+      "strasse": "Straße der Pariser Kommune",
+      "plz": "10243",
+      "ort": "Berlin",
+      "lat": 52.5160549,
+      "lon": 13.4406783
+    },
+    {
+      "name": "EDEKA Kelz",
+      "strasse": "Franz-Mehring-Platz",
+      "plz": "10243",
+      "ort": "Berlin",
+      "lat": 52.5142024,
+      "lon": 13.4379257
+    },
+    {
+      "name": "EDEKA Kiezmarkt",
+      "strasse": "Torstraße",
+      "plz": "10115",
+      "ort": "Berlin",
+      "lat": 52.5278268,
+      "lon": 13.3917759
+    },
+    {
+      "name": "Edeka Kitschun",
+      "strasse": "Buschallee",
+      "plz": "13088",
+      "ort": "Berlin",
+      "lat": 52.5538369,
+      "lon": 13.47547
+    },
+    {
+      "name": "EDEKA Königstraße",
+      "strasse": "Königstraße",
+      "plz": "14109",
+      "ort": "Berlin",
+      "lat": 52.4200865,
+      "lon": 13.1597145
+    },
+    {
+      "name": "EDEKA Korkmaz",
+      "strasse": "Osnabrücker Straße",
+      "plz": "10589",
+      "ort": "Berlin",
+      "lat": 52.5255904,
+      "lon": 13.301564
+    },
+    {
+      "name": "EDEKA Kruppa",
+      "strasse": "Kottmeierstraße",
+      "plz": "12459",
+      "ort": "Berlin",
+      "lat": 52.4632335,
+      "lon": 13.52569
+    },
+    {
+      "name": "EDEKA Kruse",
+      "strasse": "Goltzstraße",
+      "plz": "12307",
+      "ort": "Berlin",
+      "lat": 52.3872517,
+      "lon": 13.4086795
+    },
+    {
+      "name": "EDEKA Küther",
+      "strasse": "Drakestraße",
+      "plz": "12205",
+      "ort": "Berlin",
+      "lat": 52.4414846,
+      "lon": 13.2992757
+    },
+    {
+      "name": "Edeka Laurman",
+      "strasse": "Steubenplatz",
+      "plz": "14050",
+      "ort": "Berlin",
+      "lat": 52.5169689,
+      "lon": 13.2615696
+    },
+    {
+      "name": "Edeka Leher",
+      "strasse": "Fürstenwalder Allee",
+      "plz": "12589",
+      "ort": "Berlin",
+      "lat": 52.4315738,
+      "lon": 13.7149761
+    },
+    {
+      "name": "Edeka Lenkeit",
+      "strasse": "An der alten Gärtnerei",
+      "plz": "12109",
+      "ort": "Berlin",
+      "lat": 52.4395336,
+      "lon": 13.4093372
+    },
+    {
+      "name": "EDEKA Lenkeit",
+      "strasse": "Rixdorfer Straße",
+      "plz": "12109",
+      "ort": "Berlin",
+      "lat": 52.4478095,
+      "lon": 13.4046472
+    },
+    {
+      "name": "EDEKA Lindenberg",
+      "strasse": "Markstraße",
+      "plz": "13409",
+      "ort": "Berlin",
+      "lat": 52.560815,
+      "lon": 13.3654858
+    },
+    {
+      "name": "Edeka Marienburger Straße",
+      "strasse": "Winsstraße",
+      "plz": "10405",
+      "ort": "Berlin",
+      "lat": 52.5339932,
+      "lon": 13.4261824
+    },
+    {
+      "name": "EDEKA Martin-Luther-Straße",
+      "strasse": "Martin-Luther-Straße",
+      "plz": "10779",
+      "ort": "Berlin",
+      "lat": 52.4920032,
+      "lon": 13.3447835
+    },
+    {
+      "name": "EDEKA Meichsner-Görse",
+      "strasse": "Karlsbader Straße",
+      "plz": "14193",
+      "ort": "Berlin",
+      "lat": 52.4784723,
+      "lon": 13.2819473
+    },
+    {
+      "name": "EDEKA Meissner",
+      "strasse": "Leibnizstraße",
+      "plz": "10625",
+      "ort": "Berlin",
+      "lat": 52.5118228,
+      "lon": 13.3143192
+    },
+    {
+      "name": "EDEKA Meissner an der Nolle",
+      "strasse": "Nollendorfplatz",
+      "plz": "10777",
+      "ort": "Berlin",
+      "lat": 52.4989336,
+      "lon": 13.3545583
+    },
+    {
+      "name": "Edeka M. Fiebig",
+      "strasse": "Kottbusser Damm",
+      "plz": "10967",
+      "ort": "Berlin",
+      "lat": 52.4916049,
+      "lon": 13.4232761
+    },
+    {
+      "name": "EDEKA Moch",
+      "strasse": "Grunerstraße",
+      "plz": "10179",
+      "ort": "Berlin",
+      "lat": 52.5185781,
+      "lon": 13.4167765
+    },
+    {
+      "name": "Edeka Neue Kantstraße",
+      "strasse": "Neue Kantstraße",
+      "plz": "14057",
+      "ort": "Berlin",
+      "lat": 52.5065505,
+      "lon": 13.2930747
+    },
+    {
+      "name": "Edeka Ostseestraße",
+      "strasse": "Ostseestraße",
+      "plz": "10409",
+      "ort": "Berlin",
+      "lat": 52.546533,
+      "lon": 13.4429678
+    },
+    {
+      "name": "EDEKA P. Erler",
+      "strasse": "Ludolfingerplatz",
+      "plz": "13465",
+      "ort": "Berlin",
+      "lat": 52.6328875,
+      "lon": 13.287041
+    },
+    {
+      "name": "Edeka Peth",
+      "strasse": "Berliner Allee",
+      "plz": "13088",
+      "ort": "Berlin",
+      "lat": 52.5498309,
+      "lon": 13.4588499
+    },
+    {
+      "name": "Edeka Prang",
+      "strasse": "Mariendorfer Damm",
+      "plz": "12109",
+      "ort": "Berlin",
+      "lat": 52.4453501,
+      "lon": 13.386125
+    },
+    {
+      "name": "Edeka Reichsstraße",
+      "strasse": "Reichsstraße",
+      "plz": "14052",
+      "ort": "Berlin",
+      "lat": 52.5129578,
+      "lon": 13.2656846
+    },
+    {
+      "name": "EDEKA Residenzstraße",
+      "strasse": "Residenzstraße",
+      "plz": "13409",
+      "ort": "Berlin",
+      "lat": 52.5669709,
+      "lon": 13.3613922
+    },
+    {
+      "name": "EDEKA Rübel",
+      "strasse": "Hohefeldstraße",
+      "plz": "13467",
+      "ort": "Berlin",
+      "lat": 52.6225702,
+      "lon": 13.3032601
+    },
+    {
+      "name": "Edeka Safa",
+      "strasse": "Berliner Straße",
+      "plz": "13507",
+      "ort": "Berlin",
+      "lat": 52.5890882,
+      "lon": 13.284848
+    },
+    {
+      "name": "Edeka Sapphire",
+      "strasse": "Chausseestraße",
+      "plz": "10115",
+      "ort": "Berlin",
+      "lat": 52.5342508,
+      "lon": 13.3787546
+    },
+    {
+      "name": "Edeka Schaaf",
+      "strasse": "Schillingstraße",
+      "plz": "10179",
+      "ort": "Berlin",
+      "lat": 52.5174719,
+      "lon": 13.4206687
+    },
+    {
+      "name": "EDEKA Schmitt",
+      "strasse": "Seesener Straße",
+      "plz": "10711",
+      "ort": "Berlin",
+      "lat": 52.4967809,
+      "lon": 13.2903425
+    },
+    {
+      "name": "EDEKA Schnelle",
+      "strasse": "Alt-Stralau",
+      "plz": "10245",
+      "ort": "Berlin",
+      "lat": 52.496736,
+      "lon": 13.4667344
+    },
+    {
+      "name": "EDEKA Schnelle",
+      "strasse": "Andreasstraße",
+      "plz": "10243",
+      "ort": "Berlin",
+      "lat": 52.5148708,
+      "lon": 13.4312613
+    },
+    {
+      "name": "EDEKA Siebert",
+      "strasse": "Hasenheide",
+      "plz": "10967",
+      "ort": "Berlin",
+      "lat": 52.4891694,
+      "lon": 13.4091957
+    },
+    {
+      "name": "Edeka Siegler",
+      "strasse": "Richard-von-Weizsäcker-Platz",
+      "plz": "10827",
+      "ort": "Berlin",
+      "lat": 52.4856563,
+      "lon": 13.3568344
+    },
+    {
+      "name": "EDEKA Skalitzer Straße",
+      "strasse": "Skalitzer Straße",
+      "plz": "10999",
+      "ort": "Berlin",
+      "lat": 52.4993451,
+      "lon": 13.4222008
+    },
+    {
+      "name": "EDEKA Stadie",
+      "strasse": "Flankenschanze",
+      "plz": "13585",
+      "ort": "Berlin",
+      "lat": 52.5425148,
+      "lon": 13.197201
+    },
+    {
+      "name": "Edeka Stepaniak",
+      "strasse": "Berliner Straße",
+      "plz": "10715",
+      "ort": "Berlin",
+      "lat": 52.4881659,
+      "lon": 13.3347548
+    },
+    {
+      "name": "Edeka Tempelhofer Damm",
+      "strasse": "Tempelhofer Damm",
+      "plz": "12099",
+      "ort": "Berlin",
+      "lat": 52.4585848,
+      "lon": 13.3828398
+    },
+    {
+      "name": "EDEKA Treugut",
+      "strasse": "Maybachufer",
+      "plz": "12047",
+      "ort": "Berlin",
+      "lat": 52.4918563,
+      "lon": 13.4326134
+    },
+    {
+      "name": "Edeka Treugut",
+      "strasse": "Bülowstraße",
+      "plz": "",
+      "ort": "Berlin",
+      "lat": 52.4979385,
+      "lon": 13.3630995
+    },
+    {
+      "name": "EDEKA Treugut",
+      "strasse": "Heidelberger Straße",
+      "plz": "12435",
+      "ort": "Berlin",
+      "lat": 52.4889795,
+      "lon": 13.4475507
+    },
+    {
+      "name": "Edeka Ungefroren",
+      "strasse": "Fischerinsel",
+      "plz": "10179",
+      "ort": "Berlin",
+      "lat": 52.513684,
+      "lon": 13.4060088
+    },
+    {
+      "name": "EDEKA Voigt",
+      "strasse": "Bölschestraße",
+      "plz": "12587",
+      "ort": "Berlin",
+      "lat": 52.4513656,
+      "lon": 13.6257686
+    },
+    {
+      "name": "EDEKA Wiesemann",
+      "strasse": "Marienfelder Allee",
+      "plz": "12277",
+      "ort": "Berlin",
+      "lat": 52.4174821,
+      "lon": 13.3675123
+    },
+    {
+      "name": "EDEKA Wilmersdorfer Straße",
+      "strasse": "Wilmersdorfer Straße",
+      "plz": "10627",
+      "ort": "Berlin",
+      "lat": 52.5097406,
+      "lon": 13.305296
+    },
+    {
+      "name": "Edeka Wittenbergplatz",
+      "strasse": "Wittenbergplatz",
+      "plz": "10789",
+      "ort": "Berlin",
+      "lat": 52.5026043,
+      "lon": 13.3436334
+    },
+    {
+      "name": "EDEKA Yaras",
+      "strasse": "Mariendorfer Damm",
+      "plz": "12107",
+      "ort": "Berlin",
+      "lat": 52.4349946,
+      "lon": 13.3891249
+    },
+    {
+      "name": "EDEKA Yilmaz",
+      "strasse": "Baumschulenstraße",
+      "plz": "12437",
+      "ort": "Berlin",
+      "lat": 52.4638746,
+      "lon": 13.4858575
+    },
+    {
+      "name": "EDEKA Y.Reichelt",
+      "strasse": "Levetzowstraße",
+      "plz": "10555",
+      "ort": "Berlin",
+      "lat": 52.5208001,
+      "lon": 13.3343449
+    },
+    {
+      "name": "EDEKA Zahl",
+      "strasse": "Otto-Suhr-Allee",
+      "plz": "10585",
+      "ort": "Berlin",
+      "lat": 52.5169837,
+      "lon": 13.30707
+    },
+    {
+      "name": "EDEKA Zahl",
+      "strasse": "Helmholtzstraße",
+      "plz": "10587",
+      "ort": "Berlin",
+      "lat": 52.5201626,
+      "lon": 13.3198466
+    }
   ]
 }

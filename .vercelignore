@@ -1,0 +1,7 @@
+.git
+.vercel
+.github
+img_cache
+__pycache__
+*.pyc
+.vault
