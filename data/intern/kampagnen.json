@@ -1,0 +1,32 @@
+{
+  "_quelle": "EDEKA Minden-Hannover, Regie-Sitzung Marketing 16.11.2026 - streng vertraulich. Stand der Werte siehe je Kampagne.",
+  "muster": "Reichweite aus Social Media wird zu Frequenz und Umsatz im Markt.",
+  "kampagnen": [
+    {"name": "GTA VI · Influencer & Gewinnspiel", "wo": "edeka.berlin und Markt-Accounts", "zeit": "09.–21.11.2026", "stand": "Stand 17./18.11.2026",
+     "ziel": ["Frequenz"],
+     "werte": [{"zahl": "+14.400", "text": "neue Follower für @edeka.berlin durch das Gewinnspiel"},
+               {"zahl": "289.000", "text": "organische Aufrufe des Gewinnspiels"},
+               {"zahl": "+440", "text": "App-Downloads aus den Meta-Anzeigen (Kampagne lief noch)"},
+               {"zahl": "764.800", "text": "Aufrufe über Clipper – 27,5 % mehr als garantiert"}],
+     "bezug": "Bestätigt das Dashboard: Gewinnspiele sind das stärkste Thema."},
+    {"name": "Pick’em · Marktkauf Hildesheim", "wo": "im Markt", "zeit": "05.–15.10.2026", "stand": "Wiederholung im Januar geplant",
+     "ziel": ["Umsatz", "Frequenz"],
+     "werte": [{"zahl": "+13,9 %", "text": "mehr Umsatz als in den 4 Wochen davor"},
+               {"zahl": "+16,4 %", "text": "mehr Einkäufe (Bons) als in den 4 Wochen davor"},
+               {"zahl": "27,70 €", "text": "durchschnittlicher Einkauf der Artikelkäufer statt 25,74 € (+7,6 %)"}],
+     "bezug": ""},
+    {"name": "Ya’ummi · Saucen von Abu Goku", "wo": "Creator-Produkt im Einzelhandel", "zeit": "KW 11–33 · 2026", "stand": "",
+     "ziel": ["Umsatz"],
+     "werte": [{"zahl": "958.000 €", "text": "Umsatz im Einzelhandel"}],
+     "bezug": "Creator bringen Umsatz in den Markt."},
+    {"name": "Pokémon-Tauschbörsen", "wo": "5 Events in Märkten", "zeit": "2. Halbjahr 2026", "stand": "Stand 19.09.2026",
+     "ziel": ["Umsatz", "Frequenz"],
+     "werte": [{"zahl": "534.000 €", "text": "Umsatz rund um die 5 Tauschbörsen"}],
+     "bezug": ""},
+    {"name": "Digitaler Handzettel Berlin · +4 Seiten", "wo": "Berlin, digital", "zeit": "2026", "stand": "durchschnittlicher Uplift",
+     "ziel": ["Umsatz"],
+     "werte": [{"zahl": "+32 %", "text": "mehr Umsatz, wenn der digitale Handzettel 4 Extraseiten hat"},
+               {"zahl": "+214 %", "text": "mehr Umsatz über die App"}],
+     "bezug": "Darum wird Social in Berlin ab KW 6 noch wichtiger."}
+  ]
+}

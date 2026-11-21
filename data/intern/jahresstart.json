@@ -1,0 +1,31 @@
+{
+  "_quelle": "EDEKA Minden-Hannover: Dezemberbörse 2026 (Jahresstart 2027) und Regie-Sitzung Marketing 16.11.2026 - streng vertraulich. Social-Ideen = Vorschlag make happen auf Basis der Dashboard-Daten.",
+  "jahr": 2027,
+  "botschaft": "EDEKA ist nur im Kopf teuer. Der Bon sagt etwas anderes.",
+  "wochen": [
+    {"kw": 1, "aktion": "10fach PAYBACK auf Obst & Gemüse (Mo–Do), 10fach auf den Einkauf (Fr + Sa)", "fokus": "Protein · 5 Preishelden O&G",
+     "anlass": "Neujahrsvorsätze, Veganuary",
+     "idee": "Preisheld der Woche – erklärt von jemandem aus der O&G-Abteilung, mit Kassenbon „Rechne nach“", "thema": "Humor/Team/Azubi", "format": "Karussell"},
+    {"kw": 2, "aktion": "10fach PAYBACK auf alkoholfreie Getränke", "fokus": "EDEKA Bio, Alnatura",
+     "anlass": "Veganuary",
+     "idee": "Bio-Lieferant aus der Region stellt sich vor – mit Preis im letzten Bild", "thema": "Region/Lieferant", "format": "Karussell"},
+    {"kw": 3, "aktion": "10fach PAYBACK auf Tiefkühlkost", "fokus": "Protein",
+     "anlass": "",
+     "idee": "Protein-Wocheneinkauf: Team packt den Korb, der Bon zeigt den Preis", "thema": "Humor/Team/Azubi", "format": "Reel"},
+    {"kw": 4, "aktion": "10fach PAYBACK auf Molkereiprodukte · Start Kleber-/Schneiderabatt", "fokus": "Glatte Preise",
+     "anlass": "",
+     "idee": "Gewinnspiel: Bon-Challenge – wer errät den Wocheneinkauf auf den Euro genau?", "thema": "Gewinnspiel", "format": "Karussell"},
+    {"kw": 5, "aktion": "Discount billig im Handzettel · Getränke & Tiefkühl mit LVP-Absenkung", "fokus": "Halal (Vorlauf Ramadan)",
+     "anlass": "Superbowl",
+     "idee": "Snack-Check fürs Spiel: Azubis vergleichen Preise im Regal", "thema": "Humor/Team/Azubi", "format": "Reel"},
+    {"kw": 6, "aktion": "PAYBACK Los-Kampagne (Couponheft an der Kasse) · Berlin: Vierseiter startet", "fokus": "Halal · Ramadan ab 08.02.",
+     "anlass": "Karneval, Valentinstag, Ramadan-Start",
+     "idee": "Los-Kampagne als Gewinnspiel-Karussell: So funktioniert das Couponheft", "thema": "Gewinnspiel", "format": "Karussell"},
+    {"kw": 7, "aktion": "PAYBACK Los-Kampagne · Treueaktion startet (SMEG bzw. Einhell bei Marktkauf)", "fokus": "Frei-von",
+     "anlass": "",
+     "idee": "Mitarbeitende zeigen ihr Lieblingsprodukt aus der Treueaktion", "thema": "Humor/Team/Azubi", "format": "Karussell"},
+    {"kw": 8, "aktion": "PAYBACK Los-Kampagne · letzte Woche Discount billig", "fokus": "Longevity",
+     "anlass": "",
+     "idee": "Azubi-Woche: Ausbildung im Markt zeigen – auch als Recruiting-Anzeige nutzen", "thema": "Recruiting/Karriere", "format": "Karussell"}
+  ]
+}
