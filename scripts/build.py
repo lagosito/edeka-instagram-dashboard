@@ -971,7 +971,7 @@ if REA:
           <h3>Weihnachts-Push · Advent-Check — Vorjahresvergleich</h3>
           <p class="hint">Reverse-Engineering des Weihnachtspushs (Meta Ad Library DE + Google Trends DE), Abfrage {_stand_wei}</p>
           {t_weihnacht()}
-          <p class="hint" style="margin-top:12px"><b>Methodik:</b> {esc(REA['method'])}. Fenster {esc(REA['windows']['2025'])} (Vorjahr) vs. {esc(REA['windows']['2026'])} (laufendes Jahr); Status „alle" statt „aktiv", damit auch beendete Kampagnen mitgezählt werden. Die Vorjahres-Balken enthalten nur Anzeigen mit Impressionen im Fenster — Vergleiche gelten als Richtwert. Ad Library liefert keine Reichweiten- oder Kostenwerte.</p>
+          <p class="hint" style="margin-top:12px"><b>Methodik:</b> Branchenschnitt Instagram 0,36 von 100 Followern (Rival IQ, Social Media Industry Benchmark Report 2025). {esc(REA['method'])}. Fenster {esc(REA['windows']['2025'])} (Vorjahr) vs. {esc(REA['windows']['2026'])} (laufendes Jahr); Status „alle" statt „aktiv", damit auch beendete Kampagnen mitgezählt werden. Die Vorjahres-Balken enthalten nur Anzeigen mit Impressionen im Fenster — Vergleiche gelten als Richtwert. Ad Library liefert keine Reichweiten- oder Kostenwerte.</p>
         </div>"""
 
 fmt_cards = ''.join(f"""<div class="card kpi span2"><span class="arrow">↗</span>
@@ -1121,8 +1121,15 @@ function sec(id, el){
   document.querySelectorAll('.sec').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
   document.querySelectorAll('.tab2').forEach(t=>t.classList.toggle('on', t.getAttribute('data-s')===id));
+  var on=document.querySelector('.tab2.on'); if(on&&on.scrollIntoView){on.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});}
   window.scrollTo(0,0);
 }
+(function(){
+  function upd(){var n=document.querySelector('.top'); if(n) n.classList.toggle('scrolled', window.scrollY>20);}
+  window.addEventListener('scroll',upd,{passive:true}); document.addEventListener('DOMContentLoaded',upd);
+  document.addEventListener('DOMContentLoaded',function(){var t=document.querySelector('.tabs2'); if(!t) return;
+    function f(){t.classList.toggle('end', t.scrollLeft+t.clientWidth>=t.scrollWidth-4);} t.addEventListener('scroll',f,{passive:true}); f();});
+})();
 function tab(id, el){
   document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
   var t = document.getElementById(id);
@@ -1341,7 +1348,7 @@ if _COMBOS:
     _chips = ''.join(f'<span class="combo"><span><b>{esc(c["thema"])}</b> als {esc(c["fmt"])}</span><i class="{_rel(c["med"])[0]}">{_rel(c["med"])[1]}</i></span>' for c in _COMBOS)
     _HEBEL.append(_hebel(3,
         'Die Gewinner-Kombinationen als Vorlagen bauen',
-        f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag:<div class=\"combos\">{_chips}</div>",
+        f"Diese Mischungen aus Thema und Format laufen am besten – verglichen mit einem normalen Beitrag.",
         'Für jede Kombination eine fertige Vorlage an die Märkte geben – dann muss nicht jeder Markt das Rad neu erfinden.',
         'Zentrale → Märkte', ['Frequenz', 'Umsatz'],
         wirkung=_rel(_COMBOS[0]['med'])[1], wcls=_rel(_COMBOS[0]['med'])[0],
@@ -1437,22 +1444,22 @@ _KPIS = []
 _c, _u = _urteil_bench(LOK_MED)
 _KPIS.append(_kpi('Lokale Märkte', _c, _u, _z(LOK_MED), 'von 100 Followern',
     'reagieren auf einen normalen Beitrag mit Like oder Kommentar.',
-    f'Branchenschnitt Instagram: {_z(BENCH_ER, 2)} von 100 ({BENCH_QUELLE}).'))
+    f'Branche {_z(BENCH_ER, 2)}'))
 if HAUPT_MED is not None:
     _c, _u = _urteil_bench(HAUPT_MED)
     _fak = BENCH_ER / HAUPT_MED if HAUPT_MED else 0
     _KPIS.append(_kpi('Hauptkonto @edeka', _c, _u, _z(HAUPT_MED, 2), 'von 100 Followern',
         f'{de(HAUPT_F)} Follower, aber nur rund {de(HAUPT_INT)} Reaktionen pro Beitrag.',
-        (f'Rund {_fak:.0f}× unter dem Branchenschnitt von {_z(BENCH_ER, 2)}.' if _fak >= 1.5 else f'Branchenschnitt: {_z(BENCH_ER, 2)} von 100.')))
+        (f'{_fak:.0f}× unter Branche' if _fak >= 1.5 else f'Branche {_z(BENCH_ER, 2)}')))
 _KPIS.append(_kpi('Themen-Mix', 'schwach' if _SCHWACH_ANT >= 0.4 else 'mittel', 'Ausbaufähig' if _SCHWACH_ANT < 0.4 else 'Schwach',
     _bruch(_SCHWACH_ANT), 'Posts',
     'behandeln Themen, die schlechter laufen als ein normaler Beitrag' + (': ' + ' und '.join(esc(r['thema']) for r in _SCHWACH[-2:]) if _SCHWACH else '') + '.',
-    'Hier liegt das größte Potenzial.'))
+    'Größtes Potenzial'))
 _akt = N_AKTIV30 / max(1, N_KONTEN)
 _KPIS.append(_kpi('Aktivität', 'gut' if _akt >= 0.8 else 'mittel', 'Gut' if _akt >= 0.8 else 'Ausbaufähig',
     f'{N_AKTIV30} von {de(N_KONTEN)}', 'Profilen',
     'haben in den letzten 30 Tagen mindestens einmal gepostet.',
-    f'{de(N_KONTEN - N_AKTIV30)} Profile waren 30 Tage still.'))
+    f'{de(N_KONTEN - N_AKTIV30)} still'))
 KPI_HTML = '<div class="vkgrid">' + ''.join(_KPIS) + '</div>'
 
 # ---- Berlin im Blick ----
@@ -1517,7 +1524,7 @@ if JAHRESSTART:
         </div>""")
     PLAN_JS_HTML = f"""
         <div class="card span6 intern">
-          <span class="intag">Intern · vertraulich</span>
+          
           <h3>Jahresstart {_jr}: der Social-Plan für KW 1 bis 8</h3>
           <p class="hint">Oben die geplanten Aktionen, unten unser Vorschlag für Social – jeweils mit dem Format und der Uhrzeit, die laut Daten am besten laufen. Botschaft: „{esc(JAHRESSTART.get('botschaft', ''))}“</p>
           <div class="kwgrid">{''.join(_rows)}</div>
@@ -1538,7 +1545,7 @@ if KAMPAGNEN:
         </div>""")
     KAMP_HTML = f"""
         <div class="card blue span6">
-          <span class="intag light">Intern · vertraulich</span>
+          
           <h3>05 · Kampagnen – was Social schon bewirkt hat</h3>
           <p class="kurz">{esc(KAMPAGNEN.get('muster', ''))}</p>
         </div>
@@ -1555,8 +1562,7 @@ HEADLINE = ('Preis beweisen – mit Menschen, nicht mit Preisschildern.'
 
 PLAN_HTML = f"""
         <div class="card blue span6">
-          <span class="eyebrow">Was jetzt tun · Stand {STAND}</span>
-          <h3 class="headline">{HEADLINE}</h3>
+          <span class="eyebrow">Die Kurzfassung</span>
           <p class="kurz">{_KURZ}</p>
           <div class="zielzeile">Jede Empfehlung zahlt auf eines der drei Ziele ein: <span class="ziel light">Umsatz</span><span class="ziel light">Frequenz</span><span class="ziel light">Preiswahrnehmung</span></div>
         </div>
@@ -1636,7 +1642,7 @@ S3_LEER = f"""
         </div>
       """
 S3_HTML = KAMP_HTML or S3_LEER
-S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">Was Social schon bewirkt hat · intern</small></span>''' if KAMP_HTML
+S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">Was Social schon bewirkt hat</small></span>''' if KAMP_HTML
           else '''<span class="tab2 dim" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">noch ohne Daten · Zugang nötig</small></span>''')
 
 PLAN_CSS_EXTRA = """
@@ -1763,6 +1769,31 @@ FORMAT_HEAD = (f"{esc(_FMT_BASE['label'])} ist am verlässlichsten, {esc(_FMT_BO
 TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
+NAVCSS = """
+/* --- Navigation: sticky + mobil als wischbare Leiste --- */
+.tabd{display:none!important}
+.top{position:sticky;top:0;z-index:50;margin:-36px -40px 0;padding:22px 40px 14px;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-radius:28px 28px 0 0;flex-wrap:nowrap;transition:padding .2s}
+.top.scrolled{padding-top:12px;padding-bottom:12px;border-radius:0;box-shadow:0 1px 0 #ECEAE4}
+.navleft{flex-wrap:nowrap;min-width:0;flex:1 1 auto}
+.tabs2{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;max-width:100%}
+.tabs2::-webkit-scrollbar{display:none}
+.tab2{scroll-snap-align:start;flex:0 0 auto}
+.meta{flex:0 0 auto}
+.hero{padding-top:34px}
+.hebel{align-self:start}
+.eybst{display:none}
+@media(max-width:1100px){.meta{display:none}.eybst{display:inline}}
+@media(max-width:760px){
+  .top{margin:-20px -16px 0;padding:14px 16px 10px;border-radius:22px 22px 0 0;gap:10px}
+  .top.scrolled{padding-top:10px;padding-bottom:10px}
+  .logo{width:40px;height:40px;font-size:18px}
+  .tabs2{width:auto;flex:1 1 auto;padding:4px;gap:4px;mask-image:linear-gradient(90deg,#000 85%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .tab2{padding:9px 14px;font-size:14px;min-height:40px}
+  .tabs2.end{mask-image:none;-webkit-mask-image:none}
+  .h1{font-size:40px!important;letter-spacing:-1.4px!important}
+}
+"""
+
 TEMPLATE = """<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1785,8 +1816,8 @@ TEMPLATE = """<!DOCTYPE html>
       <span class="meta">{META_TEXT}</span>
     </nav>
     <div class="hero">
-      <span class="eyb">Social Check · EDEKA</span>
-      <h1 class="h1">Edeka Social Media<br>&amp; Marketing Intelligence</h1>
+      <span class="eyb">Social Check · EDEKA<span class="eybst"> · {META_TEXT}</span></span>
+      <h1 class="h1">{HEADLINE}</h1>
     </div>
 
     <!-- 00 WAS JETZT TUN -->
@@ -2216,7 +2247,7 @@ for _p in _parts:
 html_doc = ''.join(_shell)
 assert html_doc.count('<table') == html_doc.count('</table>'), 'Tabelle defekt'
 html_doc = _tw(html_doc)
-html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + PLAN_CSS + PLAN_CSS_EXTRA + '</style>', 1)
+html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + PLAN_CSS + PLAN_CSS_EXTRA + NAVCSS + '</style>', 1)
 html_doc = html_doc.replace('<body><div class="app">',
                             '<body class="loading"><div class="boot">Daten werden aktualisiert '
                             '&middot; bitte kurz warten.</div><div class="app">', 1)
