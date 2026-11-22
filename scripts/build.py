@@ -1635,7 +1635,7 @@ if _TH_BEST and _TH_WORST:
     _HYP = f"""
         <details class="card span6 hyp">
           <summary><span class="eyebrow2">Strategische Hypothese</span><span class="ev ev-mittel">Teilweise gestützt</span>
-            <span class="hyps">Menschen-Posts {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]}. Die Kombination ist noch nicht getestet.</span><span class="chev"></span></summary>
+            <span class="hypt">„{HEADLINE}“</span><span class="hyps">Menschen-Posts {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]}. Die Kombination ist noch nicht getestet.</span><span class="chev"></span></summary>
           <div class="hypg">
             <div class="hypc ok"><b>Das zeigen die Daten</b><span>Posts mit Menschen und Humor laufen {_rel(_hb['med'])[1]}, reine Preis-Posts {_rel(_hw['med'])[1]} als ein normaler Beitrag ({de(_hb['n'])} und {de(_hw['n'])} Beiträge).</span></div>
             <div class="hypc open"><b>Noch offen</b><span>Ob Preis und Menschen <i>zusammen</i> besser laufen, ist nicht gemessen. Jeder Post hat nur ein Thema.</span></div>
@@ -1878,6 +1878,11 @@ TAG_HEAD = f"Am besten: {_WD_BEST['label']}" if _WD_BEST else 'Beste Wochentage'
 ZEIT_HEAD = f"Am besten: {_HR_BEST[0]['h']} Uhr, nicht {_HR_VOLL['h']} Uhr" if _HR_BEST and _HR_VOLL and _HR_BEST[0]['h'] != _HR_VOLL['h'] else 'Beste Uhrzeiten'
 
 NAVCSS = """
+.subline{margin:18px 0 12px;font-size:22px;line-height:1.4;font-weight:500;color:#3E3B33;max-width:760px}
+.hypt{flex:1 1 100%;order:3;font-size:24px;font-weight:700;letter-spacing:-.6px;line-height:1.2;color:#16150F}
+.hyps{order:4!important;font-weight:500!important;color:#3E3B33!important}
+@media(max-width:760px){.subline{font-size:17px;margin-top:12px}.hypt{font-size:19px}}
+
 /* Akkordeons */
 details>summary{list-style:none;cursor:pointer}
 details>summary::-webkit-details-marker{display:none}
@@ -2023,7 +2028,8 @@ TEMPLATE = """<!DOCTYPE html>
     </nav>
     <div class="hero">
       <span class="eyb">Social Check · EDEKA<span class="eybst"> · {STAND}</span></span>
-      <h1 class="h1">{HEADLINE}</h1>
+      <h1 class="h1">Wissen, was wirkt.</h1>
+      <p class="subline">Aus Instagram-Daten werden klare Empfehlungen für besseres Marketing.</p>
     </div>
 
     <!-- 00 WAS JETZT TUN -->
