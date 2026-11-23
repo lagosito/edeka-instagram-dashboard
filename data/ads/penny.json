@@ -1,5 +1,5 @@
 {
- "abfrage": "2026-11-16",
+ "abfrage": "2026-11-23",
  "query": "PENNY",
  "rows": [
   {
@@ -13,14 +13,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/707617892_1948406532467794_9155177261002994342_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XtXQY9sQ7zcQ7kNvwF9EAWN&_nc_oc=AdrL3FNdC51axbY4h-oM4x6yUDL2qHBOiZx52YVGyt6sv6qWaiM8fnVBNs473yMgL5c&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSL76jdnmbUo9nrpqg2meRVUL9JMoCKx9oygoGclO2Krg&oe=6B00E278"
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/707617892_1948406532467794_9155177261002994342_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=a0_cyIAGu6QQ7kNvwEnILb7&_nc_oc=AdpbpWuJPlNKG_EKzgyNiFJ7_fmU59frLCiPbwLrYDa9eroBHHyksJoe_psh_o3pZDo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTTSmFXP_ga_n31JpAJTZodSd-aHt02m86dc8gt9qbUbQ&oe=6B0A1CF8"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "shop.pipitea.com",
    "link_url": "https://shop.pipitea.com/ppch/sp",
    "page_id": "866655706540346",
-   "page_likes": 3482,
+   "page_likes": 3567,
    "page_name": "Cholesterol Relief Community",
    "page_url": "https://www.facebook.com/61585235895092/",
    "paid_for_by": null,
@@ -38,166 +38,6 @@
    "videos": []
   },
   {
-   "ad_archive_id": "1765076104621076",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1765076104621076",
-   "body": "Say goodbye to loose fur, dirt, and unpleasant odors! Uproot Clean Grooming Gloves Pro make grooming effortless while providing a spa-like experience for your pet. Slip on the glove, and groom your pet as if you’re just petting them, it’s that easy! With moisturizing ingredients like shea butter and jojoba oil, you’re not just grooming, you’re caring for their skin and coat too. Dermatologist-tested and hypoallergenic, these glove wipes ensure your pet looks and feels their best after every grooming session. Make grooming a special moment with Uproot Clean Grooming Gloves Pro today.\n\nGet Yours Now",
-   "cards": [],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "order.uprootclean.com",
-   "link_url": "https://order.uprootclean.com/main/grooming-gloves-gg002-l1",
-   "page_id": "104145318412873",
-   "page_likes": 159597,
-   "page_name": "Uproot Clean",
-   "page_url": "https://www.facebook.com/uprootclean/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-08-28T07:00:00Z",
-   "title": null,
-   "videos": [
-    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMukk9OeLZjmpLbcorhPKzJWyxKILBVw9rU7Yf0mZLuX30zA6GoOxmAbKgascv8ynSzqW8A5te_d71vyT-f3InAn97ZJa7pfWgr9gO_DleA3w.mp4?_nc_cat=105&_nc_sid=b66105&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=dhesHp0cRJIQ7kNvwHbCo1R&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE3NTI0Njk0MDkwNzIzMTUsImFzc2V0X2FnZV9kYXlzIjoxNzIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjoxMTYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=4aa0602f7f06ee58&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC81MTQxQTA4QTRBQUVGOUZBRThGQkI2NDRDRjE4MzM5OV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzZFNDQyM0I0MzJCQjZBREE2OEZFRTQ1QTRFMUI3QzgwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACb2ktzJkvecBhUCKAJDMywXQF0AAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRYaIvmzmgoLDUb-GU0v0pAQFllbcch3X4s6RLQ1aVXoA&oe=6B00CF47"
-   ]
-  },
-  {
-   "ad_archive_id": "1672754991194381",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1672754991194381",
-   "body": "$150 per grooming visit. A 4-week waitlist. And STILL fur everywhere? 🤦\n\nThere's a better way… Thousands of pet parents are ditching the groomer and handling shedding season at home - in under 15 minutes a week.\n\nWith the Uproot Grooming Kit, you will:\n\n✅ Pull out more loose fur than most professional groomers remove in a full appointment\n✅ Use the \"zero-resistance stroke\" technique that makes even grooming-hating dogs lean in and relax\n✅ Stop shedding before it ever hits your couch, your bed, and your air ducts\n\nPlus, the ultra-low noise design means even the most anxious, sound-sensitive dogs stay calm through the entire session.\n\nIt's the same approach recommended by veterinarians - now available at a fraction of one grooming session.\n\nTry it for 60 days completely risk-free. If you don't see a dramatic difference in shedding, you get every penny back. No questions asked!\n\n🐾 Tap \"Shop Now\" to see why 50,000+ pet parents made the switch",
-   "cards": [],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "order.uprootclean.com",
-   "link_url": "https://order.uprootclean.com/main/gkit/hidden-dangers",
-   "page_id": "104145318412873",
-   "page_likes": 159597,
-   "page_name": "Uproot Clean",
-   "page_url": "https://www.facebook.com/uprootclean/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-08-28T07:00:00Z",
-   "title": null,
-   "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOYx-jRtGw0qc-Ri2ExqJntGeQji8rKBZs8S7dj6cU4_v-33ReMKbYTDHsenoqVzzuSxAabn22HhPf0J6JUXDvlJSAsaB0kwEVO8OoZiVwh9Q.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=HFpDwwch8B0Q7kNvwHtYcRv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MzIzNzQ3MTExOTEyNTgsImFzc2V0X2FnZV9kYXlzIjoxNzksInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjo1NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8e03faffc31d85b9&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8zQTRFMUVFODA0MDE1N0Q1Qjc5Mjg4QTdBNEU0ODZBM19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzczNDE4QUY2NzgzMEI2N0YyN0QyNTlCNTVFNjM2NkFFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACa0m-is26jmBRUCKAJDMywXQEwT987ZFocYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTUmAMXSUyqIFnoSeiCTeJAWP5SqhN_b7PYSLNHzYniCw&oe=6B00CE9B"
-   ]
-  },
-  {
-   "ad_archive_id": "1146908437907856",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1146908437907856",
-   "body": "If you've ever rewashed the same load twice because it still smelled like your pet, read this. 👇\nThe smell isn't on your clothes. It's inside your washing machine.\n\nPet hair and dander leave oils that build up in your washer and feed bacteria. Those bacteria form biofilm, a protective coating on your drum and rubber seal that survives every cycle. \n\nAnd rewashing just runs your clothes through the same contaminated water again.\n\nThe Washing Machine Cleaner Tablet dissolves biofilm inside the drum, seal, and pipes in one empty hot cycle. Once the biofilm is gone, pet odor stops transferring onto your laundry.\n\nYou simply drop one tablet every two weeks and let your machine do the rest:\n\n✅ No scrubbing your gasket \n✅ No outdated vinegar tricks \n✅ No rewashing loads that still smell\n\nWe're so confident it works, you get 60 days to try it yourself. Don't notice a difference? You get every penny back.\n\nJoin over 100K pet parents who solved their laundry smell. Tap below and stop washing the same load twice.",
-   "cards": [],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "order.uprootclean.com",
-   "link_url": "https://order.uprootclean.com/main/wmtabs/wmt004-1",
-   "page_id": "104145318412873",
-   "page_likes": 159597,
-   "page_name": "Uproot Clean",
-   "page_url": "https://www.facebook.com/uprootclean/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-09-29T07:00:00Z",
-   "title": null,
-   "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQP-4pjkbjDSteFrvgYOQE9pBpZwhttFulpOARnpfGdgay7zPeSNz82HMcgZdGNfmxMWrvUFIzkHonm416VxhVIyu1IAlbGgS5qRSYuIZKOxpw.mp4?_nc_cat=102&_nc_sid=b66105&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=Q3sMkRts61EQ7kNvwFFMtjr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwNTkwMjM1NTM0MjYxNDksImFzc2V0X2FnZV9kYXlzIjo2MSwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjE2NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f0d36ceaa591d833&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83OTQ4QzhDMzY3OEU2ODFDOEM0RDEyREEzQTdBQ0JBNF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UwNEY5RjMzREVFRDI1QUEyNTg0OTg5OENBQzhEQUJGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbKy6-rpMvhAxUCKAJDMywXQGTusCDEm6YYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTzaLsgj8ezuEsVcCppKxgBLbatMfhvd7HB0kqfIf0WMA&oe=6B00C862"
-   ]
-  },
-  {
-   "ad_archive_id": "893760707134895",
-   "ad_url": "https://www.facebook.com/ads/library/?id=893760707134895",
-   "body": "$150 per grooming visit. A 4-week waitlist. And STILL fur everywhere? 🤦\n\nThere's a better way… Thousands of pet parents are ditching the groomer and handling shedding season at home - in under 15 minutes a week.\n\nWith the Uproot Grooming Kit, you will:\n\n✅ Pull out more loose fur than most professional groomers remove in a full appointment\n✅ Use the \"zero-resistance stroke\" technique that makes even grooming-hating dogs lean in and relax\n✅ Stop shedding before it ever hits your couch, your bed, and your air ducts\n\nPlus, the ultra-low noise design means even the most anxious, sound-sensitive dogs stay calm through the entire session.\n\nIt's the same approach recommended by veterinarians - now available at a fraction of one grooming session.\n\nTry it for 60 days completely risk-free. If you don't see a dramatic difference in shedding, you get every penny back. No questions asked!\n\n🐾 Tap \"Shop Now\" to see why 50,000+ pet parents made the switch",
-   "cards": [],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "order.uprootclean.com",
-   "link_url": "https://order.uprootclean.com/main/gkit/hidden-dangers",
-   "page_id": "104145318412873",
-   "page_likes": 159597,
-   "page_name": "Uproot Clean",
-   "page_url": "https://www.facebook.com/uprootclean/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-10-10T07:00:00Z",
-   "title": null,
-   "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m412/AQM11f3GrTjVYHaRTBvN8Z-QI_c1NyD24FF8SJMD4qSNbsgtW9cvgzpGrLYPe-px_Pi9NmhHUylZf2HTj7eT35f1bsBw9ET5MwqxS7nxCA.mp4?_nc_cat=102&_nc_sid=ef5aa3&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=o0Ix0KkDXU0Q7kNvwEKjw6W&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTYyNjQxMzc5ODY4OTAzMSwiYXNzZXRfYWdlX2RheXMiOjIyMywidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjg2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQST-nmeBuXfkoEDskUiOtQxADBk9VRWVRLNGp4S60wcoA&oe=6B00C60C"
-   ]
-  },
-  {
-   "ad_archive_id": "1983097862368441",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1983097862368441",
-   "body": "$150 per grooming visit. A 4-week waitlist. And STILL fur everywhere? 🤦\n\nThere's a better way… Thousands of pet parents are ditching the groomer and handling shedding season at home - in under 15 minutes a week.\n\nWith the Uproot Grooming Kit, you will:\n\n✅ Pull out more loose fur than most professional groomers remove in a full appointment\n✅ Use the \"zero-resistance stroke\" technique that makes even grooming-hating dogs lean in and relax\n✅ Stop shedding before it ever hits your couch, your bed, and your air ducts\n\nPlus, the ultra-low noise design means even the most anxious, sound-sensitive dogs stay calm through the entire session.\n\nIt's the same approach recommended by veterinarians - now available at a fraction of one grooming session.\n\nTry it for 60 days completely risk-free. If you don't see a dramatic difference in shedding, you get every penny back. No questions asked!\n\n🐾 Tap \"Shop Now\" to see why 50,000+ pet parents made the switch",
-   "cards": [],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "order.uprootclean.com",
-   "link_url": "https://order.uprootclean.com/main/gkit/hidden-dangers",
-   "page_id": "104145318412873",
-   "page_likes": 159597,
-   "page_name": "Uproot Clean",
-   "page_url": "https://www.facebook.com/uprootclean/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-10-14T07:00:00Z",
-   "title": null,
-   "videos": [
-    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m412/AQOHoEAg2AwBO4whGZte8tY5MrStGv9f4VNylrCsDqnCTMAsvrYUnzICR_sf-JrXeTX-1TgPdeWmy1sW8OXc1ziHhuhhM8BaQxmlbNkjhA.mp4?_nc_cat=108&_nc_sid=ef5aa3&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=H6rGUdEmOe8Q7kNvwHGtdvw&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODEyMTQwNzk4NTczOTkzLCJhc3NldF9hZ2VfZGF5cyI6MjUxLCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=Uhtmok5j9PsQn7YGAHiUZaEFtKimx5fnVfbub8LijxGxq9jLK_2wlCXKy9o4SGxF9djTbqy72eK311QTHjxECzarsRYYFKwJMvrgxO_vNFrRcsT3fe6KwhtVKoc&oh=00_AQTRPmLl1BCdfNyTFoLYc_1ZVIF4RvM6QeQYFHCMmvxQKA&oe=6B00ECFE"
-   ]
-  },
-  {
    "ad_archive_id": "1030864056331221",
    "ad_url": "https://www.facebook.com/ads/library/?id=1030864056331221",
    "body": "My husband started taking a statin in June of last year.\n\nTook his 40mg Lipitor every morning at 7 sharp.\n\nTook the fish oil pills he ordered off the internet.\n\nCancelled his Friday night steak at the place we'd gone to for thirty years.\n\nQuit eggs entirely.\n\nWent on the Mediterranean diet.\n\nWalked three miles a day.\n\nStarted eating oatmeal every morning, of all things.\n\nHe did everything the doctor told him.\n\nHe died of a massive heart attack on October 25th at 5:23 in the morning.\n\nHe was 61 years old.\n\nHis cast-iron skillet is still hanging above the stove.\n\nI can't take it down.\n\nIf I take it down, he's really gone.\n\nHis pill organizer is still on the windowsill above the sink.\n\nI can't empty it.\n\nThe Sunday slot is empty.\n\nHe took that Sunday pill at 7, the way he always did.\n\nHe never made it to the Monday slot.\n\nMonday through Saturday are still full.\n\nSix doses of the Lipitor that was supposed to save him.\n\nIf I empty it, he's really gone.\n\nI need to tell you what happened to Roy.\n\nBecause I keep seeing the same posts I was making a few months before he died.\n\n\"My husband's doctor just put him on a statin, any tips to bring his cholesterol down naturally?\"\n\nAnd it makes me physically ill.\n\nIf you're over 50 and your cholesterol is high, or someone you love's is, please read this whole thing.\n\nI know it's long.\n\nI know you're scrolling.\n\nI know you have things to do.\n\nA year ago I would have given anything, everything, for someone to sit me down and tell me what I'm about to tell you.\n\nRoy went in for routine bloodwork last June.\n\nHe felt fine.\n\nBetter than fine.\n\nHe was sixty.\n\nHe still hunted every November.\n\nHe still rebuilt the engine in his old truck on Saturdays.\n\nHe thought he was indestructible, and honestly, so did I.\n\nTwo days later the doctor called.\n\nLDL of 187.\n\nTotal cholesterol of 264.\n\n\"Your LDL is very high, Roy. We need to talk about your diet. And I'm putting you on a statin today.\"\n\nRoy was quiet on the call.\n\nI was in the kitchen pretending not to listen.\n\n\"How much red meat do you eat?\"\n\n\"Steak a couple nights a week. Bacon and eggs on Sundays. Maybe a ribeye when we go out.\"\n\n\"That's enough to do this. You need to cut out the red meat and the eggs, completely, no exceptions. I'm putting you on 40 milligrams of atorvastatin. One pill every morning. We'll retest in three months.\"\n\nRoy hung up and sat at the kitchen table for forty minutes without saying a word.\n\nThen he stood up, walked out to the garage, and emptied the chest freezer.\n\nI watched him bag up a ninety-dollar ribeye he'd been saving for our anniversary.\n\nA tomahawk from the butcher.\n\nA New York strip.\n\nTwo coolers of venison from his November hunt.\n\nThe whole freezer, loaded into the bed of his truck and driven down to the food bank, gone in under an hour.\n\n\"That's it,\" he said. \"I'm done.\"\n\nAnd he was.\n\nHe picked up the Lipitor from the pharmacy that afternoon.\n\nTook the first pill at 7 the next morning with a glass of water.\n\nSet the bottle on the windowsill where he'd see it every day.\n\nI bought him a Sunday-through-Saturday organizer and started filling it every weekend.\n\nTwo weeks in, our neighbor told him over the fence that his own cardiologist had him on fish oil for his cholesterol.\n\nRoy ordered a bottle off Amazon that night and added it to the organizer the next Sunday.\n\nFor a hundred and three days, he didn't touch a bite of red meat.\n\nHe didn't miss a single pill.\n\nNo steak.\n\nNo bacon.\n\nNo eggs.\n\nNot at his nephew's wedding in August.\n\nNot at the football game in September.\n\nNot at his own 61st birthday dinner in October, where his brother ordered the porterhouse right in front of him and Roy ate the grilled chicken breast.\n\nI threw out thirty-eight years of recipes.\n\nI learned to cook things I'd never made in my life.\n\nLentil stew.\n\nBaked fish.\n\nBowls of grain and kale I couldn't have named a year before.\n\nI'd stand at the stove at six watching him push the food around his plate, and I'd pretend it was fine.\n\nI ate the same dinners he did.\n\nIf he had to give up everything he loved, I wasn't going to sit across from him with a ribeye on my plate.\n\nHe stopped going to the neighbor's Wednesday cookouts because he couldn't sit there with a side salad while everyone else ate steak.\n\nI stopped going too.\n\nHis oldest friend told him he was no fun anymore and stopped calling.\n\nHe skipped the deer trip to the cabin with his brother for the first time in thirty years.\n\nHe gave up a piece of himself he'd been carrying his whole life.\n\nAnd he did it anyway.\n\nBecause the doctor said to.\n\nThen his legs started aching at night.\n\nA deep, bone-tired ache that wouldn't go no matter how he stretched.\n\nI'd lie next to him listening to him shift from one side to the other, trying to find a position that didn't hurt.\n\nHe was tired, and sleep never touched it.\n\nAsleep in his chair before the news was over.\n\nTaking the stairs one at a time, gripping the banister and pulling himself up, and I'd remember the man who used to tak …",
@@ -208,14 +48,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/743975616_1759638268806997_4107955557540689892_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3NJkz2Ao9vIQ7kNvwFics2f&_nc_oc=AdooPtRPT5Sm0THT7GNslLaAbcnyXVLiV01TM4kWBbT7V8PxOeaW1UrWqsqRkgjGFik&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQStaWcRrjazbhwGhRO7HD1xyByWRQCFxNxqVTIN09uwtQ&oe=6B00C84A"
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/743975616_1759638268806997_4107955557540689892_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=J-k2kUCOV7IQ7kNvwGo3Alh&_nc_oc=AdpDsRJyujiOaouCQca_0bg1YXaP2yzbBCz_tufMFisVMC3n4nlfIhsuqzAcrIoouKI&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTPxAfWebA7xzLtjk51K6Kw_TbLV46g9KPkBIuYoP6ULw&oe=6B0A3B0A"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "shop.pipitea.com",
    "link_url": "https://shop.pipitea.com/ppch/sp-nm",
    "page_id": "866655706540346",
-   "page_likes": 3482,
+   "page_likes": 3567,
    "page_name": "Cholesterol Relief Community",
    "page_url": "https://www.facebook.com/61585235895092/",
    "paid_for_by": null,
@@ -233,40 +73,6 @@
    "videos": []
   },
   {
-   "ad_archive_id": "973745488549148",
-   "ad_url": "https://www.facebook.com/ads/library/?id=973745488549148",
-   "body": "💔 WHAT THEY DON’T WANT US TO SEE! PLEASE SHARE THIS VIDEO! 💔\n\nHelp Save Them! 🙏🏼\nHelp Ease their Suffering! 😢\nNo Child Should Suffer Like This! 💔\n\nClick the link below and Help Save a Malnourished Child’s Life Today in Yemen! 🙏🏼👇🏼",
-   "cards": [],
-   "cta": "Learn more",
-   "cta_type": "LEARN_MORE",
-   "currency": null,
-   "display_format": "video",
-   "end_date": null,
-   "images": [],
-   "impressions": null,
-   "is_active": true,
-   "link_caption": "greengatetrust.com",
-   "link_url": "https://greengatetrust.com/appeal/malnourished-childrens-clinic/",
-   "page_id": "102262404806826",
-   "page_likes": 10940,
-   "page_name": "Muhammad Bilal",
-   "page_url": "https://www.facebook.com/qaribilal0786/",
-   "paid_for_by": null,
-   "platforms": [
-    "facebook",
-    "instagram",
-    "messenger",
-    "threads"
-   ],
-   "same_creative_ads": 1,
-   "spend": null,
-   "start_date": "2026-04-08T07:00:00Z",
-   "title": "Save the Children in Yemen",
-   "videos": [
-    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQO12gTMQgX0ISihDru2KXAML8zh2sjHAkSclKCjgwD7H4xhJwnlsdk1FQBhMKNtlhIldovDwLGBCyVLq849sbmbqqWkyWQ1bek_pgujLOADZQ.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=3gQtco0kc54Q7kNvwGhZeKr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjQzNDk0Nzc1NzUyNjc4NzcsImFzc2V0X2FnZV9kYXlzIjoyNTAsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoyOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=7190b6d741821604&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xQzQ2RTREMzU5NTAwODJDQzRFNjhBRTUxMTJERDdBRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzMzNDA0MUM5QTEzRDJEMUFEN0Q2OTQxNERDNzFCNzk0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbK2Kid9fS5DxUCKAJDMywXQD2zMzMzMzMYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQR_s3DqB1JnRtI7HCn7qPUtSI5Gdbzvuxy05P0_y7e9_Q&oe=6B00C555"
-   ]
-  },
-  {
    "ad_archive_id": "1706399864378966",
    "ad_url": "https://www.facebook.com/ads/library/?id=1706399864378966",
    "body": "Anzeige | A wie App. G wie günstig 💡\n\n#ErstmalZuPenny",
@@ -282,7 +88,7 @@
    "link_caption": null,
    "link_url": null,
    "page_id": "700577889971139",
-   "page_likes": 445773,
+   "page_likes": 445617,
    "page_name": "PENNY",
    "page_url": "https://www.facebook.com/PennyDeutschland/",
    "paid_for_by": null,
@@ -294,7 +100,41 @@
    "start_date": "2026-11-06T08:00:00Z",
    "title": null,
    "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQNb9AN1JKi6TZzbc_Bc98-17uTrblFjvhU5b711thAGVNa_mHpMWYGqY00u2VXHv1T0PKEGbsDx5FW399MIYbCX82yCVNkyBPsSgkiP9w.mp4?_nc_cat=103&_nc_sid=ef5aa3&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=MgmfgH9QpqIQ7kNvwHTd22A&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoyMDAyNzgyMTgzNzI3NjY5LCJhc3NldF9hZ2VfZGF5cyI6MTAsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjo2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSX4VpGKWsTWIoZRcEWwW6bG_MZ0xoZcB6B1V-AH3JteA&oe=6B00CA2F"
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQNb9AN1JKi6TZzbc_Bc98-17uTrblFjvhU5b711thAGVNa_mHpMWYGqY00u2VXHv1T0PKEGbsDx5FW399MIYbCX82yCVNkyBPsSgkiP9w.mp4?_nc_cat=103&_nc_sid=ef5aa3&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=bg8WB3NisnQQ7kNvwHVABNR&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoyMDAyNzgyMTgzNzI3NjY5LCJhc3NldF9hZ2VfZGF5cyI6MTcsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjo2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSS2vJz01KKVD19kSt41eoe9e65Qa4WEzD7ol4JXaEd1w&oe=6B0A3CEF"
+   ]
+  },
+  {
+   "ad_archive_id": "973745488549148",
+   "ad_url": "https://www.facebook.com/ads/library/?id=973745488549148",
+   "body": "💔 WHAT THEY DON’T WANT US TO SEE! PLEASE SHARE THIS VIDEO! 💔\n\nHelp Save Them! 🙏🏼\nHelp Ease their Suffering! 😢\nNo Child Should Suffer Like This! 💔\n\nClick the link below and Help Save a Malnourished Child’s Life Today in Yemen! 🙏🏼👇🏼",
+   "cards": [],
+   "cta": "Learn more",
+   "cta_type": "LEARN_MORE",
+   "currency": null,
+   "display_format": "video",
+   "end_date": null,
+   "images": [],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "greengatetrust.com",
+   "link_url": "https://greengatetrust.com/appeal/malnourished-childrens-clinic/",
+   "page_id": "102262404806826",
+   "page_likes": 10965,
+   "page_name": "Muhammad Bilal",
+   "page_url": "https://www.facebook.com/qaribilal0786/",
+   "paid_for_by": null,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "messenger",
+    "threads"
+   ],
+   "same_creative_ads": 1,
+   "spend": null,
+   "start_date": "2026-04-08T07:00:00Z",
+   "title": "Save the Children in Yemen",
+   "videos": [
+    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQO12gTMQgX0ISihDru2KXAML8zh2sjHAkSclKCjgwD7H4xhJwnlsdk1FQBhMKNtlhIldovDwLGBCyVLq849sbmbqqWkyWQ1bek_pgujLOADZQ.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=0IfmV4ZV4CgQ7kNvwE4MdPb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjQzNDk0Nzc1NzUyNjc4NzcsImFzc2V0X2FnZV9kYXlzIjoyNTcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoyOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=7190b6d741821604&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xQzQ2RTREMzU5NTAwODJDQzRFNjhBRTUxMTJERDdBRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzMzNDA0MUM5QTEzRDJEMUFEN0Q2OTQxNERDNzFCNzk0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbK2Kid9fS5DxUCKAJDMywXQD2zMzMzMzMYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSbXGqR22VI778AJl5SpZqL0lmKs2ipeqvIMqT3lVnbjQ&oe=6B0A3815"
    ]
   },
   {
@@ -305,7 +145,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/603028848_818618494269931_2522273925194661032_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6bEmMPi_kWoQ7kNvwGTSiKB&_nc_oc=AdrB23Xq0VDEPJcDiQcaMKKHSbtszu0wmD5UbNtHzLUGoHgKU4lzD0imkTZGgnXuGTQ&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSO0zWPLAX7oGVt2pR6C9ZUvaC41Ug-xsKqm3pBnR0gcw&oe=6B00E903",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/603028848_818618494269931_2522273925194661032_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5NvoOzwcsBoQ7kNvwFXewKH&_nc_oc=AdqCOPf04R4D8nyoday3ZOiSuMHiJSJWfWej7tyt_20xs6aUp3sXQ1n7AgrL3dPCrMU&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTafPx3qydD62RBmsizZqs48dEnHMkd8fIdz3aJgwd1IA&oe=6B0A2383",
      "link_url": "https://bit.ly/3ZTwHT0",
      "title": "#teampenny",
      "video": null
@@ -313,7 +153,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/600366973_1244624510817137_1296216807864492293_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KD-qC3XtY_oQ7kNvwEDy1TX&_nc_oc=AdrFDpLjAB-J3UfLSm2suo5WKKFFOiLDNwnQ0HaCCOkZzOorV-oHgqXZ8F6rp4aEO_o&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQXnWU7kGP-Yv3SvLfwF8QubrjDFP7-C638uMAwK2tuGQ&oe=6B00D5A1",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/600366973_1244624510817137_1296216807864492293_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aoTGXtMaSTYQ7kNvwFScQDU&_nc_oc=AdpoQsKqJ2t45Vd0S2i0SrijWmTfbVls_8oxnZ7ysTWqr-TdqT8hff3czr9bcsJi5_E&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQeB8Ppg1CEu4VBcXBuG5TNYM7shxDNLK05RuNEll-z9w&oe=6B0A4861",
      "link_url": "https://bit.ly/3ZTwHT0",
      "title": "#teampenny",
      "video": null
@@ -321,7 +161,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/602010431_2249654365556594_102768045066149201_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b1BoJb4-xRoQ7kNvwGp10QS&_nc_oc=AdqUaC5XiXiURuafYbb4krsfOIBEZ72CV_GGXGyXipmNXkVEYuohDReaOPR4tmZQSOI&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQR206KrimoYUZyatRD10gSahTjuAyH-2Emr86LXEHUUcA&oe=6B00E1C4",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/602010431_2249654365556594_102768045066149201_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GollcggTylwQ7kNvwFL1tzm&_nc_oc=AdqdfaZu452TrxyeUiHliRURQRtlPyR85-3vJRocZ5NqI2G2iqJRYwk1L4Ela3joOAs&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRyHm-auHcPyIpA2tOOw0Uk8_WjH0EyxZouWqYSHbVE-A&oe=6B0A1C44",
      "link_url": "https://bit.ly/3ZTwHT0",
      "title": "#teampenny",
      "video": null
@@ -329,7 +169,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600881097_1542871570322759_8667281176980911646_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_LIxQqnJaCMQ7kNvwG3iL0G&_nc_oc=AdrNZowkZiTDkFYeeKO-nie94axa_ElXbKngIoTyoC7yLtPTtxCa4qKj6BH-sJ84x0M&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQVGl07-YCCmYkEbENwaQqLWXA0pXnNpxZIYnfPlMtCRw&oe=6B00F0E9",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600881097_1542871570322759_8667281176980911646_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=V7xpRsa_VkIQ7kNvwFiC8kH&_nc_oc=AdqRcOuFriSR0bGe__Ui3iIoPkp2uklcb0o8QPJN_j6Daq0NqmCPi2g-soUbBDkLkqA&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ451wEkCdDDcl0cE_lXWyEe5ZVXEF-ttY-dbryYKNTMQ&oe=6B0A2B69",
      "link_url": "https://bit.ly/3ZTwHT0",
      "title": "#teampenny",
      "video": null
@@ -337,7 +177,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/601918108_1867181173928495_1237843266930789410_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8oqIIauiiQsQ7kNvwH2vfkJ&_nc_oc=AdpI2LAYhFB7YsAm-d2uEAd5g0mmdNnTFKTFO4KrhjGbJ9ZTxSIDdmqPXG1_6rWLfWo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRI054dAEF1JtbUEU-x71nOfee2w62z_Fkm6J_F9GTQag&oe=6B00E792",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/601918108_1867181173928495_1237843266930789410_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xP2GxrxjN3UQ7kNvwFFWd59&_nc_oc=AdqW78X6rsxlX5DSq4yxfjHypbxtsIHHpok5gim-tqmjLJaA19IB2H-CiX6G4JvBnO0&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTzYEks2f_Z03zlfSWoAo9HImEx19hTo2vHYUkvsXKbQQ&oe=6B0A2212",
      "link_url": "https://bit.ly/3ZTwHT0",
      "title": "#teampenny",
      "video": null
@@ -349,18 +189,18 @@
    "display_format": "carousel",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/603028848_818618494269931_2522273925194661032_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6bEmMPi_kWoQ7kNvwGTSiKB&_nc_oc=AdrB23Xq0VDEPJcDiQcaMKKHSbtszu0wmD5UbNtHzLUGoHgKU4lzD0imkTZGgnXuGTQ&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSO0zWPLAX7oGVt2pR6C9ZUvaC41Ug-xsKqm3pBnR0gcw&oe=6B00E903",
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/600366973_1244624510817137_1296216807864492293_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KD-qC3XtY_oQ7kNvwEDy1TX&_nc_oc=AdrFDpLjAB-J3UfLSm2suo5WKKFFOiLDNwnQ0HaCCOkZzOorV-oHgqXZ8F6rp4aEO_o&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQXnWU7kGP-Yv3SvLfwF8QubrjDFP7-C638uMAwK2tuGQ&oe=6B00D5A1",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/602010431_2249654365556594_102768045066149201_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b1BoJb4-xRoQ7kNvwGp10QS&_nc_oc=AdqUaC5XiXiURuafYbb4krsfOIBEZ72CV_GGXGyXipmNXkVEYuohDReaOPR4tmZQSOI&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQR206KrimoYUZyatRD10gSahTjuAyH-2Emr86LXEHUUcA&oe=6B00E1C4",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600881097_1542871570322759_8667281176980911646_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_LIxQqnJaCMQ7kNvwG3iL0G&_nc_oc=AdrNZowkZiTDkFYeeKO-nie94axa_ElXbKngIoTyoC7yLtPTtxCa4qKj6BH-sJ84x0M&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQVGl07-YCCmYkEbENwaQqLWXA0pXnNpxZIYnfPlMtCRw&oe=6B00F0E9",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/601918108_1867181173928495_1237843266930789410_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8oqIIauiiQsQ7kNvwH2vfkJ&_nc_oc=AdpI2LAYhFB7YsAm-d2uEAd5g0mmdNnTFKTFO4KrhjGbJ9ZTxSIDdmqPXG1_6rWLfWo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRI054dAEF1JtbUEU-x71nOfee2w62z_Fkm6J_F9GTQag&oe=6B00E792"
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/603028848_818618494269931_2522273925194661032_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5NvoOzwcsBoQ7kNvwFXewKH&_nc_oc=AdqCOPf04R4D8nyoday3ZOiSuMHiJSJWfWej7tyt_20xs6aUp3sXQ1n7AgrL3dPCrMU&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTafPx3qydD62RBmsizZqs48dEnHMkd8fIdz3aJgwd1IA&oe=6B0A2383",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/600366973_1244624510817137_1296216807864492293_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aoTGXtMaSTYQ7kNvwFScQDU&_nc_oc=AdpoQsKqJ2t45Vd0S2i0SrijWmTfbVls_8oxnZ7ysTWqr-TdqT8hff3czr9bcsJi5_E&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQeB8Ppg1CEu4VBcXBuG5TNYM7shxDNLK05RuNEll-z9w&oe=6B0A4861",
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/602010431_2249654365556594_102768045066149201_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GollcggTylwQ7kNvwFL1tzm&_nc_oc=AdqdfaZu452TrxyeUiHliRURQRtlPyR85-3vJRocZ5NqI2G2iqJRYwk1L4Ela3joOAs&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRyHm-auHcPyIpA2tOOw0Uk8_WjH0EyxZouWqYSHbVE-A&oe=6B0A1C44",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600881097_1542871570322759_8667281176980911646_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=V7xpRsa_VkIQ7kNvwFiC8kH&_nc_oc=AdqRcOuFriSR0bGe__Ui3iIoPkp2uklcb0o8QPJN_j6Daq0NqmCPi2g-soUbBDkLkqA&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ451wEkCdDDcl0cE_lXWyEe5ZVXEF-ttY-dbryYKNTMQ&oe=6B0A2B69",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/601918108_1867181173928495_1237843266930789410_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xP2GxrxjN3UQ7kNvwFFWd59&_nc_oc=AdqW78X6rsxlX5DSq4yxfjHypbxtsIHHpok5gim-tqmjLJaA19IB2H-CiX6G4JvBnO0&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTzYEks2f_Z03zlfSWoAo9HImEx19hTo2vHYUkvsXKbQQ&oe=6B0A2212"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "karriere.penny.de",
    "link_url": "https://bit.ly/3ZTwHT0",
    "page_id": "700577889971139",
-   "page_likes": 445773,
+   "page_likes": 445617,
    "page_name": "PENNY",
    "page_url": "https://www.facebook.com/PennyDeutschland/",
    "paid_for_by": null,
@@ -382,7 +222,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/603068095_1778584396190089_3101087671590411464_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=adDDyS2pINUQ7kNvwHUvZqR&_nc_oc=AdrR4iK493xY0jrqY93iDYknZPA3ip7OlnSmpVoRsnRKQ1aQHo_9v6RN7kU0P8HoPuE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQT95GANxxvWsfF1IFN0xxlNfHCkEdFSMQdwsFeVmNLMTA&oe=6B00D26F",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/603068095_1778584396190089_3101087671590411464_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pVe-E0HERxcQ7kNvwGELcXl&_nc_oc=AdqXAP1fNqwOu_OlBGOGMEE81NuWz2iekhx5J08xwoqGAktwTdSjAeTy4wxBD2nhF1w&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQR39sLJj7DCqLllVBmiZ2HmzI5I0i0kQBh57ldnFj_wNg&oe=6B0A452F",
      "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
      "title": "#teampenny",
      "video": null
@@ -390,7 +230,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/597922765_1226676222675045_2899565650105342186_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_hQwm9q9Kk0Q7kNvwGuKYzM&_nc_oc=Adrbt8Dvv2_3Bjy6Hq3SqDsZumCBmtxK2cF18bDOiWGV0aYVduwJRBiUVecuQNgEAlk&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRRz4gDn91PIytJupf-87-VcHI1aKM0pL4f8xcBEXfDMA&oe=6B00DE00",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/597922765_1226676222675045_2899565650105342186_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fpT-4A0JSSUQ7kNvwHIv375&_nc_oc=AdormD19Bm_wlgGILonghgOig12qCDD7dvPk5F9rjQjDsU-rOt_v_j4bMhRV8TS76jI&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSyQ84aCOsrEsNvJN9o1yffbUhx2-92nQt37K0WzD7KCQ&oe=6B0A1880",
      "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
      "title": "#teampenny",
      "video": null
@@ -398,7 +238,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/599635621_884984067432996_9109905158753773095_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=K8G_ekwCMg4Q7kNvwF3oWj2&_nc_oc=AdqcqdRr_bwsGtENzob6msfGbIs59kYajbxBiLnLPsJmvGT2hd5geDg8MR_n_SyvTYw&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQSV_hjp7mqf3Y9jP6OiiRKMr2Y4YsGAOzM4nk04G_wdQ&oe=6B00E066",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/599635621_884984067432996_9109905158753773095_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ANmqUVieKuYQ7kNvwGsu9_y&_nc_oc=AdrNpwmoqACoPke2pOGNwLuItZVtGHmTRrZb9xupX1gssdY4ZjGl-qGaJhfBkJFqkdg&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSkJ6JT4FHper27LcfVCRbLaoJd1ej6DB-ia4e_N8QKwQ&oe=6B0A1AE6",
      "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
      "title": "#teampenny",
      "video": null
@@ -406,7 +246,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600356000_1635148577844019_7030289234504682085_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2uBEc8FfLhwQ7kNvwHsr-az&_nc_oc=Adqlk2HPLrv1kCa3Wbv0ASXHVbPBU0zv9NR2eIFsbu-KI_ElQaOKqCj7buSjErtVHuo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTtI7sONDrzEsB8PtQ0ndqdQ9bzwyjo_zDMixs7whANWQ&oe=6B00C032",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600356000_1635148577844019_7030289234504682085_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rr_qu_0WFsIQ7kNvwFT_Onh&_nc_oc=Adr2jGUZeqBUePUkDqTAsU6YgB1wAoQ7v2dMsbJ1SOaE5cSotm1O6zTsrKyObn5l5tw&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQT-yIZRHyZFobv0j7-gU-yTjNq5l-fNZxf4vYWI25ofMg&oe=6B0A32F2",
      "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
      "title": "#teampenny",
      "video": null
@@ -414,7 +254,7 @@
     {
      "body": "Erstmal zu PENNY",
      "cta": "Apply Now",
-     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/598100833_1426852205528077_4931426251953445166_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1ILnt7K0k4Q7kNvwHGpPyD&_nc_oc=Adq-G81xmoEstgcUZunXUQWAil_PYHhxZs8Z-HyTFgF4vKeMSxzVXyp_1G_-v5fgO08&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQST8EQ-AQEuEnGg3pnEwV7Tcu9nrUUp2IBxxGjAnIfWNA&oe=6B00DD7C",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/598100833_1426852205528077_4931426251953445166_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ilQ5fjmGeZgQ7kNvwGHGcSv&_nc_oc=Adr9Bew4aOxlZ4pQ8U-7WJv8xLhKatMt2BMVhTZ-cNRZ3xQCHaLMR-RNstN3NlcwnEA&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ7oTE_q-YAWucdEU2B945SI1MEoZf2fFzlJ40KwlZfzw&oe=6B0A17FC",
      "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
      "title": "#teampenny",
      "video": null
@@ -426,18 +266,18 @@
    "display_format": "carousel",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/603068095_1778584396190089_3101087671590411464_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=adDDyS2pINUQ7kNvwHUvZqR&_nc_oc=AdrR4iK493xY0jrqY93iDYknZPA3ip7OlnSmpVoRsnRKQ1aQHo_9v6RN7kU0P8HoPuE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQT95GANxxvWsfF1IFN0xxlNfHCkEdFSMQdwsFeVmNLMTA&oe=6B00D26F",
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/597922765_1226676222675045_2899565650105342186_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_hQwm9q9Kk0Q7kNvwGuKYzM&_nc_oc=Adrbt8Dvv2_3Bjy6Hq3SqDsZumCBmtxK2cF18bDOiWGV0aYVduwJRBiUVecuQNgEAlk&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRRz4gDn91PIytJupf-87-VcHI1aKM0pL4f8xcBEXfDMA&oe=6B00DE00",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/599635621_884984067432996_9109905158753773095_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=K8G_ekwCMg4Q7kNvwF3oWj2&_nc_oc=AdqcqdRr_bwsGtENzob6msfGbIs59kYajbxBiLnLPsJmvGT2hd5geDg8MR_n_SyvTYw&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQSV_hjp7mqf3Y9jP6OiiRKMr2Y4YsGAOzM4nk04G_wdQ&oe=6B00E066",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600356000_1635148577844019_7030289234504682085_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2uBEc8FfLhwQ7kNvwHsr-az&_nc_oc=Adqlk2HPLrv1kCa3Wbv0ASXHVbPBU0zv9NR2eIFsbu-KI_ElQaOKqCj7buSjErtVHuo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTtI7sONDrzEsB8PtQ0ndqdQ9bzwyjo_zDMixs7whANWQ&oe=6B00C032",
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/598100833_1426852205528077_4931426251953445166_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1ILnt7K0k4Q7kNvwHGpPyD&_nc_oc=Adq-G81xmoEstgcUZunXUQWAil_PYHhxZs8Z-HyTFgF4vKeMSxzVXyp_1G_-v5fgO08&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQST8EQ-AQEuEnGg3pnEwV7Tcu9nrUUp2IBxxGjAnIfWNA&oe=6B00DD7C"
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/603068095_1778584396190089_3101087671590411464_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pVe-E0HERxcQ7kNvwGELcXl&_nc_oc=AdqXAP1fNqwOu_OlBGOGMEE81NuWz2iekhx5J08xwoqGAktwTdSjAeTy4wxBD2nhF1w&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQR39sLJj7DCqLllVBmiZ2HmzI5I0i0kQBh57ldnFj_wNg&oe=6B0A452F",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/597922765_1226676222675045_2899565650105342186_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fpT-4A0JSSUQ7kNvwHIv375&_nc_oc=AdormD19Bm_wlgGILonghgOig12qCDD7dvPk5F9rjQjDsU-rOt_v_j4bMhRV8TS76jI&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSyQ84aCOsrEsNvJN9o1yffbUhx2-92nQt37K0WzD7KCQ&oe=6B0A1880",
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/599635621_884984067432996_9109905158753773095_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ANmqUVieKuYQ7kNvwGsu9_y&_nc_oc=AdrNpwmoqACoPke2pOGNwLuItZVtGHmTRrZb9xupX1gssdY4ZjGl-qGaJhfBkJFqkdg&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSkJ6JT4FHper27LcfVCRbLaoJd1ej6DB-ia4e_N8QKwQ&oe=6B0A1AE6",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600356000_1635148577844019_7030289234504682085_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rr_qu_0WFsIQ7kNvwFT_Onh&_nc_oc=Adr2jGUZeqBUePUkDqTAsU6YgB1wAoQ7v2dMsbJ1SOaE5cSotm1O6zTsrKyObn5l5tw&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQT-yIZRHyZFobv0j7-gU-yTjNq5l-fNZxf4vYWI25ofMg&oe=6B0A32F2",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/598100833_1426852205528077_4931426251953445166_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ilQ5fjmGeZgQ7kNvwGHGcSv&_nc_oc=Adr9Bew4aOxlZ4pQ8U-7WJv8xLhKatMt2BMVhTZ-cNRZ3xQCHaLMR-RNstN3NlcwnEA&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ7oTE_q-YAWucdEU2B945SI1MEoZf2fFzlJ40KwlZfzw&oe=6B0A17FC"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "karriere.penny.de",
    "link_url": "https://karriere.penny.de/direkt-quer/markt/verkaeufer?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookinstagram-1x1-car-verkaeufermotiva-nn-nn-nn-nn-41316120-nn_nn_nn_nn_nn_perf",
    "page_id": "700577889971139",
-   "page_likes": 445773,
+   "page_likes": 445617,
    "page_name": "PENNY",
    "page_url": "https://www.facebook.com/PennyDeutschland/",
    "paid_for_by": null,
@@ -467,7 +307,7 @@
    "link_caption": null,
    "link_url": "fbgeo://-33.44447,151.29194,\"11 Eyers Close, Kariong\"",
    "page_id": "451982568530570",
-   "page_likes": 414,
+   "page_likes": 413,
    "page_name": "Endeavour Early Education Kariong",
    "page_url": "https://www.facebook.com/endeavourearlyeducationkariong/",
    "paid_for_by": null,
@@ -477,7 +317,7 @@
    "start_date": "2018-09-01T07:00:00Z",
    "title": "Science Week at Endeavour Early Education",
    "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m412/AQNFNnexQNNB5mQQ2H0C5Eg_JouDLGFv7_tZyWpYsUto5k9mzyTNxoe_KZU9GXF4xAkRG20eHoXs__tpjt5fy7c.mp4?_nc_cat=109&_nc_sid=ef5aa3&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=YtB43e2MuTkQ7kNvwFj8FNF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNjAwLmFzaWNfaHEyX2hkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjo4Mzc5MTI5NTU2NTgzNjYsImFzc2V0X2FnZV9kYXlzIjozNDcsInZpX3VzZWNhc2VfaWQiOjEwNjgwLCJkdXJhdGlvbl9zIjo1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQU8xfZ38cE_Jq59FDGMbzlMl1okcEnyUfDPz4H1eWLew&oe=6B00E925"
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m412/AQNFNnexQNNB5mQQ2H0C5Eg_JouDLGFv7_tZyWpYsUto5k9mzyTNxoe_KZU9GXF4xAkRG20eHoXs__tpjt5fy7c.mp4?_nc_cat=109&_nc_sid=ef5aa3&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=KKm4SnfVEfQQ7kNvwEgqCjg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNjAwLmFzaWNfaHEyX2hkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjo4Mzc5MTI5NTU2NTgzNjYsImFzc2V0X2FnZV9kYXlzIjozNTQsInZpX3VzZWNhc2VfaWQiOjEwNjgwLCJkdXJhdGlvbl9zIjo1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQnmWpO0PkKgmN2OIH_fqIsPMRzH1iUV0FxMODuRdJZqg&oe=6B0A23A5"
    ]
   },
   {
@@ -491,14 +331,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/746983261_1451035740387314_3456597831887781995_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YWTtqscCtrcQ7kNvwGkXX6q&_nc_oc=Adp9b_y906HKthVDKsj4pBYtlj9BhsvgvU54x1I448ScSqNN_x4RTkx-U1bFBLzN0VA&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTpkotqNIL5nA1ciMmI3o__tjKHHcSK1Xdg2eA4_sX_4g&oe=6B00EE47"
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/746983261_1451035740387314_3456597831887781995_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S5FkSneMKcQQ7kNvwFpxC7W&_nc_oc=Adp4iaXqBUerZ8enbWb4q42Wp6XOSkOjopg_lgQZo5i3dsTTA-mY_iEKEAjz7LvVK6o&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQT_eXX35pVWmSp6EwbQhLSPTKR55oYUTxsHbWSIHolVhQ&oe=6B0A28C7"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "shop.pipitea.com",
    "link_url": "https://shop.pipitea.com/ppch/sp-nm",
    "page_id": "866655706540346",
-   "page_likes": 3482,
+   "page_likes": 3567,
    "page_name": "Cholesterol Relief Community",
    "page_url": "https://www.facebook.com/61585235895092/",
    "paid_for_by": null,
@@ -526,14 +366,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/742573296_1762129351616383_8351713020372780749_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vethGWeUl20Q7kNvwE0kCOO&_nc_oc=AdpoN3LXQQvkdEeKEiHV4ddIzhUFHM2lNSAY0Tul2lhyQ1KNNCZOSV2vQ1v8nFDse_g&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRP1fGMD1gCHHgmxNmJn2fvtj3hh12Ao8MZVs7lIfQZPQ&oe=6B00CF29"
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/742573296_1762129351616383_8351713020372780749_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-XDxnVhH02YQ7kNvwGdAKOT&_nc_oc=AdqYpctPSvh6R3Tj3VwXi1GCi2bIC67Sh69gCn4xPgEIl_7dQUJgZzS8_fwm6Wu8qTw&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRzkumAItwFgkZyiBXypzInu07FB7vRR6f4ELDFOzn-0A&oe=6B0A41E9"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "shop.pipitea.com",
    "link_url": "https://shop.pipitea.com/ppch/sp-nm",
    "page_id": "866655706540346",
-   "page_likes": 3482,
+   "page_likes": 3567,
    "page_name": "Cholesterol Relief Community",
    "page_url": "https://www.facebook.com/61585235895092/",
    "paid_for_by": null,
@@ -561,14 +401,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/743811614_1604889037871482_3680037009295914116_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rkTnWhW_NKEQ7kNvwEDJ_Wy&_nc_oc=AdpJYH7zkxiIOGcycsMTk7ZpPvHoKZjMkNIxNI752tbsEIOhj2tCOBWmgxaLDtpY1m8&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQR5o805had-KY3O1x01xCjDWFbugyuYuiMxymTMtzyq_g&oe=6B00EE8F"
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/743811614_1604889037871482_3680037009295914116_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Qq9TnF9-91oQ7kNvwF6CZFX&_nc_oc=Adpi-LXWX3CdcS6YAurpbDEhoW8W6ils6CIDBJZT3xsiUZbbp69J0lkaoZdxgx8ItXM&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRHX0AFd9g1ZRAK2S_10FEkHWIBwyg8o9Av_H4mphfcCw&oe=6B0A290F"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "shop.pipitea.com",
    "link_url": "https://shop.pipitea.com/ppch/sp-nm",
    "page_id": "866655706540346",
-   "page_likes": 3482,
+   "page_likes": 3567,
    "page_name": "Cholesterol Relief Community",
    "page_url": "https://www.facebook.com/61585235895092/",
    "paid_for_by": null,
@@ -596,14 +436,14 @@
    "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/621833227_1985327388692547_4109768304395917341_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SulgUDuv7RAQ7kNvwG1AGn7&_nc_oc=AdrUI54GnbBBQNYjDi1sGn_PuwrRQNwpiwc2__v2aebjmmjnA4Fc_VZCh4-gKzanRRA&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQnWtMmg2dUHiKuxii-NZmdo_14zn_BqEuNfOKVEGp3JA&oe=6B00DB47"
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/621833227_1985327388692547_4109768304395917341_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U_ENfpvXaMsQ7kNvwH8EBMC&_nc_oc=AdoVjcAXGhCs5N5TFass6rxv9NWFdxXXf2w1WexTZB4mMQWU5npEvyeLY-bnrhWXvmM&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQShdf3z9DfEQ6Legj3N6upo4sOxmQx6InMKY6ArIObcyw&oe=6B0A4E07"
    ],
    "impressions": null,
    "is_active": true,
    "link_caption": "groundingwell.com",
    "link_url": "https://www.groundingwell.com/products/groundingwell-bedsheet",
    "page_id": "894139760445478",
-   "page_likes": 1611,
+   "page_likes": 1622,
    "page_name": "Amber Hayes",
    "page_url": "https://www.facebook.com/61582489384780/",
    "paid_for_by": null,
@@ -617,6 +457,277 @@
    "spend": null,
    "start_date": "2026-09-09T07:00:00Z",
    "title": "Get Grounded While You Sleep!",
+   "videos": []
+  },
+  {
+   "ad_archive_id": "1195641289329766",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1195641289329766",
+   "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+   "cards": [
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/537697390_1113837227362754_411350383761141508_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VXFIZHLn52YQ7kNvwHRiAYN&_nc_oc=AdqDJyOedyiAfJMBhh9CWirDkAD_feHY5yNSvChCz9pHk1C1705WSrgKPy9mtHNu6UA&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSKIJ7RJYYhH04IzP6wcThwuh3NgaXk7dr3AGJepQiGng&oe=6B0A2114",
+     "link_url": "https://www.chamaripashop.com/products/6-cm-2-36-inches-cmr-chamaripa-stylish-black-leather-elevator-sneakers-for-men",
+     "title": "6 CM / 2.36 Inches CMR CHAMARIPA Stylish Black Leather Elevator Sneakers for Men",
+     "video": null
+    },
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/538030633_1639600666960236_727114899080468185_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QRQJmE7aS1MQ7kNvwFbVMKK&_nc_oc=AdrQBWGqXxHhn2BuWb5-6a2TcD95P4Qpld2tHTmnbT05mloxgd-ieC6u7H4HABPpHac&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQF2EVQvpiI8G2tbukplo5NDiyNg2ePDULcEFQLXhfUag&oe=6B0A245F",
+     "link_url": "https://www.chamaripashop.com/products/6cm-2-36-inches-cmr-chamaripa-height-increasing-fur-lined-hiking-boots-for-men-yellow-brown-nubuck",
+     "title": "6CM/2.36 Inches CMR CHAMARIPA Height-Increasing Fur-Lined Hiking Boots for Men - Yellow-Brown Nubuck",
+     "video": null
+    },
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537561072_1094643402794735_5845781917111161286_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_kQEHi2H6rUQ7kNvwGkMAEt&_nc_oc=AdqR9gyW-tTm7OzR2zOn9-fZ_M4KF1HrDhRD8afMHtUnhNyoe88CT7SE4DzuxffLVJM&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ31il2bIJh5FgOcMp_70xb79ftKxfgUU4nbyPVePVUjg&oe=6B0A4534",
+     "link_url": "https://www.chamaripashop.com/products/10-cm-3-94-inch-taller-chamaripa-hidden-heel-shoes-for-men-height-increase-for-men",
+     "title": "10 CM / 3.94 Inches CMR CHAMARIPA Hidden Heel Shoes for Men Height Increase for Men",
+     "video": null
+    },
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537586102_4053937838216972_2545415778765548608_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RZs24ZZQlZQQ7kNvwFscOMF&_nc_oc=Adr49lgy0E_ElOnTBKzEPovpn-p4QgpqEK2mP6gUQYz8LkyFc6EyNRLdEpHb8gCjWo4&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRqpBekHL5l1h5bpl2DG9DxC5TJXR1xMMmlU-V9U1Ztfw&oe=6B0A184C",
+     "link_url": "https://www.chamaripashop.com/products/8cm-3-15-inches-taller-cmr-chamaripa-elevator-shoes-for-men-height-increasing-dress-shoes-black-leather-derby-shoes-for-men",
+     "title": "8 CM / 3.15 Inches CMR CHAMARIPA Men's Black Leather Derby Elevator Dress Shoes",
+     "video": null
+    },
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/538500955_994267586074742_7204770443688703937_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bqNM1Pq_QHkQ7kNvwFkjEle&_nc_oc=Adp9RaGI5D_1ABi9o_L3DT-A58qAnHbqtDJd-s7fmgcmmDbm3lJm02Fd0QBZBAz0oGc&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQR40v8RAGf9mvuXvmjXBahno7t8mR5WzdQssQEnwfHMKQ&oe=6B0A1E37",
+     "link_url": "https://www.chamaripashop.com/products/8-cm-3-15-inches-cmr-chamaripa-elevated-derby-dress-shoes-for-men-brown-leather-high-heel",
+     "title": "8 CM/3.15 Inches CMR CHAMARIPA Elevated Derby Dress Shoes for Men - Brown Leather High Heel",
+     "video": null
+    },
+    {
+     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
+     "cta": "Shop Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/536605553_1295681848567652_5073161444292860556_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8Orb6sEpueYQ7kNvwHF49jT&_nc_oc=Adr_gIuGnzL1dTWerlMZ9B74UVT8LPYWVOefEdArTCMoOgLEgKG7QQs5DYoARADU6pU&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTynyxlw8tFhY2Mjm614L1DSIuL2xM4kwXIC74SMLyIXQ&oe=6B0A2A12",
+     "link_url": "https://www.chamaripashop.com/products/copy-of-8cm-3-15-inches-taller-chamaripa-dress-elevator-shoes-for-men-patent-leather-dress-shoes-that-make-you",
+     "title": "7 CM / 2.76 Inches CMR CHAMARIPA Height Increasing Shoes Formal Tall Men Shoes Khaki Slip On Penny Loafers",
+     "video": null
+    }
+   ],
+   "cta": "Shop now",
+   "cta_type": "SHOP_NOW",
+   "currency": null,
+   "display_format": "dpa",
+   "end_date": null,
+   "images": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/537697390_1113837227362754_411350383761141508_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VXFIZHLn52YQ7kNvwHRiAYN&_nc_oc=AdqDJyOedyiAfJMBhh9CWirDkAD_feHY5yNSvChCz9pHk1C1705WSrgKPy9mtHNu6UA&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSKIJ7RJYYhH04IzP6wcThwuh3NgaXk7dr3AGJepQiGng&oe=6B0A2114",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/538030633_1639600666960236_727114899080468185_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QRQJmE7aS1MQ7kNvwFbVMKK&_nc_oc=AdrQBWGqXxHhn2BuWb5-6a2TcD95P4Qpld2tHTmnbT05mloxgd-ieC6u7H4HABPpHac&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQF2EVQvpiI8G2tbukplo5NDiyNg2ePDULcEFQLXhfUag&oe=6B0A245F",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537561072_1094643402794735_5845781917111161286_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_kQEHi2H6rUQ7kNvwGkMAEt&_nc_oc=AdqR9gyW-tTm7OzR2zOn9-fZ_M4KF1HrDhRD8afMHtUnhNyoe88CT7SE4DzuxffLVJM&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ31il2bIJh5FgOcMp_70xb79ftKxfgUU4nbyPVePVUjg&oe=6B0A4534",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537586102_4053937838216972_2545415778765548608_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RZs24ZZQlZQQ7kNvwFscOMF&_nc_oc=Adr49lgy0E_ElOnTBKzEPovpn-p4QgpqEK2mP6gUQYz8LkyFc6EyNRLdEpHb8gCjWo4&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRqpBekHL5l1h5bpl2DG9DxC5TJXR1xMMmlU-V9U1Ztfw&oe=6B0A184C",
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/538500955_994267586074742_7204770443688703937_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bqNM1Pq_QHkQ7kNvwFkjEle&_nc_oc=Adp9RaGI5D_1ABi9o_L3DT-A58qAnHbqtDJd-s7fmgcmmDbm3lJm02Fd0QBZBAz0oGc&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQR40v8RAGf9mvuXvmjXBahno7t8mR5WzdQssQEnwfHMKQ&oe=6B0A1E37",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/536605553_1295681848567652_5073161444292860556_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8Orb6sEpueYQ7kNvwHF49jT&_nc_oc=Adr_gIuGnzL1dTWerlMZ9B74UVT8LPYWVOefEdArTCMoOgLEgKG7QQs5DYoARADU6pU&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQTynyxlw8tFhY2Mjm614L1DSIuL2xM4kwXIC74SMLyIXQ&oe=6B0A2A12"
+   ],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "https://www.chamaripashop.com/",
+   "link_url": "https://www.chamaripashop.com/collections/all-men-shoes",
+   "page_id": "102031189364405",
+   "page_likes": 2330,
+   "page_name": "Chamaripashop",
+   "page_url": "https://www.facebook.com/chamaripashop/",
+   "paid_for_by": null,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "audience_network",
+    "messenger",
+    "threads"
+   ],
+   "same_creative_ads": null,
+   "spend": null,
+   "start_date": "2025-11-15T08:00:00Z",
+   "title": "6 CM / 2.36 Inches CMR CHAMARIPA Stylish Black Leather Elevator Sneakers for Men",
+   "videos": []
+  },
+  {
+   "ad_archive_id": "1705862860432386",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1705862860432386",
+   "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
+   "cards": [
+    {
+     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
+     "cta": "Shop Now",
+     "image": null,
+     "link_url": "https://www.theessencevault.co.uk/",
+     "title": "Designer Inspired Fragrances For Less",
+     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=CUnPD5ehd5sQ7kNvwE9_Awn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNTIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTehlRzuybcShRfiS-OhoXytT4nojRqnmspAiZG8NN3pQ&oe=6B0A17FD"
+    },
+    {
+     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
+     "cta": "Shop Now",
+     "image": null,
+     "link_url": "https://www.theessencevault.co.uk/",
+     "title": "Designer Inspired Fragrances For Less",
+     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=CUnPD5ehd5sQ7kNvwE9_Awn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNTIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTehlRzuybcShRfiS-OhoXytT4nojRqnmspAiZG8NN3pQ&oe=6B0A17FD"
+    },
+    {
+     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
+     "cta": "Shop Now",
+     "image": null,
+     "link_url": "https://www.theessencevault.co.uk/",
+     "title": "Designer Inspired Fragrances For Less",
+     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkKKXTyD14rCVViwtEqyo00In65FfupSOXa68tPiCnoNo9jdLIxgT4H9fJAkXSzuC8Zywv90H4B1y6THOYOD4dwxfSGqEKD5yEfxUmGzhQ_w.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=gAtm-2yR17kQ7kNvwGNS9gF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzMwMzM1Nzc3ODgwMTQsImFzc2V0X2FnZV9kYXlzIjozNTIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ac30647b9a7a0784&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC82RTRBNDRFODJBQTc0RjdCQkE4MTA3MEEwRUNBNEFBM19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U1NDg3NTIzQjc2Q0U5MjRFRTY0RUIzMzQ1OEEzQjlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcybWbxbeVBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQOmwTeFcsXm4DM9ZHgV3qDWVAb9DPWaxrdWcxp72mhIw&oe=6B0A1C58"
+    }
+   ],
+   "cta": "Shop now",
+   "cta_type": "SHOP_NOW",
+   "currency": null,
+   "display_format": "dco",
+   "end_date": null,
+   "images": [],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "theessencevault.co.uk",
+   "link_url": "https://www.theessencevault.co.uk/",
+   "page_id": "106818515349675",
+   "page_likes": 2796,
+   "page_name": "The Gift Guiders",
+   "page_url": "https://www.facebook.com/thegiftguidersuk/",
+   "paid_for_by": null,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "audience_network",
+    "messenger",
+    "threads"
+   ],
+   "same_creative_ads": 1,
+   "spend": null,
+   "start_date": "2026-03-25T07:00:00Z",
+   "title": "Designer Inspired Fragrances For Less",
+   "videos": [
+    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=CUnPD5ehd5sQ7kNvwE9_Awn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNTIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTehlRzuybcShRfiS-OhoXytT4nojRqnmspAiZG8NN3pQ&oe=6B0A17FD",
+    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkKKXTyD14rCVViwtEqyo00In65FfupSOXa68tPiCnoNo9jdLIxgT4H9fJAkXSzuC8Zywv90H4B1y6THOYOD4dwxfSGqEKD5yEfxUmGzhQ_w.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=gAtm-2yR17kQ7kNvwGNS9gF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzMwMzM1Nzc3ODgwMTQsImFzc2V0X2FnZV9kYXlzIjozNTIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ac30647b9a7a0784&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC82RTRBNDRFODJBQTc0RjdCQkE4MTA3MEEwRUNBNEFBM19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U1NDg3NTIzQjc2Q0U5MjRFRTY0RUIzMzQ1OEEzQjlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcybWbxbeVBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQOmwTeFcsXm4DM9ZHgV3qDWVAb9DPWaxrdWcxp72mhIw&oe=6B0A1C58"
+   ]
+  },
+  {
+   "ad_archive_id": "1384189806469611",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1384189806469611",
+   "body": "Play The Best Free Games!",
+   "cards": [
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/786453956_2607257776355073_419544795894516658_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UW8AJlnBDgAQ7kNvwEN2tCG&_nc_oc=AdogSUvKbtghFd9i10AY8I83P5J_GUi1gPvbeeRQnMxrq-FOEg7q6YVZFj68U384LNU&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQm1c-1i29jPoOHmEd-blIVeX2QaZ8B5zlQeLprqVLfnw&oe=6B0A3ED1",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Hidden+Object+Games&cta_image=gamemoms_com/images/games/71258/feed_ad/010823_1690895826873_1254344638.png&s2=london_hidden_objects&catalog_id=010823_1690895826873_1254344638_304884045",
+     "title": "London Hidden Objects",
+     "video": null
+    },
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788926827_948563094932711_6372480401650804543_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FC-BLQld1OkQ7kNvwFL7Arh&_nc_oc=AdpmvFTFEXPali92wAauydzds1h-0h4MDSnYn3rZ0Fawllo9Z-I_QpazBIGTk13ZyxU&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQv5vXeAOVEEq3Awnlpcqz-44zXgpkaCM5aYq2L1mn5kA&oe=6B0A2E49",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/68973/feed_ad/010823_1690895820677_537404168.jpg&s2=penny_dell_sudoku&catalog_id=010823_1690895820677_537404168_210675371",
+     "title": "Penny Dell Sudoku",
+     "video": null
+    },
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788091835_1398724385780756_7737441878525067887_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZDMHFVtLqEUQ7kNvwHGE4Er&_nc_oc=AdoHanZsy8VMvv8WYwdlE3q5WKtIdPzoZMjcbdx-yGrUKO7lSQtxYpzfbXwnumdit1I&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRe0HNC5tZ07JNPOSZAKI2ncGu_4bqJ8CRQeMb_K2y_2w&oe=6B0A3651",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/68867/feed_ad/010823_1690895823666_955718497.jpg&s2=true&catalog_id=010823_1690895823666_955718497_707811598",
+     "title": "True?",
+     "video": null
+    },
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/788641114_1756608635469911_5924701625635521584_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hRYglTcrx-4Q7kNvwEDLx6W&_nc_oc=AdpYk2yS3RPSSZSF5ZDP2jXzkbjTAHTcatRHVzkyqOesZSJfbtjFZ6AYYq2auyCDTvI&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRC-8CRXubjDYkrd0WvEhjBLqqLdixjrXluZnqPSV23Tg&oe=6B0A2F39",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/69803/feed_ad/010823_1690895813531_1049391513.jpg&s2=color_hoop_stack&catalog_id=010823_1690895813531_1049391513_1696014984",
+     "title": "Color Hoop Stack",
+     "video": null
+    },
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/788641108_2156098611929294_6040158186350960676_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kNjamUd7mDgQ7kNvwGGoBV8&_nc_oc=AdoJVEPs_tH_TUm-rNiON4Dj71xkMTWTDZiHodyD8HuRKwedPSkmOTq3vacGlxI5mYo&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSDgqxesweCq3RgDfiJ5ErVypuqzs7p8AGwacCPtmBHxg&oe=6B0A2ACF",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Word+Games&cta_image=gamemoms_com/images/games/68951/feed_ad/010823_1690895820827_194206627.jpg&s2=penny_dell_word_search&catalog_id=010823_1690895820827_194206627_1809491598",
+     "title": "Penny Dell Word Search",
+     "video": null
+    },
+    {
+     "body": "Play The Best Free Games!",
+     "cta": "Play Game",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/787483996_1631224208421728_8436138261704447538_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CoHTxM3Uuz8Q7kNvwH4pYEf&_nc_oc=AdouhLHS7AuO7XvsUgN3QbWLRxrwKFVryftP5h9cS3dUeO2HnjHZ7f7OSt3WjpL4Sbc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRtlHvwNVnBU1HdRREQ3sPQTiLOspdAUiAsYez86_eGQw&oe=6B0A33B9",
+     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Hidden+Object+Games&cta_image=gamemoms_com/images/games/71248/feed_ad/010823_1690895826853_1115512837.jpg&s2=vandan_the_detective&catalog_id=010823_1690895826853_1115512837_1243732352",
+     "title": "Vandan the Detective",
+     "video": null
+    }
+   ],
+   "cta": "Play game",
+   "cta_type": "PLAY_GAME",
+   "currency": null,
+   "display_format": "dpa",
+   "end_date": null,
+   "images": [
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/786453956_2607257776355073_419544795894516658_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UW8AJlnBDgAQ7kNvwEN2tCG&_nc_oc=AdogSUvKbtghFd9i10AY8I83P5J_GUi1gPvbeeRQnMxrq-FOEg7q6YVZFj68U384LNU&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQm1c-1i29jPoOHmEd-blIVeX2QaZ8B5zlQeLprqVLfnw&oe=6B0A3ED1",
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788926827_948563094932711_6372480401650804543_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FC-BLQld1OkQ7kNvwFL7Arh&_nc_oc=AdpmvFTFEXPali92wAauydzds1h-0h4MDSnYn3rZ0Fawllo9Z-I_QpazBIGTk13ZyxU&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQv5vXeAOVEEq3Awnlpcqz-44zXgpkaCM5aYq2L1mn5kA&oe=6B0A2E49",
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788091835_1398724385780756_7737441878525067887_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZDMHFVtLqEUQ7kNvwHGE4Er&_nc_oc=AdoHanZsy8VMvv8WYwdlE3q5WKtIdPzoZMjcbdx-yGrUKO7lSQtxYpzfbXwnumdit1I&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRe0HNC5tZ07JNPOSZAKI2ncGu_4bqJ8CRQeMb_K2y_2w&oe=6B0A3651",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/788641114_1756608635469911_5924701625635521584_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hRYglTcrx-4Q7kNvwEDLx6W&_nc_oc=AdpYk2yS3RPSSZSF5ZDP2jXzkbjTAHTcatRHVzkyqOesZSJfbtjFZ6AYYq2auyCDTvI&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRC-8CRXubjDYkrd0WvEhjBLqqLdixjrXluZnqPSV23Tg&oe=6B0A2F39",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/788641108_2156098611929294_6040158186350960676_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kNjamUd7mDgQ7kNvwGGoBV8&_nc_oc=AdoJVEPs_tH_TUm-rNiON4Dj71xkMTWTDZiHodyD8HuRKwedPSkmOTq3vacGlxI5mYo&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSDgqxesweCq3RgDfiJ5ErVypuqzs7p8AGwacCPtmBHxg&oe=6B0A2ACF",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/787483996_1631224208421728_8436138261704447538_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CoHTxM3Uuz8Q7kNvwH4pYEf&_nc_oc=AdouhLHS7AuO7XvsUgN3QbWLRxrwKFVryftP5h9cS3dUeO2HnjHZ7f7OSt3WjpL4Sbc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRtlHvwNVnBU1HdRREQ3sPQTiLOspdAUiAsYez86_eGQw&oe=6B0A33B9"
+   ],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "go.gamemoms.com",
+   "link_url": "https://go.gamemoms.com/Catalog?s2=tetrix",
+   "page_id": "158739554329429",
+   "page_likes": 165752,
+   "page_name": "Game Moms",
+   "page_url": "https://www.facebook.com/GameMoms/",
+   "paid_for_by": null,
+   "platforms": [
+    "facebook",
+    "instagram"
+   ],
+   "same_creative_ads": null,
+   "spend": null,
+   "start_date": "2026-08-27T07:00:00Z",
+   "title": "London Hidden Objects",
+   "videos": []
+  },
+  {
+   "ad_archive_id": "2920222885021019",
+   "ad_url": "https://www.facebook.com/ads/library/?id=2920222885021019",
+   "body": "His name was Andrew.\n\nWe dated for 9 months in 2008.\n\nHe was the only person I had been with in the year leading up to my diagnosis.\n\nWhen my test came back positive in 2009 I knew immediately who had given it to me.\n\nI called him.\n\nHe denied it.\n\nHe said he had been tested, he was clean, it must have been someone before him.\n\nI did not believe him.\n\nI told him to never contact me again.\n\nI have not spoken to him in 15 years.\n\n—\n\nMy name is Carol.\n\nI am 46.\n\nFor 15 years I have carried a private resentment toward Andrew that I have rarely talked about out loud.\n\nIt sat in my chest every time I had an outbreak.\n\nEvery time I had to disclose to a new partner.\n\nEvery time I took a Valtrex.\n\nEvery time I saw a man on Hinge with a name like Andrew or a face like his.\n\n15 years of quietly blaming a specific person for a specific moment that ruined a specific stretch of my life.\n\nI had a whole story about him.\n\nI had told it to myself so many times it had become memory.\n\n—\n\nLast month I was scrolling at midnight and a video came up of a parasitologist showing a slide of something called Clonorchis sinensis.\n\nA liver fluke.\n\nShe said it gets into the body through raw fish.\n\nSushi specifically.\n\nShe said it can sit in the liver and bile duct for years.\n\nThen she said the sentence that stopped me.\n\nShe said: liver flukes are linked to herpes.\n\nI sat up.\n\nI rewound it.\n\nI listened again.\n\nShe explained that herpes is not classified the way most people think.\n\nThat in some medical literature it is categorized as an obligate intracellular parasite.\n\nThat the same parasite ecology you get from contaminated food can sit dormant in your nervous system for years before it manifests.\n\nThat the timeline between exposure and diagnosis can be anywhere from months to over a decade.\n\nI sat in my bed and I started doing math.\n\n—\n\nI lived in San Francisco from 2003 to 2007.\n\nI ate sushi probably twice a week for 4 years.\n\nI worked across the street from a place that I now know, because I checked their Yelp from that era, had multiple complaints about raw fish quality.\n\nAndrew and I started dating in March of 2008.\n\nI was diagnosed in February of 2009.\n\nI had spent 15 years certain that the 11 months between those two dates contained the source of my diagnosis.\n\nI had never once considered the 4 years before I met him.\n\n4 years of sushi twice a week.\n\n4 years of an exposure I had filed under food I ate and never thought about again.\n\nI sat there at midnight doing math I should have done in 2009 and never did, because nobody had ever told me to.\n\n—\n\nWhat that parasitologist was talking about:\n\nHerpes is classified in some medical literature as an obligate intracellular parasite.\n\nNot just a virus.\n\nA parasite.\n\nThe organism hides in your nerve tissue between outbreaks.\n\nDormant.\n\nProducing eggs on its own.\n\nUp to 26,000 a day.\n\nAnd the reason nothing has ever reached it is that it wraps itself in a slime shield called biofilm.\n\nAntivirals work on the bloodstream.\n\nThey cannot get through the biofilm, and they cannot reach the dormant organism buried in nerve tissue.\n\nThat is why the outbreaks keep coming.\n\nThat is why managing is forever.\n\nThere is exactly one natural compound that can reach it.\n\nThymoquinone.\n\nThe active compound in black seed oil.\n\nIt is lipophilic, which means it does not push against the biofilm from the outside like everything else.\n\nIt dissolves the shield from the inside out, reaches the nerve tissue nothing else could, and destroys the parasite at every stage.\n\nThe adults.\n\nThe larvae.\n\nAnd the eggs, so they cannot hatch two weeks later and start the cycle over.\n\nThat last part is the reason most cleanses fail at week 3.\n\nBut here is what almost no one tells you.\n\nMost black seed oil does nothing.\n\nThe cheap kind from Egypt or India sits at less than 1% thymoquinone, far too weak to break biofilm.\n\nThe only concentration strong enough is 4.64%, and it only comes from black seed grown in the Ethiopian highlands at 8,000 feet.\n\nThe only brand sourcing it directly from those farms is Purely Nutrient.\n\n2 soft gels before bed.\n\nI ordered it that night.\n\n—\n\nWeek 1: Quieter.\n\nWeek 2: Settled.\n\nWeek 3: The crash week every cleanse online fails at.\n\nNothing.\n\nMonth 4, 5, 6: No outbreak.\n\nI had not gone 6 months without one in 15 years.\n\n—\n\nI have not contacted Andrew.\n\nI have thought about it.\n\nI have drafted three different versions of an email and not sent any of them.\n\nI do not know if I owe him an apology.\n\nI do not know if he was telling the truth in 2009 or not.\n\nI do not know which of us was right.\n\nWhat I know is that I spent 15 years certain about something I had no real evidence for.\n\nI had a story I had told myself so many times it had become memory.\n\nThe story had a man's name in it.\n\nIt might have been wrong.\n\n—\n\nIf you have herpes and you have a name in your head, a specific person you have been quietly blaming for years, I am not telling you that you are wrong about him.\n\nI am telling you that the timel …",
+   "cards": [],
+   "cta": "Shop now",
+   "cta_type": "SHOP_NOW",
+   "currency": null,
+   "display_format": "image",
+   "end_date": null,
+   "images": [
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/865442969_2091526058138093_9124960187938668563_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IcX5gd83uYEQ7kNvwFWMabJ&_nc_oc=AdoWUDVXsZuntR2uKsQY7XC4BdntVYS4te9iEwL5LZPRrId5KC2jkRmK2xSKJyk1-3o&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRJCYbcDdnpeUjVt_y4aS3jM612rWUFjQJl5odBOLSSHQ&oe=6B0A45B7"
+   ],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "purelynutrient.com",
+   "link_url": "https://purelynutrient.com/pages/ethiopian-black-seed-oil",
+   "page_id": "136510819539318",
+   "page_likes": 4695,
+   "page_name": "The Ethiopian Journal",
+   "page_url": "https://www.facebook.com/61551538689055/",
+   "paid_for_by": null,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "audience_network",
+    "whatsapp",
+    "threads"
+   ],
+   "same_creative_ads": null,
+   "spend": null,
+   "start_date": "2026-10-30T07:00:00Z",
+   "title": "Crafted From Ethiopia's Finest Black Seeds",
    "videos": []
   },
   {
@@ -651,84 +762,30 @@
    "start_date": "2026-06-25T07:00:00Z",
    "title": "Turn Your Wall Into a TV - Free Download",
    "videos": [
-    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPlcmFji1FfvVtOjddMsX3rRP-GBL_YJKZWeVZ2tkaNfk0j_BkWnDP5BeBlNQvWZ_VspnW3S3vT_MDZaL219IXTQ3VkyaaXdoT5B4fO03YYQg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=n8zc7cUBlM8Q7kNvwEgjlqG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMDA0NDI2NjI3Mzg1NjksImFzc2V0X2FnZV9kYXlzIjoxNDQsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjoxNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c42adb36ce167267&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83RTQ1OUE0RUYzRTQyQzU5QkI1OTEzMTkzQUVFQzVBQ19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0YyNDc1MUZFMzA5RUI1OURFQjM2N0IwQkY1QkY2OEEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaS6r7YtvnGAxUCKAJDMywXQC27ZFocrAgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UosB2gxI7mCxDSXpxkrd69KShsHCM9h3xvp4kAj8PkwdrCLjNrTew155MOc-ZO8S0qAEETB1CdQjNyrFaeq9mQaPtPoNpOYKWt47ofn1uOD4d_qamUY75KIKsyI&oh=00_AQSeNqIIMpBCviWKPI6TyRClxIXc2gVhW6IYxAPBlHyzjg&oe=6B00F1A3"
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPlcmFji1FfvVtOjddMsX3rRP-GBL_YJKZWeVZ2tkaNfk0j_BkWnDP5BeBlNQvWZ_VspnW3S3vT_MDZaL219IXTQ3VkyaaXdoT5B4fO03YYQg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=BxlJJXopQfQQ7kNvwH2hdQz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMDA0NDI2NjI3Mzg1NjksImFzc2V0X2FnZV9kYXlzIjoxNTEsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjoxNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c42adb36ce167267&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83RTQ1OUE0RUYzRTQyQzU5QkI1OTEzMTkzQUVFQzVBQ19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0YyNDc1MUZFMzA5RUI1OURFQjM2N0IwQkY1QkY2OEEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaS6r7YtvnGAxUCKAJDMywXQC27ZFocrAgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UtYqbZxo4j-cMedkZzq2Pz60NFTa9OmmDe7BQGY5UL-3hsbvddwRNzBXItjlc0_z-LlwrWC_a0CwO2qHHGY3snSLUkvTouvCHGnhsc7eiFS974Wy2cWfQVS2_44&oh=00_AQQAWeseHpD2wZ7KWHYT8ORsP83e-RkZnBH7IZ9yqdGs3w&oe=6B0A2C23"
    ]
   },
   {
-   "ad_archive_id": "1195641289329766",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1195641289329766",
-   "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-   "cards": [
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/538030633_1639600666960236_727114899080468185_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ACLHKrV7vAwQ7kNvwG6Uh71&_nc_oc=AdpJmX__VPyOGnSVW_5adw2GQf3xp-Pd1dnogFFbgv0MUm8kYo2zbgcHK3f0ZNcobeo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRBuE1Qpjh3gf_roRXt82ys-_fEQk39AyDGYLVAcCOuhw&oe=6B00E9DF",
-     "link_url": "https://www.chamaripashop.com/products/6cm-2-36-inches-cmr-chamaripa-height-increasing-fur-lined-hiking-boots-for-men-yellow-brown-nubuck",
-     "title": "6CM/2.36 Inches CMR CHAMARIPA Height-Increasing Fur-Lined Hiking Boots for Men - Yellow-Brown Nubuck",
-     "video": null
-    },
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/536605553_1295681848567652_5073161444292860556_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cdmCL0Ocg40Q7kNvwF-tN0l&_nc_oc=Adp3WWazI2-6mCeVuH73yg4nGs4pRphZkbb7GrAJj4yhjyBdtWEQs3IEMi1GOEJ_I1k&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQd9KyaJhmOryz-qWgstKCpZAScZlmbHdX0PxGsjNOTvg&oe=6B00EF92",
-     "link_url": "https://www.chamaripashop.com/products/copy-of-8cm-3-15-inches-taller-chamaripa-dress-elevator-shoes-for-men-patent-leather-dress-shoes-that-make-you",
-     "title": "7 CM / 2.76 Inches CMR CHAMARIPA Height Increasing Shoes Formal Tall Men Shoes Khaki Slip On Penny Loafers",
-     "video": null
-    },
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537586102_4053937838216972_2545415778765548608_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YruOy61MDEcQ7kNvwFziOym&_nc_oc=AdriXPVvzYo8J9Lo0h1YK9hESCJbWESs3ObaNAYDa1_bdc82uafF4UnlrYa5ocu_f5M&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRdKim5J7V4ieM_3ZeHH0vsL7BQrogKj4RI_fatLARwpQ&oe=6B00DDCC",
-     "link_url": "https://www.chamaripashop.com/products/8cm-3-15-inches-taller-cmr-chamaripa-elevator-shoes-for-men-height-increasing-dress-shoes-black-leather-derby-shoes-for-men",
-     "title": "8 CM / 3.15 Inches CMR CHAMARIPA Men's Black Leather Derby Elevator Dress Shoes",
-     "video": null
-    },
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/537697390_1113837227362754_411350383761141508_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E2ZGZGhgvSoQ7kNvwH68DUY&_nc_oc=Adr2CRYoIYytfVQ1DCnHwSZChdYtPMGduI66GOw0Fc-EpT24hDh8NJO9_VJvs2nd5Dw&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSeqATyD0LbS0-RMCr_NG6_5vA0Xuuo8hxfcZo7jOfviQ&oe=6B00E694",
-     "link_url": "https://www.chamaripashop.com/products/6-cm-2-36-inches-cmr-chamaripa-stylish-black-leather-elevator-sneakers-for-men",
-     "title": "6 CM / 2.36 Inches CMR CHAMARIPA Stylish Black Leather Elevator Sneakers for Men",
-     "video": null
-    },
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/538500955_994267586074742_7204770443688703937_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MiLS3tzDHXgQ7kNvwH7qtei&_nc_oc=Ados7NHHrsroQLCSsCknFcWl2ffMuLTACwQ_xqgGrP1lbwSZ6yQURi8U6fnpXlg5Fds&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQS_xUmFV7FY038yryGEhc7nqx-5J5_E86kTIsmi-1GDPA&oe=6B00E3B7",
-     "link_url": "https://www.chamaripashop.com/products/8-cm-3-15-inches-cmr-chamaripa-elevated-derby-dress-shoes-for-men-brown-leather-high-heel",
-     "title": "8 CM/3.15 Inches CMR CHAMARIPA Elevated Derby Dress Shoes for Men - Brown Leather High Heel",
-     "video": null
-    },
-    {
-     "body": "👞Do you think this is a pair of simple leather shoes?\n📏 NO, it is a pair of invisible inner height enhancers that can make you taller, helping you to be more confident in the workplace and in life",
-     "cta": "Shop Now",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537561072_1094643402794735_5845781917111161286_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y8qFzc6HVykQ7kNvwEay4Ts&_nc_oc=AdpqcdtfoLlRNlY97r9TPKsTbx-imXBWVyJShhLAENKMHk8JTkj_moR1SqNsm95-vxc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSRPA-z5vtQiDxevZgSyT1b8ncDO6OQYY2WMG2qYA58Xg&oe=6B00D274",
-     "link_url": "https://www.chamaripashop.com/products/10-cm-3-94-inch-taller-chamaripa-hidden-heel-shoes-for-men-height-increase-for-men",
-     "title": "10 CM / 3.94 Inches CMR CHAMARIPA Hidden Heel Shoes for Men Height Increase for Men",
-     "video": null
-    }
-   ],
+   "ad_archive_id": "969611055864004",
+   "ad_url": "https://www.facebook.com/ads/library/?id=969611055864004",
+   "body": "Your skin changed somewhere around 42. Here's what it's actually been asking for since.\n\nIt didn't happen all at once.\n\nSkin that stopped settling the way it used to. Fine lines you assumed would fade by lunchtime, and just didn't. A tiredness your face held onto even on the days you felt fine.\n\nYou've tried more than you'd probably admit. Serums with clinical-sounding names. The cream a friend swore by. The 11pm scrolls that ended in a checkout you quietly regretted.\n\nAnd somewhere along the way, booking that appointment stopped feeling dramatic. It started feeling inevitable.\n\nBefore you cross that line, give Frøya 6 weeks.\n\nNo injections. No synthetics. \n\nJust arnica, sea buckthorn, calendula, marigold, and beeswax, 100% natural Nordic botanicals with centuries of proof behind them. Working in layers, the way your skin does.\n\n*By week 3, the dullness lifts. By week 6, firmer, brighter, visibly renewed.*\n\n96% of Frøya customers see visibly younger-looking skin in 6 weeks. If you don't, we'll refund every penny.\n\n👉 Take the 60-Second Skin Quiz and find out where to start with Frøya →",
+   "cards": [],
    "cta": "Shop now",
    "cta_type": "SHOP_NOW",
    "currency": null,
-   "display_format": "dpa",
+   "display_format": "image",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/538030633_1639600666960236_727114899080468185_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ACLHKrV7vAwQ7kNvwG6Uh71&_nc_oc=AdpJmX__VPyOGnSVW_5adw2GQf3xp-Pd1dnogFFbgv0MUm8kYo2zbgcHK3f0ZNcobeo&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRBuE1Qpjh3gf_roRXt82ys-_fEQk39AyDGYLVAcCOuhw&oe=6B00E9DF",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/536605553_1295681848567652_5073161444292860556_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cdmCL0Ocg40Q7kNvwF-tN0l&_nc_oc=Adp3WWazI2-6mCeVuH73yg4nGs4pRphZkbb7GrAJj4yhjyBdtWEQs3IEMi1GOEJ_I1k&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQd9KyaJhmOryz-qWgstKCpZAScZlmbHdX0PxGsjNOTvg&oe=6B00EF92",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537586102_4053937838216972_2545415778765548608_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YruOy61MDEcQ7kNvwFziOym&_nc_oc=AdriXPVvzYo8J9Lo0h1YK9hESCJbWESs3ObaNAYDa1_bdc82uafF4UnlrYa5ocu_f5M&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRdKim5J7V4ieM_3ZeHH0vsL7BQrogKj4RI_fatLARwpQ&oe=6B00DDCC",
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/537697390_1113837227362754_411350383761141508_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E2ZGZGhgvSoQ7kNvwH68DUY&_nc_oc=Adr2CRYoIYytfVQ1DCnHwSZChdYtPMGduI66GOw0Fc-EpT24hDh8NJO9_VJvs2nd5Dw&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSeqATyD0LbS0-RMCr_NG6_5vA0Xuuo8hxfcZo7jOfviQ&oe=6B00E694",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/538500955_994267586074742_7204770443688703937_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MiLS3tzDHXgQ7kNvwH7qtei&_nc_oc=Ados7NHHrsroQLCSsCknFcWl2ffMuLTACwQ_xqgGrP1lbwSZ6yQURi8U6fnpXlg5Fds&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQS_xUmFV7FY038yryGEhc7nqx-5J5_E86kTIsmi-1GDPA&oe=6B00E3B7",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/537561072_1094643402794735_5845781917111161286_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y8qFzc6HVykQ7kNvwEay4Ts&_nc_oc=AdpqcdtfoLlRNlY97r9TPKsTbx-imXBWVyJShhLAENKMHk8JTkj_moR1SqNsm95-vxc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQSRPA-z5vtQiDxevZgSyT1b8ncDO6OQYY2WMG2qYA58Xg&oe=6B00D274"
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/710827407_3515496991952725_5542359161410679497_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iUXzyU_gCaEQ7kNvwHhCcug&_nc_oc=Adq7H6yCGLFJOdzMdmfJwQ71EUuzq6OCYOoIX8U3GXoufu1GpgGmH2USHxuBqccZlIU&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSUjxwFSIvswqROz0N6uK06_b6CsMlFHgE-9S7izItL_g&oe=6B0A4A57"
    ],
    "impressions": null,
    "is_active": true,
-   "link_caption": "https://www.chamaripashop.com/",
-   "link_url": "https://www.chamaripashop.com/collections/all-men-shoes",
-   "page_id": "102031189364405",
-   "page_likes": 2283,
-   "page_name": "Chamaripashop",
-   "page_url": "https://www.facebook.com/chamaripashop/",
+   "link_caption": "froyaorganics.com",
+   "link_url": "https://froyaorganics.com/pages/age-quiz-v1",
+   "page_id": "697776180088948",
+   "page_likes": 6163,
+   "page_name": "Nordic Wellness Secrets",
+   "page_url": "https://www.facebook.com/61578268827866/",
    "paid_for_by": null,
    "platforms": [
     "facebook",
@@ -739,54 +796,29 @@
    ],
    "same_creative_ads": null,
    "spend": null,
-   "start_date": "2025-11-15T08:00:00Z",
-   "title": "6CM/2.36 Inches CMR CHAMARIPA Height-Increasing Fur-Lined Hiking Boots for Men - Yellow-Brown Nubuck",
+   "start_date": "2026-06-06T07:00:00Z",
+   "title": "What your skin actually needs 🔍",
    "videos": []
   },
   {
-   "ad_archive_id": "1705862860432386",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1705862860432386",
-   "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
-   "cards": [
-    {
-     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
-     "cta": "Shop Now",
-     "image": null,
-     "link_url": "https://www.theessencevault.co.uk/",
-     "title": "Designer Inspired Fragrances For Less",
-     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=ovcIguty-_IQ7kNvwE2om_3&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNDUsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQzTDndVNf7WnievCdhLahWYEG_PwH7h5RQwdTI3w3J0Q&oe=6B00DD7D"
-    },
-    {
-     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
-     "cta": "Shop Now",
-     "image": null,
-     "link_url": "https://www.theessencevault.co.uk/",
-     "title": "Designer Inspired Fragrances For Less",
-     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=ovcIguty-_IQ7kNvwE2om_3&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNDUsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQzTDndVNf7WnievCdhLahWYEG_PwH7h5RQwdTI3w3J0Q&oe=6B00DD7D"
-    },
-    {
-     "body": "Looking for long lasting perfumes but tired of breaking the bank account? \n\nToday you're in luck! Switch to The Essence Vault for designer inspired scents, that last for longer and don't break your bank account.\n\n✅ Made in the UK\n✅ Cruelty friendly\n✅ Designer Inspired Scents \n✅ 4.7/5 Reviews \n✅ Lasts all day and night\n✅ Only 0.5% of people use our 100% money back guarantee!",
-     "cta": "Shop Now",
-     "image": null,
-     "link_url": "https://www.theessencevault.co.uk/",
-     "title": "Designer Inspired Fragrances For Less",
-     "video": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkKKXTyD14rCVViwtEqyo00In65FfupSOXa68tPiCnoNo9jdLIxgT4H9fJAkXSzuC8Zywv90H4B1y6THOYOD4dwxfSGqEKD5yEfxUmGzhQ_w.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=s2Ekneq0CWwQ7kNvwHRNDuD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzMwMzM1Nzc3ODgwMTQsImFzc2V0X2FnZV9kYXlzIjozNDUsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ac30647b9a7a0784&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC82RTRBNDRFODJBQTc0RjdCQkE4MTA3MEEwRUNBNEFBM19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U1NDg3NTIzQjc2Q0U5MjRFRTY0RUIzMzQ1OEEzQjlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcybWbxbeVBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRSIzwsElloklAz4ChISra_UC_ANoXxruwi9_wIniUCcw&oe=6B00E1D8"
-    }
-   ],
-   "cta": "Shop now",
-   "cta_type": "SHOP_NOW",
+   "ad_archive_id": "899968336009541",
+   "ad_url": "https://www.facebook.com/ads/library/?id=899968336009541",
+   "body": "4K-ready from your phone - Project in one tap",
+   "cards": [],
+   "cta": "Install now",
+   "cta_type": "INSTALL_MOBILE_APP",
    "currency": null,
-   "display_format": "dco",
+   "display_format": "video",
    "end_date": null,
    "images": [],
    "impressions": null,
    "is_active": true,
-   "link_caption": "theessencevault.co.uk",
-   "link_url": "https://www.theessencevault.co.uk/",
-   "page_id": "106818515349675",
-   "page_likes": 2790,
-   "page_name": "The Gift Guiders",
-   "page_url": "https://www.facebook.com/thegiftguidersuk/",
+   "link_caption": "play.google.com",
+   "link_url": "https://play.google.com/store/apps/details?id=com.remotetv.smart.remote.control",
+   "page_id": "883944458126103",
+   "page_likes": 41,
+   "page_name": "Penny Watson",
+   "page_url": "https://www.facebook.com/61582558230603/",
    "paid_for_by": null,
    "platforms": [
     "facebook",
@@ -797,98 +829,122 @@
    ],
    "same_creative_ads": 1,
    "spend": null,
-   "start_date": "2026-03-25T07:00:00Z",
-   "title": "Designer Inspired Fragrances For Less",
+   "start_date": "2026-06-25T07:00:00Z",
+   "title": "Turn Your Wall Into a TV - Free Download",
    "videos": [
-    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOE4JQAo2mV8HIEVjKcwKT57JZNJ4rac0Z0YUgeg3WdF0iHP3pE-f-vxxEu--PUelsjtfZ4XtG9ofDv2UIjg3Xb3gkoP56UiAHFs4s8RSn3Wg.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=ovcIguty-_IQ7kNvwE2om_3&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzA0MzgyOTg1MzYwMzksImFzc2V0X2FnZV9kYXlzIjozNDUsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=deee16dd614b33bc&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTQ0QkY4MjMyODM4RkI1RERFRUY4ODlBQkQ2MzlBNV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0ZCNDA2QTBBNkE1MDRFRTE1MTMwNTVGQ0MyODBDMzhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbOoaDwvKCUBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQzTDndVNf7WnievCdhLahWYEG_PwH7h5RQwdTI3w3J0Q&oe=6B00DD7D",
-    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQMkKKXTyD14rCVViwtEqyo00In65FfupSOXa68tPiCnoNo9jdLIxgT4H9fJAkXSzuC8Zywv90H4B1y6THOYOD4dwxfSGqEKD5yEfxUmGzhQ_w.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=s2Ekneq0CWwQ7kNvwHRNDuD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExNzMwMzM1Nzc3ODgwMTQsImFzc2V0X2FnZV9kYXlzIjozNDUsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjozNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ac30647b9a7a0784&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC82RTRBNDRFODJBQTc0RjdCQkE4MTA3MEEwRUNBNEFBM19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U1NDg3NTIzQjc2Q0U5MjRFRTY0RUIzMzQ1OEEzQjlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcybWbxbeVBBUCKAJDMywXQEEMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRSIzwsElloklAz4ChISra_UC_ANoXxruwi9_wIniUCcw&oe=6B00E1D8"
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPaAa-v4vPG8_pCrwEVOcxE7gTywSQoqQAiwDqaNnQVVDxOYWk_HqOB3UqLO3HC3UDe0sQEvaUsGmvGSzusrWoF3tP4Jmnm9FzgzONc2F47rA.mp4?_nc_cat=111&_nc_sid=b66105&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=0tJGsttQK58Q7kNvwGOMeUa&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjM2NTIyMjU1MjE0MDg1NDY0LCJhc3NldF9hZ2VfZGF5cyI6MTUxLCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=92aa1732919da026&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8wRDQ5ODg3OTU2QjkwN0U4ODk2Njc5MDJDNjM5MEQ5OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzY4NDkxRDEwNzRCMjJGQTJCMUVCOTlFMUQ3OEI3RjlFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACawlfSGhrPggQEVAigCQzMsF0AxEOVgQYk3GBlkYXNoX2gyNjQtYmFzaWMtZ2VuMl83MjBwEQB1AGW2ngEA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQTauAJ8HiWogLxeYeCXzUiw5aaLhPR8ryO1f10wPVqSg&oe=6B0A2C09"
    ]
   },
   {
-   "ad_archive_id": "1384189806469611",
-   "ad_url": "https://www.facebook.com/ads/library/?id=1384189806469611",
-   "body": "Play The Best Free Games!",
+   "ad_archive_id": "1406365424489727",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1406365424489727",
+   "body": "Bewirb dich jetzt für eine Ausbildung im Abiprogramm (m/w/d) im #teampenny. 🙌 Freu dich auf viele attraktive Vorteile! 🤩",
    "cards": [
     {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/787483996_1631224208421728_8436138261704447538_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=maX0TTrTsAQQ7kNvwH80Imp&_nc_oc=AdrRprffVY6cokqOdFTPXrbAhqg8zcfGS5eIkXUlvOoTM5Rl1mnPV0B8QRhPCcqwD5I&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQR_vTds99RhVKxc2WI3UIkQSAF1RGeQB4jOkWBPp2ZBMA&oe=6B00C0F9",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Hidden+Object+Games&cta_image=gamemoms_com/images/games/71248/feed_ad/010823_1690895826853_1115512837.jpg&s2=vandan_the_detective&catalog_id=010823_1690895826853_1115512837_1243732352",
-     "title": "Vandan the Detective",
+     "body": "Erstmal zu PENNY",
+     "cta": "Apply Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600901638_724236790725443_3005420972194707483_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=00nwHOKKu6MQ7kNvwFNOlF-&_nc_oc=AdotLBfWdS4n_3dHMnCYKK1tMbEJvHuVpVpwJ_qeNb3HrZOoQLqYC8NRgowJi9LPIUc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSOs3aYsL-gpvKGGCq5qLvMv8UKB-FQ0rax-PrukHpJ5g&oe=6B0A3227",
+     "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+     "title": "#teampenny",
      "video": null
     },
     {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/788641108_2156098611929294_6040158186350960676_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KKrUnFDIsPYQ7kNvwFiXRUh&_nc_oc=AdrBqt-zYinzpraKaR5uK04Y6wTjhv6KBzlffOJR6PytJcT9uTxyDtZ55Tvg0dbPyfQ&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRqrj6M0_OpXX4EsMSuY0Hqj6efLI4VfGEA0p7uXjUTqQ&oe=6B00F04F",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Word+Games&cta_image=gamemoms_com/images/games/68951/feed_ad/010823_1690895820827_194206627.jpg&s2=penny_dell_word_search&catalog_id=010823_1690895820827_194206627_1809491598",
-     "title": "Penny Dell Word Search",
+     "body": "Erstmal zu PENNY",
+     "cta": "Apply Now",
+     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/599952952_856838430592029_6784396724960183326_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OB3VZsPVCTIQ7kNvwFqqsCN&_nc_oc=AdqVfST49IQgwdgGOP0uu21m9ybfnNM8kWl6wLhFUkLrz0ZLykpky_BkBvNM6NhsI8I&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRN5JtK1xsgb07Xh2-7u5pemrGNA1nfvpBxkK0wW-5w5A&oe=6B0A2D85",
+     "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+     "title": "#teampenny",
      "video": null
     },
     {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/786453956_2607257776355073_419544795894516658_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eXHl2QW2pLAQ7kNvwFGd86x&_nc_oc=AdoeVJjz1idh3qtl5J1L7N1tyM0B6axqDW-_vRfrjS4eBoPp--0sTkzjdnju8n8hmhE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQxAU_z8GwUUl5ol4MT6nY2YplyF7pMWGZJqxGLOa83xQ&oe=6B00CC11",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Hidden+Object+Games&cta_image=gamemoms_com/images/games/71258/feed_ad/010823_1690895826873_1254344638.png&s2=london_hidden_objects&catalog_id=010823_1690895826873_1254344638_304884045",
-     "title": "London Hidden Objects",
+     "body": "Erstmal zu PENNY",
+     "cta": "Apply Now",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/603836049_888824377137278_3617496164566109320_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BrXylIFyTCYQ7kNvwE8mCs9&_nc_oc=AdqS2KrTqUmTFop--9FE-j-92-2onGfwb_yyfNd68iWtnjkG5SpVCrYAo_-B0Rdo32M&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ9LhQ9XCdqLS9xRpjPHMybIFGsNWJPWDEJKFfmQIRl8Q&oe=6B0A3E96",
+     "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+     "title": "#teampenny",
      "video": null
     },
     {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/788641114_1756608635469911_5924701625635521584_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k8m-zP7ncCYQ7kNvwFTCC2k&_nc_oc=Adqc7qEiewNm9kpR-BIA72x4gTVVBjkjZOLjJrz5HbXgwBPVk0bbKWpiN5Qhq9HOn6k&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTF97uVmALrp9uMue1iqur1zoCpELHsJi1Hh8ZAm5LVUQ&oe=6B00BC79",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/69803/feed_ad/010823_1690895813531_1049391513.jpg&s2=color_hoop_stack&catalog_id=010823_1690895813531_1049391513_1696014984",
-     "title": "Color Hoop Stack",
+     "body": "Erstmal zu PENNY",
+     "cta": "Apply Now",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/601819459_1904834090454677_3616115928572870762_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ewu-6r6eMx4Q7kNvwH-ccUm&_nc_oc=AdrqjuzBHi9FE6vRo1Nh06wHQOq_6sn-8ptXlYtofCpKEV9obR7loc9FKt8Vu8jfP6A&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQhN46CxUL0O3hwCegyZbgknFkuX_3w4QW8Wh1DIiwKJw&oe=6B0A35CA",
+     "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+     "title": "#teampenny",
      "video": null
     },
     {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788926827_948563094932711_6372480401650804543_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IBhhsm6LWVwQ7kNvwGxHI80&_nc_oc=AdpDgxvsbSD_bLsE1mehHGMTU-2jRv6teJqvsch8sOMLa9Rn1MhjLigCAdS57St9vK4&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTFxCwPbxNvoxWTfzf71FR7awa_EaRSrBmr5yDOzJVypw&oe=6B00F3C9",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/68973/feed_ad/010823_1690895820677_537404168.jpg&s2=penny_dell_sudoku&catalog_id=010823_1690895820677_537404168_210675371",
-     "title": "Penny Dell Sudoku",
-     "video": null
-    },
-    {
-     "body": "Play The Best Free Games!",
-     "cta": "Play Game",
-     "image": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788091835_1398724385780756_7737441878525067887_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=caT_ZUrCb3IQ7kNvwHwm7P7&_nc_oc=Adr5VrVgktBGOUBHMbTqhlp8UayBM5vQq7Vmt6tBI5wjP4oNoIWjhGW2vx5ef_WGxdE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQS2CYuP_XYPpc3JhSVlAVJw86VvPZUHqzUULVzArIsDpg&oe=6B00C391",
-     "link_url": "https://go.gamemoms.com/Catalog?cta_text=Puzzle+Games&cta_image=gamemoms_com/images/games/68867/feed_ad/010823_1690895823666_955718497.jpg&s2=true&catalog_id=010823_1690895823666_955718497_707811598",
-     "title": "True?",
+     "body": "Erstmal zu PENNY",
+     "cta": "Apply Now",
+     "image": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/605628937_707415978828606_8924217967100571639_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mTlULURWdkUQ7kNvwGRlzLJ&_nc_oc=AdqOPvgZGgKTjPrGpk6ydB4sfPsxvnBhwbko3boMaQ27bT5oNy5MolM6ZAamMFIsUpg&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ62otK-ZYZQ5UMHuJ-pzmwzY5lS7ZJWDDOTPRCEiHPeQ&oe=6B0A46A3",
+     "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+     "title": "#teampenny",
      "video": null
     }
    ],
-   "cta": "Play game",
-   "cta_type": "PLAY_GAME",
+   "cta": "Apply now",
+   "cta_type": "APPLY_NOW",
    "currency": null,
-   "display_format": "dpa",
+   "display_format": "carousel",
    "end_date": null,
    "images": [
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/787483996_1631224208421728_8436138261704447538_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=maX0TTrTsAQQ7kNvwH80Imp&_nc_oc=AdrRprffVY6cokqOdFTPXrbAhqg8zcfGS5eIkXUlvOoTM5Rl1mnPV0B8QRhPCcqwD5I&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQR_vTds99RhVKxc2WI3UIkQSAF1RGeQB4jOkWBPp2ZBMA&oe=6B00C0F9",
-    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/788641108_2156098611929294_6040158186350960676_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KKrUnFDIsPYQ7kNvwFiXRUh&_nc_oc=AdrBqt-zYinzpraKaR5uK04Y6wTjhv6KBzlffOJR6PytJcT9uTxyDtZ55Tvg0dbPyfQ&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQRqrj6M0_OpXX4EsMSuY0Hqj6efLI4VfGEA0p7uXjUTqQ&oe=6B00F04F",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/786453956_2607257776355073_419544795894516658_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eXHl2QW2pLAQ7kNvwFGd86x&_nc_oc=AdoeVJjz1idh3qtl5J1L7N1tyM0B6axqDW-_vRfrjS4eBoPp--0sTkzjdnju8n8hmhE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQQxAU_z8GwUUl5ol4MT6nY2YplyF7pMWGZJqxGLOa83xQ&oe=6B00CC11",
-    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/788641114_1756608635469911_5924701625635521584_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k8m-zP7ncCYQ7kNvwFTCC2k&_nc_oc=Adqc7qEiewNm9kpR-BIA72x4gTVVBjkjZOLjJrz5HbXgwBPVk0bbKWpiN5Qhq9HOn6k&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTF97uVmALrp9uMue1iqur1zoCpELHsJi1Hh8ZAm5LVUQ&oe=6B00BC79",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788926827_948563094932711_6372480401650804543_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IBhhsm6LWVwQ7kNvwGxHI80&_nc_oc=AdpDgxvsbSD_bLsE1mehHGMTU-2jRv6teJqvsch8sOMLa9Rn1MhjLigCAdS57St9vK4&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQTFxCwPbxNvoxWTfzf71FR7awa_EaRSrBmr5yDOzJVypw&oe=6B00F3C9",
-    "https://scontent-lga3-3.xx.fbcdn.net/v/t39.35426-6/788091835_1398724385780756_7737441878525067887_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=caT_ZUrCb3IQ7kNvwHwm7P7&_nc_oc=Adr5VrVgktBGOUBHMbTqhlp8UayBM5vQq7Vmt6tBI5wjP4oNoIWjhGW2vx5ef_WGxdE&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=2pc1boIKxA3acyqYrql_mQ&_nc_ss=70289&oh=00_AQS2CYuP_XYPpc3JhSVlAVJw86VvPZUHqzUULVzArIsDpg&oe=6B00C391"
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/600901638_724236790725443_3005420972194707483_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=00nwHOKKu6MQ7kNvwFNOlF-&_nc_oc=AdotLBfWdS4n_3dHMnCYKK1tMbEJvHuVpVpwJ_qeNb3HrZOoQLqYC8NRgowJi9LPIUc&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQSOs3aYsL-gpvKGGCq5qLvMv8UKB-FQ0rax-PrukHpJ5g&oe=6B0A3227",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.35426-6/599952952_856838430592029_6784396724960183326_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OB3VZsPVCTIQ7kNvwFqqsCN&_nc_oc=AdqVfST49IQgwdgGOP0uu21m9ybfnNM8kWl6wLhFUkLrz0ZLykpky_BkBvNM6NhsI8I&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQRN5JtK1xsgb07Xh2-7u5pemrGNA1nfvpBxkK0wW-5w5A&oe=6B0A2D85",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/603836049_888824377137278_3617496164566109320_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BrXylIFyTCYQ7kNvwE8mCs9&_nc_oc=AdqS2KrTqUmTFop--9FE-j-92-2onGfwb_yyfNd68iWtnjkG5SpVCrYAo_-B0Rdo32M&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ9LhQ9XCdqLS9xRpjPHMybIFGsNWJPWDEJKFfmQIRl8Q&oe=6B0A3E96",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/601819459_1904834090454677_3616115928572870762_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ewu-6r6eMx4Q7kNvwH-ccUm&_nc_oc=AdrqjuzBHi9FE6vRo1Nh06wHQOq_6sn-8ptXlYtofCpKEV9obR7loc9FKt8Vu8jfP6A&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQhN46CxUL0O3hwCegyZbgknFkuX_3w4QW8Wh1DIiwKJw&oe=6B0A35CA",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.35426-6/605628937_707415978828606_8924217967100571639_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mTlULURWdkUQ7kNvwGRlzLJ&_nc_oc=AdqOPvgZGgKTjPrGpk6ydB4sfPsxvnBhwbko3boMaQ27bT5oNy5MolM6ZAamMFIsUpg&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&oh=00_AQQ62otK-ZYZQ5UMHuJ-pzmwzY5lS7ZJWDDOTPRCEiHPeQ&oe=6B0A46A3"
    ],
    "impressions": null,
    "is_active": true,
-   "link_caption": "go.gamemoms.com",
-   "link_url": "https://go.gamemoms.com/Catalog?s2=tetrix",
-   "page_id": "158739554329429",
-   "page_likes": 165589,
-   "page_name": "Game Moms",
-   "page_url": "https://www.facebook.com/GameMoms/",
+   "link_caption": "karriere.penny.de",
+   "link_url": "https://karriere.penny.de/ausbildung/abiprogramm?ecid=dim_meta_penn%7cag%7cenga%7cn%7cag-perfao-03-2026-008_nn-nn-facebookgermanygmbh-facebookdeinstagramonlyselfservice-1x1-car-abiprogrammmotivb-nn-nn-nn-nn-41316119-nn_nn_nn_nn_nn_perf",
+   "page_id": "700577889971139",
+   "page_likes": 445617,
+   "page_name": "PENNY",
+   "page_url": "https://www.facebook.com/PennyDeutschland/",
+   "paid_for_by": null,
+   "platforms": [
+    "instagram"
+   ],
+   "same_creative_ads": 1,
+   "spend": null,
+   "start_date": "2026-01-01T08:00:00Z",
+   "title": "#teampenny",
+   "videos": []
+  },
+  {
+   "ad_archive_id": "1573056537485911",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1573056537485911",
+   "body": "Only 1% people could pass lv100❗",
+   "cards": [],
+   "cta": "Play game",
+   "cta_type": "PLAY_GAME",
+   "currency": null,
+   "display_format": "video",
+   "end_date": null,
+   "images": [],
+   "impressions": null,
+   "is_active": true,
+   "link_caption": "play.google.com",
+   "link_url": "https://play.google.com/store/apps/details?id=com.cookie.match3.casual",
+   "page_id": "111191907089485",
+   "page_likes": 13039,
+   "page_name": "Dream Family - Match 3 Games",
+   "page_url": "https://www.facebook.com/dreamfamilygame/",
    "paid_for_by": null,
    "platforms": [
     "facebook",
-    "instagram"
+    "instagram",
+    "audience_network",
+    "messenger",
+    "threads"
    ],
-   "same_creative_ads": null,
+   "same_creative_ads": 4,
    "spend": null,
-   "start_date": "2026-08-27T07:00:00Z",
-   "title": "Vandan the Detective",
-   "videos": []
+   "start_date": "2026-05-25T07:00:00Z",
+   "title": "No-Ads&Free❗👉",
+   "videos": [
+    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQN3SuDJv7DQAocDIvNjYjjBGz14Mt0nSrPgNIXVmWucgkU2bdZjkPVFwIvyYnMrpB_mZFvGot6lhEa2A4G4PDNK89knfYdOlyNal4ruC9txiQ.mp4?_nc_cat=107&_nc_sid=b66105&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=OndOvBDWaeUQ7kNvwHF-vZ-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjk5MjIwMjI4MzM2NTQ4NCwiYXNzZXRfYWdlX2RheXMiOjE4NiwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjU5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=8d54b073d8ab16df&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xOTQ5NUZFRTkwN0NBQkIxNDQ3NzZDMTNEOUFFQjdBNl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzcxNENBRDY0NzNBNTk3QjQ0MURCMDRFNjQxNTdDMDhFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbY0amK45nDAxUCKAJDMywXQE37peNT988YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZbaeAQA&_nc_gid=SW9pnUWCWG59knZlVZQ9ew&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQTE2zOO1UUE6HZO7yHemTz2HBQ9zwrr2jEv2mYIJn-jjg&oe=6B0A2791"
+   ]
   }
  ]
 }
