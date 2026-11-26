@@ -1,8 +1,8 @@
 {
  "stand": "2026-11-26",
- "n_gesamt": 184,
- "n_relevant": 134,
- "kosten_usd": 0.036731,
+ "n_gesamt": 186,
+ "n_relevant": 132,
+ "kosten_usd": 0.036793,
  "top": [
   {
    "url": "https://www.instagram.com/reel/Daw4KRUsC4L/",
@@ -15,7 +15,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/747062608_18598894378006431_3154093484401950513_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=Mzk0MDg5NjY3MDM0OTI3NDYzNTE4NTk4ODk0MzgxMDA2NDMx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyOTAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=xzxlaEQkxdAQ7kNvwGdQWd9&_nc_oc=AdoWFPYHiVYGOqFHOqwjGryD-6tbilTdBxo_4tBYyx1D5cQdNdZ1hhTJcHB32cmYYJw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=acHKZ01tANIbx35hwj6-Zw&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSz-KLp2Eu50Mxt1vzvKUGPYUHw0SmkFQmGfj8kQb5cWA&oe=6B0DE5D8",
    "format": "Rezept-Tutorial",
-   "relevant": 0.88,
+   "relevant": 0.87,
    "uebertragbar": 1,
    "transfer": "anpassung",
    "engagement": 348119,
@@ -32,7 +32,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/745939460_18061974509740001_367586942666462789_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=MzkzOTU3MTgwNDkzMzQzODkxMDE4MDYxOTc0NTAzNzQwMDAx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=WuJx_Lg6hM4Q7kNvwGuSdJ_&_nc_oc=AdoyONRFnAMCo3OpBOBJIGkFeNhv7_mFjxllOvNsXUbGxODiakWtKLFZOIjED8h5ZGQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=acHKZ01tANIbx35hwj6-Zw&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSEx3zqBMMknD75u6tlapq8FZgs9m5sF4vRtDVsTFnQBA&oe=6B0DE70E",
    "format": "Rezept-Tutorial",
-   "relevant": 0.75,
+   "relevant": 0.78,
    "uebertragbar": 2,
    "transfer": "direkt",
    "engagement": 198109,
@@ -49,7 +49,7 @@
    "fuente": "query:weihnachtsrezepte",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/894386361_18136647053501119_8206718351112019188_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=1&ig_cache_key=NDAyNTcyNTYxMzE3MTUyODk4NjE4MTM2NjQ3MDQ3NTAxMTE5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=5_wpnbtmbT8Q7kNvwFQ0vTh&_nc_oc=AdpNEBm96dGIn2XKxee3YS_Wzt6NMouI5Lr9KyX5EYR3zUYhPhO8fKFbxmfUx8EbXIs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sFWzcsA0Fl_Lu-7OzSA5pA&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQRRa7iVMEo6bB1JMK2BDAKHk6hM9ihpct_as3cYjhz9MA&oe=6B0DD8F6",
    "format": "Rezept-Tutorial",
-   "relevant": 0.9,
+   "relevant": 0.91,
    "uebertragbar": 2,
    "transfer": "direkt",
    "engagement": 143973,
@@ -66,7 +66,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/730783754_18099562646239162_3259177762963885433_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=MzkyNzE4NzI4NzU0ODA1ODE0ODE4MDk5NTYyNjQzMjM5MTYy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=POsu86jV0OQQ7kNvwHUQ4wf&_nc_oc=Adpl2nOE135I5WnP8xwRXr-pZPOn-tIJNAxmn_htvkpGejJ49r2CnFJTUcD1E3ZWwQM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQQ024FuF-Ec1QMs1Ei7bLR29_IMzDC8dAsXW6qQNNZxdA&oe=6B0DEC31",
    "format": "Rezept-Tutorial",
-   "relevant": 0.87,
+   "relevant": 0.85,
    "uebertragbar": 1,
    "transfer": "anpassung",
    "engagement": 59983,
@@ -83,7 +83,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/763103978_17940060786339863_6669303328917921449_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=Mzk1NTcyODk2NDIyMjQyOTA2MTE3OTQwMDYwNzc3MzM5ODYz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=ihgrUdiMHy8Q7kNvwGcp1E-&_nc_oc=Adotf5OLjAVot7FBHu5EgvUlQXmalRUsKZjlalcXefOBpvOd-VlrmPJZ39IhoWeac8Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=BCYzOmAcs6KxcSpOq60IkQ&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQTHiKPf39JZNQYvGLbiG1Ye76XXJOWJkKZq22A4OhsfkQ&oe=6B0E0F37",
    "format": "Rezept-Tutorial",
-   "relevant": 0.83,
+   "relevant": 0.81,
    "uebertragbar": 2,
    "transfer": "direkt",
    "engagement": 88903,
@@ -117,7 +117,7 @@
    "fuente": "query:lebensmittel tipps",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/800934763_18125854978781990_4217611572835649424_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk2ODA0MDMxNjM4NzcwMjU5MDE4MTI1ODU0OTc1NzgxOTkw.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjQwOC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=fq9HXGelfEEQ7kNvwHMRrmQ&_nc_oc=AdoZKTEf3WG_TGGVbYC3xUDqnuiVLM2CRxSkMyEDcNxJU-4fRxrburWq9SnKz9TdavQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=tAGhZam4ueRTI1U-9PoA5A&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQQm1DvPnlqsgeDaNyx0ii8G-NGT6PuVruV40FuR3CqyMg&oe=6B0DF97C",
    "format": "Sonstiges",
-   "relevant": 0.75,
+   "relevant": 0.74,
    "uebertragbar": 2,
    "transfer": "direkt",
    "engagement": 95070,
@@ -150,8 +150,8 @@
    "datum": "2026-11-13",
    "fuente": "query:weihnachtsrezepte",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/902173187_1861782401623044_238135376279639208_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTU5MTk3NDYwNzAzMDA2MjE4NjE3ODIzOTgyODk3MTE%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjU0MC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=8BfUYnSMF6oQ7kNvwFWW7nX&_nc_oc=AdrgforE7kbuYhryTeQvGSKZdpuMMOYUMEb4gKP7Hpex6hXQvU3PZFVsl3mTZCozjjM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=QJZ-7TkgORW1vnsaRYqRww&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQT_TQjtNJjeME4gxYUWG6r9f8M3bYBGfvUY4DV3OzntbA&oe=6B0DF1E8",
-   "format": "Produkt-Test",
-   "relevant": 0.74,
+   "format": "Rezept-Tutorial",
+   "relevant": 0.73,
    "uebertragbar": 1,
    "transfer": "anpassung",
    "engagement": 27843,
@@ -168,7 +168,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t15.5256-10/839740112_1046658815075126_7585168006354537131_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMjc4MzgyNTYzNTYxNzc2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=qk2Jj0MPJgMQ7kNvwFGzHJF&_nc_oc=AdrhqDpo3aSoPiZIJZZWOwYMMKVbDTFRKFyUv9HZafroGg7nNucjydmpa85RCG-j-Sw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQ45GuYlxNkptvzZI3jL96qlWQinF3jlX-FsahzNnBxnw&oe=6B0DE054",
    "format": "Rezept-Tutorial",
-   "relevant": 0.82,
+   "relevant": 0.8,
    "uebertragbar": 1,
    "transfer": "anpassung",
    "engagement": 30184,
@@ -202,7 +202,7 @@
    "fuente": "query:rezept schnell",
    "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.71878-15/845653490_1737466040659895_7971385497687560577_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNTY2MjQ0MTE3OTY2NDI3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=yDBT3e1ZyFYQ7kNvwHeBTSp&_nc_oc=AdoVtlLmsGmzTxdKLvcSbyGymM15adWvPXbijB1YpGsGakrnhAnzvAAECViYrvhurKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSAF2HhnXfp_4ol3L8Nx7ChGj_MlKgwlXpNbIlSq8IjoQ&oe=6B0E0A2E",
    "format": "Rezept-Tutorial",
-   "relevant": 0.83,
+   "relevant": 0.84,
    "uebertragbar": 1,
    "transfer": "anpassung",
    "engagement": 28437,
@@ -212,27 +212,27 @@
  "formate": {
   "Rezept-Tutorial": {
    "anzahl": 47,
-   "engagement": 28011
+   "engagement": 29269
   },
   "Haul/Einkauf": {
-   "anzahl": 37,
-   "engagement": 1993
-  },
-  "Sonstiges": {
-   "anzahl": 18,
-   "engagement": 7557
-  },
-  "Produkt-Test": {
-   "anzahl": 4,
-   "engagement": 7967
+   "anzahl": 38,
+   "engagement": 1923
   },
   "Spar-Tipp": {
    "anzahl": 26,
-   "engagement": 696
+   "engagement": 714
   },
   "Humor/Trend-Sound": {
    "anzahl": 2,
-   "engagement": 2674
+   "engagement": 2678
+  },
+  "Sonstiges": {
+   "anzahl": 17,
+   "engagement": 8015
+  },
+  "Produkt-Test": {
+   "anzahl": 2,
+   "engagement": 1928
   }
  },
  "fehler": 0

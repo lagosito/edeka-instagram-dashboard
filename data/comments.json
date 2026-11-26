@@ -1,26 +1,26 @@
 {
- "stand": "2026-11-26 12:08",
+ "stand": "2026-11-26 12:45",
  "n_posts": 17,
- "n_kommentare": 273,
- "kosten_usd": 0.026356,
+ "n_kommentare": 275,
+ "kosten_usd": 0.026499,
  "ton": {
-  "positiv": 64,
+  "positiv": 63,
   "neutral": 15,
-  "negativ": 21
+  "negativ": 22
  },
  "n_ton": {
-  "positiv": 175,
-  "neutral": 42,
-  "negativ": 56
+  "positiv": 174,
+  "neutral": 41,
+  "negativ": 60
  },
  "themen": [
   {
    "thema": "Sonstiges",
-   "anzahl": 131
+   "anzahl": 136
   },
   {
    "thema": "Lob für Content",
-   "anzahl": 49
+   "anzahl": 47
   },
   {
    "thema": "Markt/Service",
@@ -28,11 +28,11 @@
   },
   {
    "thema": "Produkt/Qualität",
-   "anzahl": 27
+   "anzahl": 28
   },
   {
    "thema": "Rezept/Idee",
-   "anzahl": 11
+   "anzahl": 10
   },
   {
    "thema": "Preis",
@@ -40,16 +40,11 @@
   },
   {
    "thema": "App/Angebote",
-   "anzahl": 4
+   "anzahl": 3
   }
  ],
  "offene_fragen": 11,
  "beispiele": [
-  {
-   "text": "Ich möchte gerne gewinnen da ich nicht viel Geld habe leider",
-   "ton": "negativ",
-   "thema": "Preis"
-  },
   {
    "text": "Team noch nie gewonnen",
    "ton": "negativ",
@@ -57,6 +52,11 @@
   },
   {
    "text": "Satz mit x...😂das war nix",
+   "ton": "negativ",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Kein Like arbeitet weiter",
    "ton": "negativ",
    "thema": "Sonstiges"
   },
@@ -71,9 +71,9 @@
    "thema": "Sonstiges"
   },
   {
-   "text": "Quajutsu🥷🏽",
+   "text": "Ich möchte gerne gewinnen da ich nicht viel Geld habe leider",
    "ton": "neutral",
-   "thema": "Sonstiges"
+   "thema": "Preis"
   },
   {
    "text": "Mega Aktion!",
@@ -92,13 +92,13 @@
    "profil": "edeka.berlin",
    "n": 21,
    "anteil_positiv": 86,
-   "anteil_negativ": 5
+   "anteil_negativ": 0
   },
   {
    "url": "https://www.instagram.com/p/Df69VMWjHBo/",
    "profil": "edeka.fromm",
-   "n": 44,
-   "anteil_positiv": 82,
+   "n": 45,
+   "anteil_positiv": 84,
    "anteil_negativ": 0
   },
   {
@@ -126,14 +126,14 @@
    "url": "https://www.instagram.com/p/Df1_QiBhf4E/",
    "profil": "edekafischer",
    "n": 7,
-   "anteil_positiv": 71,
-   "anteil_negativ": 14
+   "anteil_positiv": 57,
+   "anteil_negativ": 29
   },
   {
    "url": "https://www.instagram.com/p/Df9da6Ysh6d/",
    "profil": "edeka.ziegler",
    "n": 19,
-   "anteil_positiv": 21,
+   "anteil_positiv": 26,
    "anteil_negativ": 74
   },
   {
@@ -175,8 +175,8 @@
    "url": "https://www.instagram.com/p/Df7xBY5I75J/",
    "profil": "edeka_gebauer",
    "n": 41,
-   "anteil_positiv": 39,
-   "anteil_negativ": 22
+   "anteil_positiv": 37,
+   "anteil_negativ": 24
   },
   {
    "url": "https://www.instagram.com/p/Df42apuNP1H/",
@@ -196,21 +196,21 @@
    "url": "https://www.instagram.com/p/DRpeeUciIGE/",
    "profil": "edeka_nolte",
    "n": 34,
-   "anteil_positiv": 62,
-   "anteil_negativ": 29
+   "anteil_positiv": 59,
+   "anteil_negativ": 32
   },
   {
    "url": "https://www.instagram.com/p/DfcCxNiOz3c/",
    "profil": "edekawiele",
-   "n": 18,
-   "anteil_positiv": 72,
-   "anteil_negativ": 22
+   "n": 19,
+   "anteil_positiv": 63,
+   "anteil_negativ": 32
   }
  ],
- "fazit": "Die Mehrheit der Kommentare zu EDEKA-Posts ist positiv, insbesondere im Hinblick auf den Content. Es gibt allerdings auch einige negative Rückmeldungen, die auf Preis- und Teamproblematik hinweisen. Offene Fragen könnten genutzt werden, um die Interaktion und Kundenzufriedenheit zu verbessern.",
+ "fazit": "Die überwältigende Mehrheit der Kommentare zu EDEKA's Instagram-Posts ist positiv, insbesondere Lob für den Content. Dennoch gibt es auch einige negative Rückmeldungen, die darauf hinweisen, dass nicht alle Nutzer zufrieden sind. Offene Fragen zeigen, dass eine stärkere Interaktion wichtig sein könnte.",
  "aktionen": [
-  "Ein monatlicher Preisnachlass auf ausgewählte Produkte, um das Budget der Kunden zu entlasten.",
-  "Ein Gewinnspiel, bei dem Kunden an einer Verlosung teilnehmen können, um die positive Interaktion und das Engagement zu fördern.",
-  "Eine regelmäßige Umfrage auf Instagram, um direkte Rückmeldungen zu Service- und Produktqualität zu erhalten und den Kundenwünschen besser gerecht zu werden."
+  "Die Einführung von wöchentlichen Fragerunden auf Instagram könnte die Nutzerengagement erhöhen und gezielt auf ihre Anliegen eingehen.",
+  "Eine Initiative zur Belohnung treuer Kunden durch exklusive Gewinneraktionen könnte das positive Feedback verstärken.",
+  "Die Verbesserung des Markt- und Kundenservices sollte im Fokus stehen, um negative Kommentare zu reduzieren und das Einkaufserlebnis zu optimieren."
  ]
 }
