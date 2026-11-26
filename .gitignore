@@ -2,3 +2,6 @@
 .vercel
 # lokale Screenshots
 .shots/
+# Python-Zwischendateien
+__pycache__/
+*.pyc
