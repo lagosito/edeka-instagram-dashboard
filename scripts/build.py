@@ -1614,7 +1614,7 @@ if KAMPAGNEN:
     KAMP_HTML = f"""
         <div class="card blue span6">
           
-          <h3>05 · Kampagnen – was Social schon bewirkt hat</h3>
+          <h3>06 · Kampagnen – was Social schon bewirkt hat</h3>
           <p class="kurz">{esc(KAMPAGNEN.get('muster', ''))}</p>
         </div>
         {''.join(_cards)}
@@ -1698,18 +1698,314 @@ def _sektion(nr, titel, inhalt, zusammenfassung='', offen=True):
           <div class="grid accg">{inhalt}</div>
         </details>"""
 
+# ---------------- Pausche 04 · Trends & Stimmen --------------------------
+def _lade_json(fn):
+    try:
+        with open(os.path.join(DATA, fn), encoding='utf-8') as f:
+            d = json.load(f)
+        return d if isinstance(d, dict) else {}
+    except Exception:
+        return {}
+
+def _dtagen(s):
+    """'2026-11-26' -> '26.11.2026'"""
+    s = str(s or '').strip()[:10]
+    try:
+        return dt.datetime.strptime(s, '%Y-%m-%d').strftime('%d.%m.%Y')
+    except ValueError:
+        return str(s or '–')
+
+TRENDS = _lade_json('trends.json')      # scripts/scrape_trends.py (montags)
+KOMS = _lade_json('comments.json')      # scripts/scrape_comments.py (montags)
+
+def _dts(s):
+    """'2026-11-26 12:08' -> '26.11.2026, 12:08'"""
+    s = str(s or '').strip()
+    if not s:
+        return '–'
+    d, _, h = s.partition(' ')
+    out = _dtagen(d)
+    return out + (', ' + h[:5] if h else '')
+
+TS_TAB = ('<span class="tab2" data-s="s6" onclick="sec(\'s6\',this)">'
+          '04 Trends &amp; Stimmen<small class="tabd">'
+          'Was gerade läuft &amp; was Kunden sagen</small></span>')
+
+# -- 1-Zeiler je Block für die Übersicht (s0) --
+_ts_sum = []
+if TRENDS.get('formate') and TRENDS.get('n_relevant'):
+    _bf = max(TRENDS['formate'].items(), key=lambda kv: (kv[1] or {}).get('engagement') or 0)
+    _ts_sum.append(
+        '<div class="catrow"><div class="c1">Trends: <b>%s</b> liefert Ø %s Interaktionen'
+        ' je Reel — %s von %s geprüften Reels sind relevant für EDEKA</div>'
+        '<div class="c2">%s</div></div><div class="catbar"><div style="width:100%%"></div></div>'
+        % (esc(_bf[0]), de(_bf[1].get('engagement') or 0),
+           de(TRENDS.get('n_relevant') or 0), de(TRENDS.get('n_gesamt') or 0),
+           _dtagen(TRENDS.get('stand'))))
+if KOMS.get('posts') and KOMS.get('n_kommentare'):
+    _off = int(KOMS.get('offene_fragen') or 0)
+    _ts_sum.append(
+        '<div class="catrow"><div class="c1">Stimmen: <b>%s %%</b> der %s Kommentare '
+        'sind positiv — <b>%s</b> offene Fragen%s</div><div class="c2">%s</div></div>'
+        '<div class="catbar"><div style="width:%s%%"></div></div>'
+        % (int((KOMS.get('ton') or {}).get('positiv') or 0), de(KOMS['n_kommentare']),
+           de(_off), ' — sollte EDEKA beantworten' if _off else ' — alles beantwortet',
+           esc(_dts(KOMS.get('stand'))),
+           int((KOMS.get('ton') or {}).get('positiv') or 0)))
+TS_SUM = (('<div class="card span6"><span class="arrow">↗</span>'
+           '<h3>Was gerade läuft &amp; was Kunden sagen</h3>'
+           + ''.join(_ts_sum) + '</div>') if _ts_sum else '')
+
+# -- Die Pausche selbst --
+_ts_teile = []
+_bestfmt = None
+if TRENDS.get('formate'):
+    _bestfmt = max(TRENDS['formate'].items(), key=lambda kv: (kv[1] or {}).get('engagement') or 0)
+_kl, _stands = [], []
+if _bestfmt:
+    _kl.append('%s läuft gerade am besten — Ø %s Interaktionen je Reel'
+               % (_bestfmt[0], de((_bestfmt[1] or {}).get('engagement') or 0)))
+if KOMS.get('ton'):
+    _kl.append('%s %% der Kommentare positiv, %s offene Fragen'
+               % (int(KOMS['ton'].get('positiv') or 0), de(KOMS.get('offene_fragen') or 0)))
+if TRENDS.get('stand'):
+    _stands.append('Trends ' + _dtagen(TRENDS['stand']))
+if KOMS.get('stand'):
+    _stands.append('Kommentare ' + esc(_dts(KOMS['stand'])))
+_ts_hint = (('Datenstand: ' + ' · '.join(_stands) + ' · neue Auswertung jeden Montag, 05:00 UTC')
+            if _stands else 'Noch keine Daten — der erste Lauf startet montags um 05:00 UTC.')
+_ts_teile.append(
+    '<div class="card blue span6">'
+    '<span class="arrow">↗</span><h3>04 · Trends &amp; Stimmen</h3>'
+    '<p class="hint">%s</p><p class="hint" style="font-weight:600">%s</p>'
+    '</div>'
+    % (esc(' · '.join(_kl)) if _kl
+       else 'Was gerade in der Nische läuft und was Kunden zu EDEKA sagen', _ts_hint))
+
+# --- Block A: Trends in der Nische ---
+if TRENDS.get('top'):
+    fm = TRENDS.get('formate') or {}
+    maxe = max([(v or {}).get('engagement') or 0 for v in fm.values()] + [1])
+    barr = ''
+    for name, v in sorted(fm.items(), key=lambda kv: -((kv[1] or {}).get('engagement') or 0)):
+        e = (v or {}).get('engagement') or 0
+        barr += ('<div class="catrow"><div class="c1">%s · %s Reels</div><div class="c2">Ø %s</div></div>'
+                 '<div class="catbar"><div style="width:%d%%;background:#2A60FF"></div></div>'
+                 % (esc(name), de((v or {}).get('anzahl') or 0), de(e),
+                    max(4, round(e * 100 / maxe))))
+    _ts_teile.append(
+        '<div class="card span6"><span class="arrow">↗</span>'
+        '<h3>Trends in der Nische</h3>'
+        '<p class="hint">Was auf Instagram gerade läuft und für EDEKA brauchbar ist. '
+        '%s von %s geprüften Reels sind relevant. Zahlen = Ø Interaktionen (Likes + '
+        'Kommentare) je Reel — höher ist besser.</p>%s</div>'
+        % (de(TRENDS.get('n_relevant') or 0), de(TRENDS.get('n_gesamt') or 0), barr))
+
+    zellen = ''
+    for i, t in enumerate(TRENDS['top'][:12]):
+        img = ''
+        if t.get('thumbnail'):
+            try:
+                img = dl(t['thumbnail'], 't%02d.jpg' % i)
+            except Exception:
+                img = ''
+        bild = ('<img loading="lazy" src="%s" alt="">' % esc(img)) if img else '<div class="ph">IG</div>'
+        zahl = ('%s Aufrufe' % de(t['views'])) if t.get('views') else '%s Likes' % de(t.get('likes') or 0)
+        direkt = t.get('transfer') == 'direkt'
+        pill = 'gut' if direkt else 'schwach'
+        plabel = 'direkt übertragbar' if direkt else 'mit Anpassung'
+        datum = (' · ' + _dtagen(t['datum'])) if t.get('datum') else ''
+        zellen += ('<a class="tsc" href="%s" target="_blank" rel="noopener">%s'
+                   '<div class="tcb"><div class="tcc">@%s</div>'
+                   '<div class="tcm">%s · %s%s</div>'
+                   '<span class="pill %s">%s</span></div></a>'
+                   % (esc(t['url']), bild, esc(t['creator']), zahl,
+                      esc(t['format']), datum, pill, plabel))
+
+    testen = []
+    for t in TRENDS['top'][:3]:
+        wer = ('direkt übertragbar' if t.get('transfer') == 'direkt'
+               else 'mit Anpassung übertragbar')
+        testen.append('<li><b>@%s</b>: %s (%s Aufrufe) — %s</li>'
+                      % (esc(t['creator']), esc(t['format']),
+                         de(t['views'] or t.get('likes') or 0), wer))
+    if _bestfmt:
+        testen.append('<li><b>%s</b> ansehen: Ø %s Interaktionen je Reel — '
+                      'das stärkste Format im aktuellen Lauf</li>'
+                      % (_bestfmt[0], de((_bestfmt[1] or {}).get('engagement') or 0)))
+
+    _ts_teile.append(
+        '<div class="card span6"><span class="arrow">↗</span>'
+        '<h3>Reels zum Nachmachen</h3>'
+        '<p class="hint">Die stärksten Treffer der letzten Suche. Klick öffnet den Reel '
+        'auf Instagram. Die Blaue Markierung heißt: so könnt ihr es direkt nachbauen.</p>'
+        '<div class="tsgrid">%s</div>'
+        '<div class="tsintern">'
+        '<h3 style="font-size:20px">Das sollte EDEKA testen</h3><ul class="bul">%s</ul></div>'
+        '</div>' % (zellen, ''.join(testen)))
+
+    _ts_teile.append(
+        '<div class="card span3"><span class="arrow">↗</span><h3>Methodik</h3>'
+        '<p class="hint">So entsteht diese Auswertung:</p>'
+        '<ul class="bul">'
+        '<li>Quellen: Instagram-Suche &amp; Hashtags (treg), wöchentlich montags.</li>'
+        '<li>Eigene EDEKA-Konten und ausgeschlossene Konten sind entfernt.</li>'
+        '<li>Jev prüft jedes Reel: relevant für einen deutschen Supermarkt? '
+        'Format übertragbar?</li>'
+        '<li>Behalten: Relevanz ≥ 0,7 und „direkt“ oder „mit Anpassung“.</li>'
+        '<li>Ein Lauf kostet etwa %s $.</li></ul>'
+        '<details class="tsdet"><summary>Alle Quote-Quellen einblenden</summary>'
+        '<ul class="bul">%s</ul></details></div>'
+        % (de(round(TRENDS.get('kosten_usd') or 0, 2) or 0.04, 2),
+           ''.join('<li>%s</li>' % esc(q) for q in (TRENDS.get('queries') or []))))
+else:
+    _ts_teile.append(
+        '<div class="card span6"><span class="arrow">↗</span><h3>Trends in der Nische</h3>'
+        '<p class="hint">Noch keine Daten — die nächste Analyse läuft montags um 05:00 UTC '
+        'und füllt diesen Abschnitt automatisch.</p></div>')
+
+# --- Block B: Stimmen (Kommentare) ---
+if KOMS.get('posts'):
+    ton = KOMS.get('ton') or {}
+    pos = int(ton.get('positiv') or 0)
+    neu = int(ton.get('neutral') or 0)
+    neg = int(ton.get('negativ') or 0)
+    off = int(KOMS.get('offene_fragen') or 0)
+
+    med = ('<div class="tsmom"><i class="p" style="width:%d%%"></i>'
+           '<i class="n" style="width:%d%%"></i><i class="x" style="width:%d%%"></i></div>'
+           '<div class="tonlbl"><span><span class="dotp"></span>positiv <b>%d %%</b></span>'
+           '<span><span class="dotn"></span>neutral <b>%d %%</b></span>'
+           '<span><span class="dotx"></span>negativ <b>%d %%</b></span></div>'
+           % (pos, neu, neg, pos, neu, neg))
+
+    kpis = ('<div class="tsk">'
+            '<div class="tskb"><div class="l">Kommentare geprüft</div><div class="k">%s</div>'
+            '<div class="s">%s Beiträge der letzten 14 Tage</div></div>'
+            '<div class="tskb"><div class="l">Stimmung</div><div class="k">%d %%</div>'
+            '<div class="s">%d %% negativ — das ist der Anteil, der EDEKA fordert</div></div>'
+            '<div class="tskb %s"><div class="l">Offene Fragen</div><div class="k">%s</div>'
+            '<div class="s">%s</div></div></div>'
+            % (de(KOMS.get('n_kommentare') or 0), de(KOMS.get('n_posts') or 0), pos, neg,
+               'schlecht' if off else 'gut', de(off),
+               'wartet auf eine Antwort — sollte EDEKA reagieren' if off
+               else 'gut — jede Frage wurde beantwortet'))
+
+    themen = (KOMS.get('themen') or [])[:6]
+    maxt = max([(t.get('anzahl') or 0) for t in themen] + [1])
+    themen_html = ''
+    for t in themen:
+        a = t.get('anzahl') or 0
+        themen_html += ('<div class="catrow"><div class="c1">%s</div><div class="c2">%s</div></div>'
+                        '<div class="catbar"><div style="width:%d%%;background:#2A60FF"></div></div>'
+                        % (esc(t.get('thema') or ''), de(a), max(4, round(a * 100 / maxt))))
+
+    BEI_ART = {'positiv': 'gut', 'neutral': 'mittel', 'negativ': 'schwach'}
+    bei_html = ''
+    for b in (KOMS.get('beispiele') or [])[:4]:
+        bei_html += ('<div class="kb"><div class="kbm">%s · %s</div>%s</div>'
+                     % (esc(str(b.get('ton') or '')), esc(str(b.get('thema') or '')),
+                        esc(str(b.get('text') or ''))))
+
+    akt_html = ''.join('<li>%s</li>' % esc(str(a)) for a in (KOMS.get('aktionen') or [])[:3])
+
+    zeilen = ''
+    for p in sorted(KOMS.get('posts') or [], key=lambda x: -(x.get('n') or 0))[:12]:
+        zeilen += ('<tr><td><a href="%s" target="_blank" rel="noopener">@%s</a></td>'
+                   '<td class="num">%s</td><td class="num">%d %%</td><td class="num">%d %%</td></tr>'
+                   % (esc(p['url']), esc(p.get('profil') or ''), de(p.get('n') or 0),
+                      int(p.get('anteil_positiv') or 0), int(p.get('anteil_negativ') or 0)))
+
+    _ts_teile.append(
+        '<div class="card span6"><span class="arrow">↗</span>'
+        '<h3>Was Kunden sagen</h3>'
+        '<p class="hint">Kommentare zu den %s aktivsten EDEKA-Beiträgen der letzten '
+        '14 Tage. Ton und Thema bewertet mit Jev, Nutzernamen sind nicht gespeichert.</p>%s%s%s'
+        '<details class="tsdet"><summary>Kommentare je Beitrag — Tabelle einblenden</summary>'
+        '<table class="tstbl"><thead><tr><th>Beitrag</th><th class="num">Kommentare</th>'
+        '<th class="num">positiv</th><th class="num">negativ</th></tr></thead>'
+        '<tbody>%s</tbody></table></details></div>'
+        % (de(KOMS.get('n_posts') or 0), med, kpis, themen_html, zeilen))
+
+    _ts_teile.append(
+        '<div class="card span3"><span class="arrow">↗</span><h3>Stimmen im Detail</h3>'
+        '<p class="hint">Die häufigsten Themen — worüber gesprochen wird:</p>%s'
+        '<p class="hint" style="margin-top:6px">Kommentare ohne Namen, '
+        'Stichprobe aus dem Lauf:</p>%s</div>' % (themen_html, bei_html))
+
+    _ts_teile.append(
+        '<div class="card span3"><span class="arrow">↗</span><h3>Fazit</h3>'
+        '<p class="hint">%s</p>'
+        '<p class="hint" style="font-weight:600;color:#16150F">Das sollte EDEKA tun:</p>'
+        '<ul class="bul tsakt">%s</ul></div>'
+        % (esc(str(KOMS.get('fazit') or '')), akt_html))
+else:
+    _ts_teile.append(
+        '<div class="card span6"><span class="arrow">↗</span><h3>Was Kunden sagen</h3>'
+        '<p class="hint">Noch keine Daten — die nächste Analyse läuft montags um 05:00 UTC '
+        'und füllt diesen Abschnitt automatisch.</p></div>')
+
+TS_HTML = '\n'.join(_ts_teile)
+
+TS_CSS = """
+/* Pausche 04 Trends & Stimmen */
+.tsk{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0 6px}
+.tskb{background:#F2F0EB;border-radius:15px;padding:16px 18px}
+.tskb .l{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;color:#6E6A60}
+.tskb .k{font-size:38px;font-weight:700;letter-spacing:-1.6px;line-height:1.1;margin-top:6px}
+.tskb .s{font-size:13.5px;color:#6E6A60;margin-top:6px;line-height:1.35}
+.tskb.gut .k{color:#1E9E5A}.tskb.gut .s{color:#1E9E5A;font-weight:600}
+.tskb.schlecht .k{color:#C0392B}.tskb.schlecht .s{color:#C0392B;font-weight:600}
+.tsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:14px}
+.tsc{background:#F2F0EB;border-radius:15px;overflow:hidden;text-decoration:none;color:inherit;
+     display:flex;flex-direction:column;transition:transform .15s}
+.tsc:hover{transform:translateY(-3px)}
+.tsc img{width:100%;height:160px;object-fit:cover;display:block;background:#E7E4DC}
+.tsc .ph{width:100%;height:160px;border-radius:0;font-size:15px}
+.tcb{padding:10px 12px 13px;display:flex;flex-direction:column;gap:6px}
+.tcc{font-size:14.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tcm{font-size:13px;color:#6E6A60;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tsc .pill{font-size:12.5px;padding:5px 11px;align-self:flex-start;white-space:normal;text-align:left}
+.tsmom{display:flex;height:18px;border-radius:9px;overflow:hidden;background:#E7E4DC;margin:6px 0 8px}
+.tsmom i{height:100%;display:block}
+.tsmom .p{background:#1E9E5A}.tsmom .n{background:#B9B4A4}.tsmom .x{background:#C0392B}
+.tonlbl{display:flex;justify-content:space-between;font-size:13.5px;color:#3E3B33;font-weight:600}
+.tonlbl b{font-variant-numeric:tabular-nums}
+.tonlbl span{display:flex;align-items:center;gap:6px}
+.dotp,.dotn,.dotx{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dotp{background:#1E9E5A}.dotn{background:#B9B4A4}.dotx{background:#C0392B}
+.kb{background:#F2F0EB;border-radius:15px;padding:13px 15px;font-size:14.5px;color:#3E3B33;
+    margin-top:10px;line-height:1.5}
+.kb .kbm{font-size:12px;color:#6E6A60;margin-bottom:5px;text-transform:uppercase;
+    letter-spacing:.7px;font-weight:700}
+details.tsdet{margin-top:14px;border-top:1px solid #E7E4DC;padding-top:11px}
+details.tsdet>summary{font-size:14.5px;font-weight:700;color:#2A60FF;cursor:pointer}
+details.tsdet[open]>summary{margin-bottom:8px}
+.tstbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+.tstbl th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.9px;
+    color:#6E6A60;padding:7px 8px;border-bottom:1px solid #E7E4DC}
+.tstbl td{padding:8px;border-bottom:1px solid #F1F0EB}
+.tstbl td.num,.tstbl th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tstbl a{color:#2A60FF;text-decoration:none;font-weight:600}
+.tsakt li{margin:7px 0}
+.tsintern{background:#E7E4DC;border-radius:15px;padding:16px 18px;margin-top:16px}
+@media(max-width:860px){.tsk{grid-template-columns:1fr}
+  .tsgrid{grid-template-columns:repeat(2,1fr)}.tsc img,.tsc .ph{height:140px}}
+"""
+
 PLAN_HTML = f"""
         {_HYP}
         {_sektion(1, 'Wo stehen wir?', f'<div class="span6">{KPI_HTML}</div>')}
         {_sektion(2, 'Was sollten wir ändern?', _PRIOS, 'Sortiert nach Evidenz, Wirkung und Aufwand')}
         {_sektion(3, 'Warum funktioniert es?', _MUSTER, _MUSTER_SUM, offen=False)}
         {_sektion(4, 'Was machen wir als Nächstes?', PLAN_JS_HTML + f"""<div class="card span6"><h3>So könnte eine gute Woche aussehen</h3>{_WOCHE}</div>""", 'Social-Plan KW 1–8 und Beispielwoche', offen=False)}
+        {TS_SUM}
 """
 
 S3_LEER = f"""
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3>05 · Kampagnen — Wirkung der Kampagnen</h3>
+          <h3>06 · Kampagnen — Wirkung der Kampagnen</h3>
           <p class="hint">Status: keine Datenquellen angebunden — dieser Abschnitt bleibt leer, bis Zugänge bestehen</p>
           <div class="heroRow"><div class="heroStats">
             <div class="hstat"><div class="v">–</div><div class="t"><span class="dot"></span>Aktive Kampagnen</div></div>
@@ -1750,8 +2046,8 @@ S3_LEER = f"""
         </div>
       """
 S3_HTML = KAMP_HTML or S3_LEER
-S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">Was Social schon bewirkt hat</small></span>''' if KAMP_HTML
-          else '''<span class="tab2 dim" data-s="s3" onclick="sec('s3',this)">05 Kampagnen<small class="tabd">noch ohne Daten · Zugang nötig</small></span>''')
+S3_TAB = ('''<span class="tab2" data-s="s3" onclick="sec('s3',this)">06 Kampagnen<small class="tabd">Was Social schon bewirkt hat</small></span>''' if KAMP_HTML
+          else '''<span class="tab2 dim" data-s="s3" onclick="sec('s3',this)">06 Kampagnen<small class="tabd">noch ohne Daten · Zugang nötig</small></span>''')
 
 PLAN_CSS_EXTRA = """
 .eyebrow{display:block;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:10px}
@@ -2020,7 +2316,8 @@ TEMPLATE = """<!DOCTYPE html>
         <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
         <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
         <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
-        <span class="tab2" data-s="s5" onclick="sec('s5',this)">04 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
+        {TS_TAB}
+        <span class="tab2" data-s="s5" onclick="sec('s5',this)">05 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
         {S3_TAB}
         </div>
       </div>
@@ -2235,12 +2532,19 @@ TEMPLATE = """<!DOCTYPE html>
       </div>
     </div>
 
+    <!-- 04 TRENDS & STIMMEN -->
+    <div id="s6" class="sec" style="display:none">
+      <div class="grid">
+        {TS_HTML}
+      </div>
+    </div>
+
     <!-- 05 INSIGHTS -->
     <div id="s5" class="sec" style="display:none">
       <div class="grid">
         <div class="card blue span6">
           <span class="arrow">↗</span>
-          <h3>04 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
+          <h3>05 · Details — alle Erkenntnisse &amp; Empfehlungen</h3>
           <p class="hint">Automatisch abgeleitet aus {de(N_POSTS)} Beiträgen von {de(N_KONTEN)} Profilen</p>
         </div>
 
@@ -2302,7 +2606,7 @@ TEMPLATE = """<!DOCTYPE html>
       Aktivität = Beiträge in den letzten 30 Tagen (Datenstand {STAND}). Uhrzeiten in {TZ_LABEL} (deutsche Ortszeit, aus UTC umgerechnet).
       Wettbewerbsdaten: Meta Ads Library, Deutschland, Status „aktiv", Abfrage {STAND_ADS}, max. 20 Treffer je Marke.
       Quellen: Instagram-Profil- und Beitragsdaten, öffentlich · Census: {de(N_KONTEN)} berücksichtigte Profile von {de(N_GES)} erfassten Konten.
-      Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 05).
+      Reichweite, Impressionen, Kampagnen- und App-Daten sind nicht Teil dieser Auswertung (siehe 06).
       Themenklassifikation: eine Kategorie je Caption, Modell gpt-4o-mini, Kategorien Angebot/Preis, Rezept/Food, Gesund/Bio/Protein, Humor/Team/Azubi, Region/Lieferant, Recruiting/Karriere, Gewinnspiel, Event/Aktion, Sonstiges. {ACC_TEXT}
       Datenaufbereitung: {de(N_AUSGESCHLOSSEN)} Konten ausgeschlossen (nicht in Deutschland bzw. kein EDEKA-Markt, siehe data/excluded_accounts.csv), {de(N_FREMDE_POSTS)} Beiträge fremder Owner entfernt (owner weder das Profil noch der EDEKA-Verbund), {de(N_NO_LIKES)} Beiträge ohne Like-Wert für ER- und Ranking-Auswertungen ausgeblendet ({de(N_POSTS_GUELTIG)} von {de(N_POSTS)} Beiträgen mit Like-Wert).
     </details>
@@ -2459,7 +2763,7 @@ for _p in _parts:
 html_doc = ''.join(_shell)
 assert html_doc.count('<table') == html_doc.count('</table>'), 'Tabelle defekt'
 html_doc = _tw(html_doc)
-html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + PLAN_CSS + PLAN_CSS_EXTRA + NAVCSS + '</style>', 1)
+html_doc = html_doc.replace('</style>', V2_CSS + V3_CSS + EXTRA_CSS + PLAN_CSS + PLAN_CSS_EXTRA + TS_CSS + NAVCSS + '</style>', 1)
 html_doc = html_doc.replace('<body><div class="app">',
                             '<body class="loading"><div class="boot">Daten werden aktualisiert '
                             '&middot; bitte kurz warten.</div><div class="app">', 1)

@@ -1,0 +1,216 @@
+{
+ "stand": "2026-11-26 12:08",
+ "n_posts": 17,
+ "n_kommentare": 273,
+ "kosten_usd": 0.026356,
+ "ton": {
+  "positiv": 64,
+  "neutral": 15,
+  "negativ": 21
+ },
+ "n_ton": {
+  "positiv": 175,
+  "neutral": 42,
+  "negativ": 56
+ },
+ "themen": [
+  {
+   "thema": "Sonstiges",
+   "anzahl": 131
+  },
+  {
+   "thema": "Lob für Content",
+   "anzahl": 49
+  },
+  {
+   "thema": "Markt/Service",
+   "anzahl": 43
+  },
+  {
+   "thema": "Produkt/Qualität",
+   "anzahl": 27
+  },
+  {
+   "thema": "Rezept/Idee",
+   "anzahl": 11
+  },
+  {
+   "thema": "Preis",
+   "anzahl": 8
+  },
+  {
+   "thema": "App/Angebote",
+   "anzahl": 4
+  }
+ ],
+ "offene_fragen": 11,
+ "beispiele": [
+  {
+   "text": "Ich möchte gerne gewinnen da ich nicht viel Geld habe leider",
+   "ton": "negativ",
+   "thema": "Preis"
+  },
+  {
+   "text": "Team noch nie gewonnen",
+   "ton": "negativ",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Satz mit x...😂das war nix",
+   "ton": "negativ",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Bitte",
+   "ton": "neutral",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Pls",
+   "ton": "neutral",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Quajutsu🥷🏽",
+   "ton": "neutral",
+   "thema": "Sonstiges"
+  },
+  {
+   "text": "Mega Aktion!",
+   "ton": "positiv",
+   "thema": "App/Angebote"
+  },
+  {
+   "text": "Mega ❤️🙌🙌🔥",
+   "ton": "positiv",
+   "thema": "Lob für Content"
+  }
+ ],
+ "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfrGSaHBOEk/",
+   "profil": "edeka.berlin",
+   "n": 21,
+   "anteil_positiv": 86,
+   "anteil_negativ": 5
+  },
+  {
+   "url": "https://www.instagram.com/p/Df69VMWjHBo/",
+   "profil": "edeka.fromm",
+   "n": 44,
+   "anteil_positiv": 82,
+   "anteil_negativ": 0
+  },
+  {
+   "url": "https://www.instagram.com/p/DfsW04nsqkG/",
+   "profil": "edeka_stiegler",
+   "n": 6,
+   "anteil_positiv": 83,
+   "anteil_negativ": 17
+  },
+  {
+   "url": "https://www.instagram.com/p/Df7QO3XOux4/",
+   "profil": "edekalippstadt",
+   "n": 22,
+   "anteil_positiv": 41,
+   "anteil_negativ": 41
+  },
+  {
+   "url": "https://www.instagram.com/p/Df_tuszO7ex/",
+   "profil": "edekawiele",
+   "n": 2,
+   "anteil_positiv": 0,
+   "anteil_negativ": 50
+  },
+  {
+   "url": "https://www.instagram.com/p/Df1_QiBhf4E/",
+   "profil": "edekafischer",
+   "n": 7,
+   "anteil_positiv": 71,
+   "anteil_negativ": 14
+  },
+  {
+   "url": "https://www.instagram.com/p/Df9da6Ysh6d/",
+   "profil": "edeka.ziegler",
+   "n": 19,
+   "anteil_positiv": 21,
+   "anteil_negativ": 74
+  },
+  {
+   "url": "https://www.instagram.com/p/DgIVYx_PDVG/",
+   "profil": "edeka_warnowpark",
+   "n": 5,
+   "anteil_positiv": 100,
+   "anteil_negativ": 0
+  },
+  {
+   "url": "https://www.instagram.com/p/Dfz01QQCOKz/",
+   "profil": "edeka.fleck",
+   "n": 6,
+   "anteil_positiv": 83,
+   "anteil_negativ": 0
+  },
+  {
+   "url": "https://www.instagram.com/p/Df47vGMoEHW/",
+   "profil": "edeka_nolte",
+   "n": 13,
+   "anteil_positiv": 69,
+   "anteil_negativ": 15
+  },
+  {
+   "url": "https://www.instagram.com/p/DgFy__sGryU/",
+   "profil": "edekajakobi",
+   "n": 12,
+   "anteil_positiv": 100,
+   "anteil_negativ": 0
+  },
+  {
+   "url": "https://www.instagram.com/p/Df1fTB3uxDY/",
+   "profil": "edekalippstadt",
+   "n": 8,
+   "anteil_positiv": 38,
+   "anteil_negativ": 38
+  },
+  {
+   "url": "https://www.instagram.com/p/Df7xBY5I75J/",
+   "profil": "edeka_gebauer",
+   "n": 41,
+   "anteil_positiv": 39,
+   "anteil_negativ": 22
+  },
+  {
+   "url": "https://www.instagram.com/p/Df42apuNP1H/",
+   "profil": "edekavogt",
+   "n": 4,
+   "anteil_positiv": 75,
+   "anteil_negativ": 25
+  },
+  {
+   "url": "https://www.instagram.com/p/DgIjNM6sbce/",
+   "profil": "edeka_stiegler",
+   "n": 11,
+   "anteil_positiv": 100,
+   "anteil_negativ": 0
+  },
+  {
+   "url": "https://www.instagram.com/p/DRpeeUciIGE/",
+   "profil": "edeka_nolte",
+   "n": 34,
+   "anteil_positiv": 62,
+   "anteil_negativ": 29
+  },
+  {
+   "url": "https://www.instagram.com/p/DfcCxNiOz3c/",
+   "profil": "edekawiele",
+   "n": 18,
+   "anteil_positiv": 72,
+   "anteil_negativ": 22
+  }
+ ],
+ "fazit": "Die Mehrheit der Kommentare zu EDEKA-Posts ist positiv, insbesondere im Hinblick auf den Content. Es gibt allerdings auch einige negative Rückmeldungen, die auf Preis- und Teamproblematik hinweisen. Offene Fragen könnten genutzt werden, um die Interaktion und Kundenzufriedenheit zu verbessern.",
+ "aktionen": [
+  "Ein monatlicher Preisnachlass auf ausgewählte Produkte, um das Budget der Kunden zu entlasten.",
+  "Ein Gewinnspiel, bei dem Kunden an einer Verlosung teilnehmen können, um die positive Interaktion und das Engagement zu fördern.",
+  "Eine regelmäßige Umfrage auf Instagram, um direkte Rückmeldungen zu Service- und Produktqualität zu erhalten und den Kundenwünschen besser gerecht zu werden."
+ ]
+}
