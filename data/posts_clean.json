@@ -1,39 +1,471 @@
 [
  {
+  "id": "https://www.instagram.com/p/DgKX1-SDEOV/",
+  "profil": "edeka",
+  "likes": 63,
+  "kommentare": 0,
+  "datum": "2026-11-25T11:00:01Z",
+  "format": "photo",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 63
+ },
+ {
+  "id": "https://www.instagram.com/p/DgIOsVIE1ki/",
+  "profil": "edeka",
+  "likes": 154,
+  "kommentare": 3,
+  "datum": "2026-11-24T15:02:32Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 157
+ },
+ {
+  "id": "https://www.instagram.com/p/DgIA03_FGLN/",
+  "profil": "edeka",
+  "likes": 90,
+  "kommentare": 9,
+  "datum": "2026-11-24T13:01:25Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 99
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFAjuVCnZU/",
+  "profil": "edeka",
+  "likes": 138,
+  "kommentare": 13,
+  "datum": "2026-11-23T09:00:23Z",
+  "format": "carousel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 151
+ },
+ {
+  "id": "https://www.instagram.com/p/Df9tp2xCg5A/",
+  "profil": "edeka",
+  "likes": 157,
+  "kommentare": 0,
+  "datum": "2026-11-20T13:01:48Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 157
+ },
+ {
+  "id": "https://www.instagram.com/p/Df9FV8aD_Oh/",
+  "profil": "edeka",
+  "likes": 333,
+  "kommentare": 6,
+  "datum": "2026-11-20T07:09:31Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 339
+ },
+ {
+  "id": "https://www.instagram.com/p/Df6vRwMiekY/",
+  "profil": "edeka",
+  "likes": 323,
+  "kommentare": 113,
+  "datum": "2026-11-19T09:18:04Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 436
+ },
+ {
+  "id": "https://www.instagram.com/p/Df4nep7z2FU/",
+  "profil": "edeka",
+  "likes": 222,
+  "kommentare": 46,
+  "datum": "2026-11-18T13:31:47Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 268
+ },
+ {
+  "id": "https://www.instagram.com/p/Df4jYLJMSMq/",
+  "profil": "edeka",
+  "likes": 169,
+  "kommentare": 8,
+  "datum": "2026-11-18T12:59:00Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 177
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfz19UIFOi6/",
+  "profil": "edeka",
+  "likes": 138,
+  "kommentare": 4,
+  "datum": "2026-11-16T17:01:29Z",
+  "format": "reel",
+  "follower": 300308,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 142
+ },
+ {
+  "id": "https://www.instagram.com/p/DgITBQxoWww/",
+  "profil": "edekasuedwest",
+  "likes": 245,
+  "kommentare": 1,
+  "datum": "2026-11-24T15:43:59Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 246
+ },
+ {
+  "id": "https://www.instagram.com/p/DgIF79mIf3v/",
+  "profil": "edekasuedwest",
+  "likes": 54,
+  "kommentare": 0,
+  "datum": "2026-11-24T13:47:06Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 54
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFUr7DITxb/",
+  "profil": "edekasuedwest",
+  "likes": 375,
+  "kommentare": 9,
+  "datum": "2026-11-23T11:57:15Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 384
+ },
+ {
+  "id": "https://www.instagram.com/p/DgCjv33u8zy/",
+  "profil": "edekasuedwest",
+  "likes": 464,
+  "kommentare": 11,
+  "datum": "2026-11-22T10:10:05Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 475
+ },
+ {
+  "id": "https://www.instagram.com/p/DgAh87zuwBR/",
+  "profil": "edekasuedwest",
+  "likes": 654,
+  "kommentare": 13,
+  "datum": "2026-11-21T13:15:01Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 667
+ },
+ {
+  "id": "https://www.instagram.com/p/Df_1OzOuujE/",
+  "profil": "edekasuedwest",
+  "likes": 201,
+  "kommentare": 2,
+  "datum": "2026-11-21T08:45:05Z",
+  "format": "reel",
+  "follower": 69643,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 203
+ },
+ {
+  "id": "https://www.instagram.com/p/DgAfoo1g-qr/",
+  "profil": "edekakochschule",
+  "likes": 22,
+  "kommentare": 0,
+  "datum": "2026-11-21T16:00:01Z",
+  "format": "reel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 22
+ },
+ {
+  "id": "https://www.instagram.com/p/Df6mD3RAHPF/",
+  "profil": "edekakochschule",
+  "likes": 37,
+  "kommentare": 4,
+  "datum": "2026-11-19T09:01:05Z",
+  "format": "reel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 41
+ },
+ {
+  "id": "https://www.instagram.com/p/DfwS2rhOZbO/",
+  "profil": "edekakochschule",
+  "likes": 64,
+  "kommentare": 0,
+  "datum": "2026-11-15T09:01:06Z",
+  "format": "reel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 64
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfr5SWPBOXx/",
+  "profil": "edekakochschule",
+  "likes": 224,
+  "kommentare": 3,
+  "datum": "2026-11-13T16:00:08Z",
+  "format": "reel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 227
+ },
+ {
+  "id": "https://www.instagram.com/p/DffItCxD2K8/",
+  "profil": "edekakochschule",
+  "likes": 271,
+  "kommentare": 14,
+  "datum": "2026-11-08T16:00:30Z",
+  "format": "carousel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 285
+ },
+ {
+  "id": "https://www.instagram.com/p/DfZHuAIDFnh/",
+  "profil": "edekakochschule",
+  "likes": 16,
+  "kommentare": 0,
+  "datum": "2026-11-06T09:00:20Z",
+  "format": "reel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 16
+ },
+ {
+  "id": "https://www.instagram.com/p/DfU1fEsjQd9/",
+  "profil": "edekakochschule",
+  "likes": 24,
+  "kommentare": 2,
+  "datum": "2026-11-04T16:00:08Z",
+  "format": "carousel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 26
+ },
+ {
+  "id": "https://www.instagram.com/p/Dd8IfImlKzl/",
+  "profil": "edekakochschule",
+  "likes": 523,
+  "kommentare": 2,
+  "datum": "2026-10-01T05:13:51Z",
+  "format": "carousel",
+  "follower": 35226,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 525
+ },
+ {
+  "id": "https://www.instagram.com/p/DgK6VU_xKTn/",
+  "profil": "edekasuedbayern",
+  "likes": 171,
+  "kommentare": 148,
+  "datum": "2026-11-25T16:02:32Z",
+  "format": "photo",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 319
+ },
+ {
+  "id": "https://www.instagram.com/p/DgHgBrXkQqQ/",
+  "profil": "edekasuedbayern",
+  "likes": 91,
+  "kommentare": 4,
+  "datum": "2026-11-24T08:13:50Z",
+  "format": "carousel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 95
+ },
+ {
+  "id": "https://www.instagram.com/p/DgClvHXxvlZ/",
+  "profil": "edekasuedbayern",
+  "likes": 190,
+  "kommentare": 1,
+  "datum": "2026-11-22T10:28:21Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 191
+ },
+ {
+  "id": "https://www.instagram.com/p/Df_xJaLxR-O/",
+  "profil": "edekasuedbayern",
+  "likes": 101,
+  "kommentare": 0,
+  "datum": "2026-11-21T08:10:02Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 101
+ },
+ {
+  "id": "https://www.instagram.com/p/Df9S7P1kfjB/",
+  "profil": "edekasuedbayern",
+  "likes": 256,
+  "kommentare": 3,
+  "datum": "2026-11-20T09:06:58Z",
+  "format": "carousel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 259
+ },
+ {
+  "id": "https://www.instagram.com/p/Df42166xKDS/",
+  "profil": "edekasuedbayern",
+  "likes": 186,
+  "kommentare": 7,
+  "datum": "2026-11-18T15:45:34Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 193
+ },
+ {
+  "id": "https://www.instagram.com/p/Df4rH7sEbqB/",
+  "profil": "edekasuedbayern",
+  "likes": 133,
+  "kommentare": 0,
+  "datum": "2026-11-18T14:02:12Z",
+  "format": "carousel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 133
+ },
+ {
+  "id": "https://www.instagram.com/p/Df1kgcvkWI4/",
+  "profil": "edekasuedbayern",
+  "likes": 86,
+  "kommentare": 1,
+  "datum": "2026-11-17T09:06:40Z",
+  "format": "carousel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 87
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfy8q4jxGbL/",
+  "profil": "edekasuedbayern",
+  "likes": 91,
+  "kommentare": 0,
+  "datum": "2026-11-16T08:43:26Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 91
+ },
+ {
+  "id": "https://www.instagram.com/p/DfwYtLDxoe2/",
+  "profil": "edekasuedbayern",
+  "likes": 93,
+  "kommentare": 0,
+  "datum": "2026-11-15T08:48:01Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 93
+ },
+ {
+  "id": "https://www.instagram.com/p/Dftv6VwxNkv/",
+  "profil": "edekasuedbayern",
+  "likes": 92,
+  "kommentare": 0,
+  "datum": "2026-11-14T08:13:04Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 92
+ },
+ {
+  "id": "https://www.instagram.com/p/DfreLpQxdNi/",
+  "profil": "edekasuedbayern",
+  "likes": 150,
+  "kommentare": 4,
+  "datum": "2026-11-13T10:59:49Z",
+  "format": "reel",
+  "follower": 28529,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 154
+ },
+ {
   "id": "https://www.instagram.com/p/DgIqABoskua/",
   "profil": "edeka_stiegler",
-  "likes": 41,
+  "likes": 47,
   "kommentare": 3,
   "datum": "2026-11-24T19:00:03Z",
   "format": "reel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 44
+  "interaktionen": 50
  },
  {
   "id": "https://www.instagram.com/p/DgIjNM6sbce/",
   "profil": "edeka_stiegler",
-  "likes": 348,
-  "kommentare": 310,
+  "likes": 358,
+  "kommentare": 318,
   "datum": "2026-11-23T18:00:02Z",
   "format": "reel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 658
+  "interaktionen": 676
  },
  {
   "id": "https://www.instagram.com/p/DgDZjVrDP-F/",
   "profil": "edeka_stiegler",
-  "likes": 82,
-  "kommentare": 24,
+  "likes": 85,
+  "kommentare": 25,
   "datum": "2026-11-22T18:00:03Z",
   "format": "carousel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 106
+  "interaktionen": 110
  },
  {
   "id": "https://www.instagram.com/p/Df-Wy18s-yZ/",
@@ -74,26 +506,26 @@
  {
   "id": "https://www.instagram.com/p/Df0DrLGsFAN/",
   "profil": "edeka_stiegler",
-  "likes": 314,
+  "likes": 321,
   "kommentare": 4,
   "datum": "2026-11-16T19:00:24Z",
   "format": "reel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 318
+  "interaktionen": 325
  },
  {
   "id": "https://www.instagram.com/p/DfsW04nsqkG/",
   "profil": "edeka_stiegler",
-  "likes": 1998,
+  "likes": 1997,
   "kommentare": 2100,
   "datum": "2026-11-13T19:17:16Z",
   "format": "reel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 4098
+  "interaktionen": 4097
  },
  {
   "id": "https://www.instagram.com/p/DfpwcOusFqT/",
@@ -134,14 +566,158 @@
  {
   "id": "https://www.instagram.com/p/DS5Zk-vDEfX/",
   "profil": "edeka_stiegler",
-  "likes": 71774,
+  "likes": 71771,
   "kommentare": 1427,
   "datum": "2025-12-30T18:00:00Z",
   "format": "reel",
   "follower": 22670,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 73201
+  "interaktionen": 73198
+ },
+ {
+  "id": "https://www.instagram.com/p/DgLSeFOikGt/",
+  "profil": "edeka.fleck",
+  "likes": 15,
+  "kommentare": 1,
+  "datum": "2026-11-25T19:32:53Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 16
+ },
+ {
+  "id": "https://www.instagram.com/p/DgIgdRTIG2j/",
+  "profil": "edeka.fleck",
+  "likes": 47,
+  "kommentare": 0,
+  "datum": "2026-11-24T17:40:27Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 47
+ },
+ {
+  "id": "https://www.instagram.com/p/DgF7dF7oo-g/",
+  "profil": "edeka.fleck",
+  "likes": 72,
+  "kommentare": 3,
+  "datum": "2026-11-23T17:38:59Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 75
+ },
+ {
+  "id": "https://www.instagram.com/p/DgDRSPVIVSA/",
+  "profil": "edeka.fleck",
+  "likes": 84,
+  "kommentare": 9,
+  "datum": "2026-11-22T16:56:34Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 93
+ },
+ {
+  "id": "https://www.instagram.com/p/DgA3JZoCNMi/",
+  "profil": "edeka.fleck",
+  "likes": 10,
+  "kommentare": 1,
+  "datum": "2026-11-21T18:21:11Z",
+  "format": "carousel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 11
+ },
+ {
+  "id": "https://www.instagram.com/p/Df-IAmHwStm/",
+  "profil": "edeka.fleck",
+  "likes": 137,
+  "kommentare": 4,
+  "datum": "2026-11-20T16:51:03Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 141
+ },
+ {
+  "id": "https://www.instagram.com/p/Df7rxfNIoc4/",
+  "profil": "edeka.fleck",
+  "likes": 65,
+  "kommentare": 4,
+  "datum": "2026-11-19T18:06:57Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 69
+ },
+ {
+  "id": "https://www.instagram.com/p/Df47U1gibce/",
+  "profil": "edeka.fleck",
+  "likes": 391,
+  "kommentare": 270,
+  "datum": "2026-11-18T16:24:06Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 661
+ },
+ {
+  "id": "https://www.instagram.com/p/Df2Z7pAoGWg/",
+  "profil": "edeka.fleck",
+  "likes": 92,
+  "kommentare": 1,
+  "datum": "2026-11-17T16:54:39Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 93
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfz01QQCOKz/",
+  "profil": "edeka.fleck",
+  "likes": 572,
+  "kommentare": 378,
+  "datum": "2026-11-16T16:51:22Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 950
+ },
+ {
+  "id": "https://www.instagram.com/p/DfxbofOIAMK/",
+  "profil": "edeka.fleck",
+  "likes": 174,
+  "kommentare": 15,
+  "datum": "2026-11-15T18:33:47Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 189
+ },
+ {
+  "id": "https://www.instagram.com/p/DfxMfzhgTnj/",
+  "profil": "edeka.fleck",
+  "likes": 138,
+  "kommentare": 5,
+  "datum": "2026-11-15T16:20:18Z",
+  "format": "reel",
+  "follower": 27374,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 143
  },
  {
   "id": "https://www.instagram.com/p/Df7sfTQqPkt/",
@@ -302,14 +878,14 @@
  {
   "id": "https://www.instagram.com/p/Df47vGMoEHW/",
   "profil": "edeka_nolte",
-  "likes": 769,
-  "kommentare": 28,
+  "likes": 776,
+  "kommentare": 29,
   "datum": "2026-11-18T16:28:05Z",
   "format": "reel",
   "follower": 15386,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 797
+  "interaktionen": 805
  },
  {
   "id": "https://www.instagram.com/p/Dfuw7zTR9qi/",
@@ -386,26 +962,26 @@
  {
   "id": "https://www.instagram.com/p/DRpeeUciIGE/",
   "profil": "edeka_nolte",
-  "likes": 135427,
-  "kommentare": 5396,
+  "likes": 135423,
+  "kommentare": 5395,
   "datum": "2025-11-29T17:04:51Z",
   "format": "reel",
   "follower": 15386,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 140823
+  "interaktionen": 140818
  },
  {
   "id": "https://www.instagram.com/p/DRnJbtFiPvL/",
   "profil": "edeka_nolte",
-  "likes": 67169,
+  "likes": 67168,
   "kommentare": 1446,
   "datum": "2025-11-28T19:22:01Z",
   "format": "reel",
   "follower": 15386,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 68615
+  "interaktionen": 68614
  },
  {
   "id": "https://www.instagram.com/p/DH0ThPwoIVs/",
@@ -422,38 +998,38 @@
  {
   "id": "https://www.instagram.com/p/DgIHrFiAlnP/",
   "profil": "edekakarriere",
-  "likes": 118,
+  "likes": 125,
   "kommentare": 2,
   "datum": "2026-11-24T14:01:15Z",
   "format": "reel",
   "follower": 14778,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 120
+  "interaktionen": 127
  },
  {
   "id": "https://www.instagram.com/p/DgE_SZGsJPg/",
   "profil": "edekakarriere",
-  "likes": 70,
+  "likes": 72,
   "kommentare": 1,
   "datum": "2026-11-23T08:49:34Z",
   "format": "reel",
   "follower": 14778,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 71
+  "interaktionen": 73
  },
  {
   "id": "https://www.instagram.com/p/Df6xkQSssny/",
   "profil": "edekakarriere",
-  "likes": 158,
+  "likes": 159,
   "kommentare": 3,
   "datum": "2026-11-19T09:37:21Z",
   "format": "reel",
   "follower": 14778,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 161
+  "interaktionen": 162
  },
  {
   "id": "https://www.instagram.com/p/Df4sbFBsc2L/",
@@ -482,14 +1058,14 @@
  {
   "id": "https://www.instagram.com/p/DfrvppbDFai/",
   "profil": "edekakarriere",
-  "likes": 520,
+  "likes": 521,
   "kommentare": 9,
   "datum": "2026-11-13T13:31:38Z",
   "format": "carousel",
   "follower": 14778,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 529
+  "interaktionen": 530
  },
  {
   "id": "https://www.instagram.com/p/Dfmoi5Vs6P_/",
@@ -554,62 +1130,74 @@
  {
   "id": "https://www.instagram.com/p/DeT7UG1hPXa/",
   "profil": "edekakarriere",
-  "likes": 5093,
+  "likes": 5094,
   "kommentare": 8,
   "datum": "2026-10-09T11:00:02Z",
   "format": "reel",
   "follower": 14778,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 5101
+  "interaktionen": 5102
+ },
+ {
+  "id": "https://www.instagram.com/p/DgK0KvlsQKj/",
+  "profil": "edeka.ziegler",
+  "likes": 111,
+  "kommentare": 1,
+  "datum": "2026-11-25T15:11:11Z",
+  "format": "reel",
+  "follower": 14724,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 112
  },
  {
   "id": "https://www.instagram.com/p/DgKSLz0McQe/",
   "profil": "edeka.ziegler",
-  "likes": 65,
+  "likes": 81,
   "kommentare": 1,
   "datum": "2026-11-25T10:19:32Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 66
+  "interaktionen": 82
  },
  {
   "id": "https://www.instagram.com/p/DgIBbUWMmb-/",
   "profil": "edeka.ziegler",
-  "likes": 240,
+  "likes": 249,
   "kommentare": 6,
   "datum": "2026-11-24T13:07:13Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 246
+  "interaktionen": 255
  },
  {
   "id": "https://www.instagram.com/p/DgFRGvkMIOs/",
   "profil": "edeka.ziegler",
-  "likes": 455,
+  "likes": 460,
   "kommentare": 3,
   "datum": "2026-11-23T11:25:36Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 458
+  "interaktionen": 463
  },
  {
   "id": "https://www.instagram.com/p/DgExULvsydJ/",
   "profil": "edeka.ziegler",
-  "likes": 198,
+  "likes": 202,
   "kommentare": 5,
   "datum": "2026-11-23T06:49:17Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 203
+  "interaktionen": 207
  },
  {
   "id": "https://www.instagram.com/p/Df_4dK-s-gL/",
@@ -626,38 +1214,38 @@
  {
   "id": "https://www.instagram.com/p/Df_o9ZVM9kS/",
   "profil": "edeka.ziegler",
-  "likes": 103,
+  "likes": 104,
   "kommentare": 0,
   "datum": "2026-11-21T07:05:37Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 103
+  "interaktionen": 104
  },
  {
   "id": "https://www.instagram.com/p/Df9da6Ysh6d/",
   "profil": "edeka.ziegler",
-  "likes": 980,
+  "likes": 1008,
   "kommentare": 25,
   "datum": "2026-11-20T10:47:31Z",
   "format": "reel",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 1005
+  "interaktionen": 1033
  },
  {
   "id": "https://www.instagram.com/p/Df85gGDMtsz/",
   "profil": "edeka.ziegler",
-  "likes": 395,
+  "likes": 396,
   "kommentare": 13,
   "datum": "2026-11-20T05:24:51Z",
   "format": "photo",
   "follower": 14724,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 408
+  "interaktionen": 409
  },
  {
   "id": "https://www.instagram.com/p/Df7KsOFMyq1/",
@@ -684,40 +1272,28 @@
   "interaktionen": 85
  },
  {
-  "id": "https://www.instagram.com/p/Df39harMwq9/",
-  "profil": "edeka.ziegler",
-  "likes": 158,
-  "kommentare": 1,
-  "datum": "2026-11-18T07:26:25Z",
-  "format": "reel",
-  "follower": 14724,
-  "likes_ok": true,
-  "thema": "Rezept/Food",
-  "interaktionen": 159
- },
- {
   "id": "https://www.instagram.com/p/DgKX5u6wOvs/",
   "profil": "edeka.foodservice",
-  "likes": 29,
+  "likes": 68,
   "kommentare": 0,
   "datum": "2026-11-25T11:00:45Z",
   "format": "reel",
   "follower": 9824,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 29
+  "interaktionen": 68
  },
  {
   "id": "https://www.instagram.com/p/DgIAyFpBcWe/",
   "profil": "edeka.foodservice",
-  "likes": 72,
+  "likes": 109,
   "kommentare": 0,
   "datum": "2026-11-24T13:00:04Z",
   "format": "carousel",
   "follower": 9824,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 72
+  "interaktionen": 109
  },
  {
   "id": "https://www.instagram.com/p/Df92q3DsCKv/",
@@ -734,26 +1310,26 @@
  {
   "id": "https://www.instagram.com/p/Df7I5WDpZgi/",
   "profil": "edeka.foodservice",
-  "likes": 970,
+  "likes": 971,
   "kommentare": 0,
   "datum": "2026-11-19T13:00:59Z",
   "format": "reel",
   "follower": 9824,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 970
+  "interaktionen": 971
  },
  {
   "id": "https://www.instagram.com/p/Df4yFhhBMJN/",
   "profil": "edeka.foodservice",
-  "likes": 224,
+  "likes": 225,
   "kommentare": 12,
   "datum": "2026-11-18T15:03:18Z",
   "format": "reel",
   "follower": 9824,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 236
+  "interaktionen": 237
  },
  {
   "id": "https://www.instagram.com/p/Df1_WFyJIKk/",
@@ -818,14 +1394,14 @@
  {
   "id": "https://www.instagram.com/p/DfPavcDDeO-/",
   "profil": "edeka.foodservice",
-  "likes": 517,
+  "likes": 518,
   "kommentare": 1,
   "datum": "2026-11-02T13:30:02Z",
   "format": "carousel",
   "follower": 9824,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 518
+  "interaktionen": 519
  },
  {
   "id": "https://www.instagram.com/p/C2EyysSCJU3/",
@@ -855,13 +1431,13 @@
   "id": "https://www.instagram.com/p/DgEiX4riixs/",
   "profil": "edeka_goerge",
   "likes": 3,
-  "kommentare": 138,
+  "kommentare": 142,
   "datum": "2026-11-23T04:36:38Z",
   "format": "carousel",
   "follower": 8522,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 141
+  "interaktionen": 145
  },
  {
   "id": "https://www.instagram.com/p/Df_1oeoK2eR/",
@@ -986,26 +1562,26 @@
  {
   "id": "https://www.instagram.com/p/DgGFifqwtIK/",
   "profil": "edeka.nst",
-  "likes": 35,
+  "likes": 36,
   "kommentare": 0,
   "datum": "2026-11-23T19:03:18Z",
   "format": "reel",
   "follower": 8205,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 35
+  "interaktionen": 36
  },
  {
   "id": "https://www.instagram.com/p/DgDgb-hIvYN/",
   "profil": "edeka.nst",
-  "likes": 64,
+  "likes": 66,
   "kommentare": 0,
   "datum": "2026-11-22T19:01:14Z",
   "format": "reel",
   "follower": 8205,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 64
+  "interaktionen": 66
  },
  {
   "id": "https://www.instagram.com/p/DgA1E4bBmoy/",
@@ -1034,38 +1610,38 @@
  {
   "id": "https://www.instagram.com/p/Df7rTWmPDzY/",
   "profil": "edeka.nst",
-  "likes": 20,
+  "likes": 21,
   "kommentare": 0,
   "datum": "2026-11-19T18:01:49Z",
   "format": "reel",
   "follower": 8205,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 20
+  "interaktionen": 21
  },
  {
   "id": "https://www.instagram.com/p/Df4ltnXOJF5/",
   "profil": "edeka.nst",
-  "likes": 77,
+  "likes": 80,
   "kommentare": 1,
   "datum": "2026-11-18T13:15:07Z",
   "format": "reel",
   "follower": 8205,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 78
+  "interaktionen": 81
  },
  {
   "id": "https://www.instagram.com/p/Df2hNMGSSEy/",
   "profil": "edeka.nst",
-  "likes": null,
-  "kommentare": null,
-  "datum": "2026-11-17T17:57:04Z",
+  "likes": 100,
+  "kommentare": 8,
+  "datum": "2026-11-17T17:57:14Z",
   "format": "reel",
   "follower": 8205,
-  "likes_ok": false,
+  "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": null
+  "interaktionen": 108
  },
  {
   "id": "https://www.instagram.com/p/DfzyIn3j4hk/",
@@ -1118,86 +1694,86 @@
  {
   "id": "https://www.instagram.com/p/DcboU1fgafI/",
   "profil": "edeka.nst",
-  "likes": 58657,
+  "likes": 58699,
   "kommentare": 886,
   "datum": "2026-08-24T17:46:01Z",
   "format": "reel",
   "follower": 8205,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 59543
+  "interaktionen": 59585
  },
  {
   "id": "https://www.instagram.com/p/DgIcRcPyYzV/",
   "profil": "edeka_gebauer",
-  "likes": 92,
-  "kommentare": 4,
+  "likes": 98,
+  "kommentare": 5,
   "datum": "2026-11-24T17:00:06Z",
   "format": "reel",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 96
+  "interaktionen": 103
  },
  {
   "id": "https://www.instagram.com/p/DgF3dKnD8cb/",
   "profil": "edeka_gebauer",
-  "likes": 160,
-  "kommentare": 154,
+  "likes": 167,
+  "kommentare": 161,
   "datum": "2026-11-23T17:00:06Z",
   "format": "photo",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 314
+  "interaktionen": 328
  },
  {
   "id": "https://www.instagram.com/p/DgDL2f0Nnze/",
   "profil": "edeka_gebauer",
-  "likes": 47,
+  "likes": 48,
   "kommentare": 7,
   "datum": "2026-11-22T16:00:52Z",
   "format": "reel",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 54
+  "interaktionen": 55
  },
  {
   "id": "https://www.instagram.com/p/Df-JGIASJqG/",
   "profil": "edeka_gebauer",
-  "likes": 130,
+  "likes": 131,
   "kommentare": 10,
   "datum": "2026-11-20T17:00:25Z",
   "format": "reel",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 140
+  "interaktionen": 141
  },
  {
   "id": "https://www.instagram.com/p/Df7xBY5I75J/",
   "profil": "edeka_gebauer",
-  "likes": 600,
+  "likes": 603,
   "kommentare": 118,
   "datum": "2026-11-19T18:56:30Z",
   "format": "reel",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 718
+  "interaktionen": 721
  },
  {
   "id": "https://www.instagram.com/p/Df7dg2LBM8v/",
   "profil": "edeka_gebauer",
-  "likes": 201,
+  "likes": 202,
   "kommentare": 15,
   "datum": "2026-11-19T16:01:17Z",
   "format": "reel",
   "follower": 7896,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 216
+  "interaktionen": 217
  },
  {
   "id": "https://www.instagram.com/p/Df2T4EOp--N/",
@@ -1248,16 +1824,28 @@
   "interaktionen": 36
  },
  {
+  "id": "https://www.instagram.com/p/DgK1FmINrFE/",
+  "profil": "edeka.nordwest",
+  "likes": 18,
+  "kommentare": 2,
+  "datum": "2026-11-25T15:16:26Z",
+  "format": "reel",
+  "follower": 8715,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 20
+ },
+ {
   "id": "https://www.instagram.com/p/Df97gicju80/",
   "profil": "edeka.nordwest",
-  "likes": 90,
+  "likes": 92,
   "kommentare": 4,
   "datum": "2026-11-20T15:03:05Z",
   "format": "reel",
   "follower": 8715,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 94
+  "interaktionen": 96
  },
  {
   "id": "https://www.instagram.com/p/Df7deqdlSyU/",
@@ -1356,40 +1944,28 @@
   "interaktionen": 37
  },
  {
-  "id": "https://www.instagram.com/p/DfPlevMk0j3/",
-  "profil": "edeka.nordwest",
-  "likes": 1872,
-  "kommentare": 6,
-  "datum": "2026-11-02T15:04:36Z",
-  "format": "reel",
-  "follower": 8715,
-  "likes_ok": true,
-  "thema": "Humor/Team/Azubi",
-  "interaktionen": 1878
- },
- {
   "id": "https://www.instagram.com/p/DgKKI2WpZ3s/",
   "profil": "edeka.berlin",
-  "likes": 40,
-  "kommentare": 5,
+  "likes": 103,
+  "kommentare": 11,
   "datum": "2026-11-25T09:01:27Z",
   "format": "reel",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 45
+  "interaktionen": 114
  },
  {
   "id": "https://www.instagram.com/p/DgFAjv0p-LC/",
   "profil": "edeka.berlin",
-  "likes": 132,
+  "likes": 133,
   "kommentare": 7,
   "datum": "2026-11-23T09:01:32Z",
   "format": "reel",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 139
+  "interaktionen": 140
  },
  {
   "id": "https://www.instagram.com/p/DgAt6qQin8w/",
@@ -1406,38 +1982,26 @@
  {
   "id": "https://www.instagram.com/p/Df7I0w-Ct44/",
   "profil": "edeka.berlin",
-  "likes": 116,
+  "likes": 117,
   "kommentare": 15,
   "datum": "2026-11-19T13:00:43Z",
   "format": "photo",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 131
+  "interaktionen": 132
  },
  {
   "id": "https://www.instagram.com/p/Df5G5ADiu6T/",
   "profil": "edeka.berlin",
   "likes": 154,
-  "kommentare": 27,
+  "kommentare": 28,
   "datum": "2026-11-18T18:05:17Z",
   "format": "photo",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 181
- },
- {
-  "id": "https://www.instagram.com/p/Df4nep7z2FU/",
-  "profil": "edeka.berlin",
-  "likes": 222,
-  "kommentare": 46,
-  "datum": "2026-11-18T13:31:47Z",
-  "format": "reel",
-  "follower": 29651,
-  "likes_ok": true,
-  "thema": "Gesund/Bio/Protein",
-  "interaktionen": 268
+  "interaktionen": 182
  },
  {
   "id": "https://www.instagram.com/p/Df1zNSsCLWG/",
@@ -1466,14 +2030,14 @@
  {
   "id": "https://www.instagram.com/p/Dfy-_GvtVuH/",
   "profil": "edeka.berlin",
-  "likes": 199,
+  "likes": 200,
   "kommentare": 11,
   "datum": "2026-11-16T09:01:24Z",
   "format": "reel",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 210
+  "interaktionen": 211
  },
  {
   "id": "https://www.instagram.com/p/DfwhCMqCtVr/",
@@ -1490,98 +2054,98 @@
  {
   "id": "https://www.instagram.com/p/DfrGSaHBOEk/",
   "profil": "edeka.berlin",
-  "likes": 16430,
-  "kommentare": 38521,
+  "likes": 16432,
+  "kommentare": 38536,
   "datum": "2026-11-13T07:31:31Z",
   "format": "reel",
   "follower": 29651,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 54951
+  "interaktionen": 54968
  },
  {
   "id": "https://www.instagram.com/p/DgKgijJiikX/",
   "profil": "edeka.minden.hannover",
-  "likes": 22,
+  "likes": 54,
   "kommentare": 0,
   "datum": "2026-11-25T12:16:29Z",
   "format": "photo",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 22
+  "interaktionen": 54
  },
  {
   "id": "https://www.instagram.com/p/Df_pPcyEkiJ/",
   "profil": "edeka.minden.hannover",
-  "likes": 51,
+  "likes": 55,
   "kommentare": 1,
   "datum": "2026-11-21T07:01:11Z",
   "format": "reel",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 52
+  "interaktionen": 56
  },
  {
   "id": "https://www.instagram.com/p/Df9xG9mG7pj/",
   "profil": "edeka.minden.hannover",
-  "likes": 106,
+  "likes": 108,
   "kommentare": 1,
   "datum": "2026-11-20T13:31:06Z",
   "format": "carousel",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 107
+  "interaktionen": 109
  },
  {
   "id": "https://www.instagram.com/p/Df7I7rEiBEW/",
   "profil": "edeka.minden.hannover",
-  "likes": 258,
+  "likes": 260,
   "kommentare": 1,
   "datum": "2026-11-19T13:01:56Z",
   "format": "carousel",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 259
+  "interaktionen": 261
  },
  {
   "id": "https://www.instagram.com/p/Df4P71yFcvM/",
   "profil": "edeka.minden.hannover",
-  "likes": 302,
+  "likes": 305,
   "kommentare": 3,
   "datum": "2026-11-18T10:05:24Z",
   "format": "photo",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 305
+  "interaktionen": 308
  },
  {
   "id": "https://www.instagram.com/p/Df1-KfFNpTI/",
   "profil": "edeka.minden.hannover",
-  "likes": 180,
+  "likes": 183,
   "kommentare": 0,
   "datum": "2026-11-17T12:59:20Z",
   "format": "reel",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 180
+  "interaktionen": 183
  },
  {
   "id": "https://www.instagram.com/p/Df0Vb9_RjQm/",
   "profil": "edeka.minden.hannover",
-  "likes": 103,
+  "likes": 107,
   "kommentare": 0,
   "datum": "2026-11-16T21:37:00Z",
   "format": "reel",
   "follower": 8872,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 103
+  "interaktionen": 107
  },
  {
   "id": "https://www.instagram.com/p/DfxPnnRjp-0/",
@@ -1620,76 +2184,64 @@
   "interaktionen": 76
  },
  {
-  "id": "https://www.instagram.com/p/DfrUx3ZRh0i/",
-  "profil": "edeka.minden.hannover",
-  "likes": 69,
-  "kommentare": 1,
-  "datum": "2026-11-13T09:39:00Z",
-  "format": "reel",
-  "follower": 8872,
-  "likes_ok": true,
-  "thema": "Sonstiges",
-  "interaktionen": 70
- },
- {
   "id": "https://www.instagram.com/p/DgKKHLWoDr9/",
   "profil": "edeka_warnowpark",
-  "likes": 59,
-  "kommentare": 38,
+  "likes": 97,
+  "kommentare": 61,
   "datum": "2026-11-25T09:00:07Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 97
+  "interaktionen": 158
  },
  {
   "id": "https://www.instagram.com/p/DgIVYx_PDVG/",
   "profil": "edeka_warnowpark",
-  "likes": 389,
-  "kommentare": 483,
+  "likes": 416,
+  "kommentare": 543,
   "datum": "2026-11-24T16:00:08Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 872
+  "interaktionen": 959
  },
  {
   "id": "https://www.instagram.com/p/DgFAiUiNzVX/",
   "profil": "edeka_warnowpark",
-  "likes": 257,
-  "kommentare": 105,
+  "likes": 245,
+  "kommentare": 110,
   "datum": "2026-11-23T09:00:13Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 362
+  "interaktionen": 355
  },
  {
   "id": "https://www.instagram.com/p/DgCbuo0J-PK/",
   "profil": "edeka_warnowpark",
-  "likes": 52,
+  "likes": 55,
   "kommentare": 0,
   "datum": "2026-11-22T09:00:05Z",
   "format": "carousel",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 52
+  "interaktionen": 55
  },
  {
   "id": "https://www.instagram.com/p/Df_28MHBgrq/",
   "profil": "edeka_warnowpark",
-  "likes": 335,
-  "kommentare": 300,
+  "likes": 337,
+  "kommentare": 301,
   "datum": "2026-11-21T09:00:10Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 635
+  "interaktionen": 638
  },
  {
   "id": "https://www.instagram.com/p/Df6tXVORCz_/",
@@ -1706,14 +2258,14 @@
  {
   "id": "https://www.instagram.com/p/Df4IjY_hGD1/",
   "profil": "edeka_warnowpark",
-  "likes": 165,
+  "likes": 181,
   "kommentare": 0,
   "datum": "2026-11-18T09:00:09Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 165
+  "interaktionen": 181
  },
  {
   "id": "https://www.instagram.com/p/Dfy_BSuCI77/",
@@ -1730,14 +2282,14 @@
  {
   "id": "https://www.instagram.com/p/DfxRH_rjNnG/",
   "profil": "edeka_warnowpark",
-  "likes": 159,
+  "likes": 160,
   "kommentare": 0,
   "datum": "2026-11-15T17:00:21Z",
   "format": "photo",
   "follower": 7951,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 159
+  "interaktionen": 160
  },
  {
   "id": "https://www.instagram.com/p/DNx6LgA0AYt/",
@@ -1910,14 +2462,14 @@
  {
   "id": "https://www.instagram.com/p/Df_tuszO7ex/",
   "profil": "edekawiele",
-  "likes": 1223,
+  "likes": 1237,
   "kommentare": 2,
   "datum": "2026-11-21T07:40:38Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 1225
+  "interaktionen": 1239
  },
  {
   "id": "https://www.instagram.com/p/Df7lBQpMT1z/",
@@ -1934,134 +2486,170 @@
  {
   "id": "https://www.instagram.com/p/Df5RZkasoc8/",
   "profil": "edekawiele",
-  "likes": 34,
+  "likes": 37,
   "kommentare": 0,
   "datum": "2026-11-18T19:38:46Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 34
+  "interaktionen": 37
  },
  {
   "id": "https://www.instagram.com/p/Df2qJWLMLBS/",
   "profil": "edekawiele",
-  "likes": 94,
+  "likes": 97,
   "kommentare": 4,
   "datum": "2026-11-17T19:16:42Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 98
+  "interaktionen": 101
  },
  {
   "id": "https://www.instagram.com/p/DfpwdznOE3o/",
   "profil": "edekawiele",
-  "likes": 70,
+  "likes": 72,
   "kommentare": 5,
   "datum": "2026-11-12T19:02:09Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 75
+  "interaktionen": 77
  },
  {
   "id": "https://www.instagram.com/p/DfjtETju2i-/",
   "profil": "edekawiele",
-  "likes": 128,
+  "likes": 130,
   "kommentare": 2,
   "datum": "2026-11-10T10:36:22Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 130
+  "interaktionen": 132
  },
  {
   "id": "https://www.instagram.com/p/DfelNN-O2A-/",
   "profil": "edekawiele",
-  "likes": 125,
+  "likes": 126,
   "kommentare": 7,
   "datum": "2026-11-08T10:59:40Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 132
+  "interaktionen": 133
  },
  {
   "id": "https://www.instagram.com/p/DfcCxNiOz3c/",
   "profil": "edekawiele",
-  "likes": 489250,
-  "kommentare": 2262,
+  "likes": 492227,
+  "kommentare": 2284,
   "datum": "2026-11-07T11:12:10Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 491512
+  "interaktionen": 494511
  },
  {
   "id": "https://www.instagram.com/p/DfW1MENuO8y/",
   "profil": "edekawiele",
-  "likes": 224,
+  "likes": 225,
   "kommentare": 2,
   "datum": "2026-11-05T10:36:43Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 226
+  "interaktionen": 227
  },
  {
   "id": "https://www.instagram.com/p/DTSpiRwDH9p/",
   "profil": "edekawiele",
-  "likes": 8453,
+  "likes": 8455,
   "kommentare": 148,
   "datum": "2026-01-09T13:21:26Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 8601
+  "interaktionen": 8603
  },
  {
   "id": "https://www.instagram.com/p/DM-HEZzMfGL/",
   "profil": "edekawiele",
-  "likes": 15025,
+  "likes": 15026,
   "kommentare": 14,
   "datum": "2025-08-05T10:49:30Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 15039
+  "interaktionen": 15040
  },
  {
   "id": "https://www.instagram.com/p/C46U7FbMZYQ/",
   "profil": "edekawiele",
-  "likes": 1144,
+  "likes": 1145,
   "kommentare": 11,
   "datum": "2024-03-24T21:02:51Z",
   "format": "reel",
   "follower": 7330,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 1155
+  "interaktionen": 1156
+ },
+ {
+  "id": "https://www.instagram.com/p/DgLOlLUMjmN/",
+  "profil": "edeka_buchner",
+  "likes": 15,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:58:30Z",
+  "format": "photo",
+  "follower": 5209,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 15
+ },
+ {
+  "id": "https://www.instagram.com/p/DgLNDKvxmWo/",
+  "profil": "edeka_buchner",
+  "likes": 14,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:45:05Z",
+  "format": "photo",
+  "follower": 5209,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 14
+ },
+ {
+  "id": "https://www.instagram.com/p/DgLAAUhDRi6/",
+  "profil": "edeka_buchner",
+  "likes": 19,
+  "kommentare": 1,
+  "datum": "2026-11-25T16:51:00Z",
+  "format": "carousel",
+  "follower": 5209,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 20
  },
  {
   "id": "https://www.instagram.com/p/DgJ6mdrlQyN/",
   "profil": "edeka_buchner",
-  "likes": 26,
+  "likes": 38,
   "kommentare": 0,
   "datum": "2026-11-25T06:44:32Z",
   "format": "carousel",
   "follower": 5209,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 26
+  "interaktionen": 38
  },
  {
   "id": "https://www.instagram.com/p/Df7PhtRDQia/",
@@ -2160,40 +2748,16 @@
   "interaktionen": 12
  },
  {
-  "id": "https://www.instagram.com/p/Dfr2YtcjQ1-/",
-  "profil": "edeka_buchner",
-  "likes": 34,
+  "id": "https://www.instagram.com/p/DgK0ktMh67t/",
+  "profil": "edekacramer",
+  "likes": 3,
   "kommentare": 0,
-  "datum": "2026-11-13T14:30:29Z",
-  "format": "carousel",
-  "follower": 5209,
-  "likes_ok": true,
-  "thema": "Gesund/Bio/Protein",
-  "interaktionen": 34
- },
- {
-  "id": "https://www.instagram.com/p/DfrvrmDDeNp/",
-  "profil": "edeka_buchner",
-  "likes": 36,
-  "kommentare": 1,
-  "datum": "2026-11-13T13:31:54Z",
-  "format": "carousel",
-  "follower": 5209,
+  "datum": "2026-11-25T15:11:07Z",
+  "format": "photo",
+  "follower": 4813,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 37
- },
- {
-  "id": "https://www.instagram.com/p/DfrsDL8tX5A/",
-  "profil": "edeka_buchner",
-  "likes": 17,
-  "kommentare": 0,
-  "datum": "2026-11-13T13:08:12Z",
-  "format": "reel",
-  "follower": 5209,
-  "likes_ok": true,
-  "thema": "Region/Lieferant",
-  "interaktionen": 17
+  "interaktionen": 3
  },
  {
   "id": "https://www.instagram.com/p/DgIcb9HAJFo/",
@@ -2234,14 +2798,14 @@
  {
   "id": "https://www.instagram.com/p/Df4xxh8snh9/",
   "profil": "edekacramer",
-  "likes": 24,
+  "likes": 25,
   "kommentare": 0,
   "datum": "2026-11-18T15:00:20Z",
   "format": "photo",
   "follower": 4813,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 24
+  "interaktionen": 25
  },
  {
   "id": "https://www.instagram.com/p/Df4osR_hwL9/",
@@ -2292,21 +2856,21 @@
   "interaktionen": 26
  },
  {
-  "id": "https://www.instagram.com/p/DfkUJmVCoNE/",
-  "profil": "edekacramer",
-  "likes": 130,
-  "kommentare": 2,
-  "datum": "2026-11-10T16:16:39Z",
-  "format": "carousel",
-  "follower": 4813,
-  "likes_ok": true,
-  "thema": "Sonstiges",
-  "interaktionen": 132
+  "id": "https://www.instagram.com/p/DgLKFgUAzgK/",
+  "profil": "dein.edeka",
+  "likes": 0,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:19:24Z",
+  "format": "reel",
+  "follower": 5020,
+  "likes_ok": false,
+  "thema": "Angebot/Preis",
+  "interaktionen": null
  },
  {
   "id": "https://www.instagram.com/p/DgHq73KumDu/",
   "profil": "dein.edeka",
-  "likes": 0,
+  "likes": 1,
   "kommentare": 0,
   "datum": "2026-11-24T09:50:24Z",
   "format": "reel",
@@ -2436,40 +3000,28 @@
   "interaktionen": 2
  },
  {
-  "id": "https://www.instagram.com/p/Df12qRov4S0/",
-  "profil": "dein.edeka",
-  "likes": 3,
-  "kommentare": 0,
-  "datum": "2026-11-17T11:46:30Z",
-  "format": "reel",
-  "follower": 5020,
-  "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 3
- },
- {
   "id": "https://www.instagram.com/p/DgKQguxild2/",
   "profil": "edeka.schneidermarkt",
-  "likes": 60,
+  "likes": 91,
   "kommentare": 0,
   "datum": "2026-11-25T09:55:59Z",
   "format": "carousel",
   "follower": 4608,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 60
+  "interaktionen": 91
  },
  {
   "id": "https://www.instagram.com/p/DgIBjnHiLhq/",
   "profil": "edeka.schneidermarkt",
-  "likes": 13,
+  "likes": 14,
   "kommentare": 1,
   "datum": "2026-11-24T13:06:52Z",
   "format": "photo",
   "follower": 4608,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 14
+  "interaktionen": 15
  },
  {
   "id": "https://www.instagram.com/p/DgF3fkACHav/",
@@ -2594,14 +3146,14 @@
  {
   "id": "https://www.instagram.com/p/DgFd7qmNZ-w/",
   "profil": "edekafischer",
-  "likes": 108,
+  "likes": 109,
   "kommentare": 0,
   "datum": "2026-11-23T13:18:04Z",
   "format": "reel",
   "follower": 4906,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 108
+  "interaktionen": 109
  },
  {
   "id": "https://www.instagram.com/p/Df-JwsmlGH5/",
@@ -2630,14 +3182,14 @@
  {
   "id": "https://www.instagram.com/p/Df1_QiBhf4E/",
   "profil": "edekafischer",
-  "likes": 1226,
+  "likes": 1229,
   "kommentare": 9,
   "datum": "2026-11-17T13:00:00Z",
   "format": "reel",
   "follower": 4906,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 1235
+  "interaktionen": 1238
  },
  {
   "id": "https://www.instagram.com/p/Dfz2NxQHADr/",
@@ -2678,14 +3230,14 @@
  {
   "id": "https://www.instagram.com/p/Dfj9v4ABXXj/",
   "profil": "edekafischer",
-  "likes": 4821,
-  "kommentare": 100,
+  "likes": 4845,
+  "kommentare": 101,
   "datum": "2026-11-10T13:00:00Z",
   "format": "reel",
   "follower": 4906,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 4921
+  "interaktionen": 4946
  },
  {
   "id": "https://www.instagram.com/p/Dfh0zmVkWT7/",
@@ -2698,6 +3250,18 @@
   "likes_ok": true,
   "thema": "Angebot/Preis",
   "interaktionen": 11
+ },
+ {
+  "id": "https://www.instagram.com/p/DgK6SuKlHX0/",
+  "profil": "edeka.harburg",
+  "likes": 14,
+  "kommentare": 0,
+  "datum": "2026-11-25T16:01:05Z",
+  "format": "photo",
+  "follower": 4156,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 14
  },
  {
   "id": "https://www.instagram.com/p/DgFgMWdlKht/",
@@ -2796,18 +3360,6 @@
   "interaktionen": 14
  },
  {
-  "id": "https://www.instagram.com/p/De9qVwHjX5v/",
-  "profil": "edeka.harburg",
-  "likes": 16,
-  "kommentare": 1,
-  "datum": "2026-10-26T16:00:10Z",
-  "format": "photo",
-  "follower": 4156,
-  "likes_ok": true,
-  "thema": "Sonstiges",
-  "interaktionen": 17
- },
- {
   "id": "https://www.instagram.com/p/C5qV5HdNHec/",
   "profil": "edeka.harburg",
   "likes": 156,
@@ -2822,26 +3374,26 @@
  {
   "id": "https://www.instagram.com/p/C5qVycqtlPi/",
   "profil": "edeka.harburg",
-  "likes": 165,
+  "likes": 164,
   "kommentare": 14,
   "datum": "2024-04-12T12:33:26Z",
   "format": "photo",
   "follower": 4156,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 179
+  "interaktionen": 178
  },
  {
   "id": "https://www.instagram.com/p/C5qVvyvNxN6/",
   "profil": "edeka.harburg",
-  "likes": 151,
+  "likes": 152,
   "kommentare": 7,
   "datum": "2024-04-12T12:33:04Z",
   "format": "photo",
   "follower": 4156,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 158
+  "interaktionen": 159
  },
  {
   "id": "https://www.instagram.com/p/DgAdooyo_mS/",
@@ -2978,14 +3530,14 @@
  {
   "id": "https://www.instagram.com/p/Dfznk8HosY0/",
   "profil": "edeka_hayunga",
-  "likes": 239,
+  "likes": 240,
   "kommentare": 15,
   "datum": "2026-11-16T14:56:50Z",
   "format": "reel",
   "follower": 3978,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 254
+  "interaktionen": 255
  },
  {
   "id": "https://www.instagram.com/p/DfSGzz3oyXZ/",
@@ -3086,38 +3638,38 @@
  {
   "id": "https://www.instagram.com/p/DgKoeyOtyJp/",
   "profil": "ecentereggert",
-  "likes": 6,
+  "likes": 17,
   "kommentare": 0,
   "datum": "2026-11-25T13:26:09Z",
   "format": "reel",
   "follower": 4118,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 6
+  "interaktionen": 17
  },
  {
   "id": "https://www.instagram.com/p/DgIOUXmttBo/",
   "profil": "ecentereggert",
-  "likes": 253,
-  "kommentare": 125,
+  "likes": 260,
+  "kommentare": 134,
   "datum": "2026-11-24T14:58:58Z",
   "format": "reel",
   "follower": 4118,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 378
+  "interaktionen": 394
  },
  {
   "id": "https://www.instagram.com/p/DgFmVeltroQ/",
   "profil": "ecentereggert",
-  "likes": 92,
+  "likes": 95,
   "kommentare": 2,
   "datum": "2026-11-23T14:31:22Z",
   "format": "reel",
   "follower": 4118,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 94
+  "interaktionen": 97
  },
  {
   "id": "https://www.instagram.com/p/DgFV0KJjas_/",
@@ -3134,14 +3686,14 @@
  {
   "id": "https://www.instagram.com/p/DgCtmqFt0Xi/",
   "profil": "ecentereggert",
-  "likes": 92,
+  "likes": 94,
   "kommentare": 4,
   "datum": "2026-11-22T11:36:19Z",
   "format": "photo",
   "follower": 4118,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 96
+  "interaktionen": 98
  },
  {
   "id": "https://www.instagram.com/p/Df-AlS-NoX4/",
@@ -3158,26 +3710,14 @@
  {
   "id": "https://www.instagram.com/p/Df1w1p8N0RF/",
   "profil": "ecentereggert",
-  "likes": 271,
+  "likes": 273,
   "kommentare": 23,
   "datum": "2026-11-17T10:54:29Z",
   "format": "photo",
   "follower": 4118,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 294
- },
- {
-  "id": "https://www.instagram.com/p/DfzH_39tZaF/",
-  "profil": "ecentereggert",
-  "likes": 2755,
-  "kommentare": 53,
-  "datum": "2026-11-16T10:19:39Z",
-  "format": "reel",
-  "follower": 4118,
-  "likes_ok": true,
-  "thema": "Recruiting/Karriere",
-  "interaktionen": 2808
+  "interaktionen": 296
  },
  {
   "id": "https://www.instagram.com/p/De1G_2tNGHW/",
@@ -3204,28 +3744,40 @@
   "interaktionen": 39
  },
  {
+  "id": "https://www.instagram.com/p/DgKzj_itC37/",
+  "profil": "edeka_eble",
+  "likes": 30,
+  "kommentare": 1,
+  "datum": "2026-11-25T15:05:13Z",
+  "format": "reel",
+  "follower": 4383,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 31
+ },
+ {
   "id": "https://www.instagram.com/p/DgKL7SskTbR/",
   "profil": "edeka_eble",
-  "likes": 40,
+  "likes": 56,
   "kommentare": 1,
   "datum": "2026-11-25T09:15:56Z",
   "format": "carousel",
   "follower": 4383,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 41
+  "interaktionen": 57
  },
  {
   "id": "https://www.instagram.com/p/DgHNSsdg6Bb/",
   "profil": "edeka_eble",
-  "likes": 179,
-  "kommentare": 2,
+  "likes": 182,
+  "kommentare": 4,
   "datum": "2026-11-24T05:30:05Z",
   "format": "reel",
   "follower": 4383,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 181
+  "interaktionen": 186
  },
  {
   "id": "https://www.instagram.com/p/DgE-5nPR3vT/",
@@ -3300,18 +3852,6 @@
   "interaktionen": 90
  },
  {
-  "id": "https://www.instagram.com/p/Df7n86fRIOe/",
-  "profil": "edeka_eble",
-  "likes": 30,
-  "kommentare": 0,
-  "datum": "2026-11-19T17:32:19Z",
-  "format": "photo",
-  "follower": 4383,
-  "likes_ok": true,
-  "thema": "Event/Aktion",
-  "interaktionen": 30
- },
- {
   "id": "https://www.instagram.com/p/DfzMKQyqIp5/",
   "profil": "edeka_eble",
   "likes": 149,
@@ -3374,26 +3914,26 @@
  {
   "id": "https://www.instagram.com/p/Df7QO3XOux4/",
   "profil": "edekalippstadt",
-  "likes": 2569,
+  "likes": 2573,
   "kommentare": 50,
   "datum": "2026-11-19T14:08:41Z",
   "format": "reel",
   "follower": 3955,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 2619
+  "interaktionen": 2623
  },
  {
   "id": "https://www.instagram.com/p/Df1fTB3uxDY/",
   "profil": "edekalippstadt",
-  "likes": 704,
+  "likes": 706,
   "kommentare": 21,
   "datum": "2026-11-17T08:24:46Z",
   "format": "reel",
   "follower": 3955,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 725
+  "interaktionen": 727
  },
  {
   "id": "https://www.instagram.com/p/DfrsQseu2Li/",
@@ -3494,38 +4034,38 @@
  {
   "id": "https://www.instagram.com/p/DgKbIUvDpw9/",
   "profil": "edekajakobi",
-  "likes": 77,
-  "kommentare": 4,
+  "likes": 167,
+  "kommentare": 6,
   "datum": "2026-11-25T11:28:51Z",
   "format": "carousel",
   "follower": 4054,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 81
+  "interaktionen": 173
  },
  {
   "id": "https://www.instagram.com/p/DgFy__sGryU/",
   "profil": "edekajakobi",
-  "likes": 428,
-  "kommentare": 315,
+  "likes": 440,
+  "kommentare": 323,
   "datum": "2026-11-23T17:00:10Z",
   "format": "reel",
   "follower": 4054,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 743
+  "interaktionen": 763
  },
  {
   "id": "https://www.instagram.com/p/DgFLt-SEs-V/",
   "profil": "edekajakobi",
-  "likes": 73,
+  "likes": 76,
   "kommentare": 2,
   "datum": "2026-11-23T10:38:42Z",
   "format": "reel",
   "follower": 4054,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 75
+  "interaktionen": 78
  },
  {
   "id": "https://www.instagram.com/p/Df9n7-yjxTY/",
@@ -3578,14 +4118,14 @@
  {
   "id": "https://www.instagram.com/p/DfowYAAHBhF/",
   "profil": "edekajakobi",
-  "likes": 157,
+  "likes": 158,
   "kommentare": 21,
   "datum": "2026-11-12T09:41:00Z",
   "format": "reel",
   "follower": 4054,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 178
+  "interaktionen": 179
  },
  {
   "id": "https://www.instagram.com/p/Dfg2Iq-k4oK/",
@@ -3622,6 +4162,342 @@
   "likes_ok": true,
   "thema": "Event/Aktion",
   "interaktionen": 110
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFVMQfJR3G/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 221,
+  "kommentare": 14,
+  "datum": "2026-11-23T12:01:04Z",
+  "format": "carousel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 235
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFK4dnRY5r/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 53,
+  "kommentare": 2,
+  "datum": "2026-11-23T10:30:05Z",
+  "format": "reel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 55
+ },
+ {
+  "id": "https://www.instagram.com/p/Df9f-SHjn9s/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 16,
+  "kommentare": 0,
+  "datum": "2026-11-20T11:02:08Z",
+  "format": "reel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 16
+ },
+ {
+  "id": "https://www.instagram.com/p/Df67sivisuc/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 40,
+  "kommentare": 0,
+  "datum": "2026-11-19T11:06:08Z",
+  "format": "carousel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 40
+ },
+ {
+  "id": "https://www.instagram.com/p/Df48EP1CkTJ/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 51,
+  "kommentare": 2,
+  "datum": "2026-11-18T16:30:42Z",
+  "format": "photo",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 53
+ },
+ {
+  "id": "https://www.instagram.com/p/Df0VYJGjYji/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 308,
+  "kommentare": 2,
+  "datum": "2026-11-16T21:35:13Z",
+  "format": "carousel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 310
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfz17teiicq/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 276,
+  "kommentare": 11,
+  "datum": "2026-11-16T17:01:22Z",
+  "format": "photo",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 287
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfpis8nxKAr/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 36,
+  "kommentare": 0,
+  "datum": "2026-11-12T17:00:04Z",
+  "format": "reel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 36
+ },
+ {
+  "id": "https://www.instagram.com/p/DfnBX4uDZIV/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 249,
+  "kommentare": 11,
+  "datum": "2026-11-11T17:30:02Z",
+  "format": "carousel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 260
+ },
+ {
+  "id": "https://www.instagram.com/p/DfmU1lKj4b5/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 123,
+  "kommentare": 4,
+  "datum": "2026-11-11T11:01:32Z",
+  "format": "carousel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 127
+ },
+ {
+  "id": "https://www.instagram.com/p/DV8SiSMl7hz/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 144,
+  "kommentare": 12,
+  "datum": "2026-03-16T10:30:00Z",
+  "format": "reel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 156
+ },
+ {
+  "id": "https://www.instagram.com/p/DIHbe16I19u/",
+  "profil": "edeka_center_angerbogen",
+  "likes": 130,
+  "kommentare": 2,
+  "datum": "2025-04-06T19:00:18Z",
+  "format": "reel",
+  "follower": 3927,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 132
+ },
+ {
+  "id": "https://www.instagram.com/p/Df6hV2KCmui/",
+  "profil": "ecenterluening",
+  "likes": 110,
+  "kommentare": 0,
+  "datum": "2026-11-19T07:15:44Z",
+  "format": "photo",
+  "follower": 3571,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 110
+ },
+ {
+  "id": "https://www.instagram.com/p/DfFTomPgUgc/",
+  "profil": "ecenterluening",
+  "likes": 481,
+  "kommentare": 16,
+  "datum": "2026-10-29T15:18:28Z",
+  "format": "reel",
+  "follower": 3571,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 497
+ },
+ {
+  "id": "https://www.instagram.com/p/DeKAOoBgtPt/",
+  "profil": "ecenterluening",
+  "likes": 60,
+  "kommentare": 0,
+  "datum": "2026-10-06T14:38:09Z",
+  "format": "reel",
+  "follower": 3571,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 60
+ },
+ {
+  "id": "https://www.instagram.com/p/DVv9do0DHP2/",
+  "profil": "ecenterluening",
+  "likes": 502,
+  "kommentare": 27,
+  "datum": "2026-03-11T15:40:25Z",
+  "format": "reel",
+  "follower": 3571,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 529
+ },
+ {
+  "id": "https://www.instagram.com/p/DVgfd_kjC-_/",
+  "profil": "ecenterluening",
+  "likes": 20645,
+  "kommentare": 991,
+  "datum": "2026-03-05T15:25:14Z",
+  "format": "reel",
+  "follower": 3571,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 21636
+ },
+ {
+  "id": "https://www.instagram.com/p/DgHeJWdDaFk/",
+  "profil": "ecenter_brawopark",
+  "likes": 79,
+  "kommentare": 69,
+  "datum": "2026-11-24T07:57:25Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 148
+ },
+ {
+  "id": "https://www.instagram.com/p/Df7zs3fDf_J/",
+  "profil": "ecenter_brawopark",
+  "likes": 32,
+  "kommentare": 0,
+  "datum": "2026-11-19T19:14:52Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 32
+ },
+ {
+  "id": "https://www.instagram.com/p/DfjmEeSghZR/",
+  "profil": "ecenter_brawopark",
+  "likes": 5,
+  "kommentare": 0,
+  "datum": "2026-11-10T09:33:59Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 5
+ },
+ {
+  "id": "https://www.instagram.com/p/DfMXFNNCPtK/",
+  "profil": "ecenter_brawopark",
+  "likes": 165,
+  "kommentare": 5,
+  "datum": "2026-11-01T09:00:04Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 170
+ },
+ {
+  "id": "https://www.instagram.com/p/DfJyUz6CKu9/",
+  "profil": "ecenter_brawopark",
+  "likes": 96,
+  "kommentare": 1,
+  "datum": "2026-10-31T09:00:04Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 97
+ },
+ {
+  "id": "https://www.instagram.com/p/DfAXolMjdGv/",
+  "profil": "ecenter_brawopark",
+  "likes": 32,
+  "kommentare": 0,
+  "datum": "2026-10-27T17:14:26Z",
+  "format": "carousel",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 32
+ },
+ {
+  "id": "https://www.instagram.com/p/Dd8X6uNt6mb/",
+  "profil": "ecenter_brawopark",
+  "likes": 19,
+  "kommentare": 0,
+  "datum": "2026-10-01T07:33:56Z",
+  "format": "photo",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 19
+ },
+ {
+  "id": "https://www.instagram.com/p/DdTxki1Ng6V/",
+  "profil": "ecenter_brawopark",
+  "likes": 35,
+  "kommentare": 1,
+  "datum": "2026-09-15T13:08:45Z",
+  "format": "photo",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 36
+ },
+ {
+  "id": "https://www.instagram.com/p/DZKA76WDc6g/",
+  "profil": "ecenter_brawopark",
+  "likes": 10,
+  "kommentare": 0,
+  "datum": "2026-06-04T08:00:02Z",
+  "format": "photo",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 10
+ },
+ {
+  "id": "https://www.instagram.com/p/DZHVRkXjR5l/",
+  "profil": "ecenter_brawopark",
+  "likes": 10,
+  "kommentare": 0,
+  "datum": "2026-06-03T07:00:02Z",
+  "format": "photo",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 10
+ },
+ {
+  "id": "https://www.instagram.com/p/DYt3XVltqqp/",
+  "profil": "ecenter_brawopark",
+  "likes": 28,
+  "kommentare": 0,
+  "datum": "2026-05-24T09:39:10Z",
+  "format": "photo",
+  "follower": 3614,
+  "likes_ok": true,
+  "thema": "Recruiting/Karriere",
+  "interaktionen": 28
  },
  {
   "id": "https://www.instagram.com/p/DgFauv2jpCq/",
@@ -3768,28 +4644,40 @@
   "interaktionen": 12
  },
  {
+  "id": "https://www.instagram.com/p/DgLEQhFo0ik/",
+  "profil": "edeka_doerflinger",
+  "likes": 58,
+  "kommentare": 1,
+  "datum": "2026-11-25T17:29:26Z",
+  "format": "reel",
+  "follower": 3118,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 59
+ },
+ {
   "id": "https://www.instagram.com/p/DgKYZaMIf01/",
   "profil": "edeka_doerflinger",
-  "likes": 2,
+  "likes": 5,
   "kommentare": 0,
   "datum": "2026-11-25T11:06:20Z",
   "format": "photo",
   "follower": 3118,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 2
+  "interaktionen": 5
  },
  {
   "id": "https://www.instagram.com/p/Df7WsSsiP79/",
   "profil": "edeka_doerflinger",
-  "likes": 95,
+  "likes": 96,
   "kommentare": 1,
   "datum": "2026-11-19T15:01:23Z",
   "format": "carousel",
   "follower": 3118,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 96
+  "interaktionen": 97
  },
  {
   "id": "https://www.instagram.com/p/Df4Aj9Zo5iQ/",
@@ -3818,14 +4706,14 @@
  {
   "id": "https://www.instagram.com/p/DfZ6Wf0iJtW/",
   "profil": "edeka_doerflinger",
-  "likes": 146,
+  "likes": 147,
   "kommentare": 4,
   "datum": "2026-11-06T15:18:49Z",
   "format": "carousel",
   "follower": 3118,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 150
+  "interaktionen": 151
  },
  {
   "id": "https://www.instagram.com/p/DfZK0NJo6Q8/",
@@ -3900,28 +4788,16 @@
   "interaktionen": 14
  },
  {
-  "id": "https://www.instagram.com/p/DfHmJLrt9GT/",
-  "profil": "edeka_doerflinger",
-  "likes": 10,
-  "kommentare": 0,
-  "datum": "2026-10-30T12:36:53Z",
-  "format": "photo",
-  "follower": 3118,
-  "likes_ok": true,
-  "thema": "Event/Aktion",
-  "interaktionen": 10
- },
- {
   "id": "https://www.instagram.com/p/DgIQcewDpoW/",
   "profil": "edeka_baur",
-  "likes": 363,
-  "kommentare": 20,
+  "likes": 394,
+  "kommentare": 21,
   "datum": "2026-11-24T15:17:29Z",
   "format": "reel",
   "follower": 3110,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 383
+  "interaktionen": 415
  },
  {
   "id": "https://www.instagram.com/p/DfpmOgHO9hY/",
@@ -4056,64 +4932,88 @@
   "interaktionen": 48
  },
  {
-  "id": "https://www.instagram.com/p/DgILIjAJXH-/",
+  "id": "https://www.instagram.com/p/DgKwT_nuhLz/",
   "profil": "edeka.sigmund",
-  "likes": 3,
-  "kommentare": 0,
-  "datum": "2026-11-24T14:30:55Z",
-  "format": "carousel",
+  "likes": 223,
+  "kommentare": 179,
+  "datum": "2026-11-25T14:46:02Z",
+  "format": "photo",
   "follower": 4331,
   "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 3
+  "thema": "Gewinnspiel",
+  "interaktionen": 402
  },
  {
-  "id": "https://www.instagram.com/p/DgFmTRwgKRk/",
+  "id": "https://www.instagram.com/p/DgKv8cSisFo/",
   "profil": "edeka.sigmund",
   "likes": 1,
   "kommentare": 0,
-  "datum": "2026-11-23T14:31:27Z",
-  "format": "reel",
+  "datum": "2026-11-25T14:31:05Z",
+  "format": "carousel",
   "follower": 4331,
   "likes_ok": false,
   "thema": "Angebot/Preis",
   "interaktionen": null
  },
  {
+  "id": "https://www.instagram.com/p/DgILIjAJXH-/",
+  "profil": "edeka.sigmund",
+  "likes": 6,
+  "kommentare": 0,
+  "datum": "2026-11-24T14:30:55Z",
+  "format": "carousel",
+  "follower": 4331,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 6
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFmTRwgKRk/",
+  "profil": "edeka.sigmund",
+  "likes": 2,
+  "kommentare": 0,
+  "datum": "2026-11-23T14:31:27Z",
+  "format": "reel",
+  "follower": 4331,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 2
+ },
+ {
   "id": "https://www.instagram.com/p/DgDUJZ4GU3Z/",
   "profil": "edeka.sigmund",
-  "likes": 13,
+  "likes": 14,
   "kommentare": 0,
   "datum": "2026-11-22T17:13:05Z",
   "format": "photo",
   "follower": 4331,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 13
+  "interaktionen": 14
  },
  {
   "id": "https://www.instagram.com/p/DgCpe13Cg_J/",
   "profil": "edeka.sigmund",
-  "likes": 3,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-22T11:00:46Z",
   "format": "photo",
   "follower": 4331,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 3
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/Df7rB-0iqc9/",
   "profil": "edeka.sigmund",
-  "likes": 24,
+  "likes": 25,
   "kommentare": 0,
   "datum": "2026-11-19T17:59:09Z",
   "format": "photo",
   "follower": 4331,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 24
+  "interaktionen": 25
  },
  {
   "id": "https://www.instagram.com/p/Df4uYecignN/",
@@ -4140,30 +5040,6 @@
   "interaktionen": 3
  },
  {
-  "id": "https://www.instagram.com/p/Dfzku8UHC36/",
-  "profil": "edeka.sigmund",
-  "likes": 26,
-  "kommentare": 1,
-  "datum": "2026-11-16T14:31:32Z",
-  "format": "reel",
-  "follower": 4331,
-  "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 27
- },
- {
-  "id": "https://www.instagram.com/p/DfzTkhQmVOm/",
-  "profil": "edeka.sigmund",
-  "likes": 1,
-  "kommentare": 0,
-  "datum": "2026-11-16T12:01:34Z",
-  "format": "reel",
-  "follower": 4331,
-  "likes_ok": false,
-  "thema": "Angebot/Preis",
-  "interaktionen": null
- },
- {
   "id": "https://www.instagram.com/p/DfH52VWOu4z/",
   "profil": "edeka.sigmund",
   "likes": 1240,
@@ -4178,14 +5054,14 @@
  {
   "id": "https://www.instagram.com/p/DVUAagnDJfu/",
   "profil": "edeka.sigmund",
-  "likes": 275,
+  "likes": 276,
   "kommentare": 21,
   "datum": "2026-02-28T19:02:24Z",
   "format": "carousel",
   "follower": 4331,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 296
+  "interaktionen": 297
  },
  {
   "id": "https://www.instagram.com/p/DPqk2nbjA1B/",
@@ -4322,14 +5198,14 @@
  {
   "id": "https://www.instagram.com/p/DTvdsDHjPGg/",
   "profil": "edeka_fedele",
-  "likes": 95115,
+  "likes": 95113,
   "kommentare": 168,
   "datum": "2026-01-20T18:07:07Z",
   "format": "reel",
   "follower": 2881,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 95283
+  "interaktionen": 95281
  },
  {
   "id": "https://www.instagram.com/p/DgACRWMDnrA/",
@@ -4418,14 +5294,14 @@
  {
   "id": "https://www.instagram.com/p/DfZTV8NOm_M/",
   "profil": "edeka_stenger",
-  "likes": 261,
+  "likes": 262,
   "kommentare": 6,
   "datum": "2026-11-06T09:40:27Z",
   "format": "reel",
   "follower": 5635,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 267
+  "interaktionen": 268
  },
  {
   "id": "https://www.instagram.com/p/DfU1BU3ONca/",
@@ -4466,26 +5342,26 @@
  {
   "id": "https://www.instagram.com/p/DgKaBPbITHT/",
   "profil": "edeka_jens",
-  "likes": 3,
+  "likes": 9,
   "kommentare": 0,
   "datum": "2026-11-25T11:19:27Z",
   "format": "reel",
   "follower": 3162,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 3
+  "interaktionen": 9
  },
  {
   "id": "https://www.instagram.com/p/DgKZCeXiCPS/",
   "profil": "edeka_jens",
-  "likes": 1,
+  "likes": 8,
   "kommentare": 0,
   "datum": "2026-11-25T11:10:30Z",
   "format": "carousel",
   "follower": 3162,
-  "likes_ok": false,
+  "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": null
+  "interaktionen": 8
  },
  {
   "id": "https://www.instagram.com/p/DgIL0z5obfn/",
@@ -4514,14 +5390,14 @@
  {
   "id": "https://www.instagram.com/p/Df4tos-IYXD/",
   "profil": "edeka_jens",
-  "likes": 36,
+  "likes": 37,
   "kommentare": 0,
   "datum": "2026-11-18T14:24:46Z",
   "format": "reel",
   "follower": 3162,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 36
+  "interaktionen": 37
  },
  {
   "id": "https://www.instagram.com/p/DfzUGRcx02A/",
@@ -4692,52 +5568,64 @@
   "interaktionen": 89
  },
  {
+  "id": "https://www.instagram.com/p/DgLGdu0ORq4/",
+  "profil": "edekafriedebold",
+  "likes": 37,
+  "kommentare": 1,
+  "datum": "2026-11-25T17:49:01Z",
+  "format": "reel",
+  "follower": 4780,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 38
+ },
+ {
   "id": "https://www.instagram.com/p/DgKg_wOjlEw/",
   "profil": "edekafriedebold",
-  "likes": 33,
-  "kommentare": 0,
+  "likes": 74,
+  "kommentare": 1,
   "datum": "2026-11-25T12:20:02Z",
   "format": "carousel",
   "follower": 4780,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 33
+  "interaktionen": 75
  },
  {
   "id": "https://www.instagram.com/p/DgF5AetOBKC/",
   "profil": "edekafriedebold",
-  "likes": 112,
+  "likes": 113,
   "kommentare": 3,
   "datum": "2026-11-23T17:14:36Z",
   "format": "reel",
   "follower": 4780,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 115
+  "interaktionen": 116
  },
  {
   "id": "https://www.instagram.com/p/Df-DZ4poTWu/",
   "profil": "edekafriedebold",
-  "likes": 77,
+  "likes": 78,
   "kommentare": 2,
   "datum": "2026-11-20T16:11:44Z",
   "format": "reel",
   "follower": 4780,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 79
+  "interaktionen": 80
  },
  {
   "id": "https://www.instagram.com/p/Df5C_8eugCg/",
   "profil": "edekafriedebold",
-  "likes": 158,
+  "likes": 159,
   "kommentare": 4,
   "datum": "2026-11-18T17:31:28Z",
   "format": "reel",
   "follower": 4780,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 162
+  "interaktionen": 163
  },
  {
   "id": "https://www.instagram.com/p/DfpgkNaOBGL/",
@@ -4814,26 +5702,26 @@
  {
   "id": "https://www.instagram.com/p/DdwpvStu2D-/",
   "profil": "edekafriedebold",
-  "likes": 251,
+  "likes": 252,
   "kommentare": 0,
   "datum": "2026-09-26T18:15:08Z",
   "format": "reel",
   "follower": 4780,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 251
+  "interaktionen": 252
  },
  {
   "id": "https://www.instagram.com/p/DgF3sV-DplW/",
   "profil": "edeka_baechmann",
-  "likes": 2,
+  "likes": 3,
   "kommentare": 0,
   "datum": "2026-11-23T17:06:12Z",
   "format": "reel",
   "follower": 2582,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 2
+  "interaktionen": 3
  },
  {
   "id": "https://www.instagram.com/p/Df-JX4qDVbi/",
@@ -5030,14 +5918,14 @@
  {
   "id": "https://www.instagram.com/p/DfrMa_sO3t5/",
   "profil": "edeka.isselmarkt",
-  "likes": 6,
+  "likes": 7,
   "kommentare": 0,
   "datum": "2026-11-13T08:24:14Z",
   "format": "reel",
   "follower": 2570,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 6
+  "interaktionen": 7
  },
  {
   "id": "https://www.instagram.com/p/Dfq9XBFOLA6/",
@@ -5112,16 +6000,280 @@
   "interaktionen": 24
  },
  {
+  "id": "https://www.instagram.com/p/DgKkyBLt0DJ/",
+  "profil": "edeka.hildebrandt",
+  "likes": 41,
+  "kommentare": 0,
+  "datum": "2026-11-25T12:54:19Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "nicht zugeordnet",
+  "interaktionen": 41
+ },
+ {
+  "id": "https://www.instagram.com/p/Df7hMeTR05X/",
+  "profil": "edeka.hildebrandt",
+  "likes": 162,
+  "kommentare": 81,
+  "datum": "2026-11-19T16:38:09Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 243
+ },
+ {
+  "id": "https://www.instagram.com/p/DfLIAX6xjkB/",
+  "profil": "edeka.hildebrandt",
+  "likes": 29,
+  "kommentare": 0,
+  "datum": "2026-10-31T21:29:59Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 29
+ },
+ {
+  "id": "https://www.instagram.com/p/DeUh3N1tu-j/",
+  "profil": "edeka.hildebrandt",
+  "likes": 33,
+  "kommentare": 0,
+  "datum": "2026-10-10T16:44:48Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 33
+ },
+ {
+  "id": "https://www.instagram.com/p/DdteCwZtVet/",
+  "profil": "edeka.hildebrandt",
+  "likes": 40,
+  "kommentare": 7,
+  "datum": "2026-09-25T12:36:13Z",
+  "format": "reel",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 47
+ },
+ {
+  "id": "https://www.instagram.com/p/DdmeqdeRwDE/",
+  "profil": "edeka.hildebrandt",
+  "likes": 152,
+  "kommentare": 5,
+  "datum": "2026-09-22T19:26:25Z",
+  "format": "reel",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 157
+ },
+ {
+  "id": "https://www.instagram.com/p/DdWsMn8tIY7/",
+  "profil": "edeka.hildebrandt",
+  "likes": 48,
+  "kommentare": 7,
+  "datum": "2026-09-16T16:16:15Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 55
+ },
+ {
+  "id": "https://www.instagram.com/p/DaPhkz5tiQS/",
+  "profil": "edeka.hildebrandt",
+  "likes": 8,
+  "kommentare": 0,
+  "datum": "2026-07-01T07:53:23Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 8
+ },
+ {
+  "id": "https://www.instagram.com/p/DZ2-Mu0NS0I/",
+  "profil": "edeka.hildebrandt",
+  "likes": 594,
+  "kommentare": 335,
+  "datum": "2026-06-21T19:03:34Z",
+  "format": "reel",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Gewinnspiel",
+  "interaktionen": 929
+ },
+ {
+  "id": "https://www.instagram.com/p/DZxUuVPtwa1/",
+  "profil": "edeka.hildebrandt",
+  "likes": 34,
+  "kommentare": 0,
+  "datum": "2026-06-19T14:23:55Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 34
+ },
+ {
+  "id": "https://www.instagram.com/p/DZK7EbcMIaA/",
+  "profil": "edeka.hildebrandt",
+  "likes": 48,
+  "kommentare": 1,
+  "datum": "2026-06-04T16:32:49Z",
+  "format": "photo",
+  "follower": 2493,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 49
+ },
+ {
+  "id": "https://www.instagram.com/p/DgFWQUBiPyt/",
+  "profil": "edekabrand",
+  "likes": 24,
+  "kommentare": 0,
+  "datum": "2026-11-23T12:11:29Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 24
+ },
+ {
+  "id": "https://www.instagram.com/p/Df4SuQcCo2N/",
+  "profil": "edekabrand",
+  "likes": 39,
+  "kommentare": 2,
+  "datum": "2026-11-18T10:29:19Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 41
+ },
+ {
+  "id": "https://www.instagram.com/p/DfzIDzJCADg/",
+  "profil": "edekabrand",
+  "likes": 15,
+  "kommentare": 0,
+  "datum": "2026-11-16T10:21:03Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 15
+ },
+ {
+  "id": "https://www.instagram.com/p/DfmQPlrx_tL/",
+  "profil": "edekabrand",
+  "likes": 75,
+  "kommentare": 3,
+  "datum": "2026-11-11T10:22:14Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 78
+ },
+ {
+  "id": "https://www.instagram.com/p/Dfg7BXWCPOk/",
+  "profil": "edekabrand",
+  "likes": 13,
+  "kommentare": 0,
+  "datum": "2026-11-09T08:43:31Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 13
+ },
+ {
+  "id": "https://www.instagram.com/p/DfPllziiAeF/",
+  "profil": "edekabrand",
+  "likes": 67,
+  "kommentare": 0,
+  "datum": "2026-11-02T15:07:40Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Region/Lieferant",
+  "interaktionen": 67
+ },
+ {
+  "id": "https://www.instagram.com/p/DfFDxXSETfa/",
+  "profil": "edekabrand",
+  "likes": 23,
+  "kommentare": 0,
+  "datum": "2026-10-29T12:57:04Z",
+  "format": "carousel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 23
+ },
+ {
+  "id": "https://www.instagram.com/p/De9SMwgifGd/",
+  "profil": "edekabrand",
+  "likes": 43,
+  "kommentare": 1,
+  "datum": "2026-10-26T12:32:32Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 44
+ },
+ {
+  "id": "https://www.instagram.com/p/De1pHoXkcAN/",
+  "profil": "edekabrand",
+  "likes": 22,
+  "kommentare": 0,
+  "datum": "2026-10-23T13:15:34Z",
+  "format": "carousel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 22
+ },
+ {
+  "id": "https://www.instagram.com/p/DezKLgtC_97/",
+  "profil": "edekabrand",
+  "likes": 36,
+  "kommentare": 0,
+  "datum": "2026-10-22T14:07:04Z",
+  "format": "reel",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 36
+ },
+ {
+  "id": "https://www.instagram.com/p/Dev2gzckTBJ/",
+  "profil": "edekabrand",
+  "likes": 16,
+  "kommentare": 1,
+  "datum": "2026-10-21T07:17:10Z",
+  "format": "photo",
+  "follower": 2477,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 17
+ },
+ {
   "id": "https://www.instagram.com/p/DgE6H-mu8uS/",
   "profil": "edeka.rentschler",
-  "likes": 121,
+  "likes": 123,
   "kommentare": 4,
   "datum": "2026-11-23T08:04:27Z",
   "format": "reel",
   "follower": 2380,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 125
+  "interaktionen": 127
  },
  {
   "id": "https://www.instagram.com/p/DfrJI6YOkgs/",
@@ -5242,6 +6394,18 @@
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
   "interaktionen": 118
+ },
+ {
+  "id": "https://www.instagram.com/p/DgKev8OCqQa/",
+  "profil": "edekaschuler",
+  "likes": 0,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:00:11Z",
+  "format": "photo",
+  "follower": 2289,
+  "likes_ok": false,
+  "thema": "nicht zugeordnet",
+  "interaktionen": null
  },
  {
   "id": "https://www.instagram.com/p/DgF3hC5CuzY/",
@@ -5376,28 +6540,16 @@
   "interaktionen": 2
  },
  {
-  "id": "https://www.instagram.com/p/Dfz2GXuitP5/",
-  "profil": "edekaschuler",
-  "likes": 0,
-  "kommentare": 0,
-  "datum": "2026-11-16T17:09:43Z",
-  "format": "reel",
-  "follower": 2289,
-  "likes_ok": false,
-  "thema": "Angebot/Preis",
-  "interaktionen": null
- },
- {
   "id": "https://www.instagram.com/p/DgF3nShDaFE/",
   "profil": "edeka.seidl",
-  "likes": 3,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-23T17:09:17Z",
   "format": "reel",
   "follower": 2272,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 3
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/DgEf9KPlSQL/",
@@ -5530,18 +6682,6 @@
   "likes_ok": false,
   "thema": "Angebot/Preis",
   "interaktionen": null
- },
- {
-  "id": "https://www.instagram.com/p/Df6hV2KCmui/",
-  "profil": "edekaluening",
-  "likes": 109,
-  "kommentare": 0,
-  "datum": "2026-11-19T07:15:44Z",
-  "format": "photo",
-  "follower": 2397,
-  "likes_ok": true,
-  "thema": "Region/Lieferant",
-  "interaktionen": 109
  },
  {
   "id": "https://www.instagram.com/p/DfopqUxs47C/",
@@ -5736,16 +6876,28 @@
   "interaktionen": 39
  },
  {
+  "id": "https://www.instagram.com/p/DgK8tqVqzf4/",
+  "profil": "ecenter.sulingen",
+  "likes": 21,
+  "kommentare": 0,
+  "datum": "2026-11-25T16:40:58Z",
+  "format": "reel",
+  "follower": 2334,
+  "likes_ok": true,
+  "thema": "nicht zugeordnet",
+  "interaktionen": 21
+ },
+ {
   "id": "https://www.instagram.com/p/DgIPc2GgKAc/",
   "profil": "ecenter.sulingen",
-  "likes": 74,
+  "likes": 77,
   "kommentare": 4,
   "datum": "2026-11-24T15:08:39Z",
   "format": "reel",
   "follower": 2334,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 78
+  "interaktionen": 81
  },
  {
   "id": "https://www.instagram.com/p/Df-Q_qkhjGg/",
@@ -5762,14 +6914,14 @@
  {
   "id": "https://www.instagram.com/p/Df2Yujws3gY/",
   "profil": "ecenter.sulingen",
-  "likes": 436,
+  "likes": 437,
   "kommentare": 10,
   "datum": "2026-11-17T16:44:47Z",
   "format": "reel",
   "follower": 2334,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 446
+  "interaktionen": 447
  },
  {
   "id": "https://www.instagram.com/p/DfxXAy8goNH/",
@@ -5856,40 +7008,28 @@
   "interaktionen": 154
  },
  {
-  "id": "https://www.instagram.com/p/Db1GKVbjaV3/",
-  "profil": "ecenter.sulingen",
-  "likes": 121,
-  "kommentare": 0,
-  "datum": "2026-08-09T18:36:23Z",
-  "format": "reel",
-  "follower": 2334,
-  "likes_ok": true,
-  "thema": "Sonstiges",
-  "interaktionen": 121
- },
- {
   "id": "https://www.instagram.com/p/DXeiFNjCuJ7/",
   "profil": "ecenter.sulingen",
-  "likes": 604,
+  "likes": 603,
   "kommentare": 21,
   "datum": "2026-04-23T14:19:54Z",
   "format": "reel",
   "follower": 2334,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 625
+  "interaktionen": 624
  },
  {
   "id": "https://www.instagram.com/p/DgIVdFcIZIH/",
   "profil": "edekakappe",
-  "likes": 73,
+  "likes": 82,
   "kommentare": 4,
   "datum": "2026-11-24T16:01:05Z",
   "format": "reel",
   "follower": 2122,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 77
+  "interaktionen": 86
  },
  {
   "id": "https://www.instagram.com/p/Df-I4jRoBDg/",
@@ -5918,14 +7058,14 @@
  {
   "id": "https://www.instagram.com/p/Dfm2zpFoGDr/",
   "profil": "edekakappe",
-  "likes": 254,
+  "likes": 256,
   "kommentare": 7,
   "datum": "2026-11-11T15:59:46Z",
   "format": "reel",
   "follower": 2122,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 261
+  "interaktionen": 263
  },
  {
   "id": "https://www.instagram.com/p/DfU6gmWo5dJ/",
@@ -6024,16 +7164,28 @@
   "interaktionen": 24
  },
  {
+  "id": "https://www.instagram.com/p/DgLBFAmKA-5/",
+  "profil": "edekabillstein",
+  "likes": 8,
+  "kommentare": 0,
+  "datum": "2026-11-25T17:00:25Z",
+  "format": "photo",
+  "follower": 2068,
+  "likes_ok": true,
+  "thema": "nicht zugeordnet",
+  "interaktionen": 8
+ },
+ {
   "id": "https://www.instagram.com/p/DgIcQxACXf4/",
   "profil": "edekabillstein",
-  "likes": 24,
-  "kommentare": 0,
+  "likes": 29,
+  "kommentare": 1,
   "datum": "2026-11-24T17:00:14Z",
   "format": "photo",
   "follower": 2068,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 24
+  "interaktionen": 30
  },
  {
   "id": "https://www.instagram.com/p/DgFAh48T9K4/",
@@ -6050,14 +7202,14 @@
  {
   "id": "https://www.instagram.com/p/DgDStMAwrPZ/",
   "profil": "edekabillstein",
-  "likes": 25,
+  "likes": 27,
   "kommentare": 1,
   "datum": "2026-11-22T17:00:30Z",
   "format": "photo",
   "follower": 2068,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 26
+  "interaktionen": 28
  },
  {
   "id": "https://www.instagram.com/p/Df_29G4CqgA/",
@@ -6074,14 +7226,14 @@
  {
   "id": "https://www.instagram.com/p/Df9tnTuPU_s/",
   "profil": "edekabillstein",
-  "likes": 15,
+  "likes": 16,
   "kommentare": 0,
   "datum": "2026-11-20T13:00:13Z",
   "format": "photo",
   "follower": 2068,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 15
+  "interaktionen": 16
  },
  {
   "id": "https://www.instagram.com/p/Df5ELeUhltN/",
@@ -6110,14 +7262,14 @@
  {
   "id": "https://www.instagram.com/p/Dft1XjPDDwK/",
   "profil": "edekabillstein",
-  "likes": 10,
+  "likes": 11,
   "kommentare": 0,
   "datum": "2026-11-14T09:00:05Z",
   "format": "photo",
   "follower": 2068,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 10
+  "interaktionen": 11
  },
  {
   "id": "https://www.instagram.com/p/DfsApqyAV8b/",
@@ -6142,18 +7294,6 @@
   "likes_ok": true,
   "thema": "Region/Lieferant",
   "interaktionen": 15
- },
- {
-  "id": "https://www.instagram.com/p/DfmPHEWDa4F/",
-  "profil": "edekabillstein",
-  "likes": 12,
-  "kommentare": 0,
-  "datum": "2026-11-11T10:11:06Z",
-  "format": "photo",
-  "follower": 2068,
-  "likes_ok": true,
-  "thema": "Event/Aktion",
-  "interaktionen": 12
  },
  {
   "id": "https://www.instagram.com/p/DVjMqsJDAnn/",
@@ -6276,16 +7416,28 @@
   "interaktionen": 96
  },
  {
+  "id": "https://www.instagram.com/p/DgLBDRatFgD/",
+  "profil": "edeka_hauschildt",
+  "likes": 0,
+  "kommentare": 0,
+  "datum": "2026-11-25T17:00:10Z",
+  "format": "photo",
+  "follower": 2067,
+  "likes_ok": false,
+  "thema": "nicht zugeordnet",
+  "interaktionen": null
+ },
+ {
   "id": "https://www.instagram.com/p/DgKKIIBKMY4/",
   "profil": "edeka_hauschildt",
-  "likes": 4,
+  "likes": 5,
   "kommentare": 0,
   "datum": "2026-11-25T09:00:12Z",
   "format": "carousel",
   "follower": 2067,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 4
+  "interaktionen": 5
  },
  {
   "id": "https://www.instagram.com/p/DgH_IZdKN82/",
@@ -6406,18 +7558,6 @@
   "likes_ok": true,
   "thema": "Angebot/Preis",
   "interaktionen": 9
- },
- {
-  "id": "https://www.instagram.com/p/DfgvrfyDyr5/",
-  "profil": "edeka_hauschildt",
-  "likes": 7,
-  "kommentare": 0,
-  "datum": "2026-11-09T07:00:15Z",
-  "format": "photo",
-  "follower": 2067,
-  "likes_ok": true,
-  "thema": "Rezept/Food",
-  "interaktionen": 7
  },
  {
   "id": "https://www.instagram.com/p/DgITyBHiLUq/",
@@ -6566,26 +7706,26 @@
  {
   "id": "https://www.instagram.com/p/DgJ3T19BqLS/",
   "profil": "edeka_center_kuever",
-  "likes": 4,
+  "likes": 5,
   "kommentare": 0,
   "datum": "2026-11-25T06:15:04Z",
   "format": "reel",
   "follower": 2037,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 4
+  "interaktionen": 5
  },
  {
   "id": "https://www.instagram.com/p/DgIjL5FB3zS/",
   "profil": "edeka_center_kuever",
-  "likes": 33,
+  "likes": 37,
   "kommentare": 0,
   "datum": "2026-11-24T18:00:05Z",
   "format": "reel",
   "follower": 2037,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 33
+  "interaktionen": 37
  },
  {
   "id": "https://www.instagram.com/p/DgHn31EhtoD/",
@@ -6614,14 +7754,14 @@
  {
   "id": "https://www.instagram.com/p/DgFnSEciKhp/",
   "profil": "edeka_center_kuever",
-  "likes": 158,
+  "likes": 159,
   "kommentare": 7,
   "datum": "2026-11-23T14:40:18Z",
   "format": "reel",
   "follower": 2037,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 165
+  "interaktionen": 166
  },
  {
   "id": "https://www.instagram.com/p/Df9wBmMss_x/",
@@ -6852,16 +7992,28 @@
   "interaktionen": 11
  },
  {
-  "id": "https://www.instagram.com/p/DgI8KjYuQK4/",
+  "id": "https://www.instagram.com/p/DgLLnkAuHCh/",
   "profil": "ecenter.niko.keil",
   "likes": 22,
+  "kommentare": 1,
+  "datum": "2026-11-25T18:38:26Z",
+  "format": "reel",
+  "follower": 1862,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 23
+ },
+ {
+  "id": "https://www.instagram.com/p/DgI8KjYuQK4/",
+  "profil": "ecenter.niko.keil",
+  "likes": 26,
   "kommentare": 0,
   "datum": "2026-11-24T21:40:06Z",
   "format": "reel",
   "follower": 1862,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 22
+  "interaktionen": 26
  },
  {
   "id": "https://www.instagram.com/p/Df2x-ALOXL7/",
@@ -6912,18 +8064,6 @@
   "interaktionen": 26
  },
  {
-  "id": "https://www.instagram.com/p/DfkwliRuNZ5/",
-  "profil": "ecenter.niko.keil",
-  "likes": 137,
-  "kommentare": 7,
-  "datum": "2026-11-10T20:26:54Z",
-  "format": "reel",
-  "follower": 1862,
-  "likes_ok": true,
-  "thema": "Humor/Team/Azubi",
-  "interaktionen": 144
- },
- {
   "id": "https://www.instagram.com/p/DBvU7RTu2-b/",
   "profil": "ecenter.niko.keil",
   "likes": 55,
@@ -6958,6 +8098,18 @@
   "likes_ok": true,
   "thema": "Sonstiges",
   "interaktionen": 77
+ },
+ {
+  "id": "https://www.instagram.com/p/DgKeyXoiinu/",
+  "profil": "edekabachmann",
+  "likes": 1,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:00:26Z",
+  "format": "photo",
+  "follower": 1848,
+  "likes_ok": false,
+  "thema": "Event/Aktion",
+  "interaktionen": null
  },
  {
   "id": "https://www.instagram.com/p/DgH5_NHjQ5j/",
@@ -7092,18 +8244,6 @@
   "interaktionen": 4
  },
  {
-  "id": "https://www.instagram.com/p/De9xhFuhDF0/",
-  "profil": "edekabachmann",
-  "likes": 7,
-  "kommentare": 2,
-  "datum": "2026-10-26T17:03:21Z",
-  "format": "reel",
-  "follower": 1848,
-  "likes_ok": true,
-  "thema": "Gewinnspiel",
-  "interaktionen": 9
- },
- {
   "id": "https://www.instagram.com/p/DfPgG9moPl1/",
   "profil": "edekaernst",
   "likes": 9703,
@@ -7202,26 +8342,26 @@
  {
   "id": "https://www.instagram.com/p/DeGdq8Hiqbt/",
   "profil": "edekaernst",
-  "likes": 91,
+  "likes": 96,
   "kommentare": 2,
   "datum": "2026-10-05T05:31:41Z",
   "format": "reel",
   "follower": 2147,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 93
+  "interaktionen": 98
  },
  {
   "id": "https://www.instagram.com/p/Dd5lpHcDPPE/",
   "profil": "edekaernst",
-  "likes": 225,
+  "likes": 232,
   "kommentare": 11,
   "datum": "2026-09-30T05:31:08Z",
   "format": "reel",
   "follower": 2147,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 236
+  "interaktionen": 243
  },
  {
   "id": "https://www.instagram.com/p/Dd0b-ftDLcO/",
@@ -7382,7 +8522,7 @@
  {
   "id": "https://www.instagram.com/p/DgIOrE2itLK/",
   "profil": "edekavossler",
-  "likes": 0,
+  "likes": 1,
   "kommentare": 0,
   "datum": "2026-11-24T15:02:33Z",
   "format": "reel",
@@ -7394,7 +8534,7 @@
  {
   "id": "https://www.instagram.com/p/DgF4FEzk_0c/",
   "profil": "edekavossler",
-  "likes": 0,
+  "likes": 1,
   "kommentare": 0,
   "datum": "2026-11-23T17:06:04Z",
   "format": "reel",
@@ -7442,14 +8582,14 @@
  {
   "id": "https://www.instagram.com/p/Df2JM30RMVD/",
   "profil": "edekavossler",
-  "likes": 103,
+  "likes": 104,
   "kommentare": 6,
   "datum": "2026-11-17T14:31:45Z",
   "format": "reel",
   "follower": 1767,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 109
+  "interaktionen": 110
  },
  {
   "id": "https://www.instagram.com/p/Dfz28Z7oHii/",
@@ -7526,14 +8666,14 @@
  {
   "id": "https://www.instagram.com/p/DgKbxgIgsy_/",
   "profil": "edeka.nowak",
-  "likes": 5,
+  "likes": 8,
   "kommentare": 0,
   "datum": "2026-11-25T11:34:24Z",
   "format": "photo",
   "follower": 1725,
   "likes_ok": true,
   "thema": "Gesund/Bio/Protein",
-  "interaktionen": 5
+  "interaktionen": 8
  },
  {
   "id": "https://www.instagram.com/p/DfzGmHLEYzA/",
@@ -7814,14 +8954,14 @@
  {
   "id": "https://www.instagram.com/p/Df69VMWjHBo/",
   "profil": "edeka.fromm",
-  "likes": 3339,
-  "kommentare": 3585,
+  "likes": 3389,
+  "kommentare": 3636,
   "datum": "2026-11-19T11:19:47Z",
   "format": "carousel",
   "follower": 4797,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 6924
+  "interaktionen": 7025
  },
  {
   "id": "https://www.instagram.com/p/DeOdveOApah/",
@@ -9192,28 +10332,40 @@
   "interaktionen": 25
  },
  {
+  "id": "https://www.instagram.com/p/DgKxDDhiPxU/",
+  "profil": "edekabueto",
+  "likes": 9,
+  "kommentare": 0,
+  "datum": "2026-11-25T14:40:18Z",
+  "format": "carousel",
+  "follower": 1473,
+  "likes_ok": true,
+  "thema": "Event/Aktion",
+  "interaktionen": 9
+ },
+ {
   "id": "https://www.instagram.com/p/DgIOkrLROwC/",
   "profil": "edekabueto",
-  "likes": 56,
+  "likes": 58,
   "kommentare": 1,
   "datum": "2026-11-24T15:01:03Z",
   "format": "reel",
   "follower": 1473,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 57
+  "interaktionen": 59
  },
  {
   "id": "https://www.instagram.com/p/DgF3qRMKZdJ/",
   "profil": "edekabueto",
-  "likes": 5,
+  "likes": 6,
   "kommentare": 0,
   "datum": "2026-11-23T17:07:18Z",
   "format": "reel",
   "follower": 1473,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 5
+  "interaktionen": 6
  },
  {
   "id": "https://www.instagram.com/p/Df_10mjxGPU/",
@@ -9290,14 +10442,14 @@
  {
   "id": "https://www.instagram.com/p/DfzAFdlxAJ9/",
   "profil": "edekabueto",
-  "likes": 55,
+  "likes": 56,
   "kommentare": 1,
   "datum": "2026-11-16T09:11:35Z",
   "format": "photo",
   "follower": 1473,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 56
+  "interaktionen": 57
  },
  {
   "id": "https://www.instagram.com/p/DfpdQgjxinU/",
@@ -9322,18 +10474,6 @@
   "likes_ok": true,
   "thema": "Sonstiges",
   "interaktionen": 15
- },
- {
-  "id": "https://www.instagram.com/p/Dfh0fIJkSdv/",
-  "profil": "edekabueto",
-  "likes": 5,
-  "kommentare": 0,
-  "datum": "2026-11-09T17:02:09Z",
-  "format": "reel",
-  "follower": 1473,
-  "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 5
  },
  {
   "id": "https://www.instagram.com/p/DV3oqfkjQWe/",
@@ -9468,6 +10608,18 @@
   "interaktionen": 88
  },
  {
+  "id": "https://www.instagram.com/p/DgKzkbpNJUP/",
+  "profil": "edeka_munchow",
+  "likes": 2,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:03:42Z",
+  "format": "reel",
+  "follower": 1373,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 2
+ },
+ {
   "id": "https://www.instagram.com/p/DgCRbceDNVd/",
   "profil": "edeka_munchow",
   "likes": 5,
@@ -9598,18 +10750,6 @@
   "likes_ok": true,
   "thema": "Angebot/Preis",
   "interaktionen": 5
- },
- {
-  "id": "https://www.instagram.com/p/DfZc3cSiszY/",
-  "profil": "edeka_munchow",
-  "likes": 9,
-  "kommentare": 0,
-  "datum": "2026-11-06T11:01:43Z",
-  "format": "reel",
-  "follower": 1373,
-  "likes_ok": true,
-  "thema": "Rezept/Food",
-  "interaktionen": 9
  },
  {
   "id": "https://www.instagram.com/p/Df4XXNgMBzI/",
@@ -9998,14 +11138,14 @@
  {
   "id": "https://www.instagram.com/p/DgHeeIrAi-1/",
   "profil": "e_center_tbb",
-  "likes": 55,
+  "likes": 56,
   "kommentare": 3,
   "datum": "2026-11-24T08:01:08Z",
   "format": "reel",
   "follower": 1503,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 58
+  "interaktionen": 59
  },
  {
   "id": "https://www.instagram.com/p/DgFAj2zlc7E/",
@@ -10142,26 +11282,26 @@
  {
   "id": "https://www.instagram.com/p/DgKsh4oh0qS/",
   "profil": "ecenter_ehme",
-  "likes": 0,
+  "likes": 2,
   "kommentare": 0,
   "datum": "2026-11-25T14:00:04Z",
   "format": "reel",
   "follower": 1315,
-  "likes_ok": false,
+  "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": null
+  "interaktionen": 2
  },
  {
   "id": "https://www.instagram.com/p/DgJ8Zf6BYGC/",
   "profil": "ecenter_ehme",
-  "likes": 7,
-  "kommentare": 7,
+  "likes": 18,
+  "kommentare": 15,
   "datum": "2026-11-25T07:00:16Z",
   "format": "photo",
   "follower": 1315,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 14
+  "interaktionen": 33
  },
  {
   "id": "https://www.instagram.com/p/DgHXrDLJSEm/",
@@ -10286,14 +11426,14 @@
  {
   "id": "https://www.instagram.com/p/DgFlq9zlbX-/",
   "profil": "edekacenterspecht",
-  "likes": 2,
+  "likes": 3,
   "kommentare": 0,
   "datum": "2026-11-23T14:24:52Z",
   "format": "photo",
   "follower": 1322,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 2
+  "interaktionen": 3
  },
  {
   "id": "https://www.instagram.com/p/Df7Rv9roiXC/",
@@ -10670,38 +11810,38 @@
  {
   "id": "https://www.instagram.com/p/De7Nmcygn17/",
   "profil": "edeka_gabriel",
-  "likes": 548,
+  "likes": 553,
   "kommentare": 19,
   "datum": "2026-10-25T17:12:08Z",
   "format": "reel",
   "follower": 1437,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 567
+  "interaktionen": 572
  },
  {
   "id": "https://www.instagram.com/p/DeXS7NtAXuO/",
   "profil": "edeka_gabriel",
-  "likes": 506,
+  "likes": 513,
   "kommentare": 26,
   "datum": "2026-10-11T18:25:10Z",
   "format": "reel",
   "follower": 1437,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 532
+  "interaktionen": 539
  },
  {
   "id": "https://www.instagram.com/p/DZ5a1t2gI0j/",
   "profil": "edeka_gabriel",
-  "likes": 4252,
+  "likes": 4253,
   "kommentare": 163,
   "datum": "2026-06-22T17:52:04Z",
   "format": "reel",
   "follower": 1437,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 4415
+  "interaktionen": 4416
  },
  {
   "id": "https://www.instagram.com/p/DWmEwmciAY-/",
@@ -10934,14 +12074,14 @@
  {
   "id": "https://www.instagram.com/p/DcTxSuVKZPb/",
   "profil": "edeka_hengge",
-  "likes": 5226,
+  "likes": 5229,
   "kommentare": 36,
   "datum": "2026-08-21T16:35:02Z",
   "format": "reel",
   "follower": 1284,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 5262
+  "interaktionen": 5265
  },
  {
   "id": "https://www.instagram.com/p/DcB20vvqlyP/",
@@ -10970,14 +12110,14 @@
  {
   "id": "https://www.instagram.com/p/DgJ-bE-Ie17/",
   "profil": "edeka_center_bergedorf",
-  "likes": 58,
-  "kommentare": 47,
+  "likes": 97,
+  "kommentare": 79,
   "datum": "2026-11-25T07:26:51Z",
   "format": "photo",
   "follower": 1219,
   "likes_ok": true,
-  "thema": "nicht zugeordnet",
-  "interaktionen": 105
+  "thema": "Gewinnspiel",
+  "interaktionen": 176
  },
  {
   "id": "https://www.instagram.com/p/Df9AJJIiKDY/",
@@ -10994,14 +12134,14 @@
  {
   "id": "https://www.instagram.com/p/Dfy6il2oNjZ/",
   "profil": "edeka_center_bergedorf",
-  "likes": 18,
+  "likes": 19,
   "kommentare": 0,
   "datum": "2026-11-16T08:27:08Z",
   "format": "photo",
   "follower": 1219,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 18
+  "interaktionen": 19
  },
  {
   "id": "https://www.instagram.com/p/DfhdJ5niKYB/",
@@ -11256,6 +12396,18 @@
   "interaktionen": 2
  },
  {
+  "id": "https://www.instagram.com/p/DgLKFkOxmrh/",
+  "profil": "dein.edeka.center",
+  "likes": 0,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:20:26Z",
+  "format": "reel",
+  "follower": 1184,
+  "likes_ok": false,
+  "thema": "Angebot/Preis",
+  "interaktionen": null
+ },
+ {
   "id": "https://www.instagram.com/p/DgHq7R7CbIl/",
   "profil": "dein.edeka.center",
   "likes": 1,
@@ -11388,28 +12540,16 @@
   "interaktionen": null
  },
  {
-  "id": "https://www.instagram.com/p/Df12rV-Djmf/",
-  "profil": "dein.edeka.center",
-  "likes": 1,
-  "kommentare": 0,
-  "datum": "2026-11-17T11:46:48Z",
-  "format": "reel",
-  "follower": 1184,
-  "likes_ok": false,
-  "thema": "Angebot/Preis",
-  "interaktionen": null
- },
- {
   "id": "https://www.instagram.com/p/Dfz5VosxnVB/",
   "profil": "edeka.gunkel",
-  "likes": 379,
+  "likes": 380,
   "kommentare": 25,
   "datum": "2026-11-16T17:32:53Z",
   "format": "reel",
   "follower": 1481,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 404
+  "interaktionen": 405
  },
  {
   "id": "https://www.instagram.com/p/Dfw3NSbRO-N/",
@@ -11546,26 +12686,26 @@
  {
   "id": "https://www.instagram.com/p/DgFTogiot8T/",
   "profil": "edeka.hessenring",
-  "likes": 15,
-  "kommentare": 1,
+  "likes": 16,
+  "kommentare": 2,
   "datum": "2026-11-23T11:58:08Z",
   "format": "reel",
   "follower": 1406,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 16
+  "interaktionen": 18
  },
  {
   "id": "https://www.instagram.com/p/Df5QrBNqebt/",
   "profil": "edeka.hessenring",
-  "likes": 219,
+  "likes": 220,
   "kommentare": 5,
   "datum": "2026-11-18T19:30:53Z",
   "format": "reel",
   "follower": 1406,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 224
+  "interaktionen": 225
  },
  {
   "id": "https://www.instagram.com/p/Dfzf3C7odr1/",
@@ -12108,52 +13248,64 @@
   "interaktionen": 42
  },
  {
+  "id": "https://www.instagram.com/p/DgLBEVBTHAI/",
+  "profil": "e_center_hanekamp_neustadt",
+  "likes": 3,
+  "kommentare": 0,
+  "datum": "2026-11-25T17:00:54Z",
+  "format": "reel",
+  "follower": 1117,
+  "likes_ok": true,
+  "thema": "Angebot/Preis",
+  "interaktionen": 3
+ },
+ {
   "id": "https://www.instagram.com/p/DgHZh9oiAtf/",
   "profil": "e_center_hanekamp_neustadt",
-  "likes": 95,
+  "likes": 99,
   "kommentare": 1,
   "datum": "2026-11-24T07:17:05Z",
   "format": "carousel",
   "follower": 1117,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 96
+  "interaktionen": 100
  },
  {
   "id": "https://www.instagram.com/p/DgHXrkWDZO8/",
   "profil": "e_center_hanekamp_neustadt",
-  "likes": 3,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-24T07:02:15Z",
   "format": "reel",
   "follower": 1117,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 3
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/DgDjuF5j_fs/",
   "profil": "e_center_hanekamp_neustadt",
-  "likes": 1,
+  "likes": 2,
   "kommentare": 0,
   "datum": "2026-11-22T19:29:46Z",
   "format": "reel",
   "follower": 1117,
-  "likes_ok": false,
+  "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": null
+  "interaktionen": 2
  },
  {
   "id": "https://www.instagram.com/p/Df-JQ4lCili/",
   "profil": "e_center_hanekamp_neustadt",
-  "likes": 3,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-20T17:02:13Z",
   "format": "carousel",
   "follower": 1117,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 3
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/Df4_guajhAS/",
@@ -12238,18 +13390,6 @@
   "likes_ok": true,
   "thema": "Angebot/Preis",
   "interaktionen": 3
- },
- {
-  "id": "https://www.instagram.com/p/DfOn5aNipEJ/",
-  "profil": "e_center_hanekamp_neustadt",
-  "likes": 2,
-  "kommentare": 0,
-  "datum": "2026-11-02T06:06:23Z",
-  "format": "carousel",
-  "follower": 1117,
-  "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 2
  },
  {
   "id": "https://www.instagram.com/p/DfxYYkOiHnw/",
@@ -12768,6 +13908,18 @@
   "interaktionen": 5
  },
  {
+  "id": "https://www.instagram.com/p/DgKzYsvCGm8/",
+  "profil": "ecenterschwinning",
+  "likes": 10,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:00:58Z",
+  "format": "photo",
+  "follower": 1056,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 10
+ },
+ {
   "id": "https://www.instagram.com/p/DgFk-6KoQKS/",
   "profil": "ecenterschwinning",
   "likes": 0,
@@ -12886,18 +14038,6 @@
   "likes_ok": true,
   "thema": "Rezept/Food",
   "interaktionen": 3
- },
- {
-  "id": "https://www.instagram.com/p/De6JL4dCG15/",
-  "profil": "ecenterschwinning",
-  "likes": 1,
-  "kommentare": 0,
-  "datum": "2026-10-25T07:12:56Z",
-  "format": "photo",
-  "follower": 1056,
-  "likes_ok": false,
-  "thema": "Rezept/Food",
-  "interaktionen": null
  },
  {
   "id": "https://www.instagram.com/p/DgClS07FzZ1/",
@@ -13188,16 +14328,28 @@
   "interaktionen": null
  },
  {
+  "id": "https://www.instagram.com/p/DgLIFrwDJJQ/",
+  "profil": "dein.edeka.schubert",
+  "likes": 1,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:02:08Z",
+  "format": "carousel",
+  "follower": 1029,
+  "likes_ok": false,
+  "thema": "Angebot/Preis",
+  "interaktionen": null
+ },
+ {
   "id": "https://www.instagram.com/p/DgKey4-AFyK/",
   "profil": "dein.edeka.schubert",
-  "likes": 2,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-25T12:01:12Z",
   "format": "carousel",
   "follower": 1029,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 2
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/DgHe2c2FUwb/",
@@ -13308,18 +14460,6 @@
   "interaktionen": null
  },
  {
-  "id": "https://www.instagram.com/p/DfzahIFCutX/",
-  "profil": "dein.edeka.schubert",
-  "likes": 59,
-  "kommentare": 3,
-  "datum": "2026-11-16T13:01:20Z",
-  "format": "carousel",
-  "follower": 1029,
-  "likes_ok": true,
-  "thema": "Humor/Team/Azubi",
-  "interaktionen": 62
- },
- {
   "id": "https://www.instagram.com/p/DUli_eAjolC/",
   "profil": "dein.edeka.schubert",
   "likes": 50,
@@ -13334,14 +14474,14 @@
  {
   "id": "https://www.instagram.com/p/DgG8Insl8LT/",
   "profil": "ecenter_fabig_bueckeburg",
-  "likes": 11,
+  "likes": 12,
   "kommentare": 0,
   "datum": "2026-11-24T04:00:20Z",
   "format": "photo",
   "follower": 1055,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 11
+  "interaktionen": 12
  },
  {
   "id": "https://www.instagram.com/p/DgCASMsF-5c/",
@@ -14474,26 +15614,26 @@
  {
   "id": "https://www.instagram.com/p/DgIby0ZGefp/",
   "profil": "edeka_klein",
-  "likes": 8,
+  "likes": 10,
   "kommentare": 0,
   "datum": "2026-11-24T16:56:07Z",
   "format": "photo",
   "follower": 925,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 8
+  "interaktionen": 10
  },
  {
   "id": "https://www.instagram.com/p/Df9625XipLH/",
   "profil": "edeka_klein",
-  "likes": 23,
+  "likes": 24,
   "kommentare": 0,
   "datum": "2026-11-20T14:56:34Z",
   "format": "reel",
   "follower": 925,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 23
+  "interaktionen": 24
  },
  {
   "id": "https://www.instagram.com/p/Df2MalPCR35/",
@@ -14558,50 +15698,50 @@
  {
   "id": "https://www.instagram.com/p/DfNMKVmCqhf/",
   "profil": "edeka_klein",
-  "likes": 27,
+  "likes": 28,
   "kommentare": 0,
   "datum": "2026-11-01T16:44:49Z",
   "format": "reel",
   "follower": 925,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 27
+  "interaktionen": 28
  },
  {
   "id": "https://www.instagram.com/p/DfFWUFQCZbj/",
   "profil": "edeka_klein",
-  "likes": 10,
+  "likes": 11,
   "kommentare": 0,
   "datum": "2026-10-29T15:39:06Z",
   "format": "photo",
   "follower": 925,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 10
+  "interaktionen": 11
  },
  {
   "id": "https://www.instagram.com/p/De7DIuGEYUU/",
   "profil": "edeka_klein",
-  "likes": 47,
+  "likes": 48,
   "kommentare": 0,
   "datum": "2026-10-25T15:39:30Z",
   "format": "reel",
   "follower": 925,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 47
+  "interaktionen": 48
  },
  {
   "id": "https://www.instagram.com/p/De1zQGXk9V4/",
   "profil": "edeka_klein",
-  "likes": 22,
+  "likes": 23,
   "kommentare": 1,
   "datum": "2026-10-23T14:44:07Z",
   "format": "photo",
   "follower": 925,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 23
+  "interaktionen": 24
  },
  {
   "id": "https://www.instagram.com/p/DehPcoHDQVP/",
@@ -14616,16 +15756,28 @@
   "interaktionen": 23
  },
  {
+  "id": "https://www.instagram.com/p/DgLIYa1CDUY/",
+  "profil": "edeka_wessel",
+  "likes": 5,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:04:24Z",
+  "format": "carousel",
+  "follower": 908,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 5
+ },
+ {
   "id": "https://www.instagram.com/p/DgFv-ZjoZ-p/",
   "profil": "edeka_wessel",
-  "likes": 6,
+  "likes": 7,
   "kommentare": 0,
   "datum": "2026-11-23T15:54:53Z",
   "format": "photo",
   "follower": 908,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 6
+  "interaktionen": 7
  },
  {
   "id": "https://www.instagram.com/p/DgAs7jwB14Z/",
@@ -14748,18 +15900,6 @@
   "interaktionen": 4
  },
  {
-  "id": "https://www.instagram.com/p/Dev1UpwIKEA/",
-  "profil": "edeka_wessel",
-  "likes": 1,
-  "kommentare": 0,
-  "datum": "2026-10-21T07:06:58Z",
-  "format": "photo",
-  "follower": 908,
-  "likes_ok": false,
-  "thema": "Event/Aktion",
-  "interaktionen": null
- },
- {
   "id": "https://www.instagram.com/p/DgFeeJRCFbW/",
   "profil": "edeka_paak_erfurt",
   "likes": 7,
@@ -14774,26 +15914,26 @@
  {
   "id": "https://www.instagram.com/p/DgASG_7osxJ/",
   "profil": "edeka_paak_erfurt",
-  "likes": 602,
+  "likes": 606,
   "kommentare": 18,
   "datum": "2026-11-21T13:01:59Z",
   "format": "reel",
   "follower": 1101,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 620
+  "interaktionen": 624
  },
  {
   "id": "https://www.instagram.com/p/Df5BP4lDjl9/",
   "profil": "edeka_paak_erfurt",
-  "likes": 216,
-  "kommentare": 13,
+  "likes": 219,
+  "kommentare": 14,
   "datum": "2026-11-18T17:18:02Z",
   "format": "reel",
   "follower": 1101,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 229
+  "interaktionen": 233
  },
  {
   "id": "https://www.instagram.com/p/DfzfvTLCHA2/",
@@ -14810,26 +15950,26 @@
  {
   "id": "https://www.instagram.com/p/Dfy7sn7oGO1/",
   "profil": "edeka_paak_erfurt",
-  "likes": 180,
+  "likes": 182,
   "kommentare": 6,
   "datum": "2026-11-16T08:37:07Z",
   "format": "reel",
   "follower": 1101,
   "likes_ok": true,
   "thema": "Region/Lieferant",
-  "interaktionen": 186
+  "interaktionen": 188
  },
  {
   "id": "https://www.instagram.com/p/DfrzvAVCMC9/",
   "profil": "edeka_paak_erfurt",
-  "likes": 354,
+  "likes": 355,
   "kommentare": 6,
   "datum": "2026-11-13T14:08:09Z",
   "format": "reel",
   "follower": 1101,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 360
+  "interaktionen": 361
  },
  {
   "id": "https://www.instagram.com/p/DfhdUc9FQdO/",
@@ -14894,50 +16034,50 @@
  {
   "id": "https://www.instagram.com/p/Df90W9fNNHm/",
   "profil": "edekavogt",
-  "likes": 64,
+  "likes": 65,
   "kommentare": 1,
   "datum": "2026-11-20T14:00:18Z",
   "format": "reel",
   "follower": 2017,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 65
+  "interaktionen": 66
  },
  {
   "id": "https://www.instagram.com/p/Df6tDijNMft/",
   "profil": "edekavogt",
-  "likes": 294,
-  "kommentare": 212,
+  "likes": 298,
+  "kommentare": 216,
   "datum": "2026-11-19T08:58:56Z",
   "format": "reel",
   "follower": 2017,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 506
+  "interaktionen": 514
  },
  {
   "id": "https://www.instagram.com/p/Df42apuNP1H/",
   "profil": "edekavogt",
-  "likes": 691,
+  "likes": 693,
   "kommentare": 11,
   "datum": "2026-11-18T15:43:55Z",
   "format": "reel",
   "follower": 2017,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 702
+  "interaktionen": 704
  },
  {
   "id": "https://www.instagram.com/p/Dfw0I_ft9tz/",
   "profil": "edekavogt",
-  "likes": 47,
+  "likes": 48,
   "kommentare": 1,
   "datum": "2026-11-15T12:48:08Z",
   "format": "reel",
   "follower": 2017,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 48
+  "interaktionen": 49
  },
  {
   "id": "https://www.instagram.com/p/DfuDMIYtAQz/",
@@ -15158,26 +16298,26 @@
  {
   "id": "https://www.instagram.com/p/DfxXSN7I4dz/",
   "profil": "edeka.giessenwest",
-  "likes": 275,
+  "likes": 276,
   "kommentare": 54,
   "datum": "2026-11-15T18:02:10Z",
   "format": "reel",
   "follower": 1034,
   "likes_ok": true,
   "thema": "Gewinnspiel",
-  "interaktionen": 329
+  "interaktionen": 330
  },
  {
   "id": "https://www.instagram.com/p/DffVnBooGoP/",
   "profil": "edeka.giessenwest",
-  "likes": 139,
+  "likes": 140,
   "kommentare": 2,
   "datum": "2026-11-08T18:01:38Z",
   "format": "reel",
   "follower": 1034,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 141
+  "interaktionen": 142
  },
  {
   "id": "https://www.instagram.com/p/DfAi5rqoHw8/",
@@ -16226,14 +17366,14 @@
  {
   "id": "https://www.instagram.com/p/DfzTSFHFR1s/",
   "profil": "edeka_gashi",
-  "likes": 4,
+  "likes": 3,
   "kommentare": 0,
   "datum": "2026-11-16T11:57:49Z",
   "format": "photo",
   "follower": 892,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 4
+  "interaktionen": 3
  },
  {
   "id": "https://www.instagram.com/p/Dfy664khXSo/",
@@ -16284,16 +17424,28 @@
   "interaktionen": 9
  },
  {
+  "id": "https://www.instagram.com/p/DgK8EEKD2Gf/",
+  "profil": "edeka_huber",
+  "likes": 9,
+  "kommentare": 0,
+  "datum": "2026-11-25T16:17:12Z",
+  "format": "reel",
+  "follower": 795,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 9
+ },
+ {
   "id": "https://www.instagram.com/p/Df-EhIroX0t/",
   "profil": "edeka_huber",
-  "likes": 360,
+  "likes": 362,
   "kommentare": 7,
   "datum": "2026-11-20T16:20:41Z",
   "format": "reel",
   "follower": 795,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 367
+  "interaktionen": 369
  },
  {
   "id": "https://www.instagram.com/p/DfwhOPbkn-i/",
@@ -16414,18 +17566,6 @@
   "likes_ok": true,
   "thema": "Rezept/Food",
   "interaktionen": 20
- },
- {
-  "id": "https://www.instagram.com/p/DeoUCU4Dwpg/",
-  "profil": "edeka_huber",
-  "likes": 3,
-  "kommentare": 0,
-  "datum": "2026-10-18T09:02:08Z",
-  "format": "reel",
-  "follower": 795,
-  "likes_ok": true,
-  "thema": "Angebot/Preis",
-  "interaktionen": 3
  },
  {
   "id": "https://www.instagram.com/p/Ce1s6afA0uG/",
@@ -16622,7 +17762,7 @@
  {
   "id": "https://www.instagram.com/p/DfrHa1ph6is/",
   "profil": "ecenter_scheuner",
-  "likes": 0,
+  "likes": 1,
   "kommentare": 0,
   "datum": "2026-11-13T07:40:05Z",
   "format": "carousel",
@@ -17268,6 +18408,18 @@
   "interaktionen": null
  },
  {
+  "id": "https://www.instagram.com/p/DgK1OwYil9r/",
+  "profil": "edeka_kauffmann",
+  "likes": 5,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:16:53Z",
+  "format": "photo",
+  "follower": 737,
+  "likes_ok": true,
+  "thema": "Rezept/Food",
+  "interaktionen": 5
+ },
+ {
   "id": "https://www.instagram.com/p/Df9lXCdCv5_/",
   "profil": "edeka_kauffmann",
   "likes": 1,
@@ -17398,18 +18550,6 @@
   "likes_ok": true,
   "thema": "Angebot/Preis",
   "interaktionen": 23
- },
- {
-  "id": "https://www.instagram.com/p/DcjIlTbCrkC/",
-  "profil": "edeka_kauffmann",
-  "likes": 9,
-  "kommentare": 1,
-  "datum": "2026-08-27T15:42:11Z",
-  "format": "photo",
-  "follower": 737,
-  "likes_ok": true,
-  "thema": "Gesund/Bio/Protein",
-  "interaktionen": 10
  },
  {
   "id": "https://www.instagram.com/p/DfUokQaipw4/",
@@ -17700,6 +18840,18 @@
   "interaktionen": 4
  },
  {
+  "id": "https://www.instagram.com/p/DgMFuYnFwXV/",
+  "profil": "ecenter_wernigerode",
+  "likes": 1,
+  "kommentare": 0,
+  "datum": "2026-11-26T04:00:16Z",
+  "format": "photo",
+  "follower": 731,
+  "likes_ok": false,
+  "thema": "Rezept/Food",
+  "interaktionen": null
+ },
+ {
   "id": "https://www.instagram.com/p/DgG8Imyl9hw/",
   "profil": "ecenter_wernigerode",
   "likes": 11,
@@ -17832,28 +18984,16 @@
   "interaktionen": 4
  },
  {
-  "id": "https://www.instagram.com/p/DestdxbF9nC/",
-  "profil": "ecenter_wernigerode",
-  "likes": 9,
-  "kommentare": 0,
-  "datum": "2026-10-20T03:00:12Z",
-  "format": "photo",
-  "follower": 731,
-  "likes_ok": true,
-  "thema": "Rezept/Food",
-  "interaktionen": 9
- },
- {
   "id": "https://www.instagram.com/p/Df44sdFy9WC/",
   "profil": "edekahabermann",
-  "likes": 376,
-  "kommentare": 10,
+  "likes": 408,
+  "kommentare": 11,
   "datum": "2026-11-18T16:00:11Z",
   "format": "reel",
   "follower": 733,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 386
+  "interaktionen": 419
  },
  {
   "id": "https://www.instagram.com/p/DfPvWapyR47/",
@@ -17966,14 +19106,14 @@
  {
   "id": "https://www.instagram.com/p/Df15tWoCO_b/",
   "profil": "edekakapfenberger",
-  "likes": 273,
+  "likes": 274,
   "kommentare": 8,
   "datum": "2026-11-17T12:11:56Z",
   "format": "carousel",
   "follower": 989,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 281
+  "interaktionen": 282
  },
  {
   "id": "https://www.instagram.com/p/Dfpq5Lqxlk6/",
@@ -18086,14 +19226,14 @@
  {
   "id": "https://www.instagram.com/p/DdzYVV9xjNF/",
   "profil": "edekakapfenberger",
-  "likes": 315,
+  "likes": 316,
   "kommentare": 7,
   "datum": "2026-09-27T19:46:29Z",
   "format": "reel",
   "follower": 989,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 322
+  "interaktionen": 323
  },
  {
   "id": "https://www.instagram.com/p/Df6y_yLsCHl/",
@@ -18876,6 +20016,18 @@
   "interaktionen": 56
  },
  {
+  "id": "https://www.instagram.com/p/DgK_73vIqsG/",
+  "profil": "edekaoklitschek",
+  "likes": 22,
+  "kommentare": 0,
+  "datum": "2026-11-25T16:50:27Z",
+  "format": "photo",
+  "follower": 730,
+  "likes_ok": true,
+  "thema": "Sonstiges",
+  "interaktionen": 22
+ },
+ {
   "id": "https://www.instagram.com/p/DgEr8PZlB_I/",
   "profil": "edekaoklitschek",
   "likes": 3,
@@ -18996,16 +20148,16 @@
   "interaktionen": null
  },
  {
-  "id": "https://www.instagram.com/p/DctvFfQNloN/",
-  "profil": "edekaoklitschek",
-  "likes": 31,
-  "kommentare": 1,
-  "datum": "2026-08-31T18:31:35Z",
-  "format": "reel",
-  "follower": 730,
+  "id": "https://www.instagram.com/p/DgLKTVlCohV/",
+  "profil": "ecenter.haubrock.vlotho",
+  "likes": 12,
+  "kommentare": 0,
+  "datum": "2026-11-25T18:21:04Z",
+  "format": "photo",
+  "follower": 687,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 32
+  "interaktionen": 12
  },
  {
   "id": "https://www.instagram.com/p/Df10QmUFXdS/",
@@ -19140,40 +20292,28 @@
   "interaktionen": 31
  },
  {
-  "id": "https://www.instagram.com/p/DbnB0gLisMi/",
-  "profil": "ecenter.haubrock.vlotho",
-  "likes": 47,
-  "kommentare": 2,
-  "datum": "2026-08-04T07:28:44Z",
-  "format": "photo",
-  "follower": 687,
-  "likes_ok": true,
-  "thema": "Gewinnspiel",
-  "interaktionen": 49
- },
- {
   "id": "https://www.instagram.com/p/DgHo7fUAt2C/",
   "profil": "edeka_rohling",
-  "likes": 311,
-  "kommentare": 29,
+  "likes": 548,
+  "kommentare": 83,
   "datum": "2026-11-24T09:32:17Z",
   "format": "reel",
   "follower": 694,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 340
+  "interaktionen": 631
  },
  {
   "id": "https://www.instagram.com/p/DgCqApUiEnP/",
   "profil": "edeka_rohling",
-  "likes": 88,
+  "likes": 108,
   "kommentare": 7,
   "datum": "2026-11-22T11:07:39Z",
   "format": "reel",
   "follower": 694,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 95
+  "interaktionen": 115
  },
  {
   "id": "https://www.instagram.com/p/DfhYCr_CG9S/",
@@ -19190,14 +20330,14 @@
  {
   "id": "https://www.instagram.com/p/DfekebasmW3/",
   "profil": "edeka_rohling",
-  "likes": 154,
+  "likes": 160,
   "kommentare": 5,
   "datum": "2026-11-08T10:44:39Z",
   "format": "reel",
   "follower": 694,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 159
+  "interaktionen": 165
  },
  {
   "id": "https://www.instagram.com/p/De9Za73isud/",
@@ -19226,14 +20366,14 @@
  {
   "id": "https://www.instagram.com/p/Deza_iRmEgT/",
   "profil": "edeka_rohling",
-  "likes": 49,
+  "likes": 53,
   "kommentare": 0,
   "datum": "2026-10-22T16:35:19Z",
   "format": "reel",
   "follower": 694,
   "likes_ok": true,
   "thema": "Rezept/Food",
-  "interaktionen": 49
+  "interaktionen": 53
  },
  {
   "id": "https://www.instagram.com/p/DewsXGHjR6W/",
@@ -19286,14 +20426,14 @@
  {
   "id": "https://www.instagram.com/p/DTN0LzUDN3L/",
   "profil": "edeka_rohling",
-  "likes": 115,
+  "likes": 117,
   "kommentare": 8,
   "datum": "2026-01-07T16:18:57Z",
   "format": "reel",
   "follower": 694,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 123
+  "interaktionen": 125
  },
  {
   "id": "https://www.instagram.com/p/DYhax7XsEqj/",
@@ -19872,6 +21012,18 @@
   "interaktionen": 2
  },
  {
+  "id": "https://www.instagram.com/p/DgMFuzVNS2E/",
+  "profil": "e_center_magdeburg_boerde_park",
+  "likes": 0,
+  "kommentare": 0,
+  "datum": "2026-11-26T04:00:09Z",
+  "format": "reel",
+  "follower": 565,
+  "likes_ok": false,
+  "thema": "Angebot/Preis",
+  "interaktionen": null
+ },
+ {
   "id": "https://www.instagram.com/p/Df6ELZFlStB/",
   "profil": "e_center_magdeburg_boerde_park",
   "likes": 1,
@@ -20004,28 +21156,16 @@
   "interaktionen": 2
  },
  {
-  "id": "https://www.instagram.com/p/DeNz7L7jDnn/",
-  "profil": "e_center_magdeburg_boerde_park",
-  "likes": 0,
-  "kommentare": 0,
-  "datum": "2026-10-08T03:00:19Z",
-  "format": "photo",
-  "follower": 565,
-  "likes_ok": false,
-  "thema": "Sonstiges",
-  "interaktionen": null
- },
- {
   "id": "https://www.instagram.com/p/DgKmXQgss6M/",
   "profil": "edeka.birol",
-  "likes": 6,
+  "likes": 13,
   "kommentare": 0,
   "datum": "2026-11-25T13:09:48Z",
   "format": "reel",
   "follower": 532,
   "likes_ok": true,
   "thema": "Gesund/Bio/Protein",
-  "interaktionen": 6
+  "interaktionen": 13
  },
  {
   "id": "https://www.instagram.com/p/Df9aL_wDHi8/",
@@ -20162,14 +21302,14 @@
  {
   "id": "https://www.instagram.com/p/DgKRvcHiEDN/",
   "profil": "edeka.hallmarkt",
-  "likes": 3,
+  "likes": 4,
   "kommentare": 0,
   "datum": "2026-11-25T10:06:57Z",
   "format": "photo",
   "follower": 532,
   "likes_ok": true,
   "thema": "Gesund/Bio/Protein",
-  "interaktionen": 3
+  "interaktionen": 4
  },
  {
   "id": "https://www.instagram.com/p/Df83Fq0lVPx/",
@@ -20750,14 +21890,14 @@
  {
   "id": "https://www.instagram.com/p/Df9SC52D263/",
   "profil": "nordfrischecenter",
-  "likes": 40,
-  "kommentare": 1,
+  "likes": 41,
+  "kommentare": 2,
   "datum": "2026-11-20T08:59:44Z",
   "format": "reel",
   "follower": 553,
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
-  "interaktionen": 41
+  "interaktionen": 43
  },
  {
   "id": "https://www.instagram.com/p/Dfrb0XqG3RR/",
@@ -20806,18 +21946,6 @@
   "likes_ok": true,
   "thema": "Recruiting/Karriere",
   "interaktionen": 17
- },
- {
-  "id": "https://www.instagram.com/p/DfZHuAIDFnh/",
-  "profil": "nordfrischecenter",
-  "likes": 15,
-  "kommentare": 0,
-  "datum": "2026-11-06T09:00:20Z",
-  "format": "reel",
-  "follower": 553,
-  "likes_ok": true,
-  "thema": "Region/Lieferant",
-  "interaktionen": 15
  },
  {
   "id": "https://www.instagram.com/p/DfKAGU1AmBw/",
@@ -21218,14 +22346,14 @@
  {
   "id": "https://www.instagram.com/p/Dfr8qZmMZ96/",
   "profil": "edeka_patschull",
-  "likes": 22,
+  "likes": 23,
   "kommentare": 0,
   "datum": "2026-11-13T15:25:45Z",
   "format": "reel",
   "follower": 590,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 22
+  "interaktionen": 23
  },
  {
   "id": "https://www.instagram.com/p/Dfrke8_I-Pp/",
@@ -21326,14 +22454,14 @@
  {
   "id": "https://www.instagram.com/p/Df1-jGJihTs/",
   "profil": "ecenter.lietz",
-  "likes": 146,
+  "likes": 147,
   "kommentare": 10,
   "datum": "2026-11-17T12:58:43Z",
   "format": "photo",
   "follower": 564,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 156
+  "interaktionen": 157
  },
  {
   "id": "https://www.instagram.com/p/DfzSQV4lfz3/",
@@ -21540,28 +22668,40 @@
   "interaktionen": 45
  },
  {
+  "id": "https://www.instagram.com/p/DgK4b03ASsD/",
+  "profil": "edekakleinhessling",
+  "likes": 66,
+  "kommentare": 3,
+  "datum": "2026-11-25T16:53:26Z",
+  "format": "reel",
+  "follower": 642,
+  "likes_ok": true,
+  "thema": "Humor/Team/Azubi",
+  "interaktionen": 69
+ },
+ {
   "id": "https://www.instagram.com/p/Df7b9XARqYN/",
   "profil": "edekakleinhessling",
-  "likes": 186,
+  "likes": 188,
   "kommentare": 3,
   "datum": "2026-11-19T15:48:21Z",
   "format": "reel",
   "follower": 642,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 189
+  "interaktionen": 191
  },
  {
   "id": "https://www.instagram.com/p/Df2TZISR_P6/",
   "profil": "edekakleinhessling",
-  "likes": 497,
-  "kommentare": 3,
+  "likes": 499,
+  "kommentare": 4,
   "datum": "2026-11-17T15:57:28Z",
   "format": "reel",
   "follower": 642,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 500
+  "interaktionen": 503
  },
  {
   "id": "https://www.instagram.com/p/Dfm2EjfxErp/",
@@ -21578,14 +22718,14 @@
  {
   "id": "https://www.instagram.com/p/DfXXA93ulWZ/",
   "profil": "edekakleinhessling",
-  "likes": 110,
+  "likes": 111,
   "kommentare": 5,
   "datum": "2026-11-05T15:34:43Z",
   "format": "reel",
   "follower": 642,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 115
+  "interaktionen": 116
  },
  {
   "id": "https://www.instagram.com/p/DfSRpfgxSCb/",
@@ -21614,14 +22754,14 @@
  {
   "id": "https://www.instagram.com/p/DfAPQ5NO3MN/",
   "profil": "edekakleinhessling",
-  "likes": 236,
+  "likes": 237,
   "kommentare": 1,
   "datum": "2026-10-27T16:01:56Z",
   "format": "reel",
   "follower": 642,
   "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": 237
+  "interaktionen": 238
  },
  {
   "id": "https://www.instagram.com/p/DezRgxduLV8/",
@@ -21830,14 +22970,14 @@
  {
   "id": "https://www.instagram.com/p/DffOrpORNMx/",
   "profil": "edekacenter.goslar",
-  "likes": 8,
+  "likes": 9,
   "kommentare": 0,
   "datum": "2026-11-08T16:53:04Z",
   "format": "reel",
   "follower": 507,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 8
+  "interaktionen": 9
  },
  {
   "id": "https://www.instagram.com/p/DfX8qB8RbOq/",
@@ -22346,14 +23486,14 @@
  {
   "id": "https://www.instagram.com/p/DgKr1AMjd6H/",
   "profil": "edekawiewel",
-  "likes": 1,
-  "kommentare": 0,
+  "likes": 10,
+  "kommentare": 1,
   "datum": "2026-11-25T13:54:41Z",
   "format": "carousel",
   "follower": 381,
-  "likes_ok": false,
+  "likes_ok": true,
   "thema": "Humor/Team/Azubi",
-  "interaktionen": null
+  "interaktionen": 11
  },
  {
   "id": "https://www.instagram.com/p/DgCJhIrOYDB/",
@@ -22515,13 +23655,13 @@
   "id": "https://www.instagram.com/p/Dfoi971ilMH/",
   "profil": "ecenterschleswig",
   "likes": 8,
-  "kommentare": 0,
+  "kommentare": 1,
   "datum": "2026-11-12T07:43:33Z",
   "format": "photo",
   "follower": 381,
   "likes_ok": true,
   "thema": "Angebot/Preis",
-  "interaktionen": 8
+  "interaktionen": 9
  },
  {
   "id": "https://www.instagram.com/p/DeQ0O9dCieL/",
@@ -22766,14 +23906,14 @@
  {
   "id": "https://www.instagram.com/p/DgKO15QtTme/",
   "profil": "edekaschnelle",
-  "likes": 35,
-  "kommentare": 5,
+  "likes": 75,
+  "kommentare": 8,
   "datum": "2026-11-25T09:41:27Z",
   "format": "photo",
   "follower": 377,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 40
+  "interaktionen": 83
  },
  {
   "id": "https://www.instagram.com/p/DfWqRfMD7cL/",
@@ -22862,14 +24002,14 @@
  {
   "id": "https://www.instagram.com/p/DeMt0hqtJqq/",
   "profil": "edekaschnelle",
-  "likes": 54,
+  "likes": 55,
   "kommentare": 1,
   "datum": "2026-10-07T15:49:57Z",
   "format": "photo",
   "follower": 377,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 55
+  "interaktionen": 56
  },
  {
   "id": "https://www.instagram.com/p/DeMnncrDcpK/",
@@ -24518,14 +25658,14 @@
  {
   "id": "https://www.instagram.com/p/DgFta-Bovdq/",
   "profil": "edeka_sell",
-  "likes": 7,
+  "likes": 8,
   "kommentare": 0,
   "datum": "2026-11-23T15:33:02Z",
   "format": "reel",
   "follower": 274,
   "likes_ok": true,
   "thema": "Sonstiges",
-  "interaktionen": 7
+  "interaktionen": 8
  },
  {
   "id": "https://www.instagram.com/p/DgFtUBdIqTt/",
@@ -25932,6 +27072,18 @@
   "interaktionen": 23
  },
  {
+  "id": "https://www.instagram.com/p/DgKzYkDCFQq/",
+  "profil": "edeka.center.niemann",
+  "likes": 6,
+  "kommentare": 0,
+  "datum": "2026-11-25T15:00:56Z",
+  "format": "photo",
+  "follower": 192,
+  "likes_ok": true,
+  "thema": "Gesund/Bio/Protein",
+  "interaktionen": 6
+ },
+ {
   "id": "https://www.instagram.com/p/Df9divDiKBN/",
   "profil": "edeka.center.niemann",
   "likes": 2,
@@ -26062,18 +27214,6 @@
   "likes_ok": true,
   "thema": "Sonstiges",
   "interaktionen": 16
- },
- {
-  "id": "https://www.instagram.com/p/DeMFwscHAtE/",
-  "profil": "edeka.center.niemann",
-  "likes": 9,
-  "kommentare": 1,
-  "datum": "2026-10-07T09:57:55Z",
-  "format": "photo",
-  "follower": 192,
-  "likes_ok": true,
-  "thema": "Rezept/Food",
-  "interaktionen": 10
  },
  {
   "id": "https://www.instagram.com/p/C60gPTjN3ZP/",
@@ -26354,14 +27494,14 @@
  {
   "id": "https://www.instagram.com/p/C_ATUd7Mi7m/",
   "profil": "edeka.center.koeniginelisabeth",
-  "likes": 6,
+  "likes": 7,
   "kommentare": 0,
   "datum": "2024-08-23T07:52:07Z",
   "format": "photo",
   "follower": 82,
   "likes_ok": true,
   "thema": "Event/Aktion",
-  "interaktionen": 6
+  "interaktionen": 7
  },
  {
   "id": "https://www.instagram.com/p/DgKrf9Io8w8/",
