@@ -12,6 +12,14 @@ on:
         description: 'Werbek-Abfrage mitlaufen lassen'
         type: boolean
         default: false
+      trends:
+        description: 'Trends in der Nische (04) mitlaufen lassen'
+        type: boolean
+        default: false
+      kommentare:
+        description: 'Kommentare der Top-Posts (04) mitlaufen lassen'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,6 +54,19 @@ jobs:
         env:
           TREG_TOKEN: ${{ secrets.TREG_TOKEN }}
         run: python3 scripts/scrape_ads.py
+
+      - name: Trends in der Nische (montags oder auf Wunsch)
+        if: github.event.schedule == '0 5 * * 1' || inputs.trends == true
+        env:
+          TREG_TOKEN: ${{ secrets.TREG_TOKEN }}
+        run: python3 scripts/scrape_trends.py
+
+      - name: Kommentare der Top-Posts (montags oder auf Wunsch)
+        if: github.event.schedule == '0 5 * * 1' || inputs.kommentare == true
+        env:
+          TREG_TOKEN: ${{ secrets.TREG_TOKEN }}
+          ORCAROUTER_API_KEY: ${{ secrets.ORCAROUTER_API_KEY }}
+        run: python3 scripts/scrape_comments.py
 
       - name: Dashboard bauen
         run: python3 scripts/build.py

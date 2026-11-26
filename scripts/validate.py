@@ -13,6 +13,36 @@ NEU = os.path.join(ROOT, 'data', 'dashboard.json')
 MAX = 0.20
 
 
+# --- Pausche 04 (Trends & Stimmen): Struktur, wenn die Dateien existieren ---
+def check_neu(fn, zfeld, pflicht):
+    pfad = os.path.join(ROOT, 'data', fn)
+    if not os.path.exists(pfad):
+        print(fn + ': nicht vorhanden (faellt sich montags automatisch)')
+        return
+    try:
+        d = json.load(open(pfad, encoding='utf-8'))
+    except Exception as e:
+        print('ABBRUCH: %s ist kein gueltiges JSON: %s' % (fn, e))
+        sys.exit(1)
+    if not isinstance(d, dict):
+        print('ABBRUCH: %s muss ein Objekt sein' % fn)
+        sys.exit(1)
+    n = d.get(zfeld)
+    if not isinstance(n, (int, float)) or n < 0:
+        print('ABBRUCH: %s: %s fehlt oder < 0' % (fn, zfeld))
+        sys.exit(1)
+    for k in pflicht:
+        if k not in d:
+            print('ABBRUCH: %s: Feld %s fehlt' % (fn, k))
+            sys.exit(1)
+    print('%s: ok (%s=%s)' % (fn, zfeld, n))
+
+
+check_neu('trends.json', 'n_relevant', ['stand', 'kosten_usd', 'top', 'formate'])
+check_neu('comments.json', 'n_kommentare',
+          ['stand', 'kosten_usd', 'ton', 'themen', 'posts', 'fazit', 'aktionen'])
+
+
 def old_dash():
     p = subprocess.run(['git', 'show', 'HEAD:data/dashboard.json'],
                        cwd=ROOT, capture_output=True, text=True)
