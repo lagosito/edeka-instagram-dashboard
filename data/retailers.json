@@ -1,40 +1,40 @@
 {
  "stand": "2026-11-26",
- "kosten_usd": 0.019255,
+ "kosten_usd": 0.019765,
  "konten": [
-  {
-   "handle": "tesco",
-   "name": "Tesco",
-   "land": "GB",
-   "follower": 726587,
-   "n_reels": 12
-  },
   {
    "handle": "aldiuk",
    "name": "Aldi UK",
    "land": "GB",
-   "follower": 946248,
+   "follower": 946251,
    "n_reels": 8
   },
   {
    "handle": "sainsburys",
    "name": "Sainsbury’s",
    "land": "GB",
-   "follower": 412715,
+   "follower": 412717,
+   "n_reels": 12
+  },
+  {
+   "handle": "tesco",
+   "name": "Tesco",
+   "land": "GB",
+   "follower": 726588,
    "n_reels": 12
   },
   {
    "handle": "marksandspencer",
    "name": "Marks & Spencer",
    "land": "GB",
-   "follower": 2661619,
+   "follower": 2661645,
    "n_reels": 12
   },
   {
    "handle": "lidlgb",
    "name": "Lidl GB",
    "land": "GB",
-   "follower": 526433,
+   "follower": 526435,
    "n_reels": 8
   },
   {
@@ -45,72 +45,72 @@
    "n_reels": 0
   },
   {
-   "handle": "traderjoes",
-   "name": "Trader Joe’s",
-   "land": "US",
-   "follower": 4005095,
-   "n_reels": 12
-  },
-  {
    "handle": "wholefoods",
    "name": "Whole Foods",
    "land": "US",
-   "follower": 3100498,
+   "follower": 3100497,
+   "n_reels": 12
+  },
+  {
+   "handle": "traderjoes",
+   "name": "Trader Joe’s",
+   "land": "US",
+   "follower": 4005099,
    "n_reels": 12
   },
   {
    "handle": "walmart",
    "name": "Walmart",
    "land": "US",
-   "follower": 4128911,
+   "follower": 4128928,
    "n_reels": 12
   },
   {
    "handle": "albertheijn",
    "name": "Albert Heijn",
    "land": "NL",
-   "follower": 311480,
+   "follower": 311486,
    "n_reels": 12
   },
   {
    "handle": "carrefourfrance",
    "name": "Carrefour",
    "land": "FR",
-   "follower": 756941,
+   "follower": 756942,
    "n_reels": 12
   },
   {
    "handle": "migros",
    "name": "Migros",
    "land": "CH",
-   "follower": 318338,
+   "follower": 318341,
    "n_reels": 11
   }
  ],
  "formate": {
-  "Humor/Team/Alltag": {
-   "anzahl": 36,
-   "rel_engagement_med": 0.981
-  },
   "Sonstiges": {
-   "anzahl": 41,
-   "rel_engagement_med": 0.982
+   "anzahl": 39,
+   "rel_engagement_med": 0.959
+  },
+  "Haul/Einkauf": {
+   "anzahl": 14,
+   "rel_engagement_med": 0.997
   },
   "Rezept-Tutorial": {
-   "anzahl": 13,
-   "rel_engagement_med": 1.305
+   "anzahl": 14,
+   "rel_engagement_med": 1.225
+  },
+  "Humor/Team/Alltag": {
+   "anzahl": 37,
+   "rel_engagement_med": 1.0
+  },
+  "Produkt-Test": {
+   "anzahl": 6,
+   "rel_engagement_med": 1.135
   },
   "Spar-Tipp": {
    "anzahl": 13,
-   "rel_engagement_med": 1.038
-  },
-  "Haul/Einkauf": {
-   "anzahl": 15,
-   "rel_engagement_med": 0.958
-  },
-  "Produkt-Test": {
-   "anzahl": 5,
-   "rel_engagement_med": 0.78
+   "rel_engagement_med": 0.928
   }
  },
  "top": [
@@ -120,17 +120,17 @@
    "land": "GB",
    "url": "https://www.instagram.com/reel/DgAmfo3nXo0/",
    "caption": "The secret to perfectly crisp and craggy parsnips is here! Recipe below ⬇️ \n\n2kg parsnips, peeled, trimmed and cut into chunky batons\n1 tbsp bicarbonate of soda",
-   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/918732333_17915248482560511_7077358962211926808_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNTM5NDU2NjA3NzkwNTQ2MDE3OTE1MjQ4NDc5NTYwNTEx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjc3Mi5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=oKRCFZvfEwIQ7kNvwHd6ltF&_nc_oc=AdqquQkoApEFrngOAuZs47Xy6wA1ljLklEyjc9u5F6wzjkqvaCC6xSSRmf0u77Malb1aizbgVHKJU2uU_LSLw2HD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=vSMBmnKscEuBR6HORgzDHg&_nc_ss=7a39b&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSqF_VLTF66PWNlKVXQQs1Jt6jdVmRjH7zU-8Kza-vjaQ&oe=6B0E1EC7",
+   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/918732333_17915248482560511_7077358962211926808_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNTM5NDU2NjA3NzkwNTQ2MDE3OTE1MjQ4NDc5NTYwNTEx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjc3Mi5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=oKRCFZvfEwIQ7kNvwHMADMC&_nc_oc=AdqaS5bMmG-JLiC3XG1EPTms8-FPD4I7eq84Leej3WQg5ZhYt6bjJ_T7dkYeqA_m9mU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=8ZELTE1XBj0Av1XFz31iXQ&_nc_ss=7a39b&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQTtU1VgcfFajzHg9MUsRG4g5gePMpirZXeCe17mtErIKA&oe=6B0E1EC7",
    "datum": "2026-11-21",
-   "likes": 22098,
+   "likes": 22107,
    "comments": 260,
-   "views": 1386800,
-   "followers": 726587,
+   "views": 1387259,
+   "followers": 726588,
    "format": "Rezept-Tutorial",
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "rel_engagement": 83.845,
-   "eng_follower": 3.0771
+   "rel_engagement": 83.88,
+   "eng_follower": 3.0784
   },
   {
    "handle": "walmart",
@@ -138,17 +138,17 @@
    "land": "US",
    "url": "https://www.instagram.com/reel/Df7tDIVKuqo/",
    "caption": "it gets better every time 🥚 @probably_prisma\n\nshop hatchin’ yoshi and more top toys at the link in bio",
-   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/916027404_18657860482002995_8273478612869083130_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNDAxNjAxODQzNjkwOTczNjE4NjU3ODYwNDc2MDAyOTk1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=dkzUoePWDFsQ7kNvwFPYN4z&_nc_oc=AdoKiREezLaBV_7BjKwd5CNGPIVQt1q5q4aKZQnuGBZjRS2U_981CCbullRnHPiXgIa8ttGAYSid5dsRBzQq2Rrp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=F3dcSYMQ2dTsnqCL9lKVeg&_nc_ss=7a39b&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQS1d9RLHH62SDdK0JlAboQ2OcWRQUHJWAd7t2CrGNcldQ&oe=6B0E1C54",
+   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/916027404_18657860482002995_8273478612869083130_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNDAxNjAxODQzNjkwOTczNjE4NjU3ODYwNDc2MDAyOTk1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=dkzUoePWDFsQ7kNvwFRS9ME&_nc_oc=Adpablt9XPQBgasKUXcoAChFilwC_VJuBuB4-OEadIzozxk0d_n5tewx6ZXFBmxY3uxY3IeQ4pksQTj8OnSzjWqv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=KS75nrRD7jV-evR2dSl2hA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQSby-uIQMU-8NAtH7gFE7C_ABNBZClaTO18zjhLm9wVHw&oe=6B0E1C54",
    "datum": "2026-11-19",
-   "likes": 33002,
+   "likes": 33025,
    "comments": 195,
-   "views": 2082548,
-   "followers": 4128911,
+   "views": 2083643,
+   "followers": 4128928,
    "format": "Haul/Einkauf",
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "rel_engagement": 52.895,
-   "eng_follower": 0.804
+   "rel_engagement": 52.934,
+   "eng_follower": 0.8046
   },
   {
    "handle": "migros",
@@ -156,17 +156,17 @@
    "land": "CH",
    "url": "https://www.instagram.com/reel/DfreU99CvIX/",
    "caption": "Unsere Liebsten sind das grösste Geschenk. Passen wir auf einander auf. ❤️",
-   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.71878-15/902158889_1450322297078685_5300928452441269628_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTQ0NzY3MzkyMDI4NzI1NTE4NjQzMzg3NDc3MDQ3MTIy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=oTPzxka1KUkQ7kNvwFraS4Q&_nc_oc=AdpWbEaPKFWCj_tAWUjYbSVY4GqaATe-qYoSwLWmDhEPf-WIBxY7veZ3r5_5fKlwArowROhoGBjUo10JdoBtXUOO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=JVBR2SmhAo7iZA7luaLiAQ&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQSF5OMjnSByiA3HK4dILqil9blNDtLWhWynAdGV6mkrDw&oe=6B0E2943",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.71878-15/902158889_1450322297078685_5300928452441269628_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTQ0NzY3MzkyMDI4NzI1NTE4NjQzMzg3NDc3MDQ3MTIy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=oTPzxka1KUkQ7kNvwEROEfJ&_nc_oc=Adr564hLSWv9MTyV7kRUCx-T0Dzr3tWnko8SKr15n7q8n7dAP8UsFnUftyB_EBEAFqICm2kUK8Qoobt5qoP2Nlrg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=vtaPZ-yETo9iQVh2Bu3f6w&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQpu_wyUtArr2AgkBigG6ZQpPtjV1po_qYvFYT_RmDP3g&oe=6B0E2943",
    "datum": "2026-11-13",
    "likes": 13960,
    "comments": 241,
-   "views": 611116,
-   "followers": 318338,
+   "views": 611124,
+   "followers": 318341,
    "format": "Sonstiges",
    "uebertragbar": 2,
    "transfer": "direkt",
-   "rel_engagement": 18.588,
-   "eng_follower": 4.461
+   "rel_engagement": 18.587,
+   "eng_follower": 4.4609
   },
   {
    "handle": "sainsburys",
@@ -174,12 +174,12 @@
    "land": "GB",
    "url": "https://www.instagram.com/reel/DfkV2YgMTqC/",
    "caption": "A surprise DJ set… in Sainsbury’s!?🪩🔊\n\nThat’s right. We took internet sensation Auntie Ann out of her kitchen and into the supermarket, to give shoppers a VERY ",
-   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/898537362_18644585587023601_6575353446375576438_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNzQ0MDA2MjkxNDQ0MzkwNjE4NjQ0NTg1NTg0MDIzNjAx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=gXyDLuOiHOQQ7kNvwG7ZBW3&_nc_oc=AdrE_mUPUuDN-3OvQC9RtqeXN8O0Al4ys9kKGcEsH7R7o9idL0-cxhMt0eaJLsu--ySyLka7QFJTiL_eIiaYbWpJ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=sgLyedH81tmS1mM-rV7NKQ&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQS4Vv1G--pqnQIxFNoJHIIzgDbb5pWHTsFsBWOSydIgKg&oe=6B0E3C81",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/898537362_18644585587023601_6575353446375576438_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNzQ0MDA2MjkxNDQ0MzkwNjE4NjQ0NTg1NTg0MDIzNjAx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=gXyDLuOiHOQQ7kNvwGhxFfj&_nc_oc=AdqCPchDNW7M9WRE9zw9-b8HnYENM1cHoRCS8yye8ekikJ2SsP7l-laR5OW6tNWoZSLlXmWq2T2c9yaLN5wpX18K&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=RQe3mN3uy6kVSSv6pRbfCw&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQdRuNFiUOCSjpHIEh_ZkGtqwWYLzE-zNJTiQgdXcsUvw&oe=6B0E3C81",
    "datum": "2026-11-10",
    "likes": 3236,
    "comments": 106,
-   "views": 134074,
-   "followers": 412715,
+   "views": 134081,
+   "followers": 412717,
    "format": "Humor/Team/Alltag",
    "uebertragbar": 1,
    "transfer": "anpassung",
@@ -192,17 +192,17 @@
    "land": "GB",
    "url": "https://www.instagram.com/reel/DgM8t3sB6Ru/",
    "caption": "SET. YOUR. ALARMS. 🚨\n\nThe cult M&S x Aries leather tote is making its highly-anticipated return on 01.12.26.\n\nAnd this time, you don’t want to miss it. Trust us",
-   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/902949054_18658012336008750_4652390700258778608_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAzODg3MDAwMDgwNjExMDMxODE4NjU4MDEyMzMzMDA4NzUw.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=fy83pdxgAF4Q7kNvwF2DgWL&_nc_oc=AdpTcIYGFH1X8ZZaP4dbR5HSWgZ3ZGHoVA_4FaPfvIW5Yvb4iGJilUxt0WaXZs836-429wWWb21mqZef0ZLBNG6i&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=N1VTJwBX8NylbNUjmZdR2A&_nc_ss=7a39b&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQRhg8UaL1CGlPkIa-z5al5jx-N-Isu5TF4gjWEuF40gbw&oe=6B0E1587",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/902949054_18658012336008750_4652390700258778608_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAzODg3MDAwMDgwNjExMDMxODE4NjU4MDEyMzMzMDA4NzUw.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=fy83pdxgAF4Q7kNvwHE29kT&_nc_oc=AdqK3ypx5jRkEkqMkVv0eY4R0gUafMG9eFzQK86Jo0krWs1VpRqSMKKqm0zaWdbPwgQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=I8l5_mvINjRfForLts0gSg&_nc_ss=7a39b&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQTmhVb2ux5AGSzRKV0UhL8ODwraiN25LUSWEXSit8Cg8A&oe=6B0E1587",
    "datum": "2026-11-26",
-   "likes": 5275,
-   "comments": 233,
-   "views": 356413,
-   "followers": 2661619,
+   "likes": 5497,
+   "comments": 243,
+   "views": 371011,
+   "followers": 2661645,
    "format": "Sonstiges",
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "rel_engagement": 12.464,
-   "eng_follower": 0.2069
+   "rel_engagement": 12.994,
+   "eng_follower": 0.2157
   },
   {
    "handle": "migros",
@@ -210,12 +210,12 @@
    "land": "CH",
    "url": "https://www.instagram.com/reel/DfZuBKyzzyJ/",
    "caption": "Migros City 6 Trailer Out Now! 🏙️🔥\n\nDieses Video wurde mit KI generiert.",
-   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/894140756_18640908079047122_8119319607579576670_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNDQ1MDEzMjQ4MTA5Njg0MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=BUOE19XfRfYQ7kNvwFY8tjm&_nc_oc=AdpSNo1tBL1_-F5Smi8Q-GBBcopTRBPm934hvckWPL7cS0T7QuZ-1IUkm-ulneN8eU5wxpVv4LjuF5yRmSp7vNnB&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=JVBR2SmhAo7iZA7luaLiAQ&_nc_ss=7a39b&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQTFqzCIYKnqqTMJxFjULDwuuQ7vh1oqsVhZRJESeUpVZg&oe=6B0E283D",
+   "thumbnail": "https://scontent-ams4-1.cdninstagram.com/v/t51.82787-15/894140756_18640908079047122_8119319607579576670_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNDQ1MDEzMjQ4MTA5Njg0MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=BUOE19XfRfYQ7kNvwHNv3to&_nc_oc=AdoT0Mv8GQQ4ED2v7GKkB4rhY05x_2Zp9MJrBaWq4q-x1lHbO2ObUbwJZkWnIyGsD7kCV556GQSeceNL9NViNchI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_gid=vtaPZ-yETo9iQVh2Bu3f6w&_nc_ss=7a39b&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQQLqpOLs6YxspmlbQzCbq9TLvSZhZu25L75jFN2mJXtSg&oe=6B0E283D",
    "datum": "2026-11-06",
    "likes": 6313,
    "comments": 430,
-   "views": 463513,
-   "followers": 318338,
+   "views": 463515,
+   "followers": 318341,
    "format": "Sonstiges",
    "uebertragbar": 1,
    "transfer": "anpassung",
@@ -228,17 +228,17 @@
    "land": "GB",
    "url": "https://www.instagram.com/reel/DfrvEpHNNGJ/",
    "caption": "@shaunwilliamson64’s been busy spreading a Lidl Christmas cheer and getting this earworm stuck in your head 👀 Get in! 💪🎄",
-   "thumbnail": "https://scontent-ams4-1.cdninstagram.com/v/t51.82787-15/896488246_18649115215013441_4308098292077939208_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTUyMTMxODgyMTI4NjI4MTE4NjQ5MTE1MjEyMDEzNDQx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=nCTqwhdBJukQ7kNvwEvzDqa&_nc_oc=AdrBo0qtSYz7zS6p__5YNFvuoc5Howe0wmR0u7w-0RvfAGicT5lHSIPf2OWKRIKXwRU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_gid=E4eLQeNfdR8JJeZbIHQDkA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQaXlAVCNTgq9jBekeA07RJiDCvz_S4LUnxECoGxbSgUw&oe=6B0E11D1",
+   "thumbnail": "https://scontent-ams4-1.cdninstagram.com/v/t51.82787-15/896488246_18649115215013441_4308098292077939208_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTUyMTMxODgyMTI4NjI4MTE4NjQ5MTE1MjEyMDEzNDQx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=nCTqwhdBJukQ7kNvwHrdjsD&_nc_oc=AdqpO-vZUKhvMEyo7e_Fi29Koth80BXlhmG6IjoFsZjwH_q7KONZq_IZ1tLHLDlrP8s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_gid=I2vDpY6aF0k0E4mV3nUTZA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQTA-PFo3oQ5lADZ5nWeJ-g5AAwubv8rVeD0-pCLtBVxaQ&oe=6B0E11D1",
    "datum": "2026-11-13",
-   "likes": 14938,
+   "likes": 14940,
    "comments": 217,
-   "views": 8684634,
-   "followers": 526433,
+   "views": 8688527,
+   "followers": 526435,
    "format": "Humor/Team/Alltag",
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "rel_engagement": 8.408,
-   "eng_follower": 2.8788
+   "rel_engagement": 8.381,
+   "eng_follower": 2.8792
   },
   {
    "handle": "walmart",
@@ -246,17 +246,17 @@
    "land": "US",
    "url": "https://www.instagram.com/reel/Df7QE3CK-8G/",
    "caption": "the people yearn for pepé",
-   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/907608868_18657805984002995_7404414014981819000_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAzMzg4ODU5Mzk1NDcyOTczNDE4NjU3ODA1OTgxMDAyOTk1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=L46ZZwa50lAQ7kNvwGkPspY&_nc_oc=AdrvKucLDKv0aL4fcE2hOjNIqZzpuZZdORJFUbBo6ng6C6DT6289AIVsITn3qhlpI7hYP9ruFmSSpVdc7xbQMurc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=F3dcSYMQ2dTsnqCL9lKVeg&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQTByiT0CKtbl6Ev241QB7clYUeGwGDW1V-KIBxfTixiOA&oe=6B0E3E1A",
+   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/907608868_18657805984002995_7404414014981819000_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAzMzg4ODU5Mzk1NDcyOTczNDE4NjU3ODA1OTgxMDAyOTk1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=L46ZZwa50lAQ7kNvwFsMo2b&_nc_oc=Adov2OMNTys7qYHuBByiDEQO2y-eCd2KQTvtuxhos3yh5DlEqjVPv3bCWF38W9PjcWGl_4wiXhO-PvxNgLXBAS7X&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=KS75nrRD7jV-evR2dSl2hA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQ46dfYzI8gmaco5w21fIg_KfTQqJBEAOTkuvrK420q3Q&oe=6B0E3E1A",
    "datum": "2026-11-19",
-   "likes": 4658,
+   "likes": 4659,
    "comments": 67,
-   "views": 97612,
-   "followers": 4128911,
+   "views": 97656,
+   "followers": 4128928,
    "format": "Humor/Team/Alltag",
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "rel_engagement": 7.526,
-   "eng_follower": 0.1144
+   "rel_engagement": 7.533,
+   "eng_follower": 0.1145
   },
   {
    "handle": "wholefoods",
@@ -264,12 +264,12 @@
    "land": "US",
    "url": "https://www.instagram.com/reel/Dfas4YNBeHw/",
    "caption": "Introducing the Festive Turkey Family Meal! Turkey breast, gravy, green beans, mashed potatoes, cranberry sauce, and stuffing, all fully cooked and ready to gra",
-   "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/890671453_18646196569056271_1321158701977154912_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNDcyNjYwNTMzNDQzODM4NDE4NjQ2MTk2NTY2MDU2Mjcx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=rUKm573NxokQ7kNvwEGixN5&_nc_oc=AdqW0W5_Y9QtgE2KK0-FdIIWCRh59QsUWpg59eMSvY-b5cZGNcGBtjq9Zml7gbtbaNk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=BpGS6tmoENARQBpxAvJmXA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQTiE3bHShc-MfiBMfDMm-03LBLe0BnIUju4KF3-k41P_w&oe=6B0E0B15",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/890671453_18646196569056271_1321158701977154912_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNDcyNjYwNTMzNDQzODM4NDE4NjQ2MTk2NTY2MDU2Mjcx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=rUKm573NxokQ7kNvwHsaeiD&_nc_oc=Adoom4wrmKkgk2gPfRpkYaLiZEwXYJieMydBhOaxSNm6lrHJPRnI3u5wviR4z3yL4VdwXD4SblVjXpcNkIpT9KM4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=dNWT1pHmkHTG_X8J0_sitA&_nc_ss=7a39b&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQRMQPhk1r9o1YLFBaU7RVmo3TVdanhrj7Zr2yCRYcWsWA&oe=6B0E4355",
    "datum": "2026-11-06",
    "likes": 5053,
    "comments": 130,
-   "views": 239651,
-   "followers": 3100498,
+   "views": 239677,
+   "followers": 3100497,
    "format": "Spar-Tipp",
    "uebertragbar": 1,
    "transfer": "anpassung",
