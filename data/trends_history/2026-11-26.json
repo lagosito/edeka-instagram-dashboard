@@ -1,239 +1,435 @@
 {
  "stand": "2026-11-26",
- "n_gesamt": 184,
- "n_relevant": 134,
- "kosten_usd": 0.036731,
+ "n_gesamt": 430,
+ "n_relevant": 334,
+ "kosten_usd": 0.109475,
  "top": [
   {
-   "url": "https://www.instagram.com/reel/Daw4KRUsC4L/",
-   "creator": "lifeisfullofgoodies",
-   "caption": "Wenn’s schnell gehen muss, aber trotzdem richtig lecker sein soll: Dieser herzhafte Ofenpfannkuchen ist ein absoluter Gamechanger! Und zudem hat er noch eine ex",
-   "views": 15398061,
-   "likes": 346365,
-   "comments": 1754,
-   "datum": "2026-07-17",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/747062608_18598894378006431_3154093484401950513_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=Mzk0MDg5NjY3MDM0OTI3NDYzNTE4NTk4ODk0MzgxMDA2NDMx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyOTAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=xzxlaEQkxdAQ7kNvwGdQWd9&_nc_oc=AdoWFPYHiVYGOqFHOqwjGryD-6tbilTdBxo_4tBYyx1D5cQdNdZ1hhTJcHB32cmYYJw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=acHKZ01tANIbx35hwj6-Zw&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSz-KLp2Eu50Mxt1vzvKUGPYUHw0SmkFQmGfj8kQb5cWA&oe=6B0DE5D8",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.88,
+   "url": "https://www.instagram.com/reel/De3wSf6sA0v/",
+   "creator": "foodlover.eli",
+   "caption": "Anzeige | Das hat bei uns alles verändert 👌🏻 \n\n#mise #essensplaner #essen #rezepte #supermarkt",
+   "views": 1006280,
+   "likes": 18414,
+   "comments": 446,
+   "datum": "2026-10-24",
+   "fuente": "query:supermarkt haul",
+   "markt": "DE",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.71878-15/863953002_1116021961408099_7167604719107686439_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=NDAxNDg4OTk3MDI3NzgxMzU1MTExMjY2MDY3MzY5OTc2OTc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=fhvpTS4IqRAQ7kNvwGAkQpY&_nc_oc=AdrLoxSObeQpvAScmRZoYJRvJXxiJ03kpvy4-yq7gNznaWxKDku9i-Zl8JNTWE2xGRA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sQFc2i4oTjTtzNcUzMEvnA&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQRjeMeI54e7VUY3J2B2w6yqbTdqvbXU5_qjs2W-NDI1mg&oe=6B0E0CAC",
+   "format": "Haul/Einkauf",
+   "relevant": 0.96,
+   "uebertragbar": 2,
+   "transfer": "direkt",
+   "engagement": 18860,
+   "followers": 1506,
+   "rel_engagement": 1252.324,
+   "score": 0.0062
+  },
+  {
+   "url": "https://www.instagram.com/reel/Df7SehqNxXK/",
+   "creator": "priscilla_sdr",
+   "caption": "#verkauf #einzelhandel #supermarkt #arbeit",
+   "views": 113061,
+   "likes": 7223,
+   "comments": 606,
+   "datum": "2026-11-19",
+   "fuente": "query:kassierer pov",
+   "markt": "DE",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/916011495_18101166053460846_1032460514848527842_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAzMzg5OTE1MzgwMzY0NjQxMDE4MTAxMTY2MDUwNDYwODQ2.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyMDYuc2RyLnZpZGVvX3VzZXJfc2VsZWN0ZWRfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=KaLJT2ooDAUQ7kNvwH05bDf&_nc_oc=AdoGu6o0n0UcZdqHpI_UhvoC2u6Hn-UFZ2_bsmj0EuVRApyK4R5weJF2AI9YgxLOLhE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=uOJ1pzErYrlAgHf8AtuIVQ&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQS1d-9NxFcQqwy0Ck-bmZVv4HrU5dDVhnRfkIWPsejYTw&oe=6B0E2851",
+   "format": "Humor/Team/Alltag",
+   "relevant": 0.75,
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "engagement": 348119,
+   "engagement": 7829,
+   "followers": 678,
+   "rel_engagement": 1154.72,
+   "score": 0.0011
+  },
+  {
+   "url": "https://www.instagram.com/reel/DZRnwleMCZ3/",
+   "creator": "der.gemuesehaendler",
+   "caption": "Hoffentlich hat sie es nicht gehört 😅 #dergemüsehändler #gemüse #foryou #viral #comedy",
+   "views": 3317494,
+   "likes": 36642,
+   "comments": 44,
+   "datum": "2026-06-07",
+   "fuente": "query:hinter den kulissen supermarkt",
+   "markt": "DE",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.71878-15/719939700_986436027310407_3954353220665075764_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=MzkxNDA4NDQxMzc0NTQwNzYwNzEzNDk0OTQ0MzcwOTE2MzI%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fbmZyYW1lX2NvdmVyX2ZyYW1lLkMzIn0%3D&_nc_ohc=-GTte11gN-IQ7kNvwFlcRl4&_nc_oc=AdqketPmKqYSWPejUt7-JYkTJJPFPdpv4GqZ96mwAG08MR2k0Bi_m65MLk2I0JlkBf0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=m5TPFRC5pWrk_hFCoIVK8g&_nc_ss=703ba&_nc_ct=RQosPBUIFQglBAAAAA&oh=00_AQRxlmHm_IaOdK8WLMGMFO8MI3Xn5YbpIVgg0BnB4ZBylw&oe=6B0E349F",
+   "format": "Humor/Team/Alltag",
+   "relevant": 0.8,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 36686,
+   "followers": 4969,
+   "rel_engagement": 738.297,
+   "score": 0.0183
+  },
+  {
+   "url": "https://www.instagram.com/reel/DadICQyovtO/",
+   "creator": "gigis.proteinkueche",
+   "caption": "32 g Protein pro Portion und dabei super cremig, günstig und in wenigen Minuten fertig! 🤤\n\n✨ Zutaten (3 Portionen):\n• 1 Packung gekochte Miniknödel\n• 300 g Hähn",
+   "views": 906169,
+   "likes": 13229,
+   "comments": 84,
+   "datum": "2026-07-06",
+   "fuente": "query:rezept schnell",
+   "markt": "DE",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/734783624_17883865923601356_2522828173053433158_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=MzkzNTMzNjk4OTIzMjEzNDk5MDE3ODgzODY1OTE3NjAxMzU2.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEzMjAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=xlXaA7TaIycQ7kNvwHHyYCH&_nc_oc=AdqjcAkxVPwbExAFDAOHuccViI0yZlEKV3YZMYhqZJ-zhN7qhRAwrTixAJo_eBh6wsg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQS6L1n_9XFQbB4h2Tis_4ltI694HhEbdNjytQ28kYSHsA&oe=6B0DF9A3",
+   "format": "Rezept-Tutorial",
+   "relevant": 0.96,
+   "uebertragbar": 2,
+   "transfer": "direkt",
+   "engagement": 13313,
+   "followers": 2219,
+   "rel_engagement": 599.955,
+   "score": 0.0053
+  },
+  {
+   "url": "https://www.instagram.com/reel/DaLCpUOu-Gq/",
+   "creator": "crunchy_kristina",
+   "caption": "Foods that scored a perfect 100/100 at Aldi 👀 Part 1  Save this for your next Aldi run! #crunchymom #antiinflammatory #guthealth #aldifinds #readlabels",
+   "views": 4786511,
+   "likes": 102756,
+   "comments": 893,
+   "datum": "2026-06-29",
+   "fuente": "query:supermarkt haul",
+   "markt": "DE",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/730214666_17885816190599071_9130811565332954074_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=MzkzMDI0NjczNTEyNDQ4ODYxODE3ODg1ODE2MTg3NTk5MDcx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEzMjAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=fAAR7TPt24QQ7kNvwG20-xW&_nc_oc=AdoeHjXIQPeeuvDrBrTiGU7O3lxrFZjnT1Wg6Y2jmm54-fytRPcTAtB6oBYWt2fiALc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sQFc2i4oTjTtzNcUzMEvnA&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSfHK5M4ZJwdzkR43Y7fB5pb3864lpofNJz_NjsPKUbfA&oe=6B0E0D01",
+   "format": "Haul/Einkauf",
+   "relevant": 0.96,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 103649,
+   "followers": 21513,
+   "rel_engagement": 481.797,
+   "score": 0.0303
+  },
+  {
+   "url": "https://www.instagram.com/reel/DfOzOibtchG/",
+   "creator": "0nly.h0me",
+   "caption": "🎄 Gebrannte Mandeln wie vom Weihnachtsmarkt – ganz einfach selbst gemacht! 🤤\n\nAußen richtig schön knusprig, mit Zuckerschicht und gleichzeitig leicht karamellis",
+   "views": 5796421,
+   "likes": 78186,
+   "comments": 366,
+   "datum": "2026-11-02",
+   "fuente": "query:weihnachtsrezepte",
+   "markt": "DE",
+   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/876299446_17918466879533261_9009506944229735703_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMTM3NjgxNjcwNTI5MjM1ODE3OTE4NDY2ODc2NTMzMjYx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=88iEkSTJsWAQ7kNvwG0DWW6&_nc_oc=Adr1PnAxnt-ubeHyVAQggrRhON1nTnsk6ifj2rPdg7bddLo62CQtOdeYPC5GkOCZUeA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=GcVEvPTdM5smc0pGuaxEDQ&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQQj3zvYrxsi0fIALby2xwd1rtvgfuXCqBSOBsB4ENGOew&oe=6B0E35A8",
+   "format": "Rezept-Tutorial",
+   "relevant": 0.92,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 78552,
+   "followers": 23016,
+   "rel_engagement": 341.293,
+   "score": 0.0331
+  },
+  {
+   "url": "https://www.instagram.com/reel/DZDCABToYUP/",
+   "creator": "jumbomarkblaauw",
+   "caption": "Bij ons altijd de beste deals! 😏 #jumbomarkblaauw #bottleflip #grappig #kassaheld #boodschappendoen",
+   "views": 2577186,
+   "likes": 106439,
+   "comments": 705,
+   "datum": "2026-06-01",
+   "fuente": "query:supermarket humor",
+   "markt": "INT",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.71878-15/710125741_1210581888674173_4093224639019213271_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=MzkwOTk3NzY5ODk4MzgzODk5MTk4MTUxMjA2NDg0MTI0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fbmZyYW1lX2NvdmVyX2ZyYW1lLkMzIn0%3D&_nc_ohc=3_0N1eAgVRUQ7kNvwFexPfd&_nc_oc=AdpF8QYNO8EaF0ivNMmML-cUEO5lzxHwflhpxbkl-85N70vJi0EijfxYmTdrKWs1aUg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=BRDZSEs0wUKWPQCiz_6LnA&_nc_ss=703ba&_nc_ct=RQosPBUIFQglBAAAAA&oh=00_AQR1SnuKNKHD1rJeMuRuxmLkQDztU1glH3Vkyq8Xv13drg&oe=6B0E320B",
+   "format": "Humor/Team/Alltag",
+   "relevant": 0.9,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 107144,
+   "followers": 1592,
+   "rel_engagement": 6730.151,
+   "score": 0.0204
+  },
+  {
+   "url": "https://www.instagram.com/reel/DfC10H5jJdv/",
+   "creator": "stephaniewalker.cooks",
+   "caption": "Cheap dinners #walmart #tampa #tapcook #cheapdinner #mealplan",
+   "views": 5283748,
+   "likes": 177258,
+   "comments": 3284,
+   "datum": "2026-10-28",
+   "fuente": "query:budget meals",
+   "markt": "INT",
+   "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.71878-15/870101825_1997427634261670_1183328706398047849_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAxODAxMDQ5NTkyNzQ5MDQxNTE4MTEwMDM4OTkxMTEwMjY2.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=U22aUCUYonQQ7kNvwFy6kIX&_nc_oc=AdqclEP1cdiIVEj4SeAT-oz6BK-WGtZhYjKgZuzZZBbXp4X-GuvGJuF5EnJyT3k29CI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qHIm6xbNRjT71gWClg958A&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQgrkZPwPIpm9H5ME4XSLhsdi3ws4PIr1dnlRUAe4FSSg&oe=6B0E23E5",
+   "format": "Haul/Einkauf",
+   "relevant": 0.97,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 180542,
+   "followers": 2775,
+   "rel_engagement": 6506.018,
+   "score": 0.0387
+  },
+  {
+   "url": "https://www.instagram.com/reel/DfNkwZqiWbX/",
+   "creator": "sunflowermama.cooks",
+   "caption": "Easy meals within our budget #Tapcook #budgetmeals #savingmoney #budgetfriendly #mealideas",
+   "views": 475043,
+   "likes": 42183,
+   "comments": 147,
+   "datum": "2026-11-01",
+   "fuente": "query:budget meals",
+   "markt": "INT",
+   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.71878-15/883300527_2878970869150394_2370179819096848752_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMTAzMTY5ODA3ODE5NzQ2MzE4MTI5NDM1NDEyODE5ODg5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=_EekY1I-K7UQ7kNvwES7PAT&_nc_oc=Adol5VekPuhZIpYXVCEaSdL0PjB52N6n6G1rVNlnmvrtJeSbIxqMM0hXs0Dhq9siQYY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=wdF4zztJT3o3zXgBB9hyWA&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQWR064wvLpascnAtbvEHJeC_3PNfOjj_MyTCsJVi6CjQ&oe=6B0E3852",
+   "format": "Rezept-Tutorial",
+   "relevant": 0.95,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 42330,
+   "followers": 667,
+   "rel_engagement": 6346.327,
+   "score": 0.0055
+  },
+  {
+   "url": "https://www.instagram.com/reel/Db9LsSHJPI_/",
+   "creator": "iamdeyshanecole",
+   "caption": "Follow me , Help me Get to 10K 🫶🏽 for a Big Giveaway 🏡✨ Homeowner Diaries: Grocery Restock Edition! 🛒🤍 A whole $1,000 grocery restock for the new home! Now let’",
+   "views": 3431075,
+   "likes": 257799,
+   "comments": 1025,
+   "datum": "2026-08-12",
+   "fuente": "query:grocery haul",
+   "markt": "INT",
+   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/773687401_18133006516631943_2263901421592503793_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=Mzk2MjM3NDY2ODc3MTcxNzY5NTE4MTMzMDA2NTEzNjMxOTQz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyOTAuc2RyLnZpZGVvX3VzZXJfc2VsZWN0ZWRfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=cTjdMM5OS0kQ7kNvwH3bx9b&_nc_oc=AdrS19aWjjtkqQ9u_gipNtiDuu2BQqDqoFz13o8M1CxF7DSVbciz8q4KvVDIWYPmGsE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=Yi7TdcNfDdpFedPoprGk5A&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQYf08awKQ1e-Q5PS1M0odPP5yYSHDxO_RxtTcndlEhJg&oe=6B0E1AA2",
+   "format": "Haul/Einkauf",
+   "relevant": 0.92,
+   "uebertragbar": 1,
+   "transfer": "anpassung",
+   "engagement": 258824,
+   "followers": 5542,
+   "rel_engagement": 4670.227,
+   "score": 0.0362
+  },
+  {
+   "url": "https://www.instagram.com/reel/DdPsMVtowmH/",
+   "creator": "its_claudiahome",
+   "caption": "✨ $9000 Weekly Restock 🛒🥤🍪\n\nRestocking the kitchen with all the weekly essentials! 🫶🏻 From snacks and drinks to fresh produce, cookies, juices, and all our favo",
+   "views": 107649389,
+   "likes": 6325653,
+   "comments": 62213,
+   "datum": "2026-09-13",
+   "fuente": "query:grocery haul",
+   "markt": "INT",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/809422407_18097300715209212_6904244776213399744_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=Mzk4NTU5ODU1NzI0MDYyNTU0MzE4MDk3MzAwNzA5MjA5MjEy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjExNzAuc2RyLnZpZGVvX3VzZXJfc2VsZWN0ZWRfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=9Atszo_3W_EQ7kNvwFMBD6B&_nc_oc=AdqTbNaHN5FcWeR4jEft7UDM1wGqcQ2ofwtveOUiPPuTPKVTtC2hCN6ZEcbz1bGu4O0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=-HqYULFS6opgaR8Etjue9Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQT36yC6VodlNkgsu0EECy8i2aDLtEX1hDuCG8t45J-3bA&oe=6B0E1A9D",
+   "format": "Haul/Einkauf",
+   "relevant": 0.97,
+   "uebertragbar": 2,
+   "transfer": "direkt",
+   "engagement": 6387866,
+   "followers": 150227,
+   "rel_engagement": 4252.142,
    "score": 1.0
   },
   {
-   "url": "https://www.instagram.com/reel/DasK68QM72-/",
-   "creator": "joeskochwelt",
-   "caption": "Kloß Schmorbraten 🥘\nTeil 29 | Kinderrezepte\nAnzeige | eigene Gewürze 🌿\n\nZutaten\n\n✳️5–6 Zwiebeln\n✳️5–6 Knoblauchzehen\n✳️800g Rindfleisch (zum Schmoren)\n✳️Salz\n✳️",
-   "views": 10410275,
-   "likes": 196830,
-   "comments": 1279,
-   "datum": "2026-07-12",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/745939460_18061974509740001_367586942666462789_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=MzkzOTU3MTgwNDkzMzQzODkxMDE4MDYxOTc0NTAzNzQwMDAx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=WuJx_Lg6hM4Q7kNvwGuSdJ_&_nc_oc=AdoyONRFnAMCo3OpBOBJIGkFeNhv7_mFjxllOvNsXUbGxODiakWtKLFZOIjED8h5ZGQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=acHKZ01tANIbx35hwj6-Zw&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQSEx3zqBMMknD75u6tlapq8FZgs9m5sF4vRtDVsTFnQBA&oe=6B0DE70E",
+   "url": "https://www.instagram.com/reel/DepqsjEOk72/",
+   "creator": "ifoodwithu",
+   "caption": "honey garlic chicken\n•\n•\n•\n•\n•\n#homemade #recipe #cooking #foodie #chicken",
+   "views": 33001123,
+   "likes": 1452269,
+   "comments": 4253,
+   "datum": "2026-10-18",
+   "fuente": "query:easy dinner recipe",
+   "markt": "INT",
+   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/856673445_17896473960677757_73775021958241597_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=1&ig_cache_key=NDAxMDkyNDcyMjQxMjQ3NDEwMjE3ODk2NDczOTU0Njc3NzU3.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=o1Uq_hVrD5oQ7kNvwH5ddAS&_nc_oc=AdooplipWiTs_CDQ2sH7UHIcHyicEnyypCwOAJUrbevo92G3PsZZgrWUUuSGPPEzxf4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=_3hm6wY5wWBH9z5jk_-IMw&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQQfPnAL7mSpa96dyfDh47eXgz7UzesXgFY__VKhhDHuHA&oe=6B0E24B4",
    "format": "Rezept-Tutorial",
-   "relevant": 0.75,
-   "uebertragbar": 2,
-   "transfer": "direkt",
-   "engagement": 198109,
-   "score": 0.6226
-  },
-  {
-   "url": "https://www.instagram.com/reel/DfeQB2wR9Ua/",
-   "creator": "kitchenachim",
-   "caption": "Diesen Kranz habe ich schon zu Ostern gemacht. Aber warum eigentlich nicht auch zu Weihnachten? 🎄😍 Perfekt für die festlichen Tage! ❤️\n\nAlles, was du brauchst:\n",
-   "views": 7938649,
-   "likes": 142338,
-   "comments": 1635,
-   "datum": "2026-11-08",
-   "fuente": "query:weihnachtsrezepte",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/894386361_18136647053501119_8206718351112019188_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=1&ig_cache_key=NDAyNTcyNTYxMzE3MTUyODk4NjE4MTM2NjQ3MDQ3NTAxMTE5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=5_wpnbtmbT8Q7kNvwFQ0vTh&_nc_oc=AdpNEBm96dGIn2XKxee3YS_Wzt6NMouI5Lr9KyX5EYR3zUYhPhO8fKFbxmfUx8EbXIs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sFWzcsA0Fl_Lu-7OzSA5pA&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQRRa7iVMEo6bB1JMK2BDAKHk6hM9ihpct_as3cYjhz9MA&oe=6B0DD8F6",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.9,
-   "uebertragbar": 2,
-   "transfer": "direkt",
-   "engagement": 143973,
-   "score": 0.4646
-  },
-  {
-   "url": "https://www.instagram.com/reel/DaALAfou1ok/",
-   "creator": "kristinas.healthylife",
-   "caption": "Anzeige |Mini Hackbällchen Pasta\n\n…oder wie meine Kinder sie nennen: Kugel Nudeln 👦🏻👦🏻\n\n✅ Proteinreich\n✅ Einfaches One-Pot-Gericht\n✅ Minimaler Aufwand & in nur ",
-   "views": 4526137,
-   "likes": 58962,
-   "comments": 1021,
-   "datum": "2026-06-25",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/730783754_18099562646239162_3259177762963885433_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=MzkyNzE4NzI4NzU0ODA1ODE0ODE4MDk5NTYyNjQzMjM5MTYy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=POsu86jV0OQQ7kNvwHUQ4wf&_nc_oc=Adpl2nOE135I5WnP8xwRXr-pZPOn-tIJNAxmn_htvkpGejJ49r2CnFJTUcD1E3ZWwQM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQQ024FuF-Ec1QMs1Ei7bLR29_IMzDC8dAsXW6qQNNZxdA&oe=6B0DEC31",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.87,
+   "relevant": 0.91,
    "uebertragbar": 1,
    "transfer": "anpassung",
-   "engagement": 59983,
-   "score": 0.2331
-  },
-  {
-   "url": "https://www.instagram.com/reel/DblkojcM6eF/",
-   "creator": "kitchen.melda",
-   "caption": "🇩🇪 Rezept: 👇🏼\n🇬🇧 Recipe in the comments.\n🇹🇷 Tarif yorumlarda. \n\nZutaten\n• 350 g Nudeln\n• Etwas Öl zum Anbraten\n• 250 g Hähnchenbrust\n• 400 ml Schlagsahne\n• 2 EL",
-   "views": 2767782,
-   "likes": 88694,
-   "comments": 209,
-   "datum": "2026-08-03",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/763103978_17940060786339863_6669303328917921449_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=Mzk1NTcyODk2NDIyMjQyOTA2MTE3OTQwMDYwNzc3MzM5ODYz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=ihgrUdiMHy8Q7kNvwGcp1E-&_nc_oc=Adotf5OLjAVot7FBHu5EgvUlQXmalRUsKZjlalcXefOBpvOd-VlrmPJZ39IhoWeac8Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=BCYzOmAcs6KxcSpOq60IkQ&_nc_ss=703ba&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQTHiKPf39JZNQYvGLbiG1Ye76XXJOWJkKZq22A4OhsfkQ&oe=6B0E0F37",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.83,
-   "uebertragbar": 2,
-   "transfer": "direkt",
-   "engagement": 88903,
-   "score": 0.2176
-  },
-  {
-   "url": "https://www.instagram.com/reel/DfbtU5OIO81/",
-   "creator": "ninaxp90",
-   "caption": "❤️ HIMBEER-SPEKULATIUS-TIRAMISU 🎄🍓\n\n💬 Kommentiere mit ❤️, wenn du das Rezept liebst, und folge mir für mehr einfache & leckere Rezepte! 😍✨\n\n🎄 Das perfekte Weihn",
-   "views": 2996551,
-   "likes": 66907,
-   "comments": 359,
-   "datum": "2026-11-07",
-   "fuente": "query:weihnachtsrezepte",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/891918501_18122540960589162_7459542749073623489_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=NDAyNTAxMDAzOTkwODUyNzkyNTE4MTIyNTQwOTU3NTg5MTYy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=XOLDp76f6SYQ7kNvwFgzKVL&_nc_oc=AdohzZwliYOhdk1kQrcfkrjwNGZlC2qW6kvxRvpapYsEZLMpiSn8oZoDLNu9mlHChjc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sFWzcsA0Fl_Lu-7OzSA5pA&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQT5tRAV5KcWxvnxz_Vkgzykgq3GVxmDuhVcW9HVraf_DA&oe=6B0E05B5",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.81,
-   "uebertragbar": 1,
-   "transfer": "anpassung",
-   "engagement": 67266,
-   "score": 0.1939
-  },
-  {
-   "url": "https://www.instagram.com/reel/DcRT6Tot7c-/",
-   "creator": "gesund.mit.lynn",
-   "caption": "Je vielfältiger ihr isst, desto besser 🙌",
-   "views": 1433357,
-   "likes": 94646,
-   "comments": 424,
-   "datum": "2026-08-20",
-   "fuente": "query:lebensmittel tipps",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/800934763_18125854978781990_4217611572835649424_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk2ODA0MDMxNjM4NzcwMjU5MDE4MTI1ODU0OTc1NzgxOTkw.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjQwOC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=fq9HXGelfEEQ7kNvwHMRrmQ&_nc_oc=AdoZKTEf3WG_TGGVbYC3xUDqnuiVLM2CRxSkMyEDcNxJU-4fRxrburWq9SnKz9TdavQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=tAGhZam4ueRTI1U-9PoA5A&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQQm1DvPnlqsgeDaNyx0ii8G-NGT6PuVruV40FuR3CqyMg&oe=6B0DF97C",
-   "format": "Sonstiges",
-   "relevant": 0.75,
-   "uebertragbar": 2,
-   "transfer": "direkt",
-   "engagement": 95070,
-   "score": 0.1831
-  },
-  {
-   "url": "https://www.instagram.com/reel/DfO0kf-tJQc/",
-   "creator": "joeskochwelt",
-   "caption": "Kartoffelschmaus🥔\nWinter Kinderrezepte | Teil 3\n\nZutaten:\n\n✳️500g Kartoffel\n✳️100g Parmesan\n✳️200ml Sahne\n✳️1 Ei\n✳️1 Pck. Schinkenwürfel (optional)\n✳️1 Zwiebel\n",
-   "views": 3599949,
-   "likes": 41537,
-   "comments": 508,
-   "datum": "2026-11-02",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-bru2-1.cdninstagram.com/v/t51.82787-15/876128289_18079773578740001_1458842309205363408_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMTM4MjcyMzk0NjE4OTg1MjE4MDc5NzczNTc1NzQwMDAx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=I4HF2UvhfrUQ7kNvwGy512b&_nc_oc=AdptPj3dE6AdQTW8ATSOlAfvMmfo7G90SORlDfVX-WtYk9rw_VZzf_YcTWatMkvJpkg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bru2-1.cdninstagram.com&_nc_gid=acHKZ01tANIbx35hwj6-Zw&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQRrDwdYiq-p7T-0lgCtCJZfrGiQLgdDNLQEiUD8HQigGw&oe=6B0E0AF7",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.84,
-   "uebertragbar": 2,
-   "transfer": "direkt",
-   "engagement": 42045,
-   "score": 0.1773
-  },
-  {
-   "url": "https://www.instagram.com/reel/Dfr_I0cN4cu/",
-   "creator": "soul.food.by.jacky",
-   "caption": "✨ Florentiner ✨\n\nEine richtig leckere Alternative zu klassischen Florentinern! Nur leicht gesüßt, mit einer feinen Honignote und dazu jede Menge Mandeln, die si",
-   "views": 2955609,
-   "likes": 27462,
-   "comments": 381,
-   "datum": "2026-11-13",
-   "fuente": "query:weihnachtsrezepte",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/902173187_1861782401623044_238135376279639208_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAyOTU5MTk3NDYwNzAzMDA2MjE4NjE3ODIzOTgyODk3MTE%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjU0MC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=8BfUYnSMF6oQ7kNvwFWW7nX&_nc_oc=AdrgforE7kbuYhryTeQvGSKZdpuMMOYUMEb4gKP7Hpex6hXQvU3PZFVsl3mTZCozjjM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=QJZ-7TkgORW1vnsaRYqRww&_nc_ss=703ba&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQT_TQjtNJjeME4gxYUWG6r9f8M3bYBGfvUY4DV3OzntbA&oe=6B0DF1E8",
-   "format": "Produkt-Test",
-   "relevant": 0.74,
-   "uebertragbar": 1,
-   "transfer": "anpassung",
-   "engagement": 27843,
-   "score": 0.136
-  },
-  {
-   "url": "https://www.instagram.com/reel/DeMvq6HsKvi/",
-   "creator": "schlemmer.mix",
-   "caption": "12/10🌟!! Was für ein Meisterwerk von Feierabendblech! 🥹😱😍 die Idee habe ich bei @loredanachantal gesehen und musste daraus unbedingt eine Blechvariante für euch",
-   "views": 2610469,
-   "likes": 29610,
-   "comments": 574,
-   "datum": "2026-10-07",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t15.5256-10/839740112_1046658815075126_7585168006354537131_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMjc4MzgyNTYzNTYxNzc2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=qk2Jj0MPJgMQ7kNvwFGzHJF&_nc_oc=AdrhqDpo3aSoPiZIJZZWOwYMMKVbDTFRKFyUv9HZafroGg7nNucjydmpa85RCG-j-Sw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQ45GuYlxNkptvzZI3jL96qlWQinF3jlX-FsahzNnBxnw&oe=6B0DE054",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.82,
-   "uebertragbar": 1,
-   "transfer": "anpassung",
-   "engagement": 30184,
-   "score": 0.1281
-  },
-  {
-   "url": "https://www.instagram.com/reel/DgABTxJIdBc/",
-   "creator": "foodwerk.de",
-   "caption": "🎄5 weihnachtliche Fingerfood-Ideen | Anzeige 😍❤️📌 Unbedingt speichern!\n\nHey Foodies 💛\nIhr sucht noch nach richtig leckerem Fingerfood für Weihnachten oder Silve",
-   "views": 2545991,
-   "likes": 31222,
-   "comments": 333,
-   "datum": "2026-11-21",
-   "fuente": "query:weihnachtsrezepte",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/913461249_18577730437075232_1710487010128251483_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNTIzMTAyMjYwNzA5Mzg1MjE4NTc3NzMwNDM0MDc1MjMy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyMDYuc2RyLnZpZGVvX3VzZXJfc2VsZWN0ZWRfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=AvoPA9IFRTQQ7kNvwHDIS4i&_nc_oc=AdpsOy1Mg_Np57mN5LJnJuX2DlQDWm74I5ainybORnrEHVkHLbr14v5FIMSQDtbXCHY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=sFWzcsA0Fl_Lu-7OzSA5pA&_nc_ss=703ba&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQT_5jD49LFIL98funATOAeu--mSouCGULHoadyGCfPruQ&oe=6B0DE811",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.74,
-   "uebertragbar": 1,
-   "transfer": "anpassung",
-   "engagement": 31555,
-   "score": 0.128
-  },
-  {
-   "url": "https://www.instagram.com/reel/DeW-MRwo0-P/",
-   "creator": "foodwerk.de",
-   "caption": "🍄🥔 Mini-Knödel in cremiger Champignon-Rahmsoße📌 Rezept zum Speichern\n\nHey Foodies 💛\nKnusprig gebratene Mini-Knödel, dazu eine richtig cremige Champignon-Rahmsoß",
-   "views": 2368512,
-   "likes": 28154,
-   "comments": 283,
-   "datum": "2026-10-11",
-   "fuente": "query:rezept schnell",
-   "thumbnail": "https://scontent-cph2-1.cdninstagram.com/v/t51.71878-15/845653490_1737466040659895_7971385497687560577_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNTY2MjQ0MTE3OTY2NDI3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=yDBT3e1ZyFYQ7kNvwHeBTSp&_nc_oc=AdoVtlLmsGmzTxdKLvcSbyGymM15adWvPXbijB1YpGsGakrnhAnzvAAECViYrvhurKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=jOXPCoUZ0Oqu8fWjc2Gp7Q&_nc_ss=703ba&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSAF2HhnXfp_4ol3L8Nx7ChGj_MlKgwlXpNbIlSq8IjoQ&oe=6B0E0A2E",
-   "format": "Rezept-Tutorial",
-   "relevant": 0.83,
-   "uebertragbar": 1,
-   "transfer": "anpassung",
-   "engagement": 28437,
-   "score": 0.1178
+   "engagement": 1456522,
+   "followers": 38663,
+   "rel_engagement": 3767.224,
+   "score": 0.2673
   }
  ],
  "formate": {
   "Rezept-Tutorial": {
-   "anzahl": 47,
-   "engagement": 28011
+   "anzahl": 108,
+   "engagement": 70824,
+   "rel_med": 15.623
   },
   "Haul/Einkauf": {
-   "anzahl": 37,
-   "engagement": 1993
+   "anzahl": 75,
+   "engagement": 100807,
+   "rel_med": 285.584
   },
   "Sonstiges": {
-   "anzahl": 18,
-   "engagement": 7557
+   "anzahl": 47,
+   "engagement": 38311,
+   "rel_med": 20.924
   },
   "Produkt-Test": {
-   "anzahl": 4,
-   "engagement": 7967
+   "anzahl": 3,
+   "engagement": 5148,
+   "rel_med": 1.282
   },
   "Spar-Tipp": {
-   "anzahl": 26,
-   "engagement": 696
+   "anzahl": 46,
+   "engagement": 4966,
+   "rel_med": 3.497
   },
-  "Humor/Trend-Sound": {
-   "anzahl": 2,
-   "engagement": 2674
+  "Humor/Team/Alltag": {
+   "anzahl": 55,
+   "engagement": 24803,
+   "rel_med": 46.872
   }
  },
+ "formate_markt": {
+  "DE": {
+   "Rezept-Tutorial": {
+    "anzahl": 65,
+    "engagement": 29324,
+    "rel_med": 8.674
+   },
+   "Haul/Einkauf": {
+    "anzahl": 49,
+    "engagement": 7830,
+    "rel_med": 256.757
+   },
+   "Sonstiges": {
+    "anzahl": 44,
+    "engagement": 37766,
+    "rel_med": 20.924
+   },
+   "Produkt-Test": {
+    "anzahl": 2,
+    "engagement": 6349,
+    "rel_med": 1.282
+   },
+   "Spar-Tipp": {
+    "anzahl": 37,
+    "engagement": 4849,
+    "rel_med": 3.437
+   },
+   "Humor/Team/Alltag": {
+    "anzahl": 26,
+    "engagement": 3155,
+    "rel_med": 738.297
+   }
+  },
+  "INT": {
+   "Haul/Einkauf": {
+    "anzahl": 26,
+    "engagement": 276032,
+    "rel_med": 482.82
+   },
+   "Spar-Tipp": {
+    "anzahl": 9,
+    "engagement": 5445,
+    "rel_med": 5.646
+   },
+   "Humor/Team/Alltag": {
+    "anzahl": 29,
+    "engagement": 44211,
+    "rel_med": 30.174
+   },
+   "Sonstiges": {
+    "anzahl": 3,
+    "engagement": 46294,
+    "rel_med": 60.556
+   },
+   "Rezept-Tutorial": {
+    "anzahl": 43,
+    "engagement": 133556,
+    "rel_med": 20.299
+   },
+   "Produkt-Test": {
+    "anzahl": 1,
+    "engagement": 2747,
+    "rel_med": null
+   }
+  }
+ },
+ "markt_stats": {
+  "DE": {
+   "n_gesamt": 289,
+   "n_relevant": 223
+  },
+  "INT": {
+   "n_gesamt": 141,
+   "n_relevant": 111
+  }
+ },
+ "queries": [
+  {
+   "query": "rezept schnell",
+   "markt": "DE"
+  },
+  {
+   "query": "meal prep",
+   "markt": "DE"
+  },
+  {
+   "query": "wocheneinkauf",
+   "markt": "DE"
+  },
+  {
+   "query": "supermarkt haul",
+   "markt": "DE"
+  },
+  {
+   "query": "angebote sparen",
+   "markt": "DE"
+  },
+  {
+   "query": "weihnachtsrezepte",
+   "markt": "DE"
+  },
+  {
+   "query": "lebensmittel tipps",
+   "markt": "DE"
+  },
+  {
+   "query": "supermarkt humor",
+   "markt": "DE"
+  },
+  {
+   "query": "azubi alltag",
+   "markt": "DE"
+  },
+  {
+   "query": "einzelhandel lustig",
+   "markt": "DE"
+  },
+  {
+   "query": "kassierer pov",
+   "markt": "DE"
+  },
+  {
+   "query": "hinter den kulissen supermarkt",
+   "markt": "DE"
+  },
+  {
+   "query": "grocery haul",
+   "markt": "INT"
+  },
+  {
+   "query": "supermarket humor",
+   "markt": "INT"
+  },
+  {
+   "query": "grocery store employee pov",
+   "markt": "INT"
+  },
+  {
+   "query": "budget meals",
+   "markt": "INT"
+  },
+  {
+   "query": "easy dinner recipe",
+   "markt": "INT"
+  },
+  {
+   "query": "behind the scenes supermarket",
+   "markt": "INT"
+  },
+  {
+   "query": "christmas food ideas",
+   "markt": "INT"
+  }
+ ],
  "fehler": 0
 }

@@ -341,6 +341,35 @@ details.tsdet[open]>summary{margin-bottom:8px}
 .tsintern{background:#E7E4DC;border-radius:15px;padding:16px 18px;margin-top:16px}
 @media(max-width:860px){.tsk{grid-template-columns:1fr}
   .tsgrid{grid-template-columns:repeat(2,1fr)}.tsc img,.tsc .ph{height:140px}}
+.tsrow{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tsToggle{display:inline-flex;background:#E7E4DC;border-radius:999px;padding:3px;gap:3px;flex:0 0 auto}
+.tsToggle .tsb{border:0;background:transparent;font:inherit;font-size:13px;font-weight:700;
+  padding:6px 13px;border-radius:999px;color:#3E3B33;cursor:pointer;transition:background .15s,color .15s}
+.tsr{position:absolute;width:0;height:0;opacity:0;pointer-events:none}
+body:has(#tsmDE:checked) .tsToggle label[for=tsmDE],
+body:has(#tsmINT:checked) .tsToggle label[for=tsmINT]{background:#16150F;color:#fff}
+body:has(#tsmDE:checked) .mk[data-m="INT"],
+body:has(#tsmINT:checked) .mk[data-m="DE"],
+body:has(#tsmDE:checked) .tsc[data-m="INT"],
+body:has(#tsmINT:checked) .tsc[data-m="DE"]{display:none}
+.rtlist{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.rtr{display:flex;align-items:center;gap:10px;background:#F2F0EB;border-radius:13px;
+  padding:8px 10px;text-decoration:none;color:inherit;transition:transform .15s}
+.rtr:hover{transform:translateY(-2px)}
+.rtr .rtb{width:54px;height:54px;border-radius:10px;overflow:hidden;flex:0 0 auto;
+  background:#E7E4DC;display:inline-flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:600;color:#6E6A60}
+.rtr .rtb img{width:100%;height:100%;object-fit:cover;display:block}
+.rtr .rti{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.rtr .rti b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtr .rti i{font-style:normal;font-size:12.5px;color:#6E6A60;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtr .pill{flex:0 0 auto;font-size:12px;padding:4px 9px;white-space:normal;text-align:left}
+.czq{background:rgba(255,255,255,.92);border-radius:12px;padding:10px 13px;margin-top:9px;
+  font-size:14px;line-height:1.45;color:#3E3B33}
+.czq b{color:#16150F}
+.czr{margin-top:12px;font-size:15.5px;line-height:1.45;color:#fff}
+.czr b{color:#fff}
+@media(max-width:860px){.rtr .rtb{width:48px;height:48px}.tsrow h3{font-size:22px}}
 
 .subline{margin:18px 0 12px;font-size:22px;line-height:1.4;font-weight:500;color:#3E3B33;max-width:760px}
 .hypt{flex:1 1 100%;order:3;font-size:24px;font-weight:700;letter-spacing:-.6px;line-height:1.2;color:#16150F}

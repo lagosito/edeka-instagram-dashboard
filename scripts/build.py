@@ -1717,6 +1717,7 @@ def _dtagen(s):
 
 TRENDS = _lade_json('trends.json')      # scripts/scrape_trends.py (montags)
 KOMS = _lade_json('comments.json')      # scripts/scrape_comments.py (montags)
+RETAILERS = _lade_json('retailers.json')  # scripts/scrape_retailers.py (montags)
 
 def _dts(s):
     """'2026-11-26 12:08' -> '26.11.2026, 12:08'"""
@@ -1734,12 +1735,15 @@ TS_TAB = ('<span class="tab2" data-s="s6" onclick="sec(\'s6\',this)">'
 # -- 1-Zeiler je Block für die Übersicht (s0) --
 _ts_sum = []
 if TRENDS.get('formate') and TRENDS.get('n_relevant'):
-    _bf = max(TRENDS['formate'].items(), key=lambda kv: (kv[1] or {}).get('engagement') or 0)
+    _bf = max(TRENDS['formate'].items(),
+              key=lambda kv: ((kv[1] or {}).get('rel_med')
+                              if (kv[1] or {}).get('rel_med') is not None else -1))
+    _bfr = (_bf[1] or {}).get('rel_med')
     _ts_sum.append(
-        '<div class="catrow"><div class="c1">Trends: <b>%s</b> liefert Ø %s Interaktionen'
-        ' je Reel — %s von %s geprüften Reels sind relevant für EDEKA</div>'
+        '<div class="catrow"><div class="c1">Trends: <b>%s</b> liefert Ø %s je 100 '
+        'Follower — %s von %s geprüften Reels sind relevant für EDEKA</div>'
         '<div class="c2">%s</div></div><div class="catbar"><div style="width:100%%"></div></div>'
-        % (esc(_bf[0]), de(_bf[1].get('engagement') or 0),
+        % (esc(_bf[0]), de(_bfr, 1) if _bfr is not None else de(_bf[1].get('engagement') or 0),
            de(TRENDS.get('n_relevant') or 0), de(TRENDS.get('n_gesamt') or 0),
            _dtagen(TRENDS.get('stand'))))
 if KOMS.get('posts') and KOMS.get('n_kommentare'):
@@ -1758,18 +1762,28 @@ TS_SUM = (('<div class="card span6"><span class="arrow">↗</span>'
 
 # -- Die Pausche selbst --
 _ts_teile = []
+_FLAG = {'DE': '🇩🇪', 'INT': '🌍', 'GB': '🇬🇧', 'US': '🇺🇸',
+         'NL': '🇳🇱', 'FR': '🇫🇷', 'CH': '🇨🇭', 'AT': '🇦🇹'}
+_LANDNAME = {'GB': 'Großbritannien', 'US': 'USA', 'NL': 'Niederlande',
+             'FR': 'Frankreich', 'CH': 'Schweiz', 'DE': 'Deutschland'}
 _bestfmt = None
 if TRENDS.get('formate'):
-    _bestfmt = max(TRENDS['formate'].items(), key=lambda kv: (kv[1] or {}).get('engagement') or 0)
+    _bestfmt = max(TRENDS['formate'].items(),
+                   key=lambda kv: ((kv[1] or {}).get('rel_med')
+                                   if (kv[1] or {}).get('rel_med') is not None else -1))
 _kl, _stands = [], []
 if _bestfmt:
-    _kl.append('%s läuft gerade am besten — Ø %s Interaktionen je Reel'
-               % (_bestfmt[0], de((_bestfmt[1] or {}).get('engagement') or 0)))
+    _bfr2 = (_bestfmt[1] or {}).get('rel_med')
+    _kl.append('%s läuft gerade am besten — Ø %s je 100 Follower'
+               % (_bestfmt[0], de(_bfr2, 1) if _bfr2 is not None
+                  else de((_bestfmt[1] or {}).get('engagement') or 0)))
 if KOMS.get('ton'):
     _kl.append('%s %% der Kommentare positiv, %s offene Fragen'
                % (int(KOMS['ton'].get('positiv') or 0), de(KOMS.get('offene_fragen') or 0)))
 if TRENDS.get('stand'):
     _stands.append('Trends ' + _dtagen(TRENDS['stand']))
+if RETAILERS.get('stand'):
+    _stands.append('Händler ' + _dtagen(RETAILERS['stand']))
 if KOMS.get('stand'):
     _stands.append('Kommentare ' + esc(_dts(KOMS['stand'])))
 _ts_hint = (('Datenstand: ' + ' · '.join(_stands) + ' · neue Auswertung jeden Montag, 05:00 UTC')
@@ -1782,24 +1796,59 @@ _ts_teile.append(
     % (esc(' · '.join(_kl)) if _kl
        else 'Was gerade in der Nische läuft und was Kunden zu EDEKA sagen', _ts_hint))
 
-# --- Block A: Trends in der Nische ---
+# --- Block A: In der Nische viral (D: Toggle DE | International) ---
 if TRENDS.get('top'):
     fm = TRENDS.get('formate') or {}
-    maxe = max([(v or {}).get('engagement') or 0 for v in fm.values()] + [1])
-    barr = ''
-    for name, v in sorted(fm.items(), key=lambda kv: -((kv[1] or {}).get('engagement') or 0)):
-        e = (v or {}).get('engagement') or 0
-        barr += ('<div class="catrow"><div class="c1">%s · %s Reels</div><div class="c2">Ø %s</div></div>'
-                 '<div class="catbar"><div style="width:%d%%;background:#2A60FF"></div></div>'
-                 % (esc(name), de((v or {}).get('anzahl') or 0), de(e),
-                    max(4, round(e * 100 / maxe))))
+    _fmm = TRENDS.get('formate_markt') or {}
+    _ms = TRENDS.get('markt_stats') or {}
+    _d0 = _ms.get('DE') or {}
+    _i0 = _ms.get('INT') or {}
+    _fmde = _fmm.get('DE') or fm
+    _fmint = _fmm.get('INT') or fm
+    _allfm = list(fm.values()) + [x for dd in (_fmde, _fmint)
+                                  for x in dd.values() if isinstance(x, dict)]
+    _rels = [(v or {}).get('rel_med') for v in _allfm
+             if (v or {}).get('rel_med') is not None]
+    maxe = max(_rels + [1])
+
+    def _barr(fmd, mkey):
+        out = ''
+        _mx = max([1] + [(v or {}).get('rel_med') or 0 for v in fmd.values()])
+        for name, v in sorted(fmd.items(), key=lambda kv: -(
+                (kv[1] or {}).get('rel_med')
+                if (kv[1] or {}).get('rel_med') is not None else -1)):
+            e = (v or {}).get('engagement') or 0
+            rm = (v or {}).get('rel_med')
+            reltxt = (('Ø %s je 100 Follower' % de(rm, 1)) if rm is not None
+                      else 'Ø %s Interaktionen' % de(e))
+            br = round((rm or 0) * 100 / _mx)
+            out += ('<div class="catrow"><div class="c1">%s · %s Reels</div>'
+                    '<div class="c2">%s</div></div>'
+                    '<div class="catbar"><div style="width:%d%%;background:#2A60FF"></div></div>'
+                    % (esc(name), de((v or {}).get('anzahl') or 0), esc(reltxt),
+                       max(4, br)))
+        return '<div class="mk" data-m="%s">%s</div>' % (mkey, out)
+
+    def _ken(n, g, m):
+        q = int(round(100 * ((n or 0) / (g or 1))))
+        return ('<span class="mk" data-m="%s">%s von %s geprüften Reels sind relevant '
+                '(%s %%)</span>' % (m, de(n or 0), de(g or 0), de(q)))
     _ts_teile.append(
         '<div class="card span6"><span class="arrow">↗</span>'
-        '<h3>Trends in der Nische</h3>'
+        '<input type="radio" name="tsmarkt" id="tsmDE" class="tsr" checked>'
+        '<input type="radio" name="tsmarkt" id="tsmINT" class="tsr">'
+        '<div class="tsrow"><h3>In der Nische viral</h3>'
+        '<span class="tsToggle">'
+        '<label class="tsb" for="tsmDE">DE</label>'
+        '<label class="tsb" for="tsmINT">International</label>'
+        '</span></div>'
         '<p class="hint">Was auf Instagram gerade läuft und für EDEKA brauchbar ist. '
-        '%s von %s geprüften Reels sind relevant. Zahlen = Ø Interaktionen (Likes + '
-        'Kommentare) je Reel — höher ist besser.</p>%s</div>'
-        % (de(TRENDS.get('n_relevant') or 0), de(TRENDS.get('n_gesamt') or 0), barr))
+        '%s Zahlen = Interaktionen je 100 Follower des Creators — höher ist besser.'
+        '</p>%s%s</div>'
+        % (_ken(_d0.get('n_relevant', TRENDS.get('n_relevant') or 0),
+                _d0.get('n_gesamt', TRENDS.get('n_gesamt') or 0), 'DE')
+           + _ken(_i0.get('n_relevant', 0), _i0.get('n_gesamt', 0), 'INT'),
+           _barr(_fmde, 'DE'), _barr(_fmint, 'INT')))
 
     zellen = ''
     for i, t in enumerate(TRENDS['top'][:12]):
@@ -1810,29 +1859,37 @@ if TRENDS.get('top'):
             except Exception:
                 img = ''
         bild = ('<img loading="lazy" src="%s" alt="">' % esc(img)) if img else '<div class="ph">IG</div>'
-        zahl = ('%s Aufrufe' % de(t['views'])) if t.get('views') else '%s Likes' % de(t.get('likes') or 0)
+        if t.get('rel_engagement') is not None:
+            zahl = '%s je 100 Follower' % de(t['rel_engagement'], 1)
+        elif t.get('views'):
+            zahl = '%s Aufrufe' % de(t['views'])
+        else:
+            zahl = '%s Likes' % de(t.get('likes') or 0)
         direkt = t.get('transfer') == 'direkt'
         pill = 'gut' if direkt else 'schwach'
         plabel = 'direkt übertragbar' if direkt else 'mit Anpassung'
         datum = (' · ' + _dtagen(t['datum'])) if t.get('datum') else ''
-        zellen += ('<a class="tsc" href="%s" target="_blank" rel="noopener">%s'
+        zellen += ('<a class="tsc" data-m="%s" href="%s" target="_blank" rel="noopener">%s'
                    '<div class="tcb"><div class="tcc">@%s</div>'
                    '<div class="tcm">%s · %s%s</div>'
                    '<span class="pill %s">%s</span></div></a>'
-                   % (esc(t['url']), bild, esc(t['creator']), zahl,
-                      esc(t['format']), datum, pill, plabel))
+                   % (esc(t.get('markt') or 'DE'), esc(t['url']), bild, esc(t['creator']),
+                      zahl, esc(t['format']), datum, pill, plabel))
 
     testen = []
     for t in TRENDS['top'][:3]:
         wer = ('direkt übertragbar' if t.get('transfer') == 'direkt'
                else 'mit Anpassung übertragbar')
-        testen.append('<li><b>@%s</b>: %s (%s Aufrufe) — %s</li>'
-                      % (esc(t['creator']), esc(t['format']),
-                         de(t['views'] or t.get('likes') or 0), wer))
+        maf = (('%s je 100 Follower' % de(t['rel_engagement'], 1))
+               if t.get('rel_engagement') is not None
+               else '%s Aufrufe' % de(t['views'] or t.get('likes') or 0))
+        testen.append('<li><b>@%s</b>: %s (%s) — %s</li>'
+                      % (esc(t['creator']), esc(t['format']), maf, wer))
     if _bestfmt:
-        testen.append('<li><b>%s</b> ansehen: Ø %s Interaktionen je Reel — '
+        testen.append('<li><b>%s</b> ansehen: Ø %s je 100 Follower — '
                       'das stärkste Format im aktuellen Lauf</li>'
-                      % (_bestfmt[0], de((_bestfmt[1] or {}).get('engagement') or 0)))
+                      % (_bestfmt[0], de(_bfr2, 1) if _bfr2 is not None
+                         else de((_bestfmt[1] or {}).get('engagement') or 0)))
 
     _ts_teile.append(
         '<div class="card span6"><span class="arrow">↗</span>'
@@ -1844,23 +1901,161 @@ if TRENDS.get('top'):
         '<h3 style="font-size:20px">Das sollte EDEKA testen</h3><ul class="bul">%s</ul></div>'
         '</div>' % (zellen, ''.join(testen)))
 
+    # --- Block C: Was Händler weltweit machen (D) --------------------------
+    if RETAILERS.get('top'):
+        _rf = RETAILERS.get('formate') or {}
+        _rmax = max([(v or {}).get('rel_engagement_med') or 0 for v in _rf.values()] + [1])
+        _rbar = ''
+        for name, v in sorted(_rf.items(), key=lambda kv: -((kv[1] or {}).get('anzahl') or 0)):
+            a = (v or {}).get('anzahl') or 0
+            rm = (v or {}).get('rel_engagement_med')
+            _rbar += ('<div class="catrow"><div class="c1">%s · %s Reels</div>'
+                      '<div class="c2">%s</div></div>'
+                      '<div class="catbar"><div style="width:%d%%;background:#2A60FF"></div></div>'
+                      % (esc(name), de(a),
+                         (de(rm, 2) + ' × Median') if rm is not None else '–',
+                         max(4, round((rm or 0) * 100 / _rmax))))
+        _rrows = ''
+        for i, t in enumerate((RETAILERS.get('top') or [])[:9]):
+            img = ''
+            if t.get('thumbnail'):
+                try:
+                    img = dl(t['thumbnail'], 'r%02d.jpg' % i)
+                except Exception:
+                    img = ''
+            bild = ('<span class="rtb"><img loading="lazy" src="%s" alt=""></span>'
+                    % esc(img)) if img else '<span class="rtb">IG</span>'
+            ueb = int(t.get('uebertragbar') or 0)
+            lbl = 'direkt übertragbar' if ueb >= 2 else ('mit Anpassung' if ueb == 1 else 'kaum übertragbar')
+            pill = 'gut' if ueb >= 2 else 'schwach'
+            rel = t.get('rel_engagement')
+            relt = (de(rel, 1) + ' × Median') if rel is not None else '–'
+            land = _LANDNAME.get(t.get('land'), t.get('land') or '')
+            _rrows += ('<a class="rtr" href="%s" target="_blank" rel="noopener">'
+                       '%s<span class="rti"><b>%s %s · %s</b><i>%s · %s · %s</i></span>'
+                       '<span class="pill %s">%s</span></a>'
+                       % (esc(t.get('url')), bild, _FLAG.get(t.get('land'), ''),
+                          esc(land), esc(t.get('handle') or ''), esc(t.get('format') or ''),
+                          esc(relt), esc(t.get('datum') or ''), pill, lbl))
+        _ts_teile.append(
+            '<div class="card span6"><span class="arrow">↗</span>'
+            '<h3>Was Händler weltweit machen</h3>'
+            '<p class="hint">%s Ketten international · Stand %s · Reels der letzten '
+            '30 Tage · Lauf ca. %s $. Ranking im Vergleich zum eigenen Median der '
+            'Kette (Interaktionen je 100 Follower des Accounts).</p>%s'
+            '<div class="rtlist">%s</div></div>'
+            % (de(len(RETAILERS.get('konten') or [])), esc(_dtagen(RETAILERS.get('stand'))),
+               de(round(RETAILERS.get('kosten_usd') or 0, 3), 3), _rbar, _rrows))
+    else:
+        _ts_teile.append(
+            '<div class="card span6"><span class="arrow">↗</span>'
+            '<h3>Was Händler weltweit machen</h3>'
+            '<p class="hint">Noch keine Händler-Daten — der Benchmark internationaler '
+            'Ketten läuft montags neben den Trends und füllt diesen Abschnitt '
+            'automatisch. Der Build funktioniert auch ohne diese Datei.</p></div>')
+
+    # --- Block D: Zusammen gelesen (D) — eine Regel-Empfehlung über 3 Quellen
+    _ALIAS = {'Rezept-Tutorial': 'Rezept/Food', 'Spar-Tipp': 'Angebot/Preis',
+              'Humor/Team/Alltag': 'Humor/Team/Azubi', 'Sonstiges': 'Sonstiges',
+              'Haul/Einkauf': None, 'Produkt-Test': None}
+    _eig = {r['thema']: r['n'] for r in THEMEN_ROWS if r.get('thema')}
+    _neig = sum(_eig.values()) or 1
+    _top_thema = max(_eig.items(), key=lambda kv: kv[1]) if _eig else None
+    if _top_thema:
+        _ev_e = ('%s dominiert mit %s Beiträgen (%s %% der eigenen Posts)'
+                 % (esc(_top_thema[0]), de(_top_thema[1]),
+                    de(round(100 * _top_thema[1] / _neig))))
+    else:
+        _ev_e = 'noch keine klassifizierten eigenen Beiträge'
+    _trf = {k: v for k, v in (TRENDS.get('formate') or {}).items()
+            if (v or {}).get('rel_med') is not None}
+    _bt = max(_trf.items(), key=lambda kv: kv[1]['rel_med']) if _trf else None
+    _ev_c = (('stärkstes Format: %s — Ø %s je 100 Follower'
+              % (esc(_bt[0]), de(_bt[1]['rel_med'], 1))) if _bt else 'noch keine Trend-Daten')
+    _haf = {k: v for k, v in (RETAILERS.get('formate') or {}).items()
+            if (v or {}).get('rel_engagement_med') is not None}
+    _bh = max(_haf.items(), key=lambda kv: kv[1]['rel_engagement_med']) if _haf else None
+    _ev_h = (('stärkstes Format: %s — %s × eigener Median'
+              % (esc(_bh[0]), de(_bh[1]['rel_engagement_med'], 2))) if _bh
+             else 'noch keine Händler-Daten — der Benchmark läuft montags')
+
+    def _deckung(fmt):
+        a = _ALIAS.get(fmt)
+        if not a:
+            return None
+        return (_eig.get(a) or 0) / _neig
+
+    _empf = None
+    if _bt:
+        _f1, _v1 = _bt
+        _r1 = _v1['rel_med']
+        _q1 = _deckung(_f1)
+        if _bh:
+            _f2, _v2 = _bh
+            _r2 = _v2['rel_engagement_med']
+            if _f2 == _f1:
+                _empf = ('„%s“ läuft in allen drei Quellen: Creators Ø %s je 100 '
+                         'Follower, Händler %s × eigener Median%s — %s'
+                         % (esc(_f1), de(_r1, 1), de(_r2, 2),
+                            (', EDEKA deckt das mit %s %% der Beiträge ab'
+                             % de(round(100 * _q1))) if _q1 is not None else '',
+                            'das sollte EDEKA ausbauen.'
+                            if (_q1 is None or _q1 < 0.15)
+                            else 'EDEKA macht das schon viel — auf Qualität achten.'))
+            else:
+                _empf = ('Händler setzen bei „%s“ am stärksten an (%s × eigener '
+                         'Median), Creators führen bei „%s“ (Ø %s je 100 Follower). '
+                         'Für EDEKA: „%s“ als nächstes Format testen.'
+                         % (esc(_f2), de(_r2, 2), esc(_f1), de(_r1, 1), esc(_f2)))
+        else:
+            _empf = ('Creators führen bei „%s“ an (Ø %s je 100 Follower). Für EDEKA: '
+                     'dieses Format als nächstes testen — die Händler-Daten kommen '
+                     'montags dazu.' % (esc(_f1), de(_r1, 1)))
+    elif _bh:
+        _empf = ('Händler führen bei „%s“ an (%s × eigener Median). Die Creator-Daten '
+                 'fehlen noch — die Empfehlung wird sie beim nächsten Lauf '
+                 'kreuzen.' % (esc(_bh[0]), de(_bh[1]['rel_engagement_med'], 2)))
+    if not _empf:
+        _empf = ('Noch keine Daten — die gemeinsame Empfehlung erscheint nach dem '
+                 'nächsten Lauf am Montag.')
+    _ts_teile.append(
+        '<div class="card blue span6"><span class="arrow">↗</span>'
+        '<h3>Zusammen gelesen</h3>'
+        '<div class="czq"><b>Bei EDEKA-Profilen wirkt</b> — %s</div>'
+        '<div class="czq"><b>Bei Creators</b> — %s</div>'
+        '<div class="czq"><b>Bei Händlern</b> — %s</div>'
+        '<div class="czr"><b>Empfehlung:</b> %s</div></div>'
+        % (_ev_e, _ev_c, _ev_h, _empf))
+
+    _qs_html = ''
+    for q in (TRENDS.get('queries') or []):
+        if isinstance(q, dict):
+            _qs_html += '<li>%s %s</li>' % (_FLAG.get(q.get('markt'), ''), esc(q.get('query')))
+        else:
+            _qs_html += '<li>%s</li>' % esc(q)
     _ts_teile.append(
         '<div class="card span3"><span class="arrow">↗</span><h3>Methodik</h3>'
         '<p class="hint">So entsteht diese Auswertung:</p>'
         '<ul class="bul">'
-        '<li>Quellen: Instagram-Suche &amp; Hashtags (treg), wöchentlich montags.</li>'
+        '<li>Quellen: Instagram-Suche &amp; Hashtags (treg) in DE und INT, '
+        'wöchentlich montags. Händler-Benchmark: offizielle Ketten-Profile.</li>'
         '<li>Eigene EDEKA-Konten und ausgeschlossene Konten sind entfernt.</li>'
-        '<li>Jev prüft jedes Reel: relevant für einen deutschen Supermarkt? '
-        'Format übertragbar?</li>'
+        '<li>Jev prüft jedes Reel: Essen, Kochen, Einkauf oder Sparen, das ein '
+        'Supermarkt übernehmen kann (ohne Sprachzwang)? Format übertragbar?</li>'
+        '<li>Ranking und Formatkarten: Interaktionen je 100 Follower (Follower '
+        'aus instagram.profile, Cache 30 Tage).</li>'
         '<li>Behalten: Relevanz ≥ 0,7 und „direkt“ oder „mit Anpassung“.</li>'
-        '<li>Ein Lauf kostet etwa %s $.</li></ul>'
-        '<details class="tsdet"><summary>Alle Quote-Quellen einblenden</summary>'
+        '<li>Ein Trends-Lauf kostet etwa %s $%s.</li></ul>'
+        '<details class="tsdet"><summary>Alle Such-Quellen einblenden</summary>'
         '<ul class="bul">%s</ul></details></div>'
         % (de(round(TRENDS.get('kosten_usd') or 0, 2) or 0.04, 2),
-           ''.join('<li>%s</li>' % esc(q) for q in (TRENDS.get('queries') or []))))
+           (' · Händler-Benchmark %s $'
+            % de(round(RETAILERS.get('kosten_usd') or 0, 3), 3))
+           if RETAILERS.get('kosten_usd') else '',
+           _qs_html))
 else:
     _ts_teile.append(
-        '<div class="card span6"><span class="arrow">↗</span><h3>Trends in der Nische</h3>'
+        '<div class="card span6"><span class="arrow">↗</span><h3>In der Nische viral</h3>'
         '<p class="hint">Noch keine Daten — die nächste Analyse läuft montags um 05:00 UTC '
         'und füllt diesen Abschnitt automatisch.</p></div>')
 
@@ -1991,6 +2186,35 @@ details.tsdet[open]>summary{margin-bottom:8px}
 .tsintern{background:#E7E4DC;border-radius:15px;padding:16px 18px;margin-top:16px}
 @media(max-width:860px){.tsk{grid-template-columns:1fr}
   .tsgrid{grid-template-columns:repeat(2,1fr)}.tsc img,.tsc .ph{height:140px}}
+.tsrow{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tsToggle{display:inline-flex;background:#E7E4DC;border-radius:999px;padding:3px;gap:3px;flex:0 0 auto}
+.tsToggle .tsb{border:0;background:transparent;font:inherit;font-size:13px;font-weight:700;
+  padding:6px 13px;border-radius:999px;color:#3E3B33;cursor:pointer;transition:background .15s,color .15s}
+.tsr{position:absolute;width:0;height:0;opacity:0;pointer-events:none}
+body:has(#tsmDE:checked) .tsToggle label[for=tsmDE],
+body:has(#tsmINT:checked) .tsToggle label[for=tsmINT]{background:#16150F;color:#fff}
+body:has(#tsmDE:checked) .mk[data-m="INT"],
+body:has(#tsmINT:checked) .mk[data-m="DE"],
+body:has(#tsmDE:checked) .tsc[data-m="INT"],
+body:has(#tsmINT:checked) .tsc[data-m="DE"]{display:none}
+.rtlist{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.rtr{display:flex;align-items:center;gap:10px;background:#F2F0EB;border-radius:13px;
+  padding:8px 10px;text-decoration:none;color:inherit;transition:transform .15s}
+.rtr:hover{transform:translateY(-2px)}
+.rtr .rtb{width:54px;height:54px;border-radius:10px;overflow:hidden;flex:0 0 auto;
+  background:#E7E4DC;display:inline-flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:600;color:#6E6A60}
+.rtr .rtb img{width:100%;height:100%;object-fit:cover;display:block}
+.rtr .rti{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.rtr .rti b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtr .rti i{font-style:normal;font-size:12.5px;color:#6E6A60;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtr .pill{flex:0 0 auto;font-size:12px;padding:4px 9px;white-space:normal;text-align:left}
+.czq{background:rgba(255,255,255,.92);border-radius:12px;padding:10px 13px;margin-top:9px;
+  font-size:14px;line-height:1.45;color:#3E3B33}
+.czq b{color:#16150F}
+.czr{margin-top:12px;font-size:15.5px;line-height:1.45;color:#fff}
+.czr b{color:#fff}
+@media(max-width:860px){.rtr .rtb{width:48px;height:48px}.tsrow h3{font-size:22px}}
 """
 
 PLAN_HTML = f"""

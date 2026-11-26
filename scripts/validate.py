@@ -41,6 +41,7 @@ def check_neu(fn, zfeld, pflicht):
 check_neu('trends.json', 'n_relevant', ['stand', 'kosten_usd', 'top', 'formate'])
 check_neu('comments.json', 'n_kommentare',
           ['stand', 'kosten_usd', 'ton', 'themen', 'posts', 'fazit', 'aktionen'])
+check_neu('retailers.json', 'n_reels', ['stand', 'kosten_usd', 'konten', 'formate', 'top'])
 
 
 def old_dash():
