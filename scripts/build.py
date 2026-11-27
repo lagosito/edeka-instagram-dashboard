@@ -3051,6 +3051,13 @@ DASH = {
 }
 json.dump(DASH, open(os.path.join(DATA, 'dashboard.json'), 'w'), ensure_ascii=False, indent=1)
 
+# Cache-Busting: Skript-URL mit Inhalts-Hash, damit Browser nie ein altes Skript mit neuen Daten mischen
+import hashlib as _hl
+for _js in ('static/render.js', 'static/redaktionsplan.js'):
+    _fp = os.path.join(SITE, _js)
+    if os.path.exists(_fp):
+        _v = _hl.sha1(open(_fp, 'rb').read()).hexdigest()[:10]
+        html_doc = html_doc.replace('<script src="%s"></script>' % _js, '<script src="%s?v=%s"></script>' % (_js, _v))
 open(os.path.join(SITE, 'index.html'), 'w').write(html_doc + '\n')
 print("HTML:", os.path.join(SITE, 'index.html'), len(html_doc), "bytes | Views:", len(VIEWS))
 print(f"Profile={N_KONTEN} Follower={N_FOLLOWER} Beiträge={N_POSTS} aktiv30={N_AKTIV30} ØER={OER:.1f}%")
