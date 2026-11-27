@@ -503,14 +503,14 @@ body{padding:0!important;background:#fff!important}
       <div class="navleft">
         <span class="logo">E</span>
         <div class="tabs2">
-        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">Übersicht</span><span class="tabsep">Analyse</span>
+        <span class="tab2 on" data-s="s0" onclick="sec('s0',this)">Übersicht</span>
         <span class="tab2" data-s="s1" onclick="sec('s1',this)">01 Überblick<small class="tabd">Kennzahlen auf einen Blick</small></span>
         <span class="tab2" data-s="s2" onclick="sec('s2',this)">02 Inhalte<small class="tabd">Themen, Formate, Zeiten, Rankings</small></span>
         <span class="tab2" data-s="s4" onclick="sec('s4',this)">03 Wettbewerb<small class="tabd">Anzeigen von REWE, Lidl &amp; Co.</small></span>
         <x data-v="v0"></x>
         <span class="tab2" data-s="s5" onclick="sec('s5',this)">05 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
         <x data-v="v1"></x>
-        <span class="tabsep">Planung</span><span class="tab2" data-s="s7" onclick="sec('s7',this)">Redaktionsplan<small class="tabd">Kalender Dezember &amp; Januar</small></span>
+        <span class="tab2" data-s="s7" onclick="sec('s7',this)">Redaktionsplan<small class="tabd">Kalender Dezember &amp; Januar</small></span>
         </div>
       </div>
       <span class="meta"><x data-v="v2"></x></span>
@@ -525,6 +525,23 @@ body{padding:0!important;background:#fff!important}
     <div id="s0" class="sec">
       <div class="grid"><x data-v="v4"></x>
       </div>
+      <div class="rp-slot" data-for="s0"><div class="grid" id="rpwrap">
+        <div class="card span6">
+          <h3>Redaktionsplan @edeka.berlin</h3>
+          <p class="hint">Was wann auf welchem Kanal kommt. Karten auf einen anderen Tag ziehen (am Handy: kurz gedrückt halten und ziehen), Klick auf eine Karte zum Bearbeiten. Gestreift = noch zu klären, blau umrandet = verschoben. Die Tage sind ein Planungsvorschlag, keine Freigabe.</p>
+          <div id="rp"><p class="sub2">Redaktionsplan wird geladen …</p></div>
+        </div>
+        <div class="card span3">
+          <h3>Noch ohne Termin</h3>
+          <p class="hint">Karten hierher ziehen, um sie aus dem Kalender zu nehmen, oder von hier auf einen Tag.</p>
+          <div class="rp-back" id="rpback" data-rpdrop="none"></div>
+        </div>
+        <div class="card span3">
+          <h3>Kanäle</h3>
+          <div class="rp-lg" id="rplg"></div>
+          <p class="hint" style="margin-top:14px">Feed Mittwoch bis Freitag zwischen 19 und 21 Uhr. Tägliche Stories („Heute frisch“, Umfragen) laufen zusätzlich. Änderungen hier werden im eigenen Browser gespeichert; „Änderungen kopieren“ gibt den Stand zum Übernehmen für alle aus. Quelle: Deck „Edeka Content-Machine-Proposal“ und Playpoint × EDEKA Berlin, Stand 26.11.2026.</p>
+        </div>
+      </div></div>
     </div>
 
     <!-- 01 OVERVIEW -->
@@ -733,22 +750,7 @@ body{padding:0!important;background:#fff!important}
 
     <!-- 07 REDAKTIONSPLAN -->
     <div id="s7" class="sec" style="display:none">
-      <div class="grid">
-        <div class="card span6">
-          <h3>Redaktionsplan @edeka.berlin</h3>
-          <p class="hint">Was wann auf welchem Kanal kommt: Playpoint-Formate, Gewinnspiele und Serien aus dem Content-System. Klick auf einen Eintrag für Details. Gestreift = noch zu klären. Die Tage sind ein Planungsvorschlag auf Basis des Pitch-Decks, keine Freigabe.</p>
-          <div id="rp"><p class="sub2">Redaktionsplan wird geladen …</p></div>
-        </div>
-        <div class="card span3">
-          <h3>Noch ohne Termin</h3>
-          <ul class="rp-back" id="rpback"></ul>
-        </div>
-        <div class="card span3">
-          <h3>Kanäle</h3>
-          <div class="rp-lg" id="rplg"></div>
-          <p class="hint" style="margin-top:14px">Feed Mittwoch bis Freitag zwischen 19 und 21 Uhr. Tägliche Stories („Heute frisch“, Umfragen) laufen zusätzlich. Quelle: Deck „Edeka Content-Machine-Proposal“ und Playpoint × EDEKA Berlin, Stand 26.11.2026. Daten: data/redaktionsplan.json.</p>
-        </div>
-      </div>
+      <div class="rp-slot" data-for="s7"></div>
     </div>
 
     <!-- 05 INSIGHTS -->

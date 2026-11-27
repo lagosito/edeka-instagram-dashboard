@@ -1,1017 +1,1254 @@
 {
- "channels": {
-  "reel": "Instagram Reel",
-  "karussell": "Instagram Karussell",
-  "story": "Instagram Story",
-  "tiktok": "TikTok",
-  "whatsapp": "WhatsApp",
-  "aktion": "Gewinnspiel / Aktion"
- },
- "channelHints": {
-  "reel": "Hofbesuch, Team, Humor, POV · 21 Uhr",
-  "karussell": "Preis mit Gesicht, Rezepte, Top 5 · 21 Uhr",
-  "story": "Handzettel, Umfragen, Super-Samstag",
-  "tiktok": "2 pro Woche, nativ geschnitten",
-  "whatsapp": "1 pro Woche, Angebot der Woche",
-  "aktion": "Start, Fristen, App & PAYBACK"
- },
- "weekNotes": {
-  "2026-11-30": "GTA-Pilot",
-  "2026-12-07": "Momente-Start",
-  "2026-12-14": "Weihnachten",
-  "2026-12-21": "Feiertage",
-  "2026-12-28": "Silvester",
-  "2027-01-04": "10fach O&G",
-  "2027-01-11": "10fach alkoholfrei",
-  "2027-01-18": "10fach TK",
-  "2027-01-25": "10fach Molkerei"
- },
- "holidays": [
-  "2026-12-24",
-  "2026-12-25",
-  "2026-12-26",
-  "2027-01-01"
- ],
- "backlog": [
-  {
-   "title": "Berlin, finde den Code!",
-   "text": "Reel führt zur Aktionsfläche im Markt, dort wartet ein QR-Code. Zu klären: Coupon-Technik, Märkte, maximale Einlösungen."
-  },
-  {
-   "title": "Kühlschrank-Challenge",
-   "text": "Kunden zeigen ihren EDEKA-Kühlschrank, die Community schätzt den Warenwert. Zu klären: Beleg, Gleichstand-Regel."
-  },
-  {
-   "title": "Creator-Piloten Jonah Moma und ZZIDE",
-   "text": "Erster Kontakt, noch kein Honorar oder Termin. Duell-Idee: Ali Bumaye vs. Merli."
-  },
-  {
-   "title": "Weitere POV-Folgen ab Januar",
-   "text": "„Was soll sie als Nächstes einkaufen?“ Themen aus der Community, Episodentakt festlegen."
-  },
-  {
-   "title": "Ideenarchiv Comedy",
-   "text": "Neun Ideen, nur mit eigener Interpretation eines Creators."
-  },
-  {
-   "title": "Ab KW 6: Berlin, der Handzettel wird digital",
-   "text": "Phase 2 „Umsteigen“: „Frische neu geladen.“ CTA: App laden, Nachricht starten."
-  }
- ],
- "entries": [
-  {
-   "date": "2026-11-30",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV-Pilot: Das GTA-Geschenk",
-   "text": "„Ich wollte doch nur kurz einkaufen …“, ca. 50 Sek., 9:16. App scannen, mit Gutschein bezahlen.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-11-30",
-   "time": "",
-   "channel": "aktion",
-   "title": "Gewinnspiel „Was kaufst du für 50 €?“ startet",
-   "text": "Kommentar-Gewinnspiel zur Pilotfolge, 5 × 50-€-Gutscheine.",
-   "source": "Playpoint · Gewinnspiele",
-   "status": "offen"
-  },
-  {
-   "date": "2026-11-30",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-11-30",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "POV-Pilot (TikTok-Schnitt)",
-   "text": "Pilotfolge nativ für TikTok geschnitten.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-02",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-03",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Was kostet das morgen? #1",
-   "text": "Zwei Kunden schätzen den App-Preis eines Prospekt-Highlights ab morgen.",
-   "source": "Playpoint · Challenge",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-03",
-   "time": "",
-   "channel": "story",
-   "title": "Gut gespart ins Wochenende",
-   "text": "Highlights von Donnerstag bis Samstag.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-04",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Ich backe dieses Jahr selbst",
-   "text": "Einkaufsmission KW 49, Reel 2.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-05",
-   "time": "",
-   "channel": "aktion",
-   "title": "Teilnahmeschluss 50-€-Gewinnspiel",
-   "text": "Laut Entwurf 05.12.2026, 23:59 Uhr. Vor Veröffentlichung bestätigen.",
-   "source": "Playpoint · Gewinnspiele",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-05",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-05",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Was würdet ihr für 20 € einkaufen?",
-   "text": "Story-Frage als TikTok mit Community-Antworten.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-07",
-   "time": "",
-   "channel": "story",
-   "title": "Gewinner 50-€-Gewinnspiel",
-   "text": "Auflösung in den Stories.",
-   "source": "Playpoint · Gewinnspiele",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-07",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Startsignal EDEKA Momente",
-   "text": "98.8 KISS FM-Moderatoren oder Creator erklären den Aufruf „Lebensmittel zum Lieben. Momente zum Teilen.“",
-   "source": "Playpoint · Community",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-07",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-07",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-08",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-09",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Wichtelgeschenk für 15 €",
-   "text": "Einkaufsmission KW 50, Reel 1.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-09",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-10",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Schlag den EDEKA-Profi!",
-   "text": "Leuchtturmformat: Kunde gegen Mitarbeiter, identischer Warenkorb, Stoppuhr, Finale.",
-   "source": "Playpoint · Challenge",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-10",
-   "time": "",
-   "channel": "story",
-   "title": "Gut gespart ins Wochenende",
-   "text": "Highlights von Donnerstag bis Samstag.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-11",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Heute geh ich nirgendwo hin",
-   "text": "Einkaufsmission KW 50, Reel 2.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-12",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "10-Euro-Rezept",
-   "text": "Kleines Budget, fertiges Gericht, Preis transparent.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-12",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-12",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Was würdet ihr für 20 € einkaufen?",
-   "text": "Story-Frage als TikTok mit Community-Antworten.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-14",
-   "time": "",
-   "channel": "aktion",
-   "title": "Weihnachtsgewinnspiel startet",
-   "text": "Idee: 5 Thermomix, 5 PS5, 20 × 100-€-Gutscheine, Teilnahme über Folgen und Kommentieren. Budget und Bedingungen offen.",
-   "source": "Playpoint · Gewinnspiele",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-14",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-14",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-15",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-16",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Weihnachten bei mir",
-   "text": "Einkaufsmission KW 51, Reel 1.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-16",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-17",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Was kostet das morgen? #2",
-   "text": "Zweite Folge aus dem Drehtag.",
-   "source": "Playpoint · Challenge",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-17",
-   "time": "",
-   "channel": "story",
-   "title": "Gut gespart ins Wochenende",
-   "text": "Highlights von Donnerstag bis Samstag.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-18",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Luxusfrühstück zum kleinen Preis",
-   "text": "Einkaufsmission KW 51, Reel 2.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-19",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Erste EDEKA Momente im Feed",
-   "text": "Ausgewählte Einsendungen, wenn möglich als Collab.",
-   "source": "Playpoint · Community",
-   "status": "offen"
-  },
-  {
-   "date": "2026-12-19",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-19",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Was würdet ihr für 20 € einkaufen?",
-   "text": "Story-Frage als TikTok mit Community-Antworten.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-21",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Prospekt oder Quatsch?",
-   "text": "Zwei echte Angebote, ein erfundenes. Welches fehlt?",
-   "source": "Playpoint · Challenge",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-21",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-21",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-22",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-23",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Ich hab jemanden vergessen!",
-   "text": "Einkaufsmission KW 52.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-23",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-26",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Ich hab jemanden vergessen! (TikTok)",
-   "text": "TikTok-Schnitt der POV-Folge.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-28",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-28",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-29",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-30",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "POV: Silvester wird ganz entspannt",
-   "text": "Einkaufsmission KW 53.",
-   "source": "Playpoint · POV-Serie",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-30",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2026-12-31",
-   "time": "",
-   "channel": "story",
-   "title": "Gut gespart ins Wochenende",
-   "text": "Highlights von Donnerstag bis Samstag.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-02",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Was kostet das morgen? (TikTok)",
-   "text": "Schnitt aus dem Dezember-Drehtag.",
-   "source": "Playpoint · Challenge",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-02",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-04",
-   "time": "",
-   "channel": "aktion",
-   "title": "10fach PAYBACK auf Obst & Gemüse",
-   "text": "Dezemberbörse KW 1, Fokus Protein.",
-   "source": "Content-System · App & PAYBACK",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-04",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Saisonkalender: Wintergemüse",
-   "text": "Monatliches Karussell Obst & Gemüse.",
-   "source": "Content-System · Obst & Gemüse",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-04",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-04",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-05",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-05",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Frag die Theke",
-   "text": "Theken-Teams beantworten Fragen der Community.",
-   "source": "Content-System · Frischetheke",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-06",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Preisheld der Woche",
-   "text": "Das O&G-Team stellt die 5 Preishelden mit 10fach PAYBACK vor.",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-06",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-07",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Rechne nach",
-   "text": "Eine Mitarbeiterin legt den Wocheneinkauf aufs Band, am Ende kommt der Bon.",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-07",
-   "time": "",
-   "channel": "story",
-   "title": "Beste Platzierung",
-   "text": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-08",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Routinen: Gute Vorsätze",
-   "text": "Pflege-Routinen mit Jolea zum Jahresstart.",
-   "source": "Content-System · Jolea",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-09",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-09",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Azubi-Tagebuch",
-   "text": "Wöchentliche Azubi-Serie.",
-   "source": "Content-System · Menschen",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-11",
-   "time": "",
-   "channel": "aktion",
-   "title": "10fach PAYBACK auf alkoholfreie Getränke",
-   "text": "Dezemberbörse KW 2, Fokus EDEKA Bio.",
-   "source": "Content-System · App & PAYBACK",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-11",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Teaser: Berlin, blätter um.",
-   "text": "Phase 1 „Ankündigen“ des digitalen Handzettels. CTA: folgen und abonnieren.",
-   "source": "Kampagne Digitaler Handzettel",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-11",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-11",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-12",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Siegel in 30 Sek.",
-   "text": "Bioland, Naturland und Demeter einfach erklärt.",
-   "source": "Content-System · Bio & Naturkind",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-12",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-12",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Frag die Theke",
-   "text": "Theken-Teams beantworten Fragen der Community.",
-   "source": "Content-System · Frischetheke",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-13",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Bio-Hof",
-   "text": "Besuch bei einem Betrieb der Bio-Anbauverbände.",
-   "source": "Content-System · Bio & Naturkind",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-13",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-14",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Rechne nach",
-   "text": "Wocheneinkauf aufs Band, Bon zeigt den Preis.",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-14",
-   "time": "",
-   "channel": "story",
-   "title": "Beste Platzierung",
-   "text": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-15",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Was kostet das morgen?",
-   "text": "Wöchentlicher App-Hook mit echten Kunden.",
-   "source": "Playpoint · Challenge",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-16",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-16",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Azubi-Tagebuch",
-   "text": "Wöchentliche Azubi-Serie.",
-   "source": "Content-System · Menschen",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-18",
-   "time": "",
-   "channel": "aktion",
-   "title": "10fach PAYBACK auf Tiefkühlkost",
-   "text": "Dezemberbörse KW 3, Fokus Protein.",
-   "source": "Content-System · App & PAYBACK",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-18",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-18",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-19",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-19",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Frag die Theke",
-   "text": "Theken-Teams beantworten Fragen der Community.",
-   "source": "Content-System · Frischetheke",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-20",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Protein-Check mit Mitarbeitenden",
-   "text": "Veganuary und Protein-Fokus aus der Dezemberbörse.",
-   "source": "Content-System · Jahresstart",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-20",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-21",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Rechne nach",
-   "text": "Wocheneinkauf aufs Band, Bon zeigt den Preis.",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-21",
-   "time": "",
-   "channel": "story",
-   "title": "Beste Platzierung",
-   "text": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-22",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Thekenteam des Monats",
-   "text": "Monatliches Reel, Gesichter aus dem Markt.",
-   "source": "Content-System · Menschen",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-23",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Was steckt drin?",
-   "text": "Inhaltsstoffe von Jolea in 30 Sekunden erklärt.",
-   "source": "Content-System · Jolea",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-23",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-23",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Azubi-Tagebuch",
-   "text": "Wöchentliche Azubi-Serie.",
-   "source": "Content-System · Menschen",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-25",
-   "time": "",
-   "channel": "aktion",
-   "title": "10fach PAYBACK auf Molkereiprodukte",
-   "text": "Dezemberbörse KW 4, glatte Preise.",
-   "source": "Content-System · App & PAYBACK",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-25",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Teaser: Berlin, blätter um.",
-   "text": "Phase 1 „Ankündigen“, zweite Welle bis KW 5.",
-   "source": "Kampagne Digitaler Handzettel",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-25",
-   "time": "",
-   "channel": "story",
-   "title": "Handzettel in 15 Sek.",
-   "text": "Schneller Rundblick zu den Angeboten der Woche.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-25",
-   "time": "",
-   "channel": "whatsapp",
-   "title": "Angebot der Woche",
-   "text": "Community-Nachricht, Umfrage oder Coupon.",
-   "source": "Kanalstrategie · WhatsApp",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-26",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Top 5 der Woche",
-   "text": "Fünf starke Wochenangebote.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-26",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Frag die Theke",
-   "text": "Theken-Teams beantworten Fragen der Community.",
-   "source": "Content-System · Frischetheke",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-27",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Preisheld der Woche",
-   "text": "5 Preishelden der Woche.",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-27",
-   "time": "",
-   "channel": "story",
-   "title": "Deal-Duell",
-   "text": "Community entscheidet zwischen zwei Angeboten.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-28",
-   "time": "21:00",
-   "channel": "karussell",
-   "title": "Der Bon sagt was anderes",
-   "text": "Kassenbon-Karussell: „EDEKA ist nur im Kopf teuer.“",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-28",
-   "time": "",
-   "channel": "story",
-   "title": "Beste Platzierung",
-   "text": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
-   "source": "Content-System · Preis mit Gesicht",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-29",
-   "time": "21:00",
-   "channel": "reel",
-   "title": "Hofbesuch",
-   "text": "Erzeuger zeigen, woher Fleisch, Käse und Gemüse kommen.",
-   "source": "Content-System · Frischetheke",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-30",
-   "time": "",
-   "channel": "story",
-   "title": "Super-Samstag",
-   "text": "Ein großes Samstagsangebot als kurzer Clip.",
-   "source": "Playpoint · Wochenformate",
-   "status": "geplant"
-  },
-  {
-   "date": "2027-01-30",
-   "time": "19:00",
-   "channel": "tiktok",
-   "title": "Azubi-Tagebuch",
-   "text": "Wöchentliche Azubi-Serie.",
-   "source": "Content-System · Menschen",
-   "status": "geplant"
-  }
- ]
+"entries": [
+{
+"id": "e1",
+"d": "2026-11-30",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV-Pilot: Das GTA-Geschenk",
+"de": "„Ich wollte doch nur kurz einkaufen …“, ca. 50 Sek., 9:16. App scannen, mit Gutschein bezahlen.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-11-30"
+},
+{
+"id": "e2",
+"d": "2026-12-01",
+"t": "",
+"ch": "aktion",
+"ti": "Gewinnspiel „Was kaufst du für 50 €?“ startet",
+"de": "Kommentar-Gewinnspiel zur Pilotfolge, 5 × 50-€-Gutscheine.",
+"src": "Playpoint · Gewinnspiele",
+"st": "z",
+"o": "2026-11-30"
+},
+{
+"id": "e3",
+"d": "2026-11-30",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-11-30"
+},
+{
+"id": "e4",
+"d": "2026-11-30",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2026-11-30"
+},
+{
+"id": "e5",
+"d": "2026-12-02",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "POV-Pilot (TikTok-Schnitt)",
+"de": "Pilotfolge nativ für TikTok geschnitten.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-01"
+},
+{
+"id": "e6",
+"d": "2026-12-01",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-01"
+},
+{
+"id": "e7",
+"d": "2026-12-02",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-02"
+},
+{
+"id": "e8",
+"d": "2026-12-03",
+"t": "21:00",
+"ch": "reel",
+"ti": "Was kostet das morgen? #1",
+"de": "Zwei Kunden schätzen den App-Preis eines Prospekt-Highlights ab morgen.",
+"src": "Playpoint · Challenge",
+"st": "g",
+"o": "2026-12-03"
+},
+{
+"id": "e9",
+"d": "2026-12-03",
+"t": "",
+"ch": "story",
+"ti": "Gut gespart ins Wochenende",
+"de": "Highlights von Donnerstag bis Samstag.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-03"
+},
+{
+"id": "e10",
+"d": "2026-12-04",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Ich backe dieses Jahr selbst",
+"de": "Einkaufsmission KW 49, Reel 2.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-04"
+},
+{
+"id": "e11",
+"d": "2026-12-05",
+"t": "",
+"ch": "aktion",
+"ti": "Teilnahmeschluss 50-€-Gewinnspiel",
+"de": "Laut Entwurf 05.12.2026, 23:59 Uhr. Vor Veröffentlichung bestätigen.",
+"src": "Playpoint · Gewinnspiele",
+"st": "z",
+"o": "2026-12-05"
+},
+{
+"id": "e12",
+"d": "2026-12-05",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-05"
+},
+{
+"id": "e13",
+"d": "2026-12-05",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Was würdet ihr für 20 € einkaufen?",
+"de": "Story-Frage als TikTok mit Community-Antworten.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-05"
+},
+{
+"id": "e14",
+"d": "2026-12-07",
+"t": "",
+"ch": "story",
+"ti": "Gewinner 50-€-Gewinnspiel",
+"de": "Auflösung in den Stories.",
+"src": "Playpoint · Gewinnspiele",
+"st": "z",
+"o": "2026-12-07"
+},
+{
+"id": "e15",
+"d": "2026-12-07",
+"t": "21:00",
+"ch": "reel",
+"ti": "Startsignal EDEKA Momente",
+"de": "98.8 KISS FM-Moderatoren oder Creator erklären den Aufruf „Lebensmittel zum Lieben. Momente zum Teilen.“",
+"src": "Playpoint · Community",
+"st": "z",
+"o": "2026-12-07"
+},
+{
+"id": "e16",
+"d": "2026-12-07",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-07"
+},
+{
+"id": "e17",
+"d": "2026-12-07",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2026-12-07"
+},
+{
+"id": "e18",
+"d": "2026-12-08",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-08"
+},
+{
+"id": "e19",
+"d": "2026-12-09",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Wichtelgeschenk für 15 €",
+"de": "Einkaufsmission KW 50, Reel 1.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-09"
+},
+{
+"id": "e20",
+"d": "2026-12-09",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-09"
+},
+{
+"id": "e21",
+"d": "2026-12-10",
+"t": "21:00",
+"ch": "reel",
+"ti": "Schlag den EDEKA-Profi!",
+"de": "Leuchtturmformat: Kunde gegen Mitarbeiter, identischer Warenkorb, Stoppuhr, Finale.",
+"src": "Playpoint · Challenge",
+"st": "z",
+"o": "2026-12-10"
+},
+{
+"id": "e22",
+"d": "2026-12-10",
+"t": "",
+"ch": "story",
+"ti": "Gut gespart ins Wochenende",
+"de": "Highlights von Donnerstag bis Samstag.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-10"
+},
+{
+"id": "e23",
+"d": "2026-12-11",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Heute geh ich nirgendwo hin",
+"de": "Einkaufsmission KW 50, Reel 2.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-11"
+},
+{
+"id": "e24",
+"d": "2026-12-12",
+"t": "21:00",
+"ch": "karussell",
+"ti": "10-Euro-Rezept",
+"de": "Kleines Budget, fertiges Gericht, Preis transparent.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-12"
+},
+{
+"id": "e25",
+"d": "2026-12-12",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-12"
+},
+{
+"id": "e26",
+"d": "2026-12-12",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Was würdet ihr für 20 € einkaufen?",
+"de": "Story-Frage als TikTok mit Community-Antworten.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-12"
+},
+{
+"id": "e27",
+"d": "2026-12-14",
+"t": "",
+"ch": "aktion",
+"ti": "Weihnachtsgewinnspiel startet",
+"de": "Idee: 5 Thermomix, 5 PS5, 20 × 100-€-Gutscheine, Teilnahme über Folgen und Kommentieren. Budget und Bedingungen offen.",
+"src": "Playpoint · Gewinnspiele",
+"st": "z",
+"o": "2026-12-14"
+},
+{
+"id": "e28",
+"d": "2026-12-14",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-14"
+},
+{
+"id": "e29",
+"d": "2026-12-14",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2026-12-14"
+},
+{
+"id": "e30",
+"d": "2026-12-15",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-15"
+},
+{
+"id": "e31",
+"d": "2026-12-16",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Weihnachten bei mir",
+"de": "Einkaufsmission KW 51, Reel 1.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-16"
+},
+{
+"id": "e32",
+"d": "2026-12-16",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-16"
+},
+{
+"id": "e33",
+"d": "2026-12-17",
+"t": "21:00",
+"ch": "reel",
+"ti": "Was kostet das morgen? #2",
+"de": "Zweite Folge aus dem Drehtag.",
+"src": "Playpoint · Challenge",
+"st": "g",
+"o": "2026-12-17"
+},
+{
+"id": "e34",
+"d": "2026-12-17",
+"t": "",
+"ch": "story",
+"ti": "Gut gespart ins Wochenende",
+"de": "Highlights von Donnerstag bis Samstag.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-17"
+},
+{
+"id": "e35",
+"d": "2026-12-18",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Luxusfrühstück zum kleinen Preis",
+"de": "Einkaufsmission KW 51, Reel 2.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-18"
+},
+{
+"id": "e36",
+"d": "2026-12-19",
+"t": "21:00",
+"ch": "reel",
+"ti": "Erste EDEKA Momente im Feed",
+"de": "Ausgewählte Einsendungen, wenn möglich als Collab.",
+"src": "Playpoint · Community",
+"st": "z",
+"o": "2026-12-19"
+},
+{
+"id": "e37",
+"d": "2026-12-19",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-19"
+},
+{
+"id": "e38",
+"d": "2026-12-19",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Was würdet ihr für 20 € einkaufen?",
+"de": "Story-Frage als TikTok mit Community-Antworten.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-19"
+},
+{
+"id": "e39",
+"d": "2026-12-21",
+"t": "21:00",
+"ch": "reel",
+"ti": "Prospekt oder Quatsch?",
+"de": "Zwei echte Angebote, ein erfundenes. Welches fehlt?",
+"src": "Playpoint · Challenge",
+"st": "g",
+"o": "2026-12-21"
+},
+{
+"id": "e40",
+"d": "2026-12-21",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-21"
+},
+{
+"id": "e41",
+"d": "2026-12-21",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2026-12-21"
+},
+{
+"id": "e42",
+"d": "2026-12-22",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-22"
+},
+{
+"id": "e43",
+"d": "2026-12-23",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Ich hab jemanden vergessen!",
+"de": "Einkaufsmission KW 52.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-23"
+},
+{
+"id": "e44",
+"d": "2026-12-23",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-23"
+},
+{
+"id": "e45",
+"d": "2026-12-26",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Ich hab jemanden vergessen! (TikTok)",
+"de": "TikTok-Schnitt der POV-Folge.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-26"
+},
+{
+"id": "e46",
+"d": "2026-12-28",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-28"
+},
+{
+"id": "e47",
+"d": "2026-12-28",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2026-12-28"
+},
+{
+"id": "e48",
+"d": "2026-12-29",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-29"
+},
+{
+"id": "e49",
+"d": "2026-12-30",
+"t": "21:00",
+"ch": "reel",
+"ti": "POV: Silvester wird ganz entspannt",
+"de": "Einkaufsmission KW 53.",
+"src": "Playpoint · POV-Serie",
+"st": "g",
+"o": "2026-12-30"
+},
+{
+"id": "e50",
+"d": "2026-12-30",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-30"
+},
+{
+"id": "e51",
+"d": "2026-12-31",
+"t": "",
+"ch": "story",
+"ti": "Gut gespart ins Wochenende",
+"de": "Highlights von Donnerstag bis Samstag.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2026-12-31"
+},
+{
+"id": "e52",
+"d": "2027-01-02",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Was kostet das morgen? (TikTok)",
+"de": "Schnitt aus dem Dezember-Drehtag.",
+"src": "Playpoint · Challenge",
+"st": "g",
+"o": "2027-01-02"
+},
+{
+"id": "e53",
+"d": "2027-01-02",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-02"
+},
+{
+"id": "e54",
+"d": "2027-01-04",
+"t": "",
+"ch": "aktion",
+"ti": "10fach PAYBACK auf Obst & Gemüse",
+"de": "Dezemberbörse KW 1, Fokus Protein.",
+"src": "Content-System · App & PAYBACK",
+"st": "g",
+"o": "2027-01-04"
+},
+{
+"id": "e55",
+"d": "2027-01-04",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Saisonkalender: Wintergemüse",
+"de": "Monatliches Karussell Obst & Gemüse.",
+"src": "Content-System · Obst & Gemüse",
+"st": "g",
+"o": "2027-01-04"
+},
+{
+"id": "e56",
+"d": "2027-01-04",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-04"
+},
+{
+"id": "e57",
+"d": "2027-01-04",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2027-01-04"
+},
+{
+"id": "e58",
+"d": "2027-01-05",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-05"
+},
+{
+"id": "e59",
+"d": "2027-01-05",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Frag die Theke",
+"de": "Theken-Teams beantworten Fragen der Community.",
+"src": "Content-System · Frischetheke",
+"st": "g",
+"o": "2027-01-05"
+},
+{
+"id": "e60",
+"d": "2027-01-06",
+"t": "21:00",
+"ch": "reel",
+"ti": "Preisheld der Woche",
+"de": "Das O&G-Team stellt die 5 Preishelden mit 10fach PAYBACK vor.",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-06"
+},
+{
+"id": "e61",
+"d": "2027-01-06",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-06"
+},
+{
+"id": "e62",
+"d": "2027-01-07",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Rechne nach",
+"de": "Eine Mitarbeiterin legt den Wocheneinkauf aufs Band, am Ende kommt der Bon.",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-07"
+},
+{
+"id": "e63",
+"d": "2027-01-07",
+"t": "",
+"ch": "story",
+"ti": "Beste Platzierung",
+"de": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-07"
+},
+{
+"id": "e64",
+"d": "2027-01-08",
+"t": "21:00",
+"ch": "reel",
+"ti": "Routinen: Gute Vorsätze",
+"de": "Pflege-Routinen mit Jolea zum Jahresstart.",
+"src": "Content-System · Jolea",
+"st": "g",
+"o": "2027-01-08"
+},
+{
+"id": "e65",
+"d": "2027-01-09",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-09"
+},
+{
+"id": "e66",
+"d": "2027-01-09",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Azubi-Tagebuch",
+"de": "Wöchentliche Azubi-Serie.",
+"src": "Content-System · Menschen",
+"st": "g",
+"o": "2027-01-09"
+},
+{
+"id": "e67",
+"d": "2027-01-11",
+"t": "",
+"ch": "aktion",
+"ti": "10fach PAYBACK auf alkoholfreie Getränke",
+"de": "Dezemberbörse KW 2, Fokus EDEKA Bio.",
+"src": "Content-System · App & PAYBACK",
+"st": "g",
+"o": "2027-01-11"
+},
+{
+"id": "e68",
+"d": "2027-01-11",
+"t": "21:00",
+"ch": "reel",
+"ti": "Teaser: Berlin, blätter um.",
+"de": "Phase 1 „Ankündigen“ des digitalen Handzettels. CTA: folgen und abonnieren.",
+"src": "Kampagne Digitaler Handzettel",
+"st": "g",
+"o": "2027-01-11"
+},
+{
+"id": "e69",
+"d": "2027-01-11",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-11"
+},
+{
+"id": "e70",
+"d": "2027-01-11",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2027-01-11"
+},
+{
+"id": "e71",
+"d": "2027-01-12",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Siegel in 30 Sek.",
+"de": "Bioland, Naturland und Demeter einfach erklärt.",
+"src": "Content-System · Bio & Naturkind",
+"st": "g",
+"o": "2027-01-12"
+},
+{
+"id": "e72",
+"d": "2027-01-12",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-12"
+},
+{
+"id": "e73",
+"d": "2027-01-12",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Frag die Theke",
+"de": "Theken-Teams beantworten Fragen der Community.",
+"src": "Content-System · Frischetheke",
+"st": "g",
+"o": "2027-01-12"
+},
+{
+"id": "e74",
+"d": "2027-01-13",
+"t": "21:00",
+"ch": "reel",
+"ti": "Bio-Hof",
+"de": "Besuch bei einem Betrieb der Bio-Anbauverbände.",
+"src": "Content-System · Bio & Naturkind",
+"st": "g",
+"o": "2027-01-13"
+},
+{
+"id": "e75",
+"d": "2027-01-13",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-13"
+},
+{
+"id": "e76",
+"d": "2027-01-14",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Rechne nach",
+"de": "Wocheneinkauf aufs Band, Bon zeigt den Preis.",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-14"
+},
+{
+"id": "e77",
+"d": "2027-01-14",
+"t": "",
+"ch": "story",
+"ti": "Beste Platzierung",
+"de": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-14"
+},
+{
+"id": "e78",
+"d": "2027-01-15",
+"t": "21:00",
+"ch": "reel",
+"ti": "Was kostet das morgen?",
+"de": "Wöchentlicher App-Hook mit echten Kunden.",
+"src": "Playpoint · Challenge",
+"st": "g",
+"o": "2027-01-15"
+},
+{
+"id": "e79",
+"d": "2027-01-16",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-16"
+},
+{
+"id": "e80",
+"d": "2027-01-16",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Azubi-Tagebuch",
+"de": "Wöchentliche Azubi-Serie.",
+"src": "Content-System · Menschen",
+"st": "g",
+"o": "2027-01-16"
+},
+{
+"id": "e81",
+"d": "2027-01-18",
+"t": "",
+"ch": "aktion",
+"ti": "10fach PAYBACK auf Tiefkühlkost",
+"de": "Dezemberbörse KW 3, Fokus Protein.",
+"src": "Content-System · App & PAYBACK",
+"st": "g",
+"o": "2027-01-18"
+},
+{
+"id": "e82",
+"d": "2027-01-18",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-18"
+},
+{
+"id": "e83",
+"d": "2027-01-18",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2027-01-18"
+},
+{
+"id": "e84",
+"d": "2027-01-19",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-19"
+},
+{
+"id": "e85",
+"d": "2027-01-19",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Frag die Theke",
+"de": "Theken-Teams beantworten Fragen der Community.",
+"src": "Content-System · Frischetheke",
+"st": "g",
+"o": "2027-01-19"
+},
+{
+"id": "e86",
+"d": "2027-01-20",
+"t": "21:00",
+"ch": "reel",
+"ti": "Protein-Check mit Mitarbeitenden",
+"de": "Veganuary und Protein-Fokus aus der Dezemberbörse.",
+"src": "Content-System · Jahresstart",
+"st": "g",
+"o": "2027-01-20"
+},
+{
+"id": "e87",
+"d": "2027-01-20",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-20"
+},
+{
+"id": "e88",
+"d": "2027-01-21",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Rechne nach",
+"de": "Wocheneinkauf aufs Band, Bon zeigt den Preis.",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-21"
+},
+{
+"id": "e89",
+"d": "2027-01-21",
+"t": "",
+"ch": "story",
+"ti": "Beste Platzierung",
+"de": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-21"
+},
+{
+"id": "e90",
+"d": "2027-01-22",
+"t": "21:00",
+"ch": "reel",
+"ti": "Thekenteam des Monats",
+"de": "Monatliches Reel, Gesichter aus dem Markt.",
+"src": "Content-System · Menschen",
+"st": "g",
+"o": "2027-01-22"
+},
+{
+"id": "e91",
+"d": "2027-01-23",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Was steckt drin?",
+"de": "Inhaltsstoffe von Jolea in 30 Sekunden erklärt.",
+"src": "Content-System · Jolea",
+"st": "g",
+"o": "2027-01-23"
+},
+{
+"id": "e92",
+"d": "2027-01-23",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-23"
+},
+{
+"id": "e93",
+"d": "2027-01-23",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Azubi-Tagebuch",
+"de": "Wöchentliche Azubi-Serie.",
+"src": "Content-System · Menschen",
+"st": "g",
+"o": "2027-01-23"
+},
+{
+"id": "e94",
+"d": "2027-01-25",
+"t": "",
+"ch": "aktion",
+"ti": "10fach PAYBACK auf Molkereiprodukte",
+"de": "Dezemberbörse KW 4, glatte Preise.",
+"src": "Content-System · App & PAYBACK",
+"st": "g",
+"o": "2027-01-25"
+},
+{
+"id": "e95",
+"d": "2027-01-25",
+"t": "21:00",
+"ch": "reel",
+"ti": "Teaser: Berlin, blätter um.",
+"de": "Phase 1 „Ankündigen“, zweite Welle bis KW 5.",
+"src": "Kampagne Digitaler Handzettel",
+"st": "g",
+"o": "2027-01-25"
+},
+{
+"id": "e96",
+"d": "2027-01-25",
+"t": "",
+"ch": "story",
+"ti": "Handzettel in 15 Sek.",
+"de": "Schneller Rundblick zu den Angeboten der Woche.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-25"
+},
+{
+"id": "e97",
+"d": "2027-01-25",
+"t": "",
+"ch": "whatsapp",
+"ti": "Angebot der Woche",
+"de": "Community-Nachricht, Umfrage oder Coupon.",
+"src": "Kanalstrategie · WhatsApp",
+"st": "g",
+"o": "2027-01-25"
+},
+{
+"id": "e98",
+"d": "2027-01-26",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Top 5 der Woche",
+"de": "Fünf starke Wochenangebote.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-26"
+},
+{
+"id": "e99",
+"d": "2027-01-26",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Frag die Theke",
+"de": "Theken-Teams beantworten Fragen der Community.",
+"src": "Content-System · Frischetheke",
+"st": "g",
+"o": "2027-01-26"
+},
+{
+"id": "e100",
+"d": "2027-01-27",
+"t": "21:00",
+"ch": "reel",
+"ti": "Preisheld der Woche",
+"de": "5 Preishelden der Woche.",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-27"
+},
+{
+"id": "e101",
+"d": "2027-01-27",
+"t": "",
+"ch": "story",
+"ti": "Deal-Duell",
+"de": "Community entscheidet zwischen zwei Angeboten.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-27"
+},
+{
+"id": "e102",
+"d": "2027-01-28",
+"t": "21:00",
+"ch": "karussell",
+"ti": "Der Bon sagt was anderes",
+"de": "Kassenbon-Karussell: „EDEKA ist nur im Kopf teuer.“",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-28"
+},
+{
+"id": "e103",
+"d": "2027-01-28",
+"t": "",
+"ch": "story",
+"ti": "Beste Platzierung",
+"de": "Märkte zeigen ihre G&G-Platzierung (KW 1 bis 4).",
+"src": "Content-System · Preis mit Gesicht",
+"st": "g",
+"o": "2027-01-28"
+},
+{
+"id": "e104",
+"d": "2027-01-29",
+"t": "21:00",
+"ch": "reel",
+"ti": "Hofbesuch",
+"de": "Erzeuger zeigen, woher Fleisch, Käse und Gemüse kommen.",
+"src": "Content-System · Frischetheke",
+"st": "g",
+"o": "2027-01-29"
+},
+{
+"id": "e105",
+"d": "2027-01-30",
+"t": "",
+"ch": "story",
+"ti": "Super-Samstag",
+"de": "Ein großes Samstagsangebot als kurzer Clip.",
+"src": "Playpoint · Wochenformate",
+"st": "g",
+"o": "2027-01-30"
+},
+{
+"id": "e106",
+"d": "2027-01-30",
+"t": "19:00",
+"ch": "tiktok",
+"ti": "Azubi-Tagebuch",
+"de": "Wöchentliche Azubi-Serie.",
+"src": "Content-System · Menschen",
+"st": "g",
+"o": "2027-01-30"
+},
+{
+"id": "b1",
+"d": null,
+"t": "",
+"ch": "aktion",
+"ti": "Berlin, finde den Code!",
+"de": "Reel führt zur Aktionsfläche im Markt, dort wartet ein QR-Code. Zu klären: Coupon-Technik, Märkte, maximale Einlösungen.",
+"src": "Backlog",
+"st": "z",
+"o": null
+},
+{
+"id": "b2",
+"d": null,
+"t": "",
+"ch": "aktion",
+"ti": "Kühlschrank-Challenge",
+"de": "Kunden zeigen ihren EDEKA-Kühlschrank, die Community schätzt den Warenwert. Zu klären: Beleg, Gleichstand-Regel.",
+"src": "Backlog",
+"st": "z",
+"o": null
+},
+{
+"id": "b3",
+"d": null,
+"t": "",
+"ch": "reel",
+"ti": "Creator-Piloten Jonah Moma und ZZIDE",
+"de": "Erster Kontakt, noch kein Honorar oder Termin. Duell-Idee: Ali Bumaye vs. Merli.",
+"src": "Backlog",
+"st": "z",
+"o": null
+},
+{
+"id": "b4",
+"d": null,
+"t": "",
+"ch": "reel",
+"ti": "Weitere POV-Folgen ab Januar",
+"de": "„Was soll sie als Nächstes einkaufen?“ Themen aus der Community, Episodentakt festlegen.",
+"src": "Backlog",
+"st": "z",
+"o": null
+},
+{
+"id": "b5",
+"d": null,
+"t": "",
+"ch": "reel",
+"ti": "Ideenarchiv Comedy",
+"de": "Neun Ideen, nur mit eigener Interpretation eines Creators.",
+"src": "Backlog",
+"st": "z",
+"o": null
+},
+{
+"id": "b6",
+"d": null,
+"t": "",
+"ch": "reel",
+"ti": "Ab KW 6: Berlin, der Handzettel wird digital",
+"de": "Phase 2 „Umsteigen“: „Frische neu geladen.“ CTA: App laden, Nachricht starten.",
+"src": "Backlog",
+"st": "z",
+"o": null
+}
+],
+"weekNotes": {
+"2026-11-30": "GTA-Pilot",
+"2026-12-07": "Momente-Start",
+"2026-12-14": "Weihnachten",
+"2026-12-21": "Feiertage",
+"2026-12-28": "Silvester",
+"2027-01-04": "10fach O&G",
+"2027-01-11": "10fach alkoholfrei",
+"2027-01-18": "10fach TK",
+"2027-01-25": "10fach Molkerei"
+},
+"holidays": [
+"2026-12-24",
+"2026-12-25",
+"2026-12-26",
+"2027-01-01"
+],
+"updated": "2026-11-27T08:43:07.849Z"
 }
