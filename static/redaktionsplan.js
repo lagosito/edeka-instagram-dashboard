@@ -27,7 +27,7 @@
   + '.rp-ev{display:block;width:100%;text-align:left;border:0;border-radius:7px;padding:4px 6px;font:600 12px/1.25 "Inter Tight",Inter,sans-serif;background:var(--c);color:var(--t);cursor:grab;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}'
   + '.rp-grid .rp-ev{touch-action:none}.rp-ag .rp-ev,.rp-back .rp-ev{touch-action:pan-y}'
   + '.rp-ev span{opacity:.75;margin-right:4px}'
-  + '.rp-ev.offen{background:repeating-linear-gradient(135deg,var(--c) 0 6px,color-mix(in srgb,var(--c) 68%,#fff) 6px 12px)}'
+  + '.rp-ev.offen{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--c) 32%,#fff) 0 6px,color-mix(in srgb,var(--c) 14%,#fff) 6px 12px);color:#16150F;box-shadow:inset 3px 0 0 var(--c)}'
   + '.rp-ev.moved{box-shadow:0 0 0 2px #F2F0EB,0 0 0 3.5px #2A60FF}'
   + '.rp-ev.lift{opacity:.3}'
   + '.rp-ghost{position:fixed;z-index:50;pointer-events:none;width:180px;transform:rotate(-2deg);box-shadow:0 12px 30px rgba(0,0,0,.25)}'
@@ -57,8 +57,8 @@
   + '@media(max-width:600px){.rp-panel{left:0;right:0;bottom:0;width:100%;border-radius:18px 18px 0 0;max-height:86vh}}'
   + '@media(prefers-reduced-motion:reduce){.rp-day,.rp-agd,.rp-back{transition:none}.rp-ghost{transform:none}}';
 
-  var CH = {reel:'Instagram Reel',karussell:'Instagram Karussell',story:'Instagram Story',tiktok:'TikTok',whatsapp:'WhatsApp',aktion:'Gewinnspiel / Aktion'};
-  var CHD = {reel:'Hofbesuch, Team, Humor, POV · 21 Uhr',karussell:'Preis mit Gesicht, Rezepte, Top 5 · 21 Uhr',story:'Handzettel, Umfragen, Super-Samstag',tiktok:'2 pro Woche, nativ geschnitten',whatsapp:'1 pro Woche, Angebot der Woche',aktion:'Start, Fristen, App & PAYBACK'};
+  var CH = {reel:'Instagram Reel',karussell:'Instagram Feed',story:'Instagram Story',tiktok:'TikTok',whatsapp:'WhatsApp',aktion:'Gewinnspiel / Aktion'};
+  var CHD = {reel:'POV-Serie, Wein-Gewinnspiel, E center',karussell:'App-Angebote / digitaler Handzettel',story:'App-Adventskalender täglich, App-Angebote',tiktok:'im aktuellen Plan nicht belegt',whatsapp:'im aktuellen Plan nicht belegt',aktion:'Weihnachtsgewinnspiel: Start, Schluss, Auslosung'};
   var ORD = {aktion:0,reel:1,karussell:2,tiktok:3,story:4,whatsapp:5};
   var DN = ['Mo','Di','Mi','Do','Fr','Sa','So'];
   var MONTHS = [{k:'2026-12',n:'Dezember 2026',r:['2026-11-30','2026-12-31']},{k:'2027-01',n:'Januar 2027',r:['2027-01-01','2027-01-31']}];
@@ -77,7 +77,7 @@
   function inM(e){var r=month().r;return e.d&&e.d>=r[0]&&e.d<=r[1]}
   function byId(id){for(var i=0;i<D.entries.length;i++)if(D.entries[i].id===id)return D.entries[i]}
   function moved(e){return e.o!=null&&e.d!==e.o}
-  function vis(){return D.entries.filter(function(e){return !V.off[e.ch]}).sort(function(a,b){return (a.d||'').localeCompare(b.d||'')||ORD[a.ch]-ORD[b.ch]})}
+  function vis(){return D.entries.filter(function(e){return !V.off[e.ch]}).sort(function(a,b){return (a.d||'').localeCompare(b.d||'')||(a.t||'').localeCompare(b.t||'')||ORD[a.ch]-ORD[b.ch]})}
   function $(id){return document.getElementById(id)}
   function narrow(){return window.matchMedia('(max-width:760px)').matches}
 
@@ -120,7 +120,7 @@
   }
   function next(){
     var today=iso(new Date());
-    var r=D.entries.filter(function(e){return e.d&&e.d>=today&&(e.ch==='reel'||e.ch==='karussell'||e.ch==='aktion')}).sort(function(a,b){return a.d.localeCompare(b.d)||ORD[a.ch]-ORD[b.ch]}).slice(0,3);
+    var r=D.entries.filter(function(e){return e.d&&e.d>=today&&(e.ch==='reel'||e.ch==='karussell'||e.ch==='aktion')}).sort(function(a,b){return a.d.localeCompare(b.d)||(a.t||'').localeCompare(b.t||'')||ORD[a.ch]-ORD[b.ch]}).slice(0,3);
     if(!r.length)return '';
     return '<p class="sub2" style="margin:0 0 8px;font-weight:600;color:#16150F">Als Nächstes</p><div class="rp-next">'+r.map(function(e){return '<button class="rp-nx" style="border:0;text-align:left;cursor:pointer;font:inherit" data-rpi="'+esc(e.id)+'"><span class="rp-tag rp-'+e.ch+'"><i></i>'+esc(CH[e.ch])+'</span><small>'+fmt(e.d)+(e.t?' · '+esc(e.t)+' Uhr':'')+'</small><b>'+esc(e.ti)+'</b></button>'}).join('')+'</div>';
   }

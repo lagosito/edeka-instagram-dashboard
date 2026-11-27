@@ -2561,7 +2561,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="rp-slot" data-for="s0"><div class="grid" id="rpwrap">
         <div class="card span6">
           <h3>Redaktionsplan @edeka.berlin</h3>
-          <p class="hint">Was wann auf welchem Kanal kommt. Karten auf einen anderen Tag ziehen (am Handy: kurz gedrückt halten und ziehen), Klick auf eine Karte zum Bearbeiten. Gestreift = noch zu klären, blau umrandet = verschoben. Die Tage sind ein Planungsvorschlag, keine Freigabe.</p>
+          <p class="hint">Was wann auf welchem Kanal kommt. Karten auf einen anderen Tag ziehen (am Handy: kurz gedrückt halten und ziehen), Klick auf eine Karte zum Bearbeiten. Gestreift = noch zu klären, blau umrandet = verschoben. Stand: Redaktionsplanung von Playpoint (27.11.2026), keine Freigabe.</p>
           <div id="rp"><p class="sub2">Redaktionsplan wird geladen …</p></div>
         </div>
         <div class="card span3">
@@ -2572,7 +2572,7 @@ TEMPLATE = """<!DOCTYPE html>
         <div class="card span3">
           <h3>Kanäle</h3>
           <div class="rp-lg" id="rplg"></div>
-          <p class="hint" style="margin-top:14px">Feed Mittwoch bis Freitag zwischen 19 und 21 Uhr. Tägliche Stories („Heute frisch“, Umfragen) laufen zusätzlich. Änderungen hier werden im eigenen Browser gespeichert; „Änderungen kopieren“ gibt den Stand zum Übernehmen für alle aus. Quelle: Deck „Edeka Content-Machine-Proposal“ und Playpoint × EDEKA Berlin, Stand 26.11.2026.</p>
+          <p class="hint" style="margin-top:14px">Gestreift = Format, Termin oder Laufzeit noch offen. Änderungen hier werden im eigenen Browser gespeichert; „Änderungen kopieren“ gibt den Stand zum Übernehmen für alle aus. Quelle: Playpoint, Instagram-Redaktionsplanung EDEKA Berlin (aktualisiert), Stand 27.11.2026. Der frühere Vorschlag aus dem Deck liegt als Sicherung in data/redaktionsplan_vorschlag_2026-11-26.json.</p>
         </div>
       </div></div>
     </div>
