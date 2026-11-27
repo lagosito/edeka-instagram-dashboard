@@ -510,6 +510,7 @@ body{padding:0!important;background:#fff!important}
         <x data-v="v0"></x>
         <span class="tab2" data-s="s5" onclick="sec('s5',this)">05 Details<small class="tabd">Alle Erkenntnisse &amp; Risiken</small></span>
         <x data-v="v1"></x>
+        <span class="tabsep">Planung</span><span class="tab2" data-s="s7" onclick="sec('s7',this)">Redaktionsplan<small class="tabd">Kalender Dezember &amp; Januar</small></span>
         </div>
       </div>
       <span class="meta"><x data-v="v2"></x></span>
@@ -730,6 +731,26 @@ body{padding:0!important;background:#fff!important}
       </div>
     </div>
 
+    <!-- 07 REDAKTIONSPLAN -->
+    <div id="s7" class="sec" style="display:none">
+      <div class="grid">
+        <div class="card span6">
+          <h3>Redaktionsplan @edeka.berlin</h3>
+          <p class="hint">Was wann auf welchem Kanal kommt: Playpoint-Formate, Gewinnspiele und Serien aus dem Content-System. Klick auf einen Eintrag für Details. Gestreift = noch zu klären. Die Tage sind ein Planungsvorschlag auf Basis des Pitch-Decks, keine Freigabe.</p>
+          <div id="rp"><p class="sub2">Redaktionsplan wird geladen …</p></div>
+        </div>
+        <div class="card span3">
+          <h3>Noch ohne Termin</h3>
+          <ul class="rp-back" id="rpback"></ul>
+        </div>
+        <div class="card span3">
+          <h3>Kanäle</h3>
+          <div class="rp-lg" id="rplg"></div>
+          <p class="hint" style="margin-top:14px">Feed Mittwoch bis Freitag zwischen 19 und 21 Uhr. Tägliche Stories („Heute frisch“, Umfragen) laufen zusätzlich. Quelle: Deck „Edeka Content-Machine-Proposal“ und Playpoint × EDEKA Berlin, Stand 26.11.2026. Daten: data/redaktionsplan.json.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- 05 INSIGHTS -->
     <div id="s5" class="sec" style="display:none">
       <div class="grid">
@@ -839,4 +860,5 @@ function seg(id, el){
 }
 </script>
 <script src="static/render.js"></script>
+<script src="static/redaktionsplan.js"></script>
 </body></html>
